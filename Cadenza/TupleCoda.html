@@ -1,0 +1,1975 @@
+<html>
+  <head>
+    <title>Cadenza.TupleCoda</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <style>
+      a { text-decoration: none }
+
+      div.SideBar {
+        padding-left: 1em;
+        padding-right: 1em;
+        right: 0;
+        float: right;
+        border: thin solid black;
+        background-color: #f2f2f2;
+      }
+    
+      .CollectionTitle { font-weight: bold }
+      .PageTitle { font-size: 150%; font-weight: bold }
+
+      .Summary { }
+      .Signature { }          
+      .Remarks { }
+      .Members { }
+      .Copyright { }
+      
+      .Section { font-size: 125%; font-weight: bold }
+      p.Summary {
+        margin-left: 1em;
+      }
+      .SectionBox { margin-left: 2em }
+      .NamespaceName { font-size: 105%; font-weight: bold }
+      .NamespaceSumary { }
+      .MemberName { font-size: 115%; font-weight: bold; margin-top: 1em }
+      .Subsection { font-size: 105%; font-weight: bold }
+      .SubsectionBox { margin-left: 2em; margin-bottom: 1em }
+
+      .CodeExampleTable { background-color: #f5f5dd; border: thin solid black; padding: .25em; }
+      
+      .TypesListing {
+        border-collapse: collapse;
+      }
+
+      td {
+        vertical-align: top;
+      }
+      th {
+        text-align: left;
+      }
+
+      .TypesListing td { 
+        margin: 0px;  
+        padding: .25em;
+        border: solid gray 1px;
+      }
+
+      .TypesListing th { 
+        margin: 0px;  
+        padding: .25em;
+        background-color: #f2f2f2;
+        border: solid gray 1px;
+      }
+
+      div.Footer {
+        border-top: 1px solid gray;
+        margin-top: 1.5em;
+        padding-top: 0.6em;
+        text-align: center;
+        color: gray;
+      }
+
+      span.NotEntered /* Documentation for this section has not yet been entered */ {
+        font-style: italic;
+        color: red;	
+      }
+
+      div.Header {
+        background: #B0C4DE;
+        border: double;
+        border-color: white;
+        border-width: 7px;
+        padding: 0.5em;
+      }
+
+      div.Header * {
+        font-size: smaller;
+      }
+
+      div.Note {
+      }
+
+      i.ParamRef {
+      }
+
+      i.subtitle {
+      }
+
+      ul.TypeMembersIndex {
+        text-align: left;
+        background: #F8F8F8;
+      }
+
+      ul.TypeMembersIndex li {
+        display: inline;
+        margin:  0.5em;
+      }
+
+      table.HeaderTable {
+      }
+
+      table.SignatureTable {
+      }
+
+      table.Documentation, table.Enumeration, table.TypeDocumentation {
+        border-collapse: collapse;
+        width: 100%;
+      }
+
+      table.Documentation tr th, table.TypeMembers tr th, table.Enumeration tr th, table.TypeDocumentation tr th {
+        background: whitesmoke;
+        padding: 0.8em;
+        border: 1px solid gray;
+        text-align: left;
+        vertical-align: bottom;
+      }
+
+      table.Documentation tr td, table.TypeMembers tr td, table.Enumeration tr td, table.TypeDocumentation tr td {
+        padding: 0.5em;
+        border: 1px solid gray;
+        text-align: left;
+        vertical-align: top;
+      }
+
+      table.TypeMembers {
+        border: 1px solid #C0C0C0;
+        width: 100%;
+      }
+
+      table.TypeMembers tr td {
+        background: #F8F8F8;
+        border: white;
+      }
+
+      table.Documentation {
+      }
+
+      table.TypeMembers {
+      }
+
+      div.CodeExample {
+        width: 100%;
+        border: 1px solid #DDDDDD;
+        background-color: #F8F8F8;
+      }
+
+      div.CodeExample p {
+        margin: 0.5em;
+        border-bottom: 1px solid #DDDDDD;
+      }
+
+      div.CodeExample div {
+        margin: 0.5em;
+      }
+
+      h4 {
+        margin-bottom: 0;
+      }
+
+      div.Signature {
+        border: 1px solid #C0C0C0;
+        background: #F2F2F2;
+        padding: 1em;
+      }
+    </style>
+    <script type="text/JavaScript">
+      function toggle_display (block) {
+        var w = document.getElementById (block);
+        var t = document.getElementById (block + ":toggle");
+        if (w.style.display == "none") {
+          w.style.display = "block";
+          t.innerHTML = "⊟";
+        } else {
+          w.style.display = "none";
+          t.innerHTML = "⊞";
+        }
+      }
+    </script>
+  </head>
+  <body>
+    <div class="CollectionTitle">
+      <a href="../index.html">Cadenza</a> : <a href="index.html">Cadenza Namespace</a></div>
+    <div class="SideBar">
+      <p>
+        <a href="#T:Cadenza.TupleCoda">Overview</a>
+      </p>
+      <p>
+        <a href="#T:Cadenza.TupleCoda:Signature">Signature</a>
+      </p>
+      <p>
+        <a href="#T:Cadenza.TupleCoda:Docs">Remarks</a>
+      </p>
+      <p>
+        <a href="#Members">Members</a>
+      </p>
+      <p>
+        <a href="#T:Cadenza.TupleCoda:Members">Member Details</a>
+      </p>
+    </div>
+    <h1 class="PageTitle" id="T:Cadenza.TupleCoda">TupleCoda  Class</h1>
+    <p class="Summary" id="T:Cadenza.TupleCoda:Summary">
+            Extension methods on <tt>Tuple</tt> types.
+            </p>
+    <div id="T:Cadenza.TupleCoda:Signature">
+      <div class="Signature">public static class  <b>TupleCoda</b></div>
+    </div>
+    <div class="Remarks" id="T:Cadenza.TupleCoda:Docs">
+      <h4 class="Subsection">
+        <a href="javascript:toggle_display('T:Cadenza.TupleCoda:Docs:Remarks')">
+          <span id="T:Cadenza.TupleCoda:Docs:Remarks:toggle">⊟</span> Remarks</a>
+      </h4>
+      <blockquote class="SubsectionBox" id="T:Cadenza.TupleCoda:Docs:Remarks">
+      </blockquote>
+      <h4 class="Subsection">
+        <a href="javascript:toggle_display('T:Cadenza.TupleCoda:Docs:Version Information')">
+          <span id="T:Cadenza.TupleCoda:Docs:Version Information:toggle">⊟</span> Requirements</a>
+      </h4>
+      <blockquote class="SubsectionBox" id="T:Cadenza.TupleCoda:Docs:Version Information">
+        <b>Namespace: </b>Cadenza<br /><b>Assembly: </b>Cadenza (in Cadenza.dll)<br /><b>Assembly Versions: </b>0.1.0.0</blockquote>
+      <h2 class="Section" id="Members">
+        <a href="javascript:toggle_display('_Members')">
+          <span id="_Members:toggle">⊟</span> Members</a>
+      </h2>
+      <blockquote class="SectionBox" id="_Members">
+        <p>
+								See Also: Inherited members from
+								<a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Object">object</a>.
+							</p>
+        <h3>
+          <a href="javascript:toggle_display('Public Methods')">
+            <span id="Public Methods:toggle">⊟</span> Public Methods</a>
+        </h3>
+        <blockquote id="Public Methods">
+          <div class="SubsectionBox">
+            <table class="TypeMembers">
+              <tr valign="top">
+                <td>
+                  <div>static </div>
+                </td>
+                <td colspan="2">
+                  <b>
+                    <a href="#M:Cadenza.TupleCoda.Aggregate``2(Cadenza.Tuple{``0},System.Func{``0,``1})">Aggregate&lt;T,TResult&gt;</a>
+                  </b>(<i>this</i> <a href="../Cadenza/Tuple`1.html">Tuple&lt;T&gt;</a>, <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Func`2">Func&lt;T, TResult&gt;</a>)<nobr> : <i title="&#xA;            The return value type.&#xA;            ">TResult</i></nobr><blockquote>
+            Converts the <a href="../Cadenza/Tuple`1.html">Cadenza.Tuple&lt;T&gt;</a> into a <i>TResult</i>.
+            </blockquote></td>
+              </tr>
+              <tr valign="top">
+                <td>
+                  <div>static </div>
+                </td>
+                <td colspan="2">
+                  <b>
+                    <a href="#M:Cadenza.TupleCoda.Aggregate``3(Cadenza.Tuple{``0,``1},System.Func{``0,``1,``2})">Aggregate&lt;T1,T2,TResult&gt;</a>
+                  </b>(<i>this</i> <a href="../Cadenza/Tuple`2.html">Tuple&lt;T1, T2&gt;</a>, <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Func`3">Func&lt;T1, T2, TResult&gt;</a>)<nobr> : <i title="&#xA;            The return value type.&#xA;            ">TResult</i></nobr><blockquote>
+            Converts the <a href="../Cadenza/Tuple`2.html">Cadenza.Tuple&lt;T1, T2&gt;</a> into a <i>TResult</i>.
+            </blockquote></td>
+              </tr>
+              <tr valign="top">
+                <td>
+                  <div>static </div>
+                </td>
+                <td colspan="2">
+                  <b>
+                    <a href="#M:Cadenza.TupleCoda.Aggregate``4(Cadenza.Tuple{``0,``1,``2},System.Func{``0,``1,``2,``3})">Aggregate&lt;T1,T2,T3,TResult&gt;</a>
+                  </b>(<i>this</i> <a href="../Cadenza/Tuple`3.html">Tuple&lt;T1, T2, T3&gt;</a>, <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Func`4">Func&lt;T1, T2, T3, TResult&gt;</a>)<nobr> : <i title="&#xA;            The return value type.&#xA;            ">TResult</i></nobr><blockquote>
+            Converts the <a href="../Cadenza/Tuple`3.html">Cadenza.Tuple&lt;T1, T2, T3&gt;</a> into a <i>TResult</i>.
+            </blockquote></td>
+              </tr>
+              <tr valign="top">
+                <td>
+                  <div>static </div>
+                </td>
+                <td colspan="2">
+                  <b>
+                    <a href="#M:Cadenza.TupleCoda.Aggregate``5(Cadenza.Tuple{``0,``1,``2,``3},System.Func{``0,``1,``2,``3,``4})">Aggregate&lt;T1,T2,T3,T4,TResult&gt;</a>
+                  </b>(<i>this</i> <a href="../Cadenza/Tuple`4.html">Tuple&lt;T1, T2, T3, T4&gt;</a>, <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Func`5">Func&lt;T1, T2, T3, T4, TResult&gt;</a>)<nobr> : <i title="&#xA;            The return value type.&#xA;            ">TResult</i></nobr><blockquote>
+            Converts the <a href="../Cadenza/Tuple`4.html">Cadenza.Tuple&lt;T1, T2, T3, T4&gt;</a> into a <i>TResult</i>.
+            </blockquote></td>
+              </tr>
+              <tr valign="top">
+                <td>
+                  <div>static </div>
+                </td>
+                <td colspan="2">
+                  <b>
+                    <a href="#M:Cadenza.TupleCoda.Match``2(Cadenza.Tuple{``0},System.Func{``0,Cadenza.Maybe{``1}}[])">Match&lt;T,TResult&gt;</a>
+                  </b>(<i>this</i> <a href="../Cadenza/Tuple`1.html">Tuple&lt;T&gt;</a>, <b>params</b> <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Func`2">Func&lt;T, Maybe&lt;TResult&gt;&gt;</a>[])<nobr> : <i title="&#xA;          The return value type.&#xA;        ">TResult</i></nobr><blockquote>
+          Converts the current <a href="../Cadenza/Tuple`1.html">Cadenza.Tuple&lt;T&gt;</a> instance into a <i>TResult</i>.
+        </blockquote></td>
+              </tr>
+              <tr valign="top">
+                <td>
+                  <div>static </div>
+                </td>
+                <td colspan="2">
+                  <b>
+                    <a href="#M:Cadenza.TupleCoda.Match``3(Cadenza.Tuple{``0,``1},System.Func{``0,``1,Cadenza.Maybe{``2}}[])">Match&lt;T1,T2,TResult&gt;</a>
+                  </b>(<i>this</i> <a href="../Cadenza/Tuple`2.html">Tuple&lt;T1, T2&gt;</a>, <b>params</b> <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Func`3">Func&lt;T1, T2, Maybe&lt;TResult&gt;&gt;</a>[])<nobr> : <i title="&#xA;          The return value type.&#xA;        ">TResult</i></nobr><blockquote>
+          Converts the current <a href="../Cadenza/Tuple`2.html">Cadenza.Tuple&lt;T1, T2&gt;</a> instance into a <i>TResult</i>.
+        </blockquote></td>
+              </tr>
+              <tr valign="top">
+                <td>
+                  <div>static </div>
+                </td>
+                <td colspan="2">
+                  <b>
+                    <a href="#M:Cadenza.TupleCoda.Match``4(Cadenza.Tuple{``0,``1,``2},System.Func{``0,``1,``2,Cadenza.Maybe{``3}}[])">Match&lt;T1,T2,T3,TResult&gt;</a>
+                  </b>(<i>this</i> <a href="../Cadenza/Tuple`3.html">Tuple&lt;T1, T2, T3&gt;</a>, <b>params</b> <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Func`4">Func&lt;T1, T2, T3, Maybe&lt;TResult&gt;&gt;</a>[])<nobr> : <i title="&#xA;          The return value type.&#xA;        ">TResult</i></nobr><blockquote>
+          Converts the current <a href="../Cadenza/Tuple`2.html">Cadenza.Tuple&lt;T1, T2&gt;</a> instance into a <i>TResult</i>.
+        </blockquote></td>
+              </tr>
+              <tr valign="top">
+                <td>
+                  <div>static </div>
+                </td>
+                <td colspan="2">
+                  <b>
+                    <a href="#M:Cadenza.TupleCoda.Match``5(Cadenza.Tuple{``0,``1,``2,``3},System.Func{``0,``1,``2,``3,Cadenza.Maybe{``4}}[])">Match&lt;T1,T2,T3,T4,TResult&gt;</a>
+                  </b>(<i>this</i> <a href="../Cadenza/Tuple`4.html">Tuple&lt;T1, T2, T3, T4&gt;</a>, <b>params</b> <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Func`5">Func&lt;T1, T2, T3, T4, Maybe&lt;TResult&gt;&gt;</a>[])<nobr> : <i title="&#xA;          The return value type.&#xA;        ">TResult</i></nobr><blockquote>
+          Converts the current <a href="../Cadenza/Tuple`2.html">Cadenza.Tuple&lt;T1, T2&gt;</a> instance into a <i>TResult</i>.
+        </blockquote></td>
+              </tr>
+              <tr valign="top">
+                <td>
+                  <div>static </div>
+                </td>
+                <td colspan="2">
+                  <b>
+                    <a href="#M:Cadenza.TupleCoda.ToEnumerable``1(Cadenza.Tuple{``0})">ToEnumerable&lt;T&gt;</a>
+                  </b>(<i>this</i> <a href="../Cadenza/Tuple`1.html">Tuple&lt;T&gt;</a>)<nobr> : <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Collections.Generic.IEnumerable`1">IEnumerable&lt;object&gt;</a></nobr><blockquote>
+            Converts the <a href="../Cadenza/Tuple`1.html">Cadenza.Tuple&lt;T&gt;</a> into a <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Collections.Generic.IEnumerable`1">IEnumerable&lt;object&gt;</a>.
+            </blockquote></td>
+              </tr>
+              <tr valign="top">
+                <td>
+                  <div>static </div>
+                </td>
+                <td colspan="2">
+                  <b>
+                    <a href="#M:Cadenza.TupleCoda.ToEnumerable``2(Cadenza.Tuple{``0,``1})">ToEnumerable&lt;T1,T2&gt;</a>
+                  </b>(<i>this</i> <a href="../Cadenza/Tuple`2.html">Tuple&lt;T1, T2&gt;</a>)<nobr> : <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Collections.Generic.IEnumerable`1">IEnumerable&lt;object&gt;</a></nobr><blockquote>
+            Converts the <a href="../Cadenza/Tuple`2.html">Cadenza.Tuple&lt;T1, T2&gt;</a> into a <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Collections.Generic.IEnumerable`1">IEnumerable&lt;object&gt;</a>.
+            </blockquote></td>
+              </tr>
+              <tr valign="top">
+                <td>
+                  <div>static </div>
+                </td>
+                <td colspan="2">
+                  <b>
+                    <a href="#M:Cadenza.TupleCoda.ToEnumerable``3(Cadenza.Tuple{``0,``1,``2})">ToEnumerable&lt;T1,T2,T3&gt;</a>
+                  </b>(<i>this</i> <a href="../Cadenza/Tuple`3.html">Tuple&lt;T1, T2, T3&gt;</a>)<nobr> : <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Collections.Generic.IEnumerable`1">IEnumerable&lt;object&gt;</a></nobr><blockquote>
+            Converts the <a href="../Cadenza/Tuple`3.html">Cadenza.Tuple&lt;T1, T2, T3&gt;</a> into a <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Collections.Generic.IEnumerable`1">IEnumerable&lt;object&gt;</a>.
+            </blockquote></td>
+              </tr>
+              <tr valign="top">
+                <td>
+                  <div>static </div>
+                </td>
+                <td colspan="2">
+                  <b>
+                    <a href="#M:Cadenza.TupleCoda.ToEnumerable``4(Cadenza.Tuple{``0,``1,``2,``3})">ToEnumerable&lt;T1,T2,T3,T4&gt;</a>
+                  </b>(<i>this</i> <a href="../Cadenza/Tuple`4.html">Tuple&lt;T1, T2, T3, T4&gt;</a>)<nobr> : <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Collections.Generic.IEnumerable`1">IEnumerable&lt;object&gt;</a></nobr><blockquote>
+            Converts the <a href="../Cadenza/Tuple`4.html">Cadenza.Tuple&lt;T1, T2, T3, T4&gt;</a> into a <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Collections.Generic.IEnumerable`1">IEnumerable&lt;object&gt;</a>.
+            </blockquote></td>
+              </tr>
+              <tr valign="top">
+                <td>
+                  <div>static </div>
+                </td>
+                <td colspan="2">
+                  <b>
+                    <a href="#M:Cadenza.TupleCoda.ToKeyValuePair``2(Cadenza.Tuple{``0,``1})">ToKeyValuePair&lt;TKey,TValue&gt;</a>
+                  </b>(<i>this</i> <a href="../Cadenza/Tuple`2.html">Tuple&lt;TKey, TValue&gt;</a>)<nobr> : <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Collections.Generic.KeyValuePair`2">KeyValuePair&lt;TKey, TValue&gt;</a></nobr><blockquote>
+          Converts a 
+          <a href="../Cadenza/Tuple`2.html">Cadenza.Tuple&lt;TKey, TValue&gt;</a>
+          into a
+          <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Collections.Generic.KeyValuePair`2">KeyValuePair&lt;TKey, TValue&gt;</a>.
+        </blockquote></td>
+              </tr>
+            </table>
+          </div>
+        </blockquote>
+      </blockquote>
+    </div>
+    <div class="Members" id="T:Cadenza.TupleCoda:Members">
+      <h2 class="Section" id="MemberDetails">
+        <a href="javascript:toggle_display('_MemberDetails')">
+          <span id="_MemberDetails:toggle">⊟</span> Member Details</a>
+      </h2>
+      <blockquote class="SectionBox" id="_MemberDetails">
+        <h3 id="M:Cadenza.TupleCoda.Aggregate``2(Cadenza.Tuple{``0},System.Func{``0,``1})">
+          <a href="javascript:toggle_display('M:Cadenza.TupleCoda.Aggregate``2(Cadenza.Tuple{``0},System.Func{``0,``1}):member')">
+            <span id="M:Cadenza.TupleCoda.Aggregate``2(Cadenza.Tuple{``0},System.Func{``0,``1}):member:toggle">⊟</span> Aggregate&lt;T,TResult&gt; Generic Method</a>
+        </h3>
+        <blockquote id="M:Cadenza.TupleCoda.Aggregate``2(Cadenza.Tuple{``0},System.Func{``0,``1}):member">
+          <p class="Summary">
+            Converts the <a href="../Cadenza/Tuple`1.html">Cadenza.Tuple&lt;T&gt;</a> into a <i>TResult</i>.
+            </p>
+          <div class="Signature">public static <i title="&#xA;            The return value type.&#xA;            ">TResult</i> <b>Aggregate&lt;T, TResult&gt;</b> (<i>this</i> <a href="../Cadenza/Tuple`1.html">Tuple&lt;T&gt;</a> self, <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Func`2">Func&lt;T, TResult&gt;</a> func)</div>
+          <h4 class="Subsection">
+            <a href="javascript:toggle_display('M:Cadenza.TupleCoda.Aggregate``2(Cadenza.Tuple{``0},System.Func{``0,``1}):Type Parameters')">
+              <span id="M:Cadenza.TupleCoda.Aggregate``2(Cadenza.Tuple{``0},System.Func{``0,``1}):Type Parameters:toggle">⊟</span> Type Parameters</a>
+          </h4>
+          <blockquote class="SubsectionBox" id="M:Cadenza.TupleCoda.Aggregate``2(Cadenza.Tuple{``0},System.Func{``0,``1}):Type Parameters">
+            <dl>
+              <dt>
+                <i>T</i>
+              </dt>
+              <dd>
+            The first value type.
+            </dd>
+              <dt>
+                <i>TResult</i>
+              </dt>
+              <dd>
+            The return value type.
+            </dd>
+            </dl>
+          </blockquote>
+          <h4 class="Subsection">
+            <a href="javascript:toggle_display('M:Cadenza.TupleCoda.Aggregate``2(Cadenza.Tuple{``0},System.Func{``0,``1}):Parameters')">
+              <span id="M:Cadenza.TupleCoda.Aggregate``2(Cadenza.Tuple{``0},System.Func{``0,``1}):Parameters:toggle">⊟</span> Parameters</a>
+          </h4>
+          <blockquote class="SubsectionBox" id="M:Cadenza.TupleCoda.Aggregate``2(Cadenza.Tuple{``0},System.Func{``0,``1}):Parameters">
+            <dl>
+              <dt>
+                <i>self</i>
+              </dt>
+              <dd>
+            A <a href="../Cadenza/Tuple`1.html">Cadenza.Tuple&lt;T&gt;</a> to aggregate the values of.
+            </dd>
+              <dt>
+                <i>func</i>
+              </dt>
+              <dd>
+            A <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Func`2">Func&lt;T, TResult&gt;</a> which will be invoked, providing the values
+            <a href="../Cadenza/Tuple`1.html#P:Cadenza.Tuple`1.Item1">Tuple`1.Item1</a>
+            to <i>func</i> and
+            returning the value returned by <i>func</i>.
+            </dd>
+            </dl>
+          </blockquote>
+          <h4 class="Subsection">
+            <a href="javascript:toggle_display('M:Cadenza.TupleCoda.Aggregate``2(Cadenza.Tuple{``0},System.Func{``0,``1}):Returns')">
+              <span id="M:Cadenza.TupleCoda.Aggregate``2(Cadenza.Tuple{``0},System.Func{``0,``1}):Returns:toggle">⊟</span> Returns</a>
+          </h4>
+          <blockquote class="SubsectionBox" id="M:Cadenza.TupleCoda.Aggregate``2(Cadenza.Tuple{``0},System.Func{``0,``1}):Returns">
+            The <i>TResult</i> returned by <i>func</i>.
+            </blockquote>
+          <h4 class="Subsection">
+            <a href="javascript:toggle_display('M:Cadenza.TupleCoda.Aggregate``2(Cadenza.Tuple{``0},System.Func{``0,``1}):Exceptions')">
+              <span id="M:Cadenza.TupleCoda.Aggregate``2(Cadenza.Tuple{``0},System.Func{``0,``1}):Exceptions:toggle">⊟</span> Exceptions</a>
+          </h4>
+          <blockquote class="SubsectionBox" id="M:Cadenza.TupleCoda.Aggregate``2(Cadenza.Tuple{``0},System.Func{``0,``1}):Exceptions">
+            <table class="TypeDocumentation">
+              <tr>
+                <th>Type</th>
+                <th>Reason</th>
+              </tr>
+              <tr valign="top">
+                <td>
+                  <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.ArgumentNullException">ArgumentNullException</a>
+                </td>
+                <td>
+                  <p>
+                    <i>self</i> is <tt>null</tt>.
+            </p>
+                  <p>-or-</p>
+                  <p>
+                    <i>func</i> is <tt>null</tt>.
+            </p>
+                </td>
+              </tr>
+            </table>
+          </blockquote>
+          <h4 class="Subsection">
+            <a href="javascript:toggle_display('M:Cadenza.TupleCoda.Aggregate``2(Cadenza.Tuple{``0},System.Func{``0,``1}):Remarks')">
+              <span id="M:Cadenza.TupleCoda.Aggregate``2(Cadenza.Tuple{``0},System.Func{``0,``1}):Remarks:toggle">⊟</span> Remarks</a>
+          </h4>
+          <blockquote class="SubsectionBox" id="M:Cadenza.TupleCoda.Aggregate``2(Cadenza.Tuple{``0},System.Func{``0,``1}):Remarks">
+            <h5 class="Subsection">Operation</h5>
+            Passes the values <a href="../Cadenza/Tuple`1.html#P:Cadenza.Tuple`1.Item1">Tuple`1.Item1</a> to
+            <i>func</i>, returning the value produced by
+            <i>func</i>.
+            </blockquote>
+          <h4 class="Subsection">
+            <a href="javascript:toggle_display('M:Cadenza.TupleCoda.Aggregate``2(Cadenza.Tuple{``0},System.Func{``0,``1}):Version Information')">
+              <span id="M:Cadenza.TupleCoda.Aggregate``2(Cadenza.Tuple{``0},System.Func{``0,``1}):Version Information:toggle">⊟</span> Requirements</a>
+          </h4>
+          <blockquote class="SubsectionBox" id="M:Cadenza.TupleCoda.Aggregate``2(Cadenza.Tuple{``0},System.Func{``0,``1}):Version Information">
+            <b>Namespace: </b>Cadenza<br /><b>Assembly: </b>Cadenza (in Cadenza.dll)<br /><b>Assembly Versions: </b>0.1.0.0</blockquote>
+          <hr size="1" />
+        </blockquote>
+        <h3 id="M:Cadenza.TupleCoda.Aggregate``3(Cadenza.Tuple{``0,``1},System.Func{``0,``1,``2})">
+          <a href="javascript:toggle_display('M:Cadenza.TupleCoda.Aggregate``3(Cadenza.Tuple{``0,``1},System.Func{``0,``1,``2}):member')">
+            <span id="M:Cadenza.TupleCoda.Aggregate``3(Cadenza.Tuple{``0,``1},System.Func{``0,``1,``2}):member:toggle">⊟</span> Aggregate&lt;T1,T2,TResult&gt; Generic Method</a>
+        </h3>
+        <blockquote id="M:Cadenza.TupleCoda.Aggregate``3(Cadenza.Tuple{``0,``1},System.Func{``0,``1,``2}):member">
+          <p class="Summary">
+            Converts the <a href="../Cadenza/Tuple`2.html">Cadenza.Tuple&lt;T1, T2&gt;</a> into a <i>TResult</i>.
+            </p>
+          <div class="Signature">public static <i title="&#xA;            The return value type.&#xA;            ">TResult</i> <b>Aggregate&lt;T1, T2, TResult&gt;</b> (<i>this</i> <a href="../Cadenza/Tuple`2.html">Tuple&lt;T1, T2&gt;</a> self, <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Func`3">Func&lt;T1, T2, TResult&gt;</a> func)</div>
+          <h4 class="Subsection">
+            <a href="javascript:toggle_display('M:Cadenza.TupleCoda.Aggregate``3(Cadenza.Tuple{``0,``1},System.Func{``0,``1,``2}):Type Parameters')">
+              <span id="M:Cadenza.TupleCoda.Aggregate``3(Cadenza.Tuple{``0,``1},System.Func{``0,``1,``2}):Type Parameters:toggle">⊟</span> Type Parameters</a>
+          </h4>
+          <blockquote class="SubsectionBox" id="M:Cadenza.TupleCoda.Aggregate``3(Cadenza.Tuple{``0,``1},System.Func{``0,``1,``2}):Type Parameters">
+            <dl>
+              <dt>
+                <i>T1</i>
+              </dt>
+              <dd>
+            The first value type.
+            </dd>
+              <dt>
+                <i>T2</i>
+              </dt>
+              <dd>
+            The second value type.
+            </dd>
+              <dt>
+                <i>TResult</i>
+              </dt>
+              <dd>
+            The return value type.
+            </dd>
+            </dl>
+          </blockquote>
+          <h4 class="Subsection">
+            <a href="javascript:toggle_display('M:Cadenza.TupleCoda.Aggregate``3(Cadenza.Tuple{``0,``1},System.Func{``0,``1,``2}):Parameters')">
+              <span id="M:Cadenza.TupleCoda.Aggregate``3(Cadenza.Tuple{``0,``1},System.Func{``0,``1,``2}):Parameters:toggle">⊟</span> Parameters</a>
+          </h4>
+          <blockquote class="SubsectionBox" id="M:Cadenza.TupleCoda.Aggregate``3(Cadenza.Tuple{``0,``1},System.Func{``0,``1,``2}):Parameters">
+            <dl>
+              <dt>
+                <i>self</i>
+              </dt>
+              <dd>
+            A <a href="../Cadenza/Tuple`2.html">Cadenza.Tuple&lt;T1, T2&gt;</a> to aggregate the values of.
+            </dd>
+              <dt>
+                <i>func</i>
+              </dt>
+              <dd>
+            A <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Func`3">Func&lt;T1, T2, TResult&gt;</a> which will be invoked, providing the values
+            <a href="../Cadenza/Tuple`2.html#P:Cadenza.Tuple`2.Item1">Tuple`2.Item1</a>, <a href="../Cadenza/Tuple`2.html#P:Cadenza.Tuple`2.Item2">Tuple`2.Item2</a>
+            to <i>func</i> and
+            returning the value returned by <i>func</i>.
+            </dd>
+            </dl>
+          </blockquote>
+          <h4 class="Subsection">
+            <a href="javascript:toggle_display('M:Cadenza.TupleCoda.Aggregate``3(Cadenza.Tuple{``0,``1},System.Func{``0,``1,``2}):Returns')">
+              <span id="M:Cadenza.TupleCoda.Aggregate``3(Cadenza.Tuple{``0,``1},System.Func{``0,``1,``2}):Returns:toggle">⊟</span> Returns</a>
+          </h4>
+          <blockquote class="SubsectionBox" id="M:Cadenza.TupleCoda.Aggregate``3(Cadenza.Tuple{``0,``1},System.Func{``0,``1,``2}):Returns">
+            The <i>TResult</i> returned by <i>func</i>.
+            </blockquote>
+          <h4 class="Subsection">
+            <a href="javascript:toggle_display('M:Cadenza.TupleCoda.Aggregate``3(Cadenza.Tuple{``0,``1},System.Func{``0,``1,``2}):Exceptions')">
+              <span id="M:Cadenza.TupleCoda.Aggregate``3(Cadenza.Tuple{``0,``1},System.Func{``0,``1,``2}):Exceptions:toggle">⊟</span> Exceptions</a>
+          </h4>
+          <blockquote class="SubsectionBox" id="M:Cadenza.TupleCoda.Aggregate``3(Cadenza.Tuple{``0,``1},System.Func{``0,``1,``2}):Exceptions">
+            <table class="TypeDocumentation">
+              <tr>
+                <th>Type</th>
+                <th>Reason</th>
+              </tr>
+              <tr valign="top">
+                <td>
+                  <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.ArgumentNullException">ArgumentNullException</a>
+                </td>
+                <td>
+                  <p>
+                    <i>self</i> is <tt>null</tt>.
+            </p>
+                  <p>-or-</p>
+                  <p>
+                    <i>func</i> is <tt>null</tt>.
+            </p>
+                </td>
+              </tr>
+            </table>
+          </blockquote>
+          <h4 class="Subsection">
+            <a href="javascript:toggle_display('M:Cadenza.TupleCoda.Aggregate``3(Cadenza.Tuple{``0,``1},System.Func{``0,``1,``2}):Remarks')">
+              <span id="M:Cadenza.TupleCoda.Aggregate``3(Cadenza.Tuple{``0,``1},System.Func{``0,``1,``2}):Remarks:toggle">⊟</span> Remarks</a>
+          </h4>
+          <blockquote class="SubsectionBox" id="M:Cadenza.TupleCoda.Aggregate``3(Cadenza.Tuple{``0,``1},System.Func{``0,``1,``2}):Remarks">
+            <h5 class="Subsection">Operation</h5>
+            Passes the values <a href="../Cadenza/Tuple`2.html#P:Cadenza.Tuple`2.Item1">Tuple`2.Item1</a>, <a href="../Cadenza/Tuple`2.html#P:Cadenza.Tuple`2.Item2">Tuple`2.Item2</a> to
+            <i>func</i>, returning the value produced by
+            <i>func</i>.
+            </blockquote>
+          <h4 class="Subsection">
+            <a href="javascript:toggle_display('M:Cadenza.TupleCoda.Aggregate``3(Cadenza.Tuple{``0,``1},System.Func{``0,``1,``2}):Version Information')">
+              <span id="M:Cadenza.TupleCoda.Aggregate``3(Cadenza.Tuple{``0,``1},System.Func{``0,``1,``2}):Version Information:toggle">⊟</span> Requirements</a>
+          </h4>
+          <blockquote class="SubsectionBox" id="M:Cadenza.TupleCoda.Aggregate``3(Cadenza.Tuple{``0,``1},System.Func{``0,``1,``2}):Version Information">
+            <b>Namespace: </b>Cadenza<br /><b>Assembly: </b>Cadenza (in Cadenza.dll)<br /><b>Assembly Versions: </b>0.1.0.0</blockquote>
+          <hr size="1" />
+        </blockquote>
+        <h3 id="M:Cadenza.TupleCoda.Aggregate``4(Cadenza.Tuple{``0,``1,``2},System.Func{``0,``1,``2,``3})">
+          <a href="javascript:toggle_display('M:Cadenza.TupleCoda.Aggregate``4(Cadenza.Tuple{``0,``1,``2},System.Func{``0,``1,``2,``3}):member')">
+            <span id="M:Cadenza.TupleCoda.Aggregate``4(Cadenza.Tuple{``0,``1,``2},System.Func{``0,``1,``2,``3}):member:toggle">⊟</span> Aggregate&lt;T1,T2,T3,TResult&gt; Generic Method</a>
+        </h3>
+        <blockquote id="M:Cadenza.TupleCoda.Aggregate``4(Cadenza.Tuple{``0,``1,``2},System.Func{``0,``1,``2,``3}):member">
+          <p class="Summary">
+            Converts the <a href="../Cadenza/Tuple`3.html">Cadenza.Tuple&lt;T1, T2, T3&gt;</a> into a <i>TResult</i>.
+            </p>
+          <div class="Signature">public static <i title="&#xA;            The return value type.&#xA;            ">TResult</i> <b>Aggregate&lt;T1, T2, T3, TResult&gt;</b> (<i>this</i> <a href="../Cadenza/Tuple`3.html">Tuple&lt;T1, T2, T3&gt;</a> self, <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Func`4">Func&lt;T1, T2, T3, TResult&gt;</a> func)</div>
+          <h4 class="Subsection">
+            <a href="javascript:toggle_display('M:Cadenza.TupleCoda.Aggregate``4(Cadenza.Tuple{``0,``1,``2},System.Func{``0,``1,``2,``3}):Type Parameters')">
+              <span id="M:Cadenza.TupleCoda.Aggregate``4(Cadenza.Tuple{``0,``1,``2},System.Func{``0,``1,``2,``3}):Type Parameters:toggle">⊟</span> Type Parameters</a>
+          </h4>
+          <blockquote class="SubsectionBox" id="M:Cadenza.TupleCoda.Aggregate``4(Cadenza.Tuple{``0,``1,``2},System.Func{``0,``1,``2,``3}):Type Parameters">
+            <dl>
+              <dt>
+                <i>T1</i>
+              </dt>
+              <dd>
+            The first value type.
+            </dd>
+              <dt>
+                <i>T2</i>
+              </dt>
+              <dd>
+            The second value type.
+            </dd>
+              <dt>
+                <i>T3</i>
+              </dt>
+              <dd>
+            The third value type.
+            </dd>
+              <dt>
+                <i>TResult</i>
+              </dt>
+              <dd>
+            The return value type.
+            </dd>
+            </dl>
+          </blockquote>
+          <h4 class="Subsection">
+            <a href="javascript:toggle_display('M:Cadenza.TupleCoda.Aggregate``4(Cadenza.Tuple{``0,``1,``2},System.Func{``0,``1,``2,``3}):Parameters')">
+              <span id="M:Cadenza.TupleCoda.Aggregate``4(Cadenza.Tuple{``0,``1,``2},System.Func{``0,``1,``2,``3}):Parameters:toggle">⊟</span> Parameters</a>
+          </h4>
+          <blockquote class="SubsectionBox" id="M:Cadenza.TupleCoda.Aggregate``4(Cadenza.Tuple{``0,``1,``2},System.Func{``0,``1,``2,``3}):Parameters">
+            <dl>
+              <dt>
+                <i>self</i>
+              </dt>
+              <dd>
+            A <a href="../Cadenza/Tuple`3.html">Cadenza.Tuple&lt;T1, T2, T3&gt;</a> to aggregate the values of.
+            </dd>
+              <dt>
+                <i>func</i>
+              </dt>
+              <dd>
+            A <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Func`4">Func&lt;T1, T2, T3, TResult&gt;</a> which will be invoked, providing the values
+            <a href="../Cadenza/Tuple`3.html#P:Cadenza.Tuple`3.Item1">Tuple`3.Item1</a>, <a href="../Cadenza/Tuple`3.html#P:Cadenza.Tuple`3.Item2">Tuple`3.Item2</a>, <a href="../Cadenza/Tuple`3.html#P:Cadenza.Tuple`3.Item3">Tuple`3.Item3</a>
+            to <i>func</i> and
+            returning the value returned by <i>func</i>.
+            </dd>
+            </dl>
+          </blockquote>
+          <h4 class="Subsection">
+            <a href="javascript:toggle_display('M:Cadenza.TupleCoda.Aggregate``4(Cadenza.Tuple{``0,``1,``2},System.Func{``0,``1,``2,``3}):Returns')">
+              <span id="M:Cadenza.TupleCoda.Aggregate``4(Cadenza.Tuple{``0,``1,``2},System.Func{``0,``1,``2,``3}):Returns:toggle">⊟</span> Returns</a>
+          </h4>
+          <blockquote class="SubsectionBox" id="M:Cadenza.TupleCoda.Aggregate``4(Cadenza.Tuple{``0,``1,``2},System.Func{``0,``1,``2,``3}):Returns">
+            The <i>TResult</i> returned by <i>func</i>.
+            </blockquote>
+          <h4 class="Subsection">
+            <a href="javascript:toggle_display('M:Cadenza.TupleCoda.Aggregate``4(Cadenza.Tuple{``0,``1,``2},System.Func{``0,``1,``2,``3}):Exceptions')">
+              <span id="M:Cadenza.TupleCoda.Aggregate``4(Cadenza.Tuple{``0,``1,``2},System.Func{``0,``1,``2,``3}):Exceptions:toggle">⊟</span> Exceptions</a>
+          </h4>
+          <blockquote class="SubsectionBox" id="M:Cadenza.TupleCoda.Aggregate``4(Cadenza.Tuple{``0,``1,``2},System.Func{``0,``1,``2,``3}):Exceptions">
+            <table class="TypeDocumentation">
+              <tr>
+                <th>Type</th>
+                <th>Reason</th>
+              </tr>
+              <tr valign="top">
+                <td>
+                  <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.ArgumentNullException">ArgumentNullException</a>
+                </td>
+                <td>
+                  <p>
+                    <i>self</i> is <tt>null</tt>.
+            </p>
+                  <p>-or-</p>
+                  <p>
+                    <i>func</i> is <tt>null</tt>.
+            </p>
+                </td>
+              </tr>
+            </table>
+          </blockquote>
+          <h4 class="Subsection">
+            <a href="javascript:toggle_display('M:Cadenza.TupleCoda.Aggregate``4(Cadenza.Tuple{``0,``1,``2},System.Func{``0,``1,``2,``3}):Remarks')">
+              <span id="M:Cadenza.TupleCoda.Aggregate``4(Cadenza.Tuple{``0,``1,``2},System.Func{``0,``1,``2,``3}):Remarks:toggle">⊟</span> Remarks</a>
+          </h4>
+          <blockquote class="SubsectionBox" id="M:Cadenza.TupleCoda.Aggregate``4(Cadenza.Tuple{``0,``1,``2},System.Func{``0,``1,``2,``3}):Remarks">
+            <h5 class="Subsection">Operation</h5>
+            Passes the values <a href="../Cadenza/Tuple`3.html#P:Cadenza.Tuple`3.Item1">Tuple`3.Item1</a>, <a href="../Cadenza/Tuple`3.html#P:Cadenza.Tuple`3.Item2">Tuple`3.Item2</a>, <a href="../Cadenza/Tuple`3.html#P:Cadenza.Tuple`3.Item3">Tuple`3.Item3</a> to
+            <i>func</i>, returning the value produced by
+            <i>func</i>.
+            </blockquote>
+          <h4 class="Subsection">
+            <a href="javascript:toggle_display('M:Cadenza.TupleCoda.Aggregate``4(Cadenza.Tuple{``0,``1,``2},System.Func{``0,``1,``2,``3}):Version Information')">
+              <span id="M:Cadenza.TupleCoda.Aggregate``4(Cadenza.Tuple{``0,``1,``2},System.Func{``0,``1,``2,``3}):Version Information:toggle">⊟</span> Requirements</a>
+          </h4>
+          <blockquote class="SubsectionBox" id="M:Cadenza.TupleCoda.Aggregate``4(Cadenza.Tuple{``0,``1,``2},System.Func{``0,``1,``2,``3}):Version Information">
+            <b>Namespace: </b>Cadenza<br /><b>Assembly: </b>Cadenza (in Cadenza.dll)<br /><b>Assembly Versions: </b>0.1.0.0</blockquote>
+          <hr size="1" />
+        </blockquote>
+        <h3 id="M:Cadenza.TupleCoda.Aggregate``5(Cadenza.Tuple{``0,``1,``2,``3},System.Func{``0,``1,``2,``3,``4})">
+          <a href="javascript:toggle_display('M:Cadenza.TupleCoda.Aggregate``5(Cadenza.Tuple{``0,``1,``2,``3},System.Func{``0,``1,``2,``3,``4}):member')">
+            <span id="M:Cadenza.TupleCoda.Aggregate``5(Cadenza.Tuple{``0,``1,``2,``3},System.Func{``0,``1,``2,``3,``4}):member:toggle">⊟</span> Aggregate&lt;T1,T2,T3,T4,TResult&gt; Generic Method</a>
+        </h3>
+        <blockquote id="M:Cadenza.TupleCoda.Aggregate``5(Cadenza.Tuple{``0,``1,``2,``3},System.Func{``0,``1,``2,``3,``4}):member">
+          <p class="Summary">
+            Converts the <a href="../Cadenza/Tuple`4.html">Cadenza.Tuple&lt;T1, T2, T3, T4&gt;</a> into a <i>TResult</i>.
+            </p>
+          <div class="Signature">public static <i title="&#xA;            The return value type.&#xA;            ">TResult</i> <b>Aggregate&lt;T1, T2, T3, T4, TResult&gt;</b> (<i>this</i> <a href="../Cadenza/Tuple`4.html">Tuple&lt;T1, T2, T3, T4&gt;</a> self, <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Func`5">Func&lt;T1, T2, T3, T4, TResult&gt;</a> func)</div>
+          <h4 class="Subsection">
+            <a href="javascript:toggle_display('M:Cadenza.TupleCoda.Aggregate``5(Cadenza.Tuple{``0,``1,``2,``3},System.Func{``0,``1,``2,``3,``4}):Type Parameters')">
+              <span id="M:Cadenza.TupleCoda.Aggregate``5(Cadenza.Tuple{``0,``1,``2,``3},System.Func{``0,``1,``2,``3,``4}):Type Parameters:toggle">⊟</span> Type Parameters</a>
+          </h4>
+          <blockquote class="SubsectionBox" id="M:Cadenza.TupleCoda.Aggregate``5(Cadenza.Tuple{``0,``1,``2,``3},System.Func{``0,``1,``2,``3,``4}):Type Parameters">
+            <dl>
+              <dt>
+                <i>T1</i>
+              </dt>
+              <dd>
+            The first value type.
+            </dd>
+              <dt>
+                <i>T2</i>
+              </dt>
+              <dd>
+            The second value type.
+            </dd>
+              <dt>
+                <i>T3</i>
+              </dt>
+              <dd>
+            The third value type.
+            </dd>
+              <dt>
+                <i>T4</i>
+              </dt>
+              <dd>
+            The fourth value type.
+            </dd>
+              <dt>
+                <i>TResult</i>
+              </dt>
+              <dd>
+            The return value type.
+            </dd>
+            </dl>
+          </blockquote>
+          <h4 class="Subsection">
+            <a href="javascript:toggle_display('M:Cadenza.TupleCoda.Aggregate``5(Cadenza.Tuple{``0,``1,``2,``3},System.Func{``0,``1,``2,``3,``4}):Parameters')">
+              <span id="M:Cadenza.TupleCoda.Aggregate``5(Cadenza.Tuple{``0,``1,``2,``3},System.Func{``0,``1,``2,``3,``4}):Parameters:toggle">⊟</span> Parameters</a>
+          </h4>
+          <blockquote class="SubsectionBox" id="M:Cadenza.TupleCoda.Aggregate``5(Cadenza.Tuple{``0,``1,``2,``3},System.Func{``0,``1,``2,``3,``4}):Parameters">
+            <dl>
+              <dt>
+                <i>self</i>
+              </dt>
+              <dd>
+            A <a href="../Cadenza/Tuple`4.html">Cadenza.Tuple&lt;T1, T2, T3, T4&gt;</a> to aggregate the values of.
+            </dd>
+              <dt>
+                <i>func</i>
+              </dt>
+              <dd>
+            A <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Func`5">Func&lt;T1, T2, T3, T4, TResult&gt;</a> which will be invoked, providing the values
+            <a href="../Cadenza/Tuple`4.html#P:Cadenza.Tuple`4.Item1">Tuple`4.Item1</a>, <a href="../Cadenza/Tuple`4.html#P:Cadenza.Tuple`4.Item2">Tuple`4.Item2</a>, <a href="../Cadenza/Tuple`4.html#P:Cadenza.Tuple`4.Item3">Tuple`4.Item3</a>, <a href="../Cadenza/Tuple`4.html#P:Cadenza.Tuple`4.Item4">Tuple`4.Item4</a>
+            to <i>func</i> and
+            returning the value returned by <i>func</i>.
+            </dd>
+            </dl>
+          </blockquote>
+          <h4 class="Subsection">
+            <a href="javascript:toggle_display('M:Cadenza.TupleCoda.Aggregate``5(Cadenza.Tuple{``0,``1,``2,``3},System.Func{``0,``1,``2,``3,``4}):Returns')">
+              <span id="M:Cadenza.TupleCoda.Aggregate``5(Cadenza.Tuple{``0,``1,``2,``3},System.Func{``0,``1,``2,``3,``4}):Returns:toggle">⊟</span> Returns</a>
+          </h4>
+          <blockquote class="SubsectionBox" id="M:Cadenza.TupleCoda.Aggregate``5(Cadenza.Tuple{``0,``1,``2,``3},System.Func{``0,``1,``2,``3,``4}):Returns">
+            The <i>TResult</i> returned by <i>func</i>.
+            </blockquote>
+          <h4 class="Subsection">
+            <a href="javascript:toggle_display('M:Cadenza.TupleCoda.Aggregate``5(Cadenza.Tuple{``0,``1,``2,``3},System.Func{``0,``1,``2,``3,``4}):Exceptions')">
+              <span id="M:Cadenza.TupleCoda.Aggregate``5(Cadenza.Tuple{``0,``1,``2,``3},System.Func{``0,``1,``2,``3,``4}):Exceptions:toggle">⊟</span> Exceptions</a>
+          </h4>
+          <blockquote class="SubsectionBox" id="M:Cadenza.TupleCoda.Aggregate``5(Cadenza.Tuple{``0,``1,``2,``3},System.Func{``0,``1,``2,``3,``4}):Exceptions">
+            <table class="TypeDocumentation">
+              <tr>
+                <th>Type</th>
+                <th>Reason</th>
+              </tr>
+              <tr valign="top">
+                <td>
+                  <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.ArgumentNullException">ArgumentNullException</a>
+                </td>
+                <td>
+                  <p>
+                    <i>self</i> is <tt>null</tt>.
+            </p>
+                  <p>-or-</p>
+                  <p>
+                    <i>func</i> is <tt>null</tt>.
+            </p>
+                </td>
+              </tr>
+            </table>
+          </blockquote>
+          <h4 class="Subsection">
+            <a href="javascript:toggle_display('M:Cadenza.TupleCoda.Aggregate``5(Cadenza.Tuple{``0,``1,``2,``3},System.Func{``0,``1,``2,``3,``4}):Remarks')">
+              <span id="M:Cadenza.TupleCoda.Aggregate``5(Cadenza.Tuple{``0,``1,``2,``3},System.Func{``0,``1,``2,``3,``4}):Remarks:toggle">⊟</span> Remarks</a>
+          </h4>
+          <blockquote class="SubsectionBox" id="M:Cadenza.TupleCoda.Aggregate``5(Cadenza.Tuple{``0,``1,``2,``3},System.Func{``0,``1,``2,``3,``4}):Remarks">
+            <h5 class="Subsection">Operation</h5>
+            Passes the values <a href="../Cadenza/Tuple`4.html#P:Cadenza.Tuple`4.Item1">Tuple`4.Item1</a>, <a href="../Cadenza/Tuple`4.html#P:Cadenza.Tuple`4.Item2">Tuple`4.Item2</a>, <a href="../Cadenza/Tuple`4.html#P:Cadenza.Tuple`4.Item3">Tuple`4.Item3</a>, <a href="../Cadenza/Tuple`4.html#P:Cadenza.Tuple`4.Item4">Tuple`4.Item4</a> to
+            <i>func</i>, returning the value produced by
+            <i>func</i>.
+            </blockquote>
+          <h4 class="Subsection">
+            <a href="javascript:toggle_display('M:Cadenza.TupleCoda.Aggregate``5(Cadenza.Tuple{``0,``1,``2,``3},System.Func{``0,``1,``2,``3,``4}):Version Information')">
+              <span id="M:Cadenza.TupleCoda.Aggregate``5(Cadenza.Tuple{``0,``1,``2,``3},System.Func{``0,``1,``2,``3,``4}):Version Information:toggle">⊟</span> Requirements</a>
+          </h4>
+          <blockquote class="SubsectionBox" id="M:Cadenza.TupleCoda.Aggregate``5(Cadenza.Tuple{``0,``1,``2,``3},System.Func{``0,``1,``2,``3,``4}):Version Information">
+            <b>Namespace: </b>Cadenza<br /><b>Assembly: </b>Cadenza (in Cadenza.dll)<br /><b>Assembly Versions: </b>0.1.0.0</blockquote>
+          <hr size="1" />
+        </blockquote>
+        <h3 id="M:Cadenza.TupleCoda.Match``2(Cadenza.Tuple{``0},System.Func{``0,Cadenza.Maybe{``1}}[])">
+          <a href="javascript:toggle_display('M:Cadenza.TupleCoda.Match``2(Cadenza.Tuple{``0},System.Func{``0,Cadenza.Maybe{``1}}[]):member')">
+            <span id="M:Cadenza.TupleCoda.Match``2(Cadenza.Tuple{``0},System.Func{``0,Cadenza.Maybe{``1}}[]):member:toggle">⊟</span> Match&lt;T,TResult&gt; Generic Method</a>
+        </h3>
+        <blockquote id="M:Cadenza.TupleCoda.Match``2(Cadenza.Tuple{``0},System.Func{``0,Cadenza.Maybe{``1}}[]):member">
+          <p class="Summary">
+          Converts the current <a href="../Cadenza/Tuple`1.html">Cadenza.Tuple&lt;T&gt;</a> instance into a <i>TResult</i>.
+        </p>
+          <div class="Signature">public static <i title="&#xA;          The return value type.&#xA;        ">TResult</i> <b>Match&lt;T, TResult&gt;</b> (<i>this</i> <a href="../Cadenza/Tuple`1.html">Tuple&lt;T&gt;</a> self, <b>params</b> <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Func`2">Func&lt;T, Maybe&lt;TResult&gt;&gt;</a>[] matchers)</div>
+          <h4 class="Subsection">
+            <a href="javascript:toggle_display('M:Cadenza.TupleCoda.Match``2(Cadenza.Tuple{``0},System.Func{``0,Cadenza.Maybe{``1}}[]):Type Parameters')">
+              <span id="M:Cadenza.TupleCoda.Match``2(Cadenza.Tuple{``0},System.Func{``0,Cadenza.Maybe{``1}}[]):Type Parameters:toggle">⊟</span> Type Parameters</a>
+          </h4>
+          <blockquote class="SubsectionBox" id="M:Cadenza.TupleCoda.Match``2(Cadenza.Tuple{``0},System.Func{``0,Cadenza.Maybe{``1}}[]):Type Parameters">
+            <dl>
+              <dt>
+                <i>T</i>
+              </dt>
+              <dd>
+          The first value type.
+        </dd>
+              <dt>
+                <i>TResult</i>
+              </dt>
+              <dd>
+          The return value type.
+        </dd>
+            </dl>
+          </blockquote>
+          <h4 class="Subsection">
+            <a href="javascript:toggle_display('M:Cadenza.TupleCoda.Match``2(Cadenza.Tuple{``0},System.Func{``0,Cadenza.Maybe{``1}}[]):Parameters')">
+              <span id="M:Cadenza.TupleCoda.Match``2(Cadenza.Tuple{``0},System.Func{``0,Cadenza.Maybe{``1}}[]):Parameters:toggle">⊟</span> Parameters</a>
+          </h4>
+          <blockquote class="SubsectionBox" id="M:Cadenza.TupleCoda.Match``2(Cadenza.Tuple{``0},System.Func{``0,Cadenza.Maybe{``1}}[]):Parameters">
+            <dl>
+              <dt>
+                <i>self</i>
+              </dt>
+              <dd>
+          A <a href="../Cadenza/Tuple`1.html">Cadenza.Tuple&lt;T&gt;</a> to match against.
+        </dd>
+              <dt>
+                <i>matchers</i>
+              </dt>
+              <dd>
+          A <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Func`2">Func&lt;T, Cadenza.Maybe&lt;TResult&gt;&gt;</a>
+          array containing the conversion routines to use to convert 
+          the current <a href="../Cadenza/Tuple`1.html">Cadenza.Tuple&lt;T&gt;</a> instance into a 
+          <i>TResult</i> value.
+        </dd>
+            </dl>
+          </blockquote>
+          <h4 class="Subsection">
+            <a href="javascript:toggle_display('M:Cadenza.TupleCoda.Match``2(Cadenza.Tuple{``0},System.Func{``0,Cadenza.Maybe{``1}}[]):Returns')">
+              <span id="M:Cadenza.TupleCoda.Match``2(Cadenza.Tuple{``0},System.Func{``0,Cadenza.Maybe{``1}}[]):Returns:toggle">⊟</span> Returns</a>
+          </h4>
+          <blockquote class="SubsectionBox" id="M:Cadenza.TupleCoda.Match``2(Cadenza.Tuple{``0},System.Func{``0,Cadenza.Maybe{``1}}[]):Returns">
+          The <i>TResult</i> returned by one of the <i>matchers</i>.
+        </blockquote>
+          <h4 class="Subsection">
+            <a href="javascript:toggle_display('M:Cadenza.TupleCoda.Match``2(Cadenza.Tuple{``0},System.Func{``0,Cadenza.Maybe{``1}}[]):Exceptions')">
+              <span id="M:Cadenza.TupleCoda.Match``2(Cadenza.Tuple{``0},System.Func{``0,Cadenza.Maybe{``1}}[]):Exceptions:toggle">⊟</span> Exceptions</a>
+          </h4>
+          <blockquote class="SubsectionBox" id="M:Cadenza.TupleCoda.Match``2(Cadenza.Tuple{``0},System.Func{``0,Cadenza.Maybe{``1}}[]):Exceptions">
+            <table class="TypeDocumentation">
+              <tr>
+                <th>Type</th>
+                <th>Reason</th>
+              </tr>
+              <tr valign="top">
+                <td>
+                  <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.ArgumentNullException">ArgumentNullException</a>
+                </td>
+                <td>
+                  <p>
+                    <i>self</i> is <tt>null</tt>.
+          </p>
+                  <p>-or-</p>
+                  <p>
+                    <i>matchers</i> is <tt>null</tt>.
+          </p>
+                </td>
+              </tr>
+              <tr valign="top">
+                <td>
+                  <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.InvalidOperationException">InvalidOperationException</a>
+                </td>
+                <td>
+          None of the 
+          <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Func`2">Func&lt;TSource, Cadenza.Maybe&lt;TResult&gt;&gt;</a>
+          delegates within <i>matchers</i> returned a 
+          <a href="../Cadenza/Maybe`1.html">Cadenza.Maybe&lt;TResult&gt;</a> instance where
+          <a href="../Cadenza/Maybe`1.html#P:Cadenza.Maybe`1.HasValue">Maybe&lt;TResult&gt;.HasValue</a> was
+          <tt>true</tt>.
+        </td>
+              </tr>
+            </table>
+          </blockquote>
+          <h4 class="Subsection">
+            <a href="javascript:toggle_display('M:Cadenza.TupleCoda.Match``2(Cadenza.Tuple{``0},System.Func{``0,Cadenza.Maybe{``1}}[]):Remarks')">
+              <span id="M:Cadenza.TupleCoda.Match``2(Cadenza.Tuple{``0},System.Func{``0,Cadenza.Maybe{``1}}[]):Remarks:toggle">⊟</span> Remarks</a>
+          </h4>
+          <blockquote class="SubsectionBox" id="M:Cadenza.TupleCoda.Match``2(Cadenza.Tuple{``0},System.Func{``0,Cadenza.Maybe{``1}}[]):Remarks">
+            <h5 class="Subsection">Operation</h5>
+            <p>
+             The current <a href="../Cadenza/Tuple`1.html">Cadenza.Tuple&lt;T&gt;</a> instance is converted into a 
+             <i>TResult</i> instance by trying each
+             <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Func`2">Func&lt;T, Cadenza.Maybe&lt;TResult&gt;&gt;</a>
+             within <i>matchers</i>.
+            </p>
+            <p>
+             This method returns 
+             <a href="../Cadenza/Maybe`1.html#P:Cadenza.Maybe`1.Value">Maybe&lt;TResult&gt;.Value</a> 
+             for the first delegate to return a
+             <a href="../Cadenza/Maybe`1.html">Cadenza.Maybe&lt;TResult&gt;</a> instance
+             where <a href="../Cadenza/Maybe`1.html#P:Cadenza.Maybe`1.HasValue">Maybe&lt;TResult&gt;.HasValue</a>
+             is <tt>true</tt>.
+            </p>
+            <p>
+             If no <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Func`2">Func&lt;T, Cadenza.Maybe&lt;TResult&gt;&gt;</a>
+             returns a 
+             <a href="../Cadenza/Maybe`1.html">Cadenza.Maybe&lt;TResult&gt;</a> instance
+             where <a href="../Cadenza/Maybe`1.html#P:Cadenza.Maybe`1.HasValue">Maybe&lt;TResult&gt;.HasValue</a>
+             is <tt>true</tt>, then an
+             <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.InvalidOperationException">InvalidOperationException</a> is thrown.
+            </p>
+            <table class="CodeExampleTable">
+              <tr>
+                <td>
+                  <b>
+                    <font size="-1">C# Example</font>
+                  </b>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <pre class="code-csharp">
+          var    a = Tuple.Create (1, 2);
+          string b = a.Match (
+              (t, v) =&gt; Match.When ( t + v == 3, "foo!"),
+              (t, v) =&gt; "*default*".Just ());
+          Console.WriteLine (b);  // prints "foo!"</pre>
+                </td>
+              </tr>
+            </table>
+          </blockquote>
+          <h4 class="Subsection">
+            <a href="javascript:toggle_display('M:Cadenza.TupleCoda.Match``2(Cadenza.Tuple{``0},System.Func{``0,Cadenza.Maybe{``1}}[]):Version Information')">
+              <span id="M:Cadenza.TupleCoda.Match``2(Cadenza.Tuple{``0},System.Func{``0,Cadenza.Maybe{``1}}[]):Version Information:toggle">⊟</span> Requirements</a>
+          </h4>
+          <blockquote class="SubsectionBox" id="M:Cadenza.TupleCoda.Match``2(Cadenza.Tuple{``0},System.Func{``0,Cadenza.Maybe{``1}}[]):Version Information">
+            <b>Namespace: </b>Cadenza<br /><b>Assembly: </b>Cadenza (in Cadenza.dll)<br /><b>Assembly Versions: </b>0.1.0.0</blockquote>
+          <hr size="1" />
+        </blockquote>
+        <h3 id="M:Cadenza.TupleCoda.Match``3(Cadenza.Tuple{``0,``1},System.Func{``0,``1,Cadenza.Maybe{``2}}[])">
+          <a href="javascript:toggle_display('M:Cadenza.TupleCoda.Match``3(Cadenza.Tuple{``0,``1},System.Func{``0,``1,Cadenza.Maybe{``2}}[]):member')">
+            <span id="M:Cadenza.TupleCoda.Match``3(Cadenza.Tuple{``0,``1},System.Func{``0,``1,Cadenza.Maybe{``2}}[]):member:toggle">⊟</span> Match&lt;T1,T2,TResult&gt; Generic Method</a>
+        </h3>
+        <blockquote id="M:Cadenza.TupleCoda.Match``3(Cadenza.Tuple{``0,``1},System.Func{``0,``1,Cadenza.Maybe{``2}}[]):member">
+          <p class="Summary">
+          Converts the current <a href="../Cadenza/Tuple`2.html">Cadenza.Tuple&lt;T1, T2&gt;</a> instance into a <i>TResult</i>.
+        </p>
+          <div class="Signature">public static <i title="&#xA;          The return value type.&#xA;        ">TResult</i> <b>Match&lt;T1, T2, TResult&gt;</b> (<i>this</i> <a href="../Cadenza/Tuple`2.html">Tuple&lt;T1, T2&gt;</a> self, <b>params</b> <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Func`3">Func&lt;T1, T2, Maybe&lt;TResult&gt;&gt;</a>[] matchers)</div>
+          <h4 class="Subsection">
+            <a href="javascript:toggle_display('M:Cadenza.TupleCoda.Match``3(Cadenza.Tuple{``0,``1},System.Func{``0,``1,Cadenza.Maybe{``2}}[]):Type Parameters')">
+              <span id="M:Cadenza.TupleCoda.Match``3(Cadenza.Tuple{``0,``1},System.Func{``0,``1,Cadenza.Maybe{``2}}[]):Type Parameters:toggle">⊟</span> Type Parameters</a>
+          </h4>
+          <blockquote class="SubsectionBox" id="M:Cadenza.TupleCoda.Match``3(Cadenza.Tuple{``0,``1},System.Func{``0,``1,Cadenza.Maybe{``2}}[]):Type Parameters">
+            <dl>
+              <dt>
+                <i>T1</i>
+              </dt>
+              <dd>
+          The first value type.
+        </dd>
+              <dt>
+                <i>T2</i>
+              </dt>
+              <dd>
+          The second value type.
+        </dd>
+              <dt>
+                <i>TResult</i>
+              </dt>
+              <dd>
+          The return value type.
+        </dd>
+            </dl>
+          </blockquote>
+          <h4 class="Subsection">
+            <a href="javascript:toggle_display('M:Cadenza.TupleCoda.Match``3(Cadenza.Tuple{``0,``1},System.Func{``0,``1,Cadenza.Maybe{``2}}[]):Parameters')">
+              <span id="M:Cadenza.TupleCoda.Match``3(Cadenza.Tuple{``0,``1},System.Func{``0,``1,Cadenza.Maybe{``2}}[]):Parameters:toggle">⊟</span> Parameters</a>
+          </h4>
+          <blockquote class="SubsectionBox" id="M:Cadenza.TupleCoda.Match``3(Cadenza.Tuple{``0,``1},System.Func{``0,``1,Cadenza.Maybe{``2}}[]):Parameters">
+            <dl>
+              <dt>
+                <i>self</i>
+              </dt>
+              <dd>
+          A <a href="../Cadenza/Tuple`2.html">Cadenza.Tuple&lt;T1, T2&gt;</a> to match against.
+        </dd>
+              <dt>
+                <i>matchers</i>
+              </dt>
+              <dd>
+          A <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Func`3">Func&lt;T1, T2, Cadenza.Maybe&lt;TResult&gt;&gt;</a>
+          array containing the conversion routines to use to convert 
+          the current <a href="../Cadenza/Tuple`2.html">Cadenza.Tuple&lt;T1, T2&gt;</a> instance into a 
+          <i>TResult</i> value.
+        </dd>
+            </dl>
+          </blockquote>
+          <h4 class="Subsection">
+            <a href="javascript:toggle_display('M:Cadenza.TupleCoda.Match``3(Cadenza.Tuple{``0,``1},System.Func{``0,``1,Cadenza.Maybe{``2}}[]):Returns')">
+              <span id="M:Cadenza.TupleCoda.Match``3(Cadenza.Tuple{``0,``1},System.Func{``0,``1,Cadenza.Maybe{``2}}[]):Returns:toggle">⊟</span> Returns</a>
+          </h4>
+          <blockquote class="SubsectionBox" id="M:Cadenza.TupleCoda.Match``3(Cadenza.Tuple{``0,``1},System.Func{``0,``1,Cadenza.Maybe{``2}}[]):Returns">
+          The <i>TResult</i> returned by one of the <i>matchers</i>.
+        </blockquote>
+          <h4 class="Subsection">
+            <a href="javascript:toggle_display('M:Cadenza.TupleCoda.Match``3(Cadenza.Tuple{``0,``1},System.Func{``0,``1,Cadenza.Maybe{``2}}[]):Exceptions')">
+              <span id="M:Cadenza.TupleCoda.Match``3(Cadenza.Tuple{``0,``1},System.Func{``0,``1,Cadenza.Maybe{``2}}[]):Exceptions:toggle">⊟</span> Exceptions</a>
+          </h4>
+          <blockquote class="SubsectionBox" id="M:Cadenza.TupleCoda.Match``3(Cadenza.Tuple{``0,``1},System.Func{``0,``1,Cadenza.Maybe{``2}}[]):Exceptions">
+            <table class="TypeDocumentation">
+              <tr>
+                <th>Type</th>
+                <th>Reason</th>
+              </tr>
+              <tr valign="top">
+                <td>
+                  <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.ArgumentNullException">ArgumentNullException</a>
+                </td>
+                <td>
+                  <p>
+                    <i>self</i> is <tt>null</tt>.
+          </p>
+                  <p>-or-</p>
+                  <p>
+                    <i>matchers</i> is <tt>null</tt>.
+          </p>
+                </td>
+              </tr>
+              <tr valign="top">
+                <td>
+                  <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.InvalidOperationException">InvalidOperationException</a>
+                </td>
+                <td>
+          None of the 
+          <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Func`2">Func&lt;TSource, Cadenza.Maybe&lt;TResult&gt;&gt;</a>
+          delegates within <i>matchers</i> returned a 
+          <a href="../Cadenza/Maybe`1.html">Cadenza.Maybe&lt;TResult&gt;</a> instance where
+          <a href="../Cadenza/Maybe`1.html#P:Cadenza.Maybe`1.HasValue">Maybe&lt;TResult&gt;.HasValue</a> was
+          <tt>true</tt>.
+        </td>
+              </tr>
+            </table>
+          </blockquote>
+          <h4 class="Subsection">
+            <a href="javascript:toggle_display('M:Cadenza.TupleCoda.Match``3(Cadenza.Tuple{``0,``1},System.Func{``0,``1,Cadenza.Maybe{``2}}[]):Remarks')">
+              <span id="M:Cadenza.TupleCoda.Match``3(Cadenza.Tuple{``0,``1},System.Func{``0,``1,Cadenza.Maybe{``2}}[]):Remarks:toggle">⊟</span> Remarks</a>
+          </h4>
+          <blockquote class="SubsectionBox" id="M:Cadenza.TupleCoda.Match``3(Cadenza.Tuple{``0,``1},System.Func{``0,``1,Cadenza.Maybe{``2}}[]):Remarks">
+            <h5 class="Subsection">Operation</h5>
+            <p>
+             The current <a href="../Cadenza/Tuple`2.html">Cadenza.Tuple&lt;T1, T2&gt;</a> instance is converted into a 
+             <i>TResult</i> instance by trying each
+             <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Func`3">Func&lt;T1, T2, Cadenza.Maybe&lt;TResult&gt;&gt;</a>
+             within <i>matchers</i>.
+            </p>
+            <p>
+             This method returns 
+             <a href="../Cadenza/Maybe`1.html#P:Cadenza.Maybe`1.Value">Maybe&lt;TResult&gt;.Value</a> 
+             for the first delegate to return a
+             <a href="../Cadenza/Maybe`1.html">Cadenza.Maybe&lt;TResult&gt;</a> instance
+             where <a href="../Cadenza/Maybe`1.html#P:Cadenza.Maybe`1.HasValue">Maybe&lt;TResult&gt;.HasValue</a>
+             is <tt>true</tt>.
+            </p>
+            <p>
+             If no <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Func`3">Func&lt;T1, T2, Cadenza.Maybe&lt;TResult&gt;&gt;</a>
+             returns a 
+             <a href="../Cadenza/Maybe`1.html">Cadenza.Maybe&lt;TResult&gt;</a> instance
+             where <a href="../Cadenza/Maybe`1.html#P:Cadenza.Maybe`1.HasValue">Maybe&lt;TResult&gt;.HasValue</a>
+             is <tt>true</tt>, then an
+             <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.InvalidOperationException">InvalidOperationException</a> is thrown.
+            </p>
+            <table class="CodeExampleTable">
+              <tr>
+                <td>
+                  <b>
+                    <font size="-1">C# Example</font>
+                  </b>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <pre class="code-csharp">
+          var    a = Tuple.Create (1, 2);
+          string b = a.Match (
+              (t, v) =&gt; Match.When ( t + v == 3, "foo!"),
+              (t, v) =&gt; "*default*".Just ());
+          Console.WriteLine (b);  // prints "foo!"</pre>
+                </td>
+              </tr>
+            </table>
+          </blockquote>
+          <h4 class="Subsection">
+            <a href="javascript:toggle_display('M:Cadenza.TupleCoda.Match``3(Cadenza.Tuple{``0,``1},System.Func{``0,``1,Cadenza.Maybe{``2}}[]):Version Information')">
+              <span id="M:Cadenza.TupleCoda.Match``3(Cadenza.Tuple{``0,``1},System.Func{``0,``1,Cadenza.Maybe{``2}}[]):Version Information:toggle">⊟</span> Requirements</a>
+          </h4>
+          <blockquote class="SubsectionBox" id="M:Cadenza.TupleCoda.Match``3(Cadenza.Tuple{``0,``1},System.Func{``0,``1,Cadenza.Maybe{``2}}[]):Version Information">
+            <b>Namespace: </b>Cadenza<br /><b>Assembly: </b>Cadenza (in Cadenza.dll)<br /><b>Assembly Versions: </b>0.1.0.0</blockquote>
+          <hr size="1" />
+        </blockquote>
+        <h3 id="M:Cadenza.TupleCoda.Match``4(Cadenza.Tuple{``0,``1,``2},System.Func{``0,``1,``2,Cadenza.Maybe{``3}}[])">
+          <a href="javascript:toggle_display('M:Cadenza.TupleCoda.Match``4(Cadenza.Tuple{``0,``1,``2},System.Func{``0,``1,``2,Cadenza.Maybe{``3}}[]):member')">
+            <span id="M:Cadenza.TupleCoda.Match``4(Cadenza.Tuple{``0,``1,``2},System.Func{``0,``1,``2,Cadenza.Maybe{``3}}[]):member:toggle">⊟</span> Match&lt;T1,T2,T3,TResult&gt; Generic Method</a>
+        </h3>
+        <blockquote id="M:Cadenza.TupleCoda.Match``4(Cadenza.Tuple{``0,``1,``2},System.Func{``0,``1,``2,Cadenza.Maybe{``3}}[]):member">
+          <p class="Summary">
+          Converts the current <a href="../Cadenza/Tuple`2.html">Cadenza.Tuple&lt;T1, T2&gt;</a> instance into a <i>TResult</i>.
+        </p>
+          <div class="Signature">public static <i title="&#xA;          The return value type.&#xA;        ">TResult</i> <b>Match&lt;T1, T2, T3, TResult&gt;</b> (<i>this</i> <a href="../Cadenza/Tuple`3.html">Tuple&lt;T1, T2, T3&gt;</a> self, <b>params</b> <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Func`4">Func&lt;T1, T2, T3, Maybe&lt;TResult&gt;&gt;</a>[] matchers)</div>
+          <h4 class="Subsection">
+            <a href="javascript:toggle_display('M:Cadenza.TupleCoda.Match``4(Cadenza.Tuple{``0,``1,``2},System.Func{``0,``1,``2,Cadenza.Maybe{``3}}[]):Type Parameters')">
+              <span id="M:Cadenza.TupleCoda.Match``4(Cadenza.Tuple{``0,``1,``2},System.Func{``0,``1,``2,Cadenza.Maybe{``3}}[]):Type Parameters:toggle">⊟</span> Type Parameters</a>
+          </h4>
+          <blockquote class="SubsectionBox" id="M:Cadenza.TupleCoda.Match``4(Cadenza.Tuple{``0,``1,``2},System.Func{``0,``1,``2,Cadenza.Maybe{``3}}[]):Type Parameters">
+            <dl>
+              <dt>
+                <i>T1</i>
+              </dt>
+              <dd>
+          The first value type.
+        </dd>
+              <dt>
+                <i>T2</i>
+              </dt>
+              <dd>
+          The second value type.
+        </dd>
+              <dt>
+                <i>T3</i>
+              </dt>
+              <dd>
+                <span class="NotEntered">Documentation for this section has not yet been entered.</span>
+              </dd>
+              <dt>
+                <i>TResult</i>
+              </dt>
+              <dd>
+          The return value type.
+        </dd>
+            </dl>
+          </blockquote>
+          <h4 class="Subsection">
+            <a href="javascript:toggle_display('M:Cadenza.TupleCoda.Match``4(Cadenza.Tuple{``0,``1,``2},System.Func{``0,``1,``2,Cadenza.Maybe{``3}}[]):Parameters')">
+              <span id="M:Cadenza.TupleCoda.Match``4(Cadenza.Tuple{``0,``1,``2},System.Func{``0,``1,``2,Cadenza.Maybe{``3}}[]):Parameters:toggle">⊟</span> Parameters</a>
+          </h4>
+          <blockquote class="SubsectionBox" id="M:Cadenza.TupleCoda.Match``4(Cadenza.Tuple{``0,``1,``2},System.Func{``0,``1,``2,Cadenza.Maybe{``3}}[]):Parameters">
+            <dl>
+              <dt>
+                <i>self</i>
+              </dt>
+              <dd>
+          A <a href="../Cadenza/Tuple`2.html">Cadenza.Tuple&lt;T1, T2&gt;</a> to match against.
+        </dd>
+              <dt>
+                <i>matchers</i>
+              </dt>
+              <dd>
+          A <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Func`3">Func&lt;T1, T2, Cadenza.Maybe&lt;TResult&gt;&gt;</a>
+          array containing the conversion routines to use to convert 
+          the current <a href="../Cadenza/Tuple`2.html">Cadenza.Tuple&lt;T1, T2&gt;</a> instance into a 
+          <i>TResult</i> value.
+        </dd>
+            </dl>
+          </blockquote>
+          <h4 class="Subsection">
+            <a href="javascript:toggle_display('M:Cadenza.TupleCoda.Match``4(Cadenza.Tuple{``0,``1,``2},System.Func{``0,``1,``2,Cadenza.Maybe{``3}}[]):Returns')">
+              <span id="M:Cadenza.TupleCoda.Match``4(Cadenza.Tuple{``0,``1,``2},System.Func{``0,``1,``2,Cadenza.Maybe{``3}}[]):Returns:toggle">⊟</span> Returns</a>
+          </h4>
+          <blockquote class="SubsectionBox" id="M:Cadenza.TupleCoda.Match``4(Cadenza.Tuple{``0,``1,``2},System.Func{``0,``1,``2,Cadenza.Maybe{``3}}[]):Returns">
+          The <i>TResult</i> returned by one of the <i>matchers</i>.
+        </blockquote>
+          <h4 class="Subsection">
+            <a href="javascript:toggle_display('M:Cadenza.TupleCoda.Match``4(Cadenza.Tuple{``0,``1,``2},System.Func{``0,``1,``2,Cadenza.Maybe{``3}}[]):Exceptions')">
+              <span id="M:Cadenza.TupleCoda.Match``4(Cadenza.Tuple{``0,``1,``2},System.Func{``0,``1,``2,Cadenza.Maybe{``3}}[]):Exceptions:toggle">⊟</span> Exceptions</a>
+          </h4>
+          <blockquote class="SubsectionBox" id="M:Cadenza.TupleCoda.Match``4(Cadenza.Tuple{``0,``1,``2},System.Func{``0,``1,``2,Cadenza.Maybe{``3}}[]):Exceptions">
+            <table class="TypeDocumentation">
+              <tr>
+                <th>Type</th>
+                <th>Reason</th>
+              </tr>
+              <tr valign="top">
+                <td>
+                  <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.ArgumentNullException">ArgumentNullException</a>
+                </td>
+                <td>
+                  <p>
+                    <i>self</i> is <tt>null</tt>.
+          </p>
+                  <p>-or-</p>
+                  <p>
+                    <i>matchers</i> is <tt>null</tt>.
+          </p>
+                </td>
+              </tr>
+              <tr valign="top">
+                <td>
+                  <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.InvalidOperationException">InvalidOperationException</a>
+                </td>
+                <td>
+          None of the 
+          <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Func`2">Func&lt;TSource, Cadenza.Maybe&lt;TResult&gt;&gt;</a>
+          delegates within <i>matchers</i> returned a 
+          <a href="../Cadenza/Maybe`1.html">Cadenza.Maybe&lt;TResult&gt;</a> instance where
+          <a href="../Cadenza/Maybe`1.html#P:Cadenza.Maybe`1.HasValue">Maybe&lt;TResult&gt;.HasValue</a> was
+          <tt>true</tt>.
+        </td>
+              </tr>
+            </table>
+          </blockquote>
+          <h4 class="Subsection">
+            <a href="javascript:toggle_display('M:Cadenza.TupleCoda.Match``4(Cadenza.Tuple{``0,``1,``2},System.Func{``0,``1,``2,Cadenza.Maybe{``3}}[]):Remarks')">
+              <span id="M:Cadenza.TupleCoda.Match``4(Cadenza.Tuple{``0,``1,``2},System.Func{``0,``1,``2,Cadenza.Maybe{``3}}[]):Remarks:toggle">⊟</span> Remarks</a>
+          </h4>
+          <blockquote class="SubsectionBox" id="M:Cadenza.TupleCoda.Match``4(Cadenza.Tuple{``0,``1,``2},System.Func{``0,``1,``2,Cadenza.Maybe{``3}}[]):Remarks">
+            <h5 class="Subsection">Operation</h5>
+            <p>
+             The current <a href="../Cadenza/Tuple`2.html">Cadenza.Tuple&lt;T1, T2&gt;</a> instance is converted into a 
+             <i>TResult</i> instance by trying each
+             <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Func`3">Func&lt;T1, T2, Cadenza.Maybe&lt;TResult&gt;&gt;</a>
+             within <i>matchers</i>.
+            </p>
+            <p>
+             This method returns 
+             <a href="../Cadenza/Maybe`1.html#P:Cadenza.Maybe`1.Value">Maybe&lt;TResult&gt;.Value</a> 
+             for the first delegate to return a
+             <a href="../Cadenza/Maybe`1.html">Cadenza.Maybe&lt;TResult&gt;</a> instance
+             where <a href="../Cadenza/Maybe`1.html#P:Cadenza.Maybe`1.HasValue">Maybe&lt;TResult&gt;.HasValue</a>
+             is <tt>true</tt>.
+            </p>
+            <p>
+             If no <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Func`3">Func&lt;T1, T2, Cadenza.Maybe&lt;TResult&gt;&gt;</a>
+             returns a 
+             <a href="../Cadenza/Maybe`1.html">Cadenza.Maybe&lt;TResult&gt;</a> instance
+             where <a href="../Cadenza/Maybe`1.html#P:Cadenza.Maybe`1.HasValue">Maybe&lt;TResult&gt;.HasValue</a>
+             is <tt>true</tt>, then an
+             <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.InvalidOperationException">InvalidOperationException</a> is thrown.
+            </p>
+            <table class="CodeExampleTable">
+              <tr>
+                <td>
+                  <b>
+                    <font size="-1">C# Example</font>
+                  </b>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <pre class="code-csharp">
+          var    a = Tuple.Create (1, 2);
+          string b = a.Match (
+              (t, v) =&gt; Match.When ( t + v == 3, "foo!"),
+              (t, v) =&gt; "*default*".Just ());
+          Console.WriteLine (b);  // prints "foo!"</pre>
+                </td>
+              </tr>
+            </table>
+          </blockquote>
+          <h4 class="Subsection">
+            <a href="javascript:toggle_display('M:Cadenza.TupleCoda.Match``4(Cadenza.Tuple{``0,``1,``2},System.Func{``0,``1,``2,Cadenza.Maybe{``3}}[]):Version Information')">
+              <span id="M:Cadenza.TupleCoda.Match``4(Cadenza.Tuple{``0,``1,``2},System.Func{``0,``1,``2,Cadenza.Maybe{``3}}[]):Version Information:toggle">⊟</span> Requirements</a>
+          </h4>
+          <blockquote class="SubsectionBox" id="M:Cadenza.TupleCoda.Match``4(Cadenza.Tuple{``0,``1,``2},System.Func{``0,``1,``2,Cadenza.Maybe{``3}}[]):Version Information">
+            <b>Namespace: </b>Cadenza<br /><b>Assembly: </b>Cadenza (in Cadenza.dll)<br /><b>Assembly Versions: </b>0.1.0.0</blockquote>
+          <hr size="1" />
+        </blockquote>
+        <h3 id="M:Cadenza.TupleCoda.Match``5(Cadenza.Tuple{``0,``1,``2,``3},System.Func{``0,``1,``2,``3,Cadenza.Maybe{``4}}[])">
+          <a href="javascript:toggle_display('M:Cadenza.TupleCoda.Match``5(Cadenza.Tuple{``0,``1,``2,``3},System.Func{``0,``1,``2,``3,Cadenza.Maybe{``4}}[]):member')">
+            <span id="M:Cadenza.TupleCoda.Match``5(Cadenza.Tuple{``0,``1,``2,``3},System.Func{``0,``1,``2,``3,Cadenza.Maybe{``4}}[]):member:toggle">⊟</span> Match&lt;T1,T2,T3,T4,TResult&gt; Generic Method</a>
+        </h3>
+        <blockquote id="M:Cadenza.TupleCoda.Match``5(Cadenza.Tuple{``0,``1,``2,``3},System.Func{``0,``1,``2,``3,Cadenza.Maybe{``4}}[]):member">
+          <p class="Summary">
+          Converts the current <a href="../Cadenza/Tuple`2.html">Cadenza.Tuple&lt;T1, T2&gt;</a> instance into a <i>TResult</i>.
+        </p>
+          <div class="Signature">public static <i title="&#xA;          The return value type.&#xA;        ">TResult</i> <b>Match&lt;T1, T2, T3, T4, TResult&gt;</b> (<i>this</i> <a href="../Cadenza/Tuple`4.html">Tuple&lt;T1, T2, T3, T4&gt;</a> self, <b>params</b> <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Func`5">Func&lt;T1, T2, T3, T4, Maybe&lt;TResult&gt;&gt;</a>[] matchers)</div>
+          <h4 class="Subsection">
+            <a href="javascript:toggle_display('M:Cadenza.TupleCoda.Match``5(Cadenza.Tuple{``0,``1,``2,``3},System.Func{``0,``1,``2,``3,Cadenza.Maybe{``4}}[]):Type Parameters')">
+              <span id="M:Cadenza.TupleCoda.Match``5(Cadenza.Tuple{``0,``1,``2,``3},System.Func{``0,``1,``2,``3,Cadenza.Maybe{``4}}[]):Type Parameters:toggle">⊟</span> Type Parameters</a>
+          </h4>
+          <blockquote class="SubsectionBox" id="M:Cadenza.TupleCoda.Match``5(Cadenza.Tuple{``0,``1,``2,``3},System.Func{``0,``1,``2,``3,Cadenza.Maybe{``4}}[]):Type Parameters">
+            <dl>
+              <dt>
+                <i>T1</i>
+              </dt>
+              <dd>
+          The first value type.
+        </dd>
+              <dt>
+                <i>T2</i>
+              </dt>
+              <dd>
+          The second value type.
+        </dd>
+              <dt>
+                <i>T3</i>
+              </dt>
+              <dd>
+                <span class="NotEntered">Documentation for this section has not yet been entered.</span>
+              </dd>
+              <dt>
+                <i>T4</i>
+              </dt>
+              <dd>
+                <span class="NotEntered">Documentation for this section has not yet been entered.</span>
+              </dd>
+              <dt>
+                <i>TResult</i>
+              </dt>
+              <dd>
+          The return value type.
+        </dd>
+            </dl>
+          </blockquote>
+          <h4 class="Subsection">
+            <a href="javascript:toggle_display('M:Cadenza.TupleCoda.Match``5(Cadenza.Tuple{``0,``1,``2,``3},System.Func{``0,``1,``2,``3,Cadenza.Maybe{``4}}[]):Parameters')">
+              <span id="M:Cadenza.TupleCoda.Match``5(Cadenza.Tuple{``0,``1,``2,``3},System.Func{``0,``1,``2,``3,Cadenza.Maybe{``4}}[]):Parameters:toggle">⊟</span> Parameters</a>
+          </h4>
+          <blockquote class="SubsectionBox" id="M:Cadenza.TupleCoda.Match``5(Cadenza.Tuple{``0,``1,``2,``3},System.Func{``0,``1,``2,``3,Cadenza.Maybe{``4}}[]):Parameters">
+            <dl>
+              <dt>
+                <i>self</i>
+              </dt>
+              <dd>
+          A <a href="../Cadenza/Tuple`2.html">Cadenza.Tuple&lt;T1, T2&gt;</a> to match against.
+        </dd>
+              <dt>
+                <i>matchers</i>
+              </dt>
+              <dd>
+          A <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Func`3">Func&lt;T1, T2, Cadenza.Maybe&lt;TResult&gt;&gt;</a>
+          array containing the conversion routines to use to convert 
+          the current <a href="../Cadenza/Tuple`2.html">Cadenza.Tuple&lt;T1, T2&gt;</a> instance into a 
+          <i>TResult</i> value.
+        </dd>
+            </dl>
+          </blockquote>
+          <h4 class="Subsection">
+            <a href="javascript:toggle_display('M:Cadenza.TupleCoda.Match``5(Cadenza.Tuple{``0,``1,``2,``3},System.Func{``0,``1,``2,``3,Cadenza.Maybe{``4}}[]):Returns')">
+              <span id="M:Cadenza.TupleCoda.Match``5(Cadenza.Tuple{``0,``1,``2,``3},System.Func{``0,``1,``2,``3,Cadenza.Maybe{``4}}[]):Returns:toggle">⊟</span> Returns</a>
+          </h4>
+          <blockquote class="SubsectionBox" id="M:Cadenza.TupleCoda.Match``5(Cadenza.Tuple{``0,``1,``2,``3},System.Func{``0,``1,``2,``3,Cadenza.Maybe{``4}}[]):Returns">
+          The <i>TResult</i> returned by one of the <i>matchers</i>.
+        </blockquote>
+          <h4 class="Subsection">
+            <a href="javascript:toggle_display('M:Cadenza.TupleCoda.Match``5(Cadenza.Tuple{``0,``1,``2,``3},System.Func{``0,``1,``2,``3,Cadenza.Maybe{``4}}[]):Exceptions')">
+              <span id="M:Cadenza.TupleCoda.Match``5(Cadenza.Tuple{``0,``1,``2,``3},System.Func{``0,``1,``2,``3,Cadenza.Maybe{``4}}[]):Exceptions:toggle">⊟</span> Exceptions</a>
+          </h4>
+          <blockquote class="SubsectionBox" id="M:Cadenza.TupleCoda.Match``5(Cadenza.Tuple{``0,``1,``2,``3},System.Func{``0,``1,``2,``3,Cadenza.Maybe{``4}}[]):Exceptions">
+            <table class="TypeDocumentation">
+              <tr>
+                <th>Type</th>
+                <th>Reason</th>
+              </tr>
+              <tr valign="top">
+                <td>
+                  <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.ArgumentNullException">ArgumentNullException</a>
+                </td>
+                <td>
+                  <p>
+                    <i>self</i> is <tt>null</tt>.
+          </p>
+                  <p>-or-</p>
+                  <p>
+                    <i>matchers</i> is <tt>null</tt>.
+          </p>
+                </td>
+              </tr>
+              <tr valign="top">
+                <td>
+                  <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.InvalidOperationException">InvalidOperationException</a>
+                </td>
+                <td>
+          None of the 
+          <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Func`2">Func&lt;TSource, Cadenza.Maybe&lt;TResult&gt;&gt;</a>
+          delegates within <i>matchers</i> returned a 
+          <a href="../Cadenza/Maybe`1.html">Cadenza.Maybe&lt;TResult&gt;</a> instance where
+          <a href="../Cadenza/Maybe`1.html#P:Cadenza.Maybe`1.HasValue">Maybe&lt;TResult&gt;.HasValue</a> was
+          <tt>true</tt>.
+        </td>
+              </tr>
+            </table>
+          </blockquote>
+          <h4 class="Subsection">
+            <a href="javascript:toggle_display('M:Cadenza.TupleCoda.Match``5(Cadenza.Tuple{``0,``1,``2,``3},System.Func{``0,``1,``2,``3,Cadenza.Maybe{``4}}[]):Remarks')">
+              <span id="M:Cadenza.TupleCoda.Match``5(Cadenza.Tuple{``0,``1,``2,``3},System.Func{``0,``1,``2,``3,Cadenza.Maybe{``4}}[]):Remarks:toggle">⊟</span> Remarks</a>
+          </h4>
+          <blockquote class="SubsectionBox" id="M:Cadenza.TupleCoda.Match``5(Cadenza.Tuple{``0,``1,``2,``3},System.Func{``0,``1,``2,``3,Cadenza.Maybe{``4}}[]):Remarks">
+            <h5 class="Subsection">Operation</h5>
+            <p>
+             The current <a href="../Cadenza/Tuple`2.html">Cadenza.Tuple&lt;T1, T2&gt;</a> instance is converted into a 
+             <i>TResult</i> instance by trying each
+             <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Func`3">Func&lt;T1, T2, Cadenza.Maybe&lt;TResult&gt;&gt;</a>
+             within <i>matchers</i>.
+            </p>
+            <p>
+             This method returns 
+             <a href="../Cadenza/Maybe`1.html#P:Cadenza.Maybe`1.Value">Maybe&lt;TResult&gt;.Value</a> 
+             for the first delegate to return a
+             <a href="../Cadenza/Maybe`1.html">Cadenza.Maybe&lt;TResult&gt;</a> instance
+             where <a href="../Cadenza/Maybe`1.html#P:Cadenza.Maybe`1.HasValue">Maybe&lt;TResult&gt;.HasValue</a>
+             is <tt>true</tt>.
+            </p>
+            <p>
+             If no <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Func`3">Func&lt;T1, T2, Cadenza.Maybe&lt;TResult&gt;&gt;</a>
+             returns a 
+             <a href="../Cadenza/Maybe`1.html">Cadenza.Maybe&lt;TResult&gt;</a> instance
+             where <a href="../Cadenza/Maybe`1.html#P:Cadenza.Maybe`1.HasValue">Maybe&lt;TResult&gt;.HasValue</a>
+             is <tt>true</tt>, then an
+             <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.InvalidOperationException">InvalidOperationException</a> is thrown.
+            </p>
+            <table class="CodeExampleTable">
+              <tr>
+                <td>
+                  <b>
+                    <font size="-1">C# Example</font>
+                  </b>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <pre class="code-csharp">
+          var    a = Tuple.Create (1, 2);
+          string b = a.Match (
+              (t, v) =&gt; Match.When ( t + v == 3, "foo!"),
+              (t, v) =&gt; "*default*".Just ());
+          Console.WriteLine (b);  // prints "foo!"</pre>
+                </td>
+              </tr>
+            </table>
+          </blockquote>
+          <h4 class="Subsection">
+            <a href="javascript:toggle_display('M:Cadenza.TupleCoda.Match``5(Cadenza.Tuple{``0,``1,``2,``3},System.Func{``0,``1,``2,``3,Cadenza.Maybe{``4}}[]):Version Information')">
+              <span id="M:Cadenza.TupleCoda.Match``5(Cadenza.Tuple{``0,``1,``2,``3},System.Func{``0,``1,``2,``3,Cadenza.Maybe{``4}}[]):Version Information:toggle">⊟</span> Requirements</a>
+          </h4>
+          <blockquote class="SubsectionBox" id="M:Cadenza.TupleCoda.Match``5(Cadenza.Tuple{``0,``1,``2,``3},System.Func{``0,``1,``2,``3,Cadenza.Maybe{``4}}[]):Version Information">
+            <b>Namespace: </b>Cadenza<br /><b>Assembly: </b>Cadenza (in Cadenza.dll)<br /><b>Assembly Versions: </b>0.1.0.0</blockquote>
+          <hr size="1" />
+        </blockquote>
+        <h3 id="M:Cadenza.TupleCoda.ToEnumerable``1(Cadenza.Tuple{``0})">
+          <a href="javascript:toggle_display('M:Cadenza.TupleCoda.ToEnumerable``1(Cadenza.Tuple{``0}):member')">
+            <span id="M:Cadenza.TupleCoda.ToEnumerable``1(Cadenza.Tuple{``0}):member:toggle">⊟</span> ToEnumerable&lt;T&gt; Generic Method</a>
+        </h3>
+        <blockquote id="M:Cadenza.TupleCoda.ToEnumerable``1(Cadenza.Tuple{``0}):member">
+          <p class="Summary">
+            Converts the <a href="../Cadenza/Tuple`1.html">Cadenza.Tuple&lt;T&gt;</a> into a <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Collections.Generic.IEnumerable`1">IEnumerable&lt;object&gt;</a>.
+            </p>
+          <div class="Signature">public static <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Collections.Generic.IEnumerable`1">IEnumerable&lt;object&gt;</a> <b>ToEnumerable&lt;T&gt;</b> (<i>this</i> <a href="../Cadenza/Tuple`1.html">Tuple&lt;T&gt;</a> self)</div>
+          <h4 class="Subsection">
+            <a href="javascript:toggle_display('M:Cadenza.TupleCoda.ToEnumerable``1(Cadenza.Tuple{``0}):Type Parameters')">
+              <span id="M:Cadenza.TupleCoda.ToEnumerable``1(Cadenza.Tuple{``0}):Type Parameters:toggle">⊟</span> Type Parameters</a>
+          </h4>
+          <blockquote class="SubsectionBox" id="M:Cadenza.TupleCoda.ToEnumerable``1(Cadenza.Tuple{``0}):Type Parameters">
+            <dl>
+              <dt>
+                <i>T</i>
+              </dt>
+              <dd>
+            The first value type.
+            </dd>
+            </dl>
+          </blockquote>
+          <h4 class="Subsection">
+            <a href="javascript:toggle_display('M:Cadenza.TupleCoda.ToEnumerable``1(Cadenza.Tuple{``0}):Parameters')">
+              <span id="M:Cadenza.TupleCoda.ToEnumerable``1(Cadenza.Tuple{``0}):Parameters:toggle">⊟</span> Parameters</a>
+          </h4>
+          <blockquote class="SubsectionBox" id="M:Cadenza.TupleCoda.ToEnumerable``1(Cadenza.Tuple{``0}):Parameters">
+            <dl>
+              <dt>
+                <i>self</i>
+              </dt>
+              <dd>
+            A <a href="../Cadenza/Tuple`1.html">Cadenza.Tuple&lt;T&gt;</a> to convert into an <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Collections.Generic.IEnumerable`1">IEnumerable&lt;object&gt;</a>.
+            </dd>
+            </dl>
+          </blockquote>
+          <h4 class="Subsection">
+            <a href="javascript:toggle_display('M:Cadenza.TupleCoda.ToEnumerable``1(Cadenza.Tuple{``0}):Returns')">
+              <span id="M:Cadenza.TupleCoda.ToEnumerable``1(Cadenza.Tuple{``0}):Returns:toggle">⊟</span> Returns</a>
+          </h4>
+          <blockquote class="SubsectionBox" id="M:Cadenza.TupleCoda.ToEnumerable``1(Cadenza.Tuple{``0}):Returns">
+            A <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Collections.Generic.IEnumerable`1">IEnumerable&lt;object&gt;</a>.
+            </blockquote>
+          <h4 class="Subsection">
+            <a href="javascript:toggle_display('M:Cadenza.TupleCoda.ToEnumerable``1(Cadenza.Tuple{``0}):Exceptions')">
+              <span id="M:Cadenza.TupleCoda.ToEnumerable``1(Cadenza.Tuple{``0}):Exceptions:toggle">⊟</span> Exceptions</a>
+          </h4>
+          <blockquote class="SubsectionBox" id="M:Cadenza.TupleCoda.ToEnumerable``1(Cadenza.Tuple{``0}):Exceptions">
+            <table class="TypeDocumentation">
+              <tr>
+                <th>Type</th>
+                <th>Reason</th>
+              </tr>
+              <tr valign="top">
+                <td>
+                  <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.ArgumentNullException">ArgumentNullException</a>
+                </td>
+                <td>
+            if <i>self</i> is <tt>null</tt>.
+            </td>
+              </tr>
+            </table>
+          </blockquote>
+          <h4 class="Subsection">
+            <a href="javascript:toggle_display('M:Cadenza.TupleCoda.ToEnumerable``1(Cadenza.Tuple{``0}):Remarks')">
+              <span id="M:Cadenza.TupleCoda.ToEnumerable``1(Cadenza.Tuple{``0}):Remarks:toggle">⊟</span> Remarks</a>
+          </h4>
+          <blockquote class="SubsectionBox" id="M:Cadenza.TupleCoda.ToEnumerable``1(Cadenza.Tuple{``0}):Remarks">
+            <h5 class="Subsection">Operation</h5>
+            Passes the values <a href="../Cadenza/Tuple`1.html#P:Cadenza.Tuple`1.Item1">Tuple`1.Item1</a> to
+            <i>func</i>, returning the value produced by
+            <i>func</i>.
+            </blockquote>
+          <h4 class="Subsection">
+            <a href="javascript:toggle_display('M:Cadenza.TupleCoda.ToEnumerable``1(Cadenza.Tuple{``0}):Version Information')">
+              <span id="M:Cadenza.TupleCoda.ToEnumerable``1(Cadenza.Tuple{``0}):Version Information:toggle">⊟</span> Requirements</a>
+          </h4>
+          <blockquote class="SubsectionBox" id="M:Cadenza.TupleCoda.ToEnumerable``1(Cadenza.Tuple{``0}):Version Information">
+            <b>Namespace: </b>Cadenza<br /><b>Assembly: </b>Cadenza (in Cadenza.dll)<br /><b>Assembly Versions: </b>0.1.0.0</blockquote>
+          <hr size="1" />
+        </blockquote>
+        <h3 id="M:Cadenza.TupleCoda.ToEnumerable``2(Cadenza.Tuple{``0,``1})">
+          <a href="javascript:toggle_display('M:Cadenza.TupleCoda.ToEnumerable``2(Cadenza.Tuple{``0,``1}):member')">
+            <span id="M:Cadenza.TupleCoda.ToEnumerable``2(Cadenza.Tuple{``0,``1}):member:toggle">⊟</span> ToEnumerable&lt;T1,T2&gt; Generic Method</a>
+        </h3>
+        <blockquote id="M:Cadenza.TupleCoda.ToEnumerable``2(Cadenza.Tuple{``0,``1}):member">
+          <p class="Summary">
+            Converts the <a href="../Cadenza/Tuple`2.html">Cadenza.Tuple&lt;T1, T2&gt;</a> into a <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Collections.Generic.IEnumerable`1">IEnumerable&lt;object&gt;</a>.
+            </p>
+          <div class="Signature">public static <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Collections.Generic.IEnumerable`1">IEnumerable&lt;object&gt;</a> <b>ToEnumerable&lt;T1, T2&gt;</b> (<i>this</i> <a href="../Cadenza/Tuple`2.html">Tuple&lt;T1, T2&gt;</a> self)</div>
+          <h4 class="Subsection">
+            <a href="javascript:toggle_display('M:Cadenza.TupleCoda.ToEnumerable``2(Cadenza.Tuple{``0,``1}):Type Parameters')">
+              <span id="M:Cadenza.TupleCoda.ToEnumerable``2(Cadenza.Tuple{``0,``1}):Type Parameters:toggle">⊟</span> Type Parameters</a>
+          </h4>
+          <blockquote class="SubsectionBox" id="M:Cadenza.TupleCoda.ToEnumerable``2(Cadenza.Tuple{``0,``1}):Type Parameters">
+            <dl>
+              <dt>
+                <i>T1</i>
+              </dt>
+              <dd>
+            The first value type.
+            </dd>
+              <dt>
+                <i>T2</i>
+              </dt>
+              <dd>
+            The second value type.
+            </dd>
+            </dl>
+          </blockquote>
+          <h4 class="Subsection">
+            <a href="javascript:toggle_display('M:Cadenza.TupleCoda.ToEnumerable``2(Cadenza.Tuple{``0,``1}):Parameters')">
+              <span id="M:Cadenza.TupleCoda.ToEnumerable``2(Cadenza.Tuple{``0,``1}):Parameters:toggle">⊟</span> Parameters</a>
+          </h4>
+          <blockquote class="SubsectionBox" id="M:Cadenza.TupleCoda.ToEnumerable``2(Cadenza.Tuple{``0,``1}):Parameters">
+            <dl>
+              <dt>
+                <i>self</i>
+              </dt>
+              <dd>
+            A <a href="../Cadenza/Tuple`2.html">Cadenza.Tuple&lt;T1, T2&gt;</a> to convert into an <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Collections.Generic.IEnumerable`1">IEnumerable&lt;object&gt;</a>.
+            </dd>
+            </dl>
+          </blockquote>
+          <h4 class="Subsection">
+            <a href="javascript:toggle_display('M:Cadenza.TupleCoda.ToEnumerable``2(Cadenza.Tuple{``0,``1}):Returns')">
+              <span id="M:Cadenza.TupleCoda.ToEnumerable``2(Cadenza.Tuple{``0,``1}):Returns:toggle">⊟</span> Returns</a>
+          </h4>
+          <blockquote class="SubsectionBox" id="M:Cadenza.TupleCoda.ToEnumerable``2(Cadenza.Tuple{``0,``1}):Returns">
+            A <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Collections.Generic.IEnumerable`1">IEnumerable&lt;object&gt;</a>.
+            </blockquote>
+          <h4 class="Subsection">
+            <a href="javascript:toggle_display('M:Cadenza.TupleCoda.ToEnumerable``2(Cadenza.Tuple{``0,``1}):Exceptions')">
+              <span id="M:Cadenza.TupleCoda.ToEnumerable``2(Cadenza.Tuple{``0,``1}):Exceptions:toggle">⊟</span> Exceptions</a>
+          </h4>
+          <blockquote class="SubsectionBox" id="M:Cadenza.TupleCoda.ToEnumerable``2(Cadenza.Tuple{``0,``1}):Exceptions">
+            <table class="TypeDocumentation">
+              <tr>
+                <th>Type</th>
+                <th>Reason</th>
+              </tr>
+              <tr valign="top">
+                <td>
+                  <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.ArgumentNullException">ArgumentNullException</a>
+                </td>
+                <td>
+            if <i>self</i> is <tt>null</tt>.
+            </td>
+              </tr>
+            </table>
+          </blockquote>
+          <h4 class="Subsection">
+            <a href="javascript:toggle_display('M:Cadenza.TupleCoda.ToEnumerable``2(Cadenza.Tuple{``0,``1}):Remarks')">
+              <span id="M:Cadenza.TupleCoda.ToEnumerable``2(Cadenza.Tuple{``0,``1}):Remarks:toggle">⊟</span> Remarks</a>
+          </h4>
+          <blockquote class="SubsectionBox" id="M:Cadenza.TupleCoda.ToEnumerable``2(Cadenza.Tuple{``0,``1}):Remarks">
+            <h5 class="Subsection">Operation</h5>
+            Passes the values <a href="../Cadenza/Tuple`2.html#P:Cadenza.Tuple`2.Item1">Tuple`2.Item1</a>, <a href="../Cadenza/Tuple`2.html#P:Cadenza.Tuple`2.Item2">Tuple`2.Item2</a> to
+            <i>func</i>, returning the value produced by
+            <i>func</i>.
+            </blockquote>
+          <h4 class="Subsection">
+            <a href="javascript:toggle_display('M:Cadenza.TupleCoda.ToEnumerable``2(Cadenza.Tuple{``0,``1}):Version Information')">
+              <span id="M:Cadenza.TupleCoda.ToEnumerable``2(Cadenza.Tuple{``0,``1}):Version Information:toggle">⊟</span> Requirements</a>
+          </h4>
+          <blockquote class="SubsectionBox" id="M:Cadenza.TupleCoda.ToEnumerable``2(Cadenza.Tuple{``0,``1}):Version Information">
+            <b>Namespace: </b>Cadenza<br /><b>Assembly: </b>Cadenza (in Cadenza.dll)<br /><b>Assembly Versions: </b>0.1.0.0</blockquote>
+          <hr size="1" />
+        </blockquote>
+        <h3 id="M:Cadenza.TupleCoda.ToEnumerable``3(Cadenza.Tuple{``0,``1,``2})">
+          <a href="javascript:toggle_display('M:Cadenza.TupleCoda.ToEnumerable``3(Cadenza.Tuple{``0,``1,``2}):member')">
+            <span id="M:Cadenza.TupleCoda.ToEnumerable``3(Cadenza.Tuple{``0,``1,``2}):member:toggle">⊟</span> ToEnumerable&lt;T1,T2,T3&gt; Generic Method</a>
+        </h3>
+        <blockquote id="M:Cadenza.TupleCoda.ToEnumerable``3(Cadenza.Tuple{``0,``1,``2}):member">
+          <p class="Summary">
+            Converts the <a href="../Cadenza/Tuple`3.html">Cadenza.Tuple&lt;T1, T2, T3&gt;</a> into a <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Collections.Generic.IEnumerable`1">IEnumerable&lt;object&gt;</a>.
+            </p>
+          <div class="Signature">public static <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Collections.Generic.IEnumerable`1">IEnumerable&lt;object&gt;</a> <b>ToEnumerable&lt;T1, T2, T3&gt;</b> (<i>this</i> <a href="../Cadenza/Tuple`3.html">Tuple&lt;T1, T2, T3&gt;</a> self)</div>
+          <h4 class="Subsection">
+            <a href="javascript:toggle_display('M:Cadenza.TupleCoda.ToEnumerable``3(Cadenza.Tuple{``0,``1,``2}):Type Parameters')">
+              <span id="M:Cadenza.TupleCoda.ToEnumerable``3(Cadenza.Tuple{``0,``1,``2}):Type Parameters:toggle">⊟</span> Type Parameters</a>
+          </h4>
+          <blockquote class="SubsectionBox" id="M:Cadenza.TupleCoda.ToEnumerable``3(Cadenza.Tuple{``0,``1,``2}):Type Parameters">
+            <dl>
+              <dt>
+                <i>T1</i>
+              </dt>
+              <dd>
+            The first value type.
+            </dd>
+              <dt>
+                <i>T2</i>
+              </dt>
+              <dd>
+            The second value type.
+            </dd>
+              <dt>
+                <i>T3</i>
+              </dt>
+              <dd>
+            The third value type.
+            </dd>
+            </dl>
+          </blockquote>
+          <h4 class="Subsection">
+            <a href="javascript:toggle_display('M:Cadenza.TupleCoda.ToEnumerable``3(Cadenza.Tuple{``0,``1,``2}):Parameters')">
+              <span id="M:Cadenza.TupleCoda.ToEnumerable``3(Cadenza.Tuple{``0,``1,``2}):Parameters:toggle">⊟</span> Parameters</a>
+          </h4>
+          <blockquote class="SubsectionBox" id="M:Cadenza.TupleCoda.ToEnumerable``3(Cadenza.Tuple{``0,``1,``2}):Parameters">
+            <dl>
+              <dt>
+                <i>self</i>
+              </dt>
+              <dd>
+            A <a href="../Cadenza/Tuple`3.html">Cadenza.Tuple&lt;T1, T2, T3&gt;</a> to convert into an <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Collections.Generic.IEnumerable`1">IEnumerable&lt;object&gt;</a>.
+            </dd>
+            </dl>
+          </blockquote>
+          <h4 class="Subsection">
+            <a href="javascript:toggle_display('M:Cadenza.TupleCoda.ToEnumerable``3(Cadenza.Tuple{``0,``1,``2}):Returns')">
+              <span id="M:Cadenza.TupleCoda.ToEnumerable``3(Cadenza.Tuple{``0,``1,``2}):Returns:toggle">⊟</span> Returns</a>
+          </h4>
+          <blockquote class="SubsectionBox" id="M:Cadenza.TupleCoda.ToEnumerable``3(Cadenza.Tuple{``0,``1,``2}):Returns">
+            A <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Collections.Generic.IEnumerable`1">IEnumerable&lt;object&gt;</a>.
+            </blockquote>
+          <h4 class="Subsection">
+            <a href="javascript:toggle_display('M:Cadenza.TupleCoda.ToEnumerable``3(Cadenza.Tuple{``0,``1,``2}):Exceptions')">
+              <span id="M:Cadenza.TupleCoda.ToEnumerable``3(Cadenza.Tuple{``0,``1,``2}):Exceptions:toggle">⊟</span> Exceptions</a>
+          </h4>
+          <blockquote class="SubsectionBox" id="M:Cadenza.TupleCoda.ToEnumerable``3(Cadenza.Tuple{``0,``1,``2}):Exceptions">
+            <table class="TypeDocumentation">
+              <tr>
+                <th>Type</th>
+                <th>Reason</th>
+              </tr>
+              <tr valign="top">
+                <td>
+                  <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.ArgumentNullException">ArgumentNullException</a>
+                </td>
+                <td>
+            if <i>self</i> is <tt>null</tt>.
+            </td>
+              </tr>
+            </table>
+          </blockquote>
+          <h4 class="Subsection">
+            <a href="javascript:toggle_display('M:Cadenza.TupleCoda.ToEnumerable``3(Cadenza.Tuple{``0,``1,``2}):Remarks')">
+              <span id="M:Cadenza.TupleCoda.ToEnumerable``3(Cadenza.Tuple{``0,``1,``2}):Remarks:toggle">⊟</span> Remarks</a>
+          </h4>
+          <blockquote class="SubsectionBox" id="M:Cadenza.TupleCoda.ToEnumerable``3(Cadenza.Tuple{``0,``1,``2}):Remarks">
+            <h5 class="Subsection">Operation</h5>
+            Passes the values <a href="../Cadenza/Tuple`3.html#P:Cadenza.Tuple`3.Item1">Tuple`3.Item1</a>, <a href="../Cadenza/Tuple`3.html#P:Cadenza.Tuple`3.Item2">Tuple`3.Item2</a>, <a href="../Cadenza/Tuple`3.html#P:Cadenza.Tuple`3.Item3">Tuple`3.Item3</a> to
+            <i>func</i>, returning the value produced by
+            <i>func</i>.
+            </blockquote>
+          <h4 class="Subsection">
+            <a href="javascript:toggle_display('M:Cadenza.TupleCoda.ToEnumerable``3(Cadenza.Tuple{``0,``1,``2}):Version Information')">
+              <span id="M:Cadenza.TupleCoda.ToEnumerable``3(Cadenza.Tuple{``0,``1,``2}):Version Information:toggle">⊟</span> Requirements</a>
+          </h4>
+          <blockquote class="SubsectionBox" id="M:Cadenza.TupleCoda.ToEnumerable``3(Cadenza.Tuple{``0,``1,``2}):Version Information">
+            <b>Namespace: </b>Cadenza<br /><b>Assembly: </b>Cadenza (in Cadenza.dll)<br /><b>Assembly Versions: </b>0.1.0.0</blockquote>
+          <hr size="1" />
+        </blockquote>
+        <h3 id="M:Cadenza.TupleCoda.ToEnumerable``4(Cadenza.Tuple{``0,``1,``2,``3})">
+          <a href="javascript:toggle_display('M:Cadenza.TupleCoda.ToEnumerable``4(Cadenza.Tuple{``0,``1,``2,``3}):member')">
+            <span id="M:Cadenza.TupleCoda.ToEnumerable``4(Cadenza.Tuple{``0,``1,``2,``3}):member:toggle">⊟</span> ToEnumerable&lt;T1,T2,T3,T4&gt; Generic Method</a>
+        </h3>
+        <blockquote id="M:Cadenza.TupleCoda.ToEnumerable``4(Cadenza.Tuple{``0,``1,``2,``3}):member">
+          <p class="Summary">
+            Converts the <a href="../Cadenza/Tuple`4.html">Cadenza.Tuple&lt;T1, T2, T3, T4&gt;</a> into a <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Collections.Generic.IEnumerable`1">IEnumerable&lt;object&gt;</a>.
+            </p>
+          <div class="Signature">public static <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Collections.Generic.IEnumerable`1">IEnumerable&lt;object&gt;</a> <b>ToEnumerable&lt;T1, T2, T3, T4&gt;</b> (<i>this</i> <a href="../Cadenza/Tuple`4.html">Tuple&lt;T1, T2, T3, T4&gt;</a> self)</div>
+          <h4 class="Subsection">
+            <a href="javascript:toggle_display('M:Cadenza.TupleCoda.ToEnumerable``4(Cadenza.Tuple{``0,``1,``2,``3}):Type Parameters')">
+              <span id="M:Cadenza.TupleCoda.ToEnumerable``4(Cadenza.Tuple{``0,``1,``2,``3}):Type Parameters:toggle">⊟</span> Type Parameters</a>
+          </h4>
+          <blockquote class="SubsectionBox" id="M:Cadenza.TupleCoda.ToEnumerable``4(Cadenza.Tuple{``0,``1,``2,``3}):Type Parameters">
+            <dl>
+              <dt>
+                <i>T1</i>
+              </dt>
+              <dd>
+            The first value type.
+            </dd>
+              <dt>
+                <i>T2</i>
+              </dt>
+              <dd>
+            The second value type.
+            </dd>
+              <dt>
+                <i>T3</i>
+              </dt>
+              <dd>
+            The third value type.
+            </dd>
+              <dt>
+                <i>T4</i>
+              </dt>
+              <dd>
+            The fourth value type.
+            </dd>
+            </dl>
+          </blockquote>
+          <h4 class="Subsection">
+            <a href="javascript:toggle_display('M:Cadenza.TupleCoda.ToEnumerable``4(Cadenza.Tuple{``0,``1,``2,``3}):Parameters')">
+              <span id="M:Cadenza.TupleCoda.ToEnumerable``4(Cadenza.Tuple{``0,``1,``2,``3}):Parameters:toggle">⊟</span> Parameters</a>
+          </h4>
+          <blockquote class="SubsectionBox" id="M:Cadenza.TupleCoda.ToEnumerable``4(Cadenza.Tuple{``0,``1,``2,``3}):Parameters">
+            <dl>
+              <dt>
+                <i>self</i>
+              </dt>
+              <dd>
+            A <a href="../Cadenza/Tuple`4.html">Cadenza.Tuple&lt;T1, T2, T3, T4&gt;</a> to convert into an <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Collections.Generic.IEnumerable`1">IEnumerable&lt;object&gt;</a>.
+            </dd>
+            </dl>
+          </blockquote>
+          <h4 class="Subsection">
+            <a href="javascript:toggle_display('M:Cadenza.TupleCoda.ToEnumerable``4(Cadenza.Tuple{``0,``1,``2,``3}):Returns')">
+              <span id="M:Cadenza.TupleCoda.ToEnumerable``4(Cadenza.Tuple{``0,``1,``2,``3}):Returns:toggle">⊟</span> Returns</a>
+          </h4>
+          <blockquote class="SubsectionBox" id="M:Cadenza.TupleCoda.ToEnumerable``4(Cadenza.Tuple{``0,``1,``2,``3}):Returns">
+            A <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Collections.Generic.IEnumerable`1">IEnumerable&lt;object&gt;</a>.
+            </blockquote>
+          <h4 class="Subsection">
+            <a href="javascript:toggle_display('M:Cadenza.TupleCoda.ToEnumerable``4(Cadenza.Tuple{``0,``1,``2,``3}):Exceptions')">
+              <span id="M:Cadenza.TupleCoda.ToEnumerable``4(Cadenza.Tuple{``0,``1,``2,``3}):Exceptions:toggle">⊟</span> Exceptions</a>
+          </h4>
+          <blockquote class="SubsectionBox" id="M:Cadenza.TupleCoda.ToEnumerable``4(Cadenza.Tuple{``0,``1,``2,``3}):Exceptions">
+            <table class="TypeDocumentation">
+              <tr>
+                <th>Type</th>
+                <th>Reason</th>
+              </tr>
+              <tr valign="top">
+                <td>
+                  <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.ArgumentNullException">ArgumentNullException</a>
+                </td>
+                <td>
+            if <i>self</i> is <tt>null</tt>.
+            </td>
+              </tr>
+            </table>
+          </blockquote>
+          <h4 class="Subsection">
+            <a href="javascript:toggle_display('M:Cadenza.TupleCoda.ToEnumerable``4(Cadenza.Tuple{``0,``1,``2,``3}):Remarks')">
+              <span id="M:Cadenza.TupleCoda.ToEnumerable``4(Cadenza.Tuple{``0,``1,``2,``3}):Remarks:toggle">⊟</span> Remarks</a>
+          </h4>
+          <blockquote class="SubsectionBox" id="M:Cadenza.TupleCoda.ToEnumerable``4(Cadenza.Tuple{``0,``1,``2,``3}):Remarks">
+            <h5 class="Subsection">Operation</h5>
+            Passes the values <a href="../Cadenza/Tuple`4.html#P:Cadenza.Tuple`4.Item1">Tuple`4.Item1</a>, <a href="../Cadenza/Tuple`4.html#P:Cadenza.Tuple`4.Item2">Tuple`4.Item2</a>, <a href="../Cadenza/Tuple`4.html#P:Cadenza.Tuple`4.Item3">Tuple`4.Item3</a>, <a href="../Cadenza/Tuple`4.html#P:Cadenza.Tuple`4.Item4">Tuple`4.Item4</a> to
+            <i>func</i>, returning the value produced by
+            <i>func</i>.
+            </blockquote>
+          <h4 class="Subsection">
+            <a href="javascript:toggle_display('M:Cadenza.TupleCoda.ToEnumerable``4(Cadenza.Tuple{``0,``1,``2,``3}):Version Information')">
+              <span id="M:Cadenza.TupleCoda.ToEnumerable``4(Cadenza.Tuple{``0,``1,``2,``3}):Version Information:toggle">⊟</span> Requirements</a>
+          </h4>
+          <blockquote class="SubsectionBox" id="M:Cadenza.TupleCoda.ToEnumerable``4(Cadenza.Tuple{``0,``1,``2,``3}):Version Information">
+            <b>Namespace: </b>Cadenza<br /><b>Assembly: </b>Cadenza (in Cadenza.dll)<br /><b>Assembly Versions: </b>0.1.0.0</blockquote>
+          <hr size="1" />
+        </blockquote>
+        <h3 id="M:Cadenza.TupleCoda.ToKeyValuePair``2(Cadenza.Tuple{``0,``1})">
+          <a href="javascript:toggle_display('M:Cadenza.TupleCoda.ToKeyValuePair``2(Cadenza.Tuple{``0,``1}):member')">
+            <span id="M:Cadenza.TupleCoda.ToKeyValuePair``2(Cadenza.Tuple{``0,``1}):member:toggle">⊟</span> ToKeyValuePair&lt;TKey,TValue&gt; Generic Method</a>
+        </h3>
+        <blockquote id="M:Cadenza.TupleCoda.ToKeyValuePair``2(Cadenza.Tuple{``0,``1}):member">
+          <p class="Summary">
+          Converts a 
+          <a href="../Cadenza/Tuple`2.html">Cadenza.Tuple&lt;TKey, TValue&gt;</a>
+          into a
+          <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Collections.Generic.KeyValuePair`2">KeyValuePair&lt;TKey, TValue&gt;</a>.
+        </p>
+          <div class="Signature">public static <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Collections.Generic.KeyValuePair`2">KeyValuePair&lt;TKey, TValue&gt;</a> <b>ToKeyValuePair&lt;TKey, TValue&gt;</b> (<i>this</i> <a href="../Cadenza/Tuple`2.html">Tuple&lt;TKey, TValue&gt;</a> self)</div>
+          <h4 class="Subsection">
+            <a href="javascript:toggle_display('M:Cadenza.TupleCoda.ToKeyValuePair``2(Cadenza.Tuple{``0,``1}):See Also')">
+              <span id="M:Cadenza.TupleCoda.ToKeyValuePair``2(Cadenza.Tuple{``0,``1}):See Also:toggle">⊟</span> See Also</a>
+          </h4>
+          <blockquote class="SubsectionBox" id="M:Cadenza.TupleCoda.ToKeyValuePair``2(Cadenza.Tuple{``0,``1}):See Also">
+            <div>
+              <a href="../Cadenza/TupleCoda.html#M:Cadenza.TupleCoda.ToKeyValuePair``2(Cadenza.Tuple{``0,``1})">TupleCoda.ToKeyValuePair``2(Tuple&lt;``0, ``1&gt;)</a>
+            </div>
+          </blockquote>
+          <h4 class="Subsection">
+            <a href="javascript:toggle_display('M:Cadenza.TupleCoda.ToKeyValuePair``2(Cadenza.Tuple{``0,``1}):Type Parameters')">
+              <span id="M:Cadenza.TupleCoda.ToKeyValuePair``2(Cadenza.Tuple{``0,``1}):Type Parameters:toggle">⊟</span> Type Parameters</a>
+          </h4>
+          <blockquote class="SubsectionBox" id="M:Cadenza.TupleCoda.ToKeyValuePair``2(Cadenza.Tuple{``0,``1}):Type Parameters">
+            <dl>
+              <dt>
+                <i>TKey</i>
+              </dt>
+              <dd>The type of the key.</dd>
+              <dt>
+                <i>TValue</i>
+              </dt>
+              <dd>The type of the value.</dd>
+            </dl>
+          </blockquote>
+          <h4 class="Subsection">
+            <a href="javascript:toggle_display('M:Cadenza.TupleCoda.ToKeyValuePair``2(Cadenza.Tuple{``0,``1}):Parameters')">
+              <span id="M:Cadenza.TupleCoda.ToKeyValuePair``2(Cadenza.Tuple{``0,``1}):Parameters:toggle">⊟</span> Parameters</a>
+          </h4>
+          <blockquote class="SubsectionBox" id="M:Cadenza.TupleCoda.ToKeyValuePair``2(Cadenza.Tuple{``0,``1}):Parameters">
+            <dl>
+              <dt>
+                <i>self</i>
+              </dt>
+              <dd>
+          A 
+          <a href="../Cadenza/Tuple`2.html">Cadenza.Tuple&lt;TKey, TValue&gt;</a>
+          to convert into a
+          <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Collections.Generic.KeyValuePair`2">KeyValuePair&lt;TKey, TValue&gt;</a>.
+        </dd>
+            </dl>
+          </blockquote>
+          <h4 class="Subsection">
+            <a href="javascript:toggle_display('M:Cadenza.TupleCoda.ToKeyValuePair``2(Cadenza.Tuple{``0,``1}):Returns')">
+              <span id="M:Cadenza.TupleCoda.ToKeyValuePair``2(Cadenza.Tuple{``0,``1}):Returns:toggle">⊟</span> Returns</a>
+          </h4>
+          <blockquote class="SubsectionBox" id="M:Cadenza.TupleCoda.ToKeyValuePair``2(Cadenza.Tuple{``0,``1}):Returns">
+          A 
+          <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Collections.Generic.KeyValuePair`2">KeyValuePair&lt;TKey, TValue&gt;</a>
+          structure.
+        </blockquote>
+          <h4 class="Subsection">
+            <a href="javascript:toggle_display('M:Cadenza.TupleCoda.ToKeyValuePair``2(Cadenza.Tuple{``0,``1}):Remarks')">
+              <span id="M:Cadenza.TupleCoda.ToKeyValuePair``2(Cadenza.Tuple{``0,``1}):Remarks:toggle">⊟</span> Remarks</a>
+          </h4>
+          <blockquote class="SubsectionBox" id="M:Cadenza.TupleCoda.ToKeyValuePair``2(Cadenza.Tuple{``0,``1}):Remarks">
+            <p>
+            The value of the returned 
+            <a href="http://www.go-mono.com/docs/monodoc.ashx?link=P:System.Collections.Generic.KeyValuePair`2.Key">KeyValuePair`2.Key</a>
+            property is copied from 
+            <a href="../Cadenza/Tuple`2.html#P:Cadenza.Tuple`2._1">Tuple`2._1</a>
+            and the value of the returned 
+            <a href="http://www.go-mono.com/docs/monodoc.ashx?link=P:System.Collections.Generic.KeyValuePair`2.Value">KeyValuePair`2.Value</a>
+            is copied from 
+            <a href="../Cadenza/Tuple`2.html#P:Cadenza.Tuple`2._2">Tuple`2._2</a>.
+          </p>
+            <table class="CodeExampleTable">
+              <tr>
+                <td>
+                  <b>
+                    <font size="-1">C# Example</font>
+                  </b>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <pre class="code-csharp">
+var                       tuple = Tuple.Create ("s", 1);
+KeyValuePair&lt;string, int&gt; kvp   = tuple.ToKeyValuePair ();
+    // kvp.Key == "s", kvp.Value == 1</pre>
+                </td>
+              </tr>
+            </table>
+          </blockquote>
+          <h4 class="Subsection">
+            <a href="javascript:toggle_display('M:Cadenza.TupleCoda.ToKeyValuePair``2(Cadenza.Tuple{``0,``1}):Version Information')">
+              <span id="M:Cadenza.TupleCoda.ToKeyValuePair``2(Cadenza.Tuple{``0,``1}):Version Information:toggle">⊟</span> Requirements</a>
+          </h4>
+          <blockquote class="SubsectionBox" id="M:Cadenza.TupleCoda.ToKeyValuePair``2(Cadenza.Tuple{``0,``1}):Version Information">
+            <b>Namespace: </b>Cadenza<br /><b>Assembly: </b>Cadenza (in Cadenza.dll)<br /><b>Assembly Versions: </b>0.1.0.0</blockquote>
+          <hr size="1" />
+        </blockquote>
+      </blockquote>
+    </div>
+    <hr size="1" />
+    <div class="Copyright">
+    </div>
+  </body>
+</html>

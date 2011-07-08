@@ -1,0 +1,1134 @@
+<html>
+  <head>
+    <title>Cadenza.Either&lt;T1,T2&gt;</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <style>
+      a { text-decoration: none }
+
+      div.SideBar {
+        padding-left: 1em;
+        padding-right: 1em;
+        right: 0;
+        float: right;
+        border: thin solid black;
+        background-color: #f2f2f2;
+      }
+    
+      .CollectionTitle { font-weight: bold }
+      .PageTitle { font-size: 150%; font-weight: bold }
+
+      .Summary { }
+      .Signature { }          
+      .Remarks { }
+      .Members { }
+      .Copyright { }
+      
+      .Section { font-size: 125%; font-weight: bold }
+      p.Summary {
+        margin-left: 1em;
+      }
+      .SectionBox { margin-left: 2em }
+      .NamespaceName { font-size: 105%; font-weight: bold }
+      .NamespaceSumary { }
+      .MemberName { font-size: 115%; font-weight: bold; margin-top: 1em }
+      .Subsection { font-size: 105%; font-weight: bold }
+      .SubsectionBox { margin-left: 2em; margin-bottom: 1em }
+
+      .CodeExampleTable { background-color: #f5f5dd; border: thin solid black; padding: .25em; }
+      
+      .TypesListing {
+        border-collapse: collapse;
+      }
+
+      td {
+        vertical-align: top;
+      }
+      th {
+        text-align: left;
+      }
+
+      .TypesListing td { 
+        margin: 0px;  
+        padding: .25em;
+        border: solid gray 1px;
+      }
+
+      .TypesListing th { 
+        margin: 0px;  
+        padding: .25em;
+        background-color: #f2f2f2;
+        border: solid gray 1px;
+      }
+
+      div.Footer {
+        border-top: 1px solid gray;
+        margin-top: 1.5em;
+        padding-top: 0.6em;
+        text-align: center;
+        color: gray;
+      }
+
+      span.NotEntered /* Documentation for this section has not yet been entered */ {
+        font-style: italic;
+        color: red;	
+      }
+
+      div.Header {
+        background: #B0C4DE;
+        border: double;
+        border-color: white;
+        border-width: 7px;
+        padding: 0.5em;
+      }
+
+      div.Header * {
+        font-size: smaller;
+      }
+
+      div.Note {
+      }
+
+      i.ParamRef {
+      }
+
+      i.subtitle {
+      }
+
+      ul.TypeMembersIndex {
+        text-align: left;
+        background: #F8F8F8;
+      }
+
+      ul.TypeMembersIndex li {
+        display: inline;
+        margin:  0.5em;
+      }
+
+      table.HeaderTable {
+      }
+
+      table.SignatureTable {
+      }
+
+      table.Documentation, table.Enumeration, table.TypeDocumentation {
+        border-collapse: collapse;
+        width: 100%;
+      }
+
+      table.Documentation tr th, table.TypeMembers tr th, table.Enumeration tr th, table.TypeDocumentation tr th {
+        background: whitesmoke;
+        padding: 0.8em;
+        border: 1px solid gray;
+        text-align: left;
+        vertical-align: bottom;
+      }
+
+      table.Documentation tr td, table.TypeMembers tr td, table.Enumeration tr td, table.TypeDocumentation tr td {
+        padding: 0.5em;
+        border: 1px solid gray;
+        text-align: left;
+        vertical-align: top;
+      }
+
+      table.TypeMembers {
+        border: 1px solid #C0C0C0;
+        width: 100%;
+      }
+
+      table.TypeMembers tr td {
+        background: #F8F8F8;
+        border: white;
+      }
+
+      table.Documentation {
+      }
+
+      table.TypeMembers {
+      }
+
+      div.CodeExample {
+        width: 100%;
+        border: 1px solid #DDDDDD;
+        background-color: #F8F8F8;
+      }
+
+      div.CodeExample p {
+        margin: 0.5em;
+        border-bottom: 1px solid #DDDDDD;
+      }
+
+      div.CodeExample div {
+        margin: 0.5em;
+      }
+
+      h4 {
+        margin-bottom: 0;
+      }
+
+      div.Signature {
+        border: 1px solid #C0C0C0;
+        background: #F2F2F2;
+        padding: 1em;
+      }
+    </style>
+    <script type="text/JavaScript">
+      function toggle_display (block) {
+        var w = document.getElementById (block);
+        var t = document.getElementById (block + ":toggle");
+        if (w.style.display == "none") {
+          w.style.display = "block";
+          t.innerHTML = "⊟";
+        } else {
+          w.style.display = "none";
+          t.innerHTML = "⊞";
+        }
+      }
+    </script>
+  </head>
+  <body>
+    <div class="CollectionTitle">
+      <a href="../index.html">Cadenza</a> : <a href="index.html">Cadenza Namespace</a></div>
+    <div class="SideBar">
+      <p>
+        <a href="#T:Cadenza.Either`2">Overview</a>
+      </p>
+      <p>
+        <a href="#T:Cadenza.Either`2:Signature">Signature</a>
+      </p>
+      <p>
+        <a href="#T:Cadenza.Either`2:Docs">Remarks</a>
+      </p>
+      <p>
+        <a href="#Members">Members</a>
+      </p>
+      <p>
+        <a href="#T:Cadenza.Either`2:Members">Member Details</a>
+      </p>
+    </div>
+    <h1 class="PageTitle" id="T:Cadenza.Either`2">Either&lt;T1,T2&gt; Generic Class</h1>
+    <p class="Summary" id="T:Cadenza.Either`2:Summary">
+            A union of 2 values.
+            </p>
+    <div id="T:Cadenza.Either`2:Signature">
+      <div class="Signature">public abstract class  <b>Either&lt;T1, T2&gt;</b> : <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.IEquatable`1">IEquatable&lt;Either&lt;T1, T2&gt;&gt;</a></div>
+    </div>
+    <div class="Remarks" id="T:Cadenza.Either`2:Docs">
+      <h4 class="Subsection">
+        <a href="javascript:toggle_display('T:Cadenza.Either`2:Docs:Type Parameters')">
+          <span id="T:Cadenza.Either`2:Docs:Type Parameters:toggle">⊟</span> Type Parameters</a>
+      </h4>
+      <blockquote class="SubsectionBox" id="T:Cadenza.Either`2:Docs:Type Parameters">
+        <dl>
+          <dt>
+            <i>T1</i>
+          </dt>
+          <dd>
+            The first value type.
+            </dd>
+          <dt>
+            <i>T2</i>
+          </dt>
+          <dd>
+            The second value type.
+            </dd>
+        </dl>
+      </blockquote>
+      <h4 class="Subsection">
+        <a href="javascript:toggle_display('T:Cadenza.Either`2:Docs:Remarks')">
+          <span id="T:Cadenza.Either`2:Docs:Remarks:toggle">⊟</span> Remarks</a>
+      </h4>
+      <blockquote class="SubsectionBox" id="T:Cadenza.Either`2:Docs:Remarks">
+        <p>
+            An <tt>Either</tt> is an immutable, strongly typed union of variously
+            typed values with each value lacking an otherwise meaningful name aside
+            from its position, which is not exposed.  It stores only one (non-null)
+            value from a set of types (as determined by the type parameter list).
+            </p>
+        <p>
+            The value held by a <a href="../Cadenza/Either`2.html">Cadenza.Either&lt;T1,  T2&gt;</a> instance
+            can be converted into a value by using the
+            <a href="../Cadenza/Either`2.html#M:Cadenza.Either`2.Fold``1(System.Func{`0,``0},System.Func{`1,``0})">Either&lt;T1,  T2&gt;.Fold``1(Func&lt;`0, ``0&gt;, Func&lt;`1, ``0&gt;)</a> method.
+            <tt>Fold</tt> takes a list of delegates to perform the conversion; the
+            delegate used to perform the conversion is based upon the internal
+            position of the value stored.
+            </p>
+        <p>
+          <tt>Either</tt> instances are created through one of the following
+            creation methods:
+            </p>
+        <ul>
+          <li>
+            <a href="../Cadenza/Either`2.html#M:Cadenza.Either`2.A(`0)">Either&lt;T1,  T2&gt;.A(`0)</a>
+          </li>
+          <li>
+            <a href="../Cadenza/Either`2.html#M:Cadenza.Either`2.op_Implicit(`0)~Cadenza.Either{`0,`1}">Either&lt;T1,  T2&gt;.op_Implicit(`0)</a>
+          </li>
+          <li>
+            <a href="../Cadenza/Either`2.html#M:Cadenza.Either`2.B(`1)">Either&lt;T1,  T2&gt;.B(`1)</a>
+          </li>
+          <li>
+            <a href="../Cadenza/Either`2.html#M:Cadenza.Either`2.op_Implicit(`1)~Cadenza.Either{`0,`1}">Either&lt;T1,  T2&gt;.op_Implicit(`1)</a>
+          </li>
+        </ul>
+        <table class="CodeExampleTable">
+          <tr>
+            <td>
+              <b>
+                <font size="-1">C# Example</font>
+              </b>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <pre class="code-csharp">
+            var a = Either&lt;double, string&gt;.A (Math.PI);   // value stored in 1st position
+            int r = a.Fold (
+            v =&gt; (int) v,                                 // 1st position converter
+            v =&gt; v.Length);                               // 2nd position converter
+            Console.WriteLine (r);                        // prints 3</pre>
+            </td>
+          </tr>
+        </table>
+      </blockquote>
+      <h4 class="Subsection">
+        <a href="javascript:toggle_display('T:Cadenza.Either`2:Docs:Version Information')">
+          <span id="T:Cadenza.Either`2:Docs:Version Information:toggle">⊟</span> Requirements</a>
+      </h4>
+      <blockquote class="SubsectionBox" id="T:Cadenza.Either`2:Docs:Version Information">
+        <b>Namespace: </b>Cadenza<br /><b>Assembly: </b>Cadenza (in Cadenza.dll)<br /><b>Assembly Versions: </b>0.1.0.0</blockquote>
+      <h2 class="Section" id="Members">
+        <a href="javascript:toggle_display('_Members')">
+          <span id="_Members:toggle">⊟</span> Members</a>
+      </h2>
+      <blockquote class="SectionBox" id="_Members">
+        <p>
+								See Also: Inherited members from
+								<a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Object">object</a>.
+							</p>
+        <h3>
+          <a href="javascript:toggle_display('Public Methods')">
+            <span id="Public Methods:toggle">⊟</span> Public Methods</a>
+        </h3>
+        <blockquote id="Public Methods">
+          <div class="SubsectionBox">
+            <table class="TypeMembers">
+              <tr valign="top">
+                <td>
+                  <div>static </div>
+                </td>
+                <td colspan="2">
+                  <b>
+                    <a href="#M:Cadenza.Either`2.A(`0)">A</a>
+                  </b>(<i title="&#xA;            The first value type.&#xA;            ">T1</i>)<nobr> : <a href="../Cadenza/Either`2.html">Either&lt;T1, T2&gt;</a></nobr><blockquote>
+            Creates a <a href="../Cadenza/Either`2.html">Cadenza.Either&lt;T1, T2&gt;</a> instance which
+            holds a <i>T1</i> value.
+            </blockquote></td>
+              </tr>
+              <tr valign="top">
+                <td>
+                  <div>static </div>
+                </td>
+                <td colspan="2">
+                  <b>
+                    <a href="#M:Cadenza.Either`2.B(`1)">B</a>
+                  </b>(<i title="&#xA;            The second value type.&#xA;            ">T2</i>)<nobr> : <a href="../Cadenza/Either`2.html">Either&lt;T1, T2&gt;</a></nobr><blockquote>
+            Creates a <a href="../Cadenza/Either`2.html">Cadenza.Either&lt;T1, T2&gt;</a> instance which
+            holds a <i>T2</i> value.
+            </blockquote></td>
+              </tr>
+              <tr valign="top">
+                <td>
+                  <div>abstract </div>
+                </td>
+                <td colspan="2">
+                  <b>
+                    <a href="#M:Cadenza.Either`2.Equals(Cadenza.Either{`0,`1})">Equals</a>
+                  </b>(<a href="../Cadenza/Either`2.html">Either&lt;T1, T2&gt;</a>)<nobr> : <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Boolean">bool</a></nobr><blockquote>
+            Determines whether the current instance and the specified <a href="../Cadenza/Either`2.html">Cadenza.Either&lt;T1, T2&gt;</a> have the same value.
+            </blockquote></td>
+              </tr>
+              <tr valign="top">
+                <td>
+                  <div>abstract </div>
+                </td>
+                <td colspan="2">
+                  <b>
+                    <a href="#M:Cadenza.Either`2.Equals(System.Object)">Equals</a>
+                  </b>(<a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Object">object</a>)<nobr> : <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Boolean">bool</a></nobr><blockquote>
+            Determines whether the current instance and the specified object have the same value.
+            </blockquote></td>
+              </tr>
+              <tr valign="top">
+                <td>
+                  <div>abstract </div>
+                </td>
+                <td colspan="2">
+                  <b>
+                    <a href="#M:Cadenza.Either`2.Fold``1(System.Func{`0,``0},System.Func{`1,``0})">Fold&lt;TResult&gt;</a>
+                  </b>(<a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Func`2">Func&lt;T1, TResult&gt;</a>, <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Func`2">Func&lt;T2, TResult&gt;</a>)<nobr> : <i title="&#xA;            The type to convert the  to.&#xA;            ">TResult</i></nobr><blockquote>
+            Converts a <a href="../Cadenza/Either`2.html">Cadenza.Either&lt;T1, T2&gt;</a> into a <i>TResult</i> value.
+            </blockquote></td>
+              </tr>
+              <tr valign="top">
+                <td>
+                  <div>abstract </div>
+                </td>
+                <td colspan="2">
+                  <b>
+                    <a href="#M:Cadenza.Either`2.GetHashCode">GetHashCode</a>
+                  </b>()<nobr> : <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Int32">int</a></nobr><blockquote>
+            Generates a hash code for the current instance.
+            </blockquote></td>
+              </tr>
+            </table>
+          </div>
+        </blockquote>
+        <h3>
+          <a href="javascript:toggle_display('Public Operators')">
+            <span id="Public Operators:toggle">⊟</span> Public Operators</a>
+        </h3>
+        <blockquote id="Public Operators">
+          <div class="SubsectionBox">
+            <table class="TypeMembers">
+              <tr valign="top">
+                <td>
+                  <div>static </div>
+                </td>
+                <td>
+                  <b>
+                    <a href="#M:Cadenza.Either`2.op_Implicit(`0)~Cadenza.Either{`0,`1}">Conversion to Cadenza.Either&lt;T1,T2&gt;</a>
+                  </b>(Implicit)</td>
+                <td>
+           Creates a <a href="../Cadenza/Either`2.html">Cadenza.Either&lt;T1, T2&gt;</a> instance which
+           holds a <i>T1</i> value.
+        </td>
+              </tr>
+              <tr valign="top">
+                <td>
+                  <div>static </div>
+                </td>
+                <td>
+                  <b>
+                    <a href="#M:Cadenza.Either`2.op_Implicit(`1)~Cadenza.Either{`0,`1}">Conversion to Cadenza.Either&lt;T1,T2&gt;</a>
+                  </b>(Implicit)</td>
+                <td>
+           Creates a <a href="../Cadenza/Either`2.html">Cadenza.Either&lt;T1, T2&gt;</a> instance which
+           holds a <i>T2</i> value.
+        </td>
+              </tr>
+            </table>
+          </div>
+        </blockquote>
+        <h3>
+          <a href="javascript:toggle_display('Extension Methods')">
+            <span id="Extension Methods:toggle">⊟</span> Extension Methods</a>
+        </h3>
+        <blockquote id="Extension Methods">
+          <div class="SubsectionBox">
+            <table class="TypeMembers">
+              <tr valign="top">
+                <td>
+                  <div>static </div>
+                </td>
+                <td colspan="2">
+                  <b>
+                    <a href="../Cadenza/ObjectCoda.html#M:Cadenza.ObjectCoda.Just``1(``0)">Just&lt;T&gt;</a>
+                  </b>(<i>this</i> <i title="&#xA;          The type to convert into a .&#xA;        ">T</i>)<nobr> : <a href="../Cadenza/Maybe`1.html">Maybe&lt;T&gt;</a></nobr><blockquote>
+          Create a new <a href="../Cadenza/Maybe`1.html">Cadenza.Maybe&lt;T&gt;</a> instance
+          initialized to a specified value.  The returned value will not be 
+          <a href="../Cadenza/Maybe`1.html#F:Cadenza.Maybe`1.Nothing">Maybe&lt;T&gt;.Nothing</a>.
+        </blockquote></td>
+              </tr>
+              <tr valign="top">
+                <td>
+                  <div>static </div>
+                </td>
+                <td colspan="2">
+                  <b>
+                    <a href="../Cadenza/ObjectCoda.html#M:Cadenza.ObjectCoda.Match``2(``0,System.Func{``0,Cadenza.Maybe{``1}}[])">Match&lt;TSource,TResult&gt;</a>
+                  </b>(<i>this</i> <i title="The source type.">TSource</i>, <b>params</b> <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Func`2">Func&lt;TSource, Maybe&lt;TResult&gt;&gt;</a>[])<nobr> : <i title="The result type.">TResult</i></nobr><blockquote>
+          Converts the <i>TSource</i> instance 
+          <i>self</i> into a <i>TResult</i>.
+        </blockquote></td>
+              </tr>
+              <tr valign="top">
+                <td>
+                  <div>static </div>
+                </td>
+                <td colspan="2">
+                  <b>
+                    <a href="../Cadenza/ObjectCoda.html#M:Cadenza.ObjectCoda.ToMaybe``1(``0)">ToMaybe&lt;T&gt;</a>
+                  </b>(<i>this</i> <i title="&#xA;          The type to convert into a .&#xA;        ">T</i>)<nobr> : <a href="../Cadenza/Maybe`1.html">Maybe&lt;T&gt;</a></nobr><blockquote>
+          Create a new <a href="../Cadenza/Maybe`1.html">Cadenza.Maybe&lt;T&gt;</a> instance
+          initialized to a specified value.  The returned value may be 
+          <a href="../Cadenza/Maybe`1.html#F:Cadenza.Maybe`1.Nothing">Maybe&lt;T&gt;.Nothing</a>.
+        </blockquote></td>
+              </tr>
+              <tr valign="top">
+                <td>
+                  <div>static </div>
+                </td>
+                <td colspan="2">
+                  <b>
+                    <a href="../Cadenza/ObjectCoda.html#M:Cadenza.ObjectCoda.TraverseBreadthFirst``2(``0,System.Func{``0,``1},System.Func{``0,System.Collections.Generic.IEnumerable{``0}})">TraverseBreadthFirst&lt;TSource,TResult&gt;</a>
+                  </b>(<i>this</i> <i title="&#xA;          The type of the root node and intermediate nodes of the tree.&#xA;        ">TSource</i>, <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Func`2">Func&lt;TSource, TResult&gt;</a>, <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Func`2">Func&lt;TSource, IEnumerable&lt;TSource&gt;&gt;</a>)<nobr> : <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Collections.Generic.IEnumerable`1">IEnumerable&lt;TResult&gt;</a></nobr><blockquote>
+          Traverse a tree in a breadth-first fashion, converting each 
+          encountered node.
+        </blockquote></td>
+              </tr>
+              <tr valign="top">
+                <td>
+                  <div>static </div>
+                </td>
+                <td colspan="2">
+                  <b>
+                    <a href="../Cadenza/ObjectCoda.html#M:Cadenza.ObjectCoda.TraverseBreadthFirstWithParent``2(``0,System.Func{``0,``1},System.Func{``0,System.Collections.Generic.IEnumerable{``0}})">TraverseBreadthFirstWithParent&lt;TSource,TResult&gt;</a>
+                  </b>(<i>this</i> <i title="&#xA;          The type of the root node and intermediate nodes of the tree.&#xA;        ">TSource</i>, <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Func`2">Func&lt;TSource, TResult&gt;</a>, <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Func`2">Func&lt;TSource, IEnumerable&lt;TSource&gt;&gt;</a>)<nobr> : <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Collections.Generic.IEnumerable`1">IEnumerable&lt;KeyValuePair&lt;TSource, TResult&gt;&gt;</a></nobr><blockquote>
+          Traverse a tree in a breadth-first fashion, converting each 
+          encountered node.
+        </blockquote></td>
+              </tr>
+              <tr valign="top">
+                <td>
+                  <div>static </div>
+                </td>
+                <td colspan="2">
+                  <b>
+                    <a href="../Cadenza/ObjectCoda.html#M:Cadenza.ObjectCoda.TraverseDepthFirst``2(``0,System.Func{``0,``1},System.Func{``0,System.Collections.Generic.IEnumerable{``0}})">TraverseDepthFirst&lt;TSource,TResult&gt;</a>
+                  </b>(<i>this</i> <i title="&#xA;          The type of the root node and intermediate nodes of the tree.&#xA;        ">TSource</i>, <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Func`2">Func&lt;TSource, TResult&gt;</a>, <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Func`2">Func&lt;TSource, IEnumerable&lt;TSource&gt;&gt;</a>)<nobr> : <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Collections.Generic.IEnumerable`1">IEnumerable&lt;TResult&gt;</a></nobr><blockquote>
+          Traverse a tree in a depth-first fashion, converting each 
+          encountered node.
+        </blockquote></td>
+              </tr>
+              <tr valign="top">
+                <td>
+                  <div>static </div>
+                </td>
+                <td colspan="2">
+                  <b>
+                    <a href="../Cadenza/ObjectCoda.html#M:Cadenza.ObjectCoda.TraverseDepthFirstWithParent``2(``0,System.Func{``0,``1},System.Func{``0,System.Collections.Generic.IEnumerable{``0}})">TraverseDepthFirstWithParent&lt;TSource,TResult&gt;</a>
+                  </b>(<i>this</i> <i title="&#xA;          The type of the root node and intermediate nodes of the tree.&#xA;        ">TSource</i>, <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Func`2">Func&lt;TSource, TResult&gt;</a>, <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Func`2">Func&lt;TSource, IEnumerable&lt;TSource&gt;&gt;</a>)<nobr> : <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Collections.Generic.IEnumerable`1">IEnumerable&lt;KeyValuePair&lt;TSource, TResult&gt;&gt;</a></nobr><blockquote>
+          Traverse a tree in a depth-first fashion, converting each 
+          encountered node.
+        </blockquote></td>
+              </tr>
+              <tr valign="top">
+                <td>
+                  <div>static </div>
+                </td>
+                <td colspan="2">
+                  <b>
+                    <a href="../Cadenza/ObjectCoda.html#M:Cadenza.ObjectCoda.With``2(``0,System.Func{``0,``1})">With&lt;TSource,TResult&gt;</a>
+                  </b>(<i>this</i> <i title="The type to operate on.">TSource</i>, <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Func`2">Func&lt;TSource, TResult&gt;</a>)<nobr> : <i title="The type to return.">TResult</i></nobr><blockquote>
+          Supports chaining otherwise temporary values.
+        </blockquote></td>
+              </tr>
+            </table>
+          </div>
+        </blockquote>
+      </blockquote>
+    </div>
+    <div class="Members" id="T:Cadenza.Either`2:Members">
+      <h2 class="Section" id="MemberDetails">
+        <a href="javascript:toggle_display('_MemberDetails')">
+          <span id="_MemberDetails:toggle">⊟</span> Member Details</a>
+      </h2>
+      <blockquote class="SectionBox" id="_MemberDetails">
+        <h3 id="M:Cadenza.Either`2.A(`0)">
+          <a href="javascript:toggle_display('M:Cadenza.Either`2.A(`0):member')">
+            <span id="M:Cadenza.Either`2.A(`0):member:toggle">⊟</span> A Method</a>
+        </h3>
+        <blockquote id="M:Cadenza.Either`2.A(`0):member">
+          <p class="Summary">
+            Creates a <a href="../Cadenza/Either`2.html">Cadenza.Either&lt;T1, T2&gt;</a> instance which
+            holds a <i>T1</i> value.
+            </p>
+          <div class="Signature">public static <a href="../Cadenza/Either`2.html">Either&lt;T1, T2&gt;</a> <b>A</b> (<i title="&#xA;            The first value type.&#xA;            ">T1</i> value)</div>
+          <h4 class="Subsection">
+            <a href="javascript:toggle_display('M:Cadenza.Either`2.A(`0):Parameters')">
+              <span id="M:Cadenza.Either`2.A(`0):Parameters:toggle">⊟</span> Parameters</a>
+          </h4>
+          <blockquote class="SubsectionBox" id="M:Cadenza.Either`2.A(`0):Parameters">
+            <dl>
+              <dt>
+                <i>value</i>
+              </dt>
+              <dd>
+            A <i>T1</i> containing the value
+            to provide to the first
+            <a href="../Cadenza/Either`2.html#M:Cadenza.Either`2.Fold``1(System.Func{`0,``0},System.Func{`1,``0})">Either&lt;T1, T2&gt;.Fold``1(Func&lt;`0, ``0&gt;, Func&lt;`1, ``0&gt;)</a>
+            delegate.
+            </dd>
+            </dl>
+          </blockquote>
+          <h4 class="Subsection">
+            <a href="javascript:toggle_display('M:Cadenza.Either`2.A(`0):Returns')">
+              <span id="M:Cadenza.Either`2.A(`0):Returns:toggle">⊟</span> Returns</a>
+          </h4>
+          <blockquote class="SubsectionBox" id="M:Cadenza.Either`2.A(`0):Returns">
+            A <a href="../Cadenza/Either`2.html">Cadenza.Either&lt;T1, T2&gt;</a> instance which holds a
+            holds a <i>T1</i> value.
+            </blockquote>
+          <h4 class="Subsection">
+            <a href="javascript:toggle_display('M:Cadenza.Either`2.A(`0):Exceptions')">
+              <span id="M:Cadenza.Either`2.A(`0):Exceptions:toggle">⊟</span> Exceptions</a>
+          </h4>
+          <blockquote class="SubsectionBox" id="M:Cadenza.Either`2.A(`0):Exceptions">
+            <table class="TypeDocumentation">
+              <tr>
+                <th>Type</th>
+                <th>Reason</th>
+              </tr>
+              <tr valign="top">
+                <td>
+                  <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.ArgumentNullException">ArgumentNullException</a>
+                </td>
+                <td>
+            if <i>value</i> is <tt>null</tt>.
+            </td>
+              </tr>
+            </table>
+          </blockquote>
+          <h4 class="Subsection">
+            <a href="javascript:toggle_display('M:Cadenza.Either`2.A(`0):Remarks')">
+              <span id="M:Cadenza.Either`2.A(`0):Remarks:toggle">⊟</span> Remarks</a>
+          </h4>
+          <blockquote class="SubsectionBox" id="M:Cadenza.Either`2.A(`0):Remarks">
+            When
+            <a href="../Cadenza/Either`2.html#M:Cadenza.Either`2.Fold``1(System.Func{`0,``0},System.Func{`1,``0})">Either&lt;T1, T2&gt;.Fold``1(Func&lt;`0, ``0&gt;, Func&lt;`1, ``0&gt;)</a>
+            is invoked,
+            the returned <a href="../Cadenza/Either`2.html">Cadenza.Either&lt;T1, T2&gt;</a> instance
+            will invoke the first delegate
+            for conversions.
+            </blockquote>
+          <h4 class="Subsection">
+            <a href="javascript:toggle_display('M:Cadenza.Either`2.A(`0):Version Information')">
+              <span id="M:Cadenza.Either`2.A(`0):Version Information:toggle">⊟</span> Requirements</a>
+          </h4>
+          <blockquote class="SubsectionBox" id="M:Cadenza.Either`2.A(`0):Version Information">
+            <b>Namespace: </b>Cadenza<br /><b>Assembly: </b>Cadenza (in Cadenza.dll)<br /><b>Assembly Versions: </b>0.1.0.0</blockquote>
+          <hr size="1" />
+        </blockquote>
+        <h3 id="M:Cadenza.Either`2.B(`1)">
+          <a href="javascript:toggle_display('M:Cadenza.Either`2.B(`1):member')">
+            <span id="M:Cadenza.Either`2.B(`1):member:toggle">⊟</span> B Method</a>
+        </h3>
+        <blockquote id="M:Cadenza.Either`2.B(`1):member">
+          <p class="Summary">
+            Creates a <a href="../Cadenza/Either`2.html">Cadenza.Either&lt;T1, T2&gt;</a> instance which
+            holds a <i>T2</i> value.
+            </p>
+          <div class="Signature">public static <a href="../Cadenza/Either`2.html">Either&lt;T1, T2&gt;</a> <b>B</b> (<i title="&#xA;            The second value type.&#xA;            ">T2</i> value)</div>
+          <h4 class="Subsection">
+            <a href="javascript:toggle_display('M:Cadenza.Either`2.B(`1):Parameters')">
+              <span id="M:Cadenza.Either`2.B(`1):Parameters:toggle">⊟</span> Parameters</a>
+          </h4>
+          <blockquote class="SubsectionBox" id="M:Cadenza.Either`2.B(`1):Parameters">
+            <dl>
+              <dt>
+                <i>value</i>
+              </dt>
+              <dd>
+            A <i>T2</i> containing the value
+            to provide to the second
+            <a href="../Cadenza/Either`2.html#M:Cadenza.Either`2.Fold``1(System.Func{`0,``0},System.Func{`1,``0})">Either&lt;T1, T2&gt;.Fold``1(Func&lt;`0, ``0&gt;, Func&lt;`1, ``0&gt;)</a>
+            delegate.
+            </dd>
+            </dl>
+          </blockquote>
+          <h4 class="Subsection">
+            <a href="javascript:toggle_display('M:Cadenza.Either`2.B(`1):Returns')">
+              <span id="M:Cadenza.Either`2.B(`1):Returns:toggle">⊟</span> Returns</a>
+          </h4>
+          <blockquote class="SubsectionBox" id="M:Cadenza.Either`2.B(`1):Returns">
+            A <a href="../Cadenza/Either`2.html">Cadenza.Either&lt;T1, T2&gt;</a> instance which holds a
+            holds a <i>T2</i> value.
+            </blockquote>
+          <h4 class="Subsection">
+            <a href="javascript:toggle_display('M:Cadenza.Either`2.B(`1):Exceptions')">
+              <span id="M:Cadenza.Either`2.B(`1):Exceptions:toggle">⊟</span> Exceptions</a>
+          </h4>
+          <blockquote class="SubsectionBox" id="M:Cadenza.Either`2.B(`1):Exceptions">
+            <table class="TypeDocumentation">
+              <tr>
+                <th>Type</th>
+                <th>Reason</th>
+              </tr>
+              <tr valign="top">
+                <td>
+                  <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.ArgumentNullException">ArgumentNullException</a>
+                </td>
+                <td>
+            if <i>value</i> is <tt>null</tt>.
+            </td>
+              </tr>
+            </table>
+          </blockquote>
+          <h4 class="Subsection">
+            <a href="javascript:toggle_display('M:Cadenza.Either`2.B(`1):Remarks')">
+              <span id="M:Cadenza.Either`2.B(`1):Remarks:toggle">⊟</span> Remarks</a>
+          </h4>
+          <blockquote class="SubsectionBox" id="M:Cadenza.Either`2.B(`1):Remarks">
+            When
+            <a href="../Cadenza/Either`2.html#M:Cadenza.Either`2.Fold``1(System.Func{`0,``0},System.Func{`1,``0})">Either&lt;T1, T2&gt;.Fold``1(Func&lt;`0, ``0&gt;, Func&lt;`1, ``0&gt;)</a>
+            is invoked,
+            the returned <a href="../Cadenza/Either`2.html">Cadenza.Either&lt;T1, T2&gt;</a> instance
+            will invoke the second delegate
+            for conversions.
+            </blockquote>
+          <h4 class="Subsection">
+            <a href="javascript:toggle_display('M:Cadenza.Either`2.B(`1):Version Information')">
+              <span id="M:Cadenza.Either`2.B(`1):Version Information:toggle">⊟</span> Requirements</a>
+          </h4>
+          <blockquote class="SubsectionBox" id="M:Cadenza.Either`2.B(`1):Version Information">
+            <b>Namespace: </b>Cadenza<br /><b>Assembly: </b>Cadenza (in Cadenza.dll)<br /><b>Assembly Versions: </b>0.1.0.0</blockquote>
+          <hr size="1" />
+        </blockquote>
+        <h3 id="M:Cadenza.Either`2.Equals(Cadenza.Either{`0,`1})">
+          <a href="javascript:toggle_display('M:Cadenza.Either`2.Equals(Cadenza.Either{`0,`1}):member')">
+            <span id="M:Cadenza.Either`2.Equals(Cadenza.Either{`0,`1}):member:toggle">⊟</span> Equals Method</a>
+        </h3>
+        <blockquote id="M:Cadenza.Either`2.Equals(Cadenza.Either{`0,`1}):member">
+          <p class="Summary">
+            Determines whether the current instance and the specified <a href="../Cadenza/Either`2.html">Cadenza.Either&lt;T1, T2&gt;</a> have the same value.
+            </p>
+          <div class="Signature">public abstract <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Boolean">bool</a> <b>Equals</b> (<a href="../Cadenza/Either`2.html">Either&lt;T1, T2&gt;</a> obj)</div>
+          <h4 class="Subsection">
+            <a href="javascript:toggle_display('M:Cadenza.Either`2.Equals(Cadenza.Either{`0,`1}):Parameters')">
+              <span id="M:Cadenza.Either`2.Equals(Cadenza.Either{`0,`1}):Parameters:toggle">⊟</span> Parameters</a>
+          </h4>
+          <blockquote class="SubsectionBox" id="M:Cadenza.Either`2.Equals(Cadenza.Either{`0,`1}):Parameters">
+            <dl>
+              <dt>
+                <i>obj</i>
+              </dt>
+              <dd>
+            A <a href="../Cadenza/Either`2.html">Cadenza.Either&lt;T1, T2&gt;</a>to compare this instance against.
+            </dd>
+            </dl>
+          </blockquote>
+          <h4 class="Subsection">
+            <a href="javascript:toggle_display('M:Cadenza.Either`2.Equals(Cadenza.Either{`0,`1}):Returns')">
+              <span id="M:Cadenza.Either`2.Equals(Cadenza.Either{`0,`1}):Returns:toggle">⊟</span> Returns</a>
+          </h4>
+          <blockquote class="SubsectionBox" id="M:Cadenza.Either`2.Equals(Cadenza.Either{`0,`1}):Returns">
+            <tt>true</tt> if each member of <i>obj</i>
+            and the current instance have the same value (according to
+            <a href="http://www.go-mono.com/docs/monodoc.ashx?link=M:System.Object.Equals(System.Object)">object.Equals(object)</a>); otherwise
+            <tt>false</tt> is returned.
+            </blockquote>
+          <h4 class="Subsection">
+            <a href="javascript:toggle_display('M:Cadenza.Either`2.Equals(Cadenza.Either{`0,`1}):Remarks')">
+              <span id="M:Cadenza.Either`2.Equals(Cadenza.Either{`0,`1}):Remarks:toggle">⊟</span> Remarks</a>
+          </h4>
+          <blockquote class="SubsectionBox" id="M:Cadenza.Either`2.Equals(Cadenza.Either{`0,`1}):Remarks">
+            This method checks for value equality
+            (<a href="http://www.go-mono.com/docs/monodoc.ashx?link=M:System.Object.Equals(System.Object)">object.Equals(object)</a>), as defined by each
+            value type.
+            </blockquote>
+          <h4 class="Subsection">
+            <a href="javascript:toggle_display('M:Cadenza.Either`2.Equals(Cadenza.Either{`0,`1}):Version Information')">
+              <span id="M:Cadenza.Either`2.Equals(Cadenza.Either{`0,`1}):Version Information:toggle">⊟</span> Requirements</a>
+          </h4>
+          <blockquote class="SubsectionBox" id="M:Cadenza.Either`2.Equals(Cadenza.Either{`0,`1}):Version Information">
+            <b>Namespace: </b>Cadenza<br /><b>Assembly: </b>Cadenza (in Cadenza.dll)<br /><b>Assembly Versions: </b>0.1.0.0</blockquote>
+          <hr size="1" />
+        </blockquote>
+        <h3 id="M:Cadenza.Either`2.Equals(System.Object)">
+          <a href="javascript:toggle_display('M:Cadenza.Either`2.Equals(System.Object):member')">
+            <span id="M:Cadenza.Either`2.Equals(System.Object):member:toggle">⊟</span> Equals Method</a>
+        </h3>
+        <blockquote id="M:Cadenza.Either`2.Equals(System.Object):member">
+          <p class="Summary">
+            Determines whether the current instance and the specified object have the same value.
+            </p>
+          <div class="Signature">public abstract <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Boolean">bool</a> <b>Equals</b> (<a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Object">object</a> obj)</div>
+          <h4 class="Subsection">
+            <a href="javascript:toggle_display('M:Cadenza.Either`2.Equals(System.Object):Parameters')">
+              <span id="M:Cadenza.Either`2.Equals(System.Object):Parameters:toggle">⊟</span> Parameters</a>
+          </h4>
+          <blockquote class="SubsectionBox" id="M:Cadenza.Either`2.Equals(System.Object):Parameters">
+            <dl>
+              <dt>
+                <i>obj</i>
+              </dt>
+              <dd>
+            A <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Object">object</a> to compare this instance against.
+            </dd>
+            </dl>
+          </blockquote>
+          <h4 class="Subsection">
+            <a href="javascript:toggle_display('M:Cadenza.Either`2.Equals(System.Object):Returns')">
+              <span id="M:Cadenza.Either`2.Equals(System.Object):Returns:toggle">⊟</span> Returns</a>
+          </h4>
+          <blockquote class="SubsectionBox" id="M:Cadenza.Either`2.Equals(System.Object):Returns">
+            <tt>true</tt> if <i>obj</i> is a
+            <a href="../Cadenza/Either`2.html">Cadenza.Either&lt;T1, T2&gt;</a> and each member of <i>obj</i>
+            and the current instance have the same value (according to
+            <a href="http://www.go-mono.com/docs/monodoc.ashx?link=M:System.Object.Equals(System.Object)">object.Equals(object)</a>); otherwise
+            <tt>false</tt> is returned.
+            </blockquote>
+          <h4 class="Subsection">
+            <a href="javascript:toggle_display('M:Cadenza.Either`2.Equals(System.Object):Remarks')">
+              <span id="M:Cadenza.Either`2.Equals(System.Object):Remarks:toggle">⊟</span> Remarks</a>
+          </h4>
+          <blockquote class="SubsectionBox" id="M:Cadenza.Either`2.Equals(System.Object):Remarks">
+            <p>
+            This method checks for value equality
+            (<a href="http://www.go-mono.com/docs/monodoc.ashx?link=M:System.Object.Equals(System.Object)">object.Equals(object)</a>), as defined by each
+            value type.
+            </p>
+            <p>
+              <div>
+                <i>Note: </i>
+            This method overrides <a href="http://www.go-mono.com/docs/monodoc.ashx?link=M:System.Object.Equals(System.Object)">object.Equals(object)</a>.
+            </div>
+            </p>
+          </blockquote>
+          <h4 class="Subsection">
+            <a href="javascript:toggle_display('M:Cadenza.Either`2.Equals(System.Object):Version Information')">
+              <span id="M:Cadenza.Either`2.Equals(System.Object):Version Information:toggle">⊟</span> Requirements</a>
+          </h4>
+          <blockquote class="SubsectionBox" id="M:Cadenza.Either`2.Equals(System.Object):Version Information">
+            <b>Namespace: </b>Cadenza<br /><b>Assembly: </b>Cadenza (in Cadenza.dll)<br /><b>Assembly Versions: </b>0.1.0.0</blockquote>
+          <hr size="1" />
+        </blockquote>
+        <h3 id="M:Cadenza.Either`2.Fold``1(System.Func{`0,``0},System.Func{`1,``0})">
+          <a href="javascript:toggle_display('M:Cadenza.Either`2.Fold``1(System.Func{`0,``0},System.Func{`1,``0}):member')">
+            <span id="M:Cadenza.Either`2.Fold``1(System.Func{`0,``0},System.Func{`1,``0}):member:toggle">⊟</span> Fold&lt;TResult&gt; Generic Method</a>
+        </h3>
+        <blockquote id="M:Cadenza.Either`2.Fold``1(System.Func{`0,``0},System.Func{`1,``0}):member">
+          <p class="Summary">
+            Converts a <a href="../Cadenza/Either`2.html">Cadenza.Either&lt;T1, T2&gt;</a> into a <i>TResult</i> value.
+            </p>
+          <div class="Signature">public abstract <i title="&#xA;            The type to convert the  to.&#xA;            ">TResult</i> <b>Fold&lt;TResult&gt;</b> (<a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Func`2">Func&lt;T1, TResult&gt;</a> a, <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Func`2">Func&lt;T2, TResult&gt;</a> b)</div>
+          <h4 class="Subsection">
+            <a href="javascript:toggle_display('M:Cadenza.Either`2.Fold``1(System.Func{`0,``0},System.Func{`1,``0}):Type Parameters')">
+              <span id="M:Cadenza.Either`2.Fold``1(System.Func{`0,``0},System.Func{`1,``0}):Type Parameters:toggle">⊟</span> Type Parameters</a>
+          </h4>
+          <blockquote class="SubsectionBox" id="M:Cadenza.Either`2.Fold``1(System.Func{`0,``0},System.Func{`1,``0}):Type Parameters">
+            <dl>
+              <dt>
+                <i>TResult</i>
+              </dt>
+              <dd>
+            The type to convert the <a href="../Cadenza/Either`2.html">Cadenza.Either&lt;T1, T2&gt;</a> to.
+            </dd>
+            </dl>
+          </blockquote>
+          <h4 class="Subsection">
+            <a href="javascript:toggle_display('M:Cadenza.Either`2.Fold``1(System.Func{`0,``0},System.Func{`1,``0}):Parameters')">
+              <span id="M:Cadenza.Either`2.Fold``1(System.Func{`0,``0},System.Func{`1,``0}):Parameters:toggle">⊟</span> Parameters</a>
+          </h4>
+          <blockquote class="SubsectionBox" id="M:Cadenza.Either`2.Fold``1(System.Func{`0,``0},System.Func{`1,``0}):Parameters">
+            <dl>
+              <dt>
+                <i>a</i>
+              </dt>
+              <dd>
+            A <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Func`2">Func&lt;T1, TResult&gt;</a>
+            used if the <a href="../Cadenza/Either`2.html">Cadenza.Either&lt;T1, T2&gt;</a> stores a
+            <i>T1</i> value into a
+            <i>TResult</i> value.
+            </dd>
+              <dt>
+                <i>b</i>
+              </dt>
+              <dd>
+            A <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Func`2">Func&lt;T2, TResult&gt;</a>
+            used if the <a href="../Cadenza/Either`2.html">Cadenza.Either&lt;T1, T2&gt;</a> stores a
+            <i>T2</i> value into a
+            <i>TResult</i> value.
+            </dd>
+            </dl>
+          </blockquote>
+          <h4 class="Subsection">
+            <a href="javascript:toggle_display('M:Cadenza.Either`2.Fold``1(System.Func{`0,``0},System.Func{`1,``0}):Returns')">
+              <span id="M:Cadenza.Either`2.Fold``1(System.Func{`0,``0},System.Func{`1,``0}):Returns:toggle">⊟</span> Returns</a>
+          </h4>
+          <blockquote class="SubsectionBox" id="M:Cadenza.Either`2.Fold``1(System.Func{`0,``0},System.Func{`1,``0}):Returns">
+            A <i>TResult</i> as generated by one
+            of the conversion delegate parameters.
+            </blockquote>
+          <h4 class="Subsection">
+            <a href="javascript:toggle_display('M:Cadenza.Either`2.Fold``1(System.Func{`0,``0},System.Func{`1,``0}):Exceptions')">
+              <span id="M:Cadenza.Either`2.Fold``1(System.Func{`0,``0},System.Func{`1,``0}):Exceptions:toggle">⊟</span> Exceptions</a>
+          </h4>
+          <blockquote class="SubsectionBox" id="M:Cadenza.Either`2.Fold``1(System.Func{`0,``0},System.Func{`1,``0}):Exceptions">
+            <table class="TypeDocumentation">
+              <tr>
+                <th>Type</th>
+                <th>Reason</th>
+              </tr>
+              <tr valign="top">
+                <td>
+                  <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.ArgumentNullException">ArgumentNullException</a>
+                </td>
+                <td>
+                  <p>
+                    <i>a</i> is <tt>null</tt>.
+            </p>
+                  <p>-or-</p>
+                  <p>
+                    <i>b</i> is <tt>null</tt>.
+            </p>
+                </td>
+              </tr>
+            </table>
+          </blockquote>
+          <h4 class="Subsection">
+            <a href="javascript:toggle_display('M:Cadenza.Either`2.Fold``1(System.Func{`0,``0},System.Func{`1,``0}):Remarks')">
+              <span id="M:Cadenza.Either`2.Fold``1(System.Func{`0,``0},System.Func{`1,``0}):Remarks:toggle">⊟</span> Remarks</a>
+          </h4>
+          <blockquote class="SubsectionBox" id="M:Cadenza.Either`2.Fold``1(System.Func{`0,``0},System.Func{`1,``0}):Remarks">
+            <p>
+            Converts a <a href="../Cadenza/Either`2.html">Cadenza.Either&lt;T1, T2&gt;</a> into a <i>TResult</i>
+            by invoking one of the provided delegate parameters.
+            </p>
+            <p>
+            The parameter which is invoked is predicated upon the internal position of
+            the value held.  For example, if the internal value is in the first position
+            (i.e. <a href="../Cadenza/Either`2.html#M:Cadenza.Either`2.A(`0)">Either&lt;T1, T2&gt;.A(`0)</a>
+            was used to create the <a href="../Cadenza/Either`2.html">Cadenza.Either&lt;T1, T2&gt;</a> instance), then
+            <i>a</i> (the first delegate parameter) will be invoked to
+            convert the <i>T1</i> into a
+            <i>TResult</i>.
+            </p>
+          </blockquote>
+          <h4 class="Subsection">
+            <a href="javascript:toggle_display('M:Cadenza.Either`2.Fold``1(System.Func{`0,``0},System.Func{`1,``0}):Version Information')">
+              <span id="M:Cadenza.Either`2.Fold``1(System.Func{`0,``0},System.Func{`1,``0}):Version Information:toggle">⊟</span> Requirements</a>
+          </h4>
+          <blockquote class="SubsectionBox" id="M:Cadenza.Either`2.Fold``1(System.Func{`0,``0},System.Func{`1,``0}):Version Information">
+            <b>Namespace: </b>Cadenza<br /><b>Assembly: </b>Cadenza (in Cadenza.dll)<br /><b>Assembly Versions: </b>0.1.0.0</blockquote>
+          <hr size="1" />
+        </blockquote>
+        <h3 id="M:Cadenza.Either`2.GetHashCode">
+          <a href="javascript:toggle_display('M:Cadenza.Either`2.GetHashCode:member')">
+            <span id="M:Cadenza.Either`2.GetHashCode:member:toggle">⊟</span> GetHashCode Method</a>
+        </h3>
+        <blockquote id="M:Cadenza.Either`2.GetHashCode:member">
+          <p class="Summary">
+            Generates a hash code for the current instance.
+            </p>
+          <div class="Signature">public abstract <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Int32">int</a> <b>GetHashCode</b> ()</div>
+          <h4 class="Subsection">
+            <a href="javascript:toggle_display('M:Cadenza.Either`2.GetHashCode:Returns')">
+              <span id="M:Cadenza.Either`2.GetHashCode:Returns:toggle">⊟</span> Returns</a>
+          </h4>
+          <blockquote class="SubsectionBox" id="M:Cadenza.Either`2.GetHashCode:Returns">
+            A <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Int32">int</a> containing the hash code for this instance.
+            </blockquote>
+          <h4 class="Subsection">
+            <a href="javascript:toggle_display('M:Cadenza.Either`2.GetHashCode:Remarks')">
+              <span id="M:Cadenza.Either`2.GetHashCode:Remarks:toggle">⊟</span> Remarks</a>
+          </h4>
+          <blockquote class="SubsectionBox" id="M:Cadenza.Either`2.GetHashCode:Remarks">
+            <div>
+              <i>Note: </i>
+            This method overrides <a href="http://www.go-mono.com/docs/monodoc.ashx?link=M:System.Object.GetHashCode">object.GetHashCode</a>.
+            </div>
+          </blockquote>
+          <h4 class="Subsection">
+            <a href="javascript:toggle_display('M:Cadenza.Either`2.GetHashCode:Version Information')">
+              <span id="M:Cadenza.Either`2.GetHashCode:Version Information:toggle">⊟</span> Requirements</a>
+          </h4>
+          <blockquote class="SubsectionBox" id="M:Cadenza.Either`2.GetHashCode:Version Information">
+            <b>Namespace: </b>Cadenza<br /><b>Assembly: </b>Cadenza (in Cadenza.dll)<br /><b>Assembly Versions: </b>0.1.0.0</blockquote>
+          <hr size="1" />
+        </blockquote>
+        <h3 id="M:Cadenza.Either`2.op_Implicit(`0)~Cadenza.Either{`0,`1}">
+          <a href="javascript:toggle_display('M:Cadenza.Either`2.op_Implicit(`0)~Cadenza.Either{`0,`1}:member')">
+            <span id="M:Cadenza.Either`2.op_Implicit(`0)~Cadenza.Either{`0,`1}:member:toggle">⊟</span> Conversion Method</a>
+        </h3>
+        <blockquote id="M:Cadenza.Either`2.op_Implicit(`0)~Cadenza.Either{`0,`1}:member">
+          <p class="Summary">
+           Creates a <a href="../Cadenza/Either`2.html">Cadenza.Either&lt;T1, T2&gt;</a> instance which
+           holds a <i>T1</i> value.
+        </p>
+          <div class="Signature">public static implicit operator <a href="../Cadenza/Either`2.html">Either&lt;T1, T2&gt;</a> (<i title="&#xA;            The first value type.&#xA;            ">T1</i> value)</div>
+          <h4 class="Subsection">
+            <a href="javascript:toggle_display('M:Cadenza.Either`2.op_Implicit(`0)~Cadenza.Either{`0,`1}:See Also')">
+              <span id="M:Cadenza.Either`2.op_Implicit(`0)~Cadenza.Either{`0,`1}:See Also:toggle">⊟</span> See Also</a>
+          </h4>
+          <blockquote class="SubsectionBox" id="M:Cadenza.Either`2.op_Implicit(`0)~Cadenza.Either{`0,`1}:See Also">
+            <div>
+              <a href="../Cadenza/Either`2.html#M:Cadenza.Either`2.A(`0)">Either&lt;T1, T2&gt;.A(`0)</a>
+            </div>
+          </blockquote>
+          <h4 class="Subsection">
+            <a href="javascript:toggle_display('M:Cadenza.Either`2.op_Implicit(`0)~Cadenza.Either{`0,`1}:Parameters')">
+              <span id="M:Cadenza.Either`2.op_Implicit(`0)~Cadenza.Either{`0,`1}:Parameters:toggle">⊟</span> Parameters</a>
+          </h4>
+          <blockquote class="SubsectionBox" id="M:Cadenza.Either`2.op_Implicit(`0)~Cadenza.Either{`0,`1}:Parameters">
+            <dl>
+              <dt>
+                <i>value</i>
+              </dt>
+              <dd>
+           A <i>T1</i> containing the value to store.
+        </dd>
+            </dl>
+          </blockquote>
+          <h4 class="Subsection">
+            <a href="javascript:toggle_display('M:Cadenza.Either`2.op_Implicit(`0)~Cadenza.Either{`0,`1}:Returns')">
+              <span id="M:Cadenza.Either`2.op_Implicit(`0)~Cadenza.Either{`0,`1}:Returns:toggle">⊟</span> Returns</a>
+          </h4>
+          <blockquote class="SubsectionBox" id="M:Cadenza.Either`2.op_Implicit(`0)~Cadenza.Either{`0,`1}:Returns">
+           A <a href="../Cadenza/Either`2.html">Cadenza.Either&lt;T1, T2&gt;</a> instance which
+           holds a <i>T1</i> value.
+        </blockquote>
+          <h4 class="Subsection">
+            <a href="javascript:toggle_display('M:Cadenza.Either`2.op_Implicit(`0)~Cadenza.Either{`0,`1}:Exceptions')">
+              <span id="M:Cadenza.Either`2.op_Implicit(`0)~Cadenza.Either{`0,`1}:Exceptions:toggle">⊟</span> Exceptions</a>
+          </h4>
+          <blockquote class="SubsectionBox" id="M:Cadenza.Either`2.op_Implicit(`0)~Cadenza.Either{`0,`1}:Exceptions">
+            <table class="TypeDocumentation">
+              <tr>
+                <th>Type</th>
+                <th>Reason</th>
+              </tr>
+              <tr valign="top">
+                <td>
+                  <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.ArgumentNullException">ArgumentNullException</a>
+                </td>
+                <td>
+           if <i>value</i> is <tt>null</tt>.
+        </td>
+              </tr>
+            </table>
+          </blockquote>
+          <h4 class="Subsection">
+            <a href="javascript:toggle_display('M:Cadenza.Either`2.op_Implicit(`0)~Cadenza.Either{`0,`1}:Remarks')">
+              <span id="M:Cadenza.Either`2.op_Implicit(`0)~Cadenza.Either{`0,`1}:Remarks:toggle">⊟</span> Remarks</a>
+          </h4>
+          <blockquote class="SubsectionBox" id="M:Cadenza.Either`2.op_Implicit(`0)~Cadenza.Either{`0,`1}:Remarks">
+            <p>
+            This conversion operator is provided to make
+            <a href="../Cadenza/Either`2.html">Cadenza.Either&lt;T1, T2&gt;</a> instance creation easier:
+          </p>
+            <table class="CodeExampleTable">
+              <tr>
+                <td>
+                  <b>
+                    <font size="-1">C# Example</font>
+                  </b>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <pre class="code-csharp">
+        Either&lt;int, double&gt; value = 42.0;  // value stored in 2nd position</pre>
+                </td>
+              </tr>
+            </table>
+          </blockquote>
+          <h4 class="Subsection">
+            <a href="javascript:toggle_display('M:Cadenza.Either`2.op_Implicit(`0)~Cadenza.Either{`0,`1}:Version Information')">
+              <span id="M:Cadenza.Either`2.op_Implicit(`0)~Cadenza.Either{`0,`1}:Version Information:toggle">⊟</span> Requirements</a>
+          </h4>
+          <blockquote class="SubsectionBox" id="M:Cadenza.Either`2.op_Implicit(`0)~Cadenza.Either{`0,`1}:Version Information">
+            <b>Namespace: </b>Cadenza<br /><b>Assembly: </b>Cadenza (in Cadenza.dll)<br /><b>Assembly Versions: </b>0.1.0.0</blockquote>
+          <hr size="1" />
+        </blockquote>
+        <h3 id="M:Cadenza.Either`2.op_Implicit(`1)~Cadenza.Either{`0,`1}">
+          <a href="javascript:toggle_display('M:Cadenza.Either`2.op_Implicit(`1)~Cadenza.Either{`0,`1}:member')">
+            <span id="M:Cadenza.Either`2.op_Implicit(`1)~Cadenza.Either{`0,`1}:member:toggle">⊟</span> Conversion Method</a>
+        </h3>
+        <blockquote id="M:Cadenza.Either`2.op_Implicit(`1)~Cadenza.Either{`0,`1}:member">
+          <p class="Summary">
+           Creates a <a href="../Cadenza/Either`2.html">Cadenza.Either&lt;T1, T2&gt;</a> instance which
+           holds a <i>T2</i> value.
+        </p>
+          <div class="Signature">public static implicit operator <a href="../Cadenza/Either`2.html">Either&lt;T1, T2&gt;</a> (<i title="&#xA;            The second value type.&#xA;            ">T2</i> value)</div>
+          <h4 class="Subsection">
+            <a href="javascript:toggle_display('M:Cadenza.Either`2.op_Implicit(`1)~Cadenza.Either{`0,`1}:See Also')">
+              <span id="M:Cadenza.Either`2.op_Implicit(`1)~Cadenza.Either{`0,`1}:See Also:toggle">⊟</span> See Also</a>
+          </h4>
+          <blockquote class="SubsectionBox" id="M:Cadenza.Either`2.op_Implicit(`1)~Cadenza.Either{`0,`1}:See Also">
+            <div>
+              <a href="../Cadenza/Either`2.html#M:Cadenza.Either`2.B(`1)">Either&lt;T1, T2&gt;.B(`1)</a>
+            </div>
+          </blockquote>
+          <h4 class="Subsection">
+            <a href="javascript:toggle_display('M:Cadenza.Either`2.op_Implicit(`1)~Cadenza.Either{`0,`1}:Parameters')">
+              <span id="M:Cadenza.Either`2.op_Implicit(`1)~Cadenza.Either{`0,`1}:Parameters:toggle">⊟</span> Parameters</a>
+          </h4>
+          <blockquote class="SubsectionBox" id="M:Cadenza.Either`2.op_Implicit(`1)~Cadenza.Either{`0,`1}:Parameters">
+            <dl>
+              <dt>
+                <i>value</i>
+              </dt>
+              <dd>
+           A <i>T2</i> containing the value to store.
+        </dd>
+            </dl>
+          </blockquote>
+          <h4 class="Subsection">
+            <a href="javascript:toggle_display('M:Cadenza.Either`2.op_Implicit(`1)~Cadenza.Either{`0,`1}:Returns')">
+              <span id="M:Cadenza.Either`2.op_Implicit(`1)~Cadenza.Either{`0,`1}:Returns:toggle">⊟</span> Returns</a>
+          </h4>
+          <blockquote class="SubsectionBox" id="M:Cadenza.Either`2.op_Implicit(`1)~Cadenza.Either{`0,`1}:Returns">
+           A <a href="../Cadenza/Either`2.html">Cadenza.Either&lt;T1, T2&gt;</a> instance which
+           holds a <i>T2</i> value.
+        </blockquote>
+          <h4 class="Subsection">
+            <a href="javascript:toggle_display('M:Cadenza.Either`2.op_Implicit(`1)~Cadenza.Either{`0,`1}:Exceptions')">
+              <span id="M:Cadenza.Either`2.op_Implicit(`1)~Cadenza.Either{`0,`1}:Exceptions:toggle">⊟</span> Exceptions</a>
+          </h4>
+          <blockquote class="SubsectionBox" id="M:Cadenza.Either`2.op_Implicit(`1)~Cadenza.Either{`0,`1}:Exceptions">
+            <table class="TypeDocumentation">
+              <tr>
+                <th>Type</th>
+                <th>Reason</th>
+              </tr>
+              <tr valign="top">
+                <td>
+                  <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.ArgumentNullException">ArgumentNullException</a>
+                </td>
+                <td>
+           if <i>value</i> is <tt>null</tt>.
+        </td>
+              </tr>
+            </table>
+          </blockquote>
+          <h4 class="Subsection">
+            <a href="javascript:toggle_display('M:Cadenza.Either`2.op_Implicit(`1)~Cadenza.Either{`0,`1}:Remarks')">
+              <span id="M:Cadenza.Either`2.op_Implicit(`1)~Cadenza.Either{`0,`1}:Remarks:toggle">⊟</span> Remarks</a>
+          </h4>
+          <blockquote class="SubsectionBox" id="M:Cadenza.Either`2.op_Implicit(`1)~Cadenza.Either{`0,`1}:Remarks">
+            <p>
+            This conversion operator is provided to make
+            <a href="../Cadenza/Either`2.html">Cadenza.Either&lt;T1, T2&gt;</a> instance creation easier:
+          </p>
+            <table class="CodeExampleTable">
+              <tr>
+                <td>
+                  <b>
+                    <font size="-1">C# Example</font>
+                  </b>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <pre class="code-csharp">
+        Either&lt;int, double&gt; value = 42.0;  // value stored in 2nd position</pre>
+                </td>
+              </tr>
+            </table>
+          </blockquote>
+          <h4 class="Subsection">
+            <a href="javascript:toggle_display('M:Cadenza.Either`2.op_Implicit(`1)~Cadenza.Either{`0,`1}:Version Information')">
+              <span id="M:Cadenza.Either`2.op_Implicit(`1)~Cadenza.Either{`0,`1}:Version Information:toggle">⊟</span> Requirements</a>
+          </h4>
+          <blockquote class="SubsectionBox" id="M:Cadenza.Either`2.op_Implicit(`1)~Cadenza.Either{`0,`1}:Version Information">
+            <b>Namespace: </b>Cadenza<br /><b>Assembly: </b>Cadenza (in Cadenza.dll)<br /><b>Assembly Versions: </b>0.1.0.0</blockquote>
+          <hr size="1" />
+        </blockquote>
+      </blockquote>
+    </div>
+    <hr size="1" />
+    <div class="Copyright">
+    </div>
+  </body>
+</html>

@@ -1,0 +1,1014 @@
+<html>
+  <head>
+    <title>Cadenza.Sequence</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <style>
+      a { text-decoration: none }
+
+      div.SideBar {
+        padding-left: 1em;
+        padding-right: 1em;
+        right: 0;
+        float: right;
+        border: thin solid black;
+        background-color: #f2f2f2;
+      }
+    
+      .CollectionTitle { font-weight: bold }
+      .PageTitle { font-size: 150%; font-weight: bold }
+
+      .Summary { }
+      .Signature { }          
+      .Remarks { }
+      .Members { }
+      .Copyright { }
+      
+      .Section { font-size: 125%; font-weight: bold }
+      p.Summary {
+        margin-left: 1em;
+      }
+      .SectionBox { margin-left: 2em }
+      .NamespaceName { font-size: 105%; font-weight: bold }
+      .NamespaceSumary { }
+      .MemberName { font-size: 115%; font-weight: bold; margin-top: 1em }
+      .Subsection { font-size: 105%; font-weight: bold }
+      .SubsectionBox { margin-left: 2em; margin-bottom: 1em }
+
+      .CodeExampleTable { background-color: #f5f5dd; border: thin solid black; padding: .25em; }
+      
+      .TypesListing {
+        border-collapse: collapse;
+      }
+
+      td {
+        vertical-align: top;
+      }
+      th {
+        text-align: left;
+      }
+
+      .TypesListing td { 
+        margin: 0px;  
+        padding: .25em;
+        border: solid gray 1px;
+      }
+
+      .TypesListing th { 
+        margin: 0px;  
+        padding: .25em;
+        background-color: #f2f2f2;
+        border: solid gray 1px;
+      }
+
+      div.Footer {
+        border-top: 1px solid gray;
+        margin-top: 1.5em;
+        padding-top: 0.6em;
+        text-align: center;
+        color: gray;
+      }
+
+      span.NotEntered /* Documentation for this section has not yet been entered */ {
+        font-style: italic;
+        color: red;	
+      }
+
+      div.Header {
+        background: #B0C4DE;
+        border: double;
+        border-color: white;
+        border-width: 7px;
+        padding: 0.5em;
+      }
+
+      div.Header * {
+        font-size: smaller;
+      }
+
+      div.Note {
+      }
+
+      i.ParamRef {
+      }
+
+      i.subtitle {
+      }
+
+      ul.TypeMembersIndex {
+        text-align: left;
+        background: #F8F8F8;
+      }
+
+      ul.TypeMembersIndex li {
+        display: inline;
+        margin:  0.5em;
+      }
+
+      table.HeaderTable {
+      }
+
+      table.SignatureTable {
+      }
+
+      table.Documentation, table.Enumeration, table.TypeDocumentation {
+        border-collapse: collapse;
+        width: 100%;
+      }
+
+      table.Documentation tr th, table.TypeMembers tr th, table.Enumeration tr th, table.TypeDocumentation tr th {
+        background: whitesmoke;
+        padding: 0.8em;
+        border: 1px solid gray;
+        text-align: left;
+        vertical-align: bottom;
+      }
+
+      table.Documentation tr td, table.TypeMembers tr td, table.Enumeration tr td, table.TypeDocumentation tr td {
+        padding: 0.5em;
+        border: 1px solid gray;
+        text-align: left;
+        vertical-align: top;
+      }
+
+      table.TypeMembers {
+        border: 1px solid #C0C0C0;
+        width: 100%;
+      }
+
+      table.TypeMembers tr td {
+        background: #F8F8F8;
+        border: white;
+      }
+
+      table.Documentation {
+      }
+
+      table.TypeMembers {
+      }
+
+      div.CodeExample {
+        width: 100%;
+        border: 1px solid #DDDDDD;
+        background-color: #F8F8F8;
+      }
+
+      div.CodeExample p {
+        margin: 0.5em;
+        border-bottom: 1px solid #DDDDDD;
+      }
+
+      div.CodeExample div {
+        margin: 0.5em;
+      }
+
+      h4 {
+        margin-bottom: 0;
+      }
+
+      div.Signature {
+        border: 1px solid #C0C0C0;
+        background: #F2F2F2;
+        padding: 1em;
+      }
+    </style>
+    <script type="text/JavaScript">
+      function toggle_display (block) {
+        var w = document.getElementById (block);
+        var t = document.getElementById (block + ":toggle");
+        if (w.style.display == "none") {
+          w.style.display = "block";
+          t.innerHTML = "⊟";
+        } else {
+          w.style.display = "none";
+          t.innerHTML = "⊞";
+        }
+      }
+    </script>
+  </head>
+  <body>
+    <div class="CollectionTitle">
+      <a href="../index.html">Cadenza</a> : <a href="index.html">Cadenza Namespace</a></div>
+    <div class="SideBar">
+      <p>
+        <a href="#T:Cadenza.Sequence">Overview</a>
+      </p>
+      <p>
+        <a href="#T:Cadenza.Sequence:Signature">Signature</a>
+      </p>
+      <p>
+        <a href="#T:Cadenza.Sequence:Docs">Remarks</a>
+      </p>
+      <p>
+        <a href="#Members">Members</a>
+      </p>
+      <p>
+        <a href="#T:Cadenza.Sequence:Members">Member Details</a>
+      </p>
+    </div>
+    <h1 class="PageTitle" id="T:Cadenza.Sequence">Sequence  Class</h1>
+    <p class="Summary" id="T:Cadenza.Sequence:Summary">
+      Provides a set of static methods for creating sequences.
+    </p>
+    <div id="T:Cadenza.Sequence:Signature">
+      <div class="Signature">public static class  <b>Sequence</b></div>
+    </div>
+    <div class="Remarks" id="T:Cadenza.Sequence:Docs">
+      <h4 class="Subsection">
+        <a href="javascript:toggle_display('T:Cadenza.Sequence:Docs:Thread Safety')">
+          <span id="T:Cadenza.Sequence:Docs:Thread Safety:toggle">⊟</span> Thread Safety</a>
+      </h4>
+      <blockquote class="SubsectionBox" id="T:Cadenza.Sequence:Docs:Thread Safety">
+    This type is thread safe.
+  </blockquote>
+      <h4 class="Subsection">
+        <a href="javascript:toggle_display('T:Cadenza.Sequence:Docs:Remarks')">
+          <span id="T:Cadenza.Sequence:Docs:Remarks:toggle">⊟</span> Remarks</a>
+      </h4>
+      <blockquote class="SubsectionBox" id="T:Cadenza.Sequence:Docs:Remarks">
+      </blockquote>
+      <h4 class="Subsection">
+        <a href="javascript:toggle_display('T:Cadenza.Sequence:Docs:Version Information')">
+          <span id="T:Cadenza.Sequence:Docs:Version Information:toggle">⊟</span> Requirements</a>
+      </h4>
+      <blockquote class="SubsectionBox" id="T:Cadenza.Sequence:Docs:Version Information">
+        <b>Namespace: </b>Cadenza<br /><b>Assembly: </b>Cadenza (in Cadenza.dll)<br /><b>Assembly Versions: </b>0.1.0.0</blockquote>
+      <h2 class="Section" id="Members">
+        <a href="javascript:toggle_display('_Members')">
+          <span id="_Members:toggle">⊟</span> Members</a>
+      </h2>
+      <blockquote class="SectionBox" id="_Members">
+        <p>
+								See Also: Inherited members from
+								<a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Object">object</a>.
+							</p>
+        <h3>
+          <a href="javascript:toggle_display('Public Methods')">
+            <span id="Public Methods:toggle">⊟</span> Public Methods</a>
+        </h3>
+        <blockquote id="Public Methods">
+          <div class="SubsectionBox">
+            <table class="TypeMembers">
+              <tr valign="top">
+                <td>
+                  <div>static </div>
+                </td>
+                <td colspan="2">
+                  <b>
+                    <a href="#M:Cadenza.Sequence.Expand(System.Object)">Expand</a>
+                  </b>(<a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Object">object</a>)<nobr> : <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Collections.IEnumerable">IEnumerable</a></nobr><blockquote>Depth-first object graph traversal.</blockquote></td>
+              </tr>
+              <tr valign="top">
+                <td>
+                  <div>static </div>
+                </td>
+                <td colspan="2">
+                  <b>
+                    <a href="#M:Cadenza.Sequence.Expand(System.Object,System.Collections.Generic.IEnumerable{System.Type})">Expand</a>
+                  </b>(<a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Object">object</a>, <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Collections.Generic.IEnumerable`1">IEnumerable&lt;Type&gt;</a>)<nobr> : <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Collections.IEnumerable">IEnumerable</a></nobr><blockquote>Depth-first object graph traversal.</blockquote></td>
+              </tr>
+              <tr valign="top">
+                <td>
+                  <div>static </div>
+                </td>
+                <td colspan="2">
+                  <b>
+                    <a href="#M:Cadenza.Sequence.Expand(System.Object,System.Type[])">Expand</a>
+                  </b>(<a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Object">object</a>, <b>params</b> <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Type">Type</a>[])<nobr> : <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Collections.IEnumerable">IEnumerable</a></nobr><blockquote>Depth-first object graph traversal.</blockquote></td>
+              </tr>
+              <tr valign="top">
+                <td>
+                  <div>static </div>
+                </td>
+                <td colspan="2">
+                  <b>
+                    <a href="#M:Cadenza.Sequence.GenerateReverse``2(``0,System.Func{``0,Cadenza.Maybe{Cadenza.Tuple{``1,``0}}})">GenerateReverse&lt;TSource,TResult&gt;</a>
+                  </b>(<i title="&#xA;          The type of the seed value.&#xA;        ">TSource</i>, <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Func`2">Func&lt;TSource, Maybe&lt;Tuple&lt;TResult, TSource&gt;&gt;&gt;</a>)<nobr> : <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Collections.Generic.IEnumerable`1">IEnumerable&lt;TResult&gt;</a></nobr><blockquote>
+          Creates a <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Collections.Generic.IEnumerable`1">IEnumerable&lt;TResult&gt;</a>
+          containing the values returned by <i>selector</i>.
+        </blockquote></td>
+              </tr>
+              <tr valign="top">
+                <td>
+                  <div>static </div>
+                </td>
+                <td colspan="2">
+                  <b>
+                    <a href="#M:Cadenza.Sequence.Iterate``1(``0,System.Func{``0,``0})">Iterate&lt;TSource&gt;</a>
+                  </b>(<i title="&#xA;          The type of the seed value  and &#xA;          the element type of the generated sequence.&#xA;        ">TSource</i>, <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Func`2">Func&lt;TSource, TSource&gt;</a>)<nobr> : <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Collections.Generic.IEnumerable`1">IEnumerable&lt;TSource&gt;</a></nobr><blockquote>
+          Creates an infinite 
+          <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Collections.Generic.IEnumerable`1">IEnumerable&lt;TSource&gt;</a>
+          sequence determined by <i>value</i>
+          and <i>selector</i>.
+        </blockquote></td>
+              </tr>
+              <tr valign="top">
+                <td>
+                  <div>static </div>
+                </td>
+                <td colspan="2">
+                  <b>
+                    <a href="#M:Cadenza.Sequence.Repeat``1(``0)">Repeat&lt;TSource&gt;</a>
+                  </b>(<i title="&#xA;          The type of the value to repeat.&#xA;        ">TSource</i>)<nobr> : <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Collections.Generic.IEnumerable`1">IEnumerable&lt;TSource&gt;</a></nobr><blockquote>
+          Creates an infinite 
+          <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Collections.Generic.IEnumerable`1">IEnumerable&lt;TSource&gt;</a>
+          seqeuence where each element value is <i>value</i>.
+        </blockquote></td>
+              </tr>
+            </table>
+          </div>
+        </blockquote>
+      </blockquote>
+    </div>
+    <div class="Members" id="T:Cadenza.Sequence:Members">
+      <h2 class="Section" id="MemberDetails">
+        <a href="javascript:toggle_display('_MemberDetails')">
+          <span id="_MemberDetails:toggle">⊟</span> Member Details</a>
+      </h2>
+      <blockquote class="SectionBox" id="_MemberDetails">
+        <h3 id="M:Cadenza.Sequence.Expand(System.Object)">
+          <a href="javascript:toggle_display('M:Cadenza.Sequence.Expand(System.Object):member')">
+            <span id="M:Cadenza.Sequence.Expand(System.Object):member:toggle">⊟</span> Expand Method</a>
+        </h3>
+        <blockquote id="M:Cadenza.Sequence.Expand(System.Object):member">
+          <p class="Summary">Depth-first object graph traversal.</p>
+          <div class="Signature">public static <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Collections.IEnumerable">IEnumerable</a> <b>Expand</b> (<a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Object">object</a> o)</div>
+          <h4 class="Subsection">
+            <a href="javascript:toggle_display('M:Cadenza.Sequence.Expand(System.Object):Parameters')">
+              <span id="M:Cadenza.Sequence.Expand(System.Object):Parameters:toggle">⊟</span> Parameters</a>
+          </h4>
+          <blockquote class="SubsectionBox" id="M:Cadenza.Sequence.Expand(System.Object):Parameters">
+            <dl>
+              <dt>
+                <i>o</i>
+              </dt>
+              <dd>
+          A <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Object">object</a> containing the object graph to traverse.
+        </dd>
+            </dl>
+          </blockquote>
+          <h4 class="Subsection">
+            <a href="javascript:toggle_display('M:Cadenza.Sequence.Expand(System.Object):Returns')">
+              <span id="M:Cadenza.Sequence.Expand(System.Object):Returns:toggle">⊟</span> Returns</a>
+          </h4>
+          <blockquote class="SubsectionBox" id="M:Cadenza.Sequence.Expand(System.Object):Returns">
+          An <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Collections.IEnumerable">IEnumerable</a> containing all 
+          non-<a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.String">string</a>, non-<a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Collections.IEnumerable">IEnumerable</a>
+          values found while traversing <i>o</i></blockquote>
+          <h4 class="Subsection">
+            <a href="javascript:toggle_display('M:Cadenza.Sequence.Expand(System.Object):Remarks')">
+              <span id="M:Cadenza.Sequence.Expand(System.Object):Remarks:toggle">⊟</span> Remarks</a>
+          </h4>
+          <blockquote class="SubsectionBox" id="M:Cadenza.Sequence.Expand(System.Object):Remarks">
+            <p>
+            This is to simplify supporting 
+            <a href="http://www.go-mono.com/docs/monodoc.ashx?link=M:System.Xml.Linq.XContainer.Add(System.Object)">System.Xml.Linq.XContainer.Add(object)</a>-style 
+            enumerable traversal.
+          </p>
+            <p>
+            If <i>o</i> does not implement 
+            <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Collections.IEnumerable">IEnumerable</a>, then an enumerator
+            which will yield <i>o</i> is returned.
+          </p>
+            <p>
+            If <i>o</i> implements <tt>IEnumerable</tt>, then it is 
+            enumerated over, and if an enumerated element implements 
+            <tt>IEnumerable</tt>, it too is enumerated, repeatedly, until
+            the enumerated element doesn't implement <tt>IEnumerable</tt> or
+            the element is a <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.String">string</a>.
+          </p>
+            <table class="CodeExampleTable">
+              <tr>
+                <td>
+                  <b>
+                    <font size="-1">C# Example</font>
+                  </b>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <pre class="code-csharp">Assert.AreEqual (
+	"1,2,3,4",
+	Sequence.Expand (new object[]{
+		Enumerable.Range (1, 2),
+		"3",
+		4
+	}).Cast&lt;object&gt;().Implode (","));
+</pre>
+                </td>
+              </tr>
+            </table>
+          </blockquote>
+          <h4 class="Subsection">
+            <a href="javascript:toggle_display('M:Cadenza.Sequence.Expand(System.Object):Version Information')">
+              <span id="M:Cadenza.Sequence.Expand(System.Object):Version Information:toggle">⊟</span> Requirements</a>
+          </h4>
+          <blockquote class="SubsectionBox" id="M:Cadenza.Sequence.Expand(System.Object):Version Information">
+            <b>Namespace: </b>Cadenza<br /><b>Assembly: </b>Cadenza (in Cadenza.dll)<br /><b>Assembly Versions: </b>0.1.0.0</blockquote>
+          <hr size="1" />
+        </blockquote>
+        <h3 id="M:Cadenza.Sequence.Expand(System.Object,System.Collections.Generic.IEnumerable{System.Type})">
+          <a href="javascript:toggle_display('M:Cadenza.Sequence.Expand(System.Object,System.Collections.Generic.IEnumerable{System.Type}):member')">
+            <span id="M:Cadenza.Sequence.Expand(System.Object,System.Collections.Generic.IEnumerable{System.Type}):member:toggle">⊟</span> Expand Method</a>
+        </h3>
+        <blockquote id="M:Cadenza.Sequence.Expand(System.Object,System.Collections.Generic.IEnumerable{System.Type}):member">
+          <p class="Summary">Depth-first object graph traversal.</p>
+          <div class="Signature">public static <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Collections.IEnumerable">IEnumerable</a> <b>Expand</b> (<a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Object">object</a> o, <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Collections.Generic.IEnumerable`1">IEnumerable&lt;Type&gt;</a> except)</div>
+          <h4 class="Subsection">
+            <a href="javascript:toggle_display('M:Cadenza.Sequence.Expand(System.Object,System.Collections.Generic.IEnumerable{System.Type}):Parameters')">
+              <span id="M:Cadenza.Sequence.Expand(System.Object,System.Collections.Generic.IEnumerable{System.Type}):Parameters:toggle">⊟</span> Parameters</a>
+          </h4>
+          <blockquote class="SubsectionBox" id="M:Cadenza.Sequence.Expand(System.Object,System.Collections.Generic.IEnumerable{System.Type}):Parameters">
+            <dl>
+              <dt>
+                <i>o</i>
+              </dt>
+              <dd>
+          A <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Object">object</a> containing the object graph to traverse.
+        </dd>
+              <dt>
+                <i>except</i>
+              </dt>
+              <dd>
+          A <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Collections.Generic.IEnumerable`1">IEnumerable&lt;Type&gt;</a> containing
+          the types that, while implementing <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Collections.IEnumerable">IEnumerable</a>,
+          should not be traversed.  An inheritance match is used.
+        </dd>
+            </dl>
+          </blockquote>
+          <h4 class="Subsection">
+            <a href="javascript:toggle_display('M:Cadenza.Sequence.Expand(System.Object,System.Collections.Generic.IEnumerable{System.Type}):Returns')">
+              <span id="M:Cadenza.Sequence.Expand(System.Object,System.Collections.Generic.IEnumerable{System.Type}):Returns:toggle">⊟</span> Returns</a>
+          </h4>
+          <blockquote class="SubsectionBox" id="M:Cadenza.Sequence.Expand(System.Object,System.Collections.Generic.IEnumerable{System.Type}):Returns">
+          An <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Collections.IEnumerable">IEnumerable</a> containing only 
+          values with types present within <i>except</i> or values
+          with types that do not implement <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Collections.IEnumerable">IEnumerable</a>.
+        </blockquote>
+          <h4 class="Subsection">
+            <a href="javascript:toggle_display('M:Cadenza.Sequence.Expand(System.Object,System.Collections.Generic.IEnumerable{System.Type}):Exceptions')">
+              <span id="M:Cadenza.Sequence.Expand(System.Object,System.Collections.Generic.IEnumerable{System.Type}):Exceptions:toggle">⊟</span> Exceptions</a>
+          </h4>
+          <blockquote class="SubsectionBox" id="M:Cadenza.Sequence.Expand(System.Object,System.Collections.Generic.IEnumerable{System.Type}):Exceptions">
+            <table class="TypeDocumentation">
+              <tr>
+                <th>Type</th>
+                <th>Reason</th>
+              </tr>
+              <tr valign="top">
+                <td>
+                  <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.ArgumentNullException">ArgumentNullException</a>
+                </td>
+                <td>
+                  <i>except</i> is <tt>null</tt>.
+        </td>
+              </tr>
+            </table>
+          </blockquote>
+          <h4 class="Subsection">
+            <a href="javascript:toggle_display('M:Cadenza.Sequence.Expand(System.Object,System.Collections.Generic.IEnumerable{System.Type}):Remarks')">
+              <span id="M:Cadenza.Sequence.Expand(System.Object,System.Collections.Generic.IEnumerable{System.Type}):Remarks:toggle">⊟</span> Remarks</a>
+          </h4>
+          <blockquote class="SubsectionBox" id="M:Cadenza.Sequence.Expand(System.Object,System.Collections.Generic.IEnumerable{System.Type}):Remarks">
+            <p>
+            This is to simplify supporting 
+            <a href="http://www.go-mono.com/docs/monodoc.ashx?link=M:System.Xml.Linq.XContainer.Add(System.Object)">System.Xml.Linq.XContainer.Add(object)</a>-style 
+            enumerable traversal.
+          </p>
+            <p>
+            If <i>o</i> does not implement 
+            <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Collections.IEnumerable">IEnumerable</a>, then an enumerator
+            which will yield <i>o</i> is returned.
+          </p>
+            <p>
+            If <i>o</i> implements <tt>IEnumerable</tt>, then it is 
+            enumerated over, and if an enumerated element implements 
+            <tt>IEnumerable</tt>, it too is enumerated, repeatedly, until either
+            the enumerated element doesn't implement <tt>IEnumerable</tt> or
+            the element's type is present within <i>except</i>.
+            <i>except</i> type matching is based on 
+            <a href="http://www.go-mono.com/docs/monodoc.ashx?link=M:System.Type.IsAssignableFrom(System.Type)">Type.IsAssignableFrom(Type)</a>; 
+            consequently, exact type matching is not performed, and inheritance
+            relationships are taken into consideration.
+          </p>
+            <p>
+            For example, if <i>except</i> contains 
+            <tt>typeof(<a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Collections.ICollection">ICollection</a>)</tt>,
+            then if <i>o</i> were a
+            <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Collections.Generic.List`1">List&lt;int&gt;</a>
+            (which implements <tt>ICollection</tt>), then the embedded list
+            will not be further enumerated.
+          </p>
+            <table class="CodeExampleTable">
+              <tr>
+                <td>
+                  <b>
+                    <font size="-1">C# Example</font>
+                  </b>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <pre class="code-csharp">IEnumerable seq = Sequence.Expand (new List&lt;int&gt; { 1, 2, 3 }, typeof (ICollection));
+foreach (object v in seq)
+	Assert.IsTrue (v is List&lt;int&gt;);
+</pre>
+                </td>
+              </tr>
+            </table>
+          </blockquote>
+          <h4 class="Subsection">
+            <a href="javascript:toggle_display('M:Cadenza.Sequence.Expand(System.Object,System.Collections.Generic.IEnumerable{System.Type}):Version Information')">
+              <span id="M:Cadenza.Sequence.Expand(System.Object,System.Collections.Generic.IEnumerable{System.Type}):Version Information:toggle">⊟</span> Requirements</a>
+          </h4>
+          <blockquote class="SubsectionBox" id="M:Cadenza.Sequence.Expand(System.Object,System.Collections.Generic.IEnumerable{System.Type}):Version Information">
+            <b>Namespace: </b>Cadenza<br /><b>Assembly: </b>Cadenza (in Cadenza.dll)<br /><b>Assembly Versions: </b>0.1.0.0</blockquote>
+          <hr size="1" />
+        </blockquote>
+        <h3 id="M:Cadenza.Sequence.Expand(System.Object,System.Type[])">
+          <a href="javascript:toggle_display('M:Cadenza.Sequence.Expand(System.Object,System.Type[]):member')">
+            <span id="M:Cadenza.Sequence.Expand(System.Object,System.Type[]):member:toggle">⊟</span> Expand Method</a>
+        </h3>
+        <blockquote id="M:Cadenza.Sequence.Expand(System.Object,System.Type[]):member">
+          <p class="Summary">Depth-first object graph traversal.</p>
+          <div class="Signature">public static <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Collections.IEnumerable">IEnumerable</a> <b>Expand</b> (<a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Object">object</a> o, <b>params</b> <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Type">Type</a>[] except)</div>
+          <h4 class="Subsection">
+            <a href="javascript:toggle_display('M:Cadenza.Sequence.Expand(System.Object,System.Type[]):Parameters')">
+              <span id="M:Cadenza.Sequence.Expand(System.Object,System.Type[]):Parameters:toggle">⊟</span> Parameters</a>
+          </h4>
+          <blockquote class="SubsectionBox" id="M:Cadenza.Sequence.Expand(System.Object,System.Type[]):Parameters">
+            <dl>
+              <dt>
+                <i>o</i>
+              </dt>
+              <dd>
+          A <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Object">object</a> containing the object graph to traverse.
+        </dd>
+              <dt>
+                <i>except</i>
+              </dt>
+              <dd>
+          A <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Type">Type</a> array containing
+          the types that, while implementing <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Collections.IEnumerable">IEnumerable</a>,
+          should not be traversed.  An inheritance match is used.
+        </dd>
+            </dl>
+          </blockquote>
+          <h4 class="Subsection">
+            <a href="javascript:toggle_display('M:Cadenza.Sequence.Expand(System.Object,System.Type[]):Returns')">
+              <span id="M:Cadenza.Sequence.Expand(System.Object,System.Type[]):Returns:toggle">⊟</span> Returns</a>
+          </h4>
+          <blockquote class="SubsectionBox" id="M:Cadenza.Sequence.Expand(System.Object,System.Type[]):Returns">
+          An <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Collections.IEnumerable">IEnumerable</a> containing only 
+          values with types present within <i>except</i> or values
+          with types that do not implement <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Collections.IEnumerable">IEnumerable</a>.
+        </blockquote>
+          <h4 class="Subsection">
+            <a href="javascript:toggle_display('M:Cadenza.Sequence.Expand(System.Object,System.Type[]):Exceptions')">
+              <span id="M:Cadenza.Sequence.Expand(System.Object,System.Type[]):Exceptions:toggle">⊟</span> Exceptions</a>
+          </h4>
+          <blockquote class="SubsectionBox" id="M:Cadenza.Sequence.Expand(System.Object,System.Type[]):Exceptions">
+            <table class="TypeDocumentation">
+              <tr>
+                <th>Type</th>
+                <th>Reason</th>
+              </tr>
+              <tr valign="top">
+                <td>
+                  <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.ArgumentNullException">ArgumentNullException</a>
+                </td>
+                <td>
+                  <i>except</i> is <tt>null</tt>.
+        </td>
+              </tr>
+            </table>
+          </blockquote>
+          <h4 class="Subsection">
+            <a href="javascript:toggle_display('M:Cadenza.Sequence.Expand(System.Object,System.Type[]):Remarks')">
+              <span id="M:Cadenza.Sequence.Expand(System.Object,System.Type[]):Remarks:toggle">⊟</span> Remarks</a>
+          </h4>
+          <blockquote class="SubsectionBox" id="M:Cadenza.Sequence.Expand(System.Object,System.Type[]):Remarks">
+            <p>
+            This is to simplify supporting 
+            <a href="http://www.go-mono.com/docs/monodoc.ashx?link=M:System.Xml.Linq.XContainer.Add(System.Object)">System.Xml.Linq.XContainer.Add(object)</a>-style 
+            enumerable traversal.
+          </p>
+            <p>
+            If <i>o</i> does not implement 
+            <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Collections.IEnumerable">IEnumerable</a>, then an enumerator
+            which will yield <i>o</i> is returned.
+          </p>
+            <p>
+            If <i>o</i> implements <tt>IEnumerable</tt>, then it is 
+            enumerated over, and if an enumerated element implements 
+            <tt>IEnumerable</tt>, it too is enumerated, repeatedly, until either
+            the enumerated element doesn't implement <tt>IEnumerable</tt> or
+            the element's type is present within <i>except</i>.
+            <i>except</i> type matching is based on 
+            <a href="http://www.go-mono.com/docs/monodoc.ashx?link=M:System.Type.IsAssignableFrom(System.Type)">Type.IsAssignableFrom(Type)</a>; 
+            consequently, exact type matching is not performed, and inheritance
+            relationships are taken into consideration.
+          </p>
+            <p>
+            For example, if <i>except</i> contains 
+            <tt>typeof(<a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Collections.ICollection">ICollection</a>)</tt>,
+            then if <i>o</i> were a
+            <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Collections.Generic.List`1">List&lt;int&gt;</a>
+            (which implements <tt>ICollection</tt>), then the embedded list
+            will not be further enumerated.
+          </p>
+            <table class="CodeExampleTable">
+              <tr>
+                <td>
+                  <b>
+                    <font size="-1">C# Example</font>
+                  </b>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <pre class="code-csharp">IEnumerable seq = Sequence.Expand (new List&lt;int&gt; { 1, 2, 3 }, typeof (ICollection));
+foreach (object v in seq)
+	Assert.IsTrue (v is List&lt;int&gt;);
+</pre>
+                </td>
+              </tr>
+            </table>
+          </blockquote>
+          <h4 class="Subsection">
+            <a href="javascript:toggle_display('M:Cadenza.Sequence.Expand(System.Object,System.Type[]):Version Information')">
+              <span id="M:Cadenza.Sequence.Expand(System.Object,System.Type[]):Version Information:toggle">⊟</span> Requirements</a>
+          </h4>
+          <blockquote class="SubsectionBox" id="M:Cadenza.Sequence.Expand(System.Object,System.Type[]):Version Information">
+            <b>Namespace: </b>Cadenza<br /><b>Assembly: </b>Cadenza (in Cadenza.dll)<br /><b>Assembly Versions: </b>0.1.0.0</blockquote>
+          <hr size="1" />
+        </blockquote>
+        <h3 id="M:Cadenza.Sequence.GenerateReverse``2(``0,System.Func{``0,Cadenza.Maybe{Cadenza.Tuple{``1,``0}}})">
+          <a href="javascript:toggle_display('M:Cadenza.Sequence.GenerateReverse``2(``0,System.Func{``0,Cadenza.Maybe{Cadenza.Tuple{``1,``0}}}):member')">
+            <span id="M:Cadenza.Sequence.GenerateReverse``2(``0,System.Func{``0,Cadenza.Maybe{Cadenza.Tuple{``1,``0}}}):member:toggle">⊟</span> GenerateReverse&lt;TSource,TResult&gt; Generic Method</a>
+        </h3>
+        <blockquote id="M:Cadenza.Sequence.GenerateReverse``2(``0,System.Func{``0,Cadenza.Maybe{Cadenza.Tuple{``1,``0}}}):member">
+          <p class="Summary">
+          Creates a <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Collections.Generic.IEnumerable`1">IEnumerable&lt;TResult&gt;</a>
+          containing the values returned by <i>selector</i>.
+        </p>
+          <div class="Signature">public static <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Collections.Generic.IEnumerable`1">IEnumerable&lt;TResult&gt;</a> <b>GenerateReverse&lt;TSource, TResult&gt;</b> (<i title="&#xA;          The type of the seed value.&#xA;        ">TSource</i> value, <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Func`2">Func&lt;TSource, Maybe&lt;Tuple&lt;TResult, TSource&gt;&gt;&gt;</a> selector)</div>
+          <h4 class="Subsection">
+            <a href="javascript:toggle_display('M:Cadenza.Sequence.GenerateReverse``2(``0,System.Func{``0,Cadenza.Maybe{Cadenza.Tuple{``1,``0}}}):See Also')">
+              <span id="M:Cadenza.Sequence.GenerateReverse``2(``0,System.Func{``0,Cadenza.Maybe{Cadenza.Tuple{``1,``0}}}):See Also:toggle">⊟</span> See Also</a>
+          </h4>
+          <blockquote class="SubsectionBox" id="M:Cadenza.Sequence.GenerateReverse``2(``0,System.Func{``0,Cadenza.Maybe{Cadenza.Tuple{``1,``0}}}):See Also">
+            <div>
+              <a href="javascript:alert(&quot;Documentation not found.&quot;)">Cadenza.Collections.IEnumerableCoda.AggregateReverse``2(IEnumerable&lt;``0&gt;, ``1, Func&lt;``1, ``0, ``1&gt;)</a>
+            </div>
+            <div>
+              <a href="../Cadenza/Maybe.html#M:Cadenza.Maybe.When``1(System.Boolean,``0)">Maybe.When``1(bool, ``0)</a>
+            </div>
+            <div>
+              <a href="../Cadenza/Maybe.html#M:Cadenza.Maybe.When``1(System.Boolean,System.Func{``0})">Maybe.When``1(bool, Func&lt;``0&gt;)</a>
+            </div>
+            <div>
+              <a href="../Cadenza/Tuple`2.html">Tuple&lt;TResult, TSource&gt;</a>
+            </div>
+          </blockquote>
+          <h4 class="Subsection">
+            <a href="javascript:toggle_display('M:Cadenza.Sequence.GenerateReverse``2(``0,System.Func{``0,Cadenza.Maybe{Cadenza.Tuple{``1,``0}}}):Type Parameters')">
+              <span id="M:Cadenza.Sequence.GenerateReverse``2(``0,System.Func{``0,Cadenza.Maybe{Cadenza.Tuple{``1,``0}}}):Type Parameters:toggle">⊟</span> Type Parameters</a>
+          </h4>
+          <blockquote class="SubsectionBox" id="M:Cadenza.Sequence.GenerateReverse``2(``0,System.Func{``0,Cadenza.Maybe{Cadenza.Tuple{``1,``0}}}):Type Parameters">
+            <dl>
+              <dt>
+                <i>TSource</i>
+              </dt>
+              <dd>
+          The type of the seed value.
+        </dd>
+              <dt>
+                <i>TResult</i>
+              </dt>
+              <dd>
+          The type to create a sequence of.
+        </dd>
+            </dl>
+          </blockquote>
+          <h4 class="Subsection">
+            <a href="javascript:toggle_display('M:Cadenza.Sequence.GenerateReverse``2(``0,System.Func{``0,Cadenza.Maybe{Cadenza.Tuple{``1,``0}}}):Parameters')">
+              <span id="M:Cadenza.Sequence.GenerateReverse``2(``0,System.Func{``0,Cadenza.Maybe{Cadenza.Tuple{``1,``0}}}):Parameters:toggle">⊟</span> Parameters</a>
+          </h4>
+          <blockquote class="SubsectionBox" id="M:Cadenza.Sequence.GenerateReverse``2(``0,System.Func{``0,Cadenza.Maybe{Cadenza.Tuple{``1,``0}}}):Parameters">
+            <dl>
+              <dt>
+                <i>value</i>
+              </dt>
+              <dd>
+          A <i>TSource</i> containing the initial value to
+          pass to <i>selector</i>.
+        </dd>
+              <dt>
+                <i>selector</i>
+              </dt>
+              <dd>
+          A <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Func`2">Func&lt;TSource, Cadenza.Maybe&lt;Cadenza.Tuple&lt;TResult, TSource&gt;&gt;&gt;</a>
+          which is invoked to generate the sequence.
+        </dd>
+            </dl>
+          </blockquote>
+          <h4 class="Subsection">
+            <a href="javascript:toggle_display('M:Cadenza.Sequence.GenerateReverse``2(``0,System.Func{``0,Cadenza.Maybe{Cadenza.Tuple{``1,``0}}}):Returns')">
+              <span id="M:Cadenza.Sequence.GenerateReverse``2(``0,System.Func{``0,Cadenza.Maybe{Cadenza.Tuple{``1,``0}}}):Returns:toggle">⊟</span> Returns</a>
+          </h4>
+          <blockquote class="SubsectionBox" id="M:Cadenza.Sequence.GenerateReverse``2(``0,System.Func{``0,Cadenza.Maybe{Cadenza.Tuple{``1,``0}}}):Returns">
+          A <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Collections.Generic.IEnumerable`1">IEnumerable&lt;TResult&gt;</a>
+          containing the values returned by <i>selector</i>.
+        </blockquote>
+          <h4 class="Subsection">
+            <a href="javascript:toggle_display('M:Cadenza.Sequence.GenerateReverse``2(``0,System.Func{``0,Cadenza.Maybe{Cadenza.Tuple{``1,``0}}}):Exceptions')">
+              <span id="M:Cadenza.Sequence.GenerateReverse``2(``0,System.Func{``0,Cadenza.Maybe{Cadenza.Tuple{``1,``0}}}):Exceptions:toggle">⊟</span> Exceptions</a>
+          </h4>
+          <blockquote class="SubsectionBox" id="M:Cadenza.Sequence.GenerateReverse``2(``0,System.Func{``0,Cadenza.Maybe{Cadenza.Tuple{``1,``0}}}):Exceptions">
+            <table class="TypeDocumentation">
+              <tr>
+                <th>Type</th>
+                <th>Reason</th>
+              </tr>
+              <tr valign="top">
+                <td>
+                  <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.ArgumentNullException">ArgumentNullException</a>
+                </td>
+                <td>
+                  <i>selector</i> is <tt>null</tt>.
+        </td>
+              </tr>
+            </table>
+          </blockquote>
+          <h4 class="Subsection">
+            <a href="javascript:toggle_display('M:Cadenza.Sequence.GenerateReverse``2(``0,System.Func{``0,Cadenza.Maybe{Cadenza.Tuple{``1,``0}}}):Remarks')">
+              <span id="M:Cadenza.Sequence.GenerateReverse``2(``0,System.Func{``0,Cadenza.Maybe{Cadenza.Tuple{``1,``0}}}):Remarks:toggle">⊟</span> Remarks</a>
+          </h4>
+          <blockquote class="SubsectionBox" id="M:Cadenza.Sequence.GenerateReverse``2(``0,System.Func{``0,Cadenza.Maybe{Cadenza.Tuple{``1,``0}}}):Remarks">
+            <p>
+              <tt>GenerateReverse</tt> acts as a "dual" to 
+            <a href="javascript:alert(&quot;Documentation not found.&quot;)">Cadenza.Collections.IEnumerableCoda.AggregateReverse``2(IEnumerable&lt;``0&gt;, ``1, Func&lt;``1, ``0, ``1&gt;)</a>:
+            while <tt>AggregateReverse</tt> reduces a list to a summary value
+            (evaluating the list starting from the end),
+            <tt>GenerateReverse</tt> builds a list from a seed value.
+          </p>
+            <h5 class="Subsection">Operation</h5>
+            <p>
+              <i>selector</i> is first invoked with 
+              <i>value</i>, and returns a
+              <a href="../Cadenza/Maybe`1.html">Cadenza.Maybe&lt;Cadenza.Tuple&lt;TResult, TSource&gt;&gt;</a>.
+              If the returned 
+              <a href="../Cadenza/Maybe`1.html">Cadenza.Maybe&lt;Cadenza.Tuple&lt;TResult, TSource&gt;&gt;</a>.
+              contains a value 
+              (<a href="../Cadenza/Maybe`1.html#M:Cadenza.Maybe`1.HasValue">Maybe&lt;Tuple&lt;TResult, TSource&gt;&gt;.HasValue</a>
+              is <tt>true</tt>),
+              then <a href="../Cadenza/Tuple`2.html#P:Cadenza.Tuple`2._1">Tuple&lt;TResult, TSource&gt;._1</a> will
+              be returned from the generator, and 
+              <a href="../Cadenza/Tuple`2.html#P:Cadenza.Tuple`2._2">Tuple&lt;TResult, TSource&gt;._2</a> will be
+              used as the value for subsequent <i>selector</i>
+              invocations.
+            </p>
+            <p>
+              When <i>selector</i> returns 
+              <a href="../Cadenza/Maybe`1.html#F:Cadenza.Maybe`1.Nothing">Maybe&lt;Tuple&lt;TResult, TSource&gt;&gt;.Nothing</a>,
+              the sequence is terminated.
+            </p>
+            <table class="CodeExampleTable">
+              <tr>
+                <td>
+                  <b>
+                    <font size="-1">C# Example</font>
+                  </b>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <pre class="code-csharp">Assert.AreEqual ("10,9,8,7,6,5,4,3,2,1",
+	Sequence.GenerateReverse (10, 
+		b =&gt; Maybe.When (b &gt; 0, Tuple.Create (b, b-1)))
+	.Implode (","));
+</pre>
+                </td>
+              </tr>
+            </table>
+          </blockquote>
+          <h4 class="Subsection">
+            <a href="javascript:toggle_display('M:Cadenza.Sequence.GenerateReverse``2(``0,System.Func{``0,Cadenza.Maybe{Cadenza.Tuple{``1,``0}}}):Version Information')">
+              <span id="M:Cadenza.Sequence.GenerateReverse``2(``0,System.Func{``0,Cadenza.Maybe{Cadenza.Tuple{``1,``0}}}):Version Information:toggle">⊟</span> Requirements</a>
+          </h4>
+          <blockquote class="SubsectionBox" id="M:Cadenza.Sequence.GenerateReverse``2(``0,System.Func{``0,Cadenza.Maybe{Cadenza.Tuple{``1,``0}}}):Version Information">
+            <b>Namespace: </b>Cadenza<br /><b>Assembly: </b>Cadenza (in Cadenza.dll)<br /><b>Assembly Versions: </b>0.1.0.0</blockquote>
+          <hr size="1" />
+        </blockquote>
+        <h3 id="M:Cadenza.Sequence.Iterate``1(``0,System.Func{``0,``0})">
+          <a href="javascript:toggle_display('M:Cadenza.Sequence.Iterate``1(``0,System.Func{``0,``0}):member')">
+            <span id="M:Cadenza.Sequence.Iterate``1(``0,System.Func{``0,``0}):member:toggle">⊟</span> Iterate&lt;TSource&gt; Generic Method</a>
+        </h3>
+        <blockquote id="M:Cadenza.Sequence.Iterate``1(``0,System.Func{``0,``0}):member">
+          <p class="Summary">
+          Creates an infinite 
+          <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Collections.Generic.IEnumerable`1">IEnumerable&lt;TSource&gt;</a>
+          sequence determined by <i>value</i>
+          and <i>selector</i>.
+        </p>
+          <div class="Signature">public static <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Collections.Generic.IEnumerable`1">IEnumerable&lt;TSource&gt;</a> <b>Iterate&lt;TSource&gt;</b> (<i title="&#xA;          The type of the seed value  and &#xA;          the element type of the generated sequence.&#xA;        ">TSource</i> value, <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Func`2">Func&lt;TSource, TSource&gt;</a> selector)</div>
+          <h4 class="Subsection">
+            <a href="javascript:toggle_display('M:Cadenza.Sequence.Iterate``1(``0,System.Func{``0,``0}):Type Parameters')">
+              <span id="M:Cadenza.Sequence.Iterate``1(``0,System.Func{``0,``0}):Type Parameters:toggle">⊟</span> Type Parameters</a>
+          </h4>
+          <blockquote class="SubsectionBox" id="M:Cadenza.Sequence.Iterate``1(``0,System.Func{``0,``0}):Type Parameters">
+            <dl>
+              <dt>
+                <i>TSource</i>
+              </dt>
+              <dd>
+          The type of the seed value <i>value</i> and 
+          the element type of the generated sequence.
+        </dd>
+            </dl>
+          </blockquote>
+          <h4 class="Subsection">
+            <a href="javascript:toggle_display('M:Cadenza.Sequence.Iterate``1(``0,System.Func{``0,``0}):Parameters')">
+              <span id="M:Cadenza.Sequence.Iterate``1(``0,System.Func{``0,``0}):Parameters:toggle">⊟</span> Parameters</a>
+          </h4>
+          <blockquote class="SubsectionBox" id="M:Cadenza.Sequence.Iterate``1(``0,System.Func{``0,``0}):Parameters">
+            <dl>
+              <dt>
+                <i>value</i>
+              </dt>
+              <dd>
+          The initial value to provide to <i>selector</i>.
+        </dd>
+              <dt>
+                <i>selector</i>
+              </dt>
+              <dd>
+          A <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Func`2">Func&lt;TSource, TSource&gt;</a> which is used to
+          generate the next value in the sequence.
+        </dd>
+            </dl>
+          </blockquote>
+          <h4 class="Subsection">
+            <a href="javascript:toggle_display('M:Cadenza.Sequence.Iterate``1(``0,System.Func{``0,``0}):Returns')">
+              <span id="M:Cadenza.Sequence.Iterate``1(``0,System.Func{``0,``0}):Returns:toggle">⊟</span> Returns</a>
+          </h4>
+          <blockquote class="SubsectionBox" id="M:Cadenza.Sequence.Iterate``1(``0,System.Func{``0,``0}):Returns">
+          An infinite 
+          <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Collections.Generic.IEnumerable`1">IEnumerable&lt;TSource&gt;</a>
+          sequence determined by <i>value</i>
+          and <i>selector</i>.
+        </blockquote>
+          <h4 class="Subsection">
+            <a href="javascript:toggle_display('M:Cadenza.Sequence.Iterate``1(``0,System.Func{``0,``0}):Exceptions')">
+              <span id="M:Cadenza.Sequence.Iterate``1(``0,System.Func{``0,``0}):Exceptions:toggle">⊟</span> Exceptions</a>
+          </h4>
+          <blockquote class="SubsectionBox" id="M:Cadenza.Sequence.Iterate``1(``0,System.Func{``0,``0}):Exceptions">
+            <table class="TypeDocumentation">
+              <tr>
+                <th>Type</th>
+                <th>Reason</th>
+              </tr>
+              <tr valign="top">
+                <td>
+                  <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.ArgumentNullException">ArgumentNullException</a>
+                </td>
+                <td>
+                  <i>selector</i> is <tt>null</tt>.
+        </td>
+              </tr>
+            </table>
+          </blockquote>
+          <h4 class="Subsection">
+            <a href="javascript:toggle_display('M:Cadenza.Sequence.Iterate``1(``0,System.Func{``0,``0}):Remarks')">
+              <span id="M:Cadenza.Sequence.Iterate``1(``0,System.Func{``0,``0}):Remarks:toggle">⊟</span> Remarks</a>
+          </h4>
+          <blockquote class="SubsectionBox" id="M:Cadenza.Sequence.Iterate``1(``0,System.Func{``0,``0}):Remarks">
+            <h5 class="Subsection">Operation</h5>
+            <p>
+              On the first <i>selector</i> invocation, 
+              <i>value</i> is provided as the parameter value.
+            </p>
+            <p>
+              For all subsequent <i>selector</i> invocations, the
+              parameter value is the result of the previous 
+              <i>selector</i> invocation.
+            </p>
+            <p>
+              Thus, the generated sequence is equivalent to:
+              <tt>new[]{ <i>selector</i>(<i>value</i>),
+              <i>selector</i>(<i>selector</i>(<i>value</i>)),
+              <i>selector</i>(<i>selector</i>(<i>selector</i>(<i>value</i>))),
+              ... }</tt>.
+            </p>
+            <table class="CodeExampleTable">
+              <tr>
+                <td>
+                  <b>
+                    <font size="-1">C# Example</font>
+                  </b>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <pre class="code-csharp">Assert.AreEqual ("16,8,4,2,1",
+		Sequence.Iterate (16, v =&gt; v / 2).Take (5).Implode (","));
+Assert.AreEqual ("1,2,3,4,5",
+		Sequence.Iterate (1, v =&gt; v+1).Take (5).Implode (","));
+</pre>
+                </td>
+              </tr>
+            </table>
+          </blockquote>
+          <h4 class="Subsection">
+            <a href="javascript:toggle_display('M:Cadenza.Sequence.Iterate``1(``0,System.Func{``0,``0}):Version Information')">
+              <span id="M:Cadenza.Sequence.Iterate``1(``0,System.Func{``0,``0}):Version Information:toggle">⊟</span> Requirements</a>
+          </h4>
+          <blockquote class="SubsectionBox" id="M:Cadenza.Sequence.Iterate``1(``0,System.Func{``0,``0}):Version Information">
+            <b>Namespace: </b>Cadenza<br /><b>Assembly: </b>Cadenza (in Cadenza.dll)<br /><b>Assembly Versions: </b>0.1.0.0</blockquote>
+          <hr size="1" />
+        </blockquote>
+        <h3 id="M:Cadenza.Sequence.Repeat``1(``0)">
+          <a href="javascript:toggle_display('M:Cadenza.Sequence.Repeat``1(``0):member')">
+            <span id="M:Cadenza.Sequence.Repeat``1(``0):member:toggle">⊟</span> Repeat&lt;TSource&gt; Generic Method</a>
+        </h3>
+        <blockquote id="M:Cadenza.Sequence.Repeat``1(``0):member">
+          <p class="Summary">
+          Creates an infinite 
+          <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Collections.Generic.IEnumerable`1">IEnumerable&lt;TSource&gt;</a>
+          seqeuence where each element value is <i>value</i>.
+        </p>
+          <div class="Signature">public static <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Collections.Generic.IEnumerable`1">IEnumerable&lt;TSource&gt;</a> <b>Repeat&lt;TSource&gt;</b> (<i title="&#xA;          The type of the value to repeat.&#xA;        ">TSource</i> value)</div>
+          <h4 class="Subsection">
+            <a href="javascript:toggle_display('M:Cadenza.Sequence.Repeat``1(``0):Type Parameters')">
+              <span id="M:Cadenza.Sequence.Repeat``1(``0):Type Parameters:toggle">⊟</span> Type Parameters</a>
+          </h4>
+          <blockquote class="SubsectionBox" id="M:Cadenza.Sequence.Repeat``1(``0):Type Parameters">
+            <dl>
+              <dt>
+                <i>TSource</i>
+              </dt>
+              <dd>
+          The type of the value to repeat.
+        </dd>
+            </dl>
+          </blockquote>
+          <h4 class="Subsection">
+            <a href="javascript:toggle_display('M:Cadenza.Sequence.Repeat``1(``0):Parameters')">
+              <span id="M:Cadenza.Sequence.Repeat``1(``0):Parameters:toggle">⊟</span> Parameters</a>
+          </h4>
+          <blockquote class="SubsectionBox" id="M:Cadenza.Sequence.Repeat``1(``0):Parameters">
+            <dl>
+              <dt>
+                <i>value</i>
+              </dt>
+              <dd>
+          A <i>TSource</i> containing the value to repeat.
+        </dd>
+            </dl>
+          </blockquote>
+          <h4 class="Subsection">
+            <a href="javascript:toggle_display('M:Cadenza.Sequence.Repeat``1(``0):Returns')">
+              <span id="M:Cadenza.Sequence.Repeat``1(``0):Returns:toggle">⊟</span> Returns</a>
+          </h4>
+          <blockquote class="SubsectionBox" id="M:Cadenza.Sequence.Repeat``1(``0):Returns">
+          An infinite 
+          <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Collections.Generic.IEnumerable`1">IEnumerable&lt;TSource&gt;</a>
+          seqeuence where each element value is <i>value</i>.
+        </blockquote>
+          <h4 class="Subsection">
+            <a href="javascript:toggle_display('M:Cadenza.Sequence.Repeat``1(``0):Remarks')">
+              <span id="M:Cadenza.Sequence.Repeat``1(``0):Remarks:toggle">⊟</span> Remarks</a>
+          </h4>
+          <blockquote class="SubsectionBox" id="M:Cadenza.Sequence.Repeat``1(``0):Remarks">
+            <table class="CodeExampleTable">
+              <tr>
+                <td>
+                  <b>
+                    <font size="-1">C# Example</font>
+                  </b>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <pre class="code-csharp">Assert.AreEqual ("1,1,1,1,1",
+		Sequence.Repeat (1).Take (5).Implode (","));
+</pre>
+                </td>
+              </tr>
+            </table>
+          </blockquote>
+          <h4 class="Subsection">
+            <a href="javascript:toggle_display('M:Cadenza.Sequence.Repeat``1(``0):Version Information')">
+              <span id="M:Cadenza.Sequence.Repeat``1(``0):Version Information:toggle">⊟</span> Requirements</a>
+          </h4>
+          <blockquote class="SubsectionBox" id="M:Cadenza.Sequence.Repeat``1(``0):Version Information">
+            <b>Namespace: </b>Cadenza<br /><b>Assembly: </b>Cadenza (in Cadenza.dll)<br /><b>Assembly Versions: </b>0.1.0.0</blockquote>
+          <hr size="1" />
+        </blockquote>
+      </blockquote>
+    </div>
+    <hr size="1" />
+    <div class="Copyright">
+    </div>
+  </body>
+</html>

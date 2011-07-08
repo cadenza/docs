@@ -1,0 +1,2641 @@
+<html>
+  <head>
+    <title>Cadenza.StringCoda</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <style>
+      a { text-decoration: none }
+
+      div.SideBar {
+        padding-left: 1em;
+        padding-right: 1em;
+        right: 0;
+        float: right;
+        border: thin solid black;
+        background-color: #f2f2f2;
+      }
+    
+      .CollectionTitle { font-weight: bold }
+      .PageTitle { font-size: 150%; font-weight: bold }
+
+      .Summary { }
+      .Signature { }          
+      .Remarks { }
+      .Members { }
+      .Copyright { }
+      
+      .Section { font-size: 125%; font-weight: bold }
+      p.Summary {
+        margin-left: 1em;
+      }
+      .SectionBox { margin-left: 2em }
+      .NamespaceName { font-size: 105%; font-weight: bold }
+      .NamespaceSumary { }
+      .MemberName { font-size: 115%; font-weight: bold; margin-top: 1em }
+      .Subsection { font-size: 105%; font-weight: bold }
+      .SubsectionBox { margin-left: 2em; margin-bottom: 1em }
+
+      .CodeExampleTable { background-color: #f5f5dd; border: thin solid black; padding: .25em; }
+      
+      .TypesListing {
+        border-collapse: collapse;
+      }
+
+      td {
+        vertical-align: top;
+      }
+      th {
+        text-align: left;
+      }
+
+      .TypesListing td { 
+        margin: 0px;  
+        padding: .25em;
+        border: solid gray 1px;
+      }
+
+      .TypesListing th { 
+        margin: 0px;  
+        padding: .25em;
+        background-color: #f2f2f2;
+        border: solid gray 1px;
+      }
+
+      div.Footer {
+        border-top: 1px solid gray;
+        margin-top: 1.5em;
+        padding-top: 0.6em;
+        text-align: center;
+        color: gray;
+      }
+
+      span.NotEntered /* Documentation for this section has not yet been entered */ {
+        font-style: italic;
+        color: red;	
+      }
+
+      div.Header {
+        background: #B0C4DE;
+        border: double;
+        border-color: white;
+        border-width: 7px;
+        padding: 0.5em;
+      }
+
+      div.Header * {
+        font-size: smaller;
+      }
+
+      div.Note {
+      }
+
+      i.ParamRef {
+      }
+
+      i.subtitle {
+      }
+
+      ul.TypeMembersIndex {
+        text-align: left;
+        background: #F8F8F8;
+      }
+
+      ul.TypeMembersIndex li {
+        display: inline;
+        margin:  0.5em;
+      }
+
+      table.HeaderTable {
+      }
+
+      table.SignatureTable {
+      }
+
+      table.Documentation, table.Enumeration, table.TypeDocumentation {
+        border-collapse: collapse;
+        width: 100%;
+      }
+
+      table.Documentation tr th, table.TypeMembers tr th, table.Enumeration tr th, table.TypeDocumentation tr th {
+        background: whitesmoke;
+        padding: 0.8em;
+        border: 1px solid gray;
+        text-align: left;
+        vertical-align: bottom;
+      }
+
+      table.Documentation tr td, table.TypeMembers tr td, table.Enumeration tr td, table.TypeDocumentation tr td {
+        padding: 0.5em;
+        border: 1px solid gray;
+        text-align: left;
+        vertical-align: top;
+      }
+
+      table.TypeMembers {
+        border: 1px solid #C0C0C0;
+        width: 100%;
+      }
+
+      table.TypeMembers tr td {
+        background: #F8F8F8;
+        border: white;
+      }
+
+      table.Documentation {
+      }
+
+      table.TypeMembers {
+      }
+
+      div.CodeExample {
+        width: 100%;
+        border: 1px solid #DDDDDD;
+        background-color: #F8F8F8;
+      }
+
+      div.CodeExample p {
+        margin: 0.5em;
+        border-bottom: 1px solid #DDDDDD;
+      }
+
+      div.CodeExample div {
+        margin: 0.5em;
+      }
+
+      h4 {
+        margin-bottom: 0;
+      }
+
+      div.Signature {
+        border: 1px solid #C0C0C0;
+        background: #F2F2F2;
+        padding: 1em;
+      }
+    </style>
+    <script type="text/JavaScript">
+      function toggle_display (block) {
+        var w = document.getElementById (block);
+        var t = document.getElementById (block + ":toggle");
+        if (w.style.display == "none") {
+          w.style.display = "block";
+          t.innerHTML = "⊟";
+        } else {
+          w.style.display = "none";
+          t.innerHTML = "⊞";
+        }
+      }
+    </script>
+  </head>
+  <body>
+    <div class="CollectionTitle">
+      <a href="../index.html">Cadenza</a> : <a href="index.html">Cadenza Namespace</a></div>
+    <div class="SideBar">
+      <p>
+        <a href="#T:Cadenza.StringCoda">Overview</a>
+      </p>
+      <p>
+        <a href="#T:Cadenza.StringCoda:Signature">Signature</a>
+      </p>
+      <p>
+        <a href="#T:Cadenza.StringCoda:Docs">Remarks</a>
+      </p>
+      <p>
+        <a href="#Members">Members</a>
+      </p>
+      <p>
+        <a href="#T:Cadenza.StringCoda:Members">Member Details</a>
+      </p>
+    </div>
+    <h1 class="PageTitle" id="T:Cadenza.StringCoda">StringCoda  Class</h1>
+    <p class="Summary" id="T:Cadenza.StringCoda:Summary">
+      Extension methods for <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.String">string</a>.
+    </p>
+    <div id="T:Cadenza.StringCoda:Signature">
+      <div class="Signature">public static class  <b>StringCoda</b></div>
+    </div>
+    <div class="Remarks" id="T:Cadenza.StringCoda:Docs">
+      <h4 class="Subsection">
+        <a href="javascript:toggle_display('T:Cadenza.StringCoda:Docs:Remarks')">
+          <span id="T:Cadenza.StringCoda:Docs:Remarks:toggle">⊟</span> Remarks</a>
+      </h4>
+      <blockquote class="SubsectionBox" id="T:Cadenza.StringCoda:Docs:Remarks">
+      </blockquote>
+      <h4 class="Subsection">
+        <a href="javascript:toggle_display('T:Cadenza.StringCoda:Docs:Version Information')">
+          <span id="T:Cadenza.StringCoda:Docs:Version Information:toggle">⊟</span> Requirements</a>
+      </h4>
+      <blockquote class="SubsectionBox" id="T:Cadenza.StringCoda:Docs:Version Information">
+        <b>Namespace: </b>Cadenza<br /><b>Assembly: </b>Cadenza (in Cadenza.dll)<br /><b>Assembly Versions: </b>0.1.0.0</blockquote>
+      <h2 class="Section" id="Members">
+        <a href="javascript:toggle_display('_Members')">
+          <span id="_Members:toggle">⊟</span> Members</a>
+      </h2>
+      <blockquote class="SectionBox" id="_Members">
+        <p>
+								See Also: Inherited members from
+								<a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Object">object</a>.
+							</p>
+        <h3>
+          <a href="javascript:toggle_display('Public Methods')">
+            <span id="Public Methods:toggle">⊟</span> Public Methods</a>
+        </h3>
+        <blockquote id="Public Methods">
+          <div class="SubsectionBox">
+            <table class="TypeMembers">
+              <tr valign="top">
+                <td>
+                  <div>static </div>
+                </td>
+                <td colspan="2">
+                  <b>
+                    <a href="#M:Cadenza.StringCoda.CaptureNamedGroups(System.String,System.String)">CaptureNamedGroups</a>
+                  </b>(<i>this</i> <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.String">string</a>, <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.String">string</a>)<nobr> : <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Linq.ILookup`2">System.Linq.ILookup&lt;string, string&gt;</a></nobr><blockquote>
+          Create a <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Linq.ILookup`2">System.Linq.ILookup&lt;string, string&gt;</a>
+          containing all named groups within <i>regex</i> and
+          the associated captured values within <i>self</i>.
+        </blockquote></td>
+              </tr>
+              <tr valign="top">
+                <td>
+                  <div>static </div>
+                </td>
+                <td colspan="2">
+                  <b>
+                    <a href="#M:Cadenza.StringCoda.CaptureNamedGroups(System.String,System.String,System.Text.RegularExpressions.RegexOptions)">CaptureNamedGroups</a>
+                  </b>(<i>this</i> <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.String">string</a>, <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.String">string</a>, <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Text.RegularExpressions.RegexOptions">System.Text.RegularExpressions.RegexOptions</a>)<nobr> : <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Linq.ILookup`2">System.Linq.ILookup&lt;string, string&gt;</a></nobr><blockquote>
+          Create a <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Linq.ILookup`2">System.Linq.ILookup&lt;string, string&gt;</a>
+          containing all named groups within <i>regex</i> and
+          the associated captured values within <i>self</i>.
+        </blockquote></td>
+              </tr>
+              <tr valign="top">
+                <td>
+                  <div>static </div>
+                </td>
+                <td colspan="2">
+                  <b>
+                    <a href="#M:Cadenza.StringCoda.Captures(System.String,System.String)">Captures</a>
+                  </b>(<i>this</i> <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.String">string</a>, <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.String">string</a>)<nobr> : <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Collections.Generic.IEnumerable`1">IEnumerable&lt;string&gt;</a></nobr><blockquote>
+          Create a <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Collections.Generic.IEnumerable`1">IEnumerable&lt;string&gt;</a>
+          containing all captured values within <i>self</i> that 
+          match the regular expression <i>regex</i>.
+        </blockquote></td>
+              </tr>
+              <tr valign="top">
+                <td>
+                  <div>static </div>
+                </td>
+                <td colspan="2">
+                  <b>
+                    <a href="#M:Cadenza.StringCoda.Captures(System.String,System.String,System.Text.RegularExpressions.RegexOptions)">Captures</a>
+                  </b>(<i>this</i> <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.String">string</a>, <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.String">string</a>, <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Text.RegularExpressions.RegexOptions">System.Text.RegularExpressions.RegexOptions</a>)<nobr> : <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Collections.Generic.IEnumerable`1">IEnumerable&lt;string&gt;</a></nobr><blockquote>
+          Create a <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Collections.Generic.IEnumerable`1">IEnumerable&lt;string&gt;</a>
+          containing all captured values within <i>self</i> that 
+          match the regular expression <i>regex</i>.
+        </blockquote></td>
+              </tr>
+              <tr valign="top">
+                <td>
+                  <div>static </div>
+                </td>
+                <td colspan="2">
+                  <b>
+                    <a href="#M:Cadenza.StringCoda.IsNullOrWhitespace(System.String)">IsNullOrWhitespace</a>
+                  </b>(<i>this</i> <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.String">string</a>)<nobr> : <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Boolean">bool</a></nobr><blockquote>
+          Indicates whether <i>self</i> is a
+          <tt>null</tt> or contains only whitespace.
+        </blockquote></td>
+              </tr>
+              <tr valign="top">
+                <td>
+                  <div>static </div>
+                </td>
+                <td colspan="2">
+                  <b>
+                    <a href="#M:Cadenza.StringCoda.Lines(System.String)">Lines</a>
+                  </b>(<i>this</i> <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.String">string</a>)<nobr> : <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Collections.Generic.IEnumerable`1">IEnumerable&lt;string&gt;</a></nobr><blockquote>
+          Creates an
+          <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Collections.Generic.IEnumerable`1">IEnumerable&lt;string&gt;</a>
+          which will return all lines of text from <i>self</i>.
+        </blockquote></td>
+              </tr>
+              <tr valign="top">
+                <td>
+                  <div>static </div>
+                </td>
+                <td colspan="2">
+                  <b>
+                    <a href="#M:Cadenza.StringCoda.Matches(System.String,System.String)">Matches</a>
+                  </b>(<i>this</i> <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.String">string</a>, <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.String">string</a>)<nobr> : <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Collections.Generic.IEnumerable`1">IEnumerable&lt;System.Text.RegularExpressions.Match&gt;</a></nobr><blockquote>
+          Create a <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Collections.Generic.IEnumerable`1">IEnumerable&lt;System.Text.RegularExpressions.Match&gt;</a>
+          containing all <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Text.RegularExpressions.Match">System.Text.RegularExpressions.Match</a>ed
+          text within <i>self</i>.
+        </blockquote></td>
+              </tr>
+              <tr valign="top">
+                <td>
+                  <div>static </div>
+                </td>
+                <td colspan="2">
+                  <b>
+                    <a href="#M:Cadenza.StringCoda.Matches(System.String,System.String,System.Text.RegularExpressions.RegexOptions)">Matches</a>
+                  </b>(<i>this</i> <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.String">string</a>, <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.String">string</a>, <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Text.RegularExpressions.RegexOptions">System.Text.RegularExpressions.RegexOptions</a>)<nobr> : <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Collections.Generic.IEnumerable`1">IEnumerable&lt;System.Text.RegularExpressions.Match&gt;</a></nobr><blockquote>
+          Create a <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Collections.Generic.IEnumerable`1">IEnumerable&lt;System.Text.RegularExpressions.Match&gt;</a>
+          containing all <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Text.RegularExpressions.Match">System.Text.RegularExpressions.Match</a>ed
+          text within <i>self</i>.
+        </blockquote></td>
+              </tr>
+              <tr valign="top">
+                <td>
+                  <div>static </div>
+                </td>
+                <td colspan="2">
+                  <b>
+                    <a href="#M:Cadenza.StringCoda.MatchValues(System.String,System.String)">MatchValues</a>
+                  </b>(<i>this</i> <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.String">string</a>, <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.String">string</a>)<nobr> : <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Collections.Generic.IEnumerable`1">IEnumerable&lt;string&gt;</a></nobr><blockquote>
+          Create a <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Collections.Generic.IEnumerable`1">IEnumerable&lt;string&gt;</a>
+          containing all text within <i>self</i> that matches
+          <i>regex</i>.
+        </blockquote></td>
+              </tr>
+              <tr valign="top">
+                <td>
+                  <div>static </div>
+                </td>
+                <td colspan="2">
+                  <b>
+                    <a href="#M:Cadenza.StringCoda.MatchValues(System.String,System.String,System.Text.RegularExpressions.RegexOptions)">MatchValues</a>
+                  </b>(<i>this</i> <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.String">string</a>, <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.String">string</a>, <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Text.RegularExpressions.RegexOptions">System.Text.RegularExpressions.RegexOptions</a>)<nobr> : <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Collections.Generic.IEnumerable`1">IEnumerable&lt;string&gt;</a></nobr><blockquote>
+          Create a <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Collections.Generic.IEnumerable`1">IEnumerable&lt;string&gt;</a>
+          containing all text within <i>self</i> that matches
+          <i>regex</i>.
+        </blockquote></td>
+              </tr>
+              <tr valign="top">
+                <td>
+                  <div>static </div>
+                </td>
+                <td colspan="2">
+                  <b>
+                    <a href="#M:Cadenza.StringCoda.Remove(System.String,System.String[])">Remove</a>
+                  </b>(<i>this</i> <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.String">string</a>, <b>params</b> <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.String">string</a>[])<nobr> : <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.String">string</a></nobr><blockquote>
+          Deletes all strings within <i>targets</i> from
+          <i>self</i>.
+        </blockquote></td>
+              </tr>
+              <tr valign="top">
+                <td>
+                  <div>static </div>
+                </td>
+                <td colspan="2">
+                  <b>
+                    <a href="#M:Cadenza.StringCoda.Slice(System.String,System.Int32,System.Int32)">Slice</a>
+                  </b>(<i>this</i> <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.String">string</a>, <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Int32">int</a>, <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Int32">int</a>)<nobr> : <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.String">string</a></nobr><blockquote>
+          Creates a new <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.String">string</a> of 
+          <i>self</i> using indexes of the start and end
+          position.
+        </blockquote></td>
+              </tr>
+              <tr valign="top">
+                <td>
+                  <div>static </div>
+                </td>
+                <td colspan="2">
+                  <b>
+                    <a href="#M:Cadenza.StringCoda.ToEnum``1(System.String)">ToEnum&lt;TEnum&gt;</a>
+                  </b>(<i>this</i> <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.String">string</a>)<nobr> : <i title="&#xA;          An enumeration type containing the member stored in &#xA;          .&#xA;        ">TEnum</i></nobr><blockquote>
+          Converts a <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.String">string</a> into an enumeration value
+          of type <i>TEnum</i>.
+        </blockquote></td>
+              </tr>
+              <tr valign="top">
+                <td>
+                  <div>static </div>
+                </td>
+                <td colspan="2">
+                  <b>
+                    <a href="#M:Cadenza.StringCoda.Tokens(System.String,System.Func{System.Nullable{System.Char},System.Char,System.Boolean}[])">Tokens</a>
+                  </b>(<i>this</i> <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.String">string</a>, <b>params</b> <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Func`1">Func&lt;Nullable&lt;System.Char&gt;,System.Char,System.Boolean&gt;</a>[])<nobr> : <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Collections.Generic.IEnumerable`1">IEnumerable&lt;string&gt;</a></nobr><blockquote>
+          Creates an
+          <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Collections.Generic.IEnumerable`1">IEnumerable&lt;string&gt;</a>
+          which will return all tokens from <i>self</i>.
+        </blockquote></td>
+              </tr>
+              <tr valign="top">
+                <td>
+                  <div>static </div>
+                </td>
+                <td colspan="2">
+                  <b>
+                    <a href="#M:Cadenza.StringCoda.Words(System.String)">Words</a>
+                  </b>(<i>this</i> <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.String">string</a>)<nobr> : <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Collections.Generic.IEnumerable`1">IEnumerable&lt;string&gt;</a></nobr><blockquote>
+          Creates an
+          <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Collections.Generic.IEnumerable`1">IEnumerable&lt;string&gt;</a>
+          which will return all words from <i>self</i>.
+        </blockquote></td>
+              </tr>
+              <tr valign="top">
+                <td>
+                  <div>static </div>
+                </td>
+                <td colspan="2">
+                  <b>
+                    <a href="#M:Cadenza.StringCoda.WrappedLines(System.String,System.Collections.Generic.IEnumerable{System.Int32})">WrappedLines</a>
+                  </b>(<i>this</i> <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.String">string</a>, <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Collections.Generic.IEnumerable`1">IEnumerable&lt;int&gt;</a>)<nobr> : <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Collections.Generic.IEnumerable`1">IEnumerable&lt;string&gt;</a></nobr><blockquote>
+          Splits a string into line segments with a maximum length constrained
+          by <i>widths</i>.
+        </blockquote></td>
+              </tr>
+              <tr valign="top">
+                <td>
+                  <div>static </div>
+                </td>
+                <td colspan="2">
+                  <b>
+                    <a href="#M:Cadenza.StringCoda.WrappedLines(System.String,System.Int32[])">WrappedLines</a>
+                  </b>(<i>this</i> <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.String">string</a>, <b>params</b> <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Int32">int</a>[])<nobr> : <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Collections.Generic.IEnumerable`1">IEnumerable&lt;string&gt;</a></nobr><blockquote>
+          Splits a string into line segments with a maximum length constrained
+          by <i>widths</i>.
+        </blockquote></td>
+              </tr>
+            </table>
+          </div>
+        </blockquote>
+      </blockquote>
+    </div>
+    <div class="Members" id="T:Cadenza.StringCoda:Members">
+      <h2 class="Section" id="MemberDetails">
+        <a href="javascript:toggle_display('_MemberDetails')">
+          <span id="_MemberDetails:toggle">⊟</span> Member Details</a>
+      </h2>
+      <blockquote class="SectionBox" id="_MemberDetails">
+        <h3 id="M:Cadenza.StringCoda.CaptureNamedGroups(System.String,System.String)">
+          <a href="javascript:toggle_display('M:Cadenza.StringCoda.CaptureNamedGroups(System.String,System.String):member')">
+            <span id="M:Cadenza.StringCoda.CaptureNamedGroups(System.String,System.String):member:toggle">⊟</span> CaptureNamedGroups Method</a>
+        </h3>
+        <blockquote id="M:Cadenza.StringCoda.CaptureNamedGroups(System.String,System.String):member">
+          <p class="Summary">
+          Create a <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Linq.ILookup`2">System.Linq.ILookup&lt;string, string&gt;</a>
+          containing all named groups within <i>regex</i> and
+          the associated captured values within <i>self</i>.
+        </p>
+          <div class="Signature">public static <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Linq.ILookup`2">System.Linq.ILookup&lt;string, string&gt;</a> <b>CaptureNamedGroups</b> (<i>this</i> <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.String">string</a> self, <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.String">string</a> regex)</div>
+          <h4 class="Subsection">
+            <a href="javascript:toggle_display('M:Cadenza.StringCoda.CaptureNamedGroups(System.String,System.String):Parameters')">
+              <span id="M:Cadenza.StringCoda.CaptureNamedGroups(System.String,System.String):Parameters:toggle">⊟</span> Parameters</a>
+          </h4>
+          <blockquote class="SubsectionBox" id="M:Cadenza.StringCoda.CaptureNamedGroups(System.String,System.String):Parameters">
+            <dl>
+              <dt>
+                <i>self</i>
+              </dt>
+              <dd>
+          A <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.String">string</a> to apply a regular expression to.
+        </dd>
+              <dt>
+                <i>regex</i>
+              </dt>
+              <dd>
+          A <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.String">string</a> containing the regular expression
+          to match <i>self</i> against.
+        </dd>
+            </dl>
+          </blockquote>
+          <h4 class="Subsection">
+            <a href="javascript:toggle_display('M:Cadenza.StringCoda.CaptureNamedGroups(System.String,System.String):Returns')">
+              <span id="M:Cadenza.StringCoda.CaptureNamedGroups(System.String,System.String):Returns:toggle">⊟</span> Returns</a>
+          </h4>
+          <blockquote class="SubsectionBox" id="M:Cadenza.StringCoda.CaptureNamedGroups(System.String,System.String):Returns">
+          A <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Linq.ILookup`2">System.Linq.ILookup&lt;string, string&gt;</a>
+          containing all named groups within <i>regex</i> and
+          the associated captured values within <i>self</i>.
+        </blockquote>
+          <h4 class="Subsection">
+            <a href="javascript:toggle_display('M:Cadenza.StringCoda.CaptureNamedGroups(System.String,System.String):Exceptions')">
+              <span id="M:Cadenza.StringCoda.CaptureNamedGroups(System.String,System.String):Exceptions:toggle">⊟</span> Exceptions</a>
+          </h4>
+          <blockquote class="SubsectionBox" id="M:Cadenza.StringCoda.CaptureNamedGroups(System.String,System.String):Exceptions">
+            <table class="TypeDocumentation">
+              <tr>
+                <th>Type</th>
+                <th>Reason</th>
+              </tr>
+              <tr valign="top">
+                <td>
+                  <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.ArgumentException">ArgumentException</a>
+                </td>
+                <td>
+          Regular expression parsing error.
+        </td>
+              </tr>
+              <tr valign="top">
+                <td>
+                  <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.ArgumentNullException">ArgumentNullException</a>
+                </td>
+                <td>
+                  <p>
+                    <i>self</i> is <tt>null</tt></p>
+                  <p>
+            -or-
+          </p>
+                  <p>
+                    <i>regex</i> is <tt>null</tt></p>
+                </td>
+              </tr>
+            </table>
+          </blockquote>
+          <h4 class="Subsection">
+            <a href="javascript:toggle_display('M:Cadenza.StringCoda.CaptureNamedGroups(System.String,System.String):Remarks')">
+              <span id="M:Cadenza.StringCoda.CaptureNamedGroups(System.String,System.String):Remarks:toggle">⊟</span> Remarks</a>
+          </h4>
+          <blockquote class="SubsectionBox" id="M:Cadenza.StringCoda.CaptureNamedGroups(System.String,System.String):Remarks">
+            <table class="CodeExampleTable">
+              <tr>
+                <td>
+                  <b>
+                    <font size="-1">C# Example</font>
+                  </b>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <pre class="code-csharp">Assert.AreEqual ("flag=--; name=foo; value=bar",
+		"--foo=bar"
+		.CaptureNamedGroups (@"^(?&lt;flag&gt;--|-|/)(?&lt;name&gt;[^:=]+)((?&lt;sep&gt;[:=])(?&lt;value&gt;.*))?$")
+		.With (r =&gt; "flag=" + r ["flag"].Implode () + 
+			"; name=" + r ["name"].Implode () +
+			"; value=" + r ["value"].Implode ()));
+</pre>
+                </td>
+              </tr>
+            </table>
+          </blockquote>
+          <h4 class="Subsection">
+            <a href="javascript:toggle_display('M:Cadenza.StringCoda.CaptureNamedGroups(System.String,System.String):Version Information')">
+              <span id="M:Cadenza.StringCoda.CaptureNamedGroups(System.String,System.String):Version Information:toggle">⊟</span> Requirements</a>
+          </h4>
+          <blockquote class="SubsectionBox" id="M:Cadenza.StringCoda.CaptureNamedGroups(System.String,System.String):Version Information">
+            <b>Namespace: </b>Cadenza<br /><b>Assembly: </b>Cadenza (in Cadenza.dll)<br /><b>Assembly Versions: </b>0.1.0.0</blockquote>
+          <hr size="1" />
+        </blockquote>
+        <h3 id="M:Cadenza.StringCoda.CaptureNamedGroups(System.String,System.String,System.Text.RegularExpressions.RegexOptions)">
+          <a href="javascript:toggle_display('M:Cadenza.StringCoda.CaptureNamedGroups(System.String,System.String,System.Text.RegularExpressions.RegexOptions):member')">
+            <span id="M:Cadenza.StringCoda.CaptureNamedGroups(System.String,System.String,System.Text.RegularExpressions.RegexOptions):member:toggle">⊟</span> CaptureNamedGroups Method</a>
+        </h3>
+        <blockquote id="M:Cadenza.StringCoda.CaptureNamedGroups(System.String,System.String,System.Text.RegularExpressions.RegexOptions):member">
+          <p class="Summary">
+          Create a <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Linq.ILookup`2">System.Linq.ILookup&lt;string, string&gt;</a>
+          containing all named groups within <i>regex</i> and
+          the associated captured values within <i>self</i>.
+        </p>
+          <div class="Signature">public static <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Linq.ILookup`2">System.Linq.ILookup&lt;string, string&gt;</a> <b>CaptureNamedGroups</b> (<i>this</i> <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.String">string</a> self, <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.String">string</a> regex, <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Text.RegularExpressions.RegexOptions">System.Text.RegularExpressions.RegexOptions</a> options)</div>
+          <h4 class="Subsection">
+            <a href="javascript:toggle_display('M:Cadenza.StringCoda.CaptureNamedGroups(System.String,System.String,System.Text.RegularExpressions.RegexOptions):Parameters')">
+              <span id="M:Cadenza.StringCoda.CaptureNamedGroups(System.String,System.String,System.Text.RegularExpressions.RegexOptions):Parameters:toggle">⊟</span> Parameters</a>
+          </h4>
+          <blockquote class="SubsectionBox" id="M:Cadenza.StringCoda.CaptureNamedGroups(System.String,System.String,System.Text.RegularExpressions.RegexOptions):Parameters">
+            <dl>
+              <dt>
+                <i>self</i>
+              </dt>
+              <dd>
+          A <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.String">string</a> to apply a regular expression to.
+        </dd>
+              <dt>
+                <i>regex</i>
+              </dt>
+              <dd>
+          A <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.String">string</a> containing the regular expression
+          to match <i>self</i> against.
+        </dd>
+              <dt>
+                <i>options</i>
+              </dt>
+              <dd>
+          A <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Text.RegularExpressions.RegexOptions">System.Text.RegularExpressions.RegexOptions</a>
+          containing options to control the regular expression.
+        </dd>
+            </dl>
+          </blockquote>
+          <h4 class="Subsection">
+            <a href="javascript:toggle_display('M:Cadenza.StringCoda.CaptureNamedGroups(System.String,System.String,System.Text.RegularExpressions.RegexOptions):Returns')">
+              <span id="M:Cadenza.StringCoda.CaptureNamedGroups(System.String,System.String,System.Text.RegularExpressions.RegexOptions):Returns:toggle">⊟</span> Returns</a>
+          </h4>
+          <blockquote class="SubsectionBox" id="M:Cadenza.StringCoda.CaptureNamedGroups(System.String,System.String,System.Text.RegularExpressions.RegexOptions):Returns">
+          A <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Linq.ILookup`2">System.Linq.ILookup&lt;string, string&gt;</a>
+          containing all named groups within <i>regex</i> and
+          the associated captured values within <i>self</i>.
+        </blockquote>
+          <h4 class="Subsection">
+            <a href="javascript:toggle_display('M:Cadenza.StringCoda.CaptureNamedGroups(System.String,System.String,System.Text.RegularExpressions.RegexOptions):Exceptions')">
+              <span id="M:Cadenza.StringCoda.CaptureNamedGroups(System.String,System.String,System.Text.RegularExpressions.RegexOptions):Exceptions:toggle">⊟</span> Exceptions</a>
+          </h4>
+          <blockquote class="SubsectionBox" id="M:Cadenza.StringCoda.CaptureNamedGroups(System.String,System.String,System.Text.RegularExpressions.RegexOptions):Exceptions">
+            <table class="TypeDocumentation">
+              <tr>
+                <th>Type</th>
+                <th>Reason</th>
+              </tr>
+              <tr valign="top">
+                <td>
+                  <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.ArgumentException">ArgumentException</a>
+                </td>
+                <td>
+          Regular expression parsing error.
+        </td>
+              </tr>
+              <tr valign="top">
+                <td>
+                  <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.ArgumentNullException">ArgumentNullException</a>
+                </td>
+                <td>
+                  <p>
+                    <i>self</i> is <tt>null</tt></p>
+                  <p>
+            -or-
+          </p>
+                  <p>
+                    <i>regex</i> is <tt>null</tt></p>
+                </td>
+              </tr>
+              <tr valign="top">
+                <td>
+                  <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.ArgumentOutOfRangeException">ArgumentOutOfRangeException</a>
+                </td>
+                <td>
+                  <i>options</i> contains an invalid flag.
+        </td>
+              </tr>
+            </table>
+          </blockquote>
+          <h4 class="Subsection">
+            <a href="javascript:toggle_display('M:Cadenza.StringCoda.CaptureNamedGroups(System.String,System.String,System.Text.RegularExpressions.RegexOptions):Remarks')">
+              <span id="M:Cadenza.StringCoda.CaptureNamedGroups(System.String,System.String,System.Text.RegularExpressions.RegexOptions):Remarks:toggle">⊟</span> Remarks</a>
+          </h4>
+          <blockquote class="SubsectionBox" id="M:Cadenza.StringCoda.CaptureNamedGroups(System.String,System.String,System.Text.RegularExpressions.RegexOptions):Remarks">
+            <table class="CodeExampleTable">
+              <tr>
+                <td>
+                  <b>
+                    <font size="-1">C# Example</font>
+                  </b>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <pre class="code-csharp">Assert.AreEqual ("flag=--; name=foo; value=bar",
+		"--foo=bar"
+		.CaptureNamedGroups (@"^(?&lt;flag&gt;--|-|/)(?&lt;name&gt;[^:=]+)((?&lt;sep&gt;[:=])(?&lt;value&gt;.*))?$")
+		.With (r =&gt; "flag=" + r ["flag"].Implode () + 
+			"; name=" + r ["name"].Implode () +
+			"; value=" + r ["value"].Implode ()));
+</pre>
+                </td>
+              </tr>
+            </table>
+          </blockquote>
+          <h4 class="Subsection">
+            <a href="javascript:toggle_display('M:Cadenza.StringCoda.CaptureNamedGroups(System.String,System.String,System.Text.RegularExpressions.RegexOptions):Version Information')">
+              <span id="M:Cadenza.StringCoda.CaptureNamedGroups(System.String,System.String,System.Text.RegularExpressions.RegexOptions):Version Information:toggle">⊟</span> Requirements</a>
+          </h4>
+          <blockquote class="SubsectionBox" id="M:Cadenza.StringCoda.CaptureNamedGroups(System.String,System.String,System.Text.RegularExpressions.RegexOptions):Version Information">
+            <b>Namespace: </b>Cadenza<br /><b>Assembly: </b>Cadenza (in Cadenza.dll)<br /><b>Assembly Versions: </b>0.1.0.0</blockquote>
+          <hr size="1" />
+        </blockquote>
+        <h3 id="M:Cadenza.StringCoda.Captures(System.String,System.String)">
+          <a href="javascript:toggle_display('M:Cadenza.StringCoda.Captures(System.String,System.String):member')">
+            <span id="M:Cadenza.StringCoda.Captures(System.String,System.String):member:toggle">⊟</span> Captures Method</a>
+        </h3>
+        <blockquote id="M:Cadenza.StringCoda.Captures(System.String,System.String):member">
+          <p class="Summary">
+          Create a <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Collections.Generic.IEnumerable`1">IEnumerable&lt;string&gt;</a>
+          containing all captured values within <i>self</i> that 
+          match the regular expression <i>regex</i>.
+        </p>
+          <div class="Signature">public static <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Collections.Generic.IEnumerable`1">IEnumerable&lt;string&gt;</a> <b>Captures</b> (<i>this</i> <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.String">string</a> self, <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.String">string</a> regex)</div>
+          <h4 class="Subsection">
+            <a href="javascript:toggle_display('M:Cadenza.StringCoda.Captures(System.String,System.String):Parameters')">
+              <span id="M:Cadenza.StringCoda.Captures(System.String,System.String):Parameters:toggle">⊟</span> Parameters</a>
+          </h4>
+          <blockquote class="SubsectionBox" id="M:Cadenza.StringCoda.Captures(System.String,System.String):Parameters">
+            <dl>
+              <dt>
+                <i>self</i>
+              </dt>
+              <dd>
+          A <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.String">string</a> to apply a regular expression to.
+        </dd>
+              <dt>
+                <i>regex</i>
+              </dt>
+              <dd>
+          A <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.String">string</a> containing the regular expression
+          to match <i>self</i> against.
+        </dd>
+            </dl>
+          </blockquote>
+          <h4 class="Subsection">
+            <a href="javascript:toggle_display('M:Cadenza.StringCoda.Captures(System.String,System.String):Returns')">
+              <span id="M:Cadenza.StringCoda.Captures(System.String,System.String):Returns:toggle">⊟</span> Returns</a>
+          </h4>
+          <blockquote class="SubsectionBox" id="M:Cadenza.StringCoda.Captures(System.String,System.String):Returns">
+          A <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Collections.Generic.IEnumerable`1">IEnumerable&lt;string&gt;</a>
+          containing all captured values within <i>self</i> that 
+          match the regular expression <i>regex</i>.
+        </blockquote>
+          <h4 class="Subsection">
+            <a href="javascript:toggle_display('M:Cadenza.StringCoda.Captures(System.String,System.String):Exceptions')">
+              <span id="M:Cadenza.StringCoda.Captures(System.String,System.String):Exceptions:toggle">⊟</span> Exceptions</a>
+          </h4>
+          <blockquote class="SubsectionBox" id="M:Cadenza.StringCoda.Captures(System.String,System.String):Exceptions">
+            <table class="TypeDocumentation">
+              <tr>
+                <th>Type</th>
+                <th>Reason</th>
+              </tr>
+              <tr valign="top">
+                <td>
+                  <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.ArgumentException">ArgumentException</a>
+                </td>
+                <td>
+          Regular expression parsing error.
+        </td>
+              </tr>
+              <tr valign="top">
+                <td>
+                  <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.ArgumentNullException">ArgumentNullException</a>
+                </td>
+                <td>
+                  <p>
+                    <i>self</i> is <tt>null</tt></p>
+                  <p>
+            -or-
+          </p>
+                  <p>
+                    <i>regex</i> is <tt>null</tt></p>
+                </td>
+              </tr>
+            </table>
+          </blockquote>
+          <h4 class="Subsection">
+            <a href="javascript:toggle_display('M:Cadenza.StringCoda.Captures(System.String,System.String):Remarks')">
+              <span id="M:Cadenza.StringCoda.Captures(System.String,System.String):Remarks:toggle">⊟</span> Remarks</a>
+          </h4>
+          <blockquote class="SubsectionBox" id="M:Cadenza.StringCoda.Captures(System.String,System.String):Remarks">
+            <table class="CodeExampleTable">
+              <tr>
+                <td>
+                  <b>
+                    <font size="-1">C# Example</font>
+                  </b>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <pre class="code-csharp">Assert.IsTrue (
+		new[]{"a", "b", "c", "d"}.SequenceEqual (
+			"a - b - c - d".Captures (@"(\w+)")));
+</pre>
+                </td>
+              </tr>
+            </table>
+          </blockquote>
+          <h4 class="Subsection">
+            <a href="javascript:toggle_display('M:Cadenza.StringCoda.Captures(System.String,System.String):Version Information')">
+              <span id="M:Cadenza.StringCoda.Captures(System.String,System.String):Version Information:toggle">⊟</span> Requirements</a>
+          </h4>
+          <blockquote class="SubsectionBox" id="M:Cadenza.StringCoda.Captures(System.String,System.String):Version Information">
+            <b>Namespace: </b>Cadenza<br /><b>Assembly: </b>Cadenza (in Cadenza.dll)<br /><b>Assembly Versions: </b>0.1.0.0</blockquote>
+          <hr size="1" />
+        </blockquote>
+        <h3 id="M:Cadenza.StringCoda.Captures(System.String,System.String,System.Text.RegularExpressions.RegexOptions)">
+          <a href="javascript:toggle_display('M:Cadenza.StringCoda.Captures(System.String,System.String,System.Text.RegularExpressions.RegexOptions):member')">
+            <span id="M:Cadenza.StringCoda.Captures(System.String,System.String,System.Text.RegularExpressions.RegexOptions):member:toggle">⊟</span> Captures Method</a>
+        </h3>
+        <blockquote id="M:Cadenza.StringCoda.Captures(System.String,System.String,System.Text.RegularExpressions.RegexOptions):member">
+          <p class="Summary">
+          Create a <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Collections.Generic.IEnumerable`1">IEnumerable&lt;string&gt;</a>
+          containing all captured values within <i>self</i> that 
+          match the regular expression <i>regex</i>.
+        </p>
+          <div class="Signature">public static <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Collections.Generic.IEnumerable`1">IEnumerable&lt;string&gt;</a> <b>Captures</b> (<i>this</i> <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.String">string</a> self, <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.String">string</a> regex, <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Text.RegularExpressions.RegexOptions">System.Text.RegularExpressions.RegexOptions</a> options)</div>
+          <h4 class="Subsection">
+            <a href="javascript:toggle_display('M:Cadenza.StringCoda.Captures(System.String,System.String,System.Text.RegularExpressions.RegexOptions):Parameters')">
+              <span id="M:Cadenza.StringCoda.Captures(System.String,System.String,System.Text.RegularExpressions.RegexOptions):Parameters:toggle">⊟</span> Parameters</a>
+          </h4>
+          <blockquote class="SubsectionBox" id="M:Cadenza.StringCoda.Captures(System.String,System.String,System.Text.RegularExpressions.RegexOptions):Parameters">
+            <dl>
+              <dt>
+                <i>self</i>
+              </dt>
+              <dd>
+          A <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.String">string</a> to apply a regular expression to.
+        </dd>
+              <dt>
+                <i>regex</i>
+              </dt>
+              <dd>
+          A <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.String">string</a> containing the regular expression
+          to match <i>self</i> against.
+        </dd>
+              <dt>
+                <i>options</i>
+              </dt>
+              <dd>
+          A <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Text.RegularExpressions.RegexOptions">System.Text.RegularExpressions.RegexOptions</a>
+          containing options to control the regular expression.
+        </dd>
+            </dl>
+          </blockquote>
+          <h4 class="Subsection">
+            <a href="javascript:toggle_display('M:Cadenza.StringCoda.Captures(System.String,System.String,System.Text.RegularExpressions.RegexOptions):Returns')">
+              <span id="M:Cadenza.StringCoda.Captures(System.String,System.String,System.Text.RegularExpressions.RegexOptions):Returns:toggle">⊟</span> Returns</a>
+          </h4>
+          <blockquote class="SubsectionBox" id="M:Cadenza.StringCoda.Captures(System.String,System.String,System.Text.RegularExpressions.RegexOptions):Returns">
+          A <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Collections.Generic.IEnumerable`1">IEnumerable&lt;string&gt;</a>
+          containing all captured values within <i>self</i> that 
+          match the regular expression <i>regex</i>.
+        </blockquote>
+          <h4 class="Subsection">
+            <a href="javascript:toggle_display('M:Cadenza.StringCoda.Captures(System.String,System.String,System.Text.RegularExpressions.RegexOptions):Exceptions')">
+              <span id="M:Cadenza.StringCoda.Captures(System.String,System.String,System.Text.RegularExpressions.RegexOptions):Exceptions:toggle">⊟</span> Exceptions</a>
+          </h4>
+          <blockquote class="SubsectionBox" id="M:Cadenza.StringCoda.Captures(System.String,System.String,System.Text.RegularExpressions.RegexOptions):Exceptions">
+            <table class="TypeDocumentation">
+              <tr>
+                <th>Type</th>
+                <th>Reason</th>
+              </tr>
+              <tr valign="top">
+                <td>
+                  <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.ArgumentException">ArgumentException</a>
+                </td>
+                <td>
+          Regular expression parsing error.
+        </td>
+              </tr>
+              <tr valign="top">
+                <td>
+                  <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.ArgumentNullException">ArgumentNullException</a>
+                </td>
+                <td>
+                  <p>
+                    <i>self</i> is <tt>null</tt></p>
+                  <p>
+            -or-
+          </p>
+                  <p>
+                    <i>regex</i> is <tt>null</tt></p>
+                </td>
+              </tr>
+              <tr valign="top">
+                <td>
+                  <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.ArgumentOutOfRangeException">ArgumentOutOfRangeException</a>
+                </td>
+                <td>
+                  <i>options</i> contains an invalid flag.
+        </td>
+              </tr>
+            </table>
+          </blockquote>
+          <h4 class="Subsection">
+            <a href="javascript:toggle_display('M:Cadenza.StringCoda.Captures(System.String,System.String,System.Text.RegularExpressions.RegexOptions):Remarks')">
+              <span id="M:Cadenza.StringCoda.Captures(System.String,System.String,System.Text.RegularExpressions.RegexOptions):Remarks:toggle">⊟</span> Remarks</a>
+          </h4>
+          <blockquote class="SubsectionBox" id="M:Cadenza.StringCoda.Captures(System.String,System.String,System.Text.RegularExpressions.RegexOptions):Remarks">
+            <table class="CodeExampleTable">
+              <tr>
+                <td>
+                  <b>
+                    <font size="-1">C# Example</font>
+                  </b>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <pre class="code-csharp">Assert.IsTrue (
+		new[]{"a", "b", "c", "d"}.SequenceEqual (
+			"a - b - c - d".Captures (@"(\w+)")));
+</pre>
+                </td>
+              </tr>
+            </table>
+          </blockquote>
+          <h4 class="Subsection">
+            <a href="javascript:toggle_display('M:Cadenza.StringCoda.Captures(System.String,System.String,System.Text.RegularExpressions.RegexOptions):Version Information')">
+              <span id="M:Cadenza.StringCoda.Captures(System.String,System.String,System.Text.RegularExpressions.RegexOptions):Version Information:toggle">⊟</span> Requirements</a>
+          </h4>
+          <blockquote class="SubsectionBox" id="M:Cadenza.StringCoda.Captures(System.String,System.String,System.Text.RegularExpressions.RegexOptions):Version Information">
+            <b>Namespace: </b>Cadenza<br /><b>Assembly: </b>Cadenza (in Cadenza.dll)<br /><b>Assembly Versions: </b>0.1.0.0</blockquote>
+          <hr size="1" />
+        </blockquote>
+        <h3 id="M:Cadenza.StringCoda.IsNullOrWhitespace(System.String)">
+          <a href="javascript:toggle_display('M:Cadenza.StringCoda.IsNullOrWhitespace(System.String):member')">
+            <span id="M:Cadenza.StringCoda.IsNullOrWhitespace(System.String):member:toggle">⊟</span> IsNullOrWhitespace Method</a>
+        </h3>
+        <blockquote id="M:Cadenza.StringCoda.IsNullOrWhitespace(System.String):member">
+          <p class="Summary">
+          Indicates whether <i>self</i> is a
+          <tt>null</tt> or contains only whitespace.
+        </p>
+          <div class="Signature">public static <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Boolean">bool</a> <b>IsNullOrWhitespace</b> (<i>this</i> <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.String">string</a> self)</div>
+          <h4 class="Subsection">
+            <a href="javascript:toggle_display('M:Cadenza.StringCoda.IsNullOrWhitespace(System.String):See Also')">
+              <span id="M:Cadenza.StringCoda.IsNullOrWhitespace(System.String):See Also:toggle">⊟</span> See Also</a>
+          </h4>
+          <blockquote class="SubsectionBox" id="M:Cadenza.StringCoda.IsNullOrWhitespace(System.String):See Also">
+            <div>
+              <a href="http://www.go-mono.com/docs/monodoc.ashx?link=M:System.String.Trim">string.Trim</a>
+            </div>
+          </blockquote>
+          <h4 class="Subsection">
+            <a href="javascript:toggle_display('M:Cadenza.StringCoda.IsNullOrWhitespace(System.String):Parameters')">
+              <span id="M:Cadenza.StringCoda.IsNullOrWhitespace(System.String):Parameters:toggle">⊟</span> Parameters</a>
+          </h4>
+          <blockquote class="SubsectionBox" id="M:Cadenza.StringCoda.IsNullOrWhitespace(System.String):Parameters">
+            <dl>
+              <dt>
+                <i>self</i>
+              </dt>
+              <dd>
+          A <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.String">string</a> to check to see if it is
+          <tt>null</tt> or contains only whitespace characters.
+        </dd>
+            </dl>
+          </blockquote>
+          <h4 class="Subsection">
+            <a href="javascript:toggle_display('M:Cadenza.StringCoda.IsNullOrWhitespace(System.String):Returns')">
+              <span id="M:Cadenza.StringCoda.IsNullOrWhitespace(System.String):Returns:toggle">⊟</span> Returns</a>
+          </h4>
+          <blockquote class="SubsectionBox" id="M:Cadenza.StringCoda.IsNullOrWhitespace(System.String):Returns">
+            <tt>true</tt> if <i>self</i>
+          is <tt>null</tt> or contains only
+          whitespace; otherwise, <tt>false</tt>.
+        </blockquote>
+          <h4 class="Subsection">
+            <a href="javascript:toggle_display('M:Cadenza.StringCoda.IsNullOrWhitespace(System.String):Remarks')">
+              <span id="M:Cadenza.StringCoda.IsNullOrWhitespace(System.String):Remarks:toggle">⊟</span> Remarks</a>
+          </h4>
+          <blockquote class="SubsectionBox" id="M:Cadenza.StringCoda.IsNullOrWhitespace(System.String):Remarks">
+            <table class="CodeExampleTable">
+              <tr>
+                <td>
+                  <b>
+                    <font size="-1">C# Example</font>
+                  </b>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <pre class="code-csharp">string s = null;
+Assert.IsTrue (s.IsNullOrWhitespace());
+Assert.IsTrue ("".IsNullOrWhitespace());
+Assert.IsTrue ("    ".IsNullOrWhitespace());
+Assert.IsFalse ("foo".IsNullOrWhitespace());
+</pre>
+                </td>
+              </tr>
+            </table>
+          </blockquote>
+          <h4 class="Subsection">
+            <a href="javascript:toggle_display('M:Cadenza.StringCoda.IsNullOrWhitespace(System.String):Version Information')">
+              <span id="M:Cadenza.StringCoda.IsNullOrWhitespace(System.String):Version Information:toggle">⊟</span> Requirements</a>
+          </h4>
+          <blockquote class="SubsectionBox" id="M:Cadenza.StringCoda.IsNullOrWhitespace(System.String):Version Information">
+            <b>Namespace: </b>Cadenza<br /><b>Assembly: </b>Cadenza (in Cadenza.dll)<br /><b>Assembly Versions: </b>0.1.0.0</blockquote>
+          <hr size="1" />
+        </blockquote>
+        <h3 id="M:Cadenza.StringCoda.Lines(System.String)">
+          <a href="javascript:toggle_display('M:Cadenza.StringCoda.Lines(System.String):member')">
+            <span id="M:Cadenza.StringCoda.Lines(System.String):member:toggle">⊟</span> Lines Method</a>
+        </h3>
+        <blockquote id="M:Cadenza.StringCoda.Lines(System.String):member">
+          <p class="Summary">
+          Creates an
+          <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Collections.Generic.IEnumerable`1">IEnumerable&lt;string&gt;</a>
+          which will return all lines of text from <i>self</i>.
+        </p>
+          <div class="Signature">public static <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Collections.Generic.IEnumerable`1">IEnumerable&lt;string&gt;</a> <b>Lines</b> (<i>this</i> <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.String">string</a> self)</div>
+          <h4 class="Subsection">
+            <a href="javascript:toggle_display('M:Cadenza.StringCoda.Lines(System.String):See Also')">
+              <span id="M:Cadenza.StringCoda.Lines(System.String):See Also:toggle">⊟</span> See Also</a>
+          </h4>
+          <blockquote class="SubsectionBox" id="M:Cadenza.StringCoda.Lines(System.String):See Also">
+            <div>
+              <a href="javascript:alert(&quot;Documentation not found.&quot;)">TextReaderCoda.Lines(System.IO.TextReader)</a>
+            </div>
+          </blockquote>
+          <h4 class="Subsection">
+            <a href="javascript:toggle_display('M:Cadenza.StringCoda.Lines(System.String):Parameters')">
+              <span id="M:Cadenza.StringCoda.Lines(System.String):Parameters:toggle">⊟</span> Parameters</a>
+          </h4>
+          <blockquote class="SubsectionBox" id="M:Cadenza.StringCoda.Lines(System.String):Parameters">
+            <dl>
+              <dt>
+                <i>self</i>
+              </dt>
+              <dd>
+          A <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.String">string</a> to read lines from.
+        </dd>
+            </dl>
+          </blockquote>
+          <h4 class="Subsection">
+            <a href="javascript:toggle_display('M:Cadenza.StringCoda.Lines(System.String):Returns')">
+              <span id="M:Cadenza.StringCoda.Lines(System.String):Returns:toggle">⊟</span> Returns</a>
+          </h4>
+          <blockquote class="SubsectionBox" id="M:Cadenza.StringCoda.Lines(System.String):Returns">
+          An
+          <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Collections.Generic.IEnumerable`1">IEnumerable&lt;string&gt;</a>
+          which will return all lines of text from <i>self</i>.
+        </blockquote>
+          <h4 class="Subsection">
+            <a href="javascript:toggle_display('M:Cadenza.StringCoda.Lines(System.String):Exceptions')">
+              <span id="M:Cadenza.StringCoda.Lines(System.String):Exceptions:toggle">⊟</span> Exceptions</a>
+          </h4>
+          <blockquote class="SubsectionBox" id="M:Cadenza.StringCoda.Lines(System.String):Exceptions">
+            <table class="TypeDocumentation">
+              <tr>
+                <th>Type</th>
+                <th>Reason</th>
+              </tr>
+              <tr valign="top">
+                <td>
+                  <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.ArgumentNullException">ArgumentNullException</a>
+                </td>
+                <td>
+                  <i>self</i> is <tt>null</tt>.
+        </td>
+              </tr>
+            </table>
+          </blockquote>
+          <h4 class="Subsection">
+            <a href="javascript:toggle_display('M:Cadenza.StringCoda.Lines(System.String):Remarks')">
+              <span id="M:Cadenza.StringCoda.Lines(System.String):Remarks:toggle">⊟</span> Remarks</a>
+          </h4>
+          <blockquote class="SubsectionBox" id="M:Cadenza.StringCoda.Lines(System.String):Remarks">
+            <p>
+            This method is implemented by using deferred execution.
+          </p>
+            <div>
+              <i>Note: </i>
+            A "line of text" is the same as that used by 
+            <a href="javascript:alert(&quot;Documentation not found.&quot;)">TextReaderCoda.Lines(System.IO.TextReader)</a>.
+          </div>
+            <table class="CodeExampleTable">
+              <tr>
+                <td>
+                  <b>
+                    <font size="-1">C# Example</font>
+                  </b>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <pre class="code-csharp">Assert.IsTrue (new[]{"one", "two", "three"}
+		.SequenceEqual ("one\ntwo\nthree".Lines ()));
+</pre>
+                </td>
+              </tr>
+            </table>
+          </blockquote>
+          <h4 class="Subsection">
+            <a href="javascript:toggle_display('M:Cadenza.StringCoda.Lines(System.String):Version Information')">
+              <span id="M:Cadenza.StringCoda.Lines(System.String):Version Information:toggle">⊟</span> Requirements</a>
+          </h4>
+          <blockquote class="SubsectionBox" id="M:Cadenza.StringCoda.Lines(System.String):Version Information">
+            <b>Namespace: </b>Cadenza<br /><b>Assembly: </b>Cadenza (in Cadenza.dll)<br /><b>Assembly Versions: </b>0.1.0.0</blockquote>
+          <hr size="1" />
+        </blockquote>
+        <h3 id="M:Cadenza.StringCoda.Matches(System.String,System.String)">
+          <a href="javascript:toggle_display('M:Cadenza.StringCoda.Matches(System.String,System.String):member')">
+            <span id="M:Cadenza.StringCoda.Matches(System.String,System.String):member:toggle">⊟</span> Matches Method</a>
+        </h3>
+        <blockquote id="M:Cadenza.StringCoda.Matches(System.String,System.String):member">
+          <p class="Summary">
+          Create a <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Collections.Generic.IEnumerable`1">IEnumerable&lt;System.Text.RegularExpressions.Match&gt;</a>
+          containing all <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Text.RegularExpressions.Match">System.Text.RegularExpressions.Match</a>ed
+          text within <i>self</i>.
+        </p>
+          <div class="Signature">public static <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Collections.Generic.IEnumerable`1">IEnumerable&lt;System.Text.RegularExpressions.Match&gt;</a> <b>Matches</b> (<i>this</i> <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.String">string</a> self, <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.String">string</a> regex)</div>
+          <h4 class="Subsection">
+            <a href="javascript:toggle_display('M:Cadenza.StringCoda.Matches(System.String,System.String):Parameters')">
+              <span id="M:Cadenza.StringCoda.Matches(System.String,System.String):Parameters:toggle">⊟</span> Parameters</a>
+          </h4>
+          <blockquote class="SubsectionBox" id="M:Cadenza.StringCoda.Matches(System.String,System.String):Parameters">
+            <dl>
+              <dt>
+                <i>self</i>
+              </dt>
+              <dd>
+          A <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.String">string</a> to apply a regular expression to.
+        </dd>
+              <dt>
+                <i>regex</i>
+              </dt>
+              <dd>
+          A <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.String">string</a> containing the regular expression
+          to match <i>self</i> against.
+        </dd>
+            </dl>
+          </blockquote>
+          <h4 class="Subsection">
+            <a href="javascript:toggle_display('M:Cadenza.StringCoda.Matches(System.String,System.String):Returns')">
+              <span id="M:Cadenza.StringCoda.Matches(System.String,System.String):Returns:toggle">⊟</span> Returns</a>
+          </h4>
+          <blockquote class="SubsectionBox" id="M:Cadenza.StringCoda.Matches(System.String,System.String):Returns">
+          A <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Collections.Generic.IEnumerable`1">IEnumerable&lt;System.Text.RegularExpressions.Match&gt;</a>
+          containing all <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Text.RegularExpressions.Match">System.Text.RegularExpressions.Match</a>ed
+          text within <i>self</i>.
+        </blockquote>
+          <h4 class="Subsection">
+            <a href="javascript:toggle_display('M:Cadenza.StringCoda.Matches(System.String,System.String):Exceptions')">
+              <span id="M:Cadenza.StringCoda.Matches(System.String,System.String):Exceptions:toggle">⊟</span> Exceptions</a>
+          </h4>
+          <blockquote class="SubsectionBox" id="M:Cadenza.StringCoda.Matches(System.String,System.String):Exceptions">
+            <table class="TypeDocumentation">
+              <tr>
+                <th>Type</th>
+                <th>Reason</th>
+              </tr>
+              <tr valign="top">
+                <td>
+                  <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.ArgumentException">ArgumentException</a>
+                </td>
+                <td>
+          Regular expression parsing error.
+        </td>
+              </tr>
+              <tr valign="top">
+                <td>
+                  <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.ArgumentNullException">ArgumentNullException</a>
+                </td>
+                <td>
+                  <p>
+                    <i>self</i> is <tt>null</tt></p>
+                  <p>
+            -or-
+          </p>
+                  <p>
+                    <i>regex</i> is <tt>null</tt></p>
+                </td>
+              </tr>
+            </table>
+          </blockquote>
+          <h4 class="Subsection">
+            <a href="javascript:toggle_display('M:Cadenza.StringCoda.Matches(System.String,System.String):Remarks')">
+              <span id="M:Cadenza.StringCoda.Matches(System.String,System.String):Remarks:toggle">⊟</span> Remarks</a>
+          </h4>
+          <blockquote class="SubsectionBox" id="M:Cadenza.StringCoda.Matches(System.String,System.String):Remarks">
+            <table class="CodeExampleTable">
+              <tr>
+                <td>
+                  <b>
+                    <font size="-1">C# Example</font>
+                  </b>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <pre class="code-csharp">string match = @"a - b
+c - d
+e - f";
+
+Match[] matches = match.Matches (@"\w+ - \w+").ToArray();
+Assert.AreEqual (3, matches.Length);
+Assert.AreEqual ("a - b", matches [0].Value);
+Assert.AreEqual ("c - d", matches [1].Value);
+Assert.AreEqual ("e - f", matches [2].Value);
+</pre>
+                </td>
+              </tr>
+            </table>
+          </blockquote>
+          <h4 class="Subsection">
+            <a href="javascript:toggle_display('M:Cadenza.StringCoda.Matches(System.String,System.String):Version Information')">
+              <span id="M:Cadenza.StringCoda.Matches(System.String,System.String):Version Information:toggle">⊟</span> Requirements</a>
+          </h4>
+          <blockquote class="SubsectionBox" id="M:Cadenza.StringCoda.Matches(System.String,System.String):Version Information">
+            <b>Namespace: </b>Cadenza<br /><b>Assembly: </b>Cadenza (in Cadenza.dll)<br /><b>Assembly Versions: </b>0.1.0.0</blockquote>
+          <hr size="1" />
+        </blockquote>
+        <h3 id="M:Cadenza.StringCoda.Matches(System.String,System.String,System.Text.RegularExpressions.RegexOptions)">
+          <a href="javascript:toggle_display('M:Cadenza.StringCoda.Matches(System.String,System.String,System.Text.RegularExpressions.RegexOptions):member')">
+            <span id="M:Cadenza.StringCoda.Matches(System.String,System.String,System.Text.RegularExpressions.RegexOptions):member:toggle">⊟</span> Matches Method</a>
+        </h3>
+        <blockquote id="M:Cadenza.StringCoda.Matches(System.String,System.String,System.Text.RegularExpressions.RegexOptions):member">
+          <p class="Summary">
+          Create a <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Collections.Generic.IEnumerable`1">IEnumerable&lt;System.Text.RegularExpressions.Match&gt;</a>
+          containing all <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Text.RegularExpressions.Match">System.Text.RegularExpressions.Match</a>ed
+          text within <i>self</i>.
+        </p>
+          <div class="Signature">public static <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Collections.Generic.IEnumerable`1">IEnumerable&lt;System.Text.RegularExpressions.Match&gt;</a> <b>Matches</b> (<i>this</i> <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.String">string</a> self, <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.String">string</a> regex, <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Text.RegularExpressions.RegexOptions">System.Text.RegularExpressions.RegexOptions</a> options)</div>
+          <h4 class="Subsection">
+            <a href="javascript:toggle_display('M:Cadenza.StringCoda.Matches(System.String,System.String,System.Text.RegularExpressions.RegexOptions):Parameters')">
+              <span id="M:Cadenza.StringCoda.Matches(System.String,System.String,System.Text.RegularExpressions.RegexOptions):Parameters:toggle">⊟</span> Parameters</a>
+          </h4>
+          <blockquote class="SubsectionBox" id="M:Cadenza.StringCoda.Matches(System.String,System.String,System.Text.RegularExpressions.RegexOptions):Parameters">
+            <dl>
+              <dt>
+                <i>self</i>
+              </dt>
+              <dd>
+          A <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.String">string</a> to apply a regular expression to.
+        </dd>
+              <dt>
+                <i>regex</i>
+              </dt>
+              <dd>
+          A <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.String">string</a> containing the regular expression
+          to match <i>self</i> against.
+        </dd>
+              <dt>
+                <i>options</i>
+              </dt>
+              <dd>
+          A <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Text.RegularExpressions.RegexOptions">System.Text.RegularExpressions.RegexOptions</a>
+          containing options to control the regular expression.
+        </dd>
+            </dl>
+          </blockquote>
+          <h4 class="Subsection">
+            <a href="javascript:toggle_display('M:Cadenza.StringCoda.Matches(System.String,System.String,System.Text.RegularExpressions.RegexOptions):Returns')">
+              <span id="M:Cadenza.StringCoda.Matches(System.String,System.String,System.Text.RegularExpressions.RegexOptions):Returns:toggle">⊟</span> Returns</a>
+          </h4>
+          <blockquote class="SubsectionBox" id="M:Cadenza.StringCoda.Matches(System.String,System.String,System.Text.RegularExpressions.RegexOptions):Returns">
+          A <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Collections.Generic.IEnumerable`1">IEnumerable&lt;System.Text.RegularExpressions.Match&gt;</a>
+          containing all <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Text.RegularExpressions.Match">System.Text.RegularExpressions.Match</a>ed
+          text within <i>self</i>.
+        </blockquote>
+          <h4 class="Subsection">
+            <a href="javascript:toggle_display('M:Cadenza.StringCoda.Matches(System.String,System.String,System.Text.RegularExpressions.RegexOptions):Exceptions')">
+              <span id="M:Cadenza.StringCoda.Matches(System.String,System.String,System.Text.RegularExpressions.RegexOptions):Exceptions:toggle">⊟</span> Exceptions</a>
+          </h4>
+          <blockquote class="SubsectionBox" id="M:Cadenza.StringCoda.Matches(System.String,System.String,System.Text.RegularExpressions.RegexOptions):Exceptions">
+            <table class="TypeDocumentation">
+              <tr>
+                <th>Type</th>
+                <th>Reason</th>
+              </tr>
+              <tr valign="top">
+                <td>
+                  <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.ArgumentException">ArgumentException</a>
+                </td>
+                <td>
+          Regular expression parsing error.
+        </td>
+              </tr>
+              <tr valign="top">
+                <td>
+                  <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.ArgumentNullException">ArgumentNullException</a>
+                </td>
+                <td>
+                  <p>
+                    <i>self</i> is <tt>null</tt></p>
+                  <p>
+            -or-
+          </p>
+                  <p>
+                    <i>regex</i> is <tt>null</tt></p>
+                </td>
+              </tr>
+              <tr valign="top">
+                <td>
+                  <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.ArgumentOutOfRangeException">ArgumentOutOfRangeException</a>
+                </td>
+                <td>
+                  <i>options</i> contains an invalid flag.
+        </td>
+              </tr>
+            </table>
+          </blockquote>
+          <h4 class="Subsection">
+            <a href="javascript:toggle_display('M:Cadenza.StringCoda.Matches(System.String,System.String,System.Text.RegularExpressions.RegexOptions):Remarks')">
+              <span id="M:Cadenza.StringCoda.Matches(System.String,System.String,System.Text.RegularExpressions.RegexOptions):Remarks:toggle">⊟</span> Remarks</a>
+          </h4>
+          <blockquote class="SubsectionBox" id="M:Cadenza.StringCoda.Matches(System.String,System.String,System.Text.RegularExpressions.RegexOptions):Remarks">
+            <table class="CodeExampleTable">
+              <tr>
+                <td>
+                  <b>
+                    <font size="-1">C# Example</font>
+                  </b>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <pre class="code-csharp">string match = @"a - b
+c - d
+e - f";
+
+Match[] matches = match.Matches (@"\w+ - \w+").ToArray();
+Assert.AreEqual (3, matches.Length);
+Assert.AreEqual ("a - b", matches [0].Value);
+Assert.AreEqual ("c - d", matches [1].Value);
+Assert.AreEqual ("e - f", matches [2].Value);
+</pre>
+                </td>
+              </tr>
+            </table>
+          </blockquote>
+          <h4 class="Subsection">
+            <a href="javascript:toggle_display('M:Cadenza.StringCoda.Matches(System.String,System.String,System.Text.RegularExpressions.RegexOptions):Version Information')">
+              <span id="M:Cadenza.StringCoda.Matches(System.String,System.String,System.Text.RegularExpressions.RegexOptions):Version Information:toggle">⊟</span> Requirements</a>
+          </h4>
+          <blockquote class="SubsectionBox" id="M:Cadenza.StringCoda.Matches(System.String,System.String,System.Text.RegularExpressions.RegexOptions):Version Information">
+            <b>Namespace: </b>Cadenza<br /><b>Assembly: </b>Cadenza (in Cadenza.dll)<br /><b>Assembly Versions: </b>0.1.0.0</blockquote>
+          <hr size="1" />
+        </blockquote>
+        <h3 id="M:Cadenza.StringCoda.MatchValues(System.String,System.String)">
+          <a href="javascript:toggle_display('M:Cadenza.StringCoda.MatchValues(System.String,System.String):member')">
+            <span id="M:Cadenza.StringCoda.MatchValues(System.String,System.String):member:toggle">⊟</span> MatchValues Method</a>
+        </h3>
+        <blockquote id="M:Cadenza.StringCoda.MatchValues(System.String,System.String):member">
+          <p class="Summary">
+          Create a <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Collections.Generic.IEnumerable`1">IEnumerable&lt;string&gt;</a>
+          containing all text within <i>self</i> that matches
+          <i>regex</i>.
+        </p>
+          <div class="Signature">public static <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Collections.Generic.IEnumerable`1">IEnumerable&lt;string&gt;</a> <b>MatchValues</b> (<i>this</i> <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.String">string</a> self, <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.String">string</a> regex)</div>
+          <h4 class="Subsection">
+            <a href="javascript:toggle_display('M:Cadenza.StringCoda.MatchValues(System.String,System.String):Parameters')">
+              <span id="M:Cadenza.StringCoda.MatchValues(System.String,System.String):Parameters:toggle">⊟</span> Parameters</a>
+          </h4>
+          <blockquote class="SubsectionBox" id="M:Cadenza.StringCoda.MatchValues(System.String,System.String):Parameters">
+            <dl>
+              <dt>
+                <i>self</i>
+              </dt>
+              <dd>
+          A <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.String">string</a> to apply a regular expression to.
+        </dd>
+              <dt>
+                <i>regex</i>
+              </dt>
+              <dd>
+          A <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.String">string</a> containing the regular expression
+          to match <i>self</i> against.
+        </dd>
+            </dl>
+          </blockquote>
+          <h4 class="Subsection">
+            <a href="javascript:toggle_display('M:Cadenza.StringCoda.MatchValues(System.String,System.String):Returns')">
+              <span id="M:Cadenza.StringCoda.MatchValues(System.String,System.String):Returns:toggle">⊟</span> Returns</a>
+          </h4>
+          <blockquote class="SubsectionBox" id="M:Cadenza.StringCoda.MatchValues(System.String,System.String):Returns">
+          A <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Collections.Generic.IEnumerable`1">IEnumerable&lt;string&gt;</a>
+          containing all text within <i>self</i> that matches
+          <i>regex</i>.
+        </blockquote>
+          <h4 class="Subsection">
+            <a href="javascript:toggle_display('M:Cadenza.StringCoda.MatchValues(System.String,System.String):Exceptions')">
+              <span id="M:Cadenza.StringCoda.MatchValues(System.String,System.String):Exceptions:toggle">⊟</span> Exceptions</a>
+          </h4>
+          <blockquote class="SubsectionBox" id="M:Cadenza.StringCoda.MatchValues(System.String,System.String):Exceptions">
+            <table class="TypeDocumentation">
+              <tr>
+                <th>Type</th>
+                <th>Reason</th>
+              </tr>
+              <tr valign="top">
+                <td>
+                  <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.ArgumentException">ArgumentException</a>
+                </td>
+                <td>
+          Regular expression parsing error.
+        </td>
+              </tr>
+              <tr valign="top">
+                <td>
+                  <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.ArgumentNullException">ArgumentNullException</a>
+                </td>
+                <td>
+                  <p>
+                    <i>self</i> is <tt>null</tt></p>
+                  <p>
+            -or-
+          </p>
+                  <p>
+                    <i>regex</i> is <tt>null</tt></p>
+                </td>
+              </tr>
+            </table>
+          </blockquote>
+          <h4 class="Subsection">
+            <a href="javascript:toggle_display('M:Cadenza.StringCoda.MatchValues(System.String,System.String):Remarks')">
+              <span id="M:Cadenza.StringCoda.MatchValues(System.String,System.String):Remarks:toggle">⊟</span> Remarks</a>
+          </h4>
+          <blockquote class="SubsectionBox" id="M:Cadenza.StringCoda.MatchValues(System.String,System.String):Remarks">
+            <p>
+            This differs from
+            <a href="../Cadenza/StringCoda.html#M:Cadenza.StringCoda.Captures(System.String,System.String)">StringCoda.Captures(string, string)</a>
+            in that no captures (parenthesis) are required within 
+            <i>regex</i>.
+          </p>
+            <table class="CodeExampleTable">
+              <tr>
+                <td>
+                  <b>
+                    <font size="-1">C# Example</font>
+                  </b>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <pre class="code-csharp">string match = @"a - b
+c - d
+e - f";
+
+string[] expected = {"a - b", "c - d", "e - f"};
+string[] actual = match.MatchValues(@"\w+ - \w+").ToArray();
+
+AssertAreSame (expected, actual);
+</pre>
+                </td>
+              </tr>
+            </table>
+          </blockquote>
+          <h4 class="Subsection">
+            <a href="javascript:toggle_display('M:Cadenza.StringCoda.MatchValues(System.String,System.String):Version Information')">
+              <span id="M:Cadenza.StringCoda.MatchValues(System.String,System.String):Version Information:toggle">⊟</span> Requirements</a>
+          </h4>
+          <blockquote class="SubsectionBox" id="M:Cadenza.StringCoda.MatchValues(System.String,System.String):Version Information">
+            <b>Namespace: </b>Cadenza<br /><b>Assembly: </b>Cadenza (in Cadenza.dll)<br /><b>Assembly Versions: </b>0.1.0.0</blockquote>
+          <hr size="1" />
+        </blockquote>
+        <h3 id="M:Cadenza.StringCoda.MatchValues(System.String,System.String,System.Text.RegularExpressions.RegexOptions)">
+          <a href="javascript:toggle_display('M:Cadenza.StringCoda.MatchValues(System.String,System.String,System.Text.RegularExpressions.RegexOptions):member')">
+            <span id="M:Cadenza.StringCoda.MatchValues(System.String,System.String,System.Text.RegularExpressions.RegexOptions):member:toggle">⊟</span> MatchValues Method</a>
+        </h3>
+        <blockquote id="M:Cadenza.StringCoda.MatchValues(System.String,System.String,System.Text.RegularExpressions.RegexOptions):member">
+          <p class="Summary">
+          Create a <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Collections.Generic.IEnumerable`1">IEnumerable&lt;string&gt;</a>
+          containing all text within <i>self</i> that matches
+          <i>regex</i>.
+        </p>
+          <div class="Signature">public static <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Collections.Generic.IEnumerable`1">IEnumerable&lt;string&gt;</a> <b>MatchValues</b> (<i>this</i> <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.String">string</a> self, <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.String">string</a> regex, <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Text.RegularExpressions.RegexOptions">System.Text.RegularExpressions.RegexOptions</a> options)</div>
+          <h4 class="Subsection">
+            <a href="javascript:toggle_display('M:Cadenza.StringCoda.MatchValues(System.String,System.String,System.Text.RegularExpressions.RegexOptions):Parameters')">
+              <span id="M:Cadenza.StringCoda.MatchValues(System.String,System.String,System.Text.RegularExpressions.RegexOptions):Parameters:toggle">⊟</span> Parameters</a>
+          </h4>
+          <blockquote class="SubsectionBox" id="M:Cadenza.StringCoda.MatchValues(System.String,System.String,System.Text.RegularExpressions.RegexOptions):Parameters">
+            <dl>
+              <dt>
+                <i>self</i>
+              </dt>
+              <dd>
+          A <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.String">string</a> to apply a regular expression to.
+        </dd>
+              <dt>
+                <i>regex</i>
+              </dt>
+              <dd>
+          A <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.String">string</a> containing the regular expression
+          to match <i>self</i> against.
+        </dd>
+              <dt>
+                <i>options</i>
+              </dt>
+              <dd>
+          A <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Text.RegularExpressions.RegexOptions">System.Text.RegularExpressions.RegexOptions</a>
+          containing options to control the regular expression.
+        </dd>
+            </dl>
+          </blockquote>
+          <h4 class="Subsection">
+            <a href="javascript:toggle_display('M:Cadenza.StringCoda.MatchValues(System.String,System.String,System.Text.RegularExpressions.RegexOptions):Returns')">
+              <span id="M:Cadenza.StringCoda.MatchValues(System.String,System.String,System.Text.RegularExpressions.RegexOptions):Returns:toggle">⊟</span> Returns</a>
+          </h4>
+          <blockquote class="SubsectionBox" id="M:Cadenza.StringCoda.MatchValues(System.String,System.String,System.Text.RegularExpressions.RegexOptions):Returns">
+          A <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Collections.Generic.IEnumerable`1">IEnumerable&lt;string&gt;</a>
+          containing all text within <i>self</i> that matches
+          <i>regex</i>.
+        </blockquote>
+          <h4 class="Subsection">
+            <a href="javascript:toggle_display('M:Cadenza.StringCoda.MatchValues(System.String,System.String,System.Text.RegularExpressions.RegexOptions):Exceptions')">
+              <span id="M:Cadenza.StringCoda.MatchValues(System.String,System.String,System.Text.RegularExpressions.RegexOptions):Exceptions:toggle">⊟</span> Exceptions</a>
+          </h4>
+          <blockquote class="SubsectionBox" id="M:Cadenza.StringCoda.MatchValues(System.String,System.String,System.Text.RegularExpressions.RegexOptions):Exceptions">
+            <table class="TypeDocumentation">
+              <tr>
+                <th>Type</th>
+                <th>Reason</th>
+              </tr>
+              <tr valign="top">
+                <td>
+                  <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.ArgumentException">ArgumentException</a>
+                </td>
+                <td>
+          Regular expression parsing error.
+        </td>
+              </tr>
+              <tr valign="top">
+                <td>
+                  <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.ArgumentNullException">ArgumentNullException</a>
+                </td>
+                <td>
+                  <p>
+                    <i>self</i> is <tt>null</tt></p>
+                  <p>
+            -or-
+          </p>
+                  <p>
+                    <i>regex</i> is <tt>null</tt></p>
+                </td>
+              </tr>
+              <tr valign="top">
+                <td>
+                  <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.ArgumentOutOfRangeException">ArgumentOutOfRangeException</a>
+                </td>
+                <td>
+                  <i>options</i> contains an invalid flag.
+        </td>
+              </tr>
+            </table>
+          </blockquote>
+          <h4 class="Subsection">
+            <a href="javascript:toggle_display('M:Cadenza.StringCoda.MatchValues(System.String,System.String,System.Text.RegularExpressions.RegexOptions):Remarks')">
+              <span id="M:Cadenza.StringCoda.MatchValues(System.String,System.String,System.Text.RegularExpressions.RegexOptions):Remarks:toggle">⊟</span> Remarks</a>
+          </h4>
+          <blockquote class="SubsectionBox" id="M:Cadenza.StringCoda.MatchValues(System.String,System.String,System.Text.RegularExpressions.RegexOptions):Remarks">
+            <p>
+            This differs from
+            <a href="../Cadenza/StringCoda.html#M:Cadenza.StringCoda.Captures(System.String,System.String)">StringCoda.Captures(string, string)</a>
+            in that no captures (parenthesis) are required within 
+            <i>regex</i>.
+          </p>
+            <table class="CodeExampleTable">
+              <tr>
+                <td>
+                  <b>
+                    <font size="-1">C# Example</font>
+                  </b>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <pre class="code-csharp">string match = @"a - b
+c - d
+e - f";
+
+string[] expected = {"a - b", "c - d", "e - f"};
+string[] actual = match.MatchValues(@"\w+ - \w+").ToArray();
+
+AssertAreSame (expected, actual);
+</pre>
+                </td>
+              </tr>
+            </table>
+          </blockquote>
+          <h4 class="Subsection">
+            <a href="javascript:toggle_display('M:Cadenza.StringCoda.MatchValues(System.String,System.String,System.Text.RegularExpressions.RegexOptions):Version Information')">
+              <span id="M:Cadenza.StringCoda.MatchValues(System.String,System.String,System.Text.RegularExpressions.RegexOptions):Version Information:toggle">⊟</span> Requirements</a>
+          </h4>
+          <blockquote class="SubsectionBox" id="M:Cadenza.StringCoda.MatchValues(System.String,System.String,System.Text.RegularExpressions.RegexOptions):Version Information">
+            <b>Namespace: </b>Cadenza<br /><b>Assembly: </b>Cadenza (in Cadenza.dll)<br /><b>Assembly Versions: </b>0.1.0.0</blockquote>
+          <hr size="1" />
+        </blockquote>
+        <h3 id="M:Cadenza.StringCoda.Remove(System.String,System.String[])">
+          <a href="javascript:toggle_display('M:Cadenza.StringCoda.Remove(System.String,System.String[]):member')">
+            <span id="M:Cadenza.StringCoda.Remove(System.String,System.String[]):member:toggle">⊟</span> Remove Method</a>
+        </h3>
+        <blockquote id="M:Cadenza.StringCoda.Remove(System.String,System.String[]):member">
+          <p class="Summary">
+          Deletes all strings within <i>targets</i> from
+          <i>self</i>.
+        </p>
+          <div class="Signature">public static <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.String">string</a> <b>Remove</b> (<i>this</i> <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.String">string</a> self, <b>params</b> <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.String">string</a>[] targets)</div>
+          <h4 class="Subsection">
+            <a href="javascript:toggle_display('M:Cadenza.StringCoda.Remove(System.String,System.String[]):Parameters')">
+              <span id="M:Cadenza.StringCoda.Remove(System.String,System.String[]):Parameters:toggle">⊟</span> Parameters</a>
+          </h4>
+          <blockquote class="SubsectionBox" id="M:Cadenza.StringCoda.Remove(System.String,System.String[]):Parameters">
+            <dl>
+              <dt>
+                <i>self</i>
+              </dt>
+              <dd>
+          A <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.String">string</a> to remove all occurrences of all
+          elements within <i>targets</i>.
+        </dd>
+              <dt>
+                <i>targets</i>
+              </dt>
+              <dd>
+          A <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.String">string</a> array containing the strings to
+          remove from <i>self </i>.
+        </dd>
+            </dl>
+          </blockquote>
+          <h4 class="Subsection">
+            <a href="javascript:toggle_display('M:Cadenza.StringCoda.Remove(System.String,System.String[]):Returns')">
+              <span id="M:Cadenza.StringCoda.Remove(System.String,System.String[]):Returns:toggle">⊟</span> Returns</a>
+          </h4>
+          <blockquote class="SubsectionBox" id="M:Cadenza.StringCoda.Remove(System.String,System.String[]):Returns">
+          A <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.String">string</a> instance in which all strings
+          within <i>targets </i> have been removed.
+        </blockquote>
+          <h4 class="Subsection">
+            <a href="javascript:toggle_display('M:Cadenza.StringCoda.Remove(System.String,System.String[]):Exceptions')">
+              <span id="M:Cadenza.StringCoda.Remove(System.String,System.String[]):Exceptions:toggle">⊟</span> Exceptions</a>
+          </h4>
+          <blockquote class="SubsectionBox" id="M:Cadenza.StringCoda.Remove(System.String,System.String[]):Exceptions">
+            <table class="TypeDocumentation">
+              <tr>
+                <th>Type</th>
+                <th>Reason</th>
+              </tr>
+              <tr valign="top">
+                <td>
+                  <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.ArgumentNullException">ArgumentNullException</a>
+                </td>
+                <td>
+                  <i>self</i> or <i>targets</i> is
+          <tt>null</tt>.
+        </td>
+              </tr>
+            </table>
+          </blockquote>
+          <h4 class="Subsection">
+            <a href="javascript:toggle_display('M:Cadenza.StringCoda.Remove(System.String,System.String[]):Remarks')">
+              <span id="M:Cadenza.StringCoda.Remove(System.String,System.String[]):Remarks:toggle">⊟</span> Remarks</a>
+          </h4>
+          <blockquote class="SubsectionBox" id="M:Cadenza.StringCoda.Remove(System.String,System.String[]):Remarks">
+            <table class="CodeExampleTable">
+              <tr>
+                <td>
+                  <b>
+                    <font size="-1">C# Example</font>
+                  </b>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <pre class="code-csharp">Assert.AreEqual (" Bar ", "Foo Bar Monkeys".Remove ("Foo", "Monkeys"));
+Assert.AreEqual (" Bar ", "Foo Bar Foo".Remove ("Foo"));
+</pre>
+                </td>
+              </tr>
+            </table>
+          </blockquote>
+          <h4 class="Subsection">
+            <a href="javascript:toggle_display('M:Cadenza.StringCoda.Remove(System.String,System.String[]):Version Information')">
+              <span id="M:Cadenza.StringCoda.Remove(System.String,System.String[]):Version Information:toggle">⊟</span> Requirements</a>
+          </h4>
+          <blockquote class="SubsectionBox" id="M:Cadenza.StringCoda.Remove(System.String,System.String[]):Version Information">
+            <b>Namespace: </b>Cadenza<br /><b>Assembly: </b>Cadenza (in Cadenza.dll)<br /><b>Assembly Versions: </b>0.1.0.0</blockquote>
+          <hr size="1" />
+        </blockquote>
+        <h3 id="M:Cadenza.StringCoda.Slice(System.String,System.Int32,System.Int32)">
+          <a href="javascript:toggle_display('M:Cadenza.StringCoda.Slice(System.String,System.Int32,System.Int32):member')">
+            <span id="M:Cadenza.StringCoda.Slice(System.String,System.Int32,System.Int32):member:toggle">⊟</span> Slice Method</a>
+        </h3>
+        <blockquote id="M:Cadenza.StringCoda.Slice(System.String,System.Int32,System.Int32):member">
+          <p class="Summary">
+          Creates a new <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.String">string</a> of 
+          <i>self</i> using indexes of the start and end
+          position.
+        </p>
+          <div class="Signature">public static <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.String">string</a> <b>Slice</b> (<i>this</i> <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.String">string</a> self, <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Int32">int</a> start, <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Int32">int</a> end)</div>
+          <h4 class="Subsection">
+            <a href="javascript:toggle_display('M:Cadenza.StringCoda.Slice(System.String,System.Int32,System.Int32):Parameters')">
+              <span id="M:Cadenza.StringCoda.Slice(System.String,System.Int32,System.Int32):Parameters:toggle">⊟</span> Parameters</a>
+          </h4>
+          <blockquote class="SubsectionBox" id="M:Cadenza.StringCoda.Slice(System.String,System.Int32,System.Int32):Parameters">
+            <dl>
+              <dt>
+                <i>self</i>
+              </dt>
+              <dd>
+          A <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.String">string</a> containing the string to 
+          substring.
+        </dd>
+              <dt>
+                <i>start</i>
+              </dt>
+              <dd>
+          A <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Int32">int</a> containing the start index of the
+          new <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.String">string</a> to create.
+        </dd>
+              <dt>
+                <i>end</i>
+              </dt>
+              <dd>
+          A <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Int32">int</a> containing the end index of the
+          new <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.String">string</a> to create.
+        </dd>
+            </dl>
+          </blockquote>
+          <h4 class="Subsection">
+            <a href="javascript:toggle_display('M:Cadenza.StringCoda.Slice(System.String,System.Int32,System.Int32):Returns')">
+              <span id="M:Cadenza.StringCoda.Slice(System.String,System.Int32,System.Int32):Returns:toggle">⊟</span> Returns</a>
+          </h4>
+          <blockquote class="SubsectionBox" id="M:Cadenza.StringCoda.Slice(System.String,System.Int32,System.Int32):Returns">
+          A new <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.String">string</a> of <i>self</i> 
+          using indexes of the start and end position.
+        </blockquote>
+          <h4 class="Subsection">
+            <a href="javascript:toggle_display('M:Cadenza.StringCoda.Slice(System.String,System.Int32,System.Int32):Exceptions')">
+              <span id="M:Cadenza.StringCoda.Slice(System.String,System.Int32,System.Int32):Exceptions:toggle">⊟</span> Exceptions</a>
+          </h4>
+          <blockquote class="SubsectionBox" id="M:Cadenza.StringCoda.Slice(System.String,System.Int32,System.Int32):Exceptions">
+            <table class="TypeDocumentation">
+              <tr>
+                <th>Type</th>
+                <th>Reason</th>
+              </tr>
+              <tr valign="top">
+                <td>
+                  <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.ArgumentNullException">ArgumentNullException</a>
+                </td>
+                <td>
+                  <i>self</i> is <tt>null</tt>.
+        </td>
+              </tr>
+              <tr valign="top">
+                <td>
+                  <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.ArgumentOutOfRangeException">ArgumentOutOfRangeException</a>
+                </td>
+                <td>
+                  <p>
+                    <i>start</i> is negative
+          </p>
+                  <p>-or-</p>
+                  <p>
+                    <i>start</i> is greater than or equal to 
+            <tt><i>self</i>.Length</tt>.
+          </p>
+                  <p>-or-</p>
+                  <p>
+                    <i>end</i> is greater than or equal to 
+            <tt><i>self</i>.Length</tt>.
+          </p>
+                </td>
+              </tr>
+            </table>
+          </blockquote>
+          <h4 class="Subsection">
+            <a href="javascript:toggle_display('M:Cadenza.StringCoda.Slice(System.String,System.Int32,System.Int32):Remarks')">
+              <span id="M:Cadenza.StringCoda.Slice(System.String,System.Int32,System.Int32):Remarks:toggle">⊟</span> Remarks</a>
+          </h4>
+          <blockquote class="SubsectionBox" id="M:Cadenza.StringCoda.Slice(System.String,System.Int32,System.Int32):Remarks">
+            <p>
+            This differs from 
+            <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.String.Substring(System.Int32,System.Int32)">System.String.Substring(System.Int32,System.Int32)</a>
+            in that <i>start</i> and <i>end</i> are
+            both string indexes, while the <i>length</i>
+            parameter in <tt>Substring</tt> is not an index.
+          </p>
+            <p>
+            If <i>end</i> is negative, then it is taken as a 
+            value from the end of the string.
+          </p>
+            <p>
+            When <i>end</i> is positive, this is equivalent to
+            <tt>self.Substring (start, end - start)</tt>.
+          </p>
+            <table class="CodeExampleTable">
+              <tr>
+                <td>
+                  <b>
+                    <font size="-1">C# Example</font>
+                  </b>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <pre class="code-csharp">var data = "0123456789";
+
+Assert.AreEqual ("0",       data.Slice (0, 1));
+Assert.AreEqual ("89",      data.Slice (8, 10));
+Assert.AreEqual ("456789",  data.Slice (4, -1));
+Assert.AreEqual ("8",       data.Slice (8, -2));
+</pre>
+                </td>
+              </tr>
+            </table>
+          </blockquote>
+          <h4 class="Subsection">
+            <a href="javascript:toggle_display('M:Cadenza.StringCoda.Slice(System.String,System.Int32,System.Int32):Version Information')">
+              <span id="M:Cadenza.StringCoda.Slice(System.String,System.Int32,System.Int32):Version Information:toggle">⊟</span> Requirements</a>
+          </h4>
+          <blockquote class="SubsectionBox" id="M:Cadenza.StringCoda.Slice(System.String,System.Int32,System.Int32):Version Information">
+            <b>Namespace: </b>Cadenza<br /><b>Assembly: </b>Cadenza (in Cadenza.dll)<br /><b>Assembly Versions: </b>0.1.0.0</blockquote>
+          <hr size="1" />
+        </blockquote>
+        <h3 id="M:Cadenza.StringCoda.ToEnum``1(System.String)">
+          <a href="javascript:toggle_display('M:Cadenza.StringCoda.ToEnum``1(System.String):member')">
+            <span id="M:Cadenza.StringCoda.ToEnum``1(System.String):member:toggle">⊟</span> ToEnum&lt;TEnum&gt; Generic Method</a>
+        </h3>
+        <blockquote id="M:Cadenza.StringCoda.ToEnum``1(System.String):member">
+          <p class="Summary">
+          Converts a <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.String">string</a> into an enumeration value
+          of type <i>TEnum</i>.
+        </p>
+          <div class="Signature">public static <i title="&#xA;          An enumeration type containing the member stored in &#xA;          .&#xA;        ">TEnum</i> <b>ToEnum&lt;TEnum&gt;</b> (<i>this</i> <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.String">string</a> self)</div>
+          <h4 class="Subsection">
+            <a href="javascript:toggle_display('M:Cadenza.StringCoda.ToEnum``1(System.String):Type Parameters')">
+              <span id="M:Cadenza.StringCoda.ToEnum``1(System.String):Type Parameters:toggle">⊟</span> Type Parameters</a>
+          </h4>
+          <blockquote class="SubsectionBox" id="M:Cadenza.StringCoda.ToEnum``1(System.String):Type Parameters">
+            <dl>
+              <dt>
+                <i>TEnum</i>
+              </dt>
+              <dd>
+          An enumeration type containing the member stored in 
+          <i>self</i>.
+        </dd>
+            </dl>
+          </blockquote>
+          <h4 class="Subsection">
+            <a href="javascript:toggle_display('M:Cadenza.StringCoda.ToEnum``1(System.String):Parameters')">
+              <span id="M:Cadenza.StringCoda.ToEnum``1(System.String):Parameters:toggle">⊟</span> Parameters</a>
+          </h4>
+          <blockquote class="SubsectionBox" id="M:Cadenza.StringCoda.ToEnum``1(System.String):Parameters">
+            <dl>
+              <dt>
+                <i>self</i>
+              </dt>
+              <dd>
+          A <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.String">string</a> containing an enumeration value to
+          convert into that enumeration value.
+        </dd>
+            </dl>
+          </blockquote>
+          <h4 class="Subsection">
+            <a href="javascript:toggle_display('M:Cadenza.StringCoda.ToEnum``1(System.String):Returns')">
+              <span id="M:Cadenza.StringCoda.ToEnum``1(System.String):Returns:toggle">⊟</span> Returns</a>
+          </h4>
+          <blockquote class="SubsectionBox" id="M:Cadenza.StringCoda.ToEnum``1(System.String):Returns">
+          A <i>TEnum</i> value containing the value named by
+          <i>self</i>.
+        </blockquote>
+          <h4 class="Subsection">
+            <a href="javascript:toggle_display('M:Cadenza.StringCoda.ToEnum``1(System.String):Exceptions')">
+              <span id="M:Cadenza.StringCoda.ToEnum``1(System.String):Exceptions:toggle">⊟</span> Exceptions</a>
+          </h4>
+          <blockquote class="SubsectionBox" id="M:Cadenza.StringCoda.ToEnum``1(System.String):Exceptions">
+            <table class="TypeDocumentation">
+              <tr>
+                <th>Type</th>
+                <th>Reason</th>
+              </tr>
+              <tr valign="top">
+                <td>
+                  <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.ArgumentNullException">ArgumentNullException</a>
+                </td>
+                <td>
+                  <i>self</i> is <tt>null</tt>.
+        </td>
+              </tr>
+            </table>
+          </blockquote>
+          <h4 class="Subsection">
+            <a href="javascript:toggle_display('M:Cadenza.StringCoda.ToEnum``1(System.String):Remarks')">
+              <span id="M:Cadenza.StringCoda.ToEnum``1(System.String):Remarks:toggle">⊟</span> Remarks</a>
+          </h4>
+          <blockquote class="SubsectionBox" id="M:Cadenza.StringCoda.ToEnum``1(System.String):Remarks">
+            <div>
+              <i>Note: </i>
+            This probabably doesn't properly support
+            <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.FlagsAttribute">FlagsAttribute</a> enums...
+          </div>
+            <table class="CodeExampleTable">
+              <tr>
+                <td>
+                  <b>
+                    <font size="-1">C# Example</font>
+                  </b>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <pre class="code-csharp">Assert.AreEqual (Foo.Gazonk, "Gazonk".ToEnum&lt;Foo&gt; ());
+Assert.AreEqual (Foo.Bar,    "Bar".ToEnum&lt;Foo&gt; ());
+</pre>
+                </td>
+              </tr>
+            </table>
+          </blockquote>
+          <h4 class="Subsection">
+            <a href="javascript:toggle_display('M:Cadenza.StringCoda.ToEnum``1(System.String):Version Information')">
+              <span id="M:Cadenza.StringCoda.ToEnum``1(System.String):Version Information:toggle">⊟</span> Requirements</a>
+          </h4>
+          <blockquote class="SubsectionBox" id="M:Cadenza.StringCoda.ToEnum``1(System.String):Version Information">
+            <b>Namespace: </b>Cadenza<br /><b>Assembly: </b>Cadenza (in Cadenza.dll)<br /><b>Assembly Versions: </b>0.1.0.0</blockquote>
+          <hr size="1" />
+        </blockquote>
+        <h3 id="M:Cadenza.StringCoda.Tokens(System.String,System.Func{System.Nullable{System.Char},System.Char,System.Boolean}[])">
+          <a href="javascript:toggle_display('M:Cadenza.StringCoda.Tokens(System.String,System.Func{System.Nullable{System.Char},System.Char,System.Boolean}[]):member')">
+            <span id="M:Cadenza.StringCoda.Tokens(System.String,System.Func{System.Nullable{System.Char},System.Char,System.Boolean}[]):member:toggle">⊟</span> Tokens Method</a>
+        </h3>
+        <blockquote id="M:Cadenza.StringCoda.Tokens(System.String,System.Func{System.Nullable{System.Char},System.Char,System.Boolean}[]):member">
+          <p class="Summary">
+          Creates an
+          <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Collections.Generic.IEnumerable`1">IEnumerable&lt;string&gt;</a>
+          which will return all tokens from <i>self</i>.
+        </p>
+          <div class="Signature">public static <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Collections.Generic.IEnumerable`1">IEnumerable&lt;string&gt;</a> <b>Tokens</b> (<i>this</i> <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.String">string</a> self, <b>params</b> <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Func`1">Func&lt;Nullable&lt;System.Char&gt;,System.Char,System.Boolean&gt;</a>[] categories)</div>
+          <h4 class="Subsection">
+            <a href="javascript:toggle_display('M:Cadenza.StringCoda.Tokens(System.String,System.Func{System.Nullable{System.Char},System.Char,System.Boolean}[]):Parameters')">
+              <span id="M:Cadenza.StringCoda.Tokens(System.String,System.Func{System.Nullable{System.Char},System.Char,System.Boolean}[]):Parameters:toggle">⊟</span> Parameters</a>
+          </h4>
+          <blockquote class="SubsectionBox" id="M:Cadenza.StringCoda.Tokens(System.String,System.Func{System.Nullable{System.Char},System.Char,System.Boolean}[]):Parameters">
+            <dl>
+              <dt>
+                <i>self</i>
+              </dt>
+              <dd>
+          A <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.String">string</a> to extract tokens from.
+        </dd>
+              <dt>
+                <i>categories</i>
+              </dt>
+              <dd>
+          A
+					<a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Func`1">Func&lt;Nullable&lt;System.Char&gt;,System.Char,System.Boolean&gt;</a>
+					array containing the different categories of characters that 
+					determines what makes up a "token."  If the 
+					<a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Nullable`1">Nullable&lt;char&gt;</a> parameter is 
+					<tt>null</tt>, then the <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Char">char</a> is
+					the first character within the token; otherwise, the
+					<a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Nullable`1">Nullable&lt;char&gt;</a> parameter contains the
+					character preceding the <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Char">char</a>.
+					The delegate should return <tt>true</tt> if the
+					<a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Char">char</a> is a supported character; otherwise,
+					<tt>false</tt> should be returned.
+        </dd>
+            </dl>
+          </blockquote>
+          <h4 class="Subsection">
+            <a href="javascript:toggle_display('M:Cadenza.StringCoda.Tokens(System.String,System.Func{System.Nullable{System.Char},System.Char,System.Boolean}[]):Returns')">
+              <span id="M:Cadenza.StringCoda.Tokens(System.String,System.Func{System.Nullable{System.Char},System.Char,System.Boolean}[]):Returns:toggle">⊟</span> Returns</a>
+          </h4>
+          <blockquote class="SubsectionBox" id="M:Cadenza.StringCoda.Tokens(System.String,System.Func{System.Nullable{System.Char},System.Char,System.Boolean}[]):Returns">
+          An
+          <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Collections.Generic.IEnumerable`1">IEnumerable&lt;string&gt;</a>
+          which will return all tokens from <i>self</i>.
+        </blockquote>
+          <h4 class="Subsection">
+            <a href="javascript:toggle_display('M:Cadenza.StringCoda.Tokens(System.String,System.Func{System.Nullable{System.Char},System.Char,System.Boolean}[]):Exceptions')">
+              <span id="M:Cadenza.StringCoda.Tokens(System.String,System.Func{System.Nullable{System.Char},System.Char,System.Boolean}[]):Exceptions:toggle">⊟</span> Exceptions</a>
+          </h4>
+          <blockquote class="SubsectionBox" id="M:Cadenza.StringCoda.Tokens(System.String,System.Func{System.Nullable{System.Char},System.Char,System.Boolean}[]):Exceptions">
+            <table class="TypeDocumentation">
+              <tr>
+                <th>Type</th>
+                <th>Reason</th>
+              </tr>
+              <tr valign="top">
+                <td>
+                  <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.ArgumentException">ArgumentException</a>
+                </td>
+                <td>
+                  <i>categories</i> is empty.
+        </td>
+              </tr>
+              <tr valign="top">
+                <td>
+                  <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.ArgumentNullException">ArgumentNullException</a>
+                </td>
+                <td>
+                  <i>self</i> is <tt>null</tt>, or
+          <i>categories</i> is <tt>null</tt>.
+        </td>
+              </tr>
+            </table>
+          </blockquote>
+          <h4 class="Subsection">
+            <a href="javascript:toggle_display('M:Cadenza.StringCoda.Tokens(System.String,System.Func{System.Nullable{System.Char},System.Char,System.Boolean}[]):Remarks')">
+              <span id="M:Cadenza.StringCoda.Tokens(System.String,System.Func{System.Nullable{System.Char},System.Char,System.Boolean}[]):Remarks:toggle">⊟</span> Remarks</a>
+          </h4>
+          <blockquote class="SubsectionBox" id="M:Cadenza.StringCoda.Tokens(System.String,System.Func{System.Nullable{System.Char},System.Char,System.Boolean}[]):Remarks">
+            <p>
+            This method is implemented by using deferred execution.
+          </p>
+            <div>
+              <i>Note: </i>
+              <p>
+              A "token" is determined by <i>categories</i>, and
+							is any contiguous sequence of characters for which the
+              same <i>categories</i> index returns 
+              <tt>true</tt>, starting from the first delegate.  This
+              allows a "some characters are more important than others"
+              philosphy, allowing e.g. parenthesis to be returned separately
+              from alphanumeric characters, even if no whitespace separates
+              them.
+            </p>
+            </div>
+            <table class="CodeExampleTable">
+              <tr>
+                <td>
+                  <b>
+                    <font size="-1">C# Example</font>
+                  </b>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <pre class="code-csharp">string[] expected = {"(", "hello", ",", "world", "!)"};
+string[] actual = "(hello, world!)"
+	.Tokens (
+			(p, c) =&gt; char.IsLetterOrDigit (c), // words
+			(p, c) =&gt; !char.IsWhiteSpace (c)    // non-space
+	).ToArray ();
+AssertAreSame (expected, actual);
+</pre>
+                </td>
+              </tr>
+            </table>
+          </blockquote>
+          <h4 class="Subsection">
+            <a href="javascript:toggle_display('M:Cadenza.StringCoda.Tokens(System.String,System.Func{System.Nullable{System.Char},System.Char,System.Boolean}[]):Version Information')">
+              <span id="M:Cadenza.StringCoda.Tokens(System.String,System.Func{System.Nullable{System.Char},System.Char,System.Boolean}[]):Version Information:toggle">⊟</span> Requirements</a>
+          </h4>
+          <blockquote class="SubsectionBox" id="M:Cadenza.StringCoda.Tokens(System.String,System.Func{System.Nullable{System.Char},System.Char,System.Boolean}[]):Version Information">
+            <b>Namespace: </b>Cadenza<br /><b>Assembly: </b>Cadenza (in Cadenza.dll)<br /><b>Assembly Versions: </b>0.1.0.0</blockquote>
+          <hr size="1" />
+        </blockquote>
+        <h3 id="M:Cadenza.StringCoda.Words(System.String)">
+          <a href="javascript:toggle_display('M:Cadenza.StringCoda.Words(System.String):member')">
+            <span id="M:Cadenza.StringCoda.Words(System.String):member:toggle">⊟</span> Words Method</a>
+        </h3>
+        <blockquote id="M:Cadenza.StringCoda.Words(System.String):member">
+          <p class="Summary">
+          Creates an
+          <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Collections.Generic.IEnumerable`1">IEnumerable&lt;string&gt;</a>
+          which will return all words from <i>self</i>.
+        </p>
+          <div class="Signature">public static <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Collections.Generic.IEnumerable`1">IEnumerable&lt;string&gt;</a> <b>Words</b> (<i>this</i> <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.String">string</a> self)</div>
+          <h4 class="Subsection">
+            <a href="javascript:toggle_display('M:Cadenza.StringCoda.Words(System.String):See Also')">
+              <span id="M:Cadenza.StringCoda.Words(System.String):See Also:toggle">⊟</span> See Also</a>
+          </h4>
+          <blockquote class="SubsectionBox" id="M:Cadenza.StringCoda.Words(System.String):See Also">
+            <div>
+              <a href="javascript:alert(&quot;Documentation not found.&quot;)">TextReaderCoda.Words(System.IO.TextReader)</a>
+            </div>
+          </blockquote>
+          <h4 class="Subsection">
+            <a href="javascript:toggle_display('M:Cadenza.StringCoda.Words(System.String):Parameters')">
+              <span id="M:Cadenza.StringCoda.Words(System.String):Parameters:toggle">⊟</span> Parameters</a>
+          </h4>
+          <blockquote class="SubsectionBox" id="M:Cadenza.StringCoda.Words(System.String):Parameters">
+            <dl>
+              <dt>
+                <i>self</i>
+              </dt>
+              <dd>
+          A <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.String">string</a> to extract words from.
+        </dd>
+            </dl>
+          </blockquote>
+          <h4 class="Subsection">
+            <a href="javascript:toggle_display('M:Cadenza.StringCoda.Words(System.String):Returns')">
+              <span id="M:Cadenza.StringCoda.Words(System.String):Returns:toggle">⊟</span> Returns</a>
+          </h4>
+          <blockquote class="SubsectionBox" id="M:Cadenza.StringCoda.Words(System.String):Returns">
+          An
+          <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Collections.Generic.IEnumerable`1">IEnumerable&lt;string&gt;</a>
+          which will return all words from <i>self</i>.
+        </blockquote>
+          <h4 class="Subsection">
+            <a href="javascript:toggle_display('M:Cadenza.StringCoda.Words(System.String):Exceptions')">
+              <span id="M:Cadenza.StringCoda.Words(System.String):Exceptions:toggle">⊟</span> Exceptions</a>
+          </h4>
+          <blockquote class="SubsectionBox" id="M:Cadenza.StringCoda.Words(System.String):Exceptions">
+            <table class="TypeDocumentation">
+              <tr>
+                <th>Type</th>
+                <th>Reason</th>
+              </tr>
+              <tr valign="top">
+                <td>
+                  <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.ArgumentNullException">ArgumentNullException</a>
+                </td>
+                <td>
+                  <i>self</i> is <tt>null</tt>.
+        </td>
+              </tr>
+            </table>
+          </blockquote>
+          <h4 class="Subsection">
+            <a href="javascript:toggle_display('M:Cadenza.StringCoda.Words(System.String):Remarks')">
+              <span id="M:Cadenza.StringCoda.Words(System.String):Remarks:toggle">⊟</span> Remarks</a>
+          </h4>
+          <blockquote class="SubsectionBox" id="M:Cadenza.StringCoda.Words(System.String):Remarks">
+            <p>
+            This method is implemented by using deferred execution.
+          </p>
+            <div>
+              <i>Note: </i>
+            A "word" any contiguous series of characters for which
+            <a href="http://www.go-mono.com/docs/monodoc.ashx?link=M:System.Char.IsWhiteSpace(System.Char)">char.IsWhiteSpace(char)</a>
+            returns <tt>false</tt>.
+          </div>
+            <table class="CodeExampleTable">
+              <tr>
+                <td>
+                  <b>
+                    <font size="-1">C# Example</font>
+                  </b>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <pre class="code-csharp">string[] expected = {"skip", "leading", "and", "trailing", "whitespace"};
+string[] actual = 
+	"   skip  leading\r\n\tand trailing\vwhitespace   "
+	.Words ().ToArray ();
+AssertAreSame (expected, actual);
+</pre>
+                </td>
+              </tr>
+            </table>
+          </blockquote>
+          <h4 class="Subsection">
+            <a href="javascript:toggle_display('M:Cadenza.StringCoda.Words(System.String):Version Information')">
+              <span id="M:Cadenza.StringCoda.Words(System.String):Version Information:toggle">⊟</span> Requirements</a>
+          </h4>
+          <blockquote class="SubsectionBox" id="M:Cadenza.StringCoda.Words(System.String):Version Information">
+            <b>Namespace: </b>Cadenza<br /><b>Assembly: </b>Cadenza (in Cadenza.dll)<br /><b>Assembly Versions: </b>0.1.0.0</blockquote>
+          <hr size="1" />
+        </blockquote>
+        <h3 id="M:Cadenza.StringCoda.WrappedLines(System.String,System.Collections.Generic.IEnumerable{System.Int32})">
+          <a href="javascript:toggle_display('M:Cadenza.StringCoda.WrappedLines(System.String,System.Collections.Generic.IEnumerable{System.Int32}):member')">
+            <span id="M:Cadenza.StringCoda.WrappedLines(System.String,System.Collections.Generic.IEnumerable{System.Int32}):member:toggle">⊟</span> WrappedLines Method</a>
+        </h3>
+        <blockquote id="M:Cadenza.StringCoda.WrappedLines(System.String,System.Collections.Generic.IEnumerable{System.Int32}):member">
+          <p class="Summary">
+          Splits a string into line segments with a maximum length constrained
+          by <i>widths</i>.
+        </p>
+          <div class="Signature">public static <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Collections.Generic.IEnumerable`1">IEnumerable&lt;string&gt;</a> <b>WrappedLines</b> (<i>this</i> <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.String">string</a> self, <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Collections.Generic.IEnumerable`1">IEnumerable&lt;int&gt;</a> widths)</div>
+          <h4 class="Subsection">
+            <a href="javascript:toggle_display('M:Cadenza.StringCoda.WrappedLines(System.String,System.Collections.Generic.IEnumerable{System.Int32}):Parameters')">
+              <span id="M:Cadenza.StringCoda.WrappedLines(System.String,System.Collections.Generic.IEnumerable{System.Int32}):Parameters:toggle">⊟</span> Parameters</a>
+          </h4>
+          <blockquote class="SubsectionBox" id="M:Cadenza.StringCoda.WrappedLines(System.String,System.Collections.Generic.IEnumerable{System.Int32}):Parameters">
+            <dl>
+              <dt>
+                <i>self</i>
+              </dt>
+              <dd>
+          A <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.String">string</a> to split into segments no longer
+          than lenghts in the <i>widths</i> sequence.
+        </dd>
+              <dt>
+                <i>widths</i>
+              </dt>
+              <dd>
+          A
+          <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Collections.Generic.IEnumerable`1">IEnumerable&lt;string&gt;</a>
+          containing the maximum lengths
+          to use for corresponding returned segments.  The last value in this
+          array is used for all remaining segments.
+        </dd>
+            </dl>
+          </blockquote>
+          <h4 class="Subsection">
+            <a href="javascript:toggle_display('M:Cadenza.StringCoda.WrappedLines(System.String,System.Collections.Generic.IEnumerable{System.Int32}):Returns')">
+              <span id="M:Cadenza.StringCoda.WrappedLines(System.String,System.Collections.Generic.IEnumerable{System.Int32}):Returns:toggle">⊟</span> Returns</a>
+          </h4>
+          <blockquote class="SubsectionBox" id="M:Cadenza.StringCoda.WrappedLines(System.String,System.Collections.Generic.IEnumerable{System.Int32}):Returns">
+          A
+          <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Collections.Generic.IEnumerable`1">IEnumerable&lt;string&gt;</a>
+          containing segments from <i>self</i> with a length
+          no longer than entries from <i>widths</i>.
+        </blockquote>
+          <h4 class="Subsection">
+            <a href="javascript:toggle_display('M:Cadenza.StringCoda.WrappedLines(System.String,System.Collections.Generic.IEnumerable{System.Int32}):Exceptions')">
+              <span id="M:Cadenza.StringCoda.WrappedLines(System.String,System.Collections.Generic.IEnumerable{System.Int32}):Exceptions:toggle">⊟</span> Exceptions</a>
+          </h4>
+          <blockquote class="SubsectionBox" id="M:Cadenza.StringCoda.WrappedLines(System.String,System.Collections.Generic.IEnumerable{System.Int32}):Exceptions">
+            <table class="TypeDocumentation">
+              <tr>
+                <th>Type</th>
+                <th>Reason</th>
+              </tr>
+              <tr valign="top">
+                <td>
+                  <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.ArgumentNullException">ArgumentNullException</a>
+                </td>
+                <td>
+                  <i>widths</i> is <tt>null</tt>.
+        </td>
+              </tr>
+              <tr valign="top">
+                <td>
+                  <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.ArgumentOutOfRangeException">ArgumentOutOfRangeException</a>
+                </td>
+                <td>
+                  <i>widths</i> contains a value that is less than 2.
+        </td>
+              </tr>
+            </table>
+          </blockquote>
+          <h4 class="Subsection">
+            <a href="javascript:toggle_display('M:Cadenza.StringCoda.WrappedLines(System.String,System.Collections.Generic.IEnumerable{System.Int32}):Remarks')">
+              <span id="M:Cadenza.StringCoda.WrappedLines(System.String,System.Collections.Generic.IEnumerable{System.Int32}):Remarks:toggle">⊟</span> Remarks</a>
+          </h4>
+          <blockquote class="SubsectionBox" id="M:Cadenza.StringCoda.WrappedLines(System.String,System.Collections.Generic.IEnumerable{System.Int32}):Remarks">
+            <p>
+            This is a "DWIM"-style interface for line wrapping.
+          </p>
+            <p>
+              <tt>WrappedLines()</tt> is oriented toward
+            <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Console">Console</a>-style output in which line widths
+            are controlled by the number of characters (i.e. fixed-width fonts,
+            not proportional fonts).  <i>widths</i> is used
+            to constrain the length of each corresponding segment within the
+            returned
+            <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Collections.Generic.IEnumerable`1">IEnumerable&lt;string&gt;</a>.
+            For example, the first string segment returned will have a length
+            no longer than the first element in <i>widths</i>,
+            the second string segment returned will have a length no longer
+            than the second element in <i>widths</i>, etc.
+            The last element in <i>widths</i> is used to constrain
+            the lenghts of all remaining string segments; thus, if
+            <i>widths</i> has only one element, that value is
+            used to constrain all returned string segments.
+          </p>
+            <p>
+            Note that <i>widths</i> constrains the width of
+            segments; a segment may be shorter, and may be empty.
+          </p>
+            <p>
+            String splitting is done as follows:
+          </p>
+            <ol>
+              <li>
+                Determine the <tt>width</tt>to use for the current segment by
+                getting a value from <i>widths</i>.  If
+                <i>widths</i> is empty, then the maximum
+                segment length is <a href="http://www.go-mono.com/docs/monodoc.ashx?link=F:System.Int32.MaxValue">int.MaxValue</a>.
+                If there is no remaining value in <i>widths</i>,
+                use the last width value found.
+              </li>
+              <li>
+                Beginning at index <tt>i</tt> within <i>self</i>
+                (starting at index <tt>0</tt>), look for all "end-of-line
+                characters" -- characters for which
+                <a href="http://www.go-mono.com/docs/monodoc.ashx?link=M:System.Char.IsLetterOrDigit(System.Char)">char.IsLetterOrDigit(char)</a>
+                returns <tt>false</tt>, thus including punctuation,
+                whitespace, etc. --
+                from <tt>self[i]</tt> until <tt>self[i+width]</tt>.
+                If a newline is found, return the segment starting from index
+                <tt>i</tt> until the first newline position.  If no newline
+                is found but an end-of-line character is is found, return a
+                segment starting from index <tt>i</tt> until the last end-of-line
+                character. If no end-of-line character is found within
+                <tt>self[i]</tt> until <tt>self[i+width]</tt>, create a segment from
+                <tt>self[i]</tt> until <tt>self[i+width-1]</tt>, and append
+                <tt>'-'</tt> to the segment as a line-continuation character.
+              </li>
+              <li>
+                Repeat steps 1-2 until the end of the string is encountered.
+              </li>
+            </ol>
+            <table class="CodeExampleTable">
+              <tr>
+                <td>
+                  <b>
+                    <font size="-1">C# Example</font>
+                  </b>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <pre class="code-csharp">// Notice that the first width is 50, but the actual returned length is 17.
+// This is because the newline is encountered first.
+// The width of 48 is used to constrain all remaining lines, causing
+// the 4th line to require line-wrapping.
+//
+// Notice also that all embedded '\n's are removed.
+IEnumerable&lt;string&gt; wrappedLines =
+		("This has a really\n" +
+		 "long, multi-line description that also\n" +
+		 "tests\n" +
+		 "the-builtin-supercalifragilisticexpialidicious-break-on-hyphen.  " +
+		 "Also, a list:\n" +
+		 "  item 1\n" +
+		 "  item 2")
+		.WrappedLines (50, 48);
+Assert.IsTrue (new[]{
+		"This has a really",
+		"long, multi-line description that also",
+		"tests",
+		"the-builtin-supercalifragilisticexpialidicious-",
+		"break-on-hyphen.  Also, a list:",
+		"  item 1",
+		"  item 2",
+}.SequenceEqual (wrappedLines));
+
+// Another example where the text has no whitespace before the
+// constrained width.
+wrappedLines =
+	"IWantThisDescriptionToBreakInsideAWordGeneratingAutoWordHyphenation."
+	.WrappedLines (50, 4, 5, 12);
+Assert.IsTrue (new[]{
+		"IWantThisDescriptionToBreakInsideAWordGeneratingA-", // length=50
+		"uto-",                                               // length=4
+		"Word-",                                              // length=5
+		"Hyphenation.",                                       // length=12
+}.SequenceEqual (wrappedLines));
+
+// Notice that '.' is treated as an end-of-line character
+wrappedLines =
+	"OnlyOnePeriod.AndNoWhitespaceShouldBeSupportedEvenWithLongDescriptions"
+	.WrappedLines (50, 48);
+Assert.IsTrue (new[]{
+		"OnlyOnePeriod.",
+		"AndNoWhitespaceShouldBeSupportedEvenWithLongDes-",
+		"criptions",
+}.SequenceEqual (wrappedLines));
+
+wrappedLines =
+	"Lots of spaces in the middle 1 2 3 4 5 6 7 8 9 0 1 2 3 4 5 and more until the end."
+	.WrappedLines (50, 48);
+Assert.IsTrue (new []{
+		"Lots of spaces in the middle 1 2 3 4 5 6 7 8 9 0",
+		"1 2 3 4 5 and more until the end.",
+}.SequenceEqual (wrappedLines));
+
+wrappedLines =
+	"Lots of spaces in the middle - . - . - . - . - . - . - . - and more until the end."
+	.WrappedLines (50, 48);
+Assert.IsTrue (new[]{
+		"Lots of spaces in the middle - . - . - . - . - . -",
+		" . - . - and more until the end.",
+}.SequenceEqual (wrappedLines));
+
+// An ~infinite sequence of widths
+wrappedLines =
+	"1121231234123451234561234567123456781234567891234567890"
+	.WrappedLines (Sequence.Iterate(2, v =&gt; v + 1));
+Assert.IsTrue (new[]{
+		"1-",
+		"12-",
+		"123-",
+		"1234-",
+		"12345-",
+		"123456-",
+		"1234567-",
+		"12345678-",
+		"123456789-",
+		"1234567890",
+}.SequenceEqual (wrappedLines));
+</pre>
+                </td>
+              </tr>
+            </table>
+          </blockquote>
+          <h4 class="Subsection">
+            <a href="javascript:toggle_display('M:Cadenza.StringCoda.WrappedLines(System.String,System.Collections.Generic.IEnumerable{System.Int32}):Version Information')">
+              <span id="M:Cadenza.StringCoda.WrappedLines(System.String,System.Collections.Generic.IEnumerable{System.Int32}):Version Information:toggle">⊟</span> Requirements</a>
+          </h4>
+          <blockquote class="SubsectionBox" id="M:Cadenza.StringCoda.WrappedLines(System.String,System.Collections.Generic.IEnumerable{System.Int32}):Version Information">
+            <b>Namespace: </b>Cadenza<br /><b>Assembly: </b>Cadenza (in Cadenza.dll)<br /><b>Assembly Versions: </b>0.1.0.0</blockquote>
+          <hr size="1" />
+        </blockquote>
+        <h3 id="M:Cadenza.StringCoda.WrappedLines(System.String,System.Int32[])">
+          <a href="javascript:toggle_display('M:Cadenza.StringCoda.WrappedLines(System.String,System.Int32[]):member')">
+            <span id="M:Cadenza.StringCoda.WrappedLines(System.String,System.Int32[]):member:toggle">⊟</span> WrappedLines Method</a>
+        </h3>
+        <blockquote id="M:Cadenza.StringCoda.WrappedLines(System.String,System.Int32[]):member">
+          <p class="Summary">
+          Splits a string into line segments with a maximum length constrained
+          by <i>widths</i>.
+        </p>
+          <div class="Signature">public static <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Collections.Generic.IEnumerable`1">IEnumerable&lt;string&gt;</a> <b>WrappedLines</b> (<i>this</i> <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.String">string</a> self, <b>params</b> <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Int32">int</a>[] widths)</div>
+          <h4 class="Subsection">
+            <a href="javascript:toggle_display('M:Cadenza.StringCoda.WrappedLines(System.String,System.Int32[]):Parameters')">
+              <span id="M:Cadenza.StringCoda.WrappedLines(System.String,System.Int32[]):Parameters:toggle">⊟</span> Parameters</a>
+          </h4>
+          <blockquote class="SubsectionBox" id="M:Cadenza.StringCoda.WrappedLines(System.String,System.Int32[]):Parameters">
+            <dl>
+              <dt>
+                <i>self</i>
+              </dt>
+              <dd>
+          A <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.String">string</a> to split into segments no longer
+          than lenghts in the <i>widths</i> sequence.
+        </dd>
+              <dt>
+                <i>widths</i>
+              </dt>
+              <dd>
+          A <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Int32">int</a> array containing the maximum lengths
+          to use for corresponding returned segments.  The last value in this
+          array is used for all remaining segments.
+        </dd>
+            </dl>
+          </blockquote>
+          <h4 class="Subsection">
+            <a href="javascript:toggle_display('M:Cadenza.StringCoda.WrappedLines(System.String,System.Int32[]):Returns')">
+              <span id="M:Cadenza.StringCoda.WrappedLines(System.String,System.Int32[]):Returns:toggle">⊟</span> Returns</a>
+          </h4>
+          <blockquote class="SubsectionBox" id="M:Cadenza.StringCoda.WrappedLines(System.String,System.Int32[]):Returns">
+          A
+          <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Collections.Generic.IEnumerable`1">IEnumerable&lt;string&gt;</a>
+          containing segments from <i>self</i> with a length
+          no longer than entries from <i>widths</i>.
+        </blockquote>
+          <h4 class="Subsection">
+            <a href="javascript:toggle_display('M:Cadenza.StringCoda.WrappedLines(System.String,System.Int32[]):Exceptions')">
+              <span id="M:Cadenza.StringCoda.WrappedLines(System.String,System.Int32[]):Exceptions:toggle">⊟</span> Exceptions</a>
+          </h4>
+          <blockquote class="SubsectionBox" id="M:Cadenza.StringCoda.WrappedLines(System.String,System.Int32[]):Exceptions">
+            <table class="TypeDocumentation">
+              <tr>
+                <th>Type</th>
+                <th>Reason</th>
+              </tr>
+              <tr valign="top">
+                <td>
+                  <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.ArgumentNullException">ArgumentNullException</a>
+                </td>
+                <td>
+                  <i>widths</i> is <tt>null</tt>.
+        </td>
+              </tr>
+              <tr valign="top">
+                <td>
+                  <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.ArgumentOutOfRangeException">ArgumentOutOfRangeException</a>
+                </td>
+                <td>
+                  <i>widths</i> contains a value that is less than 2.
+        </td>
+              </tr>
+            </table>
+          </blockquote>
+          <h4 class="Subsection">
+            <a href="javascript:toggle_display('M:Cadenza.StringCoda.WrappedLines(System.String,System.Int32[]):Remarks')">
+              <span id="M:Cadenza.StringCoda.WrappedLines(System.String,System.Int32[]):Remarks:toggle">⊟</span> Remarks</a>
+          </h4>
+          <blockquote class="SubsectionBox" id="M:Cadenza.StringCoda.WrappedLines(System.String,System.Int32[]):Remarks">
+            <p>
+            This is a "DWIM"-style interface for line wrapping.
+          </p>
+            <p>
+              <tt>WrappedLines()</tt> is oriented toward
+            <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Console">Console</a>-style output in which line widths
+            are controlled by the number of characters (i.e. fixed-width fonts,
+            not proportional fonts).  <i>widths</i> is used
+            to constrain the length of each corresponding segment within the
+            returned
+            <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Collections.Generic.IEnumerable`1">IEnumerable&lt;string&gt;</a>.
+            For example, the first string segment returned will have a length
+            no longer than the first element in <i>widths</i>,
+            the second string segment returned will have a length no longer
+            than the second element in <i>widths</i>, etc.
+            The last element in <i>widths</i> is used to constrain
+            the lenghts of all remaining string segments; thus, if
+            <i>widths</i> has only one element, that value is
+            used to constrain all returned string segments.
+          </p>
+            <p>
+            Note that <i>widths</i> constrains the width of
+            segments; a segment may be shorter, and may be empty.
+          </p>
+            <p>
+            String splitting is done as follows:
+          </p>
+            <ol>
+              <li>
+                Determine the <tt>width</tt>to use for the current segment by
+                getting a value from <i>widths</i>.  If
+                <i>widths</i> is empty, then the maximum
+                segment length is <a href="http://www.go-mono.com/docs/monodoc.ashx?link=F:System.Int32.MaxValue">int.MaxValue</a>.
+                If there is no remaining value in <i>widths</i>,
+                use the last width value found.
+              </li>
+              <li>
+                Beginning at index <tt>i</tt> within <i>self</i>
+                (starting at index <tt>0</tt>), look for all "end-of-line
+                characters" -- characters for which
+                <a href="http://www.go-mono.com/docs/monodoc.ashx?link=M:System.Char.IsLetterOrDigit(System.Char)">char.IsLetterOrDigit(char)</a>
+                returns <tt>false</tt>, thus including punctuation,
+                whitespace, etc. --
+                from <tt>self[i]</tt> until <tt>self[i+width]</tt>.
+                If a newline is found, return the segment starting from index
+                <tt>i</tt> until the first newline position.  If no newline
+                is found but an end-of-line character is is found, return a
+                segment starting from index <tt>i</tt> until the last end-of-line
+                character. If no end-of-line character is found within
+                <tt>self[i]</tt> until <tt>self[i+width]</tt>, create a segment from
+                <tt>self[i]</tt> until <tt>self[i+width-1]</tt>, and append
+                <tt>'-'</tt> to the segment as a line-continuation character.
+              </li>
+              <li>
+                Repeat steps 1-2 until the end of the string is encountered.
+              </li>
+            </ol>
+            <table class="CodeExampleTable">
+              <tr>
+                <td>
+                  <b>
+                    <font size="-1">C# Example</font>
+                  </b>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <pre class="code-csharp">// Notice that the first width is 50, but the actual returned length is 17.
+// This is because the newline is encountered first.
+// The width of 48 is used to constrain all remaining lines, causing
+// the 4th line to require line-wrapping.
+//
+// Notice also that all embedded '\n's are removed.
+IEnumerable&lt;string&gt; wrappedLines =
+		("This has a really\n" +
+		 "long, multi-line description that also\n" +
+		 "tests\n" +
+		 "the-builtin-supercalifragilisticexpialidicious-break-on-hyphen.  " +
+		 "Also, a list:\n" +
+		 "  item 1\n" +
+		 "  item 2")
+		.WrappedLines (50, 48);
+Assert.IsTrue (new[]{
+		"This has a really",
+		"long, multi-line description that also",
+		"tests",
+		"the-builtin-supercalifragilisticexpialidicious-",
+		"break-on-hyphen.  Also, a list:",
+		"  item 1",
+		"  item 2",
+}.SequenceEqual (wrappedLines));
+
+// Another example where the text has no whitespace before the
+// constrained width.
+wrappedLines =
+	"IWantThisDescriptionToBreakInsideAWordGeneratingAutoWordHyphenation."
+	.WrappedLines (50, 4, 5, 12);
+Assert.IsTrue (new[]{
+		"IWantThisDescriptionToBreakInsideAWordGeneratingA-", // length=50
+		"uto-",                                               // length=4
+		"Word-",                                              // length=5
+		"Hyphenation.",                                       // length=12
+}.SequenceEqual (wrappedLines));
+
+// Notice that '.' is treated as an end-of-line character
+wrappedLines =
+	"OnlyOnePeriod.AndNoWhitespaceShouldBeSupportedEvenWithLongDescriptions"
+	.WrappedLines (50, 48);
+Assert.IsTrue (new[]{
+		"OnlyOnePeriod.",
+		"AndNoWhitespaceShouldBeSupportedEvenWithLongDes-",
+		"criptions",
+}.SequenceEqual (wrappedLines));
+
+wrappedLines =
+	"Lots of spaces in the middle 1 2 3 4 5 6 7 8 9 0 1 2 3 4 5 and more until the end."
+	.WrappedLines (50, 48);
+Assert.IsTrue (new []{
+		"Lots of spaces in the middle 1 2 3 4 5 6 7 8 9 0",
+		"1 2 3 4 5 and more until the end.",
+}.SequenceEqual (wrappedLines));
+
+wrappedLines =
+	"Lots of spaces in the middle - . - . - . - . - . - . - . - and more until the end."
+	.WrappedLines (50, 48);
+Assert.IsTrue (new[]{
+		"Lots of spaces in the middle - . - . - . - . - . -",
+		" . - . - and more until the end.",
+}.SequenceEqual (wrappedLines));
+
+// An ~infinite sequence of widths
+wrappedLines =
+	"1121231234123451234561234567123456781234567891234567890"
+	.WrappedLines (Sequence.Iterate(2, v =&gt; v + 1));
+Assert.IsTrue (new[]{
+		"1-",
+		"12-",
+		"123-",
+		"1234-",
+		"12345-",
+		"123456-",
+		"1234567-",
+		"12345678-",
+		"123456789-",
+		"1234567890",
+}.SequenceEqual (wrappedLines));
+</pre>
+                </td>
+              </tr>
+            </table>
+          </blockquote>
+          <h4 class="Subsection">
+            <a href="javascript:toggle_display('M:Cadenza.StringCoda.WrappedLines(System.String,System.Int32[]):Version Information')">
+              <span id="M:Cadenza.StringCoda.WrappedLines(System.String,System.Int32[]):Version Information:toggle">⊟</span> Requirements</a>
+          </h4>
+          <blockquote class="SubsectionBox" id="M:Cadenza.StringCoda.WrappedLines(System.String,System.Int32[]):Version Information">
+            <b>Namespace: </b>Cadenza<br /><b>Assembly: </b>Cadenza (in Cadenza.dll)<br /><b>Assembly Versions: </b>0.1.0.0</blockquote>
+          <hr size="1" />
+        </blockquote>
+      </blockquote>
+    </div>
+    <hr size="1" />
+    <div class="Copyright">
+    </div>
+  </body>
+</html>

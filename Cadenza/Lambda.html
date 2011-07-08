@@ -1,0 +1,2439 @@
+<html>
+  <head>
+    <title>Cadenza.Lambda</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <style>
+      a { text-decoration: none }
+
+      div.SideBar {
+        padding-left: 1em;
+        padding-right: 1em;
+        right: 0;
+        float: right;
+        border: thin solid black;
+        background-color: #f2f2f2;
+      }
+    
+      .CollectionTitle { font-weight: bold }
+      .PageTitle { font-size: 150%; font-weight: bold }
+
+      .Summary { }
+      .Signature { }          
+      .Remarks { }
+      .Members { }
+      .Copyright { }
+      
+      .Section { font-size: 125%; font-weight: bold }
+      p.Summary {
+        margin-left: 1em;
+      }
+      .SectionBox { margin-left: 2em }
+      .NamespaceName { font-size: 105%; font-weight: bold }
+      .NamespaceSumary { }
+      .MemberName { font-size: 115%; font-weight: bold; margin-top: 1em }
+      .Subsection { font-size: 105%; font-weight: bold }
+      .SubsectionBox { margin-left: 2em; margin-bottom: 1em }
+
+      .CodeExampleTable { background-color: #f5f5dd; border: thin solid black; padding: .25em; }
+      
+      .TypesListing {
+        border-collapse: collapse;
+      }
+
+      td {
+        vertical-align: top;
+      }
+      th {
+        text-align: left;
+      }
+
+      .TypesListing td { 
+        margin: 0px;  
+        padding: .25em;
+        border: solid gray 1px;
+      }
+
+      .TypesListing th { 
+        margin: 0px;  
+        padding: .25em;
+        background-color: #f2f2f2;
+        border: solid gray 1px;
+      }
+
+      div.Footer {
+        border-top: 1px solid gray;
+        margin-top: 1.5em;
+        padding-top: 0.6em;
+        text-align: center;
+        color: gray;
+      }
+
+      span.NotEntered /* Documentation for this section has not yet been entered */ {
+        font-style: italic;
+        color: red;	
+      }
+
+      div.Header {
+        background: #B0C4DE;
+        border: double;
+        border-color: white;
+        border-width: 7px;
+        padding: 0.5em;
+      }
+
+      div.Header * {
+        font-size: smaller;
+      }
+
+      div.Note {
+      }
+
+      i.ParamRef {
+      }
+
+      i.subtitle {
+      }
+
+      ul.TypeMembersIndex {
+        text-align: left;
+        background: #F8F8F8;
+      }
+
+      ul.TypeMembersIndex li {
+        display: inline;
+        margin:  0.5em;
+      }
+
+      table.HeaderTable {
+      }
+
+      table.SignatureTable {
+      }
+
+      table.Documentation, table.Enumeration, table.TypeDocumentation {
+        border-collapse: collapse;
+        width: 100%;
+      }
+
+      table.Documentation tr th, table.TypeMembers tr th, table.Enumeration tr th, table.TypeDocumentation tr th {
+        background: whitesmoke;
+        padding: 0.8em;
+        border: 1px solid gray;
+        text-align: left;
+        vertical-align: bottom;
+      }
+
+      table.Documentation tr td, table.TypeMembers tr td, table.Enumeration tr td, table.TypeDocumentation tr td {
+        padding: 0.5em;
+        border: 1px solid gray;
+        text-align: left;
+        vertical-align: top;
+      }
+
+      table.TypeMembers {
+        border: 1px solid #C0C0C0;
+        width: 100%;
+      }
+
+      table.TypeMembers tr td {
+        background: #F8F8F8;
+        border: white;
+      }
+
+      table.Documentation {
+      }
+
+      table.TypeMembers {
+      }
+
+      div.CodeExample {
+        width: 100%;
+        border: 1px solid #DDDDDD;
+        background-color: #F8F8F8;
+      }
+
+      div.CodeExample p {
+        margin: 0.5em;
+        border-bottom: 1px solid #DDDDDD;
+      }
+
+      div.CodeExample div {
+        margin: 0.5em;
+      }
+
+      h4 {
+        margin-bottom: 0;
+      }
+
+      div.Signature {
+        border: 1px solid #C0C0C0;
+        background: #F2F2F2;
+        padding: 1em;
+      }
+    </style>
+    <script type="text/JavaScript">
+      function toggle_display (block) {
+        var w = document.getElementById (block);
+        var t = document.getElementById (block + ":toggle");
+        if (w.style.display == "none") {
+          w.style.display = "block";
+          t.innerHTML = "⊟";
+        } else {
+          w.style.display = "none";
+          t.innerHTML = "⊞";
+        }
+      }
+    </script>
+  </head>
+  <body>
+    <div class="CollectionTitle">
+      <a href="../index.html">Cadenza</a> : <a href="index.html">Cadenza Namespace</a></div>
+    <div class="SideBar">
+      <p>
+        <a href="#T:Cadenza.Lambda">Overview</a>
+      </p>
+      <p>
+        <a href="#T:Cadenza.Lambda:Signature">Signature</a>
+      </p>
+      <p>
+        <a href="#T:Cadenza.Lambda:Docs">Remarks</a>
+      </p>
+      <p>
+        <a href="#Members">Members</a>
+      </p>
+      <p>
+        <a href="#T:Cadenza.Lambda:Members">Member Details</a>
+      </p>
+    </div>
+    <h1 class="PageTitle" id="T:Cadenza.Lambda">Lambda  Class</h1>
+    <p class="Summary" id="T:Cadenza.Lambda:Summary">
+            Provides static utility methods to generate anonymous delegates
+            or expression trees of pre-determined types.
+            </p>
+    <div id="T:Cadenza.Lambda:Signature">
+      <div class="Signature">public static class  <b>Lambda</b></div>
+    </div>
+    <div class="Remarks" id="T:Cadenza.Lambda:Docs">
+      <h4 class="Subsection">
+        <a href="javascript:toggle_display('T:Cadenza.Lambda:Docs:Remarks')">
+          <span id="T:Cadenza.Lambda:Docs:Remarks:toggle">⊟</span> Remarks</a>
+      </h4>
+      <blockquote class="SubsectionBox" id="T:Cadenza.Lambda:Docs:Remarks">
+        <p>
+            C# lambda methods and anonymous delegates are a curious
+            1.5-class citizen: They are implicitly convertable to any
+            delegate type, but have no type by themselves.  Thus,
+            the following code fails to compile:
+            </p>
+        <table class="CodeExampleTable">
+          <tr>
+            <td>
+              <b>
+                <font size="-1">C# Example</font>
+              </b>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <pre class="code-csharp">
+            ((int x) =&gt; Console.WriteLine (x))(5);
+            </pre>
+            </td>
+          </tr>
+        </table>
+        <p>It would instead need:</p>
+        <table class="CodeExampleTable">
+          <tr>
+            <td>
+              <b>
+                <font size="-1">C# Example</font>
+              </b>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <pre class="code-csharp">
+            // either:
+            Action&lt;int&gt; a = x =&gt; Console.WriteLine (x);
+            a (5);
+            //
+            // or
+            //
+            ((Action&lt;int&gt;) (x =&gt; Console.WriteLine (x)))(5);
+            </pre>
+            </td>
+          </tr>
+        </table>
+        <p>
+            So you'd either need to assign the lambda to an actual
+            delegate type, or insert a cast.
+            </p>
+        <p>
+          <a href="../Cadenza/Lambda.html#M:Cadenza.Lambda.A">Lambda.A</a> allows you to
+            provide a lambda body for the <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Action">Action</a>
+            builtin delegate type, and <a href="../Cadenza/Lambda.html#M:Cadenza.Lambda.F">Lambda.F</a>
+            allows you to provide a lambda body for the
+            <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Func`1">Func&lt;TResult&gt;</a> delegate type,
+            thus removing the need for a cast or an extra variable:
+            </p>
+        <table class="CodeExampleTable">
+          <tr>
+            <td>
+              <b>
+                <font size="-1">C# Example</font>
+              </b>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <pre class="code-csharp">
+            Lambda.F ((int x) =&gt; Console.WriteLine (x)) (5);</pre>
+            </td>
+          </tr>
+        </table>
+        <p>
+          <a href="../Cadenza/Lambda.html">Cadenza.Lambda</a> provides the following sets of
+            functionality:
+            </p>
+        <ul>
+          <li>Delegate creation methods, which return
+            <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Action">Action</a>-like delegates:
+            <a href="../Cadenza/Lambda.html#M:Cadenza.Lambda.A(System.Action)">Lambda.A(Action)</a>,
+            <a href="../Cadenza/Lambda.html#M:Cadenza.Lambda.A``1(System.Action{``0})">Lambda.A``1(Action&lt;``0&gt;)</a>,
+            <a href="../Cadenza/Lambda.html#M:Cadenza.Lambda.A``2(System.Action{``0,``1})">Lambda.A``2(Action&lt;``0, ``1&gt;)</a>,
+            <a href="../Cadenza/Lambda.html#M:Cadenza.Lambda.A``3(System.Action{``0,``1,``2})">Lambda.A``3(Action&lt;``0, ``1, ``2&gt;)</a>, and
+            <a href="../Cadenza/Lambda.html#M:Cadenza.Lambda.A``4(System.Action{``0,``1,``2,``3})">Lambda.A``4(Action&lt;``0, ``1, ``2, ``3&gt;)</a>.
+            </li>
+          <li>Delegate creation methods which return
+            return <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Func`1">Func&lt;TResult&gt;</a>-like delegates
+            <a href="../Cadenza/Lambda.html#M:Cadenza.Lambda.F``1(System.Func{``0})">Lambda.F``1(Func&lt;``0&gt;)</a>,
+            <a href="../Cadenza/Lambda.html#M:Cadenza.Lambda.F``2(System.Func{``0,``1})">Lambda.F``2(Func&lt;``0, ``1&gt;)</a>,
+            <a href="../Cadenza/Lambda.html#M:Cadenza.Lambda.F``3(System.Func{``0,``1,``2})">Lambda.F``3(Func&lt;``0, ``1, ``2&gt;)</a>,
+            <a href="../Cadenza/Lambda.html#M:Cadenza.Lambda.F``4(System.Func{``0,``1,``2,``3})">Lambda.F``4(Func&lt;``0, ``1, ``2, ``3&gt;)</a>, and
+            <a href="../Cadenza/Lambda.html#M:Cadenza.Lambda.F``5(System.Func{``0,``1,``2,``3,``4})">Lambda.F``5(Func&lt;``0, ``1, ``2, ``3, ``4&gt;)</a>.
+            </li>
+          <li>
+            <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Linq.Expressions.Expression">System.Linq.Expressions.Expression</a>-creating methods:
+            <a href="../Cadenza/Lambda.html#M:Cadenza.Lambda.XA(System.Linq.Expressions.Expression{System.Action})">Lambda.XA(System.Linq.Expressions.Expression&lt;Action&gt;)</a>,
+            <a href="../Cadenza/Lambda.html#M:Cadenza.Lambda.XA``1(System.Linq.Expressions.Expression{System.Action{``0}})">Lambda.XA``1(System.Linq.Expressions.Expression&lt;Action&lt;``0&gt;&gt;)</a>,
+            <a href="../Cadenza/Lambda.html#M:Cadenza.Lambda.XA``2(System.Linq.Expressions.Expression{System.Action{``0,``1}})">Lambda.XA``2(System.Linq.Expressions.Expression&lt;Action&lt;``0, ``1&gt;&gt;)</a>,
+            <a href="../Cadenza/Lambda.html#M:Cadenza.Lambda.XA``3(System.Linq.Expressions.Expression{System.Action{``0,``1,``2}})">Lambda.XA``3(System.Linq.Expressions.Expression&lt;Action&lt;``0, ``1, ``2&gt;&gt;)</a>,
+            <a href="../Cadenza/Lambda.html#M:Cadenza.Lambda.XA``4(System.Linq.Expressions.Expression{System.Action{``0,``1,``2,``3}})">Lambda.XA``4(System.Linq.Expressions.Expression&lt;Action&lt;``0, ``1, ``2, ``3&gt;&gt;)</a>, and
+            <a href="../Cadenza/Lambda.html#M:Cadenza.Lambda.XF``1(System.Linq.Expressions.Expression{System.Func{``0}})">Lambda.XF``1(System.Linq.Expressions.Expression&lt;Func&lt;``0&gt;&gt;)</a>,
+            <a href="../Cadenza/Lambda.html#M:Cadenza.Lambda.XF``2(System.Linq.Expressions.Expression{System.Func{``0,``1}})">Lambda.XF``2(System.Linq.Expressions.Expression&lt;Func&lt;``0, ``1&gt;&gt;)</a>,
+            <a href="../Cadenza/Lambda.html#M:Cadenza.Lambda.XF``3(System.Linq.Expressions.Expression{System.Func{``0,``1,``2}})">Lambda.XF``3(System.Linq.Expressions.Expression&lt;Func&lt;``0, ``1, ``2&gt;&gt;)</a>,
+            <a href="../Cadenza/Lambda.html#M:Cadenza.Lambda.XF``4(System.Linq.Expressions.Expression{System.Func{``0,``1,``2,``3}})">Lambda.XF``4(System.Linq.Expressions.Expression&lt;Func&lt;``0, ``1, ``2, ``3&gt;&gt;)</a>,
+            <a href="../Cadenza/Lambda.html#M:Cadenza.Lambda.XF``5(System.Linq.Expressions.Expression{System.Func{``0,``1,``2,``3,``4}})">Lambda.XF``5(System.Linq.Expressions.Expression&lt;Func&lt;``0, ``1, ``2, ``3, ``4&gt;&gt;)</a>.
+            </li>
+          <li>Y-Combinators, which permit writing recursive lambdas:
+            <a href="../Cadenza/Lambda.html#M:Cadenza.Lambda.RecFunc``2(System.Func{System.Func{``0,``1},System.Func{``0,``1}})">Lambda.RecFunc``2(Func&lt;Func&lt;``0, ``1&gt;, Func&lt;``0, ``1&gt;&gt;)</a>,
+            <a href="../Cadenza/Lambda.html#M:Cadenza.Lambda.RecFunc``3(System.Func{System.Func{``0,``1,``2},System.Func{``0,``1,``2}})">Lambda.RecFunc``3(Func&lt;Func&lt;``0, ``1, ``2&gt;, Func&lt;``0, ``1, ``2&gt;&gt;)</a>,
+            <a href="../Cadenza/Lambda.html#M:Cadenza.Lambda.RecFunc``4(System.Func{System.Func{``0,``1,``2,``3},System.Func{``0,``1,``2,``3}})">Lambda.RecFunc``4(Func&lt;Func&lt;``0, ``1, ``2, ``3&gt;, Func&lt;``0, ``1, ``2, ``3&gt;&gt;)</a>, and
+            <a href="../Cadenza/Lambda.html#M:Cadenza.Lambda.RecFunc``5(System.Func{System.Func{``0,``1,``2,``3,``4},System.Func{``0,``1,``2,``3,``4}})">Lambda.RecFunc``5(Func&lt;Func&lt;``0, ``1, ``2, ``3, ``4&gt;, Func&lt;``0, ``1, ``2, ``3, ``4&gt;&gt;)</a>.
+            </li>
+        </ul>
+      </blockquote>
+      <h4 class="Subsection">
+        <a href="javascript:toggle_display('T:Cadenza.Lambda:Docs:Version Information')">
+          <span id="T:Cadenza.Lambda:Docs:Version Information:toggle">⊟</span> Requirements</a>
+      </h4>
+      <blockquote class="SubsectionBox" id="T:Cadenza.Lambda:Docs:Version Information">
+        <b>Namespace: </b>Cadenza<br /><b>Assembly: </b>Cadenza (in Cadenza.dll)<br /><b>Assembly Versions: </b>0.1.0.0</blockquote>
+      <h2 class="Section" id="Members">
+        <a href="javascript:toggle_display('_Members')">
+          <span id="_Members:toggle">⊟</span> Members</a>
+      </h2>
+      <blockquote class="SectionBox" id="_Members">
+        <p>
+								See Also: Inherited members from
+								<a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Object">object</a>.
+							</p>
+        <h3>
+          <a href="javascript:toggle_display('Public Methods')">
+            <span id="Public Methods:toggle">⊟</span> Public Methods</a>
+        </h3>
+        <blockquote id="Public Methods">
+          <div class="SubsectionBox">
+            <table class="TypeMembers">
+              <tr valign="top">
+                <td>
+                  <div>static </div>
+                </td>
+                <td colspan="2">
+                  <b>
+                    <a href="#M:Cadenza.Lambda.A(System.Action)">A</a>
+                  </b>(<a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Action">Action</a>)<nobr> : <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Action">Action</a></nobr><blockquote>
+            Creates a <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Action">Action</a> delegate.
+            </blockquote></td>
+              </tr>
+              <tr valign="top">
+                <td>
+                  <div>static </div>
+                </td>
+                <td colspan="2">
+                  <b>
+                    <a href="#M:Cadenza.Lambda.A``1(System.Action{``0})">A&lt;T&gt;</a>
+                  </b>(<a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Action`1">Action&lt;T&gt;</a>)<nobr> : <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Action`1">Action&lt;T&gt;</a></nobr><blockquote>
+            Creates a <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Action`1">Action&lt;T&gt;</a> delegate.
+            </blockquote></td>
+              </tr>
+              <tr valign="top">
+                <td>
+                  <div>static </div>
+                </td>
+                <td colspan="2">
+                  <b>
+                    <a href="#M:Cadenza.Lambda.A``2(System.Action{``0,``1})">A&lt;T1,T2&gt;</a>
+                  </b>(<a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Action`2">Action&lt;T1, T2&gt;</a>)<nobr> : <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Action`2">Action&lt;T1, T2&gt;</a></nobr><blockquote>
+            Creates a <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Action`2">Action&lt;T1, T2&gt;</a> delegate.
+            </blockquote></td>
+              </tr>
+              <tr valign="top">
+                <td>
+                  <div>static </div>
+                </td>
+                <td colspan="2">
+                  <b>
+                    <a href="#M:Cadenza.Lambda.A``3(System.Action{``0,``1,``2})">A&lt;T1,T2,T3&gt;</a>
+                  </b>(<a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Action`3">Action&lt;T1, T2, T3&gt;</a>)<nobr> : <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Action`3">Action&lt;T1, T2, T3&gt;</a></nobr><blockquote>
+            Creates a <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Action`3">Action&lt;T1, T2, T3&gt;</a> delegate.
+            </blockquote></td>
+              </tr>
+              <tr valign="top">
+                <td>
+                  <div>static </div>
+                </td>
+                <td colspan="2">
+                  <b>
+                    <a href="#M:Cadenza.Lambda.A``4(System.Action{``0,``1,``2,``3})">A&lt;T1,T2,T3,T4&gt;</a>
+                  </b>(<a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Action`4">Action&lt;T1, T2, T3, T4&gt;</a>)<nobr> : <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Action`4">Action&lt;T1, T2, T3, T4&gt;</a></nobr><blockquote>
+            Creates a <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Action`4">Action&lt;T1, T2, T3, T4&gt;</a> delegate.
+            </blockquote></td>
+              </tr>
+              <tr valign="top">
+                <td>
+                  <div>static </div>
+                </td>
+                <td colspan="2">
+                  <b>
+                    <a href="#M:Cadenza.Lambda.F``1(System.Func{``0})">F&lt;TResult&gt;</a>
+                  </b>(<a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Func`1">Func&lt;TResult&gt;</a>)<nobr> : <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Func`1">Func&lt;TResult&gt;</a></nobr><blockquote>
+            Creates a <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Func`1">Func&lt;TResult&gt;</a> delegate.
+            </blockquote></td>
+              </tr>
+              <tr valign="top">
+                <td>
+                  <div>static </div>
+                </td>
+                <td colspan="2">
+                  <b>
+                    <a href="#M:Cadenza.Lambda.F``2(System.Func{``0,``1})">F&lt;T,TResult&gt;</a>
+                  </b>(<a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Func`2">Func&lt;T, TResult&gt;</a>)<nobr> : <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Func`2">Func&lt;T, TResult&gt;</a></nobr><blockquote>
+            Creates a <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Func`2">Func&lt;T, TResult&gt;</a> delegate.
+            </blockquote></td>
+              </tr>
+              <tr valign="top">
+                <td>
+                  <div>static </div>
+                </td>
+                <td colspan="2">
+                  <b>
+                    <a href="#M:Cadenza.Lambda.F``3(System.Func{``0,``1,``2})">F&lt;T1,T2,TResult&gt;</a>
+                  </b>(<a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Func`3">Func&lt;T1, T2, TResult&gt;</a>)<nobr> : <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Func`3">Func&lt;T1, T2, TResult&gt;</a></nobr><blockquote>
+            Creates a <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Func`3">Func&lt;T1, T2, TResult&gt;</a> delegate.
+            </blockquote></td>
+              </tr>
+              <tr valign="top">
+                <td>
+                  <div>static </div>
+                </td>
+                <td colspan="2">
+                  <b>
+                    <a href="#M:Cadenza.Lambda.F``4(System.Func{``0,``1,``2,``3})">F&lt;T1,T2,T3,TResult&gt;</a>
+                  </b>(<a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Func`4">Func&lt;T1, T2, T3, TResult&gt;</a>)<nobr> : <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Func`4">Func&lt;T1, T2, T3, TResult&gt;</a></nobr><blockquote>
+            Creates a <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Func`4">Func&lt;T1, T2, T3, TResult&gt;</a> delegate.
+            </blockquote></td>
+              </tr>
+              <tr valign="top">
+                <td>
+                  <div>static </div>
+                </td>
+                <td colspan="2">
+                  <b>
+                    <a href="#M:Cadenza.Lambda.F``5(System.Func{``0,``1,``2,``3,``4})">F&lt;T1,T2,T3,T4,TResult&gt;</a>
+                  </b>(<a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Func`5">Func&lt;T1, T2, T3, T4, TResult&gt;</a>)<nobr> : <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Func`5">Func&lt;T1, T2, T3, T4, TResult&gt;</a></nobr><blockquote>
+            Creates a <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Func`5">Func&lt;T1, T2, T3, T4, TResult&gt;</a> delegate.
+            </blockquote></td>
+              </tr>
+              <tr valign="top">
+                <td>
+                  <div>static </div>
+                </td>
+                <td colspan="2">
+                  <b>
+                    <a href="#M:Cadenza.Lambda.RecFunc``2(System.Func{System.Func{``0,``1},System.Func{``0,``1}})">RecFunc&lt;T,TResult&gt;</a>
+                  </b>(<a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Func`1">Func&lt;Func&lt;T, TResult&gt;, Func&lt;T, TResult&gt;&gt;</a>)<nobr> : <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Func`2">Func&lt;T, TResult&gt;</a></nobr><blockquote>
+            Creates a <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Func`2">Func&lt;T, TResult&gt;</a> delegate, which may be recursive.
+            </blockquote></td>
+              </tr>
+              <tr valign="top">
+                <td>
+                  <div>static </div>
+                </td>
+                <td colspan="2">
+                  <b>
+                    <a href="#M:Cadenza.Lambda.RecFunc``3(System.Func{System.Func{``0,``1,``2},System.Func{``0,``1,``2}})">RecFunc&lt;T1,T2,TResult&gt;</a>
+                  </b>(<a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Func`1">Func&lt;Func&lt;T1, T2, TResult&gt;, Func&lt;T1, T2, TResult&gt;&gt;</a>)<nobr> : <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Func`3">Func&lt;T1, T2, TResult&gt;</a></nobr><blockquote>
+            Creates a <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Func`3">Func&lt;T1, T2, TResult&gt;</a> delegate, which may be recursive.
+            </blockquote></td>
+              </tr>
+              <tr valign="top">
+                <td>
+                  <div>static </div>
+                </td>
+                <td colspan="2">
+                  <b>
+                    <a href="#M:Cadenza.Lambda.RecFunc``4(System.Func{System.Func{``0,``1,``2,``3},System.Func{``0,``1,``2,``3}})">RecFunc&lt;T1,T2,T3,TResult&gt;</a>
+                  </b>(<a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Func`1">Func&lt;Func&lt;T1, T2, T3, TResult&gt;, Func&lt;T1, T2, T3, TResult&gt;&gt;</a>)<nobr> : <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Func`4">Func&lt;T1, T2, T3, TResult&gt;</a></nobr><blockquote>
+            Creates a <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Func`4">Func&lt;T1, T2, T3, TResult&gt;</a> delegate, which may be recursive.
+            </blockquote></td>
+              </tr>
+              <tr valign="top">
+                <td>
+                  <div>static </div>
+                </td>
+                <td colspan="2">
+                  <b>
+                    <a href="#M:Cadenza.Lambda.RecFunc``5(System.Func{System.Func{``0,``1,``2,``3,``4},System.Func{``0,``1,``2,``3,``4}})">RecFunc&lt;T1,T2,T3,T4,TResult&gt;</a>
+                  </b>(<a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Func`1">Func&lt;Func&lt;T1, T2, T3, T4, TResult&gt;, Func&lt;T1, T2, T3, T4, TResult&gt;&gt;</a>)<nobr> : <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Func`5">Func&lt;T1, T2, T3, T4, TResult&gt;</a></nobr><blockquote>
+            Creates a <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Func`5">Func&lt;T1, T2, T3, T4, TResult&gt;</a> delegate, which may be recursive.
+            </blockquote></td>
+              </tr>
+              <tr valign="top">
+                <td>
+                  <div>static </div>
+                </td>
+                <td colspan="2">
+                  <b>
+                    <a href="#M:Cadenza.Lambda.XA(System.Linq.Expressions.Expression{System.Action})">XA</a>
+                  </b>(<a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Linq.Expressions.Expression`1">System.Linq.Expressions.Expression&lt;Action&gt;</a>)<nobr> : <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Linq.Expressions.Expression`1">System.Linq.Expressions.Expression&lt;Action&gt;</a></nobr><blockquote>
+            Creates a <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Linq.Expressions.Expression`1">System.Linq.Expressions.Expression&lt;Action&gt;</a> expression tree.
+            </blockquote></td>
+              </tr>
+              <tr valign="top">
+                <td>
+                  <div>static </div>
+                </td>
+                <td colspan="2">
+                  <b>
+                    <a href="#M:Cadenza.Lambda.XA``1(System.Linq.Expressions.Expression{System.Action{``0}})">XA&lt;T&gt;</a>
+                  </b>(<a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Linq.Expressions.Expression`1">System.Linq.Expressions.Expression&lt;Action&lt;T&gt;&gt;</a>)<nobr> : <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Linq.Expressions.Expression`1">System.Linq.Expressions.Expression&lt;Action&lt;T&gt;&gt;</a></nobr><blockquote>
+            Creates a <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Linq.Expressions.Expression`1">System.Linq.Expressions.Expression&lt;Action&lt;T&gt;&gt;</a> expression tree.
+            </blockquote></td>
+              </tr>
+              <tr valign="top">
+                <td>
+                  <div>static </div>
+                </td>
+                <td colspan="2">
+                  <b>
+                    <a href="#M:Cadenza.Lambda.XA``2(System.Linq.Expressions.Expression{System.Action{``0,``1}})">XA&lt;T1,T2&gt;</a>
+                  </b>(<a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Linq.Expressions.Expression`1">System.Linq.Expressions.Expression&lt;Action&lt;T1, T2&gt;&gt;</a>)<nobr> : <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Linq.Expressions.Expression`1">System.Linq.Expressions.Expression&lt;Action&lt;T1, T2&gt;&gt;</a></nobr><blockquote>
+            Creates a <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Linq.Expressions.Expression`1">System.Linq.Expressions.Expression&lt;Action&lt;T1, T2&gt;&gt;</a> expression tree.
+            </blockquote></td>
+              </tr>
+              <tr valign="top">
+                <td>
+                  <div>static </div>
+                </td>
+                <td colspan="2">
+                  <b>
+                    <a href="#M:Cadenza.Lambda.XA``3(System.Linq.Expressions.Expression{System.Action{``0,``1,``2}})">XA&lt;T1,T2,T3&gt;</a>
+                  </b>(<a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Linq.Expressions.Expression`1">System.Linq.Expressions.Expression&lt;Action&lt;T1, T2, T3&gt;&gt;</a>)<nobr> : <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Linq.Expressions.Expression`1">System.Linq.Expressions.Expression&lt;Action&lt;T1, T2, T3&gt;&gt;</a></nobr><blockquote>
+            Creates a <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Linq.Expressions.Expression`1">System.Linq.Expressions.Expression&lt;Action&lt;T1, T2, T3&gt;&gt;</a> expression tree.
+            </blockquote></td>
+              </tr>
+              <tr valign="top">
+                <td>
+                  <div>static </div>
+                </td>
+                <td colspan="2">
+                  <b>
+                    <a href="#M:Cadenza.Lambda.XA``4(System.Linq.Expressions.Expression{System.Action{``0,``1,``2,``3}})">XA&lt;T1,T2,T3,T4&gt;</a>
+                  </b>(<a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Linq.Expressions.Expression`1">System.Linq.Expressions.Expression&lt;Action&lt;T1, T2, T3, T4&gt;&gt;</a>)<nobr> : <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Linq.Expressions.Expression`1">System.Linq.Expressions.Expression&lt;Action&lt;T1, T2, T3, T4&gt;&gt;</a></nobr><blockquote>
+            Creates a <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Linq.Expressions.Expression`1">System.Linq.Expressions.Expression&lt;Action&lt;T1, T2, T3, T4&gt;&gt;</a> expression tree.
+            </blockquote></td>
+              </tr>
+              <tr valign="top">
+                <td>
+                  <div>static </div>
+                </td>
+                <td colspan="2">
+                  <b>
+                    <a href="#M:Cadenza.Lambda.XF``1(System.Linq.Expressions.Expression{System.Func{``0}})">XF&lt;TResult&gt;</a>
+                  </b>(<a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Linq.Expressions.Expression`1">System.Linq.Expressions.Expression&lt;Func&lt;TResult&gt;&gt;</a>)<nobr> : <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Linq.Expressions.Expression`1">System.Linq.Expressions.Expression&lt;Func&lt;TResult&gt;&gt;</a></nobr><blockquote>
+            Creates a <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Linq.Expressions.Expression`1">System.Linq.Expressions.Expression&lt;Func&lt;TResult&gt;&gt;</a> expression tree.
+            </blockquote></td>
+              </tr>
+              <tr valign="top">
+                <td>
+                  <div>static </div>
+                </td>
+                <td colspan="2">
+                  <b>
+                    <a href="#M:Cadenza.Lambda.XF``2(System.Linq.Expressions.Expression{System.Func{``0,``1}})">XF&lt;T,TResult&gt;</a>
+                  </b>(<a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Linq.Expressions.Expression`1">System.Linq.Expressions.Expression&lt;Func&lt;T, TResult&gt;&gt;</a>)<nobr> : <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Linq.Expressions.Expression`1">System.Linq.Expressions.Expression&lt;Func&lt;T, TResult&gt;&gt;</a></nobr><blockquote>
+            Creates a <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Linq.Expressions.Expression`1">System.Linq.Expressions.Expression&lt;Func&lt;T, TResult&gt;&gt;</a> expression tree.
+            </blockquote></td>
+              </tr>
+              <tr valign="top">
+                <td>
+                  <div>static </div>
+                </td>
+                <td colspan="2">
+                  <b>
+                    <a href="#M:Cadenza.Lambda.XF``3(System.Linq.Expressions.Expression{System.Func{``0,``1,``2}})">XF&lt;T1,T2,TResult&gt;</a>
+                  </b>(<a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Linq.Expressions.Expression`1">System.Linq.Expressions.Expression&lt;Func&lt;T1, T2, TResult&gt;&gt;</a>)<nobr> : <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Linq.Expressions.Expression`1">System.Linq.Expressions.Expression&lt;Func&lt;T1, T2, TResult&gt;&gt;</a></nobr><blockquote>
+            Creates a <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Linq.Expressions.Expression`1">System.Linq.Expressions.Expression&lt;Func&lt;T1, T2, TResult&gt;&gt;</a> expression tree.
+            </blockquote></td>
+              </tr>
+              <tr valign="top">
+                <td>
+                  <div>static </div>
+                </td>
+                <td colspan="2">
+                  <b>
+                    <a href="#M:Cadenza.Lambda.XF``4(System.Linq.Expressions.Expression{System.Func{``0,``1,``2,``3}})">XF&lt;T1,T2,T3,TResult&gt;</a>
+                  </b>(<a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Linq.Expressions.Expression`1">System.Linq.Expressions.Expression&lt;Func&lt;T1, T2, T3, TResult&gt;&gt;</a>)<nobr> : <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Linq.Expressions.Expression`1">System.Linq.Expressions.Expression&lt;Func&lt;T1, T2, T3, TResult&gt;&gt;</a></nobr><blockquote>
+            Creates a <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Linq.Expressions.Expression`1">System.Linq.Expressions.Expression&lt;Func&lt;T1, T2, T3, TResult&gt;&gt;</a> expression tree.
+            </blockquote></td>
+              </tr>
+              <tr valign="top">
+                <td>
+                  <div>static </div>
+                </td>
+                <td colspan="2">
+                  <b>
+                    <a href="#M:Cadenza.Lambda.XF``5(System.Linq.Expressions.Expression{System.Func{``0,``1,``2,``3,``4}})">XF&lt;T1,T2,T3,T4,TResult&gt;</a>
+                  </b>(<a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Linq.Expressions.Expression`1">System.Linq.Expressions.Expression&lt;Func&lt;T1, T2, T3, T4, TResult&gt;&gt;</a>)<nobr> : <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Linq.Expressions.Expression`1">System.Linq.Expressions.Expression&lt;Func&lt;T1, T2, T3, T4, TResult&gt;&gt;</a></nobr><blockquote>
+            Creates a <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Linq.Expressions.Expression`1">System.Linq.Expressions.Expression&lt;Func&lt;T1, T2, T3, T4, TResult&gt;&gt;</a> expression tree.
+            </blockquote></td>
+              </tr>
+            </table>
+          </div>
+        </blockquote>
+      </blockquote>
+    </div>
+    <div class="Members" id="T:Cadenza.Lambda:Members">
+      <h2 class="Section" id="MemberDetails">
+        <a href="javascript:toggle_display('_MemberDetails')">
+          <span id="_MemberDetails:toggle">⊟</span> Member Details</a>
+      </h2>
+      <blockquote class="SectionBox" id="_MemberDetails">
+        <h3 id="M:Cadenza.Lambda.A(System.Action)">
+          <a href="javascript:toggle_display('M:Cadenza.Lambda.A(System.Action):member')">
+            <span id="M:Cadenza.Lambda.A(System.Action):member:toggle">⊟</span> A Method</a>
+        </h3>
+        <blockquote id="M:Cadenza.Lambda.A(System.Action):member">
+          <p class="Summary">
+            Creates a <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Action">Action</a> delegate.
+            </p>
+          <div class="Signature">public static <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Action">Action</a> <b>A</b> (<a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Action">Action</a> lambda)</div>
+          <h4 class="Subsection">
+            <a href="javascript:toggle_display('M:Cadenza.Lambda.A(System.Action):Parameters')">
+              <span id="M:Cadenza.Lambda.A(System.Action):Parameters:toggle">⊟</span> Parameters</a>
+          </h4>
+          <blockquote class="SubsectionBox" id="M:Cadenza.Lambda.A(System.Action):Parameters">
+            <dl>
+              <dt>
+                <i>lambda</i>
+              </dt>
+              <dd>
+            The <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Action">Action</a> to return.
+            </dd>
+            </dl>
+          </blockquote>
+          <h4 class="Subsection">
+            <a href="javascript:toggle_display('M:Cadenza.Lambda.A(System.Action):Returns')">
+              <span id="M:Cadenza.Lambda.A(System.Action):Returns:toggle">⊟</span> Returns</a>
+          </h4>
+          <blockquote class="SubsectionBox" id="M:Cadenza.Lambda.A(System.Action):Returns">
+            Returns <i>lambda</i>.
+            </blockquote>
+          <h4 class="Subsection">
+            <a href="javascript:toggle_display('M:Cadenza.Lambda.A(System.Action):Remarks')">
+              <span id="M:Cadenza.Lambda.A(System.Action):Remarks:toggle">⊟</span> Remarks</a>
+          </h4>
+          <blockquote class="SubsectionBox" id="M:Cadenza.Lambda.A(System.Action):Remarks">
+            <span class="NotEntered">Documentation for this section has not yet been entered.</span>
+          </blockquote>
+          <h4 class="Subsection">
+            <a href="javascript:toggle_display('M:Cadenza.Lambda.A(System.Action):Version Information')">
+              <span id="M:Cadenza.Lambda.A(System.Action):Version Information:toggle">⊟</span> Requirements</a>
+          </h4>
+          <blockquote class="SubsectionBox" id="M:Cadenza.Lambda.A(System.Action):Version Information">
+            <b>Namespace: </b>Cadenza<br /><b>Assembly: </b>Cadenza (in Cadenza.dll)<br /><b>Assembly Versions: </b>0.1.0.0</blockquote>
+          <hr size="1" />
+        </blockquote>
+        <h3 id="M:Cadenza.Lambda.A``1(System.Action{``0})">
+          <a href="javascript:toggle_display('M:Cadenza.Lambda.A``1(System.Action{``0}):member')">
+            <span id="M:Cadenza.Lambda.A``1(System.Action{``0}):member:toggle">⊟</span> A&lt;T&gt; Generic Method</a>
+        </h3>
+        <blockquote id="M:Cadenza.Lambda.A``1(System.Action{``0}):member">
+          <p class="Summary">
+            Creates a <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Action`1">Action&lt;T&gt;</a> delegate.
+            </p>
+          <div class="Signature">public static <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Action`1">Action&lt;T&gt;</a> <b>A&lt;T&gt;</b> (<a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Action`1">Action&lt;T&gt;</a> lambda)</div>
+          <h4 class="Subsection">
+            <a href="javascript:toggle_display('M:Cadenza.Lambda.A``1(System.Action{``0}):Type Parameters')">
+              <span id="M:Cadenza.Lambda.A``1(System.Action{``0}):Type Parameters:toggle">⊟</span> Type Parameters</a>
+          </h4>
+          <blockquote class="SubsectionBox" id="M:Cadenza.Lambda.A``1(System.Action{``0}):Type Parameters">
+            <dl>
+              <dt>
+                <i>T</i>
+              </dt>
+              <dd>
+            A <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Action`1">Action&lt;T&gt;</a> parameter type.
+            </dd>
+            </dl>
+          </blockquote>
+          <h4 class="Subsection">
+            <a href="javascript:toggle_display('M:Cadenza.Lambda.A``1(System.Action{``0}):Parameters')">
+              <span id="M:Cadenza.Lambda.A``1(System.Action{``0}):Parameters:toggle">⊟</span> Parameters</a>
+          </h4>
+          <blockquote class="SubsectionBox" id="M:Cadenza.Lambda.A``1(System.Action{``0}):Parameters">
+            <dl>
+              <dt>
+                <i>lambda</i>
+              </dt>
+              <dd>
+            The <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Action`1">Action&lt;T&gt;</a> to return.
+            </dd>
+            </dl>
+          </blockquote>
+          <h4 class="Subsection">
+            <a href="javascript:toggle_display('M:Cadenza.Lambda.A``1(System.Action{``0}):Returns')">
+              <span id="M:Cadenza.Lambda.A``1(System.Action{``0}):Returns:toggle">⊟</span> Returns</a>
+          </h4>
+          <blockquote class="SubsectionBox" id="M:Cadenza.Lambda.A``1(System.Action{``0}):Returns">
+            Returns <i>lambda</i>.
+            </blockquote>
+          <h4 class="Subsection">
+            <a href="javascript:toggle_display('M:Cadenza.Lambda.A``1(System.Action{``0}):Remarks')">
+              <span id="M:Cadenza.Lambda.A``1(System.Action{``0}):Remarks:toggle">⊟</span> Remarks</a>
+          </h4>
+          <blockquote class="SubsectionBox" id="M:Cadenza.Lambda.A``1(System.Action{``0}):Remarks">
+            <span class="NotEntered">Documentation for this section has not yet been entered.</span>
+          </blockquote>
+          <h4 class="Subsection">
+            <a href="javascript:toggle_display('M:Cadenza.Lambda.A``1(System.Action{``0}):Version Information')">
+              <span id="M:Cadenza.Lambda.A``1(System.Action{``0}):Version Information:toggle">⊟</span> Requirements</a>
+          </h4>
+          <blockquote class="SubsectionBox" id="M:Cadenza.Lambda.A``1(System.Action{``0}):Version Information">
+            <b>Namespace: </b>Cadenza<br /><b>Assembly: </b>Cadenza (in Cadenza.dll)<br /><b>Assembly Versions: </b>0.1.0.0</blockquote>
+          <hr size="1" />
+        </blockquote>
+        <h3 id="M:Cadenza.Lambda.A``2(System.Action{``0,``1})">
+          <a href="javascript:toggle_display('M:Cadenza.Lambda.A``2(System.Action{``0,``1}):member')">
+            <span id="M:Cadenza.Lambda.A``2(System.Action{``0,``1}):member:toggle">⊟</span> A&lt;T1,T2&gt; Generic Method</a>
+        </h3>
+        <blockquote id="M:Cadenza.Lambda.A``2(System.Action{``0,``1}):member">
+          <p class="Summary">
+            Creates a <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Action`2">Action&lt;T1, T2&gt;</a> delegate.
+            </p>
+          <div class="Signature">public static <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Action`2">Action&lt;T1, T2&gt;</a> <b>A&lt;T1, T2&gt;</b> (<a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Action`2">Action&lt;T1, T2&gt;</a> lambda)</div>
+          <h4 class="Subsection">
+            <a href="javascript:toggle_display('M:Cadenza.Lambda.A``2(System.Action{``0,``1}):Type Parameters')">
+              <span id="M:Cadenza.Lambda.A``2(System.Action{``0,``1}):Type Parameters:toggle">⊟</span> Type Parameters</a>
+          </h4>
+          <blockquote class="SubsectionBox" id="M:Cadenza.Lambda.A``2(System.Action{``0,``1}):Type Parameters">
+            <dl>
+              <dt>
+                <i>T1</i>
+              </dt>
+              <dd>
+            A <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Action`2">Action&lt;T1, T2&gt;</a> parameter type.
+            </dd>
+              <dt>
+                <i>T2</i>
+              </dt>
+              <dd>
+            A <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Action`2">Action&lt;T1, T2&gt;</a> parameter type.
+            </dd>
+            </dl>
+          </blockquote>
+          <h4 class="Subsection">
+            <a href="javascript:toggle_display('M:Cadenza.Lambda.A``2(System.Action{``0,``1}):Parameters')">
+              <span id="M:Cadenza.Lambda.A``2(System.Action{``0,``1}):Parameters:toggle">⊟</span> Parameters</a>
+          </h4>
+          <blockquote class="SubsectionBox" id="M:Cadenza.Lambda.A``2(System.Action{``0,``1}):Parameters">
+            <dl>
+              <dt>
+                <i>lambda</i>
+              </dt>
+              <dd>
+            The <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Action`2">Action&lt;T1, T2&gt;</a> to return.
+            </dd>
+            </dl>
+          </blockquote>
+          <h4 class="Subsection">
+            <a href="javascript:toggle_display('M:Cadenza.Lambda.A``2(System.Action{``0,``1}):Returns')">
+              <span id="M:Cadenza.Lambda.A``2(System.Action{``0,``1}):Returns:toggle">⊟</span> Returns</a>
+          </h4>
+          <blockquote class="SubsectionBox" id="M:Cadenza.Lambda.A``2(System.Action{``0,``1}):Returns">
+            Returns <i>lambda</i>.
+            </blockquote>
+          <h4 class="Subsection">
+            <a href="javascript:toggle_display('M:Cadenza.Lambda.A``2(System.Action{``0,``1}):Remarks')">
+              <span id="M:Cadenza.Lambda.A``2(System.Action{``0,``1}):Remarks:toggle">⊟</span> Remarks</a>
+          </h4>
+          <blockquote class="SubsectionBox" id="M:Cadenza.Lambda.A``2(System.Action{``0,``1}):Remarks">
+            <span class="NotEntered">Documentation for this section has not yet been entered.</span>
+          </blockquote>
+          <h4 class="Subsection">
+            <a href="javascript:toggle_display('M:Cadenza.Lambda.A``2(System.Action{``0,``1}):Version Information')">
+              <span id="M:Cadenza.Lambda.A``2(System.Action{``0,``1}):Version Information:toggle">⊟</span> Requirements</a>
+          </h4>
+          <blockquote class="SubsectionBox" id="M:Cadenza.Lambda.A``2(System.Action{``0,``1}):Version Information">
+            <b>Namespace: </b>Cadenza<br /><b>Assembly: </b>Cadenza (in Cadenza.dll)<br /><b>Assembly Versions: </b>0.1.0.0</blockquote>
+          <hr size="1" />
+        </blockquote>
+        <h3 id="M:Cadenza.Lambda.A``3(System.Action{``0,``1,``2})">
+          <a href="javascript:toggle_display('M:Cadenza.Lambda.A``3(System.Action{``0,``1,``2}):member')">
+            <span id="M:Cadenza.Lambda.A``3(System.Action{``0,``1,``2}):member:toggle">⊟</span> A&lt;T1,T2,T3&gt; Generic Method</a>
+        </h3>
+        <blockquote id="M:Cadenza.Lambda.A``3(System.Action{``0,``1,``2}):member">
+          <p class="Summary">
+            Creates a <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Action`3">Action&lt;T1, T2, T3&gt;</a> delegate.
+            </p>
+          <div class="Signature">public static <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Action`3">Action&lt;T1, T2, T3&gt;</a> <b>A&lt;T1, T2, T3&gt;</b> (<a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Action`3">Action&lt;T1, T2, T3&gt;</a> lambda)</div>
+          <h4 class="Subsection">
+            <a href="javascript:toggle_display('M:Cadenza.Lambda.A``3(System.Action{``0,``1,``2}):Type Parameters')">
+              <span id="M:Cadenza.Lambda.A``3(System.Action{``0,``1,``2}):Type Parameters:toggle">⊟</span> Type Parameters</a>
+          </h4>
+          <blockquote class="SubsectionBox" id="M:Cadenza.Lambda.A``3(System.Action{``0,``1,``2}):Type Parameters">
+            <dl>
+              <dt>
+                <i>T1</i>
+              </dt>
+              <dd>
+            A <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Action`3">Action&lt;T1, T2, T3&gt;</a> parameter type.
+            </dd>
+              <dt>
+                <i>T2</i>
+              </dt>
+              <dd>
+            A <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Action`3">Action&lt;T1, T2, T3&gt;</a> parameter type.
+            </dd>
+              <dt>
+                <i>T3</i>
+              </dt>
+              <dd>
+            A <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Action`3">Action&lt;T1, T2, T3&gt;</a> parameter type.
+            </dd>
+            </dl>
+          </blockquote>
+          <h4 class="Subsection">
+            <a href="javascript:toggle_display('M:Cadenza.Lambda.A``3(System.Action{``0,``1,``2}):Parameters')">
+              <span id="M:Cadenza.Lambda.A``3(System.Action{``0,``1,``2}):Parameters:toggle">⊟</span> Parameters</a>
+          </h4>
+          <blockquote class="SubsectionBox" id="M:Cadenza.Lambda.A``3(System.Action{``0,``1,``2}):Parameters">
+            <dl>
+              <dt>
+                <i>lambda</i>
+              </dt>
+              <dd>
+            The <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Action`3">Action&lt;T1, T2, T3&gt;</a> to return.
+            </dd>
+            </dl>
+          </blockquote>
+          <h4 class="Subsection">
+            <a href="javascript:toggle_display('M:Cadenza.Lambda.A``3(System.Action{``0,``1,``2}):Returns')">
+              <span id="M:Cadenza.Lambda.A``3(System.Action{``0,``1,``2}):Returns:toggle">⊟</span> Returns</a>
+          </h4>
+          <blockquote class="SubsectionBox" id="M:Cadenza.Lambda.A``3(System.Action{``0,``1,``2}):Returns">
+            Returns <i>lambda</i>.
+            </blockquote>
+          <h4 class="Subsection">
+            <a href="javascript:toggle_display('M:Cadenza.Lambda.A``3(System.Action{``0,``1,``2}):Remarks')">
+              <span id="M:Cadenza.Lambda.A``3(System.Action{``0,``1,``2}):Remarks:toggle">⊟</span> Remarks</a>
+          </h4>
+          <blockquote class="SubsectionBox" id="M:Cadenza.Lambda.A``3(System.Action{``0,``1,``2}):Remarks">
+            <span class="NotEntered">Documentation for this section has not yet been entered.</span>
+          </blockquote>
+          <h4 class="Subsection">
+            <a href="javascript:toggle_display('M:Cadenza.Lambda.A``3(System.Action{``0,``1,``2}):Version Information')">
+              <span id="M:Cadenza.Lambda.A``3(System.Action{``0,``1,``2}):Version Information:toggle">⊟</span> Requirements</a>
+          </h4>
+          <blockquote class="SubsectionBox" id="M:Cadenza.Lambda.A``3(System.Action{``0,``1,``2}):Version Information">
+            <b>Namespace: </b>Cadenza<br /><b>Assembly: </b>Cadenza (in Cadenza.dll)<br /><b>Assembly Versions: </b>0.1.0.0</blockquote>
+          <hr size="1" />
+        </blockquote>
+        <h3 id="M:Cadenza.Lambda.A``4(System.Action{``0,``1,``2,``3})">
+          <a href="javascript:toggle_display('M:Cadenza.Lambda.A``4(System.Action{``0,``1,``2,``3}):member')">
+            <span id="M:Cadenza.Lambda.A``4(System.Action{``0,``1,``2,``3}):member:toggle">⊟</span> A&lt;T1,T2,T3,T4&gt; Generic Method</a>
+        </h3>
+        <blockquote id="M:Cadenza.Lambda.A``4(System.Action{``0,``1,``2,``3}):member">
+          <p class="Summary">
+            Creates a <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Action`4">Action&lt;T1, T2, T3, T4&gt;</a> delegate.
+            </p>
+          <div class="Signature">public static <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Action`4">Action&lt;T1, T2, T3, T4&gt;</a> <b>A&lt;T1, T2, T3, T4&gt;</b> (<a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Action`4">Action&lt;T1, T2, T3, T4&gt;</a> lambda)</div>
+          <h4 class="Subsection">
+            <a href="javascript:toggle_display('M:Cadenza.Lambda.A``4(System.Action{``0,``1,``2,``3}):Type Parameters')">
+              <span id="M:Cadenza.Lambda.A``4(System.Action{``0,``1,``2,``3}):Type Parameters:toggle">⊟</span> Type Parameters</a>
+          </h4>
+          <blockquote class="SubsectionBox" id="M:Cadenza.Lambda.A``4(System.Action{``0,``1,``2,``3}):Type Parameters">
+            <dl>
+              <dt>
+                <i>T1</i>
+              </dt>
+              <dd>
+            A <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Action`4">Action&lt;T1, T2, T3, T4&gt;</a> parameter type.
+            </dd>
+              <dt>
+                <i>T2</i>
+              </dt>
+              <dd>
+            A <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Action`4">Action&lt;T1, T2, T3, T4&gt;</a> parameter type.
+            </dd>
+              <dt>
+                <i>T3</i>
+              </dt>
+              <dd>
+            A <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Action`4">Action&lt;T1, T2, T3, T4&gt;</a> parameter type.
+            </dd>
+              <dt>
+                <i>T4</i>
+              </dt>
+              <dd>
+            A <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Action`4">Action&lt;T1, T2, T3, T4&gt;</a> parameter type.
+            </dd>
+            </dl>
+          </blockquote>
+          <h4 class="Subsection">
+            <a href="javascript:toggle_display('M:Cadenza.Lambda.A``4(System.Action{``0,``1,``2,``3}):Parameters')">
+              <span id="M:Cadenza.Lambda.A``4(System.Action{``0,``1,``2,``3}):Parameters:toggle">⊟</span> Parameters</a>
+          </h4>
+          <blockquote class="SubsectionBox" id="M:Cadenza.Lambda.A``4(System.Action{``0,``1,``2,``3}):Parameters">
+            <dl>
+              <dt>
+                <i>lambda</i>
+              </dt>
+              <dd>
+            The <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Action`4">Action&lt;T1, T2, T3, T4&gt;</a> to return.
+            </dd>
+            </dl>
+          </blockquote>
+          <h4 class="Subsection">
+            <a href="javascript:toggle_display('M:Cadenza.Lambda.A``4(System.Action{``0,``1,``2,``3}):Returns')">
+              <span id="M:Cadenza.Lambda.A``4(System.Action{``0,``1,``2,``3}):Returns:toggle">⊟</span> Returns</a>
+          </h4>
+          <blockquote class="SubsectionBox" id="M:Cadenza.Lambda.A``4(System.Action{``0,``1,``2,``3}):Returns">
+            Returns <i>lambda</i>.
+            </blockquote>
+          <h4 class="Subsection">
+            <a href="javascript:toggle_display('M:Cadenza.Lambda.A``4(System.Action{``0,``1,``2,``3}):Remarks')">
+              <span id="M:Cadenza.Lambda.A``4(System.Action{``0,``1,``2,``3}):Remarks:toggle">⊟</span> Remarks</a>
+          </h4>
+          <blockquote class="SubsectionBox" id="M:Cadenza.Lambda.A``4(System.Action{``0,``1,``2,``3}):Remarks">
+            <span class="NotEntered">Documentation for this section has not yet been entered.</span>
+          </blockquote>
+          <h4 class="Subsection">
+            <a href="javascript:toggle_display('M:Cadenza.Lambda.A``4(System.Action{``0,``1,``2,``3}):Version Information')">
+              <span id="M:Cadenza.Lambda.A``4(System.Action{``0,``1,``2,``3}):Version Information:toggle">⊟</span> Requirements</a>
+          </h4>
+          <blockquote class="SubsectionBox" id="M:Cadenza.Lambda.A``4(System.Action{``0,``1,``2,``3}):Version Information">
+            <b>Namespace: </b>Cadenza<br /><b>Assembly: </b>Cadenza (in Cadenza.dll)<br /><b>Assembly Versions: </b>0.1.0.0</blockquote>
+          <hr size="1" />
+        </blockquote>
+        <h3 id="M:Cadenza.Lambda.F``1(System.Func{``0})">
+          <a href="javascript:toggle_display('M:Cadenza.Lambda.F``1(System.Func{``0}):member')">
+            <span id="M:Cadenza.Lambda.F``1(System.Func{``0}):member:toggle">⊟</span> F&lt;TResult&gt; Generic Method</a>
+        </h3>
+        <blockquote id="M:Cadenza.Lambda.F``1(System.Func{``0}):member">
+          <p class="Summary">
+            Creates a <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Func`1">Func&lt;TResult&gt;</a> delegate.
+            </p>
+          <div class="Signature">public static <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Func`1">Func&lt;TResult&gt;</a> <b>F&lt;TResult&gt;</b> (<a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Func`1">Func&lt;TResult&gt;</a> lambda)</div>
+          <h4 class="Subsection">
+            <a href="javascript:toggle_display('M:Cadenza.Lambda.F``1(System.Func{``0}):Type Parameters')">
+              <span id="M:Cadenza.Lambda.F``1(System.Func{``0}):Type Parameters:toggle">⊟</span> Type Parameters</a>
+          </h4>
+          <blockquote class="SubsectionBox" id="M:Cadenza.Lambda.F``1(System.Func{``0}):Type Parameters">
+            <dl>
+              <dt>
+                <i>TResult</i>
+              </dt>
+              <dd>
+            A <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Func`1">Func&lt;TResult&gt;</a> return type.
+            </dd>
+            </dl>
+          </blockquote>
+          <h4 class="Subsection">
+            <a href="javascript:toggle_display('M:Cadenza.Lambda.F``1(System.Func{``0}):Parameters')">
+              <span id="M:Cadenza.Lambda.F``1(System.Func{``0}):Parameters:toggle">⊟</span> Parameters</a>
+          </h4>
+          <blockquote class="SubsectionBox" id="M:Cadenza.Lambda.F``1(System.Func{``0}):Parameters">
+            <dl>
+              <dt>
+                <i>lambda</i>
+              </dt>
+              <dd>
+            The <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Func`1">Func&lt;TResult&gt;</a> to return.
+            </dd>
+            </dl>
+          </blockquote>
+          <h4 class="Subsection">
+            <a href="javascript:toggle_display('M:Cadenza.Lambda.F``1(System.Func{``0}):Returns')">
+              <span id="M:Cadenza.Lambda.F``1(System.Func{``0}):Returns:toggle">⊟</span> Returns</a>
+          </h4>
+          <blockquote class="SubsectionBox" id="M:Cadenza.Lambda.F``1(System.Func{``0}):Returns">
+            Returns <i>lambda</i>.
+            </blockquote>
+          <h4 class="Subsection">
+            <a href="javascript:toggle_display('M:Cadenza.Lambda.F``1(System.Func{``0}):Remarks')">
+              <span id="M:Cadenza.Lambda.F``1(System.Func{``0}):Remarks:toggle">⊟</span> Remarks</a>
+          </h4>
+          <blockquote class="SubsectionBox" id="M:Cadenza.Lambda.F``1(System.Func{``0}):Remarks">
+            <span class="NotEntered">Documentation for this section has not yet been entered.</span>
+          </blockquote>
+          <h4 class="Subsection">
+            <a href="javascript:toggle_display('M:Cadenza.Lambda.F``1(System.Func{``0}):Version Information')">
+              <span id="M:Cadenza.Lambda.F``1(System.Func{``0}):Version Information:toggle">⊟</span> Requirements</a>
+          </h4>
+          <blockquote class="SubsectionBox" id="M:Cadenza.Lambda.F``1(System.Func{``0}):Version Information">
+            <b>Namespace: </b>Cadenza<br /><b>Assembly: </b>Cadenza (in Cadenza.dll)<br /><b>Assembly Versions: </b>0.1.0.0</blockquote>
+          <hr size="1" />
+        </blockquote>
+        <h3 id="M:Cadenza.Lambda.F``2(System.Func{``0,``1})">
+          <a href="javascript:toggle_display('M:Cadenza.Lambda.F``2(System.Func{``0,``1}):member')">
+            <span id="M:Cadenza.Lambda.F``2(System.Func{``0,``1}):member:toggle">⊟</span> F&lt;T,TResult&gt; Generic Method</a>
+        </h3>
+        <blockquote id="M:Cadenza.Lambda.F``2(System.Func{``0,``1}):member">
+          <p class="Summary">
+            Creates a <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Func`2">Func&lt;T, TResult&gt;</a> delegate.
+            </p>
+          <div class="Signature">public static <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Func`2">Func&lt;T, TResult&gt;</a> <b>F&lt;T, TResult&gt;</b> (<a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Func`2">Func&lt;T, TResult&gt;</a> lambda)</div>
+          <h4 class="Subsection">
+            <a href="javascript:toggle_display('M:Cadenza.Lambda.F``2(System.Func{``0,``1}):Type Parameters')">
+              <span id="M:Cadenza.Lambda.F``2(System.Func{``0,``1}):Type Parameters:toggle">⊟</span> Type Parameters</a>
+          </h4>
+          <blockquote class="SubsectionBox" id="M:Cadenza.Lambda.F``2(System.Func{``0,``1}):Type Parameters">
+            <dl>
+              <dt>
+                <i>T</i>
+              </dt>
+              <dd>
+            A <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Func`2">Func&lt;T, TResult&gt;</a> parameter type.
+            </dd>
+              <dt>
+                <i>TResult</i>
+              </dt>
+              <dd>
+            A <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Func`2">Func&lt;T, TResult&gt;</a> return type.
+            </dd>
+            </dl>
+          </blockquote>
+          <h4 class="Subsection">
+            <a href="javascript:toggle_display('M:Cadenza.Lambda.F``2(System.Func{``0,``1}):Parameters')">
+              <span id="M:Cadenza.Lambda.F``2(System.Func{``0,``1}):Parameters:toggle">⊟</span> Parameters</a>
+          </h4>
+          <blockquote class="SubsectionBox" id="M:Cadenza.Lambda.F``2(System.Func{``0,``1}):Parameters">
+            <dl>
+              <dt>
+                <i>lambda</i>
+              </dt>
+              <dd>
+            The <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Func`2">Func&lt;T, TResult&gt;</a> to return.
+            </dd>
+            </dl>
+          </blockquote>
+          <h4 class="Subsection">
+            <a href="javascript:toggle_display('M:Cadenza.Lambda.F``2(System.Func{``0,``1}):Returns')">
+              <span id="M:Cadenza.Lambda.F``2(System.Func{``0,``1}):Returns:toggle">⊟</span> Returns</a>
+          </h4>
+          <blockquote class="SubsectionBox" id="M:Cadenza.Lambda.F``2(System.Func{``0,``1}):Returns">
+            Returns <i>lambda</i>.
+            </blockquote>
+          <h4 class="Subsection">
+            <a href="javascript:toggle_display('M:Cadenza.Lambda.F``2(System.Func{``0,``1}):Remarks')">
+              <span id="M:Cadenza.Lambda.F``2(System.Func{``0,``1}):Remarks:toggle">⊟</span> Remarks</a>
+          </h4>
+          <blockquote class="SubsectionBox" id="M:Cadenza.Lambda.F``2(System.Func{``0,``1}):Remarks">
+            <span class="NotEntered">Documentation for this section has not yet been entered.</span>
+          </blockquote>
+          <h4 class="Subsection">
+            <a href="javascript:toggle_display('M:Cadenza.Lambda.F``2(System.Func{``0,``1}):Version Information')">
+              <span id="M:Cadenza.Lambda.F``2(System.Func{``0,``1}):Version Information:toggle">⊟</span> Requirements</a>
+          </h4>
+          <blockquote class="SubsectionBox" id="M:Cadenza.Lambda.F``2(System.Func{``0,``1}):Version Information">
+            <b>Namespace: </b>Cadenza<br /><b>Assembly: </b>Cadenza (in Cadenza.dll)<br /><b>Assembly Versions: </b>0.1.0.0</blockquote>
+          <hr size="1" />
+        </blockquote>
+        <h3 id="M:Cadenza.Lambda.F``3(System.Func{``0,``1,``2})">
+          <a href="javascript:toggle_display('M:Cadenza.Lambda.F``3(System.Func{``0,``1,``2}):member')">
+            <span id="M:Cadenza.Lambda.F``3(System.Func{``0,``1,``2}):member:toggle">⊟</span> F&lt;T1,T2,TResult&gt; Generic Method</a>
+        </h3>
+        <blockquote id="M:Cadenza.Lambda.F``3(System.Func{``0,``1,``2}):member">
+          <p class="Summary">
+            Creates a <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Func`3">Func&lt;T1, T2, TResult&gt;</a> delegate.
+            </p>
+          <div class="Signature">public static <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Func`3">Func&lt;T1, T2, TResult&gt;</a> <b>F&lt;T1, T2, TResult&gt;</b> (<a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Func`3">Func&lt;T1, T2, TResult&gt;</a> lambda)</div>
+          <h4 class="Subsection">
+            <a href="javascript:toggle_display('M:Cadenza.Lambda.F``3(System.Func{``0,``1,``2}):Type Parameters')">
+              <span id="M:Cadenza.Lambda.F``3(System.Func{``0,``1,``2}):Type Parameters:toggle">⊟</span> Type Parameters</a>
+          </h4>
+          <blockquote class="SubsectionBox" id="M:Cadenza.Lambda.F``3(System.Func{``0,``1,``2}):Type Parameters">
+            <dl>
+              <dt>
+                <i>T1</i>
+              </dt>
+              <dd>
+            A <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Func`3">Func&lt;T1, T2, TResult&gt;</a> parameter type.
+            </dd>
+              <dt>
+                <i>T2</i>
+              </dt>
+              <dd>
+            A <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Func`3">Func&lt;T1, T2, TResult&gt;</a> parameter type.
+            </dd>
+              <dt>
+                <i>TResult</i>
+              </dt>
+              <dd>
+            A <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Func`3">Func&lt;T1, T2, TResult&gt;</a> return type.
+            </dd>
+            </dl>
+          </blockquote>
+          <h4 class="Subsection">
+            <a href="javascript:toggle_display('M:Cadenza.Lambda.F``3(System.Func{``0,``1,``2}):Parameters')">
+              <span id="M:Cadenza.Lambda.F``3(System.Func{``0,``1,``2}):Parameters:toggle">⊟</span> Parameters</a>
+          </h4>
+          <blockquote class="SubsectionBox" id="M:Cadenza.Lambda.F``3(System.Func{``0,``1,``2}):Parameters">
+            <dl>
+              <dt>
+                <i>lambda</i>
+              </dt>
+              <dd>
+            The <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Func`3">Func&lt;T1, T2, TResult&gt;</a> to return.
+            </dd>
+            </dl>
+          </blockquote>
+          <h4 class="Subsection">
+            <a href="javascript:toggle_display('M:Cadenza.Lambda.F``3(System.Func{``0,``1,``2}):Returns')">
+              <span id="M:Cadenza.Lambda.F``3(System.Func{``0,``1,``2}):Returns:toggle">⊟</span> Returns</a>
+          </h4>
+          <blockquote class="SubsectionBox" id="M:Cadenza.Lambda.F``3(System.Func{``0,``1,``2}):Returns">
+            Returns <i>lambda</i>.
+            </blockquote>
+          <h4 class="Subsection">
+            <a href="javascript:toggle_display('M:Cadenza.Lambda.F``3(System.Func{``0,``1,``2}):Remarks')">
+              <span id="M:Cadenza.Lambda.F``3(System.Func{``0,``1,``2}):Remarks:toggle">⊟</span> Remarks</a>
+          </h4>
+          <blockquote class="SubsectionBox" id="M:Cadenza.Lambda.F``3(System.Func{``0,``1,``2}):Remarks">
+            <span class="NotEntered">Documentation for this section has not yet been entered.</span>
+          </blockquote>
+          <h4 class="Subsection">
+            <a href="javascript:toggle_display('M:Cadenza.Lambda.F``3(System.Func{``0,``1,``2}):Version Information')">
+              <span id="M:Cadenza.Lambda.F``3(System.Func{``0,``1,``2}):Version Information:toggle">⊟</span> Requirements</a>
+          </h4>
+          <blockquote class="SubsectionBox" id="M:Cadenza.Lambda.F``3(System.Func{``0,``1,``2}):Version Information">
+            <b>Namespace: </b>Cadenza<br /><b>Assembly: </b>Cadenza (in Cadenza.dll)<br /><b>Assembly Versions: </b>0.1.0.0</blockquote>
+          <hr size="1" />
+        </blockquote>
+        <h3 id="M:Cadenza.Lambda.F``4(System.Func{``0,``1,``2,``3})">
+          <a href="javascript:toggle_display('M:Cadenza.Lambda.F``4(System.Func{``0,``1,``2,``3}):member')">
+            <span id="M:Cadenza.Lambda.F``4(System.Func{``0,``1,``2,``3}):member:toggle">⊟</span> F&lt;T1,T2,T3,TResult&gt; Generic Method</a>
+        </h3>
+        <blockquote id="M:Cadenza.Lambda.F``4(System.Func{``0,``1,``2,``3}):member">
+          <p class="Summary">
+            Creates a <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Func`4">Func&lt;T1, T2, T3, TResult&gt;</a> delegate.
+            </p>
+          <div class="Signature">public static <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Func`4">Func&lt;T1, T2, T3, TResult&gt;</a> <b>F&lt;T1, T2, T3, TResult&gt;</b> (<a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Func`4">Func&lt;T1, T2, T3, TResult&gt;</a> lambda)</div>
+          <h4 class="Subsection">
+            <a href="javascript:toggle_display('M:Cadenza.Lambda.F``4(System.Func{``0,``1,``2,``3}):Type Parameters')">
+              <span id="M:Cadenza.Lambda.F``4(System.Func{``0,``1,``2,``3}):Type Parameters:toggle">⊟</span> Type Parameters</a>
+          </h4>
+          <blockquote class="SubsectionBox" id="M:Cadenza.Lambda.F``4(System.Func{``0,``1,``2,``3}):Type Parameters">
+            <dl>
+              <dt>
+                <i>T1</i>
+              </dt>
+              <dd>
+            A <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Func`4">Func&lt;T1, T2, T3, TResult&gt;</a> parameter type.
+            </dd>
+              <dt>
+                <i>T2</i>
+              </dt>
+              <dd>
+            A <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Func`4">Func&lt;T1, T2, T3, TResult&gt;</a> parameter type.
+            </dd>
+              <dt>
+                <i>T3</i>
+              </dt>
+              <dd>
+            A <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Func`4">Func&lt;T1, T2, T3, TResult&gt;</a> parameter type.
+            </dd>
+              <dt>
+                <i>TResult</i>
+              </dt>
+              <dd>
+            A <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Func`4">Func&lt;T1, T2, T3, TResult&gt;</a> return type.
+            </dd>
+            </dl>
+          </blockquote>
+          <h4 class="Subsection">
+            <a href="javascript:toggle_display('M:Cadenza.Lambda.F``4(System.Func{``0,``1,``2,``3}):Parameters')">
+              <span id="M:Cadenza.Lambda.F``4(System.Func{``0,``1,``2,``3}):Parameters:toggle">⊟</span> Parameters</a>
+          </h4>
+          <blockquote class="SubsectionBox" id="M:Cadenza.Lambda.F``4(System.Func{``0,``1,``2,``3}):Parameters">
+            <dl>
+              <dt>
+                <i>lambda</i>
+              </dt>
+              <dd>
+            The <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Func`4">Func&lt;T1, T2, T3, TResult&gt;</a> to return.
+            </dd>
+            </dl>
+          </blockquote>
+          <h4 class="Subsection">
+            <a href="javascript:toggle_display('M:Cadenza.Lambda.F``4(System.Func{``0,``1,``2,``3}):Returns')">
+              <span id="M:Cadenza.Lambda.F``4(System.Func{``0,``1,``2,``3}):Returns:toggle">⊟</span> Returns</a>
+          </h4>
+          <blockquote class="SubsectionBox" id="M:Cadenza.Lambda.F``4(System.Func{``0,``1,``2,``3}):Returns">
+            Returns <i>lambda</i>.
+            </blockquote>
+          <h4 class="Subsection">
+            <a href="javascript:toggle_display('M:Cadenza.Lambda.F``4(System.Func{``0,``1,``2,``3}):Remarks')">
+              <span id="M:Cadenza.Lambda.F``4(System.Func{``0,``1,``2,``3}):Remarks:toggle">⊟</span> Remarks</a>
+          </h4>
+          <blockquote class="SubsectionBox" id="M:Cadenza.Lambda.F``4(System.Func{``0,``1,``2,``3}):Remarks">
+            <span class="NotEntered">Documentation for this section has not yet been entered.</span>
+          </blockquote>
+          <h4 class="Subsection">
+            <a href="javascript:toggle_display('M:Cadenza.Lambda.F``4(System.Func{``0,``1,``2,``3}):Version Information')">
+              <span id="M:Cadenza.Lambda.F``4(System.Func{``0,``1,``2,``3}):Version Information:toggle">⊟</span> Requirements</a>
+          </h4>
+          <blockquote class="SubsectionBox" id="M:Cadenza.Lambda.F``4(System.Func{``0,``1,``2,``3}):Version Information">
+            <b>Namespace: </b>Cadenza<br /><b>Assembly: </b>Cadenza (in Cadenza.dll)<br /><b>Assembly Versions: </b>0.1.0.0</blockquote>
+          <hr size="1" />
+        </blockquote>
+        <h3 id="M:Cadenza.Lambda.F``5(System.Func{``0,``1,``2,``3,``4})">
+          <a href="javascript:toggle_display('M:Cadenza.Lambda.F``5(System.Func{``0,``1,``2,``3,``4}):member')">
+            <span id="M:Cadenza.Lambda.F``5(System.Func{``0,``1,``2,``3,``4}):member:toggle">⊟</span> F&lt;T1,T2,T3,T4,TResult&gt; Generic Method</a>
+        </h3>
+        <blockquote id="M:Cadenza.Lambda.F``5(System.Func{``0,``1,``2,``3,``4}):member">
+          <p class="Summary">
+            Creates a <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Func`5">Func&lt;T1, T2, T3, T4, TResult&gt;</a> delegate.
+            </p>
+          <div class="Signature">public static <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Func`5">Func&lt;T1, T2, T3, T4, TResult&gt;</a> <b>F&lt;T1, T2, T3, T4, TResult&gt;</b> (<a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Func`5">Func&lt;T1, T2, T3, T4, TResult&gt;</a> lambda)</div>
+          <h4 class="Subsection">
+            <a href="javascript:toggle_display('M:Cadenza.Lambda.F``5(System.Func{``0,``1,``2,``3,``4}):Type Parameters')">
+              <span id="M:Cadenza.Lambda.F``5(System.Func{``0,``1,``2,``3,``4}):Type Parameters:toggle">⊟</span> Type Parameters</a>
+          </h4>
+          <blockquote class="SubsectionBox" id="M:Cadenza.Lambda.F``5(System.Func{``0,``1,``2,``3,``4}):Type Parameters">
+            <dl>
+              <dt>
+                <i>T1</i>
+              </dt>
+              <dd>
+            A <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Func`5">Func&lt;T1, T2, T3, T4, TResult&gt;</a> parameter type.
+            </dd>
+              <dt>
+                <i>T2</i>
+              </dt>
+              <dd>
+            A <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Func`5">Func&lt;T1, T2, T3, T4, TResult&gt;</a> parameter type.
+            </dd>
+              <dt>
+                <i>T3</i>
+              </dt>
+              <dd>
+            A <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Func`5">Func&lt;T1, T2, T3, T4, TResult&gt;</a> parameter type.
+            </dd>
+              <dt>
+                <i>T4</i>
+              </dt>
+              <dd>
+            A <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Func`5">Func&lt;T1, T2, T3, T4, TResult&gt;</a> parameter type.
+            </dd>
+              <dt>
+                <i>TResult</i>
+              </dt>
+              <dd>
+            A <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Func`5">Func&lt;T1, T2, T3, T4, TResult&gt;</a> return type.
+            </dd>
+            </dl>
+          </blockquote>
+          <h4 class="Subsection">
+            <a href="javascript:toggle_display('M:Cadenza.Lambda.F``5(System.Func{``0,``1,``2,``3,``4}):Parameters')">
+              <span id="M:Cadenza.Lambda.F``5(System.Func{``0,``1,``2,``3,``4}):Parameters:toggle">⊟</span> Parameters</a>
+          </h4>
+          <blockquote class="SubsectionBox" id="M:Cadenza.Lambda.F``5(System.Func{``0,``1,``2,``3,``4}):Parameters">
+            <dl>
+              <dt>
+                <i>lambda</i>
+              </dt>
+              <dd>
+            The <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Func`5">Func&lt;T1, T2, T3, T4, TResult&gt;</a> to return.
+            </dd>
+            </dl>
+          </blockquote>
+          <h4 class="Subsection">
+            <a href="javascript:toggle_display('M:Cadenza.Lambda.F``5(System.Func{``0,``1,``2,``3,``4}):Returns')">
+              <span id="M:Cadenza.Lambda.F``5(System.Func{``0,``1,``2,``3,``4}):Returns:toggle">⊟</span> Returns</a>
+          </h4>
+          <blockquote class="SubsectionBox" id="M:Cadenza.Lambda.F``5(System.Func{``0,``1,``2,``3,``4}):Returns">
+            Returns <i>lambda</i>.
+            </blockquote>
+          <h4 class="Subsection">
+            <a href="javascript:toggle_display('M:Cadenza.Lambda.F``5(System.Func{``0,``1,``2,``3,``4}):Remarks')">
+              <span id="M:Cadenza.Lambda.F``5(System.Func{``0,``1,``2,``3,``4}):Remarks:toggle">⊟</span> Remarks</a>
+          </h4>
+          <blockquote class="SubsectionBox" id="M:Cadenza.Lambda.F``5(System.Func{``0,``1,``2,``3,``4}):Remarks">
+            <span class="NotEntered">Documentation for this section has not yet been entered.</span>
+          </blockquote>
+          <h4 class="Subsection">
+            <a href="javascript:toggle_display('M:Cadenza.Lambda.F``5(System.Func{``0,``1,``2,``3,``4}):Version Information')">
+              <span id="M:Cadenza.Lambda.F``5(System.Func{``0,``1,``2,``3,``4}):Version Information:toggle">⊟</span> Requirements</a>
+          </h4>
+          <blockquote class="SubsectionBox" id="M:Cadenza.Lambda.F``5(System.Func{``0,``1,``2,``3,``4}):Version Information">
+            <b>Namespace: </b>Cadenza<br /><b>Assembly: </b>Cadenza (in Cadenza.dll)<br /><b>Assembly Versions: </b>0.1.0.0</blockquote>
+          <hr size="1" />
+        </blockquote>
+        <h3 id="M:Cadenza.Lambda.RecFunc``2(System.Func{System.Func{``0,``1},System.Func{``0,``1}})">
+          <a href="javascript:toggle_display('M:Cadenza.Lambda.RecFunc``2(System.Func{System.Func{``0,``1},System.Func{``0,``1}}):member')">
+            <span id="M:Cadenza.Lambda.RecFunc``2(System.Func{System.Func{``0,``1},System.Func{``0,``1}}):member:toggle">⊟</span> RecFunc&lt;T,TResult&gt; Generic Method</a>
+        </h3>
+        <blockquote id="M:Cadenza.Lambda.RecFunc``2(System.Func{System.Func{``0,``1},System.Func{``0,``1}}):member">
+          <p class="Summary">
+            Creates a <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Func`2">Func&lt;T, TResult&gt;</a> delegate, which may be recursive.
+            </p>
+          <div class="Signature">public static <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Func`2">Func&lt;T, TResult&gt;</a> <b>RecFunc&lt;T, TResult&gt;</b> (<a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Func`1">Func&lt;Func&lt;T, TResult&gt;, Func&lt;T, TResult&gt;&gt;</a> lambda)</div>
+          <h4 class="Subsection">
+            <a href="javascript:toggle_display('M:Cadenza.Lambda.RecFunc``2(System.Func{System.Func{``0,``1},System.Func{``0,``1}}):Type Parameters')">
+              <span id="M:Cadenza.Lambda.RecFunc``2(System.Func{System.Func{``0,``1},System.Func{``0,``1}}):Type Parameters:toggle">⊟</span> Type Parameters</a>
+          </h4>
+          <blockquote class="SubsectionBox" id="M:Cadenza.Lambda.RecFunc``2(System.Func{System.Func{``0,``1},System.Func{``0,``1}}):Type Parameters">
+            <dl>
+              <dt>
+                <i>T</i>
+              </dt>
+              <dd>
+            A <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Func`2">Func&lt;T, TResult&gt;</a> parameter type.
+            </dd>
+              <dt>
+                <i>TResult</i>
+              </dt>
+              <dd>
+            A <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Func`2">Func&lt;T, TResult&gt;</a> return type.
+            </dd>
+            </dl>
+          </blockquote>
+          <h4 class="Subsection">
+            <a href="javascript:toggle_display('M:Cadenza.Lambda.RecFunc``2(System.Func{System.Func{``0,``1},System.Func{``0,``1}}):Parameters')">
+              <span id="M:Cadenza.Lambda.RecFunc``2(System.Func{System.Func{``0,``1},System.Func{``0,``1}}):Parameters:toggle">⊟</span> Parameters</a>
+          </h4>
+          <blockquote class="SubsectionBox" id="M:Cadenza.Lambda.RecFunc``2(System.Func{System.Func{``0,``1},System.Func{``0,``1}}):Parameters">
+            <dl>
+              <dt>
+                <i>lambda</i>
+              </dt>
+              <dd>
+            The <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Func`2">Func&lt;T, TResult&gt;</a> to use.
+            </dd>
+            </dl>
+          </blockquote>
+          <h4 class="Subsection">
+            <a href="javascript:toggle_display('M:Cadenza.Lambda.RecFunc``2(System.Func{System.Func{``0,``1},System.Func{``0,``1}}):Returns')">
+              <span id="M:Cadenza.Lambda.RecFunc``2(System.Func{System.Func{``0,``1},System.Func{``0,``1}}):Returns:toggle">⊟</span> Returns</a>
+          </h4>
+          <blockquote class="SubsectionBox" id="M:Cadenza.Lambda.RecFunc``2(System.Func{System.Func{``0,``1},System.Func{``0,``1}}):Returns">
+            Returns a <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Func`2">Func&lt;T, TResult&gt;</a> which (eventually) invokes <i>lambda</i>.
+            </blockquote>
+          <h4 class="Subsection">
+            <a href="javascript:toggle_display('M:Cadenza.Lambda.RecFunc``2(System.Func{System.Func{``0,``1},System.Func{``0,``1}}):Exceptions')">
+              <span id="M:Cadenza.Lambda.RecFunc``2(System.Func{System.Func{``0,``1},System.Func{``0,``1}}):Exceptions:toggle">⊟</span> Exceptions</a>
+          </h4>
+          <blockquote class="SubsectionBox" id="M:Cadenza.Lambda.RecFunc``2(System.Func{System.Func{``0,``1},System.Func{``0,``1}}):Exceptions">
+            <table class="TypeDocumentation">
+              <tr>
+                <th>Type</th>
+                <th>Reason</th>
+              </tr>
+              <tr valign="top">
+                <td>
+                  <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.ArgumentNullException">ArgumentNullException</a>
+                </td>
+                <td>
+            if <i>lambda</i> is <tt>null</tt>.
+            </td>
+              </tr>
+            </table>
+          </blockquote>
+          <h4 class="Subsection">
+            <a href="javascript:toggle_display('M:Cadenza.Lambda.RecFunc``2(System.Func{System.Func{``0,``1},System.Func{``0,``1}}):Remarks')">
+              <span id="M:Cadenza.Lambda.RecFunc``2(System.Func{System.Func{``0,``1},System.Func{``0,``1}}):Remarks:toggle">⊟</span> Remarks</a>
+          </h4>
+          <blockquote class="SubsectionBox" id="M:Cadenza.Lambda.RecFunc``2(System.Func{System.Func{``0,``1},System.Func{``0,``1}}):Remarks">
+            <p>
+            The following example makes use of a recursive lambda:
+            </p>
+            <table class="CodeExampleTable">
+              <tr>
+                <td>
+                  <b>
+                    <font size="-1">C# Example</font>
+                  </b>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <pre class="code-csharp">
+            Func&lt;int, int&gt; factorial = Lambda.RecFunc&lt;int, int&gt; (
+            fac =&gt; x =&gt; x == 0 ? 1 : x * fac (x-1));
+            Console.WriteLine (factorial (5));  // prints "120"
+            </pre>
+                </td>
+              </tr>
+            </table>
+          </blockquote>
+          <h4 class="Subsection">
+            <a href="javascript:toggle_display('M:Cadenza.Lambda.RecFunc``2(System.Func{System.Func{``0,``1},System.Func{``0,``1}}):Version Information')">
+              <span id="M:Cadenza.Lambda.RecFunc``2(System.Func{System.Func{``0,``1},System.Func{``0,``1}}):Version Information:toggle">⊟</span> Requirements</a>
+          </h4>
+          <blockquote class="SubsectionBox" id="M:Cadenza.Lambda.RecFunc``2(System.Func{System.Func{``0,``1},System.Func{``0,``1}}):Version Information">
+            <b>Namespace: </b>Cadenza<br /><b>Assembly: </b>Cadenza (in Cadenza.dll)<br /><b>Assembly Versions: </b>0.1.0.0</blockquote>
+          <hr size="1" />
+        </blockquote>
+        <h3 id="M:Cadenza.Lambda.RecFunc``3(System.Func{System.Func{``0,``1,``2},System.Func{``0,``1,``2}})">
+          <a href="javascript:toggle_display('M:Cadenza.Lambda.RecFunc``3(System.Func{System.Func{``0,``1,``2},System.Func{``0,``1,``2}}):member')">
+            <span id="M:Cadenza.Lambda.RecFunc``3(System.Func{System.Func{``0,``1,``2},System.Func{``0,``1,``2}}):member:toggle">⊟</span> RecFunc&lt;T1,T2,TResult&gt; Generic Method</a>
+        </h3>
+        <blockquote id="M:Cadenza.Lambda.RecFunc``3(System.Func{System.Func{``0,``1,``2},System.Func{``0,``1,``2}}):member">
+          <p class="Summary">
+            Creates a <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Func`3">Func&lt;T1, T2, TResult&gt;</a> delegate, which may be recursive.
+            </p>
+          <div class="Signature">public static <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Func`3">Func&lt;T1, T2, TResult&gt;</a> <b>RecFunc&lt;T1, T2, TResult&gt;</b> (<a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Func`1">Func&lt;Func&lt;T1, T2, TResult&gt;, Func&lt;T1, T2, TResult&gt;&gt;</a> lambda)</div>
+          <h4 class="Subsection">
+            <a href="javascript:toggle_display('M:Cadenza.Lambda.RecFunc``3(System.Func{System.Func{``0,``1,``2},System.Func{``0,``1,``2}}):Type Parameters')">
+              <span id="M:Cadenza.Lambda.RecFunc``3(System.Func{System.Func{``0,``1,``2},System.Func{``0,``1,``2}}):Type Parameters:toggle">⊟</span> Type Parameters</a>
+          </h4>
+          <blockquote class="SubsectionBox" id="M:Cadenza.Lambda.RecFunc``3(System.Func{System.Func{``0,``1,``2},System.Func{``0,``1,``2}}):Type Parameters">
+            <dl>
+              <dt>
+                <i>T1</i>
+              </dt>
+              <dd>
+            A <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Func`3">Func&lt;T1, T2, TResult&gt;</a> parameter type.
+            </dd>
+              <dt>
+                <i>T2</i>
+              </dt>
+              <dd>
+            A <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Func`3">Func&lt;T1, T2, TResult&gt;</a> parameter type.
+            </dd>
+              <dt>
+                <i>TResult</i>
+              </dt>
+              <dd>
+            A <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Func`3">Func&lt;T1, T2, TResult&gt;</a> return type.
+            </dd>
+            </dl>
+          </blockquote>
+          <h4 class="Subsection">
+            <a href="javascript:toggle_display('M:Cadenza.Lambda.RecFunc``3(System.Func{System.Func{``0,``1,``2},System.Func{``0,``1,``2}}):Parameters')">
+              <span id="M:Cadenza.Lambda.RecFunc``3(System.Func{System.Func{``0,``1,``2},System.Func{``0,``1,``2}}):Parameters:toggle">⊟</span> Parameters</a>
+          </h4>
+          <blockquote class="SubsectionBox" id="M:Cadenza.Lambda.RecFunc``3(System.Func{System.Func{``0,``1,``2},System.Func{``0,``1,``2}}):Parameters">
+            <dl>
+              <dt>
+                <i>lambda</i>
+              </dt>
+              <dd>
+            The <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Func`3">Func&lt;T1, T2, TResult&gt;</a> to use.
+            </dd>
+            </dl>
+          </blockquote>
+          <h4 class="Subsection">
+            <a href="javascript:toggle_display('M:Cadenza.Lambda.RecFunc``3(System.Func{System.Func{``0,``1,``2},System.Func{``0,``1,``2}}):Returns')">
+              <span id="M:Cadenza.Lambda.RecFunc``3(System.Func{System.Func{``0,``1,``2},System.Func{``0,``1,``2}}):Returns:toggle">⊟</span> Returns</a>
+          </h4>
+          <blockquote class="SubsectionBox" id="M:Cadenza.Lambda.RecFunc``3(System.Func{System.Func{``0,``1,``2},System.Func{``0,``1,``2}}):Returns">
+            Returns a <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Func`3">Func&lt;T1, T2, TResult&gt;</a> which (eventually) invokes <i>lambda</i>.
+            </blockquote>
+          <h4 class="Subsection">
+            <a href="javascript:toggle_display('M:Cadenza.Lambda.RecFunc``3(System.Func{System.Func{``0,``1,``2},System.Func{``0,``1,``2}}):Exceptions')">
+              <span id="M:Cadenza.Lambda.RecFunc``3(System.Func{System.Func{``0,``1,``2},System.Func{``0,``1,``2}}):Exceptions:toggle">⊟</span> Exceptions</a>
+          </h4>
+          <blockquote class="SubsectionBox" id="M:Cadenza.Lambda.RecFunc``3(System.Func{System.Func{``0,``1,``2},System.Func{``0,``1,``2}}):Exceptions">
+            <table class="TypeDocumentation">
+              <tr>
+                <th>Type</th>
+                <th>Reason</th>
+              </tr>
+              <tr valign="top">
+                <td>
+                  <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.ArgumentNullException">ArgumentNullException</a>
+                </td>
+                <td>
+            if <i>lambda</i> is <tt>null</tt>.
+            </td>
+              </tr>
+            </table>
+          </blockquote>
+          <h4 class="Subsection">
+            <a href="javascript:toggle_display('M:Cadenza.Lambda.RecFunc``3(System.Func{System.Func{``0,``1,``2},System.Func{``0,``1,``2}}):Remarks')">
+              <span id="M:Cadenza.Lambda.RecFunc``3(System.Func{System.Func{``0,``1,``2},System.Func{``0,``1,``2}}):Remarks:toggle">⊟</span> Remarks</a>
+          </h4>
+          <blockquote class="SubsectionBox" id="M:Cadenza.Lambda.RecFunc``3(System.Func{System.Func{``0,``1,``2},System.Func{``0,``1,``2}}):Remarks">
+            <p>
+            The following example makes use of a recursive lambda:
+            </p>
+            <table class="CodeExampleTable">
+              <tr>
+                <td>
+                  <b>
+                    <font size="-1">C# Example</font>
+                  </b>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <pre class="code-csharp">
+            Func&lt;int, int&gt; factorial = Lambda.RecFunc&lt;int, int&gt; (
+            fac =&gt; x =&gt; x == 0 ? 1 : x * fac (x-1));
+            Console.WriteLine (factorial (5));  // prints "120"
+            </pre>
+                </td>
+              </tr>
+            </table>
+          </blockquote>
+          <h4 class="Subsection">
+            <a href="javascript:toggle_display('M:Cadenza.Lambda.RecFunc``3(System.Func{System.Func{``0,``1,``2},System.Func{``0,``1,``2}}):Version Information')">
+              <span id="M:Cadenza.Lambda.RecFunc``3(System.Func{System.Func{``0,``1,``2},System.Func{``0,``1,``2}}):Version Information:toggle">⊟</span> Requirements</a>
+          </h4>
+          <blockquote class="SubsectionBox" id="M:Cadenza.Lambda.RecFunc``3(System.Func{System.Func{``0,``1,``2},System.Func{``0,``1,``2}}):Version Information">
+            <b>Namespace: </b>Cadenza<br /><b>Assembly: </b>Cadenza (in Cadenza.dll)<br /><b>Assembly Versions: </b>0.1.0.0</blockquote>
+          <hr size="1" />
+        </blockquote>
+        <h3 id="M:Cadenza.Lambda.RecFunc``4(System.Func{System.Func{``0,``1,``2,``3},System.Func{``0,``1,``2,``3}})">
+          <a href="javascript:toggle_display('M:Cadenza.Lambda.RecFunc``4(System.Func{System.Func{``0,``1,``2,``3},System.Func{``0,``1,``2,``3}}):member')">
+            <span id="M:Cadenza.Lambda.RecFunc``4(System.Func{System.Func{``0,``1,``2,``3},System.Func{``0,``1,``2,``3}}):member:toggle">⊟</span> RecFunc&lt;T1,T2,T3,TResult&gt; Generic Method</a>
+        </h3>
+        <blockquote id="M:Cadenza.Lambda.RecFunc``4(System.Func{System.Func{``0,``1,``2,``3},System.Func{``0,``1,``2,``3}}):member">
+          <p class="Summary">
+            Creates a <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Func`4">Func&lt;T1, T2, T3, TResult&gt;</a> delegate, which may be recursive.
+            </p>
+          <div class="Signature">public static <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Func`4">Func&lt;T1, T2, T3, TResult&gt;</a> <b>RecFunc&lt;T1, T2, T3, TResult&gt;</b> (<a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Func`1">Func&lt;Func&lt;T1, T2, T3, TResult&gt;, Func&lt;T1, T2, T3, TResult&gt;&gt;</a> lambda)</div>
+          <h4 class="Subsection">
+            <a href="javascript:toggle_display('M:Cadenza.Lambda.RecFunc``4(System.Func{System.Func{``0,``1,``2,``3},System.Func{``0,``1,``2,``3}}):Type Parameters')">
+              <span id="M:Cadenza.Lambda.RecFunc``4(System.Func{System.Func{``0,``1,``2,``3},System.Func{``0,``1,``2,``3}}):Type Parameters:toggle">⊟</span> Type Parameters</a>
+          </h4>
+          <blockquote class="SubsectionBox" id="M:Cadenza.Lambda.RecFunc``4(System.Func{System.Func{``0,``1,``2,``3},System.Func{``0,``1,``2,``3}}):Type Parameters">
+            <dl>
+              <dt>
+                <i>T1</i>
+              </dt>
+              <dd>
+            A <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Func`4">Func&lt;T1, T2, T3, TResult&gt;</a> parameter type.
+            </dd>
+              <dt>
+                <i>T2</i>
+              </dt>
+              <dd>
+            A <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Func`4">Func&lt;T1, T2, T3, TResult&gt;</a> parameter type.
+            </dd>
+              <dt>
+                <i>T3</i>
+              </dt>
+              <dd>
+            A <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Func`4">Func&lt;T1, T2, T3, TResult&gt;</a> parameter type.
+            </dd>
+              <dt>
+                <i>TResult</i>
+              </dt>
+              <dd>
+            A <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Func`4">Func&lt;T1, T2, T3, TResult&gt;</a> return type.
+            </dd>
+            </dl>
+          </blockquote>
+          <h4 class="Subsection">
+            <a href="javascript:toggle_display('M:Cadenza.Lambda.RecFunc``4(System.Func{System.Func{``0,``1,``2,``3},System.Func{``0,``1,``2,``3}}):Parameters')">
+              <span id="M:Cadenza.Lambda.RecFunc``4(System.Func{System.Func{``0,``1,``2,``3},System.Func{``0,``1,``2,``3}}):Parameters:toggle">⊟</span> Parameters</a>
+          </h4>
+          <blockquote class="SubsectionBox" id="M:Cadenza.Lambda.RecFunc``4(System.Func{System.Func{``0,``1,``2,``3},System.Func{``0,``1,``2,``3}}):Parameters">
+            <dl>
+              <dt>
+                <i>lambda</i>
+              </dt>
+              <dd>
+            The <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Func`4">Func&lt;T1, T2, T3, TResult&gt;</a> to use.
+            </dd>
+            </dl>
+          </blockquote>
+          <h4 class="Subsection">
+            <a href="javascript:toggle_display('M:Cadenza.Lambda.RecFunc``4(System.Func{System.Func{``0,``1,``2,``3},System.Func{``0,``1,``2,``3}}):Returns')">
+              <span id="M:Cadenza.Lambda.RecFunc``4(System.Func{System.Func{``0,``1,``2,``3},System.Func{``0,``1,``2,``3}}):Returns:toggle">⊟</span> Returns</a>
+          </h4>
+          <blockquote class="SubsectionBox" id="M:Cadenza.Lambda.RecFunc``4(System.Func{System.Func{``0,``1,``2,``3},System.Func{``0,``1,``2,``3}}):Returns">
+            Returns a <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Func`4">Func&lt;T1, T2, T3, TResult&gt;</a> which (eventually) invokes <i>lambda</i>.
+            </blockquote>
+          <h4 class="Subsection">
+            <a href="javascript:toggle_display('M:Cadenza.Lambda.RecFunc``4(System.Func{System.Func{``0,``1,``2,``3},System.Func{``0,``1,``2,``3}}):Exceptions')">
+              <span id="M:Cadenza.Lambda.RecFunc``4(System.Func{System.Func{``0,``1,``2,``3},System.Func{``0,``1,``2,``3}}):Exceptions:toggle">⊟</span> Exceptions</a>
+          </h4>
+          <blockquote class="SubsectionBox" id="M:Cadenza.Lambda.RecFunc``4(System.Func{System.Func{``0,``1,``2,``3},System.Func{``0,``1,``2,``3}}):Exceptions">
+            <table class="TypeDocumentation">
+              <tr>
+                <th>Type</th>
+                <th>Reason</th>
+              </tr>
+              <tr valign="top">
+                <td>
+                  <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.ArgumentNullException">ArgumentNullException</a>
+                </td>
+                <td>
+            if <i>lambda</i> is <tt>null</tt>.
+            </td>
+              </tr>
+            </table>
+          </blockquote>
+          <h4 class="Subsection">
+            <a href="javascript:toggle_display('M:Cadenza.Lambda.RecFunc``4(System.Func{System.Func{``0,``1,``2,``3},System.Func{``0,``1,``2,``3}}):Remarks')">
+              <span id="M:Cadenza.Lambda.RecFunc``4(System.Func{System.Func{``0,``1,``2,``3},System.Func{``0,``1,``2,``3}}):Remarks:toggle">⊟</span> Remarks</a>
+          </h4>
+          <blockquote class="SubsectionBox" id="M:Cadenza.Lambda.RecFunc``4(System.Func{System.Func{``0,``1,``2,``3},System.Func{``0,``1,``2,``3}}):Remarks">
+            <p>
+            The following example makes use of a recursive lambda:
+            </p>
+            <table class="CodeExampleTable">
+              <tr>
+                <td>
+                  <b>
+                    <font size="-1">C# Example</font>
+                  </b>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <pre class="code-csharp">
+            Func&lt;int, int&gt; factorial = Lambda.RecFunc&lt;int, int&gt; (
+            fac =&gt; x =&gt; x == 0 ? 1 : x * fac (x-1));
+            Console.WriteLine (factorial (5));  // prints "120"
+            </pre>
+                </td>
+              </tr>
+            </table>
+          </blockquote>
+          <h4 class="Subsection">
+            <a href="javascript:toggle_display('M:Cadenza.Lambda.RecFunc``4(System.Func{System.Func{``0,``1,``2,``3},System.Func{``0,``1,``2,``3}}):Version Information')">
+              <span id="M:Cadenza.Lambda.RecFunc``4(System.Func{System.Func{``0,``1,``2,``3},System.Func{``0,``1,``2,``3}}):Version Information:toggle">⊟</span> Requirements</a>
+          </h4>
+          <blockquote class="SubsectionBox" id="M:Cadenza.Lambda.RecFunc``4(System.Func{System.Func{``0,``1,``2,``3},System.Func{``0,``1,``2,``3}}):Version Information">
+            <b>Namespace: </b>Cadenza<br /><b>Assembly: </b>Cadenza (in Cadenza.dll)<br /><b>Assembly Versions: </b>0.1.0.0</blockquote>
+          <hr size="1" />
+        </blockquote>
+        <h3 id="M:Cadenza.Lambda.RecFunc``5(System.Func{System.Func{``0,``1,``2,``3,``4},System.Func{``0,``1,``2,``3,``4}})">
+          <a href="javascript:toggle_display('M:Cadenza.Lambda.RecFunc``5(System.Func{System.Func{``0,``1,``2,``3,``4},System.Func{``0,``1,``2,``3,``4}}):member')">
+            <span id="M:Cadenza.Lambda.RecFunc``5(System.Func{System.Func{``0,``1,``2,``3,``4},System.Func{``0,``1,``2,``3,``4}}):member:toggle">⊟</span> RecFunc&lt;T1,T2,T3,T4,TResult&gt; Generic Method</a>
+        </h3>
+        <blockquote id="M:Cadenza.Lambda.RecFunc``5(System.Func{System.Func{``0,``1,``2,``3,``4},System.Func{``0,``1,``2,``3,``4}}):member">
+          <p class="Summary">
+            Creates a <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Func`5">Func&lt;T1, T2, T3, T4, TResult&gt;</a> delegate, which may be recursive.
+            </p>
+          <div class="Signature">public static <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Func`5">Func&lt;T1, T2, T3, T4, TResult&gt;</a> <b>RecFunc&lt;T1, T2, T3, T4, TResult&gt;</b> (<a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Func`1">Func&lt;Func&lt;T1, T2, T3, T4, TResult&gt;, Func&lt;T1, T2, T3, T4, TResult&gt;&gt;</a> lambda)</div>
+          <h4 class="Subsection">
+            <a href="javascript:toggle_display('M:Cadenza.Lambda.RecFunc``5(System.Func{System.Func{``0,``1,``2,``3,``4},System.Func{``0,``1,``2,``3,``4}}):Type Parameters')">
+              <span id="M:Cadenza.Lambda.RecFunc``5(System.Func{System.Func{``0,``1,``2,``3,``4},System.Func{``0,``1,``2,``3,``4}}):Type Parameters:toggle">⊟</span> Type Parameters</a>
+          </h4>
+          <blockquote class="SubsectionBox" id="M:Cadenza.Lambda.RecFunc``5(System.Func{System.Func{``0,``1,``2,``3,``4},System.Func{``0,``1,``2,``3,``4}}):Type Parameters">
+            <dl>
+              <dt>
+                <i>T1</i>
+              </dt>
+              <dd>
+            A <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Func`5">Func&lt;T1, T2, T3, T4, TResult&gt;</a> parameter type.
+            </dd>
+              <dt>
+                <i>T2</i>
+              </dt>
+              <dd>
+            A <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Func`5">Func&lt;T1, T2, T3, T4, TResult&gt;</a> parameter type.
+            </dd>
+              <dt>
+                <i>T3</i>
+              </dt>
+              <dd>
+            A <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Func`5">Func&lt;T1, T2, T3, T4, TResult&gt;</a> parameter type.
+            </dd>
+              <dt>
+                <i>T4</i>
+              </dt>
+              <dd>
+            A <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Func`5">Func&lt;T1, T2, T3, T4, TResult&gt;</a> parameter type.
+            </dd>
+              <dt>
+                <i>TResult</i>
+              </dt>
+              <dd>
+            A <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Func`5">Func&lt;T1, T2, T3, T4, TResult&gt;</a> return type.
+            </dd>
+            </dl>
+          </blockquote>
+          <h4 class="Subsection">
+            <a href="javascript:toggle_display('M:Cadenza.Lambda.RecFunc``5(System.Func{System.Func{``0,``1,``2,``3,``4},System.Func{``0,``1,``2,``3,``4}}):Parameters')">
+              <span id="M:Cadenza.Lambda.RecFunc``5(System.Func{System.Func{``0,``1,``2,``3,``4},System.Func{``0,``1,``2,``3,``4}}):Parameters:toggle">⊟</span> Parameters</a>
+          </h4>
+          <blockquote class="SubsectionBox" id="M:Cadenza.Lambda.RecFunc``5(System.Func{System.Func{``0,``1,``2,``3,``4},System.Func{``0,``1,``2,``3,``4}}):Parameters">
+            <dl>
+              <dt>
+                <i>lambda</i>
+              </dt>
+              <dd>
+            The <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Func`5">Func&lt;T1, T2, T3, T4, TResult&gt;</a> to use.
+            </dd>
+            </dl>
+          </blockquote>
+          <h4 class="Subsection">
+            <a href="javascript:toggle_display('M:Cadenza.Lambda.RecFunc``5(System.Func{System.Func{``0,``1,``2,``3,``4},System.Func{``0,``1,``2,``3,``4}}):Returns')">
+              <span id="M:Cadenza.Lambda.RecFunc``5(System.Func{System.Func{``0,``1,``2,``3,``4},System.Func{``0,``1,``2,``3,``4}}):Returns:toggle">⊟</span> Returns</a>
+          </h4>
+          <blockquote class="SubsectionBox" id="M:Cadenza.Lambda.RecFunc``5(System.Func{System.Func{``0,``1,``2,``3,``4},System.Func{``0,``1,``2,``3,``4}}):Returns">
+            Returns a <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Func`5">Func&lt;T1, T2, T3, T4, TResult&gt;</a> which (eventually) invokes <i>lambda</i>.
+            </blockquote>
+          <h4 class="Subsection">
+            <a href="javascript:toggle_display('M:Cadenza.Lambda.RecFunc``5(System.Func{System.Func{``0,``1,``2,``3,``4},System.Func{``0,``1,``2,``3,``4}}):Exceptions')">
+              <span id="M:Cadenza.Lambda.RecFunc``5(System.Func{System.Func{``0,``1,``2,``3,``4},System.Func{``0,``1,``2,``3,``4}}):Exceptions:toggle">⊟</span> Exceptions</a>
+          </h4>
+          <blockquote class="SubsectionBox" id="M:Cadenza.Lambda.RecFunc``5(System.Func{System.Func{``0,``1,``2,``3,``4},System.Func{``0,``1,``2,``3,``4}}):Exceptions">
+            <table class="TypeDocumentation">
+              <tr>
+                <th>Type</th>
+                <th>Reason</th>
+              </tr>
+              <tr valign="top">
+                <td>
+                  <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.ArgumentNullException">ArgumentNullException</a>
+                </td>
+                <td>
+            if <i>lambda</i> is <tt>null</tt>.
+            </td>
+              </tr>
+            </table>
+          </blockquote>
+          <h4 class="Subsection">
+            <a href="javascript:toggle_display('M:Cadenza.Lambda.RecFunc``5(System.Func{System.Func{``0,``1,``2,``3,``4},System.Func{``0,``1,``2,``3,``4}}):Remarks')">
+              <span id="M:Cadenza.Lambda.RecFunc``5(System.Func{System.Func{``0,``1,``2,``3,``4},System.Func{``0,``1,``2,``3,``4}}):Remarks:toggle">⊟</span> Remarks</a>
+          </h4>
+          <blockquote class="SubsectionBox" id="M:Cadenza.Lambda.RecFunc``5(System.Func{System.Func{``0,``1,``2,``3,``4},System.Func{``0,``1,``2,``3,``4}}):Remarks">
+            <p>
+            The following example makes use of a recursive lambda:
+            </p>
+            <table class="CodeExampleTable">
+              <tr>
+                <td>
+                  <b>
+                    <font size="-1">C# Example</font>
+                  </b>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <pre class="code-csharp">
+            Func&lt;int, int&gt; factorial = Lambda.RecFunc&lt;int, int&gt; (
+            fac =&gt; x =&gt; x == 0 ? 1 : x * fac (x-1));
+            Console.WriteLine (factorial (5));  // prints "120"
+            </pre>
+                </td>
+              </tr>
+            </table>
+          </blockquote>
+          <h4 class="Subsection">
+            <a href="javascript:toggle_display('M:Cadenza.Lambda.RecFunc``5(System.Func{System.Func{``0,``1,``2,``3,``4},System.Func{``0,``1,``2,``3,``4}}):Version Information')">
+              <span id="M:Cadenza.Lambda.RecFunc``5(System.Func{System.Func{``0,``1,``2,``3,``4},System.Func{``0,``1,``2,``3,``4}}):Version Information:toggle">⊟</span> Requirements</a>
+          </h4>
+          <blockquote class="SubsectionBox" id="M:Cadenza.Lambda.RecFunc``5(System.Func{System.Func{``0,``1,``2,``3,``4},System.Func{``0,``1,``2,``3,``4}}):Version Information">
+            <b>Namespace: </b>Cadenza<br /><b>Assembly: </b>Cadenza (in Cadenza.dll)<br /><b>Assembly Versions: </b>0.1.0.0</blockquote>
+          <hr size="1" />
+        </blockquote>
+        <h3 id="M:Cadenza.Lambda.XA(System.Linq.Expressions.Expression{System.Action})">
+          <a href="javascript:toggle_display('M:Cadenza.Lambda.XA(System.Linq.Expressions.Expression{System.Action}):member')">
+            <span id="M:Cadenza.Lambda.XA(System.Linq.Expressions.Expression{System.Action}):member:toggle">⊟</span> XA Method</a>
+        </h3>
+        <blockquote id="M:Cadenza.Lambda.XA(System.Linq.Expressions.Expression{System.Action}):member">
+          <p class="Summary">
+            Creates a <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Linq.Expressions.Expression`1">System.Linq.Expressions.Expression&lt;Action&gt;</a> expression tree.
+            </p>
+          <div class="Signature">public static <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Linq.Expressions.Expression`1">System.Linq.Expressions.Expression&lt;Action&gt;</a> <b>XA</b> (<a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Linq.Expressions.Expression`1">System.Linq.Expressions.Expression&lt;Action&gt;</a> expr)</div>
+          <h4 class="Subsection">
+            <a href="javascript:toggle_display('M:Cadenza.Lambda.XA(System.Linq.Expressions.Expression{System.Action}):Parameters')">
+              <span id="M:Cadenza.Lambda.XA(System.Linq.Expressions.Expression{System.Action}):Parameters:toggle">⊟</span> Parameters</a>
+          </h4>
+          <blockquote class="SubsectionBox" id="M:Cadenza.Lambda.XA(System.Linq.Expressions.Expression{System.Action}):Parameters">
+            <dl>
+              <dt>
+                <i>expr</i>
+              </dt>
+              <dd>
+            The <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Linq.Expressions.Expression`1">System.Linq.Expressions.Expression&lt;Action&gt;</a> to return.
+            </dd>
+            </dl>
+          </blockquote>
+          <h4 class="Subsection">
+            <a href="javascript:toggle_display('M:Cadenza.Lambda.XA(System.Linq.Expressions.Expression{System.Action}):Returns')">
+              <span id="M:Cadenza.Lambda.XA(System.Linq.Expressions.Expression{System.Action}):Returns:toggle">⊟</span> Returns</a>
+          </h4>
+          <blockquote class="SubsectionBox" id="M:Cadenza.Lambda.XA(System.Linq.Expressions.Expression{System.Action}):Returns">
+            Returns <i>expr</i>.
+            </blockquote>
+          <h4 class="Subsection">
+            <a href="javascript:toggle_display('M:Cadenza.Lambda.XA(System.Linq.Expressions.Expression{System.Action}):Remarks')">
+              <span id="M:Cadenza.Lambda.XA(System.Linq.Expressions.Expression{System.Action}):Remarks:toggle">⊟</span> Remarks</a>
+          </h4>
+          <blockquote class="SubsectionBox" id="M:Cadenza.Lambda.XA(System.Linq.Expressions.Expression{System.Action}):Remarks">
+            <span class="NotEntered">Documentation for this section has not yet been entered.</span>
+          </blockquote>
+          <h4 class="Subsection">
+            <a href="javascript:toggle_display('M:Cadenza.Lambda.XA(System.Linq.Expressions.Expression{System.Action}):Version Information')">
+              <span id="M:Cadenza.Lambda.XA(System.Linq.Expressions.Expression{System.Action}):Version Information:toggle">⊟</span> Requirements</a>
+          </h4>
+          <blockquote class="SubsectionBox" id="M:Cadenza.Lambda.XA(System.Linq.Expressions.Expression{System.Action}):Version Information">
+            <b>Namespace: </b>Cadenza<br /><b>Assembly: </b>Cadenza (in Cadenza.dll)<br /><b>Assembly Versions: </b>0.1.0.0</blockquote>
+          <hr size="1" />
+        </blockquote>
+        <h3 id="M:Cadenza.Lambda.XA``1(System.Linq.Expressions.Expression{System.Action{``0}})">
+          <a href="javascript:toggle_display('M:Cadenza.Lambda.XA``1(System.Linq.Expressions.Expression{System.Action{``0}}):member')">
+            <span id="M:Cadenza.Lambda.XA``1(System.Linq.Expressions.Expression{System.Action{``0}}):member:toggle">⊟</span> XA&lt;T&gt; Generic Method</a>
+        </h3>
+        <blockquote id="M:Cadenza.Lambda.XA``1(System.Linq.Expressions.Expression{System.Action{``0}}):member">
+          <p class="Summary">
+            Creates a <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Linq.Expressions.Expression`1">System.Linq.Expressions.Expression&lt;Action&lt;T&gt;&gt;</a> expression tree.
+            </p>
+          <div class="Signature">public static <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Linq.Expressions.Expression`1">System.Linq.Expressions.Expression&lt;Action&lt;T&gt;&gt;</a> <b>XA&lt;T&gt;</b> (<a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Linq.Expressions.Expression`1">System.Linq.Expressions.Expression&lt;Action&lt;T&gt;&gt;</a> expr)</div>
+          <h4 class="Subsection">
+            <a href="javascript:toggle_display('M:Cadenza.Lambda.XA``1(System.Linq.Expressions.Expression{System.Action{``0}}):Type Parameters')">
+              <span id="M:Cadenza.Lambda.XA``1(System.Linq.Expressions.Expression{System.Action{``0}}):Type Parameters:toggle">⊟</span> Type Parameters</a>
+          </h4>
+          <blockquote class="SubsectionBox" id="M:Cadenza.Lambda.XA``1(System.Linq.Expressions.Expression{System.Action{``0}}):Type Parameters">
+            <dl>
+              <dt>
+                <i>T</i>
+              </dt>
+              <dd>
+            A <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Linq.Expressions.Expression`1">System.Linq.Expressions.Expression&lt;Action&lt;T&gt;&gt;</a> parameter type.
+            </dd>
+            </dl>
+          </blockquote>
+          <h4 class="Subsection">
+            <a href="javascript:toggle_display('M:Cadenza.Lambda.XA``1(System.Linq.Expressions.Expression{System.Action{``0}}):Parameters')">
+              <span id="M:Cadenza.Lambda.XA``1(System.Linq.Expressions.Expression{System.Action{``0}}):Parameters:toggle">⊟</span> Parameters</a>
+          </h4>
+          <blockquote class="SubsectionBox" id="M:Cadenza.Lambda.XA``1(System.Linq.Expressions.Expression{System.Action{``0}}):Parameters">
+            <dl>
+              <dt>
+                <i>expr</i>
+              </dt>
+              <dd>
+            The <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Linq.Expressions.Expression`1">System.Linq.Expressions.Expression&lt;Action&lt;T&gt;&gt;</a> to return.
+            </dd>
+            </dl>
+          </blockquote>
+          <h4 class="Subsection">
+            <a href="javascript:toggle_display('M:Cadenza.Lambda.XA``1(System.Linq.Expressions.Expression{System.Action{``0}}):Returns')">
+              <span id="M:Cadenza.Lambda.XA``1(System.Linq.Expressions.Expression{System.Action{``0}}):Returns:toggle">⊟</span> Returns</a>
+          </h4>
+          <blockquote class="SubsectionBox" id="M:Cadenza.Lambda.XA``1(System.Linq.Expressions.Expression{System.Action{``0}}):Returns">
+            Returns <i>expr</i>.
+            </blockquote>
+          <h4 class="Subsection">
+            <a href="javascript:toggle_display('M:Cadenza.Lambda.XA``1(System.Linq.Expressions.Expression{System.Action{``0}}):Remarks')">
+              <span id="M:Cadenza.Lambda.XA``1(System.Linq.Expressions.Expression{System.Action{``0}}):Remarks:toggle">⊟</span> Remarks</a>
+          </h4>
+          <blockquote class="SubsectionBox" id="M:Cadenza.Lambda.XA``1(System.Linq.Expressions.Expression{System.Action{``0}}):Remarks">
+            <span class="NotEntered">Documentation for this section has not yet been entered.</span>
+          </blockquote>
+          <h4 class="Subsection">
+            <a href="javascript:toggle_display('M:Cadenza.Lambda.XA``1(System.Linq.Expressions.Expression{System.Action{``0}}):Version Information')">
+              <span id="M:Cadenza.Lambda.XA``1(System.Linq.Expressions.Expression{System.Action{``0}}):Version Information:toggle">⊟</span> Requirements</a>
+          </h4>
+          <blockquote class="SubsectionBox" id="M:Cadenza.Lambda.XA``1(System.Linq.Expressions.Expression{System.Action{``0}}):Version Information">
+            <b>Namespace: </b>Cadenza<br /><b>Assembly: </b>Cadenza (in Cadenza.dll)<br /><b>Assembly Versions: </b>0.1.0.0</blockquote>
+          <hr size="1" />
+        </blockquote>
+        <h3 id="M:Cadenza.Lambda.XA``2(System.Linq.Expressions.Expression{System.Action{``0,``1}})">
+          <a href="javascript:toggle_display('M:Cadenza.Lambda.XA``2(System.Linq.Expressions.Expression{System.Action{``0,``1}}):member')">
+            <span id="M:Cadenza.Lambda.XA``2(System.Linq.Expressions.Expression{System.Action{``0,``1}}):member:toggle">⊟</span> XA&lt;T1,T2&gt; Generic Method</a>
+        </h3>
+        <blockquote id="M:Cadenza.Lambda.XA``2(System.Linq.Expressions.Expression{System.Action{``0,``1}}):member">
+          <p class="Summary">
+            Creates a <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Linq.Expressions.Expression`1">System.Linq.Expressions.Expression&lt;Action&lt;T1, T2&gt;&gt;</a> expression tree.
+            </p>
+          <div class="Signature">public static <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Linq.Expressions.Expression`1">System.Linq.Expressions.Expression&lt;Action&lt;T1, T2&gt;&gt;</a> <b>XA&lt;T1, T2&gt;</b> (<a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Linq.Expressions.Expression`1">System.Linq.Expressions.Expression&lt;Action&lt;T1, T2&gt;&gt;</a> expr)</div>
+          <h4 class="Subsection">
+            <a href="javascript:toggle_display('M:Cadenza.Lambda.XA``2(System.Linq.Expressions.Expression{System.Action{``0,``1}}):Type Parameters')">
+              <span id="M:Cadenza.Lambda.XA``2(System.Linq.Expressions.Expression{System.Action{``0,``1}}):Type Parameters:toggle">⊟</span> Type Parameters</a>
+          </h4>
+          <blockquote class="SubsectionBox" id="M:Cadenza.Lambda.XA``2(System.Linq.Expressions.Expression{System.Action{``0,``1}}):Type Parameters">
+            <dl>
+              <dt>
+                <i>T1</i>
+              </dt>
+              <dd>
+            A <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Linq.Expressions.Expression`1">System.Linq.Expressions.Expression&lt;Action&lt;T1, T2&gt;&gt;</a> parameter type.
+            </dd>
+              <dt>
+                <i>T2</i>
+              </dt>
+              <dd>
+            A <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Linq.Expressions.Expression`1">System.Linq.Expressions.Expression&lt;Action&lt;T1, T2&gt;&gt;</a> parameter type.
+            </dd>
+            </dl>
+          </blockquote>
+          <h4 class="Subsection">
+            <a href="javascript:toggle_display('M:Cadenza.Lambda.XA``2(System.Linq.Expressions.Expression{System.Action{``0,``1}}):Parameters')">
+              <span id="M:Cadenza.Lambda.XA``2(System.Linq.Expressions.Expression{System.Action{``0,``1}}):Parameters:toggle">⊟</span> Parameters</a>
+          </h4>
+          <blockquote class="SubsectionBox" id="M:Cadenza.Lambda.XA``2(System.Linq.Expressions.Expression{System.Action{``0,``1}}):Parameters">
+            <dl>
+              <dt>
+                <i>expr</i>
+              </dt>
+              <dd>
+            The <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Linq.Expressions.Expression`1">System.Linq.Expressions.Expression&lt;Action&lt;T1, T2&gt;&gt;</a> to return.
+            </dd>
+            </dl>
+          </blockquote>
+          <h4 class="Subsection">
+            <a href="javascript:toggle_display('M:Cadenza.Lambda.XA``2(System.Linq.Expressions.Expression{System.Action{``0,``1}}):Returns')">
+              <span id="M:Cadenza.Lambda.XA``2(System.Linq.Expressions.Expression{System.Action{``0,``1}}):Returns:toggle">⊟</span> Returns</a>
+          </h4>
+          <blockquote class="SubsectionBox" id="M:Cadenza.Lambda.XA``2(System.Linq.Expressions.Expression{System.Action{``0,``1}}):Returns">
+            Returns <i>expr</i>.
+            </blockquote>
+          <h4 class="Subsection">
+            <a href="javascript:toggle_display('M:Cadenza.Lambda.XA``2(System.Linq.Expressions.Expression{System.Action{``0,``1}}):Remarks')">
+              <span id="M:Cadenza.Lambda.XA``2(System.Linq.Expressions.Expression{System.Action{``0,``1}}):Remarks:toggle">⊟</span> Remarks</a>
+          </h4>
+          <blockquote class="SubsectionBox" id="M:Cadenza.Lambda.XA``2(System.Linq.Expressions.Expression{System.Action{``0,``1}}):Remarks">
+            <span class="NotEntered">Documentation for this section has not yet been entered.</span>
+          </blockquote>
+          <h4 class="Subsection">
+            <a href="javascript:toggle_display('M:Cadenza.Lambda.XA``2(System.Linq.Expressions.Expression{System.Action{``0,``1}}):Version Information')">
+              <span id="M:Cadenza.Lambda.XA``2(System.Linq.Expressions.Expression{System.Action{``0,``1}}):Version Information:toggle">⊟</span> Requirements</a>
+          </h4>
+          <blockquote class="SubsectionBox" id="M:Cadenza.Lambda.XA``2(System.Linq.Expressions.Expression{System.Action{``0,``1}}):Version Information">
+            <b>Namespace: </b>Cadenza<br /><b>Assembly: </b>Cadenza (in Cadenza.dll)<br /><b>Assembly Versions: </b>0.1.0.0</blockquote>
+          <hr size="1" />
+        </blockquote>
+        <h3 id="M:Cadenza.Lambda.XA``3(System.Linq.Expressions.Expression{System.Action{``0,``1,``2}})">
+          <a href="javascript:toggle_display('M:Cadenza.Lambda.XA``3(System.Linq.Expressions.Expression{System.Action{``0,``1,``2}}):member')">
+            <span id="M:Cadenza.Lambda.XA``3(System.Linq.Expressions.Expression{System.Action{``0,``1,``2}}):member:toggle">⊟</span> XA&lt;T1,T2,T3&gt; Generic Method</a>
+        </h3>
+        <blockquote id="M:Cadenza.Lambda.XA``3(System.Linq.Expressions.Expression{System.Action{``0,``1,``2}}):member">
+          <p class="Summary">
+            Creates a <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Linq.Expressions.Expression`1">System.Linq.Expressions.Expression&lt;Action&lt;T1, T2, T3&gt;&gt;</a> expression tree.
+            </p>
+          <div class="Signature">public static <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Linq.Expressions.Expression`1">System.Linq.Expressions.Expression&lt;Action&lt;T1, T2, T3&gt;&gt;</a> <b>XA&lt;T1, T2, T3&gt;</b> (<a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Linq.Expressions.Expression`1">System.Linq.Expressions.Expression&lt;Action&lt;T1, T2, T3&gt;&gt;</a> expr)</div>
+          <h4 class="Subsection">
+            <a href="javascript:toggle_display('M:Cadenza.Lambda.XA``3(System.Linq.Expressions.Expression{System.Action{``0,``1,``2}}):Type Parameters')">
+              <span id="M:Cadenza.Lambda.XA``3(System.Linq.Expressions.Expression{System.Action{``0,``1,``2}}):Type Parameters:toggle">⊟</span> Type Parameters</a>
+          </h4>
+          <blockquote class="SubsectionBox" id="M:Cadenza.Lambda.XA``3(System.Linq.Expressions.Expression{System.Action{``0,``1,``2}}):Type Parameters">
+            <dl>
+              <dt>
+                <i>T1</i>
+              </dt>
+              <dd>
+            A <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Linq.Expressions.Expression`1">System.Linq.Expressions.Expression&lt;Action&lt;T1, T2, T3&gt;&gt;</a> parameter type.
+            </dd>
+              <dt>
+                <i>T2</i>
+              </dt>
+              <dd>
+            A <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Linq.Expressions.Expression`1">System.Linq.Expressions.Expression&lt;Action&lt;T1, T2, T3&gt;&gt;</a> parameter type.
+            </dd>
+              <dt>
+                <i>T3</i>
+              </dt>
+              <dd>
+            A <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Linq.Expressions.Expression`1">System.Linq.Expressions.Expression&lt;Action&lt;T1, T2, T3&gt;&gt;</a> parameter type.
+            </dd>
+            </dl>
+          </blockquote>
+          <h4 class="Subsection">
+            <a href="javascript:toggle_display('M:Cadenza.Lambda.XA``3(System.Linq.Expressions.Expression{System.Action{``0,``1,``2}}):Parameters')">
+              <span id="M:Cadenza.Lambda.XA``3(System.Linq.Expressions.Expression{System.Action{``0,``1,``2}}):Parameters:toggle">⊟</span> Parameters</a>
+          </h4>
+          <blockquote class="SubsectionBox" id="M:Cadenza.Lambda.XA``3(System.Linq.Expressions.Expression{System.Action{``0,``1,``2}}):Parameters">
+            <dl>
+              <dt>
+                <i>expr</i>
+              </dt>
+              <dd>
+            The <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Linq.Expressions.Expression`1">System.Linq.Expressions.Expression&lt;Action&lt;T1, T2, T3&gt;&gt;</a> to return.
+            </dd>
+            </dl>
+          </blockquote>
+          <h4 class="Subsection">
+            <a href="javascript:toggle_display('M:Cadenza.Lambda.XA``3(System.Linq.Expressions.Expression{System.Action{``0,``1,``2}}):Returns')">
+              <span id="M:Cadenza.Lambda.XA``3(System.Linq.Expressions.Expression{System.Action{``0,``1,``2}}):Returns:toggle">⊟</span> Returns</a>
+          </h4>
+          <blockquote class="SubsectionBox" id="M:Cadenza.Lambda.XA``3(System.Linq.Expressions.Expression{System.Action{``0,``1,``2}}):Returns">
+            Returns <i>expr</i>.
+            </blockquote>
+          <h4 class="Subsection">
+            <a href="javascript:toggle_display('M:Cadenza.Lambda.XA``3(System.Linq.Expressions.Expression{System.Action{``0,``1,``2}}):Remarks')">
+              <span id="M:Cadenza.Lambda.XA``3(System.Linq.Expressions.Expression{System.Action{``0,``1,``2}}):Remarks:toggle">⊟</span> Remarks</a>
+          </h4>
+          <blockquote class="SubsectionBox" id="M:Cadenza.Lambda.XA``3(System.Linq.Expressions.Expression{System.Action{``0,``1,``2}}):Remarks">
+            <span class="NotEntered">Documentation for this section has not yet been entered.</span>
+          </blockquote>
+          <h4 class="Subsection">
+            <a href="javascript:toggle_display('M:Cadenza.Lambda.XA``3(System.Linq.Expressions.Expression{System.Action{``0,``1,``2}}):Version Information')">
+              <span id="M:Cadenza.Lambda.XA``3(System.Linq.Expressions.Expression{System.Action{``0,``1,``2}}):Version Information:toggle">⊟</span> Requirements</a>
+          </h4>
+          <blockquote class="SubsectionBox" id="M:Cadenza.Lambda.XA``3(System.Linq.Expressions.Expression{System.Action{``0,``1,``2}}):Version Information">
+            <b>Namespace: </b>Cadenza<br /><b>Assembly: </b>Cadenza (in Cadenza.dll)<br /><b>Assembly Versions: </b>0.1.0.0</blockquote>
+          <hr size="1" />
+        </blockquote>
+        <h3 id="M:Cadenza.Lambda.XA``4(System.Linq.Expressions.Expression{System.Action{``0,``1,``2,``3}})">
+          <a href="javascript:toggle_display('M:Cadenza.Lambda.XA``4(System.Linq.Expressions.Expression{System.Action{``0,``1,``2,``3}}):member')">
+            <span id="M:Cadenza.Lambda.XA``4(System.Linq.Expressions.Expression{System.Action{``0,``1,``2,``3}}):member:toggle">⊟</span> XA&lt;T1,T2,T3,T4&gt; Generic Method</a>
+        </h3>
+        <blockquote id="M:Cadenza.Lambda.XA``4(System.Linq.Expressions.Expression{System.Action{``0,``1,``2,``3}}):member">
+          <p class="Summary">
+            Creates a <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Linq.Expressions.Expression`1">System.Linq.Expressions.Expression&lt;Action&lt;T1, T2, T3, T4&gt;&gt;</a> expression tree.
+            </p>
+          <div class="Signature">public static <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Linq.Expressions.Expression`1">System.Linq.Expressions.Expression&lt;Action&lt;T1, T2, T3, T4&gt;&gt;</a> <b>XA&lt;T1, T2, T3, T4&gt;</b> (<a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Linq.Expressions.Expression`1">System.Linq.Expressions.Expression&lt;Action&lt;T1, T2, T3, T4&gt;&gt;</a> expr)</div>
+          <h4 class="Subsection">
+            <a href="javascript:toggle_display('M:Cadenza.Lambda.XA``4(System.Linq.Expressions.Expression{System.Action{``0,``1,``2,``3}}):Type Parameters')">
+              <span id="M:Cadenza.Lambda.XA``4(System.Linq.Expressions.Expression{System.Action{``0,``1,``2,``3}}):Type Parameters:toggle">⊟</span> Type Parameters</a>
+          </h4>
+          <blockquote class="SubsectionBox" id="M:Cadenza.Lambda.XA``4(System.Linq.Expressions.Expression{System.Action{``0,``1,``2,``3}}):Type Parameters">
+            <dl>
+              <dt>
+                <i>T1</i>
+              </dt>
+              <dd>
+            A <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Linq.Expressions.Expression`1">System.Linq.Expressions.Expression&lt;Action&lt;T1, T2, T3, T4&gt;&gt;</a> parameter type.
+            </dd>
+              <dt>
+                <i>T2</i>
+              </dt>
+              <dd>
+            A <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Linq.Expressions.Expression`1">System.Linq.Expressions.Expression&lt;Action&lt;T1, T2, T3, T4&gt;&gt;</a> parameter type.
+            </dd>
+              <dt>
+                <i>T3</i>
+              </dt>
+              <dd>
+            A <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Linq.Expressions.Expression`1">System.Linq.Expressions.Expression&lt;Action&lt;T1, T2, T3, T4&gt;&gt;</a> parameter type.
+            </dd>
+              <dt>
+                <i>T4</i>
+              </dt>
+              <dd>
+            A <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Linq.Expressions.Expression`1">System.Linq.Expressions.Expression&lt;Action&lt;T1, T2, T3, T4&gt;&gt;</a> parameter type.
+            </dd>
+            </dl>
+          </blockquote>
+          <h4 class="Subsection">
+            <a href="javascript:toggle_display('M:Cadenza.Lambda.XA``4(System.Linq.Expressions.Expression{System.Action{``0,``1,``2,``3}}):Parameters')">
+              <span id="M:Cadenza.Lambda.XA``4(System.Linq.Expressions.Expression{System.Action{``0,``1,``2,``3}}):Parameters:toggle">⊟</span> Parameters</a>
+          </h4>
+          <blockquote class="SubsectionBox" id="M:Cadenza.Lambda.XA``4(System.Linq.Expressions.Expression{System.Action{``0,``1,``2,``3}}):Parameters">
+            <dl>
+              <dt>
+                <i>expr</i>
+              </dt>
+              <dd>
+            The <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Linq.Expressions.Expression`1">System.Linq.Expressions.Expression&lt;Action&lt;T1, T2, T3, T4&gt;&gt;</a> to return.
+            </dd>
+            </dl>
+          </blockquote>
+          <h4 class="Subsection">
+            <a href="javascript:toggle_display('M:Cadenza.Lambda.XA``4(System.Linq.Expressions.Expression{System.Action{``0,``1,``2,``3}}):Returns')">
+              <span id="M:Cadenza.Lambda.XA``4(System.Linq.Expressions.Expression{System.Action{``0,``1,``2,``3}}):Returns:toggle">⊟</span> Returns</a>
+          </h4>
+          <blockquote class="SubsectionBox" id="M:Cadenza.Lambda.XA``4(System.Linq.Expressions.Expression{System.Action{``0,``1,``2,``3}}):Returns">
+            Returns <i>expr</i>.
+            </blockquote>
+          <h4 class="Subsection">
+            <a href="javascript:toggle_display('M:Cadenza.Lambda.XA``4(System.Linq.Expressions.Expression{System.Action{``0,``1,``2,``3}}):Remarks')">
+              <span id="M:Cadenza.Lambda.XA``4(System.Linq.Expressions.Expression{System.Action{``0,``1,``2,``3}}):Remarks:toggle">⊟</span> Remarks</a>
+          </h4>
+          <blockquote class="SubsectionBox" id="M:Cadenza.Lambda.XA``4(System.Linq.Expressions.Expression{System.Action{``0,``1,``2,``3}}):Remarks">
+            <span class="NotEntered">Documentation for this section has not yet been entered.</span>
+          </blockquote>
+          <h4 class="Subsection">
+            <a href="javascript:toggle_display('M:Cadenza.Lambda.XA``4(System.Linq.Expressions.Expression{System.Action{``0,``1,``2,``3}}):Version Information')">
+              <span id="M:Cadenza.Lambda.XA``4(System.Linq.Expressions.Expression{System.Action{``0,``1,``2,``3}}):Version Information:toggle">⊟</span> Requirements</a>
+          </h4>
+          <blockquote class="SubsectionBox" id="M:Cadenza.Lambda.XA``4(System.Linq.Expressions.Expression{System.Action{``0,``1,``2,``3}}):Version Information">
+            <b>Namespace: </b>Cadenza<br /><b>Assembly: </b>Cadenza (in Cadenza.dll)<br /><b>Assembly Versions: </b>0.1.0.0</blockquote>
+          <hr size="1" />
+        </blockquote>
+        <h3 id="M:Cadenza.Lambda.XF``1(System.Linq.Expressions.Expression{System.Func{``0}})">
+          <a href="javascript:toggle_display('M:Cadenza.Lambda.XF``1(System.Linq.Expressions.Expression{System.Func{``0}}):member')">
+            <span id="M:Cadenza.Lambda.XF``1(System.Linq.Expressions.Expression{System.Func{``0}}):member:toggle">⊟</span> XF&lt;TResult&gt; Generic Method</a>
+        </h3>
+        <blockquote id="M:Cadenza.Lambda.XF``1(System.Linq.Expressions.Expression{System.Func{``0}}):member">
+          <p class="Summary">
+            Creates a <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Linq.Expressions.Expression`1">System.Linq.Expressions.Expression&lt;Func&lt;TResult&gt;&gt;</a> expression tree.
+            </p>
+          <div class="Signature">public static <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Linq.Expressions.Expression`1">System.Linq.Expressions.Expression&lt;Func&lt;TResult&gt;&gt;</a> <b>XF&lt;TResult&gt;</b> (<a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Linq.Expressions.Expression`1">System.Linq.Expressions.Expression&lt;Func&lt;TResult&gt;&gt;</a> expr)</div>
+          <h4 class="Subsection">
+            <a href="javascript:toggle_display('M:Cadenza.Lambda.XF``1(System.Linq.Expressions.Expression{System.Func{``0}}):Type Parameters')">
+              <span id="M:Cadenza.Lambda.XF``1(System.Linq.Expressions.Expression{System.Func{``0}}):Type Parameters:toggle">⊟</span> Type Parameters</a>
+          </h4>
+          <blockquote class="SubsectionBox" id="M:Cadenza.Lambda.XF``1(System.Linq.Expressions.Expression{System.Func{``0}}):Type Parameters">
+            <dl>
+              <dt>
+                <i>TResult</i>
+              </dt>
+              <dd>
+            The <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Linq.Expressions.Expression`1">System.Linq.Expressions.Expression&lt;Func&lt;TResult&gt;&gt;</a> return type.
+            </dd>
+            </dl>
+          </blockquote>
+          <h4 class="Subsection">
+            <a href="javascript:toggle_display('M:Cadenza.Lambda.XF``1(System.Linq.Expressions.Expression{System.Func{``0}}):Parameters')">
+              <span id="M:Cadenza.Lambda.XF``1(System.Linq.Expressions.Expression{System.Func{``0}}):Parameters:toggle">⊟</span> Parameters</a>
+          </h4>
+          <blockquote class="SubsectionBox" id="M:Cadenza.Lambda.XF``1(System.Linq.Expressions.Expression{System.Func{``0}}):Parameters">
+            <dl>
+              <dt>
+                <i>expr</i>
+              </dt>
+              <dd>
+            The <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Linq.Expressions.Expression`1">System.Linq.Expressions.Expression&lt;Func&lt;TResult&gt;&gt;</a> to return.
+            </dd>
+            </dl>
+          </blockquote>
+          <h4 class="Subsection">
+            <a href="javascript:toggle_display('M:Cadenza.Lambda.XF``1(System.Linq.Expressions.Expression{System.Func{``0}}):Returns')">
+              <span id="M:Cadenza.Lambda.XF``1(System.Linq.Expressions.Expression{System.Func{``0}}):Returns:toggle">⊟</span> Returns</a>
+          </h4>
+          <blockquote class="SubsectionBox" id="M:Cadenza.Lambda.XF``1(System.Linq.Expressions.Expression{System.Func{``0}}):Returns">
+            Returns <i>expr</i>.
+            </blockquote>
+          <h4 class="Subsection">
+            <a href="javascript:toggle_display('M:Cadenza.Lambda.XF``1(System.Linq.Expressions.Expression{System.Func{``0}}):Remarks')">
+              <span id="M:Cadenza.Lambda.XF``1(System.Linq.Expressions.Expression{System.Func{``0}}):Remarks:toggle">⊟</span> Remarks</a>
+          </h4>
+          <blockquote class="SubsectionBox" id="M:Cadenza.Lambda.XF``1(System.Linq.Expressions.Expression{System.Func{``0}}):Remarks">
+            <span class="NotEntered">Documentation for this section has not yet been entered.</span>
+          </blockquote>
+          <h4 class="Subsection">
+            <a href="javascript:toggle_display('M:Cadenza.Lambda.XF``1(System.Linq.Expressions.Expression{System.Func{``0}}):Version Information')">
+              <span id="M:Cadenza.Lambda.XF``1(System.Linq.Expressions.Expression{System.Func{``0}}):Version Information:toggle">⊟</span> Requirements</a>
+          </h4>
+          <blockquote class="SubsectionBox" id="M:Cadenza.Lambda.XF``1(System.Linq.Expressions.Expression{System.Func{``0}}):Version Information">
+            <b>Namespace: </b>Cadenza<br /><b>Assembly: </b>Cadenza (in Cadenza.dll)<br /><b>Assembly Versions: </b>0.1.0.0</blockquote>
+          <hr size="1" />
+        </blockquote>
+        <h3 id="M:Cadenza.Lambda.XF``2(System.Linq.Expressions.Expression{System.Func{``0,``1}})">
+          <a href="javascript:toggle_display('M:Cadenza.Lambda.XF``2(System.Linq.Expressions.Expression{System.Func{``0,``1}}):member')">
+            <span id="M:Cadenza.Lambda.XF``2(System.Linq.Expressions.Expression{System.Func{``0,``1}}):member:toggle">⊟</span> XF&lt;T,TResult&gt; Generic Method</a>
+        </h3>
+        <blockquote id="M:Cadenza.Lambda.XF``2(System.Linq.Expressions.Expression{System.Func{``0,``1}}):member">
+          <p class="Summary">
+            Creates a <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Linq.Expressions.Expression`1">System.Linq.Expressions.Expression&lt;Func&lt;T, TResult&gt;&gt;</a> expression tree.
+            </p>
+          <div class="Signature">public static <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Linq.Expressions.Expression`1">System.Linq.Expressions.Expression&lt;Func&lt;T, TResult&gt;&gt;</a> <b>XF&lt;T, TResult&gt;</b> (<a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Linq.Expressions.Expression`1">System.Linq.Expressions.Expression&lt;Func&lt;T, TResult&gt;&gt;</a> expr)</div>
+          <h4 class="Subsection">
+            <a href="javascript:toggle_display('M:Cadenza.Lambda.XF``2(System.Linq.Expressions.Expression{System.Func{``0,``1}}):Type Parameters')">
+              <span id="M:Cadenza.Lambda.XF``2(System.Linq.Expressions.Expression{System.Func{``0,``1}}):Type Parameters:toggle">⊟</span> Type Parameters</a>
+          </h4>
+          <blockquote class="SubsectionBox" id="M:Cadenza.Lambda.XF``2(System.Linq.Expressions.Expression{System.Func{``0,``1}}):Type Parameters">
+            <dl>
+              <dt>
+                <i>T</i>
+              </dt>
+              <dd>
+            A <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Linq.Expressions.Expression`1">System.Linq.Expressions.Expression&lt;Func&lt;T, TResult&gt;&gt;</a> parameter type.
+            </dd>
+              <dt>
+                <i>TResult</i>
+              </dt>
+              <dd>
+            A <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Linq.Expressions.Expression`1">System.Linq.Expressions.Expression&lt;Func&lt;T, TResult&gt;&gt;</a> return type.
+            </dd>
+            </dl>
+          </blockquote>
+          <h4 class="Subsection">
+            <a href="javascript:toggle_display('M:Cadenza.Lambda.XF``2(System.Linq.Expressions.Expression{System.Func{``0,``1}}):Parameters')">
+              <span id="M:Cadenza.Lambda.XF``2(System.Linq.Expressions.Expression{System.Func{``0,``1}}):Parameters:toggle">⊟</span> Parameters</a>
+          </h4>
+          <blockquote class="SubsectionBox" id="M:Cadenza.Lambda.XF``2(System.Linq.Expressions.Expression{System.Func{``0,``1}}):Parameters">
+            <dl>
+              <dt>
+                <i>expr</i>
+              </dt>
+              <dd>
+            The <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Linq.Expressions.Expression`1">System.Linq.Expressions.Expression&lt;Func&lt;T, TResult&gt;&gt;</a> to return.
+            </dd>
+            </dl>
+          </blockquote>
+          <h4 class="Subsection">
+            <a href="javascript:toggle_display('M:Cadenza.Lambda.XF``2(System.Linq.Expressions.Expression{System.Func{``0,``1}}):Returns')">
+              <span id="M:Cadenza.Lambda.XF``2(System.Linq.Expressions.Expression{System.Func{``0,``1}}):Returns:toggle">⊟</span> Returns</a>
+          </h4>
+          <blockquote class="SubsectionBox" id="M:Cadenza.Lambda.XF``2(System.Linq.Expressions.Expression{System.Func{``0,``1}}):Returns">
+            Returns <i>expr</i>.
+            </blockquote>
+          <h4 class="Subsection">
+            <a href="javascript:toggle_display('M:Cadenza.Lambda.XF``2(System.Linq.Expressions.Expression{System.Func{``0,``1}}):Remarks')">
+              <span id="M:Cadenza.Lambda.XF``2(System.Linq.Expressions.Expression{System.Func{``0,``1}}):Remarks:toggle">⊟</span> Remarks</a>
+          </h4>
+          <blockquote class="SubsectionBox" id="M:Cadenza.Lambda.XF``2(System.Linq.Expressions.Expression{System.Func{``0,``1}}):Remarks">
+            <span class="NotEntered">Documentation for this section has not yet been entered.</span>
+          </blockquote>
+          <h4 class="Subsection">
+            <a href="javascript:toggle_display('M:Cadenza.Lambda.XF``2(System.Linq.Expressions.Expression{System.Func{``0,``1}}):Version Information')">
+              <span id="M:Cadenza.Lambda.XF``2(System.Linq.Expressions.Expression{System.Func{``0,``1}}):Version Information:toggle">⊟</span> Requirements</a>
+          </h4>
+          <blockquote class="SubsectionBox" id="M:Cadenza.Lambda.XF``2(System.Linq.Expressions.Expression{System.Func{``0,``1}}):Version Information">
+            <b>Namespace: </b>Cadenza<br /><b>Assembly: </b>Cadenza (in Cadenza.dll)<br /><b>Assembly Versions: </b>0.1.0.0</blockquote>
+          <hr size="1" />
+        </blockquote>
+        <h3 id="M:Cadenza.Lambda.XF``3(System.Linq.Expressions.Expression{System.Func{``0,``1,``2}})">
+          <a href="javascript:toggle_display('M:Cadenza.Lambda.XF``3(System.Linq.Expressions.Expression{System.Func{``0,``1,``2}}):member')">
+            <span id="M:Cadenza.Lambda.XF``3(System.Linq.Expressions.Expression{System.Func{``0,``1,``2}}):member:toggle">⊟</span> XF&lt;T1,T2,TResult&gt; Generic Method</a>
+        </h3>
+        <blockquote id="M:Cadenza.Lambda.XF``3(System.Linq.Expressions.Expression{System.Func{``0,``1,``2}}):member">
+          <p class="Summary">
+            Creates a <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Linq.Expressions.Expression`1">System.Linq.Expressions.Expression&lt;Func&lt;T1, T2, TResult&gt;&gt;</a> expression tree.
+            </p>
+          <div class="Signature">public static <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Linq.Expressions.Expression`1">System.Linq.Expressions.Expression&lt;Func&lt;T1, T2, TResult&gt;&gt;</a> <b>XF&lt;T1, T2, TResult&gt;</b> (<a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Linq.Expressions.Expression`1">System.Linq.Expressions.Expression&lt;Func&lt;T1, T2, TResult&gt;&gt;</a> expr)</div>
+          <h4 class="Subsection">
+            <a href="javascript:toggle_display('M:Cadenza.Lambda.XF``3(System.Linq.Expressions.Expression{System.Func{``0,``1,``2}}):Type Parameters')">
+              <span id="M:Cadenza.Lambda.XF``3(System.Linq.Expressions.Expression{System.Func{``0,``1,``2}}):Type Parameters:toggle">⊟</span> Type Parameters</a>
+          </h4>
+          <blockquote class="SubsectionBox" id="M:Cadenza.Lambda.XF``3(System.Linq.Expressions.Expression{System.Func{``0,``1,``2}}):Type Parameters">
+            <dl>
+              <dt>
+                <i>T1</i>
+              </dt>
+              <dd>
+            A <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Linq.Expressions.Expression`1">System.Linq.Expressions.Expression&lt;Func&lt;T1, T2, TResult&gt;&gt;</a> parameter type.
+            </dd>
+              <dt>
+                <i>T2</i>
+              </dt>
+              <dd>
+            A <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Linq.Expressions.Expression`1">System.Linq.Expressions.Expression&lt;Func&lt;T1, T2, TResult&gt;&gt;</a> parameter type.
+            </dd>
+              <dt>
+                <i>TResult</i>
+              </dt>
+              <dd>
+            A <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Linq.Expressions.Expression`1">System.Linq.Expressions.Expression&lt;Func&lt;T1, T2, TResult&gt;&gt;</a> return type.
+            </dd>
+            </dl>
+          </blockquote>
+          <h4 class="Subsection">
+            <a href="javascript:toggle_display('M:Cadenza.Lambda.XF``3(System.Linq.Expressions.Expression{System.Func{``0,``1,``2}}):Parameters')">
+              <span id="M:Cadenza.Lambda.XF``3(System.Linq.Expressions.Expression{System.Func{``0,``1,``2}}):Parameters:toggle">⊟</span> Parameters</a>
+          </h4>
+          <blockquote class="SubsectionBox" id="M:Cadenza.Lambda.XF``3(System.Linq.Expressions.Expression{System.Func{``0,``1,``2}}):Parameters">
+            <dl>
+              <dt>
+                <i>expr</i>
+              </dt>
+              <dd>
+            The <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Linq.Expressions.Expression`1">System.Linq.Expressions.Expression&lt;Func&lt;T1, T2, TResult&gt;&gt;</a> to return.
+            </dd>
+            </dl>
+          </blockquote>
+          <h4 class="Subsection">
+            <a href="javascript:toggle_display('M:Cadenza.Lambda.XF``3(System.Linq.Expressions.Expression{System.Func{``0,``1,``2}}):Returns')">
+              <span id="M:Cadenza.Lambda.XF``3(System.Linq.Expressions.Expression{System.Func{``0,``1,``2}}):Returns:toggle">⊟</span> Returns</a>
+          </h4>
+          <blockquote class="SubsectionBox" id="M:Cadenza.Lambda.XF``3(System.Linq.Expressions.Expression{System.Func{``0,``1,``2}}):Returns">
+            Returns <i>expr</i>.
+            </blockquote>
+          <h4 class="Subsection">
+            <a href="javascript:toggle_display('M:Cadenza.Lambda.XF``3(System.Linq.Expressions.Expression{System.Func{``0,``1,``2}}):Remarks')">
+              <span id="M:Cadenza.Lambda.XF``3(System.Linq.Expressions.Expression{System.Func{``0,``1,``2}}):Remarks:toggle">⊟</span> Remarks</a>
+          </h4>
+          <blockquote class="SubsectionBox" id="M:Cadenza.Lambda.XF``3(System.Linq.Expressions.Expression{System.Func{``0,``1,``2}}):Remarks">
+            <span class="NotEntered">Documentation for this section has not yet been entered.</span>
+          </blockquote>
+          <h4 class="Subsection">
+            <a href="javascript:toggle_display('M:Cadenza.Lambda.XF``3(System.Linq.Expressions.Expression{System.Func{``0,``1,``2}}):Version Information')">
+              <span id="M:Cadenza.Lambda.XF``3(System.Linq.Expressions.Expression{System.Func{``0,``1,``2}}):Version Information:toggle">⊟</span> Requirements</a>
+          </h4>
+          <blockquote class="SubsectionBox" id="M:Cadenza.Lambda.XF``3(System.Linq.Expressions.Expression{System.Func{``0,``1,``2}}):Version Information">
+            <b>Namespace: </b>Cadenza<br /><b>Assembly: </b>Cadenza (in Cadenza.dll)<br /><b>Assembly Versions: </b>0.1.0.0</blockquote>
+          <hr size="1" />
+        </blockquote>
+        <h3 id="M:Cadenza.Lambda.XF``4(System.Linq.Expressions.Expression{System.Func{``0,``1,``2,``3}})">
+          <a href="javascript:toggle_display('M:Cadenza.Lambda.XF``4(System.Linq.Expressions.Expression{System.Func{``0,``1,``2,``3}}):member')">
+            <span id="M:Cadenza.Lambda.XF``4(System.Linq.Expressions.Expression{System.Func{``0,``1,``2,``3}}):member:toggle">⊟</span> XF&lt;T1,T2,T3,TResult&gt; Generic Method</a>
+        </h3>
+        <blockquote id="M:Cadenza.Lambda.XF``4(System.Linq.Expressions.Expression{System.Func{``0,``1,``2,``3}}):member">
+          <p class="Summary">
+            Creates a <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Linq.Expressions.Expression`1">System.Linq.Expressions.Expression&lt;Func&lt;T1, T2, T3, TResult&gt;&gt;</a> expression tree.
+            </p>
+          <div class="Signature">public static <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Linq.Expressions.Expression`1">System.Linq.Expressions.Expression&lt;Func&lt;T1, T2, T3, TResult&gt;&gt;</a> <b>XF&lt;T1, T2, T3, TResult&gt;</b> (<a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Linq.Expressions.Expression`1">System.Linq.Expressions.Expression&lt;Func&lt;T1, T2, T3, TResult&gt;&gt;</a> expr)</div>
+          <h4 class="Subsection">
+            <a href="javascript:toggle_display('M:Cadenza.Lambda.XF``4(System.Linq.Expressions.Expression{System.Func{``0,``1,``2,``3}}):Type Parameters')">
+              <span id="M:Cadenza.Lambda.XF``4(System.Linq.Expressions.Expression{System.Func{``0,``1,``2,``3}}):Type Parameters:toggle">⊟</span> Type Parameters</a>
+          </h4>
+          <blockquote class="SubsectionBox" id="M:Cadenza.Lambda.XF``4(System.Linq.Expressions.Expression{System.Func{``0,``1,``2,``3}}):Type Parameters">
+            <dl>
+              <dt>
+                <i>T1</i>
+              </dt>
+              <dd>
+            A <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Linq.Expressions.Expression`1">System.Linq.Expressions.Expression&lt;Func&lt;T1, T2, T3, TResult&gt;&gt;</a> parameter type.
+            </dd>
+              <dt>
+                <i>T2</i>
+              </dt>
+              <dd>
+            A <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Linq.Expressions.Expression`1">System.Linq.Expressions.Expression&lt;Func&lt;T1, T2, T3, TResult&gt;&gt;</a> parameter type.
+            </dd>
+              <dt>
+                <i>T3</i>
+              </dt>
+              <dd>
+            A <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Linq.Expressions.Expression`1">System.Linq.Expressions.Expression&lt;Func&lt;T1, T2, T3, TResult&gt;&gt;</a> parameter type.
+            </dd>
+              <dt>
+                <i>TResult</i>
+              </dt>
+              <dd>
+            A <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Linq.Expressions.Expression`1">System.Linq.Expressions.Expression&lt;Func&lt;T1, T2, T3, TResult&gt;&gt;</a> return type.
+            </dd>
+            </dl>
+          </blockquote>
+          <h4 class="Subsection">
+            <a href="javascript:toggle_display('M:Cadenza.Lambda.XF``4(System.Linq.Expressions.Expression{System.Func{``0,``1,``2,``3}}):Parameters')">
+              <span id="M:Cadenza.Lambda.XF``4(System.Linq.Expressions.Expression{System.Func{``0,``1,``2,``3}}):Parameters:toggle">⊟</span> Parameters</a>
+          </h4>
+          <blockquote class="SubsectionBox" id="M:Cadenza.Lambda.XF``4(System.Linq.Expressions.Expression{System.Func{``0,``1,``2,``3}}):Parameters">
+            <dl>
+              <dt>
+                <i>expr</i>
+              </dt>
+              <dd>
+            The <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Linq.Expressions.Expression`1">System.Linq.Expressions.Expression&lt;Func&lt;T1, T2, T3, TResult&gt;&gt;</a> to return.
+            </dd>
+            </dl>
+          </blockquote>
+          <h4 class="Subsection">
+            <a href="javascript:toggle_display('M:Cadenza.Lambda.XF``4(System.Linq.Expressions.Expression{System.Func{``0,``1,``2,``3}}):Returns')">
+              <span id="M:Cadenza.Lambda.XF``4(System.Linq.Expressions.Expression{System.Func{``0,``1,``2,``3}}):Returns:toggle">⊟</span> Returns</a>
+          </h4>
+          <blockquote class="SubsectionBox" id="M:Cadenza.Lambda.XF``4(System.Linq.Expressions.Expression{System.Func{``0,``1,``2,``3}}):Returns">
+            Returns <i>expr</i>.
+            </blockquote>
+          <h4 class="Subsection">
+            <a href="javascript:toggle_display('M:Cadenza.Lambda.XF``4(System.Linq.Expressions.Expression{System.Func{``0,``1,``2,``3}}):Remarks')">
+              <span id="M:Cadenza.Lambda.XF``4(System.Linq.Expressions.Expression{System.Func{``0,``1,``2,``3}}):Remarks:toggle">⊟</span> Remarks</a>
+          </h4>
+          <blockquote class="SubsectionBox" id="M:Cadenza.Lambda.XF``4(System.Linq.Expressions.Expression{System.Func{``0,``1,``2,``3}}):Remarks">
+            <span class="NotEntered">Documentation for this section has not yet been entered.</span>
+          </blockquote>
+          <h4 class="Subsection">
+            <a href="javascript:toggle_display('M:Cadenza.Lambda.XF``4(System.Linq.Expressions.Expression{System.Func{``0,``1,``2,``3}}):Version Information')">
+              <span id="M:Cadenza.Lambda.XF``4(System.Linq.Expressions.Expression{System.Func{``0,``1,``2,``3}}):Version Information:toggle">⊟</span> Requirements</a>
+          </h4>
+          <blockquote class="SubsectionBox" id="M:Cadenza.Lambda.XF``4(System.Linq.Expressions.Expression{System.Func{``0,``1,``2,``3}}):Version Information">
+            <b>Namespace: </b>Cadenza<br /><b>Assembly: </b>Cadenza (in Cadenza.dll)<br /><b>Assembly Versions: </b>0.1.0.0</blockquote>
+          <hr size="1" />
+        </blockquote>
+        <h3 id="M:Cadenza.Lambda.XF``5(System.Linq.Expressions.Expression{System.Func{``0,``1,``2,``3,``4}})">
+          <a href="javascript:toggle_display('M:Cadenza.Lambda.XF``5(System.Linq.Expressions.Expression{System.Func{``0,``1,``2,``3,``4}}):member')">
+            <span id="M:Cadenza.Lambda.XF``5(System.Linq.Expressions.Expression{System.Func{``0,``1,``2,``3,``4}}):member:toggle">⊟</span> XF&lt;T1,T2,T3,T4,TResult&gt; Generic Method</a>
+        </h3>
+        <blockquote id="M:Cadenza.Lambda.XF``5(System.Linq.Expressions.Expression{System.Func{``0,``1,``2,``3,``4}}):member">
+          <p class="Summary">
+            Creates a <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Linq.Expressions.Expression`1">System.Linq.Expressions.Expression&lt;Func&lt;T1, T2, T3, T4, TResult&gt;&gt;</a> expression tree.
+            </p>
+          <div class="Signature">public static <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Linq.Expressions.Expression`1">System.Linq.Expressions.Expression&lt;Func&lt;T1, T2, T3, T4, TResult&gt;&gt;</a> <b>XF&lt;T1, T2, T3, T4, TResult&gt;</b> (<a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Linq.Expressions.Expression`1">System.Linq.Expressions.Expression&lt;Func&lt;T1, T2, T3, T4, TResult&gt;&gt;</a> expr)</div>
+          <h4 class="Subsection">
+            <a href="javascript:toggle_display('M:Cadenza.Lambda.XF``5(System.Linq.Expressions.Expression{System.Func{``0,``1,``2,``3,``4}}):Type Parameters')">
+              <span id="M:Cadenza.Lambda.XF``5(System.Linq.Expressions.Expression{System.Func{``0,``1,``2,``3,``4}}):Type Parameters:toggle">⊟</span> Type Parameters</a>
+          </h4>
+          <blockquote class="SubsectionBox" id="M:Cadenza.Lambda.XF``5(System.Linq.Expressions.Expression{System.Func{``0,``1,``2,``3,``4}}):Type Parameters">
+            <dl>
+              <dt>
+                <i>T1</i>
+              </dt>
+              <dd>
+            A <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Linq.Expressions.Expression`1">System.Linq.Expressions.Expression&lt;Func&lt;T1, T2, T3, T4, TResult&gt;&gt;</a> parameter type.
+            </dd>
+              <dt>
+                <i>T2</i>
+              </dt>
+              <dd>
+            A <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Linq.Expressions.Expression`1">System.Linq.Expressions.Expression&lt;Func&lt;T1, T2, T3, T4, TResult&gt;&gt;</a> parameter type.
+            </dd>
+              <dt>
+                <i>T3</i>
+              </dt>
+              <dd>
+            A <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Linq.Expressions.Expression`1">System.Linq.Expressions.Expression&lt;Func&lt;T1, T2, T3, T4, TResult&gt;&gt;</a> parameter type.
+            </dd>
+              <dt>
+                <i>T4</i>
+              </dt>
+              <dd>
+            A <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Linq.Expressions.Expression`1">System.Linq.Expressions.Expression&lt;Func&lt;T1, T2, T3, T4, TResult&gt;&gt;</a> parameter type.
+            </dd>
+              <dt>
+                <i>TResult</i>
+              </dt>
+              <dd>
+            A <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Linq.Expressions.Expression`1">System.Linq.Expressions.Expression&lt;Func&lt;T1, T2, T3, T4, TResult&gt;&gt;</a> return type.
+            </dd>
+            </dl>
+          </blockquote>
+          <h4 class="Subsection">
+            <a href="javascript:toggle_display('M:Cadenza.Lambda.XF``5(System.Linq.Expressions.Expression{System.Func{``0,``1,``2,``3,``4}}):Parameters')">
+              <span id="M:Cadenza.Lambda.XF``5(System.Linq.Expressions.Expression{System.Func{``0,``1,``2,``3,``4}}):Parameters:toggle">⊟</span> Parameters</a>
+          </h4>
+          <blockquote class="SubsectionBox" id="M:Cadenza.Lambda.XF``5(System.Linq.Expressions.Expression{System.Func{``0,``1,``2,``3,``4}}):Parameters">
+            <dl>
+              <dt>
+                <i>expr</i>
+              </dt>
+              <dd>
+            The <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Linq.Expressions.Expression`1">System.Linq.Expressions.Expression&lt;Func&lt;T1, T2, T3, T4, TResult&gt;&gt;</a> to return.
+            </dd>
+            </dl>
+          </blockquote>
+          <h4 class="Subsection">
+            <a href="javascript:toggle_display('M:Cadenza.Lambda.XF``5(System.Linq.Expressions.Expression{System.Func{``0,``1,``2,``3,``4}}):Returns')">
+              <span id="M:Cadenza.Lambda.XF``5(System.Linq.Expressions.Expression{System.Func{``0,``1,``2,``3,``4}}):Returns:toggle">⊟</span> Returns</a>
+          </h4>
+          <blockquote class="SubsectionBox" id="M:Cadenza.Lambda.XF``5(System.Linq.Expressions.Expression{System.Func{``0,``1,``2,``3,``4}}):Returns">
+            Returns <i>expr</i>.
+            </blockquote>
+          <h4 class="Subsection">
+            <a href="javascript:toggle_display('M:Cadenza.Lambda.XF``5(System.Linq.Expressions.Expression{System.Func{``0,``1,``2,``3,``4}}):Remarks')">
+              <span id="M:Cadenza.Lambda.XF``5(System.Linq.Expressions.Expression{System.Func{``0,``1,``2,``3,``4}}):Remarks:toggle">⊟</span> Remarks</a>
+          </h4>
+          <blockquote class="SubsectionBox" id="M:Cadenza.Lambda.XF``5(System.Linq.Expressions.Expression{System.Func{``0,``1,``2,``3,``4}}):Remarks">
+            <span class="NotEntered">Documentation for this section has not yet been entered.</span>
+          </blockquote>
+          <h4 class="Subsection">
+            <a href="javascript:toggle_display('M:Cadenza.Lambda.XF``5(System.Linq.Expressions.Expression{System.Func{``0,``1,``2,``3,``4}}):Version Information')">
+              <span id="M:Cadenza.Lambda.XF``5(System.Linq.Expressions.Expression{System.Func{``0,``1,``2,``3,``4}}):Version Information:toggle">⊟</span> Requirements</a>
+          </h4>
+          <blockquote class="SubsectionBox" id="M:Cadenza.Lambda.XF``5(System.Linq.Expressions.Expression{System.Func{``0,``1,``2,``3,``4}}):Version Information">
+            <b>Namespace: </b>Cadenza<br /><b>Assembly: </b>Cadenza (in Cadenza.dll)<br /><b>Assembly Versions: </b>0.1.0.0</blockquote>
+          <hr size="1" />
+        </blockquote>
+      </blockquote>
+    </div>
+    <hr size="1" />
+    <div class="Copyright">
+    </div>
+  </body>
+</html>

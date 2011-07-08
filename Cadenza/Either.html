@@ -1,0 +1,621 @@
+<html>
+  <head>
+    <title>Cadenza.Either</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <style>
+      a { text-decoration: none }
+
+      div.SideBar {
+        padding-left: 1em;
+        padding-right: 1em;
+        right: 0;
+        float: right;
+        border: thin solid black;
+        background-color: #f2f2f2;
+      }
+    
+      .CollectionTitle { font-weight: bold }
+      .PageTitle { font-size: 150%; font-weight: bold }
+
+      .Summary { }
+      .Signature { }          
+      .Remarks { }
+      .Members { }
+      .Copyright { }
+      
+      .Section { font-size: 125%; font-weight: bold }
+      p.Summary {
+        margin-left: 1em;
+      }
+      .SectionBox { margin-left: 2em }
+      .NamespaceName { font-size: 105%; font-weight: bold }
+      .NamespaceSumary { }
+      .MemberName { font-size: 115%; font-weight: bold; margin-top: 1em }
+      .Subsection { font-size: 105%; font-weight: bold }
+      .SubsectionBox { margin-left: 2em; margin-bottom: 1em }
+
+      .CodeExampleTable { background-color: #f5f5dd; border: thin solid black; padding: .25em; }
+      
+      .TypesListing {
+        border-collapse: collapse;
+      }
+
+      td {
+        vertical-align: top;
+      }
+      th {
+        text-align: left;
+      }
+
+      .TypesListing td { 
+        margin: 0px;  
+        padding: .25em;
+        border: solid gray 1px;
+      }
+
+      .TypesListing th { 
+        margin: 0px;  
+        padding: .25em;
+        background-color: #f2f2f2;
+        border: solid gray 1px;
+      }
+
+      div.Footer {
+        border-top: 1px solid gray;
+        margin-top: 1.5em;
+        padding-top: 0.6em;
+        text-align: center;
+        color: gray;
+      }
+
+      span.NotEntered /* Documentation for this section has not yet been entered */ {
+        font-style: italic;
+        color: red;	
+      }
+
+      div.Header {
+        background: #B0C4DE;
+        border: double;
+        border-color: white;
+        border-width: 7px;
+        padding: 0.5em;
+      }
+
+      div.Header * {
+        font-size: smaller;
+      }
+
+      div.Note {
+      }
+
+      i.ParamRef {
+      }
+
+      i.subtitle {
+      }
+
+      ul.TypeMembersIndex {
+        text-align: left;
+        background: #F8F8F8;
+      }
+
+      ul.TypeMembersIndex li {
+        display: inline;
+        margin:  0.5em;
+      }
+
+      table.HeaderTable {
+      }
+
+      table.SignatureTable {
+      }
+
+      table.Documentation, table.Enumeration, table.TypeDocumentation {
+        border-collapse: collapse;
+        width: 100%;
+      }
+
+      table.Documentation tr th, table.TypeMembers tr th, table.Enumeration tr th, table.TypeDocumentation tr th {
+        background: whitesmoke;
+        padding: 0.8em;
+        border: 1px solid gray;
+        text-align: left;
+        vertical-align: bottom;
+      }
+
+      table.Documentation tr td, table.TypeMembers tr td, table.Enumeration tr td, table.TypeDocumentation tr td {
+        padding: 0.5em;
+        border: 1px solid gray;
+        text-align: left;
+        vertical-align: top;
+      }
+
+      table.TypeMembers {
+        border: 1px solid #C0C0C0;
+        width: 100%;
+      }
+
+      table.TypeMembers tr td {
+        background: #F8F8F8;
+        border: white;
+      }
+
+      table.Documentation {
+      }
+
+      table.TypeMembers {
+      }
+
+      div.CodeExample {
+        width: 100%;
+        border: 1px solid #DDDDDD;
+        background-color: #F8F8F8;
+      }
+
+      div.CodeExample p {
+        margin: 0.5em;
+        border-bottom: 1px solid #DDDDDD;
+      }
+
+      div.CodeExample div {
+        margin: 0.5em;
+      }
+
+      h4 {
+        margin-bottom: 0;
+      }
+
+      div.Signature {
+        border: 1px solid #C0C0C0;
+        background: #F2F2F2;
+        padding: 1em;
+      }
+    </style>
+    <script type="text/JavaScript">
+      function toggle_display (block) {
+        var w = document.getElementById (block);
+        var t = document.getElementById (block + ":toggle");
+        if (w.style.display == "none") {
+          w.style.display = "block";
+          t.innerHTML = "⊟";
+        } else {
+          w.style.display = "none";
+          t.innerHTML = "⊞";
+        }
+      }
+    </script>
+  </head>
+  <body>
+    <div class="CollectionTitle">
+      <a href="../index.html">Cadenza</a> : <a href="index.html">Cadenza Namespace</a></div>
+    <div class="SideBar">
+      <p>
+        <a href="#T:Cadenza.Either">Overview</a>
+      </p>
+      <p>
+        <a href="#T:Cadenza.Either:Signature">Signature</a>
+      </p>
+      <p>
+        <a href="#T:Cadenza.Either:Docs">Remarks</a>
+      </p>
+      <p>
+        <a href="#Members">Members</a>
+      </p>
+      <p>
+        <a href="#T:Cadenza.Either:Members">Member Details</a>
+      </p>
+    </div>
+    <h1 class="PageTitle" id="T:Cadenza.Either">Either  Class</h1>
+    <p class="Summary" id="T:Cadenza.Either:Summary">
+      Provides static utility methods to create
+      <a href="../Cadenza/Either`2.html">Cadenza.Either&lt;TValue, Exception&gt;</a> instances.
+    </p>
+    <div id="T:Cadenza.Either:Signature">
+      <div class="Signature">public static class  <b>Either</b></div>
+    </div>
+    <div class="Remarks" id="T:Cadenza.Either:Docs">
+      <h4 class="Subsection">
+        <a href="javascript:toggle_display('T:Cadenza.Either:Docs:Thread Safety')">
+          <span id="T:Cadenza.Either:Docs:Thread Safety:toggle">⊟</span> Thread Safety</a>
+      </h4>
+      <blockquote class="SubsectionBox" id="T:Cadenza.Either:Docs:Thread Safety">
+    This type is thread safe.
+  </blockquote>
+      <h4 class="Subsection">
+        <a href="javascript:toggle_display('T:Cadenza.Either:Docs:Remarks')">
+          <span id="T:Cadenza.Either:Docs:Remarks:toggle">⊟</span> Remarks</a>
+      </h4>
+      <blockquote class="SubsectionBox" id="T:Cadenza.Either:Docs:Remarks">
+      Use the <a href="../Cadenza/Either.html#M:Cadenza.Either.TryParse">Either.TryParse</a> methods if it is
+      necessary to know why the value couldn't be parsed.  Otherwise, use the
+      <a href="../Cadenza/Maybe.html#M:Cadenza.Maybe.TryParse">Maybe.TryParse</a> methods.
+    </blockquote>
+      <h4 class="Subsection">
+        <a href="javascript:toggle_display('T:Cadenza.Either:Docs:Version Information')">
+          <span id="T:Cadenza.Either:Docs:Version Information:toggle">⊟</span> Requirements</a>
+      </h4>
+      <blockquote class="SubsectionBox" id="T:Cadenza.Either:Docs:Version Information">
+        <b>Namespace: </b>Cadenza<br /><b>Assembly: </b>Cadenza (in Cadenza.dll)<br /><b>Assembly Versions: </b>0.1.0.0</blockquote>
+      <h2 class="Section" id="Members">
+        <a href="javascript:toggle_display('_Members')">
+          <span id="_Members:toggle">⊟</span> Members</a>
+      </h2>
+      <blockquote class="SectionBox" id="_Members">
+        <p>
+								See Also: Inherited members from
+								<a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Object">object</a>.
+							</p>
+        <h3>
+          <a href="javascript:toggle_display('Public Methods')">
+            <span id="Public Methods:toggle">⊟</span> Public Methods</a>
+        </h3>
+        <blockquote id="Public Methods">
+          <div class="SubsectionBox">
+            <table class="TypeMembers">
+              <tr valign="top">
+                <td>
+                  <div>static </div>
+                </td>
+                <td colspan="2">
+                  <b>
+                    <a href="#M:Cadenza.Either.TryConvert``1(System.Object)">TryConvert&lt;TResult&gt;</a>
+                  </b>(<a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Object">object</a>)<nobr> : <a href="../Cadenza/Either`2.html">Either&lt;TResult, Exception&gt;</a></nobr><blockquote><span class="NotEntered">Documentation for this section has not yet been entered.</span></blockquote></td>
+              </tr>
+              <tr valign="top">
+                <td>
+                  <div>static </div>
+                </td>
+                <td colspan="2">
+                  <b>
+                    <a href="#M:Cadenza.Either.TryConvert``2(``0)">TryConvert&lt;TSource,TResult&gt;</a>
+                  </b>(<i title="&#xA;          The type to convert from.&#xA;        ">TSource</i>)<nobr> : <a href="../Cadenza/Either`2.html">Either&lt;TResult, Exception&gt;</a></nobr><blockquote>
+          Attempt to convert the value within a <i>TSource</i>
+          into an instance of type <i>TResult</i>.
+        </blockquote></td>
+              </tr>
+              <tr valign="top">
+                <td>
+                  <div>static </div>
+                </td>
+                <td colspan="2">
+                  <b>
+                    <a href="#M:Cadenza.Either.TryParse``1(System.String)">TryParse&lt;T&gt;</a>
+                  </b>(<a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.String">string</a>)<nobr> : <a href="../Cadenza/Either`2.html">Either&lt;T, Exception&gt;</a></nobr><blockquote>
+          Attempt to convert the value within a <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.String">string</a>
+          into an instance of type <i>T</i>.
+        </blockquote></td>
+              </tr>
+            </table>
+          </div>
+        </blockquote>
+      </blockquote>
+    </div>
+    <div class="Members" id="T:Cadenza.Either:Members">
+      <h2 class="Section" id="MemberDetails">
+        <a href="javascript:toggle_display('_MemberDetails')">
+          <span id="_MemberDetails:toggle">⊟</span> Member Details</a>
+      </h2>
+      <blockquote class="SectionBox" id="_MemberDetails">
+        <h3 id="M:Cadenza.Either.TryConvert``1(System.Object)">
+          <a href="javascript:toggle_display('M:Cadenza.Either.TryConvert``1(System.Object):member')">
+            <span id="M:Cadenza.Either.TryConvert``1(System.Object):member:toggle">⊟</span> TryConvert&lt;TResult&gt; Generic Method</a>
+        </h3>
+        <blockquote id="M:Cadenza.Either.TryConvert``1(System.Object):member">
+          <p class="Summary">
+            <span class="NotEntered">Documentation for this section has not yet been entered.</span>
+          </p>
+          <div class="Signature">public static <a href="../Cadenza/Either`2.html">Either&lt;TResult, Exception&gt;</a> <b>TryConvert&lt;TResult&gt;</b> (<a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Object">object</a> value)</div>
+          <h4 class="Subsection">
+            <a href="javascript:toggle_display('M:Cadenza.Either.TryConvert``1(System.Object):Type Parameters')">
+              <span id="M:Cadenza.Either.TryConvert``1(System.Object):Type Parameters:toggle">⊟</span> Type Parameters</a>
+          </h4>
+          <blockquote class="SubsectionBox" id="M:Cadenza.Either.TryConvert``1(System.Object):Type Parameters">
+            <dl>
+              <dt>
+                <i>TResult</i>
+              </dt>
+              <dd>
+                <span class="NotEntered">Documentation for this section has not yet been entered.</span>
+              </dd>
+            </dl>
+          </blockquote>
+          <h4 class="Subsection">
+            <a href="javascript:toggle_display('M:Cadenza.Either.TryConvert``1(System.Object):Parameters')">
+              <span id="M:Cadenza.Either.TryConvert``1(System.Object):Parameters:toggle">⊟</span> Parameters</a>
+          </h4>
+          <blockquote class="SubsectionBox" id="M:Cadenza.Either.TryConvert``1(System.Object):Parameters">
+            <dl>
+              <dt>
+                <i>value</i>
+              </dt>
+              <dd>
+                <span class="NotEntered">Documentation for this section has not yet been entered.</span>
+              </dd>
+            </dl>
+          </blockquote>
+          <h4 class="Subsection">
+            <a href="javascript:toggle_display('M:Cadenza.Either.TryConvert``1(System.Object):Returns')">
+              <span id="M:Cadenza.Either.TryConvert``1(System.Object):Returns:toggle">⊟</span> Returns</a>
+          </h4>
+          <blockquote class="SubsectionBox" id="M:Cadenza.Either.TryConvert``1(System.Object):Returns">
+            <span class="NotEntered">Documentation for this section has not yet been entered.</span>
+          </blockquote>
+          <h4 class="Subsection">
+            <a href="javascript:toggle_display('M:Cadenza.Either.TryConvert``1(System.Object):Exceptions')">
+              <span id="M:Cadenza.Either.TryConvert``1(System.Object):Exceptions:toggle">⊟</span> Exceptions</a>
+          </h4>
+          <blockquote class="SubsectionBox" id="M:Cadenza.Either.TryConvert``1(System.Object):Exceptions">
+            <table class="TypeDocumentation">
+              <tr>
+                <th>Type</th>
+                <th>Reason</th>
+              </tr>
+              <tr valign="top">
+                <td>
+                  <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.ArgumentNullException">ArgumentNullException</a>
+                </td>
+                <td>
+                  <span class="NotEntered">Documentation for this section has not yet been entered.</span>
+                </td>
+              </tr>
+            </table>
+          </blockquote>
+          <h4 class="Subsection">
+            <a href="javascript:toggle_display('M:Cadenza.Either.TryConvert``1(System.Object):Remarks')">
+              <span id="M:Cadenza.Either.TryConvert``1(System.Object):Remarks:toggle">⊟</span> Remarks</a>
+          </h4>
+          <blockquote class="SubsectionBox" id="M:Cadenza.Either.TryConvert``1(System.Object):Remarks">
+            <span class="NotEntered">Documentation for this section has not yet been entered.</span>
+          </blockquote>
+          <h4 class="Subsection">
+            <a href="javascript:toggle_display('M:Cadenza.Either.TryConvert``1(System.Object):Version Information')">
+              <span id="M:Cadenza.Either.TryConvert``1(System.Object):Version Information:toggle">⊟</span> Requirements</a>
+          </h4>
+          <blockquote class="SubsectionBox" id="M:Cadenza.Either.TryConvert``1(System.Object):Version Information">
+            <b>Namespace: </b>Cadenza<br /><b>Assembly: </b>Cadenza (in Cadenza.dll)<br /><b>Assembly Versions: </b>0.1.0.0</blockquote>
+          <hr size="1" />
+        </blockquote>
+        <h3 id="M:Cadenza.Either.TryConvert``2(``0)">
+          <a href="javascript:toggle_display('M:Cadenza.Either.TryConvert``2(``0):member')">
+            <span id="M:Cadenza.Either.TryConvert``2(``0):member:toggle">⊟</span> TryConvert&lt;TSource,TResult&gt; Generic Method</a>
+        </h3>
+        <blockquote id="M:Cadenza.Either.TryConvert``2(``0):member">
+          <p class="Summary">
+          Attempt to convert the value within a <i>TSource</i>
+          into an instance of type <i>TResult</i>.
+        </p>
+          <div class="Signature">public static <a href="../Cadenza/Either`2.html">Either&lt;TResult, Exception&gt;</a> <b>TryConvert&lt;TSource, TResult&gt;</b> (<i title="&#xA;          The type to convert from.&#xA;        ">TSource</i> value)</div>
+          <h4 class="Subsection">
+            <a href="javascript:toggle_display('M:Cadenza.Either.TryConvert``2(``0):See Also')">
+              <span id="M:Cadenza.Either.TryConvert``2(``0):See Also:toggle">⊟</span> See Also</a>
+          </h4>
+          <blockquote class="SubsectionBox" id="M:Cadenza.Either.TryConvert``2(``0):See Also">
+            <div>
+              <a href="http://www.go-mono.com/docs/monodoc.ashx?link=M:System.Convert.ChangeType(System.Object,System.Type)">Convert.ChangeType(object, Type)</a>
+            </div>
+            <div>
+              <a href="http://www.go-mono.com/docs/monodoc.ashx?link=M:System.ComponentModel.TypeConverter.ConvertFrom(System.Object)">System.ComponentModel.TypeConverter.ConvertFrom(object)</a>
+            </div>
+            <div>
+              <a href="http://www.go-mono.com/docs/monodoc.ashx?link=M:System.ComponentModel.TypeConverter.ConvertTo(System.Object,System.Type)">System.ComponentModel.TypeConverter.ConvertTo(object, Type)</a>
+            </div>
+            <div>
+              <a href="http://www.go-mono.com/docs/monodoc.ashx?link=M:System.ComponentModel.TypeDescriptor.GetConverter(System.Type)">System.ComponentModel.TypeDescriptor.GetConverter(Type)</a>
+            </div>
+          </blockquote>
+          <h4 class="Subsection">
+            <a href="javascript:toggle_display('M:Cadenza.Either.TryConvert``2(``0):Type Parameters')">
+              <span id="M:Cadenza.Either.TryConvert``2(``0):Type Parameters:toggle">⊟</span> Type Parameters</a>
+          </h4>
+          <blockquote class="SubsectionBox" id="M:Cadenza.Either.TryConvert``2(``0):Type Parameters">
+            <dl>
+              <dt>
+                <i>TSource</i>
+              </dt>
+              <dd>
+          The type to convert from.
+        </dd>
+              <dt>
+                <i>TResult</i>
+              </dt>
+              <dd>
+          The type to convert to.
+        </dd>
+            </dl>
+          </blockquote>
+          <h4 class="Subsection">
+            <a href="javascript:toggle_display('M:Cadenza.Either.TryConvert``2(``0):Parameters')">
+              <span id="M:Cadenza.Either.TryConvert``2(``0):Parameters:toggle">⊟</span> Parameters</a>
+          </h4>
+          <blockquote class="SubsectionBox" id="M:Cadenza.Either.TryConvert``2(``0):Parameters">
+            <dl>
+              <dt>
+                <i>value</i>
+              </dt>
+              <dd>
+          An instance of type <i>TSource</i> containing the
+          value to convert into a <i>TResult</i> instance.
+        </dd>
+            </dl>
+          </blockquote>
+          <h4 class="Subsection">
+            <a href="javascript:toggle_display('M:Cadenza.Either.TryConvert``2(``0):Returns')">
+              <span id="M:Cadenza.Either.TryConvert``2(``0):Returns:toggle">⊟</span> Returns</a>
+          </h4>
+          <blockquote class="SubsectionBox" id="M:Cadenza.Either.TryConvert``2(``0):Returns">
+          A <a href="../Cadenza/Either`2.html">Cadenza.Either&lt;``1, Exception&gt;</a>
+          containing either the parsed value or the error that results from
+          attempting to convert <i>value</i> into an instance
+          of type <i>TResult</i>.
+        </blockquote>
+          <h4 class="Subsection">
+            <a href="javascript:toggle_display('M:Cadenza.Either.TryConvert``2(``0):Remarks')">
+              <span id="M:Cadenza.Either.TryConvert``2(``0):Remarks:toggle">⊟</span> Remarks</a>
+          </h4>
+          <blockquote class="SubsectionBox" id="M:Cadenza.Either.TryConvert``2(``0):Remarks">
+            <p>
+              <tt>TryParse</tt> attempts to use a variety of mechanisms to convert
+            <i>value</i> into a <i>TResult</i>,
+            attempting, in order:
+          </p>
+            <ol>
+              <li>
+                <tt>TypeDescriptor.GetConverter(typeof(TResult)).ConvertFrom(value)</tt>
+              </li>
+              <li>
+                <tt>TypeDescriptor.GetConverter(typeof(TSource)).ConvertTo(value, typeof(TResult))</tt>
+              </li>
+              <li>
+                <tt>Convert.ChangeType(value, typeof(TResult))</tt>
+              </li>
+            </ol>
+            <p>
+            If none of these methods are able to convert the value, then the returned
+            <a href="../Cadenza/Either`2.html">Cadenza.Either&lt;TSource, Exception&gt;</a> will contain
+            a <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.NotSupportedException">NotSupportedException</a>, and
+            <a href="http://www.go-mono.com/docs/monodoc.ashx?link=P:System.Exception.InnerException">Exception.InnerException</a> will contain the original
+            exception.
+          </p>
+            <table class="CodeExampleTable">
+              <tr>
+                <td>
+                  <b>
+                    <font size="-1">C# Example</font>
+                  </b>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <pre class="code-csharp">Either&lt;DateTime, Exception&gt; a = Either.TryConvert&lt;int, DateTime&gt; (42);
+Exception e = a.Fold (i =&gt; null, i =&gt; i);
+Assert.IsNotNull (e);
+Assert.IsTrue (typeof (Exception).IsAssignableFrom (e.GetType()));
+
+Either&lt;string, Exception&gt; b = Either.TryConvert&lt;int, string&gt; (42);
+string n2 = b.Fold (i =&gt; i, i =&gt; null);
+Assert.AreEqual ("42", n2);
+
+Either&lt;int, Exception&gt; c = 
+	Either.TryConvert&lt;CustomConvertible, int&gt; (new CustomConvertible ());
+int n3 = c.Fold (i =&gt; i, i =&gt; -1);
+Assert.AreEqual (CustomConvertible.Int32, n3);
+</pre>
+                </td>
+              </tr>
+            </table>
+          </blockquote>
+          <h4 class="Subsection">
+            <a href="javascript:toggle_display('M:Cadenza.Either.TryConvert``2(``0):Version Information')">
+              <span id="M:Cadenza.Either.TryConvert``2(``0):Version Information:toggle">⊟</span> Requirements</a>
+          </h4>
+          <blockquote class="SubsectionBox" id="M:Cadenza.Either.TryConvert``2(``0):Version Information">
+            <b>Namespace: </b>Cadenza<br /><b>Assembly: </b>Cadenza (in Cadenza.dll)<br /><b>Assembly Versions: </b>0.1.0.0</blockquote>
+          <hr size="1" />
+        </blockquote>
+        <h3 id="M:Cadenza.Either.TryParse``1(System.String)">
+          <a href="javascript:toggle_display('M:Cadenza.Either.TryParse``1(System.String):member')">
+            <span id="M:Cadenza.Either.TryParse``1(System.String):member:toggle">⊟</span> TryParse&lt;T&gt; Generic Method</a>
+        </h3>
+        <blockquote id="M:Cadenza.Either.TryParse``1(System.String):member">
+          <p class="Summary">
+          Attempt to convert the value within a <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.String">string</a>
+          into an instance of type <i>T</i>.
+        </p>
+          <div class="Signature">public static <a href="../Cadenza/Either`2.html">Either&lt;T, Exception&gt;</a> <b>TryParse&lt;T&gt;</b> (<a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.String">string</a> value)</div>
+          <h4 class="Subsection">
+            <a href="javascript:toggle_display('M:Cadenza.Either.TryParse``1(System.String):Type Parameters')">
+              <span id="M:Cadenza.Either.TryParse``1(System.String):Type Parameters:toggle">⊟</span> Type Parameters</a>
+          </h4>
+          <blockquote class="SubsectionBox" id="M:Cadenza.Either.TryParse``1(System.String):Type Parameters">
+            <dl>
+              <dt>
+                <i>T</i>
+              </dt>
+              <dd>
+          The type to convert <i>value</i> to.
+        </dd>
+            </dl>
+          </blockquote>
+          <h4 class="Subsection">
+            <a href="javascript:toggle_display('M:Cadenza.Either.TryParse``1(System.String):Parameters')">
+              <span id="M:Cadenza.Either.TryParse``1(System.String):Parameters:toggle">⊟</span> Parameters</a>
+          </h4>
+          <blockquote class="SubsectionBox" id="M:Cadenza.Either.TryParse``1(System.String):Parameters">
+            <dl>
+              <dt>
+                <i>value</i>
+              </dt>
+              <dd>
+          A <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.String">string</a> containing the value to convert
+          into a <i>T</i>.
+        </dd>
+            </dl>
+          </blockquote>
+          <h4 class="Subsection">
+            <a href="javascript:toggle_display('M:Cadenza.Either.TryParse``1(System.String):Returns')">
+              <span id="M:Cadenza.Either.TryParse``1(System.String):Returns:toggle">⊟</span> Returns</a>
+          </h4>
+          <blockquote class="SubsectionBox" id="M:Cadenza.Either.TryParse``1(System.String):Returns">
+          A <a href="../Cadenza/Either`2.html">Cadenza.Either&lt;``0, Exception&gt;</a>
+          containing either the parsed value or the error that results from
+          attempting to convert <i>value</i> into an instance
+          of type <i>T</i>.
+        </blockquote>
+          <h4 class="Subsection">
+            <a href="javascript:toggle_display('M:Cadenza.Either.TryParse``1(System.String):Remarks')">
+              <span id="M:Cadenza.Either.TryParse``1(System.String):Remarks:toggle">⊟</span> Remarks</a>
+          </h4>
+          <blockquote class="SubsectionBox" id="M:Cadenza.Either.TryParse``1(System.String):Remarks">
+            <p>
+            This method calls
+            <a href="../Cadenza/Either.html#M:Cadenza.Either.TryConvert``2(``0)">Either.TryConvert``2(``0)</a>, with
+            <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.String">string</a> as the 
+            <i>TSource</i> type.
+          </p>
+            <table class="CodeExampleTable">
+              <tr>
+                <td>
+                  <b>
+                    <font size="-1">C# Example</font>
+                  </b>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <pre class="code-csharp">var v = Either.TryParse&lt;int&gt; ("3.14159");
+var e = v.Fold (i =&gt; null, i =&gt; i);
+Assert.IsNotNull (e);
+Assert.IsTrue (typeof(Exception).IsAssignableFrom (e.GetType()));
+
+v = Either.TryParse&lt;int&gt; ("42");
+var n = v.Fold (i =&gt; i, i =&gt; -1);
+Assert.AreEqual (42, n);
+
+var v2 = Either.TryParse&lt;int?&gt; ("3.14159");
+e = v2.Fold (i =&gt; null, i =&gt; i);
+Assert.IsNotNull (e);
+Assert.IsTrue (typeof(Exception).IsAssignableFrom (e.GetType()));
+
+v2 = Either.TryParse&lt;int?&gt; ("42");
+n = v2.Fold (i =&gt; i.Value, i =&gt; -1);
+Assert.AreEqual (42, n);
+</pre>
+                </td>
+              </tr>
+            </table>
+          </blockquote>
+          <h4 class="Subsection">
+            <a href="javascript:toggle_display('M:Cadenza.Either.TryParse``1(System.String):Version Information')">
+              <span id="M:Cadenza.Either.TryParse``1(System.String):Version Information:toggle">⊟</span> Requirements</a>
+          </h4>
+          <blockquote class="SubsectionBox" id="M:Cadenza.Either.TryParse``1(System.String):Version Information">
+            <b>Namespace: </b>Cadenza<br /><b>Assembly: </b>Cadenza (in Cadenza.dll)<br /><b>Assembly Versions: </b>0.1.0.0</blockquote>
+          <hr size="1" />
+        </blockquote>
+      </blockquote>
+    </div>
+    <hr size="1" />
+    <div class="Copyright">
+    </div>
+  </body>
+</html>

@@ -1,0 +1,2033 @@
+<html>
+  <head>
+    <title>Cadenza.Collections.MutableLookup&lt;TKey,TElement&gt;</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <style>
+      a { text-decoration: none }
+
+      div.SideBar {
+        padding-left: 1em;
+        padding-right: 1em;
+        right: 0;
+        float: right;
+        border: thin solid black;
+        background-color: #f2f2f2;
+      }
+    
+      .CollectionTitle { font-weight: bold }
+      .PageTitle { font-size: 150%; font-weight: bold }
+
+      .Summary { }
+      .Signature { }          
+      .Remarks { }
+      .Members { }
+      .Copyright { }
+      
+      .Section { font-size: 125%; font-weight: bold }
+      p.Summary {
+        margin-left: 1em;
+      }
+      .SectionBox { margin-left: 2em }
+      .NamespaceName { font-size: 105%; font-weight: bold }
+      .NamespaceSumary { }
+      .MemberName { font-size: 115%; font-weight: bold; margin-top: 1em }
+      .Subsection { font-size: 105%; font-weight: bold }
+      .SubsectionBox { margin-left: 2em; margin-bottom: 1em }
+
+      .CodeExampleTable { background-color: #f5f5dd; border: thin solid black; padding: .25em; }
+      
+      .TypesListing {
+        border-collapse: collapse;
+      }
+
+      td {
+        vertical-align: top;
+      }
+      th {
+        text-align: left;
+      }
+
+      .TypesListing td { 
+        margin: 0px;  
+        padding: .25em;
+        border: solid gray 1px;
+      }
+
+      .TypesListing th { 
+        margin: 0px;  
+        padding: .25em;
+        background-color: #f2f2f2;
+        border: solid gray 1px;
+      }
+
+      div.Footer {
+        border-top: 1px solid gray;
+        margin-top: 1.5em;
+        padding-top: 0.6em;
+        text-align: center;
+        color: gray;
+      }
+
+      span.NotEntered /* Documentation for this section has not yet been entered */ {
+        font-style: italic;
+        color: red;	
+      }
+
+      div.Header {
+        background: #B0C4DE;
+        border: double;
+        border-color: white;
+        border-width: 7px;
+        padding: 0.5em;
+      }
+
+      div.Header * {
+        font-size: smaller;
+      }
+
+      div.Note {
+      }
+
+      i.ParamRef {
+      }
+
+      i.subtitle {
+      }
+
+      ul.TypeMembersIndex {
+        text-align: left;
+        background: #F8F8F8;
+      }
+
+      ul.TypeMembersIndex li {
+        display: inline;
+        margin:  0.5em;
+      }
+
+      table.HeaderTable {
+      }
+
+      table.SignatureTable {
+      }
+
+      table.Documentation, table.Enumeration, table.TypeDocumentation {
+        border-collapse: collapse;
+        width: 100%;
+      }
+
+      table.Documentation tr th, table.TypeMembers tr th, table.Enumeration tr th, table.TypeDocumentation tr th {
+        background: whitesmoke;
+        padding: 0.8em;
+        border: 1px solid gray;
+        text-align: left;
+        vertical-align: bottom;
+      }
+
+      table.Documentation tr td, table.TypeMembers tr td, table.Enumeration tr td, table.TypeDocumentation tr td {
+        padding: 0.5em;
+        border: 1px solid gray;
+        text-align: left;
+        vertical-align: top;
+      }
+
+      table.TypeMembers {
+        border: 1px solid #C0C0C0;
+        width: 100%;
+      }
+
+      table.TypeMembers tr td {
+        background: #F8F8F8;
+        border: white;
+      }
+
+      table.Documentation {
+      }
+
+      table.TypeMembers {
+      }
+
+      div.CodeExample {
+        width: 100%;
+        border: 1px solid #DDDDDD;
+        background-color: #F8F8F8;
+      }
+
+      div.CodeExample p {
+        margin: 0.5em;
+        border-bottom: 1px solid #DDDDDD;
+      }
+
+      div.CodeExample div {
+        margin: 0.5em;
+      }
+
+      h4 {
+        margin-bottom: 0;
+      }
+
+      div.Signature {
+        border: 1px solid #C0C0C0;
+        background: #F2F2F2;
+        padding: 1em;
+      }
+    </style>
+    <script type="text/JavaScript">
+      function toggle_display (block) {
+        var w = document.getElementById (block);
+        var t = document.getElementById (block + ":toggle");
+        if (w.style.display == "none") {
+          w.style.display = "block";
+          t.innerHTML = "⊟";
+        } else {
+          w.style.display = "none";
+          t.innerHTML = "⊞";
+        }
+      }
+    </script>
+  </head>
+  <body>
+    <div class="CollectionTitle">
+      <a href="../index.html">Cadenza</a> : <a href="index.html">Cadenza.Collections Namespace</a></div>
+    <div class="SideBar">
+      <p>
+        <a href="#T:Cadenza.Collections.MutableLookup`2">Overview</a>
+      </p>
+      <p>
+        <a href="#T:Cadenza.Collections.MutableLookup`2:Signature">Signature</a>
+      </p>
+      <p>
+        <a href="#T:Cadenza.Collections.MutableLookup`2:Docs">Remarks</a>
+      </p>
+      <p>
+        <a href="#Members">Members</a>
+      </p>
+      <p>
+        <a href="#T:Cadenza.Collections.MutableLookup`2:Members">Member Details</a>
+      </p>
+    </div>
+    <h1 class="PageTitle" id="T:Cadenza.Collections.MutableLookup`2">MutableLookup&lt;TKey,TElement&gt; Generic Class</h1>
+    <p class="Summary" id="T:Cadenza.Collections.MutableLookup`2:Summary">
+            A mutable lookup implementing <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Linq.ILookup`2">System.Linq.ILookup&lt;TKey, TElement&gt;</a></p>
+    <div id="T:Cadenza.Collections.MutableLookup`2:Signature">
+      <div class="Signature">public class  <b>MutableLookup&lt;TKey, TElement&gt;</b> : <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Collections.Generic.IEnumerable`1">IEnumerable&lt;System.Linq.IGrouping&lt;TKey, TElement&gt;&gt;</a>, <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Linq.ILookup`2">System.Linq.ILookup&lt;TKey, TElement&gt;</a></div>
+    </div>
+    <div class="Remarks" id="T:Cadenza.Collections.MutableLookup`2:Docs">
+      <h4 class="Subsection">
+        <a href="javascript:toggle_display('T:Cadenza.Collections.MutableLookup`2:Docs:Type Parameters')">
+          <span id="T:Cadenza.Collections.MutableLookup`2:Docs:Type Parameters:toggle">⊟</span> Type Parameters</a>
+      </h4>
+      <blockquote class="SubsectionBox" id="T:Cadenza.Collections.MutableLookup`2:Docs:Type Parameters">
+        <dl>
+          <dt>
+            <i>TKey</i>
+          </dt>
+          <dd>The lookup key.</dd>
+          <dt>
+            <i>TElement</i>
+          </dt>
+          <dd>The elements under each <i>TKey</i>.</dd>
+        </dl>
+      </blockquote>
+      <h4 class="Subsection">
+        <a href="javascript:toggle_display('T:Cadenza.Collections.MutableLookup`2:Docs:Remarks')">
+          <span id="T:Cadenza.Collections.MutableLookup`2:Docs:Remarks:toggle">⊟</span> Remarks</a>
+      </h4>
+      <blockquote class="SubsectionBox" id="T:Cadenza.Collections.MutableLookup`2:Docs:Remarks">
+        <span class="NotEntered">Documentation for this section has not yet been entered.</span>
+      </blockquote>
+      <h4 class="Subsection">
+        <a href="javascript:toggle_display('T:Cadenza.Collections.MutableLookup`2:Docs:Version Information')">
+          <span id="T:Cadenza.Collections.MutableLookup`2:Docs:Version Information:toggle">⊟</span> Requirements</a>
+      </h4>
+      <blockquote class="SubsectionBox" id="T:Cadenza.Collections.MutableLookup`2:Docs:Version Information">
+        <b>Namespace: </b>Cadenza.Collections<br /><b>Assembly: </b>Cadenza (in Cadenza.dll)<br /><b>Assembly Versions: </b>0.1.0.0</blockquote>
+      <h2 class="Section" id="Members">
+        <a href="javascript:toggle_display('_Members')">
+          <span id="_Members:toggle">⊟</span> Members</a>
+      </h2>
+      <blockquote class="SectionBox" id="_Members">
+        <p>
+								See Also: Inherited members from
+								<a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Object">object</a>.
+							</p>
+        <h3>
+          <a href="javascript:toggle_display('Public Constructors')">
+            <span id="Public Constructors:toggle">⊟</span> Public Constructors</a>
+        </h3>
+        <blockquote id="Public Constructors">
+          <div class="SubsectionBox">
+            <table class="TypeMembers">
+              <tr valign="top">
+                <td>
+                  <div>
+                  </div>
+                </td>
+                <td>
+                  <div>
+                    <b>
+                      <a href="#C:Cadenza.Collections.MutableLookup`2">MutableLookup</a>
+                    </b>()</div>
+                </td>
+                <td>
+                  <span class="NotEntered">Documentation for this section has not yet been entered.</span>
+                </td>
+              </tr>
+              <tr valign="top">
+                <td>
+                  <div>
+                  </div>
+                </td>
+                <td>
+                  <div>
+                    <b>
+                      <a href="#C:Cadenza.Collections.MutableLookup`2(System.Linq.ILookup{`0,`1})">MutableLookup</a>
+                    </b>(<a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Linq.ILookup`2">System.Linq.ILookup&lt;TKey, TElement&gt;</a>)</div>
+                </td>
+                <td>
+                  <span class="NotEntered">Documentation for this section has not yet been entered.</span>
+                </td>
+              </tr>
+            </table>
+          </div>
+        </blockquote>
+        <h3>
+          <a href="javascript:toggle_display('Public Properties')">
+            <span id="Public Properties:toggle">⊟</span> Public Properties</a>
+        </h3>
+        <blockquote id="Public Properties">
+          <div class="SubsectionBox">
+            <table class="TypeMembers">
+              <tr valign="top">
+                <td>[read-only]<div></div></td>
+                <td>
+                  <b>
+                    <a href="#P:Cadenza.Collections.MutableLookup`2.Count">Count</a>
+                  </b>
+                </td>
+                <td>
+                  <i>
+                    <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Int32">int</a>
+                  </i>. 
+            Gets the number of groupings.
+            </td>
+              </tr>
+              <tr valign="top">
+                <td>[read-only]<div><i>default property</i></div><div></div></td>
+                <td>
+                  <b>
+                    <a href="#P:Cadenza.Collections.MutableLookup`2.Item(`0)">Item</a>
+                  </b>(<i title="The lookup key.">TKey</i>)</td>
+                <td>
+                  <i>
+                    <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Collections.Generic.IEnumerable`1">IEnumerable&lt;TElement&gt;</a>
+                  </i>. 
+            Gets the elements for <i>key</i>.
+        </td>
+              </tr>
+            </table>
+          </div>
+        </blockquote>
+        <h3>
+          <a href="javascript:toggle_display('Public Methods')">
+            <span id="Public Methods:toggle">⊟</span> Public Methods</a>
+        </h3>
+        <blockquote id="Public Methods">
+          <div class="SubsectionBox">
+            <table class="TypeMembers">
+              <tr valign="top">
+                <td>
+                  <div>
+                  </div>
+                </td>
+                <td colspan="2">
+                  <b>
+                    <a href="#M:Cadenza.Collections.MutableLookup`2.Add(`0,`1)">Add</a>
+                  </b>(<i title="The lookup key.">TKey</i>, <i title="The elements under each .">TElement</i>)<blockquote>
+            Adds <i>element</i> under the specified <i>key</i>. <i>key</i> does not need to exist.
+            </blockquote></td>
+              </tr>
+              <tr valign="top">
+                <td>
+                  <div>
+                  </div>
+                </td>
+                <td colspan="2">
+                  <b>
+                    <a href="#M:Cadenza.Collections.MutableLookup`2.Clear">Clear</a>
+                  </b>()<blockquote><span class="NotEntered">Documentation for this section has not yet been entered.</span></blockquote></td>
+              </tr>
+              <tr valign="top">
+                <td>
+                  <div>
+                  </div>
+                </td>
+                <td colspan="2">
+                  <b>
+                    <a href="#M:Cadenza.Collections.MutableLookup`2.Contains(`0)">Contains</a>
+                  </b>(<i title="The lookup key.">TKey</i>)<nobr> : <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Boolean">bool</a></nobr><blockquote>
+            Gets whether or not there's a grouping for <i>key</i>.
+            </blockquote></td>
+              </tr>
+              <tr valign="top">
+                <td>
+                  <div>
+                  </div>
+                </td>
+                <td colspan="2">
+                  <b>
+                    <a href="#M:Cadenza.Collections.MutableLookup`2.GetEnumerator">GetEnumerator</a>
+                  </b>()<nobr> : <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Collections.Generic.IEnumerator`1">IEnumerator&lt;System.Linq.IGrouping&lt;TKey, TElement&gt;&gt;</a></nobr><blockquote><span class="NotEntered">Documentation for this section has not yet been entered.</span></blockquote></td>
+              </tr>
+              <tr valign="top">
+                <td>
+                  <div>
+                  </div>
+                </td>
+                <td colspan="2">
+                  <b>
+                    <a href="#M:Cadenza.Collections.MutableLookup`2.Remove(`0)">Remove</a>
+                  </b>(<i title="The lookup key.">TKey</i>)<nobr> : <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Boolean">bool</a></nobr><blockquote>
+            Removes <i>key</i> from the lookup.
+            </blockquote></td>
+              </tr>
+              <tr valign="top">
+                <td>
+                  <div>
+                  </div>
+                </td>
+                <td colspan="2">
+                  <b>
+                    <a href="#M:Cadenza.Collections.MutableLookup`2.Remove(`0,`1)">Remove</a>
+                  </b>(<i title="The lookup key.">TKey</i>, <i title="The elements under each .">TElement</i>)<nobr> : <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Boolean">bool</a></nobr><blockquote>
+            Removes <i>element</i> from the <i>key</i>.
+            </blockquote></td>
+              </tr>
+              <tr valign="top">
+                <td>
+                  <div>
+                  </div>
+                </td>
+                <td colspan="2">
+                  <b>
+                    <a href="#M:Cadenza.Collections.MutableLookup`2.TryGetValues(`0,System.Collections.Generic.IEnumerable{`1}@)">TryGetValues</a>
+                  </b>(<i title="The lookup key.">TKey</i>, <i>out</i> <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Collections.Generic.IEnumerable`1">IEnumerable&lt;TElement&gt;</a>)<nobr> : <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Boolean">bool</a></nobr><blockquote><span class="NotEntered">Documentation for this section has not yet been entered.</span></blockquote></td>
+              </tr>
+            </table>
+          </div>
+        </blockquote>
+        <h3>
+          <a href="javascript:toggle_display('Explicitly Implemented Interface Members')">
+            <span id="Explicitly Implemented Interface Members:toggle">⊟</span> Explicitly Implemented Interface Members</a>
+        </h3>
+        <blockquote id="Explicitly Implemented Interface Members">
+          <div class="SubsectionBox">
+            <table class="TypeMembers">
+              <tr valign="top">
+                <td>
+                  <div>
+                  </div>
+                </td>
+                <td>
+                  <a href="#M:Cadenza.Collections.MutableLookup`2.System#Collections#IEnumerable#GetEnumerator">
+                    <b>IEnumerable.GetEnumerator</b>
+                  </a>
+                </td>
+                <td>
+                  <span class="NotEntered">Documentation for this section has not yet been entered.</span>
+                </td>
+              </tr>
+            </table>
+          </div>
+        </blockquote>
+        <h3>
+          <a href="javascript:toggle_display('Extension Methods')">
+            <span id="Extension Methods:toggle">⊟</span> Extension Methods</a>
+        </h3>
+        <blockquote id="Extension Methods">
+          <div class="SubsectionBox">
+            <table class="TypeMembers">
+              <tr valign="top">
+                <td>
+                  <div>static </div>
+                </td>
+                <td colspan="2">
+                  <b>
+                    <a href="../Cadenza.Collections/EnumerableCoda.html#M:Cadenza.Collections.EnumerableCoda.AggregateHistory``1(System.Collections.Generic.IEnumerable{``0},System.Func{``0,``0,``0})">AggregateHistory&lt;TSource&gt;</a>
+                  </b>(<i>this</i> <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Collections.Generic.IEnumerable`1">IEnumerable&lt;TSource&gt;</a>, <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Func`3">Func&lt;TSource, TSource, TSource&gt;</a>)<nobr> : <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Collections.Generic.IEnumerable`1">IEnumerable&lt;TSource&gt;</a></nobr><blockquote><span class="NotEntered">Documentation for this section has not yet been entered.</span></blockquote></td>
+              </tr>
+              <tr valign="top">
+                <td>
+                  <div>static </div>
+                </td>
+                <td colspan="2">
+                  <b>
+                    <a href="../Cadenza.Collections/EnumerableCoda.html#M:Cadenza.Collections.EnumerableCoda.AggregateHistory``2(System.Collections.Generic.IEnumerable{``0},``1,System.Func{``1,``0,``1})">AggregateHistory&lt;TSource,TAccumulate&gt;</a>
+                  </b>(<i>this</i> <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Collections.Generic.IEnumerable`1">IEnumerable&lt;TSource&gt;</a>, <i title="To be added.">TAccumulate</i>, <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Func`3">Func&lt;TAccumulate, TSource, TAccumulate&gt;</a>)<nobr> : <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Collections.Generic.IEnumerable`1">IEnumerable&lt;TAccumulate&gt;</a></nobr><blockquote><span class="NotEntered">Documentation for this section has not yet been entered.</span></blockquote></td>
+              </tr>
+              <tr valign="top">
+                <td>
+                  <div>static </div>
+                </td>
+                <td colspan="2">
+                  <b>
+                    <a href="../Cadenza.Collections/EnumerableCoda.html#M:Cadenza.Collections.EnumerableCoda.AggregateHistory``3(System.Collections.Generic.IEnumerable{``0},``1,System.Func{``1,``0,``1},System.Func{``1,``2})">AggregateHistory&lt;TSource,TAccumulate,TResult&gt;</a>
+                  </b>(<i>this</i> <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Collections.Generic.IEnumerable`1">IEnumerable&lt;TSource&gt;</a>, <i title="To be added.">TAccumulate</i>, <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Func`3">Func&lt;TAccumulate, TSource, TAccumulate&gt;</a>, <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Func`2">Func&lt;TAccumulate, TResult&gt;</a>)<nobr> : <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Collections.Generic.IEnumerable`1">IEnumerable&lt;TResult&gt;</a></nobr><blockquote><span class="NotEntered">Documentation for this section has not yet been entered.</span></blockquote></td>
+              </tr>
+              <tr valign="top">
+                <td>
+                  <div>static </div>
+                </td>
+                <td colspan="2">
+                  <b>
+                    <a href="../Cadenza.Collections/EnumerableCoda.html#M:Cadenza.Collections.EnumerableCoda.AggregateReverse``1(System.Collections.Generic.IEnumerable{``0},System.Func{``0,``0,``0})">AggregateReverse&lt;TSource&gt;</a>
+                  </b>(<i>this</i> <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Collections.Generic.IEnumerable`1">IEnumerable&lt;TSource&gt;</a>, <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Func`3">Func&lt;TSource, TSource, TSource&gt;</a>)<nobr> : <i title="To be added.">TSource</i></nobr><blockquote><span class="NotEntered">Documentation for this section has not yet been entered.</span></blockquote></td>
+              </tr>
+              <tr valign="top">
+                <td>
+                  <div>static </div>
+                </td>
+                <td colspan="2">
+                  <b>
+                    <a href="../Cadenza.Collections/EnumerableCoda.html#M:Cadenza.Collections.EnumerableCoda.AggregateReverse``2(System.Collections.Generic.IEnumerable{``0},``1,System.Func{``1,``0,``1})">AggregateReverse&lt;TSource,TAccumulate&gt;</a>
+                  </b>(<i>this</i> <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Collections.Generic.IEnumerable`1">IEnumerable&lt;TSource&gt;</a>, <i title="To be added.">TAccumulate</i>, <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Func`3">Func&lt;TAccumulate, TSource, TAccumulate&gt;</a>)<nobr> : <i title="To be added.">TAccumulate</i></nobr><blockquote><span class="NotEntered">Documentation for this section has not yet been entered.</span></blockquote></td>
+              </tr>
+              <tr valign="top">
+                <td>
+                  <div>static </div>
+                </td>
+                <td colspan="2">
+                  <b>
+                    <a href="../Cadenza.Collections/EnumerableCoda.html#M:Cadenza.Collections.EnumerableCoda.AggregateReverse``3(System.Collections.Generic.IEnumerable{``0},``1,System.Func{``1,``0,``1},System.Func{``1,``2})">AggregateReverse&lt;TSource,TAccumulate,TResult&gt;</a>
+                  </b>(<i>this</i> <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Collections.Generic.IEnumerable`1">IEnumerable&lt;TSource&gt;</a>, <i title="To be added.">TAccumulate</i>, <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Func`3">Func&lt;TAccumulate, TSource, TAccumulate&gt;</a>, <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Func`2">Func&lt;TAccumulate, TResult&gt;</a>)<nobr> : <i title="To be added.">TResult</i></nobr><blockquote><span class="NotEntered">Documentation for this section has not yet been entered.</span></blockquote></td>
+              </tr>
+              <tr valign="top">
+                <td>
+                  <div>static </div>
+                </td>
+                <td colspan="2">
+                  <b>
+                    <a href="../Cadenza.Collections/EnumerableCoda.html#M:Cadenza.Collections.EnumerableCoda.AggregateReverseHistory``1(System.Collections.Generic.IEnumerable{``0},System.Func{``0,``0,``0})">AggregateReverseHistory&lt;TSource&gt;</a>
+                  </b>(<i>this</i> <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Collections.Generic.IEnumerable`1">IEnumerable&lt;TSource&gt;</a>, <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Func`3">Func&lt;TSource, TSource, TSource&gt;</a>)<nobr> : <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Collections.Generic.IEnumerable`1">IEnumerable&lt;TSource&gt;</a></nobr><blockquote><span class="NotEntered">Documentation for this section has not yet been entered.</span></blockquote></td>
+              </tr>
+              <tr valign="top">
+                <td>
+                  <div>static </div>
+                </td>
+                <td colspan="2">
+                  <b>
+                    <a href="../Cadenza.Collections/EnumerableCoda.html#M:Cadenza.Collections.EnumerableCoda.AggregateReverseHistory``2(System.Collections.Generic.IEnumerable{``0},``1,System.Func{``1,``0,``1})">AggregateReverseHistory&lt;TSource,TAccumulate&gt;</a>
+                  </b>(<i>this</i> <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Collections.Generic.IEnumerable`1">IEnumerable&lt;TSource&gt;</a>, <i title="To be added.">TAccumulate</i>, <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Func`3">Func&lt;TAccumulate, TSource, TAccumulate&gt;</a>)<nobr> : <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Collections.Generic.IEnumerable`1">IEnumerable&lt;TAccumulate&gt;</a></nobr><blockquote><span class="NotEntered">Documentation for this section has not yet been entered.</span></blockquote></td>
+              </tr>
+              <tr valign="top">
+                <td>
+                  <div>static </div>
+                </td>
+                <td colspan="2">
+                  <b>
+                    <a href="../Cadenza.Collections/EnumerableCoda.html#M:Cadenza.Collections.EnumerableCoda.AggregateReverseHistory``3(System.Collections.Generic.IEnumerable{``0},``1,System.Func{``1,``0,``1},System.Func{``1,``2})">AggregateReverseHistory&lt;TSource,TAccumulate,TResult&gt;</a>
+                  </b>(<i>this</i> <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Collections.Generic.IEnumerable`1">IEnumerable&lt;TSource&gt;</a>, <i title="To be added.">TAccumulate</i>, <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Func`3">Func&lt;TAccumulate, TSource, TAccumulate&gt;</a>, <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Func`2">Func&lt;TAccumulate, TResult&gt;</a>)<nobr> : <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Collections.Generic.IEnumerable`1">IEnumerable&lt;TResult&gt;</a></nobr><blockquote><span class="NotEntered">Documentation for this section has not yet been entered.</span></blockquote></td>
+              </tr>
+              <tr valign="top">
+                <td>
+                  <div>static </div>
+                </td>
+                <td colspan="2">
+                  <b>
+                    <a href="../Cadenza.Collections/EnumerableCoda.html#M:Cadenza.Collections.EnumerableCoda.And(System.Collections.Generic.IEnumerable{System.Boolean})">And</a>
+                  </b>(<i>this</i> <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Collections.Generic.IEnumerable`1">IEnumerable&lt;bool&gt;</a>)<nobr> : <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Boolean">bool</a></nobr><blockquote><span class="NotEntered">Documentation for this section has not yet been entered.</span></blockquote></td>
+              </tr>
+              <tr valign="top">
+                <td>
+                  <div>static </div>
+                </td>
+                <td colspan="2">
+                  <b>
+                    <a href="../Cadenza.Collections/EnumerableCoda.html#M:Cadenza.Collections.EnumerableCoda.Apply``1(System.Collections.Generic.IEnumerable{``0})">Apply&lt;TSource&gt;</a>
+                  </b>(<i>this</i> <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Collections.Generic.IEnumerable`1">IEnumerable&lt;TSource&gt;</a>)<blockquote><span class="NotEntered">Documentation for this section has not yet been entered.</span></blockquote></td>
+              </tr>
+              <tr valign="top">
+                <td>
+                  <div>static </div>
+                </td>
+                <td colspan="2">
+                  <b>
+                    <a href="../Cadenza.Collections/EnumerableCoda.html#M:Cadenza.Collections.EnumerableCoda.ApplyPairs``1(System.Collections.Generic.IEnumerable{``0},System.Action{``0}[])">ApplyPairs&lt;TSource&gt;</a>
+                  </b>(<i>this</i> <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Collections.Generic.IEnumerable`1">IEnumerable&lt;TSource&gt;</a>, <b>params</b> <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Action`1">Action&lt;TSource&gt;</a>[])<nobr> : <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Collections.Generic.IEnumerable`1">IEnumerable&lt;TSource&gt;</a></nobr><blockquote><span class="NotEntered">Documentation for this section has not yet been entered.</span></blockquote></td>
+              </tr>
+              <tr valign="top">
+                <td>
+                  <div>static </div>
+                </td>
+                <td colspan="2">
+                  <b>
+                    <a href="../Cadenza.Collections/EnumerableCoda.html#M:Cadenza.Collections.EnumerableCoda.AsIList``1(System.Collections.Generic.IEnumerable{``0})">AsIList&lt;TSource&gt;</a>
+                  </b>(<i>this</i> <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Collections.Generic.IEnumerable`1">IEnumerable&lt;TSource&gt;</a>)<nobr> : <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Collections.Generic.IList`1">IList&lt;TSource&gt;</a></nobr><blockquote><span class="NotEntered">Documentation for this section has not yet been entered.</span></blockquote></td>
+              </tr>
+              <tr valign="top">
+                <td>
+                  <div>static </div>
+                </td>
+                <td colspan="2">
+                  <b>
+                    <a href="../Cadenza.Collections/EnumerableCoda.html#M:Cadenza.Collections.EnumerableCoda.Break``1(System.Collections.Generic.IEnumerable{``0},System.Func{``0,System.Boolean})">Break&lt;TSource&gt;</a>
+                  </b>(<i>this</i> <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Collections.Generic.IEnumerable`1">IEnumerable&lt;TSource&gt;</a>, <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Func`2">Func&lt;TSource, bool&gt;</a>)<nobr> : <a href="../Cadenza/Tuple`1.html">Cadenza.Tuple&lt;IEnumerable&lt;TSource&gt;, IEnumerable&lt;TSource&gt;&gt;</a></nobr><blockquote><span class="NotEntered">Documentation for this section has not yet been entered.</span></blockquote></td>
+              </tr>
+              <tr valign="top">
+                <td>
+                  <div>static </div>
+                </td>
+                <td colspan="2">
+                  <b>
+                    <a href="../Cadenza.Collections/EnumerableCoda.html#M:Cadenza.Collections.EnumerableCoda.Cache``1(System.Collections.Generic.IEnumerable{``0})">Cache&lt;T&gt;</a>
+                  </b>(<i>this</i> <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Collections.Generic.IEnumerable`1">IEnumerable&lt;T&gt;</a>)<nobr> : <a href="../Cadenza.Collections/CachedSequence`1.html">CachedSequence&lt;T&gt;</a></nobr><blockquote><span class="NotEntered">Documentation for this section has not yet been entered.</span></blockquote></td>
+              </tr>
+              <tr valign="top">
+                <td>
+                  <div>static </div>
+                </td>
+                <td colspan="2">
+                  <b>
+                    <a href="../Cadenza.Collections/EnumerableCoda.html#M:Cadenza.Collections.EnumerableCoda.CompareWith``1(System.Collections.Generic.IEnumerable{``0},System.Collections.Generic.IEnumerable{``0})">CompareWith&lt;T&gt;</a>
+                  </b>(<i>this</i> <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Collections.Generic.IEnumerable`1">IEnumerable&lt;T&gt;</a>, <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Collections.Generic.IEnumerable`1">IEnumerable&lt;T&gt;</a>)<nobr> : <a href="../Cadenza.Collections/SequenceComparison`1.html">SequenceComparison&lt;T&gt;</a></nobr><blockquote>Compares two enumerations retrieving added, removed and unchanged elements.</blockquote></td>
+              </tr>
+              <tr valign="top">
+                <td>
+                  <div>static </div>
+                </td>
+                <td colspan="2">
+                  <b>
+                    <a href="../Cadenza.Collections/EnumerableCoda.html#M:Cadenza.Collections.EnumerableCoda.CompareWith``1(System.Collections.Generic.IEnumerable{``0},System.Collections.Generic.IEnumerable{``0},System.Collections.Generic.IEqualityComparer{``0})">CompareWith&lt;T&gt;</a>
+                  </b>(<i>this</i> <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Collections.Generic.IEnumerable`1">IEnumerable&lt;T&gt;</a>, <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Collections.Generic.IEnumerable`1">IEnumerable&lt;T&gt;</a>, <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Collections.Generic.IEqualityComparer`1">IEqualityComparer&lt;T&gt;</a>)<nobr> : <a href="../Cadenza.Collections/SequenceComparison`1.html">SequenceComparison&lt;T&gt;</a></nobr><blockquote>Compares two enumerations retrieving added, removed and unchanged elements.</blockquote></td>
+              </tr>
+              <tr valign="top">
+                <td>
+                  <div>static </div>
+                </td>
+                <td colspan="2">
+                  <b>
+                    <a href="../Cadenza.Collections/EnumerableCoda.html#M:Cadenza.Collections.EnumerableCoda.Concat``1(System.Collections.Generic.IEnumerable{``0},System.Collections.Generic.IEnumerable{System.Collections.Generic.IEnumerable{``0}})">Concat&lt;TSource&gt;</a>
+                  </b>(<i>this</i> <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Collections.Generic.IEnumerable`1">IEnumerable&lt;TSource&gt;</a>, <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Collections.Generic.IEnumerable`1">IEnumerable&lt;IEnumerable&lt;TSource&gt;&gt;</a>)<nobr> : <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Collections.Generic.IEnumerable`1">IEnumerable&lt;TSource&gt;</a></nobr><blockquote><span class="NotEntered">Documentation for this section has not yet been entered.</span></blockquote></td>
+              </tr>
+              <tr valign="top">
+                <td>
+                  <div>static </div>
+                </td>
+                <td colspan="2">
+                  <b>
+                    <a href="../Cadenza.Collections/EnumerableCoda.html#M:Cadenza.Collections.EnumerableCoda.Concat``1(System.Collections.Generic.IEnumerable{``0},System.Collections.Generic.IEnumerable{``0}[])">Concat&lt;TSource&gt;</a>
+                  </b>(<i>this</i> <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Collections.Generic.IEnumerable`1">IEnumerable&lt;TSource&gt;</a>, <b>params</b> <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Collections.Generic.IEnumerable`1">IEnumerable&lt;TSource&gt;</a>[])<nobr> : <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Collections.Generic.IEnumerable`1">IEnumerable&lt;TSource&gt;</a></nobr><blockquote><span class="NotEntered">Documentation for this section has not yet been entered.</span></blockquote></td>
+              </tr>
+              <tr valign="top">
+                <td>
+                  <div>static </div>
+                </td>
+                <td colspan="2">
+                  <b>
+                    <a href="../Cadenza.Collections/EnumerableCoda.html#M:Cadenza.Collections.EnumerableCoda.ContiguousSubsequences``1(System.Collections.Generic.IEnumerable{``0},System.Int32)">ContiguousSubsequences&lt;TSource&gt;</a>
+                  </b>(<i>this</i> <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Collections.Generic.IEnumerable`1">IEnumerable&lt;TSource&gt;</a>, <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Int32">int</a>)<nobr> : <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Collections.Generic.IEnumerable`1">IEnumerable&lt;IEnumerable&lt;TSource&gt;&gt;</a></nobr><blockquote><span class="NotEntered">Documentation for this section has not yet been entered.</span></blockquote></td>
+              </tr>
+              <tr valign="top">
+                <td>
+                  <div>static </div>
+                </td>
+                <td colspan="2">
+                  <b>
+                    <a href="../Cadenza.Collections/EnumerableCoda.html#M:Cadenza.Collections.EnumerableCoda.CopyTo``1(System.Collections.Generic.IEnumerable{``0},System.Collections.Generic.ICollection{``0})">CopyTo&lt;TSource&gt;</a>
+                  </b>(<i>this</i> <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Collections.Generic.IEnumerable`1">IEnumerable&lt;TSource&gt;</a>, <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Collections.Generic.ICollection`1">ICollection&lt;TSource&gt;</a>)<blockquote><span class="NotEntered">Documentation for this section has not yet been entered.</span></blockquote></td>
+              </tr>
+              <tr valign="top">
+                <td>
+                  <div>static </div>
+                </td>
+                <td colspan="2">
+                  <b>
+                    <a href="../Cadenza.Collections/EnumerableCoda.html#M:Cadenza.Collections.EnumerableCoda.CopyTo``1(System.Collections.Generic.IEnumerable{``0},``0[],System.Int32)">CopyTo&lt;TSource&gt;</a>
+                  </b>(<i>this</i> <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Collections.Generic.IEnumerable`1">IEnumerable&lt;TSource&gt;</a>, <i title="To be added.">TSource</i>[], <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Int32">int</a>)<blockquote><span class="NotEntered">Documentation for this section has not yet been entered.</span></blockquote></td>
+              </tr>
+              <tr valign="top">
+                <td>
+                  <div>static </div>
+                </td>
+                <td colspan="2">
+                  <b>
+                    <a href="../Cadenza.Collections/EnumerableCoda.html#M:Cadenza.Collections.EnumerableCoda.Cycle``1(System.Collections.Generic.IEnumerable{``0})">Cycle&lt;TSource&gt;</a>
+                  </b>(<i>this</i> <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Collections.Generic.IEnumerable`1">IEnumerable&lt;TSource&gt;</a>)<nobr> : <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Collections.Generic.IEnumerable`1">IEnumerable&lt;TSource&gt;</a></nobr><blockquote><span class="NotEntered">Documentation for this section has not yet been entered.</span></blockquote></td>
+              </tr>
+              <tr valign="top">
+                <td>
+                  <div>static </div>
+                </td>
+                <td colspan="2">
+                  <b>
+                    <a href="../Cadenza.Collections/EnumerableCoda.html#M:Cadenza.Collections.EnumerableCoda.Each``1(System.Collections.Generic.IEnumerable{``0},System.Action{``0,System.Int32})">Each&lt;TSource&gt;</a>
+                  </b>(<i>this</i> <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Collections.Generic.IEnumerable`1">IEnumerable&lt;TSource&gt;</a>, <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Action`2">Action&lt;TSource, int&gt;</a>)<nobr> : <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Collections.Generic.IEnumerable`1">IEnumerable&lt;TSource&gt;</a></nobr><blockquote><span class="NotEntered">Documentation for this section has not yet been entered.</span></blockquote></td>
+              </tr>
+              <tr valign="top">
+                <td>
+                  <div>static </div>
+                </td>
+                <td colspan="2">
+                  <b>
+                    <a href="../Cadenza.Collections/EnumerableCoda.html#M:Cadenza.Collections.EnumerableCoda.Each``1(System.Collections.Generic.IEnumerable{``0},System.Action{``0})">Each&lt;TSource&gt;</a>
+                  </b>(<i>this</i> <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Collections.Generic.IEnumerable`1">IEnumerable&lt;TSource&gt;</a>, <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Action`1">Action&lt;TSource&gt;</a>)<nobr> : <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Collections.Generic.IEnumerable`1">IEnumerable&lt;TSource&gt;</a></nobr><blockquote><span class="NotEntered">Documentation for this section has not yet been entered.</span></blockquote></td>
+              </tr>
+              <tr valign="top">
+                <td>
+                  <div>static </div>
+                </td>
+                <td colspan="2">
+                  <b>
+                    <a href="../Cadenza.Collections/EnumerableCoda.html#M:Cadenza.Collections.EnumerableCoda.ExceptLast``1(System.Collections.Generic.IEnumerable{``0})">ExceptLast&lt;TSource&gt;</a>
+                  </b>(<i>this</i> <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Collections.Generic.IEnumerable`1">IEnumerable&lt;TSource&gt;</a>)<nobr> : <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Collections.Generic.IEnumerable`1">IEnumerable&lt;TSource&gt;</a></nobr><blockquote><span class="NotEntered">Documentation for this section has not yet been entered.</span></blockquote></td>
+              </tr>
+              <tr valign="top">
+                <td>
+                  <div>static </div>
+                </td>
+                <td colspan="2">
+                  <b>
+                    <a href="../Cadenza.Collections/EnumerableCoda.html#M:Cadenza.Collections.EnumerableCoda.ExceptLast``1(System.Collections.Generic.IEnumerable{``0},System.Int32)">ExceptLast&lt;TSource&gt;</a>
+                  </b>(<i>this</i> <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Collections.Generic.IEnumerable`1">IEnumerable&lt;TSource&gt;</a>, <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Int32">int</a>)<nobr> : <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Collections.Generic.IEnumerable`1">IEnumerable&lt;TSource&gt;</a></nobr><blockquote><span class="NotEntered">Documentation for this section has not yet been entered.</span></blockquote></td>
+              </tr>
+              <tr valign="top">
+                <td>
+                  <div>static </div>
+                </td>
+                <td colspan="2">
+                  <b>
+                    <a href="../Cadenza.Collections/EnumerableCoda.html#M:Cadenza.Collections.EnumerableCoda.FindIndex``1(System.Collections.Generic.IEnumerable{``0},System.Func{``0,System.Boolean})">FindIndex&lt;TSource&gt;</a>
+                  </b>(<i>this</i> <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Collections.Generic.IEnumerable`1">IEnumerable&lt;TSource&gt;</a>, <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Func`2">Func&lt;TSource, bool&gt;</a>)<nobr> : <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Int32">int</a></nobr><blockquote><span class="NotEntered">Documentation for this section has not yet been entered.</span></blockquote></td>
+              </tr>
+              <tr valign="top">
+                <td>
+                  <div>static </div>
+                </td>
+                <td colspan="2">
+                  <b>
+                    <a href="../Cadenza.Collections/EnumerableCoda.html#M:Cadenza.Collections.EnumerableCoda.FindIndices``1(System.Collections.Generic.IEnumerable{``0},System.Func{``0,System.Boolean})">FindIndices&lt;TSource&gt;</a>
+                  </b>(<i>this</i> <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Collections.Generic.IEnumerable`1">IEnumerable&lt;TSource&gt;</a>, <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Func`2">Func&lt;TSource, bool&gt;</a>)<nobr> : <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Collections.Generic.IEnumerable`1">IEnumerable&lt;int&gt;</a></nobr><blockquote><span class="NotEntered">Documentation for this section has not yet been entered.</span></blockquote></td>
+              </tr>
+              <tr valign="top">
+                <td>
+                  <div>static </div>
+                </td>
+                <td colspan="2">
+                  <b>
+                    <a href="../Cadenza.Collections/EnumerableCoda.html#M:Cadenza.Collections.EnumerableCoda.ForEach``1(System.Collections.Generic.IEnumerable{``0},System.Action{``0,System.Int32})">ForEach&lt;TSource&gt;</a>
+                  </b>(<i>this</i> <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Collections.Generic.IEnumerable`1">IEnumerable&lt;TSource&gt;</a>, <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Action`2">Action&lt;TSource, int&gt;</a>)<blockquote><span class="NotEntered">Documentation for this section has not yet been entered.</span></blockquote></td>
+              </tr>
+              <tr valign="top">
+                <td>
+                  <div>static </div>
+                </td>
+                <td colspan="2">
+                  <b>
+                    <a href="../Cadenza.Collections/EnumerableCoda.html#M:Cadenza.Collections.EnumerableCoda.ForEach``1(System.Collections.Generic.IEnumerable{``0},System.Action{``0})">ForEach&lt;TSource&gt;</a>
+                  </b>(<i>this</i> <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Collections.Generic.IEnumerable`1">IEnumerable&lt;TSource&gt;</a>, <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Action`1">Action&lt;TSource&gt;</a>)<blockquote><span class="NotEntered">Documentation for this section has not yet been entered.</span></blockquote></td>
+              </tr>
+              <tr valign="top">
+                <td>
+                  <div>static </div>
+                </td>
+                <td colspan="2">
+                  <b>
+                    <a href="../Cadenza.Collections/EnumerableCoda.html#M:Cadenza.Collections.EnumerableCoda.HaskellGroup``1(System.Collections.Generic.IEnumerable{``0})">HaskellGroup&lt;TSource&gt;</a>
+                  </b>(<i>this</i> <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Collections.Generic.IEnumerable`1">IEnumerable&lt;TSource&gt;</a>)<nobr> : <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Collections.Generic.IEnumerable`1">IEnumerable&lt;IEnumerable&lt;TSource&gt;&gt;</a></nobr><blockquote><span class="NotEntered">Documentation for this section has not yet been entered.</span></blockquote></td>
+              </tr>
+              <tr valign="top">
+                <td>
+                  <div>static </div>
+                </td>
+                <td colspan="2">
+                  <b>
+                    <a href="../Cadenza.Collections/EnumerableCoda.html#M:Cadenza.Collections.EnumerableCoda.HaskellGroupBy``1(System.Collections.Generic.IEnumerable{``0},System.Func{``0,``0,System.Boolean})">HaskellGroupBy&lt;TSource&gt;</a>
+                  </b>(<i>this</i> <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Collections.Generic.IEnumerable`1">IEnumerable&lt;TSource&gt;</a>, <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Func`3">Func&lt;TSource, TSource, bool&gt;</a>)<nobr> : <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Collections.Generic.IEnumerable`1">IEnumerable&lt;IEnumerable&lt;TSource&gt;&gt;</a></nobr><blockquote>
+          Split <i>self</i> into a sequence of groups.
+        </blockquote></td>
+              </tr>
+              <tr valign="top">
+                <td>
+                  <div>static </div>
+                </td>
+                <td colspan="2">
+                  <b>
+                    <a href="../Cadenza.Collections/EnumerableCoda.html#M:Cadenza.Collections.EnumerableCoda.Implode``1(System.Collections.Generic.IEnumerable{``0})">Implode&lt;TSource&gt;</a>
+                  </b>(<i>this</i> <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Collections.Generic.IEnumerable`1">IEnumerable&lt;TSource&gt;</a>)<nobr> : <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.String">string</a></nobr><blockquote><span class="NotEntered">Documentation for this section has not yet been entered.</span></blockquote></td>
+              </tr>
+              <tr valign="top">
+                <td>
+                  <div>static </div>
+                </td>
+                <td colspan="2">
+                  <b>
+                    <a href="../Cadenza.Collections/EnumerableCoda.html#M:Cadenza.Collections.EnumerableCoda.Implode``1(System.Collections.Generic.IEnumerable{``0},System.String)">Implode&lt;TSource&gt;</a>
+                  </b>(<i>this</i> <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Collections.Generic.IEnumerable`1">IEnumerable&lt;TSource&gt;</a>, <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.String">string</a>)<nobr> : <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.String">string</a></nobr><blockquote><span class="NotEntered">Documentation for this section has not yet been entered.</span></blockquote></td>
+              </tr>
+              <tr valign="top">
+                <td>
+                  <div>static </div>
+                </td>
+                <td colspan="2">
+                  <b>
+                    <a href="../Cadenza.Collections/EnumerableCoda.html#M:Cadenza.Collections.EnumerableCoda.Implode``1(System.Collections.Generic.IEnumerable{``0},System.String,System.Func{``0,System.String})">Implode&lt;TSource&gt;</a>
+                  </b>(<i>this</i> <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Collections.Generic.IEnumerable`1">IEnumerable&lt;TSource&gt;</a>, <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.String">string</a>, <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Func`2">Func&lt;TSource, string&gt;</a>)<nobr> : <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.String">string</a></nobr><blockquote><span class="NotEntered">Documentation for this section has not yet been entered.</span></blockquote></td>
+              </tr>
+              <tr valign="top">
+                <td>
+                  <div>static </div>
+                </td>
+                <td colspan="2">
+                  <b>
+                    <a href="../Cadenza.Collections/EnumerableCoda.html#M:Cadenza.Collections.EnumerableCoda.IndexOf``1(System.Collections.Generic.IEnumerable{``0},``0)">IndexOf&lt;TSource&gt;</a>
+                  </b>(<i>this</i> <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Collections.Generic.IEnumerable`1">IEnumerable&lt;TSource&gt;</a>, <i title="To be added.">TSource</i>)<nobr> : <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Int32">int</a></nobr><blockquote><span class="NotEntered">Documentation for this section has not yet been entered.</span></blockquote></td>
+              </tr>
+              <tr valign="top">
+                <td>
+                  <div>static </div>
+                </td>
+                <td colspan="2">
+                  <b>
+                    <a href="../Cadenza.Collections/EnumerableCoda.html#M:Cadenza.Collections.EnumerableCoda.IndexOfAny``1(System.Collections.Generic.IEnumerable{``0},System.Collections.Generic.IEnumerable{``0})">IndexOfAny&lt;TSource&gt;</a>
+                  </b>(<i>this</i> <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Collections.Generic.IEnumerable`1">IEnumerable&lt;TSource&gt;</a>, <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Collections.Generic.IEnumerable`1">IEnumerable&lt;TSource&gt;</a>)<nobr> : <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Int32">int</a></nobr><blockquote><span class="NotEntered">Documentation for this section has not yet been entered.</span></blockquote></td>
+              </tr>
+              <tr valign="top">
+                <td>
+                  <div>static </div>
+                </td>
+                <td colspan="2">
+                  <b>
+                    <a href="../Cadenza.Collections/EnumerableCoda.html#M:Cadenza.Collections.EnumerableCoda.IndexOfAny``1(System.Collections.Generic.IEnumerable{``0},``0[])">IndexOfAny&lt;TSource&gt;</a>
+                  </b>(<i>this</i> <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Collections.Generic.IEnumerable`1">IEnumerable&lt;TSource&gt;</a>, <b>params</b> <i title="To be added.">TSource</i>[])<nobr> : <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Int32">int</a></nobr><blockquote><span class="NotEntered">Documentation for this section has not yet been entered.</span></blockquote></td>
+              </tr>
+              <tr valign="top">
+                <td>
+                  <div>static </div>
+                </td>
+                <td colspan="2">
+                  <b>
+                    <a href="../Cadenza.Collections/EnumerableCoda.html#M:Cadenza.Collections.EnumerableCoda.IndicesOf``1(System.Collections.Generic.IEnumerable{``0},``0)">IndicesOf&lt;TSource&gt;</a>
+                  </b>(<i>this</i> <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Collections.Generic.IEnumerable`1">IEnumerable&lt;TSource&gt;</a>, <i title="To be added.">TSource</i>)<nobr> : <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Collections.Generic.IEnumerable`1">IEnumerable&lt;int&gt;</a></nobr><blockquote><span class="NotEntered">Documentation for this section has not yet been entered.</span></blockquote></td>
+              </tr>
+              <tr valign="top">
+                <td>
+                  <div>static </div>
+                </td>
+                <td colspan="2">
+                  <b>
+                    <a href="../Cadenza.Collections/EnumerableCoda.html#M:Cadenza.Collections.EnumerableCoda.IndicesOfAny``1(System.Collections.Generic.IEnumerable{``0},System.Collections.Generic.IEnumerable{``0})">IndicesOfAny&lt;TSource&gt;</a>
+                  </b>(<i>this</i> <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Collections.Generic.IEnumerable`1">IEnumerable&lt;TSource&gt;</a>, <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Collections.Generic.IEnumerable`1">IEnumerable&lt;TSource&gt;</a>)<nobr> : <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Collections.Generic.IEnumerable`1">IEnumerable&lt;int&gt;</a></nobr><blockquote><span class="NotEntered">Documentation for this section has not yet been entered.</span></blockquote></td>
+              </tr>
+              <tr valign="top">
+                <td>
+                  <div>static </div>
+                </td>
+                <td colspan="2">
+                  <b>
+                    <a href="../Cadenza.Collections/EnumerableCoda.html#M:Cadenza.Collections.EnumerableCoda.IndicesOfAny``1(System.Collections.Generic.IEnumerable{``0},``0[])">IndicesOfAny&lt;TSource&gt;</a>
+                  </b>(<i>this</i> <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Collections.Generic.IEnumerable`1">IEnumerable&lt;TSource&gt;</a>, <b>params</b> <i title="To be added.">TSource</i>[])<nobr> : <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Collections.Generic.IEnumerable`1">IEnumerable&lt;int&gt;</a></nobr><blockquote><span class="NotEntered">Documentation for this section has not yet been entered.</span></blockquote></td>
+              </tr>
+              <tr valign="top">
+                <td>
+                  <div>static </div>
+                </td>
+                <td colspan="2">
+                  <b>
+                    <a href="../Cadenza.Collections/EnumerableCoda.html#M:Cadenza.Collections.EnumerableCoda.InitialSegments``1(System.Collections.Generic.IEnumerable{``0})">InitialSegments&lt;TSource&gt;</a>
+                  </b>(<i>this</i> <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Collections.Generic.IEnumerable`1">IEnumerable&lt;TSource&gt;</a>)<nobr> : <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Collections.Generic.IEnumerable`1">IEnumerable&lt;IEnumerable&lt;TSource&gt;&gt;</a></nobr><blockquote>
+          Creates a 
+          <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Collections.Generic.IEnumerable`1">IEnumerable&lt;IEnumerable&lt;TSource&gt;&gt;</a>
+          containing all leading segments of <i>self</i>,
+          shortest first.
+        </blockquote></td>
+              </tr>
+              <tr valign="top">
+                <td>
+                  <div>static </div>
+                </td>
+                <td colspan="2">
+                  <b>
+                    <a href="../Cadenza.Collections/EnumerableCoda.html#M:Cadenza.Collections.EnumerableCoda.Insert``1(System.Collections.Generic.IEnumerable{``0},``0)">Insert&lt;TSource&gt;</a>
+                  </b>(<i>this</i> <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Collections.Generic.IEnumerable`1">IEnumerable&lt;TSource&gt;</a>, <i title="To be added.">TSource</i>)<nobr> : <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Collections.Generic.IEnumerable`1">IEnumerable&lt;TSource&gt;</a></nobr><blockquote><span class="NotEntered">Documentation for this section has not yet been entered.</span></blockquote></td>
+              </tr>
+              <tr valign="top">
+                <td>
+                  <div>static </div>
+                </td>
+                <td colspan="2">
+                  <b>
+                    <a href="../Cadenza.Collections/EnumerableCoda.html#M:Cadenza.Collections.EnumerableCoda.Insert``1(System.Collections.Generic.IEnumerable{``0},``0,System.Func{``0,``0,System.Int32})">Insert&lt;TSource&gt;</a>
+                  </b>(<i>this</i> <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Collections.Generic.IEnumerable`1">IEnumerable&lt;TSource&gt;</a>, <i title="To be added.">TSource</i>, <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Func`3">Func&lt;TSource, TSource, int&gt;</a>)<nobr> : <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Collections.Generic.IEnumerable`1">IEnumerable&lt;TSource&gt;</a></nobr><blockquote><span class="NotEntered">Documentation for this section has not yet been entered.</span></blockquote></td>
+              </tr>
+              <tr valign="top">
+                <td>
+                  <div>static </div>
+                </td>
+                <td colspan="2">
+                  <b>
+                    <a href="../Cadenza.Collections/EnumerableCoda.html#M:Cadenza.Collections.EnumerableCoda.Intersperse``1(System.Collections.Generic.IEnumerable{System.Collections.Generic.IEnumerable{``0}},System.Collections.Generic.IEnumerable{``0})">Intersperse&lt;TSource&gt;</a>
+                  </b>(<i>this</i> <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Collections.Generic.IEnumerable`1">IEnumerable&lt;IEnumerable&lt;TSource&gt;&gt;</a>, <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Collections.Generic.IEnumerable`1">IEnumerable&lt;TSource&gt;</a>)<nobr> : <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Collections.Generic.IEnumerable`1">IEnumerable&lt;TSource&gt;</a></nobr><blockquote><span class="NotEntered">Documentation for this section has not yet been entered.</span></blockquote></td>
+              </tr>
+              <tr valign="top">
+                <td>
+                  <div>static </div>
+                </td>
+                <td colspan="2">
+                  <b>
+                    <a href="../Cadenza.Collections/EnumerableCoda.html#M:Cadenza.Collections.EnumerableCoda.Intersperse``1(System.Collections.Generic.IEnumerable{``0},``0)">Intersperse&lt;TSource&gt;</a>
+                  </b>(<i>this</i> <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Collections.Generic.IEnumerable`1">IEnumerable&lt;TSource&gt;</a>, <i title="To be added.">TSource</i>)<nobr> : <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Collections.Generic.IEnumerable`1">IEnumerable&lt;TSource&gt;</a></nobr><blockquote><span class="NotEntered">Documentation for this section has not yet been entered.</span></blockquote></td>
+              </tr>
+              <tr valign="top">
+                <td>
+                  <div>static </div>
+                </td>
+                <td colspan="2">
+                  <b>
+                    <a href="../Cadenza/ObjectCoda.html#M:Cadenza.ObjectCoda.Just``1(``0)">Just&lt;T&gt;</a>
+                  </b>(<i>this</i> <i title="&#xA;          The type to convert into a .&#xA;        ">T</i>)<nobr> : <a href="../Cadenza/Maybe`1.html">Cadenza.Maybe&lt;T&gt;</a></nobr><blockquote>
+          Create a new <a href="../Cadenza/Maybe`1.html">Cadenza.Maybe&lt;T&gt;</a> instance
+          initialized to a specified value.  The returned value will not be 
+          <a href="../Cadenza/Maybe`1.html#F:Cadenza.Maybe`1.Nothing">Cadenza.Maybe&lt;T&gt;.Nothing</a>.
+        </blockquote></td>
+              </tr>
+              <tr valign="top">
+                <td>
+                  <div>static </div>
+                </td>
+                <td colspan="2">
+                  <b>
+                    <a href="../Cadenza/ObjectCoda.html#M:Cadenza.ObjectCoda.Match``2(``0,System.Func{``0,Cadenza.Maybe{``1}}[])">Match&lt;TSource,TResult&gt;</a>
+                  </b>(<i>this</i> <i title="The source type.">TSource</i>, <b>params</b> <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Func`2">Func&lt;TSource, Cadenza.Maybe&lt;TResult&gt;&gt;</a>[])<nobr> : <i title="The result type.">TResult</i></nobr><blockquote>
+          Converts the <i>TSource</i> instance 
+          <i>self</i> into a <i>TResult</i>.
+        </blockquote></td>
+              </tr>
+              <tr valign="top">
+                <td>
+                  <div>static </div>
+                </td>
+                <td colspan="2">
+                  <b>
+                    <a href="../Cadenza.Collections/EnumerableCoda.html#M:Cadenza.Collections.EnumerableCoda.NotNull``1(System.Collections.Generic.IEnumerable{System.Nullable{``0}})">NotNull&lt;TSource&gt;</a>
+                  </b>(<i>this</i> <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Collections.Generic.IEnumerable`1">IEnumerable&lt;Nullable&lt;TSource&gt;&gt;</a>)<nobr> : <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Collections.Generic.IEnumerable`1">IEnumerable&lt;TSource&gt;</a></nobr><blockquote><span class="NotEntered">Documentation for this section has not yet been entered.</span></blockquote></td>
+              </tr>
+              <tr valign="top">
+                <td>
+                  <div>static </div>
+                </td>
+                <td colspan="2">
+                  <b>
+                    <a href="../Cadenza.Collections/EnumerableCoda.html#M:Cadenza.Collections.EnumerableCoda.Or(System.Collections.Generic.IEnumerable{System.Boolean})">Or</a>
+                  </b>(<i>this</i> <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Collections.Generic.IEnumerable`1">IEnumerable&lt;bool&gt;</a>)<nobr> : <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Boolean">bool</a></nobr><blockquote><span class="NotEntered">Documentation for this section has not yet been entered.</span></blockquote></td>
+              </tr>
+              <tr valign="top">
+                <td>
+                  <div>static </div>
+                </td>
+                <td colspan="2">
+                  <b>
+                    <a href="../Cadenza.Collections/EnumerableCoda.html#M:Cadenza.Collections.EnumerableCoda.OrderByNatural``1(System.Collections.Generic.IEnumerable{``0},System.Func{``0,System.String})">OrderByNatural&lt;TSource&gt;</a>
+                  </b>(<i>this</i> <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Collections.Generic.IEnumerable`1">IEnumerable&lt;TSource&gt;</a>, <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Func`2">Func&lt;TSource, string&gt;</a>)<nobr> : <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Collections.Generic.IEnumerable`1">IEnumerable&lt;TSource&gt;</a></nobr><blockquote><span class="NotEntered">Documentation for this section has not yet been entered.</span></blockquote></td>
+              </tr>
+              <tr valign="top">
+                <td>
+                  <div>static </div>
+                </td>
+                <td colspan="2">
+                  <b>
+                    <a href="../Cadenza.Collections/EnumerableCoda.html#M:Cadenza.Collections.EnumerableCoda.Partition``1(System.Collections.Generic.IEnumerable{``0},System.Func{``0,System.Boolean})">Partition&lt;TSource&gt;</a>
+                  </b>(<i>this</i> <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Collections.Generic.IEnumerable`1">IEnumerable&lt;TSource&gt;</a>, <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Func`2">Func&lt;TSource, bool&gt;</a>)<nobr> : <a href="../Cadenza/Tuple`1.html">Cadenza.Tuple&lt;IEnumerable&lt;TSource&gt;, IEnumerable&lt;TSource&gt;&gt;</a></nobr><blockquote>
+          Partitions <i>self</i> into two sequences, those which
+          contain elements satisfying <i>predicate</i> and those
+          which do not.
+        </blockquote></td>
+              </tr>
+              <tr valign="top">
+                <td>
+                  <div>static </div>
+                </td>
+                <td colspan="2">
+                  <b>
+                    <a href="../Cadenza.Collections/EnumerableCoda.html#M:Cadenza.Collections.EnumerableCoda.PathCombine(System.Collections.Generic.IEnumerable{System.String})">PathCombine</a>
+                  </b>(<i>this</i> <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Collections.Generic.IEnumerable`1">IEnumerable&lt;string&gt;</a>)<nobr> : <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.String">string</a></nobr><blockquote>
+          Creates a path string by concatenating the elements of
+          <i>self</i>.
+        </blockquote></td>
+              </tr>
+              <tr valign="top">
+                <td>
+                  <div>static </div>
+                </td>
+                <td colspan="2">
+                  <b>
+                    <a href="../Cadenza.Collections/EnumerableCoda.html#M:Cadenza.Collections.EnumerableCoda.RemoveFirstOccurrence``1(System.Collections.Generic.IEnumerable{``0},``0)">RemoveFirstOccurrence&lt;TSource&gt;</a>
+                  </b>(<i>this</i> <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Collections.Generic.IEnumerable`1">IEnumerable&lt;TSource&gt;</a>, <i title="&#xA;          The type of the elements in .&#xA;        ">TSource</i>)<nobr> : <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Collections.Generic.IEnumerable`1">IEnumerable&lt;TSource&gt;</a></nobr><blockquote>
+          Removes the first occurrence of
+          <i>value</i> from the sequence <i>self</i>.
+        </blockquote></td>
+              </tr>
+              <tr valign="top">
+                <td>
+                  <div>static </div>
+                </td>
+                <td colspan="2">
+                  <b>
+                    <a href="../Cadenza.Collections/EnumerableCoda.html#M:Cadenza.Collections.EnumerableCoda.RemoveFirstOccurrence``1(System.Collections.Generic.IEnumerable{``0},``0,System.Collections.Generic.IEqualityComparer{``0})">RemoveFirstOccurrence&lt;TSource&gt;</a>
+                  </b>(<i>this</i> <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Collections.Generic.IEnumerable`1">IEnumerable&lt;TSource&gt;</a>, <i title="&#xA;          The type of the elements in .&#xA;        ">TSource</i>, <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Collections.Generic.IEqualityComparer`1">IEqualityComparer&lt;TSource&gt;</a>)<nobr> : <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Collections.Generic.IEnumerable`1">IEnumerable&lt;TSource&gt;</a></nobr><blockquote>
+          Removes the first occurrence of
+          <i>value</i> from the sequence <i>self</i>.
+        </blockquote></td>
+              </tr>
+              <tr valign="top">
+                <td>
+                  <div>static </div>
+                </td>
+                <td colspan="2">
+                  <b>
+                    <a href="../Cadenza.Collections/EnumerableCoda.html#M:Cadenza.Collections.EnumerableCoda.RemoveFirstOccurrences``1(System.Collections.Generic.IEnumerable{``0},``0,System.Int32)">RemoveFirstOccurrences&lt;TSource&gt;</a>
+                  </b>(<i>this</i> <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Collections.Generic.IEnumerable`1">IEnumerable&lt;TSource&gt;</a>, <i title="&#xA;          The type of the elements in .&#xA;        ">TSource</i>, <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Int32">int</a>)<nobr> : <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Collections.Generic.IEnumerable`1">IEnumerable&lt;TSource&gt;</a></nobr><blockquote>
+          Removes the first <i>count</i> occurrences of
+          <i>value</i> from the sequence <i>self</i>.
+        </blockquote></td>
+              </tr>
+              <tr valign="top">
+                <td>
+                  <div>static </div>
+                </td>
+                <td colspan="2">
+                  <b>
+                    <a href="../Cadenza.Collections/EnumerableCoda.html#M:Cadenza.Collections.EnumerableCoda.RemoveFirstOccurrences``1(System.Collections.Generic.IEnumerable{``0},``0,System.Int32,System.Collections.Generic.IEqualityComparer{``0})">RemoveFirstOccurrences&lt;TSource&gt;</a>
+                  </b>(<i>this</i> <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Collections.Generic.IEnumerable`1">IEnumerable&lt;TSource&gt;</a>, <i title="&#xA;          The type of the elements in .&#xA;        ">TSource</i>, <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Int32">int</a>, <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Collections.Generic.IEqualityComparer`1">IEqualityComparer&lt;TSource&gt;</a>)<nobr> : <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Collections.Generic.IEnumerable`1">IEnumerable&lt;TSource&gt;</a></nobr><blockquote>
+          Removes the first <i>count</i> occurrences of
+          <i>value</i> from the sequence <i>self</i>.
+        </blockquote></td>
+              </tr>
+              <tr valign="top">
+                <td>
+                  <div>static </div>
+                </td>
+                <td colspan="2">
+                  <b>
+                    <a href="../Cadenza.Collections/EnumerableCoda.html#M:Cadenza.Collections.EnumerableCoda.Repeat``1(System.Collections.Generic.IEnumerable{``0},System.Int32)">Repeat&lt;TSource&gt;</a>
+                  </b>(<i>this</i> <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Collections.Generic.IEnumerable`1">IEnumerable&lt;TSource&gt;</a>, <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Int32">int</a>)<nobr> : <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Collections.Generic.IEnumerable`1">IEnumerable&lt;TSource&gt;</a></nobr><blockquote>
+          Repeats the sequence <i>self</i> for
+          <i>number</i> repetitions.
+        </blockquote></td>
+              </tr>
+              <tr valign="top">
+                <td>
+                  <div>static </div>
+                </td>
+                <td colspan="2">
+                  <b>
+                    <a href="../Cadenza.Collections/EnumerableCoda.html#M:Cadenza.Collections.EnumerableCoda.SelectAggregated``3(System.Collections.Generic.IEnumerable{``0},``1,System.Func{``1,``0,Cadenza.Tuple{``1,``2}})">SelectAggregated&lt;TSource,TAccumulate,TResult&gt;</a>
+                  </b>(<i>this</i> <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Collections.Generic.IEnumerable`1">IEnumerable&lt;TSource&gt;</a>, <i title="&#xA;          The type of the accumulator value.&#xA;        ">TAccumulate</i>, <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Func`3">Func&lt;TAccumulate, TSource, Cadenza.Tuple&lt;TAccumulate, TResult&gt;&gt;</a>)<nobr> : <a href="../Cadenza/Tuple`2.html">Cadenza.Tuple&lt;TAccumulate, List&lt;TResult&gt;&gt;</a></nobr><blockquote>
+          Applies <i>func</i> to each element within
+          <i>self</i>, returning the final
+          value of the accumulator and the list of intermediate values.
+        </blockquote></td>
+              </tr>
+              <tr valign="top">
+                <td>
+                  <div>static </div>
+                </td>
+                <td colspan="2">
+                  <b>
+                    <a href="../Cadenza.Collections/EnumerableCoda.html#M:Cadenza.Collections.EnumerableCoda.SelectBreadthFirst``2(System.Collections.Generic.IEnumerable{``0},System.Func{``0,``1},System.Func{``0,System.Collections.Generic.IEnumerable{``0}})">SelectBreadthFirst&lt;TSource,TResult&gt;</a>
+                  </b>(<i>this</i> <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Collections.Generic.IEnumerable`1">IEnumerable&lt;TSource&gt;</a>, <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Func`2">Func&lt;TSource, TResult&gt;</a>, <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Func`2">Func&lt;TSource, IEnumerable&lt;TSource&gt;&gt;</a>)<nobr> : <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Collections.Generic.IEnumerable`1">IEnumerable&lt;TResult&gt;</a></nobr><blockquote>
+          Traverse a sequence of nodes in a breadth-first fashion, converting each
+          encountered node.
+        </blockquote></td>
+              </tr>
+              <tr valign="top">
+                <td>
+                  <div>static </div>
+                </td>
+                <td colspan="2">
+                  <b>
+                    <a href="../Cadenza.Collections/EnumerableCoda.html#M:Cadenza.Collections.EnumerableCoda.SelectDepthFirst``2(System.Collections.Generic.IEnumerable{``0},System.Func{``0,``1},System.Func{``0,System.Collections.Generic.IEnumerable{``0}})">SelectDepthFirst&lt;TSource,TResult&gt;</a>
+                  </b>(<i>this</i> <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Collections.Generic.IEnumerable`1">IEnumerable&lt;TSource&gt;</a>, <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Func`2">Func&lt;TSource, TResult&gt;</a>, <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Func`2">Func&lt;TSource, IEnumerable&lt;TSource&gt;&gt;</a>)<nobr> : <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Collections.Generic.IEnumerable`1">IEnumerable&lt;TResult&gt;</a></nobr><blockquote>
+          Traverse a sequence of nodes in a depth-first fashion, converting each
+          encountered node.
+        </blockquote></td>
+              </tr>
+              <tr valign="top">
+                <td>
+                  <div>static </div>
+                </td>
+                <td colspan="2">
+                  <b>
+                    <a href="../Cadenza.Collections/EnumerableCoda.html#M:Cadenza.Collections.EnumerableCoda.SelectFromEach``3(System.Collections.Generic.IEnumerable{``0},System.Collections.Generic.IEnumerable{``1},System.Func{``0,``1,``2})">SelectFromEach&lt;T1,T2,TResult&gt;</a>
+                  </b>(<i>this</i> <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Collections.Generic.IEnumerable`1">IEnumerable&lt;T1&gt;</a>, <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Collections.Generic.IEnumerable`1">IEnumerable&lt;T2&gt;</a>, <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Func`3">Func&lt;T1, T2, TResult&gt;</a>)<nobr> : <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Collections.Generic.IEnumerable`1">IEnumerable&lt;TResult&gt;</a></nobr><blockquote>
+          Projects each corresponding element from multiple sequences into a 
+          new form.
+        </blockquote></td>
+              </tr>
+              <tr valign="top">
+                <td>
+                  <div>static </div>
+                </td>
+                <td colspan="2">
+                  <b>
+                    <a href="../Cadenza.Collections/EnumerableCoda.html#M:Cadenza.Collections.EnumerableCoda.SelectFromEach``4(System.Collections.Generic.IEnumerable{``0},System.Collections.Generic.IEnumerable{``1},System.Collections.Generic.IEnumerable{``2},System.Func{``0,``1,``2,``3})">SelectFromEach&lt;T1,T2,T3,TResult&gt;</a>
+                  </b>(<i>this</i> <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Collections.Generic.IEnumerable`1">IEnumerable&lt;T1&gt;</a>, <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Collections.Generic.IEnumerable`1">IEnumerable&lt;T2&gt;</a>, <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Collections.Generic.IEnumerable`1">IEnumerable&lt;T3&gt;</a>, <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Func`4">Func&lt;T1, T2, T3, TResult&gt;</a>)<nobr> : <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Collections.Generic.IEnumerable`1">IEnumerable&lt;TResult&gt;</a></nobr><blockquote>
+          Projects each corresponding element from multiple sequences into a 
+          new form.
+        </blockquote></td>
+              </tr>
+              <tr valign="top">
+                <td>
+                  <div>static </div>
+                </td>
+                <td colspan="2">
+                  <b>
+                    <a href="../Cadenza.Collections/EnumerableCoda.html#M:Cadenza.Collections.EnumerableCoda.SelectFromEach``5(System.Collections.Generic.IEnumerable{``0},System.Collections.Generic.IEnumerable{``1},System.Collections.Generic.IEnumerable{``2},System.Collections.Generic.IEnumerable{``3},System.Func{``0,``1,``2,``3,``4})">SelectFromEach&lt;T1,T2,T3,T4,TResult&gt;</a>
+                  </b>(<i>this</i> <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Collections.Generic.IEnumerable`1">IEnumerable&lt;T1&gt;</a>, <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Collections.Generic.IEnumerable`1">IEnumerable&lt;T2&gt;</a>, <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Collections.Generic.IEnumerable`1">IEnumerable&lt;T3&gt;</a>, <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Collections.Generic.IEnumerable`1">IEnumerable&lt;T4&gt;</a>, <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Func`5">Func&lt;T1, T2, T3, T4, TResult&gt;</a>)<nobr> : <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Collections.Generic.IEnumerable`1">IEnumerable&lt;TResult&gt;</a></nobr><blockquote>
+          Projects each corresponding element from multiple sequences into a 
+          new form.
+        </blockquote></td>
+              </tr>
+              <tr valign="top">
+                <td>
+                  <div>static </div>
+                </td>
+                <td colspan="2">
+                  <b>
+                    <a href="../Cadenza.Collections/EnumerableCoda.html#M:Cadenza.Collections.EnumerableCoda.SelectReverseAggregated``3(System.Collections.Generic.IEnumerable{``0},``1,System.Func{``1,``0,Cadenza.Tuple{``1,``2}})">SelectReverseAggregated&lt;TSource,TAccumulate,TResult&gt;</a>
+                  </b>(<i>this</i> <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Collections.Generic.IEnumerable`1">IEnumerable&lt;TSource&gt;</a>, <i title="&#xA;          The type of the accumulator value.&#xA;        ">TAccumulate</i>, <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Func`3">Func&lt;TAccumulate, TSource, Cadenza.Tuple&lt;TAccumulate, TResult&gt;&gt;</a>)<nobr> : <a href="../Cadenza/Tuple`2.html">Cadenza.Tuple&lt;TAccumulate, List&lt;TResult&gt;&gt;</a></nobr><blockquote>
+          Applies <i>func</i> to each element within
+          <i>self</i> in reverse order, returning the final
+          value of the accumulator and the list of intermediate values.
+        </blockquote></td>
+              </tr>
+              <tr valign="top">
+                <td>
+                  <div>static </div>
+                </td>
+                <td colspan="2">
+                  <b>
+                    <a href="../Cadenza.Collections/EnumerableCoda.html#M:Cadenza.Collections.EnumerableCoda.SequenceCompare``1(System.Collections.Generic.IEnumerable{``0},System.Collections.Generic.IEnumerable{``0})">SequenceCompare&lt;TSource&gt;</a>
+                  </b>(<i>this</i> <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Collections.Generic.IEnumerable`1">IEnumerable&lt;TSource&gt;</a>, <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Collections.Generic.IEnumerable`1">IEnumerable&lt;TSource&gt;</a>)<nobr> : <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Int32">int</a></nobr><blockquote>
+          Compares the elements of two sequences by using the default
+          comparer for their type.
+        </blockquote></td>
+              </tr>
+              <tr valign="top">
+                <td>
+                  <div>static </div>
+                </td>
+                <td colspan="2">
+                  <b>
+                    <a href="../Cadenza.Collections/EnumerableCoda.html#M:Cadenza.Collections.EnumerableCoda.SequenceCompare``1(System.Collections.Generic.IEnumerable{``0},System.Collections.Generic.IEnumerable{``0},System.Collections.Generic.IComparer{``0})">SequenceCompare&lt;TSource&gt;</a>
+                  </b>(<i>this</i> <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Collections.Generic.IEnumerable`1">IEnumerable&lt;TSource&gt;</a>, <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Collections.Generic.IEnumerable`1">IEnumerable&lt;TSource&gt;</a>, <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Collections.Generic.IComparer`1">IComparer&lt;TSource&gt;</a>)<nobr> : <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Int32">int</a></nobr><blockquote>
+          Compares the elements of two sequences by using a specified
+          <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Collections.Generic.IComparer`1">IComparer&lt;TSource&gt;</a>.
+        </blockquote></td>
+              </tr>
+              <tr valign="top">
+                <td>
+                  <div>static </div>
+                </td>
+                <td colspan="2">
+                  <b>
+                    <a href="../Cadenza.Collections/EnumerableCoda.html#M:Cadenza.Collections.EnumerableCoda.Shuffle``1(System.Collections.Generic.IEnumerable{``0})">Shuffle&lt;TSource&gt;</a>
+                  </b>(<i>this</i> <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Collections.Generic.IEnumerable`1">IEnumerable&lt;TSource&gt;</a>)<nobr> : <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Collections.Generic.IEnumerable`1">IEnumerable&lt;TSource&gt;</a></nobr><blockquote>
+          Randomizes the ordering of items within <i>self</i>.
+        </blockquote></td>
+              </tr>
+              <tr valign="top">
+                <td>
+                  <div>static </div>
+                </td>
+                <td colspan="2">
+                  <b>
+                    <a href="../Cadenza.Collections/EnumerableCoda.html#M:Cadenza.Collections.EnumerableCoda.Shuffle``1(System.Collections.Generic.IEnumerable{``0},System.Random)">Shuffle&lt;TSource&gt;</a>
+                  </b>(<i>this</i> <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Collections.Generic.IEnumerable`1">IEnumerable&lt;TSource&gt;</a>, <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Random">Random</a>)<nobr> : <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Collections.Generic.IEnumerable`1">IEnumerable&lt;TSource&gt;</a></nobr><blockquote>
+          Randomizes the ordering of items within <i>self</i>.
+        </blockquote></td>
+              </tr>
+              <tr valign="top">
+                <td>
+                  <div>static </div>
+                </td>
+                <td colspan="2">
+                  <b>
+                    <a href="../Cadenza.Collections/EnumerableCoda.html#M:Cadenza.Collections.EnumerableCoda.SkipPrefix``1(System.Collections.Generic.IEnumerable{``0},System.Collections.Generic.IEnumerable{``0})">SkipPrefix&lt;TSource&gt;</a>
+                  </b>(<i>this</i> <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Collections.Generic.IEnumerable`1">IEnumerable&lt;TSource&gt;</a>, <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Collections.Generic.IEnumerable`1">IEnumerable&lt;TSource&gt;</a>)<nobr> : <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Collections.Generic.IEnumerable`1">IEnumerable&lt;TSource&gt;</a></nobr><blockquote>
+          Skips over <i>prefix</i>, returning the elements following
+          <i>prefix</i>.
+        </blockquote></td>
+              </tr>
+              <tr valign="top">
+                <td>
+                  <div>static </div>
+                </td>
+                <td colspan="2">
+                  <b>
+                    <a href="../Cadenza.Collections/EnumerableCoda.html#M:Cadenza.Collections.EnumerableCoda.SkipPrefix``1(System.Collections.Generic.IEnumerable{``0},System.Collections.Generic.IEnumerable{``0},System.Collections.Generic.IEqualityComparer{``0})">SkipPrefix&lt;TSource&gt;</a>
+                  </b>(<i>this</i> <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Collections.Generic.IEnumerable`1">IEnumerable&lt;TSource&gt;</a>, <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Collections.Generic.IEnumerable`1">IEnumerable&lt;TSource&gt;</a>, <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Collections.Generic.IEqualityComparer`1">IEqualityComparer&lt;TSource&gt;</a>)<nobr> : <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Collections.Generic.IEnumerable`1">IEnumerable&lt;TSource&gt;</a></nobr><blockquote>
+          Skips over <i>prefix</i>, returning the elements following
+          <i>prefix</i>.
+        </blockquote></td>
+              </tr>
+              <tr valign="top">
+                <td>
+                  <div>static </div>
+                </td>
+                <td colspan="2">
+                  <b>
+                    <a href="../Cadenza.Collections/EnumerableCoda.html#M:Cadenza.Collections.EnumerableCoda.Sort``1(System.Collections.Generic.IEnumerable{``0})">Sort&lt;TSource&gt;</a>
+                  </b>(<i>this</i> <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Collections.Generic.IEnumerable`1">IEnumerable&lt;TSource&gt;</a>)<nobr> : <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Collections.Generic.IEnumerable`1">IEnumerable&lt;TSource&gt;</a></nobr><blockquote>Sorts the elements in the sequence <i>self</i> using the default comparer.</blockquote></td>
+              </tr>
+              <tr valign="top">
+                <td>
+                  <div>static </div>
+                </td>
+                <td colspan="2">
+                  <b>
+                    <a href="../Cadenza.Collections/EnumerableCoda.html#M:Cadenza.Collections.EnumerableCoda.Sort``1(System.Collections.Generic.IEnumerable{``0},System.Collections.Generic.IComparer{``0})">Sort&lt;TSource&gt;</a>
+                  </b>(<i>this</i> <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Collections.Generic.IEnumerable`1">IEnumerable&lt;TSource&gt;</a>, <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Collections.Generic.IComparer`1">IComparer&lt;TSource&gt;</a>)<nobr> : <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Collections.Generic.IEnumerable`1">IEnumerable&lt;TSource&gt;</a></nobr><blockquote>Sorts the elements in the sequence <i>self</i> using the specified comparer.</blockquote></td>
+              </tr>
+              <tr valign="top">
+                <td>
+                  <div>static </div>
+                </td>
+                <td colspan="2">
+                  <b>
+                    <a href="../Cadenza.Collections/EnumerableCoda.html#M:Cadenza.Collections.EnumerableCoda.Sort``1(System.Collections.Generic.IEnumerable{``0},System.Comparison{``0})">Sort&lt;TSource&gt;</a>
+                  </b>(<i>this</i> <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Collections.Generic.IEnumerable`1">IEnumerable&lt;TSource&gt;</a>, <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Comparison`1">Comparison&lt;TSource&gt;</a>)<nobr> : <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Collections.Generic.IEnumerable`1">IEnumerable&lt;TSource&gt;</a></nobr><blockquote>Sorts the elements in the sequence <i>self</i> using the specified comparer.</blockquote></td>
+              </tr>
+              <tr valign="top">
+                <td>
+                  <div>static </div>
+                </td>
+                <td colspan="2">
+                  <b>
+                    <a href="../Cadenza.Collections/EnumerableCoda.html#M:Cadenza.Collections.EnumerableCoda.SortNatural(System.Collections.Generic.IEnumerable{System.String})">SortNatural</a>
+                  </b>(<i>this</i> <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Collections.Generic.IEnumerable`1">IEnumerable&lt;string&gt;</a>)<nobr> : <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Collections.Generic.IEnumerable`1">IEnumerable&lt;string&gt;</a></nobr><blockquote>
+          Returns a new 
+          <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Collections.Generic.IEnumerable`1">IEnumerable&lt;TSource&gt;</a>
+          which contains the elements within <i>self</i> sorted 
+          using the
+          <a href="../Cadenza/NaturalStringComparer.html#F:Cadenza.NaturalStringComparer.Default">Cadenza.NaturalStringComparer.Default</a> comparer.
+        </blockquote></td>
+              </tr>
+              <tr valign="top">
+                <td>
+                  <div>static </div>
+                </td>
+                <td colspan="2">
+                  <b>
+                    <a href="../Cadenza.Collections/EnumerableCoda.html#M:Cadenza.Collections.EnumerableCoda.Span``1(System.Collections.Generic.IEnumerable{``0},System.Func{``0,System.Boolean})">Span&lt;TSource&gt;</a>
+                  </b>(<i>this</i> <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Collections.Generic.IEnumerable`1">IEnumerable&lt;TSource&gt;</a>, <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Func`2">Func&lt;TSource, bool&gt;</a>)<nobr> : <a href="../Cadenza/Tuple`1.html">Cadenza.Tuple&lt;IEnumerable&lt;TSource&gt;, IEnumerable&lt;TSource&gt;&gt;</a></nobr><blockquote>
+          Creates a 
+          <a href="../Cadenza/Tuple`1.html">Cadenza.Tuple&lt;IEnumerable&lt;TSource&gt;, IEnumerable&lt;TSource&gt;&gt;</a>
+          of the contiguous elements at the start of <i>self</i> 
+          which satisfy <i>predicate</i>.
+        </blockquote></td>
+              </tr>
+              <tr valign="top">
+                <td>
+                  <div>static </div>
+                </td>
+                <td colspan="2">
+                  <b>
+                    <a href="../Cadenza.Collections/EnumerableCoda.html#M:Cadenza.Collections.EnumerableCoda.SplitAt``1(System.Collections.Generic.IEnumerable{``0},System.Int32)">SplitAt&lt;TSource&gt;</a>
+                  </b>(<i>this</i> <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Collections.Generic.IEnumerable`1">IEnumerable&lt;TSource&gt;</a>, <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Int32">int</a>)<nobr> : <a href="../Cadenza/Tuple`1.html">Cadenza.Tuple&lt;IEnumerable&lt;TSource&gt;, IEnumerable&lt;TSource&gt;&gt;</a></nobr><blockquote>
+          Splits <i>self</i> at <i>firstLength</i>,
+          creating a 
+          <a href="../Cadenza/Tuple`1.html">Cadenza.Tuple&lt;IEnumerable&lt;TSource&gt;, IEnumerable&lt;TSource&gt;&gt;</a>.
+        </blockquote></td>
+              </tr>
+              <tr valign="top">
+                <td>
+                  <div>static </div>
+                </td>
+                <td colspan="2">
+                  <b>
+                    <a href="../Cadenza.Collections/EnumerableCoda.html#M:Cadenza.Collections.EnumerableCoda.Subsets``1(System.Collections.Generic.IEnumerable{``0})">Subsets&lt;TSource&gt;</a>
+                  </b>(<i>this</i> <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Collections.Generic.IEnumerable`1">IEnumerable&lt;TSource&gt;</a>)<nobr> : <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Collections.Generic.IEnumerable`1">IEnumerable&lt;IEnumerable&lt;TSource&gt;&gt;</a></nobr><blockquote>
+          Creates all subsets of a given input sequence.
+        </blockquote></td>
+              </tr>
+              <tr valign="top">
+                <td>
+                  <div>static </div>
+                </td>
+                <td colspan="2">
+                  <b>
+                    <a href="../Cadenza.Collections/EnumerableCoda.html#M:Cadenza.Collections.EnumerableCoda.Subsets``1(System.Collections.Generic.IEnumerable{``0},System.Func{System.Collections.Generic.IEnumerable{``0},System.Boolean})">Subsets&lt;TSource&gt;</a>
+                  </b>(<i>this</i> <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Collections.Generic.IEnumerable`1">IEnumerable&lt;TSource&gt;</a>, <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Func`1">Func&lt;IEnumerable&lt;TSource&gt;,System.Boolean&gt;</a>)<nobr> : <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Collections.Generic.IEnumerable`1">IEnumerable&lt;IEnumerable&lt;TSource&gt;&gt;</a></nobr><blockquote>
+          Creates all subsets that match <i>predicate</i>.
+        </blockquote></td>
+              </tr>
+              <tr valign="top">
+                <td>
+                  <div>static </div>
+                </td>
+                <td colspan="2">
+                  <b>
+                    <a href="../Cadenza.Collections/EnumerableCoda.html#M:Cadenza.Collections.EnumerableCoda.Tokens``3(System.Collections.Generic.IEnumerable{``0},``1,System.Func{``1,``0,``1},System.Func{``1,Cadenza.Tuple{``2,``1}},System.Func{``1,``0,System.Boolean}[])">Tokens&lt;TSource,TAccumulate,TResult&gt;</a>
+                  </b>(<i>this</i> <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Collections.Generic.IEnumerable`1">IEnumerable&lt;TSource&gt;</a>, <i title="&#xA;          The type of the accumulator value.&#xA;        ">TAccumulate</i>, <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Func`3">Func&lt;TAccumulate, TSource, TAccumulate&gt;</a>, <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Func`2">Func&lt;TAccumulate, Cadenza.Tuple&lt;TResult, TAccumulate&gt;&gt;</a>, <b>params</b> <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Func`3">Func&lt;TAccumulate, TSource, bool&gt;</a>[])<nobr> : <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Collections.Generic.IEnumerable`1">IEnumerable&lt;TResult&gt;</a></nobr><blockquote>
+          A simple lexer to convert an
+          <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Collections.Generic.IEnumerable`1">IEnumerable&lt;TSource&gt;</a>
+          into a
+          <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Collections.Generic.IEnumerable`1">IEnumerable&lt;TResult&gt;</a>,
+          where the resulting sequence may have a different number of elements
+          than the source sequence.
+        </blockquote></td>
+              </tr>
+              <tr valign="top">
+                <td>
+                  <div>static </div>
+                </td>
+                <td colspan="2">
+                  <b>
+                    <a href="../Cadenza.Collections/EnumerableCoda.html#M:Cadenza.Collections.EnumerableCoda.ToList``1(System.Collections.Generic.IEnumerable{System.Collections.Generic.IEnumerable{``0}})">ToList&lt;TSource&gt;</a>
+                  </b>(<i>this</i> <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Collections.Generic.IEnumerable`1">IEnumerable&lt;IEnumerable&lt;TSource&gt;&gt;</a>)<nobr> : <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Collections.Generic.List`1">List&lt;List&lt;TSource&gt;&gt;</a></nobr><blockquote>
+          Creates a 
+          <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Collections.Generic.List`1">List&lt;List&lt;TSource&gt;&gt;</a>
+          with the same ordering and values as <i>self</i>.
+        </blockquote></td>
+              </tr>
+              <tr valign="top">
+                <td>
+                  <div>static </div>
+                </td>
+                <td colspan="2">
+                  <b>
+                    <a href="../Cadenza/ObjectCoda.html#M:Cadenza.ObjectCoda.ToMaybe``1(``0)">ToMaybe&lt;T&gt;</a>
+                  </b>(<i>this</i> <i title="&#xA;          The type to convert into a .&#xA;        ">T</i>)<nobr> : <a href="../Cadenza/Maybe`1.html">Cadenza.Maybe&lt;T&gt;</a></nobr><blockquote>
+          Create a new <a href="../Cadenza/Maybe`1.html">Cadenza.Maybe&lt;T&gt;</a> instance
+          initialized to a specified value.  The returned value may be 
+          <a href="../Cadenza/Maybe`1.html#F:Cadenza.Maybe`1.Nothing">Cadenza.Maybe&lt;T&gt;.Nothing</a>.
+        </blockquote></td>
+              </tr>
+              <tr valign="top">
+                <td>
+                  <div>static </div>
+                </td>
+                <td colspan="2">
+                  <b>
+                    <a href="../Cadenza.Collections/EnumerableCoda.html#M:Cadenza.Collections.EnumerableCoda.ToReadOnlyDictionary``2(System.Collections.Generic.IEnumerable{``0},System.Func{``0,``1})">ToReadOnlyDictionary&lt;TSource,TKey&gt;</a>
+                  </b>(<i>this</i> <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Collections.Generic.IEnumerable`1">IEnumerable&lt;TSource&gt;</a>, <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Func`2">Func&lt;TSource, TKey&gt;</a>)<nobr> : <a href="../Cadenza.Collections/ReadOnlyDictionary`2.html">ReadOnlyDictionary&lt;TKey, TSource&gt;</a></nobr><blockquote>
+          Creates a 
+          <a href="../Cadenza.Collections/ReadOnlyDictionary`2.html">Cadenza.Collections.ReadOnlyDictionary&lt;TKey, TSource&gt;</a>
+          from an
+          <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Collections.Generic.IEnumerable`1">IEnumerable&lt;TSource&gt;</a>
+          according to a specified key selector and value selector delegate.
+        </blockquote></td>
+              </tr>
+              <tr valign="top">
+                <td>
+                  <div>static </div>
+                </td>
+                <td colspan="2">
+                  <b>
+                    <a href="../Cadenza.Collections/EnumerableCoda.html#M:Cadenza.Collections.EnumerableCoda.ToReadOnlyDictionary``3(System.Collections.Generic.IEnumerable{``0},System.Func{``0,``1},System.Func{``0,``2})">ToReadOnlyDictionary&lt;TSource,TKey,TValue&gt;</a>
+                  </b>(<i>this</i> <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Collections.Generic.IEnumerable`1">IEnumerable&lt;TSource&gt;</a>, <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Func`2">Func&lt;TSource, TKey&gt;</a>, <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Func`2">Func&lt;TSource, TValue&gt;</a>)<nobr> : <a href="../Cadenza.Collections/ReadOnlyDictionary`2.html">ReadOnlyDictionary&lt;TKey, TValue&gt;</a></nobr><blockquote>
+          Creates a 
+          <a href="../Cadenza.Collections/ReadOnlyDictionary`2.html">Cadenza.Collections.ReadOnlyDictionary&lt;TKey, TValue&gt;</a>
+          from an
+          <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Collections.Generic.IEnumerable`1">IEnumerable&lt;TSource&gt;</a>
+          according to a specified key selector and value selector delegate.
+        </blockquote></td>
+              </tr>
+              <tr valign="top">
+                <td>
+                  <div>static </div>
+                </td>
+                <td colspan="2">
+                  <b>
+                    <a href="../Cadenza.Collections/EnumerableCoda.html#M:Cadenza.Collections.EnumerableCoda.ToValueReader(System.Collections.Generic.IEnumerable{System.String})">ToValueReader</a>
+                  </b>(<i>this</i> <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Collections.Generic.IEnumerable`1">IEnumerable&lt;string&gt;</a>)<nobr> : <a href="../Cadenza.IO/TextValueReader.html">Cadenza.IO.TextValueReader</a></nobr><blockquote>
+          Creates a <a href="../Cadenza.IO/TextValueReader.html">Cadenza.IO.TextValueReader</a>
+          which will extract values from an 
+          <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Collections.Generic.IEnumerable`1">IEnumerable&lt;string&gt;</a>.
+        </blockquote></td>
+              </tr>
+              <tr valign="top">
+                <td>
+                  <div>static </div>
+                </td>
+                <td colspan="2">
+                  <b>
+                    <a href="../Cadenza.Collections/EnumerableCoda.html#M:Cadenza.Collections.EnumerableCoda.ToValueReader``1(System.Collections.Generic.IEnumerable{``0})">ToValueReader&lt;TSource&gt;</a>
+                  </b>(<i>this</i> <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Collections.Generic.IEnumerable`1">IEnumerable&lt;TSource&gt;</a>)<nobr> : <a href="../Cadenza.IO/EnumerableValueReader`1.html">Cadenza.IO.EnumerableValueReader&lt;TSource&gt;</a></nobr><blockquote>
+          Creates a <a href="javascript:alert(&quot;Documentation not found.&quot;)">Cadenza.IO.EnumerableValueReader</a>
+          which will extract values from an 
+          <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Collections.Generic.IEnumerable`1">IEnumerable&lt;TSource&gt;</a>.
+        </blockquote></td>
+              </tr>
+              <tr valign="top">
+                <td>
+                  <div>static </div>
+                </td>
+                <td colspan="2">
+                  <b>
+                    <a href="../Cadenza.Collections/EnumerableCoda.html#M:Cadenza.Collections.EnumerableCoda.TrailingSegments``1(System.Collections.Generic.IEnumerable{``0})">TrailingSegments&lt;TSource&gt;</a>
+                  </b>(<i>this</i> <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Collections.Generic.IEnumerable`1">IEnumerable&lt;TSource&gt;</a>)<nobr> : <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Collections.Generic.IEnumerable`1">IEnumerable&lt;IEnumerable&lt;TSource&gt;&gt;</a></nobr><blockquote>
+          Creates a 
+          <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Collections.Generic.IEnumerable`1">IEnumerable&lt;IEnumerable&lt;TSource&gt;&gt;</a>
+          containing all final segments of <i>self</i>,
+          longest first.
+        </blockquote></td>
+              </tr>
+              <tr valign="top">
+                <td>
+                  <div>static </div>
+                </td>
+                <td colspan="2">
+                  <b>
+                    <a href="../Cadenza.Collections/EnumerableCoda.html#M:Cadenza.Collections.EnumerableCoda.Transpose``1(System.Collections.Generic.IEnumerable{System.Collections.Generic.IEnumerable{``0}})">Transpose&lt;TSource&gt;</a>
+                  </b>(<i>this</i> <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Collections.Generic.IEnumerable`1">IEnumerable&lt;IEnumerable&lt;TSource&gt;&gt;</a>)<nobr> : <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Collections.Generic.IEnumerable`1">IEnumerable&lt;IEnumerable&lt;TSource&gt;&gt;</a></nobr><blockquote>
+          Transposes <i>self</i>, so that rows become columns and
+          columns become rows in the returned 
+          <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Collections.Generic.IEnumerable`1">IEnumerable&lt;IEnumerable&lt;TSource&gt;&gt;</a>.
+        </blockquote></td>
+              </tr>
+              <tr valign="top">
+                <td>
+                  <div>static </div>
+                </td>
+                <td colspan="2">
+                  <b>
+                    <a href="../Cadenza/ObjectCoda.html#M:Cadenza.ObjectCoda.TraverseBreadthFirst``2(``0,System.Func{``0,``1},System.Func{``0,System.Collections.Generic.IEnumerable{``0}})">TraverseBreadthFirst&lt;TSource,TResult&gt;</a>
+                  </b>(<i>this</i> <i title="&#xA;          The type of the root node and intermediate nodes of the tree.&#xA;        ">TSource</i>, <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Func`2">Func&lt;TSource, TResult&gt;</a>, <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Func`2">Func&lt;TSource, IEnumerable&lt;TSource&gt;&gt;</a>)<nobr> : <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Collections.Generic.IEnumerable`1">IEnumerable&lt;TResult&gt;</a></nobr><blockquote>
+          Traverse a tree in a breadth-first fashion, converting each 
+          encountered node.
+        </blockquote></td>
+              </tr>
+              <tr valign="top">
+                <td>
+                  <div>static </div>
+                </td>
+                <td colspan="2">
+                  <b>
+                    <a href="../Cadenza/ObjectCoda.html#M:Cadenza.ObjectCoda.TraverseBreadthFirstWithParent``2(``0,System.Func{``0,``1},System.Func{``0,System.Collections.Generic.IEnumerable{``0}})">TraverseBreadthFirstWithParent&lt;TSource,TResult&gt;</a>
+                  </b>(<i>this</i> <i title="&#xA;          The type of the root node and intermediate nodes of the tree.&#xA;        ">TSource</i>, <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Func`2">Func&lt;TSource, TResult&gt;</a>, <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Func`2">Func&lt;TSource, IEnumerable&lt;TSource&gt;&gt;</a>)<nobr> : <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Collections.Generic.IEnumerable`1">IEnumerable&lt;KeyValuePair&lt;TSource, TResult&gt;&gt;</a></nobr><blockquote>
+          Traverse a tree in a breadth-first fashion, converting each 
+          encountered node.
+        </blockquote></td>
+              </tr>
+              <tr valign="top">
+                <td>
+                  <div>static </div>
+                </td>
+                <td colspan="2">
+                  <b>
+                    <a href="../Cadenza/ObjectCoda.html#M:Cadenza.ObjectCoda.TraverseDepthFirst``2(``0,System.Func{``0,``1},System.Func{``0,System.Collections.Generic.IEnumerable{``0}})">TraverseDepthFirst&lt;TSource,TResult&gt;</a>
+                  </b>(<i>this</i> <i title="&#xA;          The type of the root node and intermediate nodes of the tree.&#xA;        ">TSource</i>, <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Func`2">Func&lt;TSource, TResult&gt;</a>, <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Func`2">Func&lt;TSource, IEnumerable&lt;TSource&gt;&gt;</a>)<nobr> : <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Collections.Generic.IEnumerable`1">IEnumerable&lt;TResult&gt;</a></nobr><blockquote>
+          Traverse a tree in a depth-first fashion, converting each 
+          encountered node.
+        </blockquote></td>
+              </tr>
+              <tr valign="top">
+                <td>
+                  <div>static </div>
+                </td>
+                <td colspan="2">
+                  <b>
+                    <a href="../Cadenza/ObjectCoda.html#M:Cadenza.ObjectCoda.TraverseDepthFirstWithParent``2(``0,System.Func{``0,``1},System.Func{``0,System.Collections.Generic.IEnumerable{``0}})">TraverseDepthFirstWithParent&lt;TSource,TResult&gt;</a>
+                  </b>(<i>this</i> <i title="&#xA;          The type of the root node and intermediate nodes of the tree.&#xA;        ">TSource</i>, <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Func`2">Func&lt;TSource, TResult&gt;</a>, <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Func`2">Func&lt;TSource, IEnumerable&lt;TSource&gt;&gt;</a>)<nobr> : <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Collections.Generic.IEnumerable`1">IEnumerable&lt;KeyValuePair&lt;TSource, TResult&gt;&gt;</a></nobr><blockquote>
+          Traverse a tree in a depth-first fashion, converting each 
+          encountered node.
+        </blockquote></td>
+              </tr>
+              <tr valign="top">
+                <td>
+                  <div>static </div>
+                </td>
+                <td colspan="2">
+                  <b>
+                    <a href="../Cadenza.Collections/EnumerableCoda.html#M:Cadenza.Collections.EnumerableCoda.TryGetFirst``1(System.Collections.Generic.IEnumerable{``0},``0@)">TryGetFirst&lt;TSource&gt;</a>
+                  </b>(<i>this</i> <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Collections.Generic.IEnumerable`1">IEnumerable&lt;TSource&gt;</a>, <i>out</i> <i title="The type of the elements in .">TSource</i>)<nobr> : <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Boolean">bool</a></nobr><blockquote>Attempts to obtain the first element in the sequence.</blockquote></td>
+              </tr>
+              <tr valign="top">
+                <td>
+                  <div>static </div>
+                </td>
+                <td colspan="2">
+                  <b>
+                    <a href="../Cadenza.Collections/EnumerableCoda.html#M:Cadenza.Collections.EnumerableCoda.TryGetFirst``1(System.Collections.Generic.IEnumerable{``0},System.Func{``0,System.Boolean},``0@)">TryGetFirst&lt;TSource&gt;</a>
+                  </b>(<i>this</i> <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Collections.Generic.IEnumerable`1">IEnumerable&lt;TSource&gt;</a>, <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Func`2">Func&lt;TSource, bool&gt;</a>, <i>out</i> <i title="The type of the elements in .">TSource</i>)<nobr> : <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Boolean">bool</a></nobr><blockquote>Attempts to obtain the first element in the sequence that satisfies the specified condition.</blockquote></td>
+              </tr>
+              <tr valign="top">
+                <td>
+                  <div>static </div>
+                </td>
+                <td colspan="2">
+                  <b>
+                    <a href="../Cadenza.Collections/EnumerableCoda.html#M:Cadenza.Collections.EnumerableCoda.Unzip``2(System.Collections.Generic.IEnumerable{Cadenza.Tuple{``0,``1}})">Unzip&lt;T1,T2&gt;</a>
+                  </b>(<i>this</i> <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Collections.Generic.IEnumerable`1">IEnumerable&lt;Cadenza.Tuple&lt;T1, T2&gt;&gt;</a>)<nobr> : <a href="../Cadenza/Tuple`1.html">Cadenza.Tuple&lt;IEnumerable&lt;T1&gt;, IEnumerable&lt;T2&gt;&gt;</a></nobr><blockquote>
+          Converts an 
+          <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Collections.Generic.IEnumerable`1">IEnumerable&lt;Cadenza.Tuple&lt;T1, T2&gt;&gt;</a>
+          into a tuple of lists, one for each 
+          <a href="../Cadenza/Tuple`2.html">Cadenza.Tuple&lt;T1, T2&gt;</a>
+          element.
+        </blockquote></td>
+              </tr>
+              <tr valign="top">
+                <td>
+                  <div>static </div>
+                </td>
+                <td colspan="2">
+                  <b>
+                    <a href="../Cadenza.Collections/EnumerableCoda.html#M:Cadenza.Collections.EnumerableCoda.Unzip``3(System.Collections.Generic.IEnumerable{Cadenza.Tuple{``0,``1,``2}})">Unzip&lt;T1,T2,T3&gt;</a>
+                  </b>(<i>this</i> <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Collections.Generic.IEnumerable`1">IEnumerable&lt;Cadenza.Tuple&lt;T1, T2, T3&gt;&gt;</a>)<nobr> : <a href="../Cadenza/Tuple`2.html">Cadenza.Tuple&lt;IEnumerable&lt;T1&gt;, IEnumerable&lt;T2&gt;, IEnumerable&lt;T3&gt;&gt;</a></nobr><blockquote>
+          Converts an 
+          <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Collections.Generic.IEnumerable`1">IEnumerable&lt;Cadenza.Tuple&lt;T1, T2, T3&gt;&gt;</a>
+          into a tuple of lists, one for each 
+          <a href="../Cadenza/Tuple`3.html">Cadenza.Tuple&lt;T1, T2, T3&gt;</a>
+          element.
+        </blockquote></td>
+              </tr>
+              <tr valign="top">
+                <td>
+                  <div>static </div>
+                </td>
+                <td colspan="2">
+                  <b>
+                    <a href="../Cadenza.Collections/EnumerableCoda.html#M:Cadenza.Collections.EnumerableCoda.Unzip``4(System.Collections.Generic.IEnumerable{Cadenza.Tuple{``0,``1,``2,``3}})">Unzip&lt;T1,T2,T3,T4&gt;</a>
+                  </b>(<i>this</i> <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Collections.Generic.IEnumerable`1">IEnumerable&lt;Cadenza.Tuple&lt;T1, T2, T3, T4&gt;&gt;</a>)<nobr> : <a href="../Cadenza/Tuple`2.html">Cadenza.Tuple&lt;IEnumerable&lt;T1&gt;, IEnumerable&lt;T2&gt;, IEnumerable&lt;T3&gt;, IEnumerable&lt;T4&gt;&gt;</a></nobr><blockquote>
+          Converts an 
+          <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Collections.Generic.IEnumerable`1">IEnumerable&lt;Cadenza.Tuple&lt;T1, T2, T3, T4&gt;&gt;</a>
+          into a tuple of lists, one for each 
+          <a href="../Cadenza/Tuple`4.html">Cadenza.Tuple&lt;T1, T2, T3, T4&gt;</a>
+          element.
+        </blockquote></td>
+              </tr>
+              <tr valign="top">
+                <td>
+                  <div>static </div>
+                </td>
+                <td colspan="2">
+                  <b>
+                    <a href="../Cadenza/ObjectCoda.html#M:Cadenza.ObjectCoda.With``2(``0,System.Func{``0,``1})">With&lt;TSource,TResult&gt;</a>
+                  </b>(<i>this</i> <i title="The type to operate on.">TSource</i>, <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Func`2">Func&lt;TSource, TResult&gt;</a>)<nobr> : <i title="The type to return.">TResult</i></nobr><blockquote>
+          Supports chaining otherwise temporary values.
+        </blockquote></td>
+              </tr>
+              <tr valign="top">
+                <td>
+                  <div>static </div>
+                </td>
+                <td colspan="2">
+                  <b>
+                    <a href="../Cadenza.Collections/EnumerableCoda.html#M:Cadenza.Collections.EnumerableCoda.Zip``2(System.Collections.Generic.IEnumerable{``0},System.Collections.Generic.IEnumerable{``1})">Zip&lt;T1,T2&gt;</a>
+                  </b>(<i>this</i> <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Collections.Generic.IEnumerable`1">IEnumerable&lt;T1&gt;</a>, <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Collections.Generic.IEnumerable`1">IEnumerable&lt;T2&gt;</a>)<nobr> : <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Collections.Generic.IEnumerable`1">IEnumerable&lt;Cadenza.Tuple&lt;T1, T2&gt;&gt;</a></nobr><blockquote>
+          Creates and returns an 
+          <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Collections.Generic.IEnumerable`1">IEnumerable&lt;Cadenza.Tuple&lt;T1, T2&gt;&gt;</a>
+          containing the corresponding items from 
+          <i>self</i> and <i>source2</i>.
+        </blockquote></td>
+              </tr>
+              <tr valign="top">
+                <td>
+                  <div>static </div>
+                </td>
+                <td colspan="2">
+                  <b>
+                    <a href="../Cadenza.Collections/EnumerableCoda.html#M:Cadenza.Collections.EnumerableCoda.Zip``3(System.Collections.Generic.IEnumerable{``0},System.Collections.Generic.IEnumerable{``1},System.Collections.Generic.IEnumerable{``2})">Zip&lt;T1,T2,T3&gt;</a>
+                  </b>(<i>this</i> <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Collections.Generic.IEnumerable`1">IEnumerable&lt;T1&gt;</a>, <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Collections.Generic.IEnumerable`1">IEnumerable&lt;T2&gt;</a>, <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Collections.Generic.IEnumerable`1">IEnumerable&lt;T3&gt;</a>)<nobr> : <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Collections.Generic.IEnumerable`1">IEnumerable&lt;Cadenza.Tuple&lt;T1, T2, T3&gt;&gt;</a></nobr><blockquote>
+          Creates and returns an 
+          <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Collections.Generic.IEnumerable`1">IEnumerable&lt;Cadenza.Tuple&lt;T1, T2, T3&gt;&gt;</a>
+          containing the corresponding items from 
+          <i>self</i>, <i>source2</i>, and <i>source3</i>.
+        </blockquote></td>
+              </tr>
+              <tr valign="top">
+                <td>
+                  <div>static </div>
+                </td>
+                <td colspan="2">
+                  <b>
+                    <a href="../Cadenza.Collections/EnumerableCoda.html#M:Cadenza.Collections.EnumerableCoda.Zip``4(System.Collections.Generic.IEnumerable{``0},System.Collections.Generic.IEnumerable{``1},System.Collections.Generic.IEnumerable{``2},System.Collections.Generic.IEnumerable{``3})">Zip&lt;T1,T2,T3,T4&gt;</a>
+                  </b>(<i>this</i> <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Collections.Generic.IEnumerable`1">IEnumerable&lt;T1&gt;</a>, <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Collections.Generic.IEnumerable`1">IEnumerable&lt;T2&gt;</a>, <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Collections.Generic.IEnumerable`1">IEnumerable&lt;T3&gt;</a>, <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Collections.Generic.IEnumerable`1">IEnumerable&lt;T4&gt;</a>)<nobr> : <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Collections.Generic.IEnumerable`1">IEnumerable&lt;Cadenza.Tuple&lt;T1, T2, T3, T4&gt;&gt;</a></nobr><blockquote>
+          Creates and returns an 
+          <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Collections.Generic.IEnumerable`1">IEnumerable&lt;Cadenza.Tuple&lt;T1, T2, T3, T4&gt;&gt;</a>
+          containing the corresponding items from 
+          <i>self</i>, <i>source2</i>, <i>source3</i>, and <i>source4</i>.
+        </blockquote></td>
+              </tr>
+            </table>
+          </div>
+        </blockquote>
+      </blockquote>
+    </div>
+    <div class="Members" id="T:Cadenza.Collections.MutableLookup`2:Members">
+      <h2 class="Section" id="MemberDetails">
+        <a href="javascript:toggle_display('_MemberDetails')">
+          <span id="_MemberDetails:toggle">⊟</span> Member Details</a>
+      </h2>
+      <blockquote class="SectionBox" id="_MemberDetails">
+        <h3 id="C:Cadenza.Collections.MutableLookup`2">
+          <a href="javascript:toggle_display('C:Cadenza.Collections.MutableLookup`2:member')">
+            <span id="C:Cadenza.Collections.MutableLookup`2:member:toggle">⊟</span> MutableLookup Constructor</a>
+        </h3>
+        <blockquote id="C:Cadenza.Collections.MutableLookup`2:member">
+          <p class="Summary">
+            <span class="NotEntered">Documentation for this section has not yet been entered.</span>
+          </p>
+          <div class="Signature">public  <b>MutableLookup</b> ()</div>
+          <h4 class="Subsection">
+            <a href="javascript:toggle_display('C:Cadenza.Collections.MutableLookup`2:Remarks')">
+              <span id="C:Cadenza.Collections.MutableLookup`2:Remarks:toggle">⊟</span> Remarks</a>
+          </h4>
+          <blockquote class="SubsectionBox" id="C:Cadenza.Collections.MutableLookup`2:Remarks">
+            <span class="NotEntered">Documentation for this section has not yet been entered.</span>
+          </blockquote>
+          <h4 class="Subsection">
+            <a href="javascript:toggle_display('C:Cadenza.Collections.MutableLookup`2:Version Information')">
+              <span id="C:Cadenza.Collections.MutableLookup`2:Version Information:toggle">⊟</span> Requirements</a>
+          </h4>
+          <blockquote class="SubsectionBox" id="C:Cadenza.Collections.MutableLookup`2:Version Information">
+            <b>Namespace: </b>Cadenza.Collections<br /><b>Assembly: </b>Cadenza (in Cadenza.dll)<br /><b>Assembly Versions: </b>0.1.0.0</blockquote>
+          <hr size="1" />
+        </blockquote>
+        <h3 id="C:Cadenza.Collections.MutableLookup`2(System.Linq.ILookup{`0,`1})">
+          <a href="javascript:toggle_display('C:Cadenza.Collections.MutableLookup`2(System.Linq.ILookup{`0,`1}):member')">
+            <span id="C:Cadenza.Collections.MutableLookup`2(System.Linq.ILookup{`0,`1}):member:toggle">⊟</span> MutableLookup Constructor</a>
+        </h3>
+        <blockquote id="C:Cadenza.Collections.MutableLookup`2(System.Linq.ILookup{`0,`1}):member">
+          <p class="Summary">
+            <span class="NotEntered">Documentation for this section has not yet been entered.</span>
+          </p>
+          <div class="Signature">public  <b>MutableLookup</b> (<a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Linq.ILookup`2">System.Linq.ILookup&lt;TKey, TElement&gt;</a> lookup)</div>
+          <h4 class="Subsection">
+            <a href="javascript:toggle_display('C:Cadenza.Collections.MutableLookup`2(System.Linq.ILookup{`0,`1}):Parameters')">
+              <span id="C:Cadenza.Collections.MutableLookup`2(System.Linq.ILookup{`0,`1}):Parameters:toggle">⊟</span> Parameters</a>
+          </h4>
+          <blockquote class="SubsectionBox" id="C:Cadenza.Collections.MutableLookup`2(System.Linq.ILookup{`0,`1}):Parameters">
+            <dl>
+              <dt>
+                <i>lookup</i>
+              </dt>
+              <dd>
+                <span class="NotEntered">Documentation for this section has not yet been entered.</span>
+              </dd>
+            </dl>
+          </blockquote>
+          <h4 class="Subsection">
+            <a href="javascript:toggle_display('C:Cadenza.Collections.MutableLookup`2(System.Linq.ILookup{`0,`1}):Remarks')">
+              <span id="C:Cadenza.Collections.MutableLookup`2(System.Linq.ILookup{`0,`1}):Remarks:toggle">⊟</span> Remarks</a>
+          </h4>
+          <blockquote class="SubsectionBox" id="C:Cadenza.Collections.MutableLookup`2(System.Linq.ILookup{`0,`1}):Remarks">
+            <span class="NotEntered">Documentation for this section has not yet been entered.</span>
+          </blockquote>
+          <h4 class="Subsection">
+            <a href="javascript:toggle_display('C:Cadenza.Collections.MutableLookup`2(System.Linq.ILookup{`0,`1}):Version Information')">
+              <span id="C:Cadenza.Collections.MutableLookup`2(System.Linq.ILookup{`0,`1}):Version Information:toggle">⊟</span> Requirements</a>
+          </h4>
+          <blockquote class="SubsectionBox" id="C:Cadenza.Collections.MutableLookup`2(System.Linq.ILookup{`0,`1}):Version Information">
+            <b>Namespace: </b>Cadenza.Collections<br /><b>Assembly: </b>Cadenza (in Cadenza.dll)<br /><b>Assembly Versions: </b>0.1.0.0</blockquote>
+          <hr size="1" />
+        </blockquote>
+        <h3 id="M:Cadenza.Collections.MutableLookup`2.Add(`0,`1)">
+          <a href="javascript:toggle_display('M:Cadenza.Collections.MutableLookup`2.Add(`0,`1):member')">
+            <span id="M:Cadenza.Collections.MutableLookup`2.Add(`0,`1):member:toggle">⊟</span> Add Method</a>
+        </h3>
+        <blockquote id="M:Cadenza.Collections.MutableLookup`2.Add(`0,`1):member">
+          <p class="Summary">
+            Adds <i>element</i> under the specified <i>key</i>. <i>key</i> does not need to exist.
+            </p>
+          <div class="Signature">public <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Void">void</a> <b>Add</b> (<i title="The lookup key.">TKey</i> key, <i title="The elements under each .">TElement</i> element)</div>
+          <h4 class="Subsection">
+            <a href="javascript:toggle_display('M:Cadenza.Collections.MutableLookup`2.Add(`0,`1):Parameters')">
+              <span id="M:Cadenza.Collections.MutableLookup`2.Add(`0,`1):Parameters:toggle">⊟</span> Parameters</a>
+          </h4>
+          <blockquote class="SubsectionBox" id="M:Cadenza.Collections.MutableLookup`2.Add(`0,`1):Parameters">
+            <dl>
+              <dt>
+                <i>key</i>
+              </dt>
+              <dd>The key to add <i>element</i> under.</dd>
+              <dt>
+                <i>element</i>
+              </dt>
+              <dd>The element to add.</dd>
+            </dl>
+          </blockquote>
+          <h4 class="Subsection">
+            <a href="javascript:toggle_display('M:Cadenza.Collections.MutableLookup`2.Add(`0,`1):Remarks')">
+              <span id="M:Cadenza.Collections.MutableLookup`2.Add(`0,`1):Remarks:toggle">⊟</span> Remarks</a>
+          </h4>
+          <blockquote class="SubsectionBox" id="M:Cadenza.Collections.MutableLookup`2.Add(`0,`1):Remarks">
+            <span class="NotEntered">Documentation for this section has not yet been entered.</span>
+          </blockquote>
+          <h4 class="Subsection">
+            <a href="javascript:toggle_display('M:Cadenza.Collections.MutableLookup`2.Add(`0,`1):Version Information')">
+              <span id="M:Cadenza.Collections.MutableLookup`2.Add(`0,`1):Version Information:toggle">⊟</span> Requirements</a>
+          </h4>
+          <blockquote class="SubsectionBox" id="M:Cadenza.Collections.MutableLookup`2.Add(`0,`1):Version Information">
+            <b>Namespace: </b>Cadenza.Collections<br /><b>Assembly: </b>Cadenza (in Cadenza.dll)<br /><b>Assembly Versions: </b>0.1.0.0</blockquote>
+          <hr size="1" />
+        </blockquote>
+        <h3 id="M:Cadenza.Collections.MutableLookup`2.Clear">
+          <a href="javascript:toggle_display('M:Cadenza.Collections.MutableLookup`2.Clear:member')">
+            <span id="M:Cadenza.Collections.MutableLookup`2.Clear:member:toggle">⊟</span> Clear Method</a>
+        </h3>
+        <blockquote id="M:Cadenza.Collections.MutableLookup`2.Clear:member">
+          <p class="Summary">
+            <span class="NotEntered">Documentation for this section has not yet been entered.</span>
+          </p>
+          <div class="Signature">public <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Void">void</a> <b>Clear</b> ()</div>
+          <h4 class="Subsection">
+            <a href="javascript:toggle_display('M:Cadenza.Collections.MutableLookup`2.Clear:Remarks')">
+              <span id="M:Cadenza.Collections.MutableLookup`2.Clear:Remarks:toggle">⊟</span> Remarks</a>
+          </h4>
+          <blockquote class="SubsectionBox" id="M:Cadenza.Collections.MutableLookup`2.Clear:Remarks">
+            <span class="NotEntered">Documentation for this section has not yet been entered.</span>
+          </blockquote>
+          <h4 class="Subsection">
+            <a href="javascript:toggle_display('M:Cadenza.Collections.MutableLookup`2.Clear:Version Information')">
+              <span id="M:Cadenza.Collections.MutableLookup`2.Clear:Version Information:toggle">⊟</span> Requirements</a>
+          </h4>
+          <blockquote class="SubsectionBox" id="M:Cadenza.Collections.MutableLookup`2.Clear:Version Information">
+            <b>Namespace: </b>Cadenza.Collections<br /><b>Assembly: </b>Cadenza (in Cadenza.dll)<br /><b>Assembly Versions: </b>0.1.0.0</blockquote>
+          <hr size="1" />
+        </blockquote>
+        <h3 id="M:Cadenza.Collections.MutableLookup`2.Contains(`0)">
+          <a href="javascript:toggle_display('M:Cadenza.Collections.MutableLookup`2.Contains(`0):member')">
+            <span id="M:Cadenza.Collections.MutableLookup`2.Contains(`0):member:toggle">⊟</span> Contains Method</a>
+        </h3>
+        <blockquote id="M:Cadenza.Collections.MutableLookup`2.Contains(`0):member">
+          <p class="Summary">
+            Gets whether or not there's a grouping for <i>key</i>.
+            </p>
+          <div class="Signature">public <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Boolean">bool</a> <b>Contains</b> (<i title="The lookup key.">TKey</i> key)</div>
+          <h4 class="Subsection">
+            <a href="javascript:toggle_display('M:Cadenza.Collections.MutableLookup`2.Contains(`0):Parameters')">
+              <span id="M:Cadenza.Collections.MutableLookup`2.Contains(`0):Parameters:toggle">⊟</span> Parameters</a>
+          </h4>
+          <blockquote class="SubsectionBox" id="M:Cadenza.Collections.MutableLookup`2.Contains(`0):Parameters">
+            <dl>
+              <dt>
+                <i>key</i>
+              </dt>
+              <dd>The key to check for.</dd>
+            </dl>
+          </blockquote>
+          <h4 class="Subsection">
+            <a href="javascript:toggle_display('M:Cadenza.Collections.MutableLookup`2.Contains(`0):Returns')">
+              <span id="M:Cadenza.Collections.MutableLookup`2.Contains(`0):Returns:toggle">⊟</span> Returns</a>
+          </h4>
+          <blockquote class="SubsectionBox" id="M:Cadenza.Collections.MutableLookup`2.Contains(`0):Returns">
+            <tt>true</tt> if <i>key</i> is present.</blockquote>
+          <h4 class="Subsection">
+            <a href="javascript:toggle_display('M:Cadenza.Collections.MutableLookup`2.Contains(`0):Remarks')">
+              <span id="M:Cadenza.Collections.MutableLookup`2.Contains(`0):Remarks:toggle">⊟</span> Remarks</a>
+          </h4>
+          <blockquote class="SubsectionBox" id="M:Cadenza.Collections.MutableLookup`2.Contains(`0):Remarks">
+            <span class="NotEntered">Documentation for this section has not yet been entered.</span>
+          </blockquote>
+          <h4 class="Subsection">
+            <a href="javascript:toggle_display('M:Cadenza.Collections.MutableLookup`2.Contains(`0):Version Information')">
+              <span id="M:Cadenza.Collections.MutableLookup`2.Contains(`0):Version Information:toggle">⊟</span> Requirements</a>
+          </h4>
+          <blockquote class="SubsectionBox" id="M:Cadenza.Collections.MutableLookup`2.Contains(`0):Version Information">
+            <b>Namespace: </b>Cadenza.Collections<br /><b>Assembly: </b>Cadenza (in Cadenza.dll)<br /><b>Assembly Versions: </b>0.1.0.0</blockquote>
+          <hr size="1" />
+        </blockquote>
+        <h3 id="P:Cadenza.Collections.MutableLookup`2.Count">
+          <a href="javascript:toggle_display('P:Cadenza.Collections.MutableLookup`2.Count:member')">
+            <span id="P:Cadenza.Collections.MutableLookup`2.Count:member:toggle">⊟</span> Count Property</a>
+        </h3>
+        <blockquote id="P:Cadenza.Collections.MutableLookup`2.Count:member">
+          <p class="Summary">
+            Gets the number of groupings.
+            </p>
+          <div class="Signature">public <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Int32">int</a> <b>Count</b>  { get; }</div>
+          <h4 class="Subsection">
+            <a href="javascript:toggle_display('P:Cadenza.Collections.MutableLookup`2.Count:Value')">
+              <span id="P:Cadenza.Collections.MutableLookup`2.Count:Value:toggle">⊟</span> Value</a>
+          </h4>
+          <blockquote class="SubsectionBox" id="P:Cadenza.Collections.MutableLookup`2.Count:Value">
+            <span class="NotEntered">Documentation for this section has not yet been entered.</span>
+          </blockquote>
+          <h4 class="Subsection">
+            <a href="javascript:toggle_display('P:Cadenza.Collections.MutableLookup`2.Count:Remarks')">
+              <span id="P:Cadenza.Collections.MutableLookup`2.Count:Remarks:toggle">⊟</span> Remarks</a>
+          </h4>
+          <blockquote class="SubsectionBox" id="P:Cadenza.Collections.MutableLookup`2.Count:Remarks">
+            <span class="NotEntered">Documentation for this section has not yet been entered.</span>
+          </blockquote>
+          <h4 class="Subsection">
+            <a href="javascript:toggle_display('P:Cadenza.Collections.MutableLookup`2.Count:Version Information')">
+              <span id="P:Cadenza.Collections.MutableLookup`2.Count:Version Information:toggle">⊟</span> Requirements</a>
+          </h4>
+          <blockquote class="SubsectionBox" id="P:Cadenza.Collections.MutableLookup`2.Count:Version Information">
+            <b>Namespace: </b>Cadenza.Collections<br /><b>Assembly: </b>Cadenza (in Cadenza.dll)<br /><b>Assembly Versions: </b>0.1.0.0</blockquote>
+          <hr size="1" />
+        </blockquote>
+        <h3 id="M:Cadenza.Collections.MutableLookup`2.GetEnumerator">
+          <a href="javascript:toggle_display('M:Cadenza.Collections.MutableLookup`2.GetEnumerator:member')">
+            <span id="M:Cadenza.Collections.MutableLookup`2.GetEnumerator:member:toggle">⊟</span> GetEnumerator Method</a>
+        </h3>
+        <blockquote id="M:Cadenza.Collections.MutableLookup`2.GetEnumerator:member">
+          <p class="Summary">
+            <span class="NotEntered">Documentation for this section has not yet been entered.</span>
+          </p>
+          <div class="Signature">public <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Collections.Generic.IEnumerator`1">IEnumerator&lt;System.Linq.IGrouping&lt;TKey, TElement&gt;&gt;</a> <b>GetEnumerator</b> ()</div>
+          <h4 class="Subsection">
+            <a href="javascript:toggle_display('M:Cadenza.Collections.MutableLookup`2.GetEnumerator:Returns')">
+              <span id="M:Cadenza.Collections.MutableLookup`2.GetEnumerator:Returns:toggle">⊟</span> Returns</a>
+          </h4>
+          <blockquote class="SubsectionBox" id="M:Cadenza.Collections.MutableLookup`2.GetEnumerator:Returns">
+            <span class="NotEntered">Documentation for this section has not yet been entered.</span>
+          </blockquote>
+          <h4 class="Subsection">
+            <a href="javascript:toggle_display('M:Cadenza.Collections.MutableLookup`2.GetEnumerator:Remarks')">
+              <span id="M:Cadenza.Collections.MutableLookup`2.GetEnumerator:Remarks:toggle">⊟</span> Remarks</a>
+          </h4>
+          <blockquote class="SubsectionBox" id="M:Cadenza.Collections.MutableLookup`2.GetEnumerator:Remarks">
+            <span class="NotEntered">Documentation for this section has not yet been entered.</span>
+          </blockquote>
+          <h4 class="Subsection">
+            <a href="javascript:toggle_display('M:Cadenza.Collections.MutableLookup`2.GetEnumerator:Version Information')">
+              <span id="M:Cadenza.Collections.MutableLookup`2.GetEnumerator:Version Information:toggle">⊟</span> Requirements</a>
+          </h4>
+          <blockquote class="SubsectionBox" id="M:Cadenza.Collections.MutableLookup`2.GetEnumerator:Version Information">
+            <b>Namespace: </b>Cadenza.Collections<br /><b>Assembly: </b>Cadenza (in Cadenza.dll)<br /><b>Assembly Versions: </b>0.1.0.0</blockquote>
+          <hr size="1" />
+        </blockquote>
+        <h3 id="P:Cadenza.Collections.MutableLookup`2.Item(`0)">
+          <a href="javascript:toggle_display('P:Cadenza.Collections.MutableLookup`2.Item(`0):member')">
+            <span id="P:Cadenza.Collections.MutableLookup`2.Item(`0):member:toggle">⊟</span> Item Property</a>
+        </h3>
+        <blockquote id="P:Cadenza.Collections.MutableLookup`2.Item(`0):member">
+          <p class="Summary">
+            Gets the elements for <i>key</i>.
+        </p>
+          <div class="Signature">
+            <p>
+              <i>This is the default property for this class.</i>
+            </p>public <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Collections.Generic.IEnumerable`1">IEnumerable&lt;TElement&gt;</a> this [<i title="The lookup key.">TKey</i> key] { get; }</div>
+          <h4 class="Subsection">
+            <a href="javascript:toggle_display('P:Cadenza.Collections.MutableLookup`2.Item(`0):Parameters')">
+              <span id="P:Cadenza.Collections.MutableLookup`2.Item(`0):Parameters:toggle">⊟</span> Parameters</a>
+          </h4>
+          <blockquote class="SubsectionBox" id="P:Cadenza.Collections.MutableLookup`2.Item(`0):Parameters">
+            <dl>
+              <dt>
+                <i>key</i>
+              </dt>
+              <dd>The key to get the elements for.</dd>
+            </dl>
+          </blockquote>
+          <h4 class="Subsection">
+            <a href="javascript:toggle_display('P:Cadenza.Collections.MutableLookup`2.Item(`0):Value')">
+              <span id="P:Cadenza.Collections.MutableLookup`2.Item(`0):Value:toggle">⊟</span> Value</a>
+          </h4>
+          <blockquote class="SubsectionBox" id="P:Cadenza.Collections.MutableLookup`2.Item(`0):Value">The elements under <i>key</i>.</blockquote>
+          <h4 class="Subsection">
+            <a href="javascript:toggle_display('P:Cadenza.Collections.MutableLookup`2.Item(`0):Remarks')">
+              <span id="P:Cadenza.Collections.MutableLookup`2.Item(`0):Remarks:toggle">⊟</span> Remarks</a>
+          </h4>
+          <blockquote class="SubsectionBox" id="P:Cadenza.Collections.MutableLookup`2.Item(`0):Remarks">
+            <span class="NotEntered">Documentation for this section has not yet been entered.</span>
+          </blockquote>
+          <h4 class="Subsection">
+            <a href="javascript:toggle_display('P:Cadenza.Collections.MutableLookup`2.Item(`0):Version Information')">
+              <span id="P:Cadenza.Collections.MutableLookup`2.Item(`0):Version Information:toggle">⊟</span> Requirements</a>
+          </h4>
+          <blockquote class="SubsectionBox" id="P:Cadenza.Collections.MutableLookup`2.Item(`0):Version Information">
+            <b>Namespace: </b>Cadenza.Collections<br /><b>Assembly: </b>Cadenza (in Cadenza.dll)<br /><b>Assembly Versions: </b>0.1.0.0</blockquote>
+          <hr size="1" />
+        </blockquote>
+        <h3 id="M:Cadenza.Collections.MutableLookup`2.Remove(`0)">
+          <a href="javascript:toggle_display('M:Cadenza.Collections.MutableLookup`2.Remove(`0):member')">
+            <span id="M:Cadenza.Collections.MutableLookup`2.Remove(`0):member:toggle">⊟</span> Remove Method</a>
+        </h3>
+        <blockquote id="M:Cadenza.Collections.MutableLookup`2.Remove(`0):member">
+          <p class="Summary">
+            Removes <i>key</i> from the lookup.
+            </p>
+          <div class="Signature">public <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Boolean">bool</a> <b>Remove</b> (<i title="The lookup key.">TKey</i> key)</div>
+          <h4 class="Subsection">
+            <a href="javascript:toggle_display('M:Cadenza.Collections.MutableLookup`2.Remove(`0):Parameters')">
+              <span id="M:Cadenza.Collections.MutableLookup`2.Remove(`0):Parameters:toggle">⊟</span> Parameters</a>
+          </h4>
+          <blockquote class="SubsectionBox" id="M:Cadenza.Collections.MutableLookup`2.Remove(`0):Parameters">
+            <dl>
+              <dt>
+                <i>key</i>
+              </dt>
+              <dd>They to remove.</dd>
+            </dl>
+          </blockquote>
+          <h4 class="Subsection">
+            <a href="javascript:toggle_display('M:Cadenza.Collections.MutableLookup`2.Remove(`0):Returns')">
+              <span id="M:Cadenza.Collections.MutableLookup`2.Remove(`0):Returns:toggle">⊟</span> Returns</a>
+          </h4>
+          <blockquote class="SubsectionBox" id="M:Cadenza.Collections.MutableLookup`2.Remove(`0):Returns">
+            <tt>true</tt> if <i>key</i> existed.</blockquote>
+          <h4 class="Subsection">
+            <a href="javascript:toggle_display('M:Cadenza.Collections.MutableLookup`2.Remove(`0):Exceptions')">
+              <span id="M:Cadenza.Collections.MutableLookup`2.Remove(`0):Exceptions:toggle">⊟</span> Exceptions</a>
+          </h4>
+          <blockquote class="SubsectionBox" id="M:Cadenza.Collections.MutableLookup`2.Remove(`0):Exceptions">
+            <table class="TypeDocumentation">
+              <tr>
+                <th>Type</th>
+                <th>Reason</th>
+              </tr>
+              <tr valign="top">
+                <td>
+                  <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.ArgumentNullException">ArgumentNullException</a>
+                </td>
+                <td>
+                  <i>key</i> is <tt>null</tt>.</td>
+              </tr>
+            </table>
+          </blockquote>
+          <h4 class="Subsection">
+            <a href="javascript:toggle_display('M:Cadenza.Collections.MutableLookup`2.Remove(`0):Remarks')">
+              <span id="M:Cadenza.Collections.MutableLookup`2.Remove(`0):Remarks:toggle">⊟</span> Remarks</a>
+          </h4>
+          <blockquote class="SubsectionBox" id="M:Cadenza.Collections.MutableLookup`2.Remove(`0):Remarks">
+            <span class="NotEntered">Documentation for this section has not yet been entered.</span>
+          </blockquote>
+          <h4 class="Subsection">
+            <a href="javascript:toggle_display('M:Cadenza.Collections.MutableLookup`2.Remove(`0):Version Information')">
+              <span id="M:Cadenza.Collections.MutableLookup`2.Remove(`0):Version Information:toggle">⊟</span> Requirements</a>
+          </h4>
+          <blockquote class="SubsectionBox" id="M:Cadenza.Collections.MutableLookup`2.Remove(`0):Version Information">
+            <b>Namespace: </b>Cadenza.Collections<br /><b>Assembly: </b>Cadenza (in Cadenza.dll)<br /><b>Assembly Versions: </b>0.1.0.0</blockquote>
+          <hr size="1" />
+        </blockquote>
+        <h3 id="M:Cadenza.Collections.MutableLookup`2.Remove(`0,`1)">
+          <a href="javascript:toggle_display('M:Cadenza.Collections.MutableLookup`2.Remove(`0,`1):member')">
+            <span id="M:Cadenza.Collections.MutableLookup`2.Remove(`0,`1):member:toggle">⊟</span> Remove Method</a>
+        </h3>
+        <blockquote id="M:Cadenza.Collections.MutableLookup`2.Remove(`0,`1):member">
+          <p class="Summary">
+            Removes <i>element</i> from the <i>key</i>.
+            </p>
+          <div class="Signature">public <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Boolean">bool</a> <b>Remove</b> (<i title="The lookup key.">TKey</i> key, <i title="The elements under each .">TElement</i> element)</div>
+          <h4 class="Subsection">
+            <a href="javascript:toggle_display('M:Cadenza.Collections.MutableLookup`2.Remove(`0,`1):Parameters')">
+              <span id="M:Cadenza.Collections.MutableLookup`2.Remove(`0,`1):Parameters:toggle">⊟</span> Parameters</a>
+          </h4>
+          <blockquote class="SubsectionBox" id="M:Cadenza.Collections.MutableLookup`2.Remove(`0,`1):Parameters">
+            <dl>
+              <dt>
+                <i>key</i>
+              </dt>
+              <dd>The key that <i>element</i> is located under.</dd>
+              <dt>
+                <i>element</i>
+              </dt>
+              <dd>The element to remove from <i>key</i>. </dd>
+            </dl>
+          </blockquote>
+          <h4 class="Subsection">
+            <a href="javascript:toggle_display('M:Cadenza.Collections.MutableLookup`2.Remove(`0,`1):Returns')">
+              <span id="M:Cadenza.Collections.MutableLookup`2.Remove(`0,`1):Returns:toggle">⊟</span> Returns</a>
+          </h4>
+          <blockquote class="SubsectionBox" id="M:Cadenza.Collections.MutableLookup`2.Remove(`0,`1):Returns">
+            <tt>true</tt> if <i>key</i> and <i>element</i> existed, <tt>false</tt> if not.</blockquote>
+          <h4 class="Subsection">
+            <a href="javascript:toggle_display('M:Cadenza.Collections.MutableLookup`2.Remove(`0,`1):Remarks')">
+              <span id="M:Cadenza.Collections.MutableLookup`2.Remove(`0,`1):Remarks:toggle">⊟</span> Remarks</a>
+          </h4>
+          <blockquote class="SubsectionBox" id="M:Cadenza.Collections.MutableLookup`2.Remove(`0,`1):Remarks">
+            <span class="NotEntered">Documentation for this section has not yet been entered.</span>
+          </blockquote>
+          <h4 class="Subsection">
+            <a href="javascript:toggle_display('M:Cadenza.Collections.MutableLookup`2.Remove(`0,`1):Version Information')">
+              <span id="M:Cadenza.Collections.MutableLookup`2.Remove(`0,`1):Version Information:toggle">⊟</span> Requirements</a>
+          </h4>
+          <blockquote class="SubsectionBox" id="M:Cadenza.Collections.MutableLookup`2.Remove(`0,`1):Version Information">
+            <b>Namespace: </b>Cadenza.Collections<br /><b>Assembly: </b>Cadenza (in Cadenza.dll)<br /><b>Assembly Versions: </b>0.1.0.0</blockquote>
+          <hr size="1" />
+        </blockquote>
+        <h3 id="M:Cadenza.Collections.MutableLookup`2.System#Collections#IEnumerable#GetEnumerator">
+          <a href="javascript:toggle_display('M:Cadenza.Collections.MutableLookup`2.System#Collections#IEnumerable#GetEnumerator:member')">
+            <span id="M:Cadenza.Collections.MutableLookup`2.System#Collections#IEnumerable#GetEnumerator:member:toggle">⊟</span> System.Collections.IEnumerable.GetEnumerator Method</a>
+        </h3>
+        <blockquote id="M:Cadenza.Collections.MutableLookup`2.System#Collections#IEnumerable#GetEnumerator:member">
+          <p class="Summary">
+            <span class="NotEntered">Documentation for this section has not yet been entered.</span>
+          </p>
+          <div class="Signature">
+            <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Collections.IEnumerator">IEnumerator</a> <b>System.Collections.IEnumerable.GetEnumerator</b> ()</div>
+          <h4 class="Subsection">
+            <a href="javascript:toggle_display('M:Cadenza.Collections.MutableLookup`2.System#Collections#IEnumerable#GetEnumerator:Returns')">
+              <span id="M:Cadenza.Collections.MutableLookup`2.System#Collections#IEnumerable#GetEnumerator:Returns:toggle">⊟</span> Returns</a>
+          </h4>
+          <blockquote class="SubsectionBox" id="M:Cadenza.Collections.MutableLookup`2.System#Collections#IEnumerable#GetEnumerator:Returns">
+            <span class="NotEntered">Documentation for this section has not yet been entered.</span>
+          </blockquote>
+          <h4 class="Subsection">
+            <a href="javascript:toggle_display('M:Cadenza.Collections.MutableLookup`2.System#Collections#IEnumerable#GetEnumerator:Remarks')">
+              <span id="M:Cadenza.Collections.MutableLookup`2.System#Collections#IEnumerable#GetEnumerator:Remarks:toggle">⊟</span> Remarks</a>
+          </h4>
+          <blockquote class="SubsectionBox" id="M:Cadenza.Collections.MutableLookup`2.System#Collections#IEnumerable#GetEnumerator:Remarks">
+            <span class="NotEntered">Documentation for this section has not yet been entered.</span>
+          </blockquote>
+          <h4 class="Subsection">
+            <a href="javascript:toggle_display('M:Cadenza.Collections.MutableLookup`2.System#Collections#IEnumerable#GetEnumerator:Version Information')">
+              <span id="M:Cadenza.Collections.MutableLookup`2.System#Collections#IEnumerable#GetEnumerator:Version Information:toggle">⊟</span> Requirements</a>
+          </h4>
+          <blockquote class="SubsectionBox" id="M:Cadenza.Collections.MutableLookup`2.System#Collections#IEnumerable#GetEnumerator:Version Information">
+            <b>Namespace: </b>Cadenza.Collections<br /><b>Assembly: </b>Cadenza (in Cadenza.dll)<br /><b>Assembly Versions: </b>0.1.0.0</blockquote>
+          <hr size="1" />
+        </blockquote>
+        <h3 id="M:Cadenza.Collections.MutableLookup`2.TryGetValues(`0,System.Collections.Generic.IEnumerable{`1}@)">
+          <a href="javascript:toggle_display('M:Cadenza.Collections.MutableLookup`2.TryGetValues(`0,System.Collections.Generic.IEnumerable{`1}@):member')">
+            <span id="M:Cadenza.Collections.MutableLookup`2.TryGetValues(`0,System.Collections.Generic.IEnumerable{`1}@):member:toggle">⊟</span> TryGetValues Method</a>
+        </h3>
+        <blockquote id="M:Cadenza.Collections.MutableLookup`2.TryGetValues(`0,System.Collections.Generic.IEnumerable{`1}@):member">
+          <p class="Summary">
+            <span class="NotEntered">Documentation for this section has not yet been entered.</span>
+          </p>
+          <div class="Signature">public <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Boolean">bool</a> <b>TryGetValues</b> (<i title="The lookup key.">TKey</i> key, <i>out</i> <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Collections.Generic.IEnumerable`1">IEnumerable&lt;TElement&gt;</a> values)</div>
+          <h4 class="Subsection">
+            <a href="javascript:toggle_display('M:Cadenza.Collections.MutableLookup`2.TryGetValues(`0,System.Collections.Generic.IEnumerable{`1}@):Parameters')">
+              <span id="M:Cadenza.Collections.MutableLookup`2.TryGetValues(`0,System.Collections.Generic.IEnumerable{`1}@):Parameters:toggle">⊟</span> Parameters</a>
+          </h4>
+          <blockquote class="SubsectionBox" id="M:Cadenza.Collections.MutableLookup`2.TryGetValues(`0,System.Collections.Generic.IEnumerable{`1}@):Parameters">
+            <dl>
+              <dt>
+                <i>key</i>
+              </dt>
+              <dd>
+                <span class="NotEntered">Documentation for this section has not yet been entered.</span>
+              </dd>
+              <dt>
+                <i>values</i>
+              </dt>
+              <dd>
+                <span class="NotEntered">Documentation for this section has not yet been entered.</span>
+              </dd>
+            </dl>
+          </blockquote>
+          <h4 class="Subsection">
+            <a href="javascript:toggle_display('M:Cadenza.Collections.MutableLookup`2.TryGetValues(`0,System.Collections.Generic.IEnumerable{`1}@):Returns')">
+              <span id="M:Cadenza.Collections.MutableLookup`2.TryGetValues(`0,System.Collections.Generic.IEnumerable{`1}@):Returns:toggle">⊟</span> Returns</a>
+          </h4>
+          <blockquote class="SubsectionBox" id="M:Cadenza.Collections.MutableLookup`2.TryGetValues(`0,System.Collections.Generic.IEnumerable{`1}@):Returns">
+            <span class="NotEntered">Documentation for this section has not yet been entered.</span>
+          </blockquote>
+          <h4 class="Subsection">
+            <a href="javascript:toggle_display('M:Cadenza.Collections.MutableLookup`2.TryGetValues(`0,System.Collections.Generic.IEnumerable{`1}@):Remarks')">
+              <span id="M:Cadenza.Collections.MutableLookup`2.TryGetValues(`0,System.Collections.Generic.IEnumerable{`1}@):Remarks:toggle">⊟</span> Remarks</a>
+          </h4>
+          <blockquote class="SubsectionBox" id="M:Cadenza.Collections.MutableLookup`2.TryGetValues(`0,System.Collections.Generic.IEnumerable{`1}@):Remarks">
+            <span class="NotEntered">Documentation for this section has not yet been entered.</span>
+          </blockquote>
+          <h4 class="Subsection">
+            <a href="javascript:toggle_display('M:Cadenza.Collections.MutableLookup`2.TryGetValues(`0,System.Collections.Generic.IEnumerable{`1}@):Version Information')">
+              <span id="M:Cadenza.Collections.MutableLookup`2.TryGetValues(`0,System.Collections.Generic.IEnumerable{`1}@):Version Information:toggle">⊟</span> Requirements</a>
+          </h4>
+          <blockquote class="SubsectionBox" id="M:Cadenza.Collections.MutableLookup`2.TryGetValues(`0,System.Collections.Generic.IEnumerable{`1}@):Version Information">
+            <b>Namespace: </b>Cadenza.Collections<br /><b>Assembly: </b>Cadenza (in Cadenza.dll)<br /><b>Assembly Versions: </b>0.1.0.0</blockquote>
+          <hr size="1" />
+        </blockquote>
+      </blockquote>
+    </div>
+    <hr size="1" />
+    <div class="Copyright">
+    </div>
+  </body>
+</html>

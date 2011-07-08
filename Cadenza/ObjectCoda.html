@@ -1,0 +1,1484 @@
+<html>
+  <head>
+    <title>Cadenza.ObjectCoda</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <style>
+      a { text-decoration: none }
+
+      div.SideBar {
+        padding-left: 1em;
+        padding-right: 1em;
+        right: 0;
+        float: right;
+        border: thin solid black;
+        background-color: #f2f2f2;
+      }
+    
+      .CollectionTitle { font-weight: bold }
+      .PageTitle { font-size: 150%; font-weight: bold }
+
+      .Summary { }
+      .Signature { }          
+      .Remarks { }
+      .Members { }
+      .Copyright { }
+      
+      .Section { font-size: 125%; font-weight: bold }
+      p.Summary {
+        margin-left: 1em;
+      }
+      .SectionBox { margin-left: 2em }
+      .NamespaceName { font-size: 105%; font-weight: bold }
+      .NamespaceSumary { }
+      .MemberName { font-size: 115%; font-weight: bold; margin-top: 1em }
+      .Subsection { font-size: 105%; font-weight: bold }
+      .SubsectionBox { margin-left: 2em; margin-bottom: 1em }
+
+      .CodeExampleTable { background-color: #f5f5dd; border: thin solid black; padding: .25em; }
+      
+      .TypesListing {
+        border-collapse: collapse;
+      }
+
+      td {
+        vertical-align: top;
+      }
+      th {
+        text-align: left;
+      }
+
+      .TypesListing td { 
+        margin: 0px;  
+        padding: .25em;
+        border: solid gray 1px;
+      }
+
+      .TypesListing th { 
+        margin: 0px;  
+        padding: .25em;
+        background-color: #f2f2f2;
+        border: solid gray 1px;
+      }
+
+      div.Footer {
+        border-top: 1px solid gray;
+        margin-top: 1.5em;
+        padding-top: 0.6em;
+        text-align: center;
+        color: gray;
+      }
+
+      span.NotEntered /* Documentation for this section has not yet been entered */ {
+        font-style: italic;
+        color: red;	
+      }
+
+      div.Header {
+        background: #B0C4DE;
+        border: double;
+        border-color: white;
+        border-width: 7px;
+        padding: 0.5em;
+      }
+
+      div.Header * {
+        font-size: smaller;
+      }
+
+      div.Note {
+      }
+
+      i.ParamRef {
+      }
+
+      i.subtitle {
+      }
+
+      ul.TypeMembersIndex {
+        text-align: left;
+        background: #F8F8F8;
+      }
+
+      ul.TypeMembersIndex li {
+        display: inline;
+        margin:  0.5em;
+      }
+
+      table.HeaderTable {
+      }
+
+      table.SignatureTable {
+      }
+
+      table.Documentation, table.Enumeration, table.TypeDocumentation {
+        border-collapse: collapse;
+        width: 100%;
+      }
+
+      table.Documentation tr th, table.TypeMembers tr th, table.Enumeration tr th, table.TypeDocumentation tr th {
+        background: whitesmoke;
+        padding: 0.8em;
+        border: 1px solid gray;
+        text-align: left;
+        vertical-align: bottom;
+      }
+
+      table.Documentation tr td, table.TypeMembers tr td, table.Enumeration tr td, table.TypeDocumentation tr td {
+        padding: 0.5em;
+        border: 1px solid gray;
+        text-align: left;
+        vertical-align: top;
+      }
+
+      table.TypeMembers {
+        border: 1px solid #C0C0C0;
+        width: 100%;
+      }
+
+      table.TypeMembers tr td {
+        background: #F8F8F8;
+        border: white;
+      }
+
+      table.Documentation {
+      }
+
+      table.TypeMembers {
+      }
+
+      div.CodeExample {
+        width: 100%;
+        border: 1px solid #DDDDDD;
+        background-color: #F8F8F8;
+      }
+
+      div.CodeExample p {
+        margin: 0.5em;
+        border-bottom: 1px solid #DDDDDD;
+      }
+
+      div.CodeExample div {
+        margin: 0.5em;
+      }
+
+      h4 {
+        margin-bottom: 0;
+      }
+
+      div.Signature {
+        border: 1px solid #C0C0C0;
+        background: #F2F2F2;
+        padding: 1em;
+      }
+    </style>
+    <script type="text/JavaScript">
+      function toggle_display (block) {
+        var w = document.getElementById (block);
+        var t = document.getElementById (block + ":toggle");
+        if (w.style.display == "none") {
+          w.style.display = "block";
+          t.innerHTML = "⊟";
+        } else {
+          w.style.display = "none";
+          t.innerHTML = "⊞";
+        }
+      }
+    </script>
+  </head>
+  <body>
+    <div class="CollectionTitle">
+      <a href="../index.html">Cadenza</a> : <a href="index.html">Cadenza Namespace</a></div>
+    <div class="SideBar">
+      <p>
+        <a href="#T:Cadenza.ObjectCoda">Overview</a>
+      </p>
+      <p>
+        <a href="#T:Cadenza.ObjectCoda:Signature">Signature</a>
+      </p>
+      <p>
+        <a href="#T:Cadenza.ObjectCoda:Docs">Remarks</a>
+      </p>
+      <p>
+        <a href="#Members">Members</a>
+      </p>
+      <p>
+        <a href="#T:Cadenza.ObjectCoda:Members">Member Details</a>
+      </p>
+    </div>
+    <h1 class="PageTitle" id="T:Cadenza.ObjectCoda">ObjectCoda  Class</h1>
+    <p class="Summary" id="T:Cadenza.ObjectCoda:Summary">Extension methods on <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Object">object</a>.</p>
+    <div id="T:Cadenza.ObjectCoda:Signature">
+      <div class="Signature">public static class  <b>ObjectCoda</b></div>
+    </div>
+    <div class="Remarks" id="T:Cadenza.ObjectCoda:Docs">
+      <h4 class="Subsection">
+        <a href="javascript:toggle_display('T:Cadenza.ObjectCoda:Docs:Remarks')">
+          <span id="T:Cadenza.ObjectCoda:Docs:Remarks:toggle">⊟</span> Remarks</a>
+      </h4>
+      <blockquote class="SubsectionBox" id="T:Cadenza.ObjectCoda:Docs:Remarks">
+      </blockquote>
+      <h4 class="Subsection">
+        <a href="javascript:toggle_display('T:Cadenza.ObjectCoda:Docs:Version Information')">
+          <span id="T:Cadenza.ObjectCoda:Docs:Version Information:toggle">⊟</span> Requirements</a>
+      </h4>
+      <blockquote class="SubsectionBox" id="T:Cadenza.ObjectCoda:Docs:Version Information">
+        <b>Namespace: </b>Cadenza<br /><b>Assembly: </b>Cadenza (in Cadenza.dll)<br /><b>Assembly Versions: </b>0.1.0.0</blockquote>
+      <h2 class="Section" id="Members">
+        <a href="javascript:toggle_display('_Members')">
+          <span id="_Members:toggle">⊟</span> Members</a>
+      </h2>
+      <blockquote class="SectionBox" id="_Members">
+        <p>
+								See Also: Inherited members from
+								<a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Object">object</a>.
+							</p>
+        <h3>
+          <a href="javascript:toggle_display('Public Methods')">
+            <span id="Public Methods:toggle">⊟</span> Public Methods</a>
+        </h3>
+        <blockquote id="Public Methods">
+          <div class="SubsectionBox">
+            <table class="TypeMembers">
+              <tr valign="top">
+                <td>
+                  <div>static </div>
+                </td>
+                <td colspan="2">
+                  <b>
+                    <a href="#M:Cadenza.ObjectCoda.Just``1(``0)">Just&lt;T&gt;</a>
+                  </b>(<i>this</i> <i title="&#xA;          The type to convert into a .&#xA;        ">T</i>)<nobr> : <a href="../Cadenza/Maybe`1.html">Maybe&lt;T&gt;</a></nobr><blockquote>
+          Create a new <a href="../Cadenza/Maybe`1.html">Cadenza.Maybe&lt;T&gt;</a> instance
+          initialized to a specified value.  The returned value will not be 
+          <a href="../Cadenza/Maybe`1.html#F:Cadenza.Maybe`1.Nothing">Maybe&lt;T&gt;.Nothing</a>.
+        </blockquote></td>
+              </tr>
+              <tr valign="top">
+                <td>
+                  <div>static </div>
+                </td>
+                <td colspan="2">
+                  <b>
+                    <a href="#M:Cadenza.ObjectCoda.Match``2(``0,System.Func{``0,Cadenza.Maybe{``1}}[])">Match&lt;TSource,TResult&gt;</a>
+                  </b>(<i>this</i> <i title="The source type.">TSource</i>, <b>params</b> <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Func`2">Func&lt;TSource, Maybe&lt;TResult&gt;&gt;</a>[])<nobr> : <i title="The result type.">TResult</i></nobr><blockquote>
+          Converts the <i>TSource</i> instance 
+          <i>self</i> into a <i>TResult</i>.
+        </blockquote></td>
+              </tr>
+              <tr valign="top">
+                <td>
+                  <div>static </div>
+                </td>
+                <td colspan="2">
+                  <b>
+                    <a href="#M:Cadenza.ObjectCoda.ToMaybe``1(``0)">ToMaybe&lt;T&gt;</a>
+                  </b>(<i>this</i> <i title="&#xA;          The type to convert into a .&#xA;        ">T</i>)<nobr> : <a href="../Cadenza/Maybe`1.html">Maybe&lt;T&gt;</a></nobr><blockquote>
+          Create a new <a href="../Cadenza/Maybe`1.html">Cadenza.Maybe&lt;T&gt;</a> instance
+          initialized to a specified value.  The returned value may be 
+          <a href="../Cadenza/Maybe`1.html#F:Cadenza.Maybe`1.Nothing">Maybe&lt;T&gt;.Nothing</a>.
+        </blockquote></td>
+              </tr>
+              <tr valign="top">
+                <td>
+                  <div>static </div>
+                </td>
+                <td colspan="2">
+                  <b>
+                    <a href="#M:Cadenza.ObjectCoda.TraverseBreadthFirst``2(``0,System.Func{``0,``1},System.Func{``0,System.Collections.Generic.IEnumerable{``0}})">TraverseBreadthFirst&lt;TSource,TResult&gt;</a>
+                  </b>(<i>this</i> <i title="&#xA;          The type of the root node and intermediate nodes of the tree.&#xA;        ">TSource</i>, <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Func`2">Func&lt;TSource, TResult&gt;</a>, <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Func`2">Func&lt;TSource, IEnumerable&lt;TSource&gt;&gt;</a>)<nobr> : <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Collections.Generic.IEnumerable`1">IEnumerable&lt;TResult&gt;</a></nobr><blockquote>
+          Traverse a tree in a breadth-first fashion, converting each 
+          encountered node.
+        </blockquote></td>
+              </tr>
+              <tr valign="top">
+                <td>
+                  <div>static </div>
+                </td>
+                <td colspan="2">
+                  <b>
+                    <a href="#M:Cadenza.ObjectCoda.TraverseBreadthFirstWithParent``2(``0,System.Func{``0,``1},System.Func{``0,System.Collections.Generic.IEnumerable{``0}})">TraverseBreadthFirstWithParent&lt;TSource,TResult&gt;</a>
+                  </b>(<i>this</i> <i title="&#xA;          The type of the root node and intermediate nodes of the tree.&#xA;        ">TSource</i>, <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Func`2">Func&lt;TSource, TResult&gt;</a>, <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Func`2">Func&lt;TSource, IEnumerable&lt;TSource&gt;&gt;</a>)<nobr> : <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Collections.Generic.IEnumerable`1">IEnumerable&lt;KeyValuePair&lt;TSource, TResult&gt;&gt;</a></nobr><blockquote>
+          Traverse a tree in a breadth-first fashion, converting each 
+          encountered node.
+        </blockquote></td>
+              </tr>
+              <tr valign="top">
+                <td>
+                  <div>static </div>
+                </td>
+                <td colspan="2">
+                  <b>
+                    <a href="#M:Cadenza.ObjectCoda.TraverseDepthFirst``2(``0,System.Func{``0,``1},System.Func{``0,System.Collections.Generic.IEnumerable{``0}})">TraverseDepthFirst&lt;TSource,TResult&gt;</a>
+                  </b>(<i>this</i> <i title="&#xA;          The type of the root node and intermediate nodes of the tree.&#xA;        ">TSource</i>, <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Func`2">Func&lt;TSource, TResult&gt;</a>, <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Func`2">Func&lt;TSource, IEnumerable&lt;TSource&gt;&gt;</a>)<nobr> : <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Collections.Generic.IEnumerable`1">IEnumerable&lt;TResult&gt;</a></nobr><blockquote>
+          Traverse a tree in a depth-first fashion, converting each 
+          encountered node.
+        </blockquote></td>
+              </tr>
+              <tr valign="top">
+                <td>
+                  <div>static </div>
+                </td>
+                <td colspan="2">
+                  <b>
+                    <a href="#M:Cadenza.ObjectCoda.TraverseDepthFirstWithParent``2(``0,System.Func{``0,``1},System.Func{``0,System.Collections.Generic.IEnumerable{``0}})">TraverseDepthFirstWithParent&lt;TSource,TResult&gt;</a>
+                  </b>(<i>this</i> <i title="&#xA;          The type of the root node and intermediate nodes of the tree.&#xA;        ">TSource</i>, <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Func`2">Func&lt;TSource, TResult&gt;</a>, <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Func`2">Func&lt;TSource, IEnumerable&lt;TSource&gt;&gt;</a>)<nobr> : <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Collections.Generic.IEnumerable`1">IEnumerable&lt;KeyValuePair&lt;TSource, TResult&gt;&gt;</a></nobr><blockquote>
+          Traverse a tree in a depth-first fashion, converting each 
+          encountered node.
+        </blockquote></td>
+              </tr>
+              <tr valign="top">
+                <td>
+                  <div>static </div>
+                </td>
+                <td colspan="2">
+                  <b>
+                    <a href="#M:Cadenza.ObjectCoda.With``2(``0,System.Func{``0,``1})">With&lt;TSource,TResult&gt;</a>
+                  </b>(<i>this</i> <i title="The type to operate on.">TSource</i>, <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Func`2">Func&lt;TSource, TResult&gt;</a>)<nobr> : <i title="The type to return.">TResult</i></nobr><blockquote>
+          Supports chaining otherwise temporary values.
+        </blockquote></td>
+              </tr>
+            </table>
+          </div>
+        </blockquote>
+      </blockquote>
+    </div>
+    <div class="Members" id="T:Cadenza.ObjectCoda:Members">
+      <h2 class="Section" id="MemberDetails">
+        <a href="javascript:toggle_display('_MemberDetails')">
+          <span id="_MemberDetails:toggle">⊟</span> Member Details</a>
+      </h2>
+      <blockquote class="SectionBox" id="_MemberDetails">
+        <h3 id="M:Cadenza.ObjectCoda.Just``1(``0)">
+          <a href="javascript:toggle_display('M:Cadenza.ObjectCoda.Just``1(``0):member')">
+            <span id="M:Cadenza.ObjectCoda.Just``1(``0):member:toggle">⊟</span> Just&lt;T&gt; Generic Method</a>
+        </h3>
+        <blockquote id="M:Cadenza.ObjectCoda.Just``1(``0):member">
+          <p class="Summary">
+          Create a new <a href="../Cadenza/Maybe`1.html">Cadenza.Maybe&lt;T&gt;</a> instance
+          initialized to a specified value.  The returned value will not be 
+          <a href="../Cadenza/Maybe`1.html#F:Cadenza.Maybe`1.Nothing">Maybe&lt;T&gt;.Nothing</a>.
+        </p>
+          <div class="Signature">public static <a href="../Cadenza/Maybe`1.html">Maybe&lt;T&gt;</a> <b>Just&lt;T&gt;</b> (<i>this</i> <i title="&#xA;          The type to convert into a .&#xA;        ">T</i> self)</div>
+          <h4 class="Subsection">
+            <a href="javascript:toggle_display('M:Cadenza.ObjectCoda.Just``1(``0):See Also')">
+              <span id="M:Cadenza.ObjectCoda.Just``1(``0):See Also:toggle">⊟</span> See Also</a>
+          </h4>
+          <blockquote class="SubsectionBox" id="M:Cadenza.ObjectCoda.Just``1(``0):See Also">
+            <div>
+              <a href="../Cadenza/ObjectCoda.html#M:Cadenza.ObjectCoda.ToMaybe``1(``0)">ObjectCoda.ToMaybe``1(``0)</a>
+            </div>
+          </blockquote>
+          <h4 class="Subsection">
+            <a href="javascript:toggle_display('M:Cadenza.ObjectCoda.Just``1(``0):Type Parameters')">
+              <span id="M:Cadenza.ObjectCoda.Just``1(``0):Type Parameters:toggle">⊟</span> Type Parameters</a>
+          </h4>
+          <blockquote class="SubsectionBox" id="M:Cadenza.ObjectCoda.Just``1(``0):Type Parameters">
+            <dl>
+              <dt>
+                <i>T</i>
+              </dt>
+              <dd>
+          The type to convert into a <a href="../Cadenza/Maybe`1.html">Cadenza.Maybe&lt;T&gt;</a>.
+        </dd>
+            </dl>
+          </blockquote>
+          <h4 class="Subsection">
+            <a href="javascript:toggle_display('M:Cadenza.ObjectCoda.Just``1(``0):Parameters')">
+              <span id="M:Cadenza.ObjectCoda.Just``1(``0):Parameters:toggle">⊟</span> Parameters</a>
+          </h4>
+          <blockquote class="SubsectionBox" id="M:Cadenza.ObjectCoda.Just``1(``0):Parameters">
+            <dl>
+              <dt>
+                <i>self</i>
+              </dt>
+              <dd>
+          A value of type <i>T</i> to convert into a 
+          <a href="../Cadenza/Maybe`1.html">Cadenza.Maybe&lt;T&gt;</a>.
+        </dd>
+            </dl>
+          </blockquote>
+          <h4 class="Subsection">
+            <a href="javascript:toggle_display('M:Cadenza.ObjectCoda.Just``1(``0):Returns')">
+              <span id="M:Cadenza.ObjectCoda.Just``1(``0):Returns:toggle">⊟</span> Returns</a>
+          </h4>
+          <blockquote class="SubsectionBox" id="M:Cadenza.ObjectCoda.Just``1(``0):Returns">
+            <p>
+            A new <a href="../Cadenza/Maybe`1.html">Cadenza.Maybe&lt;T&gt;</a> instance
+            initialized to a specified value.
+          </p>
+            <p>
+            The returned value will not be 
+            <a href="../Cadenza/Maybe`1.html#F:Cadenza.Maybe`1.Nothing">Maybe&lt;T&gt;.Nothing</a>.
+          </p>
+          </blockquote>
+          <h4 class="Subsection">
+            <a href="javascript:toggle_display('M:Cadenza.ObjectCoda.Just``1(``0):Exceptions')">
+              <span id="M:Cadenza.ObjectCoda.Just``1(``0):Exceptions:toggle">⊟</span> Exceptions</a>
+          </h4>
+          <blockquote class="SubsectionBox" id="M:Cadenza.ObjectCoda.Just``1(``0):Exceptions">
+            <table class="TypeDocumentation">
+              <tr>
+                <th>Type</th>
+                <th>Reason</th>
+              </tr>
+              <tr valign="top">
+                <td>
+                  <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.ArgumentNullException">ArgumentNullException</a>
+                </td>
+                <td>
+                  <i>T</i> is a reference type and
+          <i>self</i> is <tt>null</tt>.
+        </td>
+              </tr>
+            </table>
+          </blockquote>
+          <h4 class="Subsection">
+            <a href="javascript:toggle_display('M:Cadenza.ObjectCoda.Just``1(``0):Remarks')">
+              <span id="M:Cadenza.ObjectCoda.Just``1(``0):Remarks:toggle">⊟</span> Remarks</a>
+          </h4>
+          <blockquote class="SubsectionBox" id="M:Cadenza.ObjectCoda.Just``1(``0):Remarks">
+            Use this method when you want to ensure that 
+            <a href="../Cadenza/Maybe`1.html">Cadenza.Maybe&lt;T&gt;</a> instance is created in which
+            <a href="../Cadenza/Maybe`1.html#P:Cadenza.Maybe`1.Value">Maybe&lt;T&gt;.Value</a> will not throw.
+          </blockquote>
+          <h4 class="Subsection">
+            <a href="javascript:toggle_display('M:Cadenza.ObjectCoda.Just``1(``0):Version Information')">
+              <span id="M:Cadenza.ObjectCoda.Just``1(``0):Version Information:toggle">⊟</span> Requirements</a>
+          </h4>
+          <blockquote class="SubsectionBox" id="M:Cadenza.ObjectCoda.Just``1(``0):Version Information">
+            <b>Namespace: </b>Cadenza<br /><b>Assembly: </b>Cadenza (in Cadenza.dll)<br /><b>Assembly Versions: </b>0.1.0.0</blockquote>
+          <hr size="1" />
+        </blockquote>
+        <h3 id="M:Cadenza.ObjectCoda.Match``2(``0,System.Func{``0,Cadenza.Maybe{``1}}[])">
+          <a href="javascript:toggle_display('M:Cadenza.ObjectCoda.Match``2(``0,System.Func{``0,Cadenza.Maybe{``1}}[]):member')">
+            <span id="M:Cadenza.ObjectCoda.Match``2(``0,System.Func{``0,Cadenza.Maybe{``1}}[]):member:toggle">⊟</span> Match&lt;TSource,TResult&gt; Generic Method</a>
+        </h3>
+        <blockquote id="M:Cadenza.ObjectCoda.Match``2(``0,System.Func{``0,Cadenza.Maybe{``1}}[]):member">
+          <p class="Summary">
+          Converts the <i>TSource</i> instance 
+          <i>self</i> into a <i>TResult</i>.
+        </p>
+          <div class="Signature">public static <i title="The result type.">TResult</i> <b>Match&lt;TSource, TResult&gt;</b> (<i>this</i> <i title="The source type.">TSource</i> self, <b>params</b> <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Func`2">Func&lt;TSource, Maybe&lt;TResult&gt;&gt;</a>[] matchers)</div>
+          <h4 class="Subsection">
+            <a href="javascript:toggle_display('M:Cadenza.ObjectCoda.Match``2(``0,System.Func{``0,Cadenza.Maybe{``1}}[]):See Also')">
+              <span id="M:Cadenza.ObjectCoda.Match``2(``0,System.Func{``0,Cadenza.Maybe{``1}}[]):See Also:toggle">⊟</span> See Also</a>
+          </h4>
+          <blockquote class="SubsectionBox" id="M:Cadenza.ObjectCoda.Match``2(``0,System.Func{``0,Cadenza.Maybe{``1}}[]):See Also">
+            <div>
+              <a href="../Cadenza/Maybe.html#M:Cadenza.Maybe.When``1(System.Boolean,``0)">Maybe.When``1(bool, ``0)</a>
+            </div>
+            <div>
+              <a href="../Cadenza/Maybe.html#M:Cadenza.Maybe.When``1(System.Boolean,System.Func{``0})">Maybe.When``1(bool, Func&lt;``0&gt;)</a>
+            </div>
+          </blockquote>
+          <h4 class="Subsection">
+            <a href="javascript:toggle_display('M:Cadenza.ObjectCoda.Match``2(``0,System.Func{``0,Cadenza.Maybe{``1}}[]):Type Parameters')">
+              <span id="M:Cadenza.ObjectCoda.Match``2(``0,System.Func{``0,Cadenza.Maybe{``1}}[]):Type Parameters:toggle">⊟</span> Type Parameters</a>
+          </h4>
+          <blockquote class="SubsectionBox" id="M:Cadenza.ObjectCoda.Match``2(``0,System.Func{``0,Cadenza.Maybe{``1}}[]):Type Parameters">
+            <dl>
+              <dt>
+                <i>TSource</i>
+              </dt>
+              <dd>The source type.</dd>
+              <dt>
+                <i>TResult</i>
+              </dt>
+              <dd>The result type.</dd>
+            </dl>
+          </blockquote>
+          <h4 class="Subsection">
+            <a href="javascript:toggle_display('M:Cadenza.ObjectCoda.Match``2(``0,System.Func{``0,Cadenza.Maybe{``1}}[]):Parameters')">
+              <span id="M:Cadenza.ObjectCoda.Match``2(``0,System.Func{``0,Cadenza.Maybe{``1}}[]):Parameters:toggle">⊟</span> Parameters</a>
+          </h4>
+          <blockquote class="SubsectionBox" id="M:Cadenza.ObjectCoda.Match``2(``0,System.Func{``0,Cadenza.Maybe{``1}}[]):Parameters">
+            <dl>
+              <dt>
+                <i>self</i>
+              </dt>
+              <dd>
+          A value of type <i>TSource</i> to convert to 
+          <i>TResult</i>.
+        </dd>
+              <dt>
+                <i>matchers</i>
+              </dt>
+              <dd>
+          A <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Func`2">Func&lt;TSource, Cadenza.Maybe&lt;TResult&gt;&gt;</a>
+          array containing the conversion routines to try, in order, to
+          convert <i>self</i> into a 
+          <i>TResult</i>.
+        </dd>
+            </dl>
+          </blockquote>
+          <h4 class="Subsection">
+            <a href="javascript:toggle_display('M:Cadenza.ObjectCoda.Match``2(``0,System.Func{``0,Cadenza.Maybe{``1}}[]):Returns')">
+              <span id="M:Cadenza.ObjectCoda.Match``2(``0,System.Func{``0,Cadenza.Maybe{``1}}[]):Returns:toggle">⊟</span> Returns</a>
+          </h4>
+          <blockquote class="SubsectionBox" id="M:Cadenza.ObjectCoda.Match``2(``0,System.Func{``0,Cadenza.Maybe{``1}}[]):Returns">
+          A value of type <i>TResult</i>, as returned by one
+          of the conversion delegates in <i>matchers</i>.
+        </blockquote>
+          <h4 class="Subsection">
+            <a href="javascript:toggle_display('M:Cadenza.ObjectCoda.Match``2(``0,System.Func{``0,Cadenza.Maybe{``1}}[]):Exceptions')">
+              <span id="M:Cadenza.ObjectCoda.Match``2(``0,System.Func{``0,Cadenza.Maybe{``1}}[]):Exceptions:toggle">⊟</span> Exceptions</a>
+          </h4>
+          <blockquote class="SubsectionBox" id="M:Cadenza.ObjectCoda.Match``2(``0,System.Func{``0,Cadenza.Maybe{``1}}[]):Exceptions">
+            <table class="TypeDocumentation">
+              <tr>
+                <th>Type</th>
+                <th>Reason</th>
+              </tr>
+              <tr valign="top">
+                <td>
+                  <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.ArgumentNullException">ArgumentNullException</a>
+                </td>
+                <td>
+                  <i>matchers</i> is <tt>null</tt>.
+        </td>
+              </tr>
+              <tr valign="top">
+                <td>
+                  <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.InvalidOperationException">InvalidOperationException</a>
+                </td>
+                <td>
+          None of the 
+          <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Func`2">Func&lt;TSource, Cadenza.Maybe&lt;TResult&gt;&gt;</a>
+          delegates within <i>matchers</i> returned a 
+          <a href="../Cadenza/Maybe`1.html">Cadenza.Maybe&lt;TResult&gt;</a> instance where
+          <a href="../Cadenza/Maybe`1.html#P:Cadenza.Maybe`1.HasValue">Maybe&lt;TResult&gt;.HasValue</a> was
+          <tt>true</tt>.
+        </td>
+              </tr>
+            </table>
+          </blockquote>
+          <h4 class="Subsection">
+            <a href="javascript:toggle_display('M:Cadenza.ObjectCoda.Match``2(``0,System.Func{``0,Cadenza.Maybe{``1}}[]):Remarks')">
+              <span id="M:Cadenza.ObjectCoda.Match``2(``0,System.Func{``0,Cadenza.Maybe{``1}}[]):Remarks:toggle">⊟</span> Remarks</a>
+          </h4>
+          <blockquote class="SubsectionBox" id="M:Cadenza.ObjectCoda.Match``2(``0,System.Func{``0,Cadenza.Maybe{``1}}[]):Remarks">
+            <h5 class="Subsection">Operation</h5>
+            <p>
+              <i>self</i> is converted into a 
+              <i>TResult</i> instance by trying each
+              <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Func`2">Func&lt;TSource, Cadenza.Maybe&lt;TResult&gt;&gt;</a>
+              within <i>matchers</i>.
+            </p>
+            <p>
+              This method returns the value of
+              where <a href="../Cadenza/Maybe`1.html#P:Cadenza.Maybe`1.Value">Maybe&lt;TResult&gt;.Value</a> 
+              for the first delegate to return a
+              <a href="../Cadenza/Maybe`1.html">Cadenza.Maybe&lt;TResult&gt;</a> instance
+              where <a href="../Cadenza/Maybe`1.html#P:Cadenza.Maybe`1.HasValue">Maybe&lt;TResult&gt;.HasValue</a>
+              is <tt>true</tt>.
+            </p>
+            <p>
+              If no 
+              <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Func`2">Func&lt;TSource, Cadenza.Maybe&lt;TResult&gt;&gt;</a>
+              returns a 
+              <a href="../Cadenza/Maybe`1.html">Cadenza.Maybe&lt;TResult&gt;</a> instance
+              where <a href="../Cadenza/Maybe`1.html#P:Cadenza.Maybe`1.HasValue">Maybe&lt;TResult&gt;.HasValue</a>
+              is <tt>true</tt>, then an
+              <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.InvalidOperationException">InvalidOperationException</a> is thrown.
+            </p>
+            <table class="CodeExampleTable">
+              <tr>
+                <td>
+                  <b>
+                    <font size="-1">C# Example</font>
+                  </b>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <pre class="code-csharp">Assert.AreEqual ("foo",
+	"foo".Match (
+		s =&gt; Maybe.When (s.Length != 3, "bar!"),
+		s =&gt; s.Just ()));
+Assert.AreEqual ("bar!",
+	5.Match (
+		v =&gt; Maybe.When (v != 3, "bar!"),
+		v =&gt; v.ToString ().Just()));
+var m = new Func&lt;string, Maybe&lt;int&gt;&gt;[] {
+	v =&gt; Maybe.When (v == "bar",    1),
+	v =&gt; Maybe.When (v.Length == 5, 2),
+	v =&gt; (-1).Just (),
+};
+Assert.AreEqual (1, "bar".Match (m));
+Assert.AreEqual (2, "12345".Match (m));
+Assert.AreEqual (-1, "*default*".Match (m));
+</pre>
+                </td>
+              </tr>
+            </table>
+          </blockquote>
+          <h4 class="Subsection">
+            <a href="javascript:toggle_display('M:Cadenza.ObjectCoda.Match``2(``0,System.Func{``0,Cadenza.Maybe{``1}}[]):Version Information')">
+              <span id="M:Cadenza.ObjectCoda.Match``2(``0,System.Func{``0,Cadenza.Maybe{``1}}[]):Version Information:toggle">⊟</span> Requirements</a>
+          </h4>
+          <blockquote class="SubsectionBox" id="M:Cadenza.ObjectCoda.Match``2(``0,System.Func{``0,Cadenza.Maybe{``1}}[]):Version Information">
+            <b>Namespace: </b>Cadenza<br /><b>Assembly: </b>Cadenza (in Cadenza.dll)<br /><b>Assembly Versions: </b>0.1.0.0</blockquote>
+          <hr size="1" />
+        </blockquote>
+        <h3 id="M:Cadenza.ObjectCoda.ToMaybe``1(``0)">
+          <a href="javascript:toggle_display('M:Cadenza.ObjectCoda.ToMaybe``1(``0):member')">
+            <span id="M:Cadenza.ObjectCoda.ToMaybe``1(``0):member:toggle">⊟</span> ToMaybe&lt;T&gt; Generic Method</a>
+        </h3>
+        <blockquote id="M:Cadenza.ObjectCoda.ToMaybe``1(``0):member">
+          <p class="Summary">
+          Create a new <a href="../Cadenza/Maybe`1.html">Cadenza.Maybe&lt;T&gt;</a> instance
+          initialized to a specified value.  The returned value may be 
+          <a href="../Cadenza/Maybe`1.html#F:Cadenza.Maybe`1.Nothing">Maybe&lt;T&gt;.Nothing</a>.
+        </p>
+          <div class="Signature">public static <a href="../Cadenza/Maybe`1.html">Maybe&lt;T&gt;</a> <b>ToMaybe&lt;T&gt;</b> (<i>this</i> <i title="&#xA;          The type to convert into a .&#xA;        ">T</i> self)</div>
+          <h4 class="Subsection">
+            <a href="javascript:toggle_display('M:Cadenza.ObjectCoda.ToMaybe``1(``0):See Also')">
+              <span id="M:Cadenza.ObjectCoda.ToMaybe``1(``0):See Also:toggle">⊟</span> See Also</a>
+          </h4>
+          <blockquote class="SubsectionBox" id="M:Cadenza.ObjectCoda.ToMaybe``1(``0):See Also">
+            <div>
+              <a href="../Cadenza/ObjectCoda.html#M:Cadenza.ObjectCoda.Just``1(``0)">ObjectCoda.Just``1(``0)</a>
+            </div>
+          </blockquote>
+          <h4 class="Subsection">
+            <a href="javascript:toggle_display('M:Cadenza.ObjectCoda.ToMaybe``1(``0):Type Parameters')">
+              <span id="M:Cadenza.ObjectCoda.ToMaybe``1(``0):Type Parameters:toggle">⊟</span> Type Parameters</a>
+          </h4>
+          <blockquote class="SubsectionBox" id="M:Cadenza.ObjectCoda.ToMaybe``1(``0):Type Parameters">
+            <dl>
+              <dt>
+                <i>T</i>
+              </dt>
+              <dd>
+          The type to convert into a <a href="../Cadenza/Maybe`1.html">Cadenza.Maybe&lt;T&gt;</a>.
+        </dd>
+            </dl>
+          </blockquote>
+          <h4 class="Subsection">
+            <a href="javascript:toggle_display('M:Cadenza.ObjectCoda.ToMaybe``1(``0):Parameters')">
+              <span id="M:Cadenza.ObjectCoda.ToMaybe``1(``0):Parameters:toggle">⊟</span> Parameters</a>
+          </h4>
+          <blockquote class="SubsectionBox" id="M:Cadenza.ObjectCoda.ToMaybe``1(``0):Parameters">
+            <dl>
+              <dt>
+                <i>self</i>
+              </dt>
+              <dd>
+          A value of type <i>T</i> to convert into a 
+          <a href="../Cadenza/Maybe`1.html">Cadenza.Maybe&lt;T&gt;</a>.
+        </dd>
+            </dl>
+          </blockquote>
+          <h4 class="Subsection">
+            <a href="javascript:toggle_display('M:Cadenza.ObjectCoda.ToMaybe``1(``0):Returns')">
+              <span id="M:Cadenza.ObjectCoda.ToMaybe``1(``0):Returns:toggle">⊟</span> Returns</a>
+          </h4>
+          <blockquote class="SubsectionBox" id="M:Cadenza.ObjectCoda.ToMaybe``1(``0):Returns">
+            <p>
+            A new <a href="../Cadenza/Maybe`1.html">Cadenza.Maybe&lt;T&gt;</a> instance
+            initialized to a specified value.
+          </p>
+            <div>
+              <i>Note: </i>
+            The value returned may be 
+            <a href="../Cadenza/Maybe`1.html#F:Cadenza.Maybe`1.Nothing">Maybe&lt;T&gt;.Nothing</a>.
+          </div>
+          </blockquote>
+          <h4 class="Subsection">
+            <a href="javascript:toggle_display('M:Cadenza.ObjectCoda.ToMaybe``1(``0):Remarks')">
+              <span id="M:Cadenza.ObjectCoda.ToMaybe``1(``0):Remarks:toggle">⊟</span> Remarks</a>
+          </h4>
+          <blockquote class="SubsectionBox" id="M:Cadenza.ObjectCoda.ToMaybe``1(``0):Remarks">
+            Use this method when you want to ensure that a possibly invalid
+            <a href="../Cadenza/Maybe`1.html">Cadenza.Maybe&lt;T&gt;</a> instance is created.
+            If <i>T</i> is a reference type and 
+            <i>self</i> is <tt>null</tt>, then
+            <a href="../Cadenza/Maybe`1.html#F:Cadenza.Maybe`1.Nothing">Maybe&lt;T&gt;.Nothing</a> will be returned;
+            otherwise, a new <a href="../Cadenza/Maybe`1.html">Cadenza.Maybe&lt;T&gt;</a> will be
+            created containing the value <i>self</i>.
+          </blockquote>
+          <h4 class="Subsection">
+            <a href="javascript:toggle_display('M:Cadenza.ObjectCoda.ToMaybe``1(``0):Version Information')">
+              <span id="M:Cadenza.ObjectCoda.ToMaybe``1(``0):Version Information:toggle">⊟</span> Requirements</a>
+          </h4>
+          <blockquote class="SubsectionBox" id="M:Cadenza.ObjectCoda.ToMaybe``1(``0):Version Information">
+            <b>Namespace: </b>Cadenza<br /><b>Assembly: </b>Cadenza (in Cadenza.dll)<br /><b>Assembly Versions: </b>0.1.0.0</blockquote>
+          <hr size="1" />
+        </blockquote>
+        <h3 id="M:Cadenza.ObjectCoda.TraverseBreadthFirst``2(``0,System.Func{``0,``1},System.Func{``0,System.Collections.Generic.IEnumerable{``0}})">
+          <a href="javascript:toggle_display('M:Cadenza.ObjectCoda.TraverseBreadthFirst``2(``0,System.Func{``0,``1},System.Func{``0,System.Collections.Generic.IEnumerable{``0}}):member')">
+            <span id="M:Cadenza.ObjectCoda.TraverseBreadthFirst``2(``0,System.Func{``0,``1},System.Func{``0,System.Collections.Generic.IEnumerable{``0}}):member:toggle">⊟</span> TraverseBreadthFirst&lt;TSource,TResult&gt; Generic Method</a>
+        </h3>
+        <blockquote id="M:Cadenza.ObjectCoda.TraverseBreadthFirst``2(``0,System.Func{``0,``1},System.Func{``0,System.Collections.Generic.IEnumerable{``0}}):member">
+          <p class="Summary">
+          Traverse a tree in a breadth-first fashion, converting each 
+          encountered node.
+        </p>
+          <div class="Signature">public static <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Collections.Generic.IEnumerable`1">IEnumerable&lt;TResult&gt;</a> <b>TraverseBreadthFirst&lt;TSource, TResult&gt;</b> (<i>this</i> <i title="&#xA;          The type of the root node and intermediate nodes of the tree.&#xA;        ">TSource</i> self, <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Func`2">Func&lt;TSource, TResult&gt;</a> valueSelector, <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Func`2">Func&lt;TSource, IEnumerable&lt;TSource&gt;&gt;</a> childrenSelector)</div>
+          <h4 class="Subsection">
+            <a href="javascript:toggle_display('M:Cadenza.ObjectCoda.TraverseBreadthFirst``2(``0,System.Func{``0,``1},System.Func{``0,System.Collections.Generic.IEnumerable{``0}}):Type Parameters')">
+              <span id="M:Cadenza.ObjectCoda.TraverseBreadthFirst``2(``0,System.Func{``0,``1},System.Func{``0,System.Collections.Generic.IEnumerable{``0}}):Type Parameters:toggle">⊟</span> Type Parameters</a>
+          </h4>
+          <blockquote class="SubsectionBox" id="M:Cadenza.ObjectCoda.TraverseBreadthFirst``2(``0,System.Func{``0,``1},System.Func{``0,System.Collections.Generic.IEnumerable{``0}}):Type Parameters">
+            <dl>
+              <dt>
+                <i>TSource</i>
+              </dt>
+              <dd>
+          The type of the root node and intermediate nodes of the tree.
+        </dd>
+              <dt>
+                <i>TResult</i>
+              </dt>
+              <dd>
+          The type of the object to return.
+        </dd>
+            </dl>
+          </blockquote>
+          <h4 class="Subsection">
+            <a href="javascript:toggle_display('M:Cadenza.ObjectCoda.TraverseBreadthFirst``2(``0,System.Func{``0,``1},System.Func{``0,System.Collections.Generic.IEnumerable{``0}}):Parameters')">
+              <span id="M:Cadenza.ObjectCoda.TraverseBreadthFirst``2(``0,System.Func{``0,``1},System.Func{``0,System.Collections.Generic.IEnumerable{``0}}):Parameters:toggle">⊟</span> Parameters</a>
+          </h4>
+          <blockquote class="SubsectionBox" id="M:Cadenza.ObjectCoda.TraverseBreadthFirst``2(``0,System.Func{``0,``1},System.Func{``0,System.Collections.Generic.IEnumerable{``0}}):Parameters">
+            <dl>
+              <dt>
+                <i>self</i>
+              </dt>
+              <dd>
+          The root of a tree to traverse.
+        </dd>
+              <dt>
+                <i>valueSelector</i>
+              </dt>
+              <dd>
+          A <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Func`2">Func&lt;TSource, TResult&gt;</a> which is used to 
+          convert tree nodes into <i>TResult</i> instances.
+        </dd>
+              <dt>
+                <i>childrenSelector</i>
+              </dt>
+              <dd>
+          A <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Func`2">Func&lt;TSource, IEnumerable&lt;TSource&gt;&gt;</a>
+          which returns the child nodes of <i>root</i>
+          and all intermediate non-leaf nodes.
+        </dd>
+            </dl>
+          </blockquote>
+          <h4 class="Subsection">
+            <a href="javascript:toggle_display('M:Cadenza.ObjectCoda.TraverseBreadthFirst``2(``0,System.Func{``0,``1},System.Func{``0,System.Collections.Generic.IEnumerable{``0}}):Returns')">
+              <span id="M:Cadenza.ObjectCoda.TraverseBreadthFirst``2(``0,System.Func{``0,``1},System.Func{``0,System.Collections.Generic.IEnumerable{``0}}):Returns:toggle">⊟</span> Returns</a>
+          </h4>
+          <blockquote class="SubsectionBox" id="M:Cadenza.ObjectCoda.TraverseBreadthFirst``2(``0,System.Func{``0,``1},System.Func{``0,System.Collections.Generic.IEnumerable{``0}}):Returns">
+          A <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Collections.Generic.IEnumerable`1">IEnumerable&lt;TResult&gt;</a>
+          containing the result of applying <i>valueSelector</i>
+          to all nodes encountered while traversing the tree 
+          <i>self</i> in a breadth-first fashion.
+        </blockquote>
+          <h4 class="Subsection">
+            <a href="javascript:toggle_display('M:Cadenza.ObjectCoda.TraverseBreadthFirst``2(``0,System.Func{``0,``1},System.Func{``0,System.Collections.Generic.IEnumerable{``0}}):Exceptions')">
+              <span id="M:Cadenza.ObjectCoda.TraverseBreadthFirst``2(``0,System.Func{``0,``1},System.Func{``0,System.Collections.Generic.IEnumerable{``0}}):Exceptions:toggle">⊟</span> Exceptions</a>
+          </h4>
+          <blockquote class="SubsectionBox" id="M:Cadenza.ObjectCoda.TraverseBreadthFirst``2(``0,System.Func{``0,``1},System.Func{``0,System.Collections.Generic.IEnumerable{``0}}):Exceptions">
+            <table class="TypeDocumentation">
+              <tr>
+                <th>Type</th>
+                <th>Reason</th>
+              </tr>
+              <tr valign="top">
+                <td>
+                  <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.ArgumentNullException">ArgumentNullException</a>
+                </td>
+                <td>
+                  <p>
+                    <i>self</i> is <tt>null</tt>.
+          </p>
+                  <p>-or-</p>
+                  <p>
+                    <i>childrenSelector</i> is <tt>null</tt>.
+          </p>
+                  <p>-or-</p>
+                  <p>
+                    <i>valueSelector</i> is <tt>null</tt>.
+          </p>
+                </td>
+              </tr>
+            </table>
+          </blockquote>
+          <h4 class="Subsection">
+            <a href="javascript:toggle_display('M:Cadenza.ObjectCoda.TraverseBreadthFirst``2(``0,System.Func{``0,``1},System.Func{``0,System.Collections.Generic.IEnumerable{``0}}):Remarks')">
+              <span id="M:Cadenza.ObjectCoda.TraverseBreadthFirst``2(``0,System.Func{``0,``1},System.Func{``0,System.Collections.Generic.IEnumerable{``0}}):Remarks:toggle">⊟</span> Remarks</a>
+          </h4>
+          <blockquote class="SubsectionBox" id="M:Cadenza.ObjectCoda.TraverseBreadthFirst``2(``0,System.Func{``0,``1},System.Func{``0,System.Collections.Generic.IEnumerable{``0}}):Remarks">
+            <p>
+              <i>self</i> is the root node of a tree, wherein each 
+            node is a data structure containing a value and child nodes.
+            The value is retrieved via <i>valueSelector</i>,
+            and the children are obtained via 
+            <i>childrenSelector</i>.
+          </p>
+            <p>
+            The tree is traversed in a breadth-first fashion, each encountered
+            node is provided to <i>valueSelector</i>, and the
+            values are returned.
+          </p>
+          </blockquote>
+          <h4 class="Subsection">
+            <a href="javascript:toggle_display('M:Cadenza.ObjectCoda.TraverseBreadthFirst``2(``0,System.Func{``0,``1},System.Func{``0,System.Collections.Generic.IEnumerable{``0}}):Example:1')">
+              <span id="M:Cadenza.ObjectCoda.TraverseBreadthFirst``2(``0,System.Func{``0,``1},System.Func{``0,System.Collections.Generic.IEnumerable{``0}}):Example:1:toggle">⊟</span> Example</a>
+          </h4>
+          <blockquote class="SubsectionBox" id="M:Cadenza.ObjectCoda.TraverseBreadthFirst``2(``0,System.Func{``0,``1},System.Func{``0,System.Collections.Generic.IEnumerable{``0}}):Example:1">
+            <p>
+            Given the <tt>TreeNode&lt;T&gt;</tt> declaration:
+          </p>
+            <table class="CodeExampleTable">
+              <tr>
+                <td>
+                  <b>
+                    <font size="-1">C# Example</font>
+                  </b>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <pre class="code-csharp">class TreeNode&lt;T&gt;
+{
+	public TreeNode ()
+	{
+		Children = new TreeNode&lt;T&gt; [0];
+	}
+
+	public T Value;
+	public IEnumerable&lt;TreeNode&lt;T&gt;&gt; Children;
+}
+</pre>
+                </td>
+              </tr>
+            </table>
+            <p>
+              <tt>TraverseBreadthFirst()</tt> is used as:
+          </p>
+            <table class="CodeExampleTable">
+              <tr>
+                <td>
+                  <b>
+                    <font size="-1">C# Example</font>
+                  </b>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <pre class="code-csharp">TreeNode&lt;int&gt; root = new TreeNode&lt;int&gt; {
+	Value = 1, Children = new [] {
+		new TreeNode&lt;int&gt; { Value = 2 },
+		new TreeNode&lt;int&gt; {
+			Value = 3, Children = new [] {
+				new TreeNode&lt;int&gt; { Value = 5 },
+			}
+		},
+		new TreeNode&lt;int&gt; { Value = 4 },
+	}
+};
+IEnumerable&lt;int&gt; values = root
+	.TraverseBreadthFirst (x =&gt; x.Value, x =&gt; x.Children);
+AssertAreSame (new[]{ 1, 2, 3, 4, 5 }, values);
+</pre>
+                </td>
+              </tr>
+            </table>
+          </blockquote>
+          <h4 class="Subsection">
+            <a href="javascript:toggle_display('M:Cadenza.ObjectCoda.TraverseBreadthFirst``2(``0,System.Func{``0,``1},System.Func{``0,System.Collections.Generic.IEnumerable{``0}}):Version Information')">
+              <span id="M:Cadenza.ObjectCoda.TraverseBreadthFirst``2(``0,System.Func{``0,``1},System.Func{``0,System.Collections.Generic.IEnumerable{``0}}):Version Information:toggle">⊟</span> Requirements</a>
+          </h4>
+          <blockquote class="SubsectionBox" id="M:Cadenza.ObjectCoda.TraverseBreadthFirst``2(``0,System.Func{``0,``1},System.Func{``0,System.Collections.Generic.IEnumerable{``0}}):Version Information">
+            <b>Namespace: </b>Cadenza<br /><b>Assembly: </b>Cadenza (in Cadenza.dll)<br /><b>Assembly Versions: </b>0.1.0.0</blockquote>
+          <hr size="1" />
+        </blockquote>
+        <h3 id="M:Cadenza.ObjectCoda.TraverseBreadthFirstWithParent``2(``0,System.Func{``0,``1},System.Func{``0,System.Collections.Generic.IEnumerable{``0}})">
+          <a href="javascript:toggle_display('M:Cadenza.ObjectCoda.TraverseBreadthFirstWithParent``2(``0,System.Func{``0,``1},System.Func{``0,System.Collections.Generic.IEnumerable{``0}}):member')">
+            <span id="M:Cadenza.ObjectCoda.TraverseBreadthFirstWithParent``2(``0,System.Func{``0,``1},System.Func{``0,System.Collections.Generic.IEnumerable{``0}}):member:toggle">⊟</span> TraverseBreadthFirstWithParent&lt;TSource,TResult&gt; Generic Method</a>
+        </h3>
+        <blockquote id="M:Cadenza.ObjectCoda.TraverseBreadthFirstWithParent``2(``0,System.Func{``0,``1},System.Func{``0,System.Collections.Generic.IEnumerable{``0}}):member">
+          <p class="Summary">
+          Traverse a tree in a breadth-first fashion, converting each 
+          encountered node.
+        </p>
+          <div class="Signature">public static <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Collections.Generic.IEnumerable`1">IEnumerable&lt;KeyValuePair&lt;TSource, TResult&gt;&gt;</a> <b>TraverseBreadthFirstWithParent&lt;TSource, TResult&gt;</b> (<i>this</i> <i title="&#xA;          The type of the root node and intermediate nodes of the tree.&#xA;        ">TSource</i> self, <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Func`2">Func&lt;TSource, TResult&gt;</a> valueSelector, <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Func`2">Func&lt;TSource, IEnumerable&lt;TSource&gt;&gt;</a> childrenSelector)</div>
+          <h4 class="Subsection">
+            <a href="javascript:toggle_display('M:Cadenza.ObjectCoda.TraverseBreadthFirstWithParent``2(``0,System.Func{``0,``1},System.Func{``0,System.Collections.Generic.IEnumerable{``0}}):Type Parameters')">
+              <span id="M:Cadenza.ObjectCoda.TraverseBreadthFirstWithParent``2(``0,System.Func{``0,``1},System.Func{``0,System.Collections.Generic.IEnumerable{``0}}):Type Parameters:toggle">⊟</span> Type Parameters</a>
+          </h4>
+          <blockquote class="SubsectionBox" id="M:Cadenza.ObjectCoda.TraverseBreadthFirstWithParent``2(``0,System.Func{``0,``1},System.Func{``0,System.Collections.Generic.IEnumerable{``0}}):Type Parameters">
+            <dl>
+              <dt>
+                <i>TSource</i>
+              </dt>
+              <dd>
+          The type of the root node and intermediate nodes of the tree.
+        </dd>
+              <dt>
+                <i>TResult</i>
+              </dt>
+              <dd>
+          The type of the object to return.
+        </dd>
+            </dl>
+          </blockquote>
+          <h4 class="Subsection">
+            <a href="javascript:toggle_display('M:Cadenza.ObjectCoda.TraverseBreadthFirstWithParent``2(``0,System.Func{``0,``1},System.Func{``0,System.Collections.Generic.IEnumerable{``0}}):Parameters')">
+              <span id="M:Cadenza.ObjectCoda.TraverseBreadthFirstWithParent``2(``0,System.Func{``0,``1},System.Func{``0,System.Collections.Generic.IEnumerable{``0}}):Parameters:toggle">⊟</span> Parameters</a>
+          </h4>
+          <blockquote class="SubsectionBox" id="M:Cadenza.ObjectCoda.TraverseBreadthFirstWithParent``2(``0,System.Func{``0,``1},System.Func{``0,System.Collections.Generic.IEnumerable{``0}}):Parameters">
+            <dl>
+              <dt>
+                <i>self</i>
+              </dt>
+              <dd>
+          The root of a tree to traverse.
+        </dd>
+              <dt>
+                <i>valueSelector</i>
+              </dt>
+              <dd>
+          A <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Func`2">Func&lt;TSource, TResult&gt;</a> which is used to 
+          convert tree nodes into <i>TResult</i> instances.
+        </dd>
+              <dt>
+                <i>childrenSelector</i>
+              </dt>
+              <dd>
+          A <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Func`2">Func&lt;TSource, IEnumerable&lt;TSource&gt;&gt;</a>
+          which returns the child nodes of <i>root</i>
+          and all intermediate non-leaf nodes.
+        </dd>
+            </dl>
+          </blockquote>
+          <h4 class="Subsection">
+            <a href="javascript:toggle_display('M:Cadenza.ObjectCoda.TraverseBreadthFirstWithParent``2(``0,System.Func{``0,``1},System.Func{``0,System.Collections.Generic.IEnumerable{``0}}):Returns')">
+              <span id="M:Cadenza.ObjectCoda.TraverseBreadthFirstWithParent``2(``0,System.Func{``0,``1},System.Func{``0,System.Collections.Generic.IEnumerable{``0}}):Returns:toggle">⊟</span> Returns</a>
+          </h4>
+          <blockquote class="SubsectionBox" id="M:Cadenza.ObjectCoda.TraverseBreadthFirstWithParent``2(``0,System.Func{``0,``1},System.Func{``0,System.Collections.Generic.IEnumerable{``0}}):Returns">
+            <p>
+            A <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Collections.Generic.IEnumerable`1">IEnumerable&lt;KeyValuePair&lt;TSource, TResult&gt;&gt;</a>
+            in which each returned
+            <a href="http://www.go-mono.com/docs/monodoc.ashx?link=P:System.Collections.Generic.KeyValuePair{TSource,TResult}.Value">KeyValuePair&lt;TSource, TResult&gt;.Value</a>
+            is the result of applying <i>valueSelector</i> to a
+            node, and
+            <a href="http://www.go-mono.com/docs/monodoc.ashx?link=P:System.Collections.Generic.KeyValuePair{TSource,TResult}.Key">KeyValuePair&lt;TSource, TResult&gt;.Key</a>
+            holds the parent of that node.  If the node has no parent (e.g. for
+            <i>self</i>), then 
+            <a href="http://www.go-mono.com/docs/monodoc.ashx?link=P:System.Collections.Generic.KeyValuePair{TSource,TResult}.Key">KeyValuePair&lt;TSource, TResult&gt;.Key</a>
+            will contain <tt>default(TSource)</tt>.
+          </p>
+            <p>
+            Returned 
+            <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Collections.Generic.KeyValuePair`2">KeyValuePair&lt;TSource, TResult&gt;</a>
+            values come from traversing <i>self</i> in a
+            breadth-first order.
+          </p>
+          </blockquote>
+          <h4 class="Subsection">
+            <a href="javascript:toggle_display('M:Cadenza.ObjectCoda.TraverseBreadthFirstWithParent``2(``0,System.Func{``0,``1},System.Func{``0,System.Collections.Generic.IEnumerable{``0}}):Exceptions')">
+              <span id="M:Cadenza.ObjectCoda.TraverseBreadthFirstWithParent``2(``0,System.Func{``0,``1},System.Func{``0,System.Collections.Generic.IEnumerable{``0}}):Exceptions:toggle">⊟</span> Exceptions</a>
+          </h4>
+          <blockquote class="SubsectionBox" id="M:Cadenza.ObjectCoda.TraverseBreadthFirstWithParent``2(``0,System.Func{``0,``1},System.Func{``0,System.Collections.Generic.IEnumerable{``0}}):Exceptions">
+            <table class="TypeDocumentation">
+              <tr>
+                <th>Type</th>
+                <th>Reason</th>
+              </tr>
+              <tr valign="top">
+                <td>
+                  <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.ArgumentNullException">ArgumentNullException</a>
+                </td>
+                <td>
+                  <p>
+                    <i>self</i> is <tt>null</tt>.
+          </p>
+                  <p>-or-</p>
+                  <p>
+                    <i>childrenSelector</i> is <tt>null</tt>.
+          </p>
+                  <p>-or-</p>
+                  <p>
+                    <i>valueSelector</i> is <tt>null</tt>.
+          </p>
+                </td>
+              </tr>
+            </table>
+          </blockquote>
+          <h4 class="Subsection">
+            <a href="javascript:toggle_display('M:Cadenza.ObjectCoda.TraverseBreadthFirstWithParent``2(``0,System.Func{``0,``1},System.Func{``0,System.Collections.Generic.IEnumerable{``0}}):Remarks')">
+              <span id="M:Cadenza.ObjectCoda.TraverseBreadthFirstWithParent``2(``0,System.Func{``0,``1},System.Func{``0,System.Collections.Generic.IEnumerable{``0}}):Remarks:toggle">⊟</span> Remarks</a>
+          </h4>
+          <blockquote class="SubsectionBox" id="M:Cadenza.ObjectCoda.TraverseBreadthFirstWithParent``2(``0,System.Func{``0,``1},System.Func{``0,System.Collections.Generic.IEnumerable{``0}}):Remarks">
+            <p>
+              <i>self</i> is the root node of a tree, wherein each 
+            node is a data structure containing a value and child nodes.
+            The value is retrieved via <i>valueSelector</i>,
+            and the children are obtained via 
+            <i>childrenSelector</i>.
+          </p>
+            <p>
+            The tree is traversed in a breadth-first fashion, each encountered
+            node is provided to <i>valueSelector</i>, and the
+            values are returned.
+          </p>
+          </blockquote>
+          <h4 class="Subsection">
+            <a href="javascript:toggle_display('M:Cadenza.ObjectCoda.TraverseBreadthFirstWithParent``2(``0,System.Func{``0,``1},System.Func{``0,System.Collections.Generic.IEnumerable{``0}}):Version Information')">
+              <span id="M:Cadenza.ObjectCoda.TraverseBreadthFirstWithParent``2(``0,System.Func{``0,``1},System.Func{``0,System.Collections.Generic.IEnumerable{``0}}):Version Information:toggle">⊟</span> Requirements</a>
+          </h4>
+          <blockquote class="SubsectionBox" id="M:Cadenza.ObjectCoda.TraverseBreadthFirstWithParent``2(``0,System.Func{``0,``1},System.Func{``0,System.Collections.Generic.IEnumerable{``0}}):Version Information">
+            <b>Namespace: </b>Cadenza<br /><b>Assembly: </b>Cadenza (in Cadenza.dll)<br /><b>Assembly Versions: </b>0.1.0.0</blockquote>
+          <hr size="1" />
+        </blockquote>
+        <h3 id="M:Cadenza.ObjectCoda.TraverseDepthFirst``2(``0,System.Func{``0,``1},System.Func{``0,System.Collections.Generic.IEnumerable{``0}})">
+          <a href="javascript:toggle_display('M:Cadenza.ObjectCoda.TraverseDepthFirst``2(``0,System.Func{``0,``1},System.Func{``0,System.Collections.Generic.IEnumerable{``0}}):member')">
+            <span id="M:Cadenza.ObjectCoda.TraverseDepthFirst``2(``0,System.Func{``0,``1},System.Func{``0,System.Collections.Generic.IEnumerable{``0}}):member:toggle">⊟</span> TraverseDepthFirst&lt;TSource,TResult&gt; Generic Method</a>
+        </h3>
+        <blockquote id="M:Cadenza.ObjectCoda.TraverseDepthFirst``2(``0,System.Func{``0,``1},System.Func{``0,System.Collections.Generic.IEnumerable{``0}}):member">
+          <p class="Summary">
+          Traverse a tree in a depth-first fashion, converting each 
+          encountered node.
+        </p>
+          <div class="Signature">public static <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Collections.Generic.IEnumerable`1">IEnumerable&lt;TResult&gt;</a> <b>TraverseDepthFirst&lt;TSource, TResult&gt;</b> (<i>this</i> <i title="&#xA;          The type of the root node and intermediate nodes of the tree.&#xA;        ">TSource</i> self, <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Func`2">Func&lt;TSource, TResult&gt;</a> valueSelector, <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Func`2">Func&lt;TSource, IEnumerable&lt;TSource&gt;&gt;</a> childrenSelector)</div>
+          <h4 class="Subsection">
+            <a href="javascript:toggle_display('M:Cadenza.ObjectCoda.TraverseDepthFirst``2(``0,System.Func{``0,``1},System.Func{``0,System.Collections.Generic.IEnumerable{``0}}):Type Parameters')">
+              <span id="M:Cadenza.ObjectCoda.TraverseDepthFirst``2(``0,System.Func{``0,``1},System.Func{``0,System.Collections.Generic.IEnumerable{``0}}):Type Parameters:toggle">⊟</span> Type Parameters</a>
+          </h4>
+          <blockquote class="SubsectionBox" id="M:Cadenza.ObjectCoda.TraverseDepthFirst``2(``0,System.Func{``0,``1},System.Func{``0,System.Collections.Generic.IEnumerable{``0}}):Type Parameters">
+            <dl>
+              <dt>
+                <i>TSource</i>
+              </dt>
+              <dd>
+          The type of the root node and intermediate nodes of the tree.
+        </dd>
+              <dt>
+                <i>TResult</i>
+              </dt>
+              <dd>
+          The type of the object to return.
+        </dd>
+            </dl>
+          </blockquote>
+          <h4 class="Subsection">
+            <a href="javascript:toggle_display('M:Cadenza.ObjectCoda.TraverseDepthFirst``2(``0,System.Func{``0,``1},System.Func{``0,System.Collections.Generic.IEnumerable{``0}}):Parameters')">
+              <span id="M:Cadenza.ObjectCoda.TraverseDepthFirst``2(``0,System.Func{``0,``1},System.Func{``0,System.Collections.Generic.IEnumerable{``0}}):Parameters:toggle">⊟</span> Parameters</a>
+          </h4>
+          <blockquote class="SubsectionBox" id="M:Cadenza.ObjectCoda.TraverseDepthFirst``2(``0,System.Func{``0,``1},System.Func{``0,System.Collections.Generic.IEnumerable{``0}}):Parameters">
+            <dl>
+              <dt>
+                <i>self</i>
+              </dt>
+              <dd>
+          The root of a tree to traverse.
+        </dd>
+              <dt>
+                <i>valueSelector</i>
+              </dt>
+              <dd>
+          A <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Func`2">Func&lt;TSource, TResult&gt;</a> which is used to 
+          convert tree nodes into <i>TResult</i> instances.
+        </dd>
+              <dt>
+                <i>childrenSelector</i>
+              </dt>
+              <dd>
+          A <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Func`2">Func&lt;TSource, IEnumerable&lt;TSource&gt;&gt;</a>
+          which returns the child nodes of <i>root</i>
+          and all intermediate non-leaf nodes.
+        </dd>
+            </dl>
+          </blockquote>
+          <h4 class="Subsection">
+            <a href="javascript:toggle_display('M:Cadenza.ObjectCoda.TraverseDepthFirst``2(``0,System.Func{``0,``1},System.Func{``0,System.Collections.Generic.IEnumerable{``0}}):Returns')">
+              <span id="M:Cadenza.ObjectCoda.TraverseDepthFirst``2(``0,System.Func{``0,``1},System.Func{``0,System.Collections.Generic.IEnumerable{``0}}):Returns:toggle">⊟</span> Returns</a>
+          </h4>
+          <blockquote class="SubsectionBox" id="M:Cadenza.ObjectCoda.TraverseDepthFirst``2(``0,System.Func{``0,``1},System.Func{``0,System.Collections.Generic.IEnumerable{``0}}):Returns">
+          A <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Collections.Generic.IEnumerable`1">IEnumerable&lt;TResult&gt;</a>
+          containing the result of applying <i>valueSelector</i>
+          to all nodes encountered while traversing the tree 
+          <i>self</i> in a depth-first fashion.
+        </blockquote>
+          <h4 class="Subsection">
+            <a href="javascript:toggle_display('M:Cadenza.ObjectCoda.TraverseDepthFirst``2(``0,System.Func{``0,``1},System.Func{``0,System.Collections.Generic.IEnumerable{``0}}):Exceptions')">
+              <span id="M:Cadenza.ObjectCoda.TraverseDepthFirst``2(``0,System.Func{``0,``1},System.Func{``0,System.Collections.Generic.IEnumerable{``0}}):Exceptions:toggle">⊟</span> Exceptions</a>
+          </h4>
+          <blockquote class="SubsectionBox" id="M:Cadenza.ObjectCoda.TraverseDepthFirst``2(``0,System.Func{``0,``1},System.Func{``0,System.Collections.Generic.IEnumerable{``0}}):Exceptions">
+            <table class="TypeDocumentation">
+              <tr>
+                <th>Type</th>
+                <th>Reason</th>
+              </tr>
+              <tr valign="top">
+                <td>
+                  <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.ArgumentNullException">ArgumentNullException</a>
+                </td>
+                <td>
+                  <p>
+                    <i>self</i> is <tt>null</tt>.
+          </p>
+                  <p>-or-</p>
+                  <p>
+                    <i>childrenSelector</i> is <tt>null</tt>.
+          </p>
+                  <p>-or-</p>
+                  <p>
+                    <i>valueSelector</i> is <tt>null</tt>.
+          </p>
+                </td>
+              </tr>
+            </table>
+          </blockquote>
+          <h4 class="Subsection">
+            <a href="javascript:toggle_display('M:Cadenza.ObjectCoda.TraverseDepthFirst``2(``0,System.Func{``0,``1},System.Func{``0,System.Collections.Generic.IEnumerable{``0}}):Remarks')">
+              <span id="M:Cadenza.ObjectCoda.TraverseDepthFirst``2(``0,System.Func{``0,``1},System.Func{``0,System.Collections.Generic.IEnumerable{``0}}):Remarks:toggle">⊟</span> Remarks</a>
+          </h4>
+          <blockquote class="SubsectionBox" id="M:Cadenza.ObjectCoda.TraverseDepthFirst``2(``0,System.Func{``0,``1},System.Func{``0,System.Collections.Generic.IEnumerable{``0}}):Remarks">
+            <p>
+              <i>self</i> is the root node of a tree, wherein each 
+            node is a data structure containing a value and child nodes.
+            The value is retrieved via <i>valueSelector</i>,
+            and the children are obtained via 
+            <i>childrenSelector</i>.
+          </p>
+            <p>
+            The tree is traversed in a depth-first fashion, each encountered
+            node is provided to <i>valueSelector</i>, and the
+            values are returned.
+          </p>
+          </blockquote>
+          <h4 class="Subsection">
+            <a href="javascript:toggle_display('M:Cadenza.ObjectCoda.TraverseDepthFirst``2(``0,System.Func{``0,``1},System.Func{``0,System.Collections.Generic.IEnumerable{``0}}):Example:1')">
+              <span id="M:Cadenza.ObjectCoda.TraverseDepthFirst``2(``0,System.Func{``0,``1},System.Func{``0,System.Collections.Generic.IEnumerable{``0}}):Example:1:toggle">⊟</span> Example</a>
+          </h4>
+          <blockquote class="SubsectionBox" id="M:Cadenza.ObjectCoda.TraverseDepthFirst``2(``0,System.Func{``0,``1},System.Func{``0,System.Collections.Generic.IEnumerable{``0}}):Example:1">
+            <p>
+            Given the <tt>TreeNode&lt;T&gt;</tt> declaration:
+          </p>
+            <table class="CodeExampleTable">
+              <tr>
+                <td>
+                  <b>
+                    <font size="-1">C# Example</font>
+                  </b>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <pre class="code-csharp">class TreeNode&lt;T&gt;
+{
+	public TreeNode ()
+	{
+		Children = new TreeNode&lt;T&gt; [0];
+	}
+
+	public T Value;
+	public IEnumerable&lt;TreeNode&lt;T&gt;&gt; Children;
+}
+</pre>
+                </td>
+              </tr>
+            </table>
+            <p>
+              <tt>TraverseDepthFirst()</tt> is used as:
+          </p>
+            <table class="CodeExampleTable">
+              <tr>
+                <td>
+                  <b>
+                    <font size="-1">C# Example</font>
+                  </b>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <pre class="code-csharp">TreeNode&lt;int&gt; root = new TreeNode&lt;int&gt; {
+	Value = 1, Children = new [] {
+		new TreeNode&lt;int&gt; { Value = 2 },
+		new TreeNode&lt;int&gt; {
+			Value = 3, Children = new [] {
+				new TreeNode&lt;int&gt; { Value = 5 },
+			}
+		},
+		new TreeNode&lt;int&gt; { Value = 4 },
+	}
+};
+IEnumerable&lt;int&gt; values = root
+	.TraverseDepthFirst (x =&gt; x.Value, x =&gt; x.Children);
+AssertAreSame (new[]{ 1, 2, 3, 5, 4 }, values);
+</pre>
+                </td>
+              </tr>
+            </table>
+          </blockquote>
+          <h4 class="Subsection">
+            <a href="javascript:toggle_display('M:Cadenza.ObjectCoda.TraverseDepthFirst``2(``0,System.Func{``0,``1},System.Func{``0,System.Collections.Generic.IEnumerable{``0}}):Version Information')">
+              <span id="M:Cadenza.ObjectCoda.TraverseDepthFirst``2(``0,System.Func{``0,``1},System.Func{``0,System.Collections.Generic.IEnumerable{``0}}):Version Information:toggle">⊟</span> Requirements</a>
+          </h4>
+          <blockquote class="SubsectionBox" id="M:Cadenza.ObjectCoda.TraverseDepthFirst``2(``0,System.Func{``0,``1},System.Func{``0,System.Collections.Generic.IEnumerable{``0}}):Version Information">
+            <b>Namespace: </b>Cadenza<br /><b>Assembly: </b>Cadenza (in Cadenza.dll)<br /><b>Assembly Versions: </b>0.1.0.0</blockquote>
+          <hr size="1" />
+        </blockquote>
+        <h3 id="M:Cadenza.ObjectCoda.TraverseDepthFirstWithParent``2(``0,System.Func{``0,``1},System.Func{``0,System.Collections.Generic.IEnumerable{``0}})">
+          <a href="javascript:toggle_display('M:Cadenza.ObjectCoda.TraverseDepthFirstWithParent``2(``0,System.Func{``0,``1},System.Func{``0,System.Collections.Generic.IEnumerable{``0}}):member')">
+            <span id="M:Cadenza.ObjectCoda.TraverseDepthFirstWithParent``2(``0,System.Func{``0,``1},System.Func{``0,System.Collections.Generic.IEnumerable{``0}}):member:toggle">⊟</span> TraverseDepthFirstWithParent&lt;TSource,TResult&gt; Generic Method</a>
+        </h3>
+        <blockquote id="M:Cadenza.ObjectCoda.TraverseDepthFirstWithParent``2(``0,System.Func{``0,``1},System.Func{``0,System.Collections.Generic.IEnumerable{``0}}):member">
+          <p class="Summary">
+          Traverse a tree in a depth-first fashion, converting each 
+          encountered node.
+        </p>
+          <div class="Signature">public static <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Collections.Generic.IEnumerable`1">IEnumerable&lt;KeyValuePair&lt;TSource, TResult&gt;&gt;</a> <b>TraverseDepthFirstWithParent&lt;TSource, TResult&gt;</b> (<i>this</i> <i title="&#xA;          The type of the root node and intermediate nodes of the tree.&#xA;        ">TSource</i> self, <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Func`2">Func&lt;TSource, TResult&gt;</a> valueSelector, <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Func`2">Func&lt;TSource, IEnumerable&lt;TSource&gt;&gt;</a> childrenSelector)</div>
+          <h4 class="Subsection">
+            <a href="javascript:toggle_display('M:Cadenza.ObjectCoda.TraverseDepthFirstWithParent``2(``0,System.Func{``0,``1},System.Func{``0,System.Collections.Generic.IEnumerable{``0}}):Type Parameters')">
+              <span id="M:Cadenza.ObjectCoda.TraverseDepthFirstWithParent``2(``0,System.Func{``0,``1},System.Func{``0,System.Collections.Generic.IEnumerable{``0}}):Type Parameters:toggle">⊟</span> Type Parameters</a>
+          </h4>
+          <blockquote class="SubsectionBox" id="M:Cadenza.ObjectCoda.TraverseDepthFirstWithParent``2(``0,System.Func{``0,``1},System.Func{``0,System.Collections.Generic.IEnumerable{``0}}):Type Parameters">
+            <dl>
+              <dt>
+                <i>TSource</i>
+              </dt>
+              <dd>
+          The type of the root node and intermediate nodes of the tree.
+        </dd>
+              <dt>
+                <i>TResult</i>
+              </dt>
+              <dd>
+          The type of the object to return.
+        </dd>
+            </dl>
+          </blockquote>
+          <h4 class="Subsection">
+            <a href="javascript:toggle_display('M:Cadenza.ObjectCoda.TraverseDepthFirstWithParent``2(``0,System.Func{``0,``1},System.Func{``0,System.Collections.Generic.IEnumerable{``0}}):Parameters')">
+              <span id="M:Cadenza.ObjectCoda.TraverseDepthFirstWithParent``2(``0,System.Func{``0,``1},System.Func{``0,System.Collections.Generic.IEnumerable{``0}}):Parameters:toggle">⊟</span> Parameters</a>
+          </h4>
+          <blockquote class="SubsectionBox" id="M:Cadenza.ObjectCoda.TraverseDepthFirstWithParent``2(``0,System.Func{``0,``1},System.Func{``0,System.Collections.Generic.IEnumerable{``0}}):Parameters">
+            <dl>
+              <dt>
+                <i>self</i>
+              </dt>
+              <dd>
+          The root of a tree to traverse.
+        </dd>
+              <dt>
+                <i>valueSelector</i>
+              </dt>
+              <dd>
+          A <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Func`2">Func&lt;TSource, TResult&gt;</a> which is used to 
+          convert tree nodes into <i>TResult</i> instances.
+        </dd>
+              <dt>
+                <i>childrenSelector</i>
+              </dt>
+              <dd>
+          A <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Func`2">Func&lt;TSource, IEnumerable&lt;TSource&gt;&gt;</a>
+          which returns the child nodes of <i>root</i>
+          and all intermediate non-leaf nodes.
+        </dd>
+            </dl>
+          </blockquote>
+          <h4 class="Subsection">
+            <a href="javascript:toggle_display('M:Cadenza.ObjectCoda.TraverseDepthFirstWithParent``2(``0,System.Func{``0,``1},System.Func{``0,System.Collections.Generic.IEnumerable{``0}}):Returns')">
+              <span id="M:Cadenza.ObjectCoda.TraverseDepthFirstWithParent``2(``0,System.Func{``0,``1},System.Func{``0,System.Collections.Generic.IEnumerable{``0}}):Returns:toggle">⊟</span> Returns</a>
+          </h4>
+          <blockquote class="SubsectionBox" id="M:Cadenza.ObjectCoda.TraverseDepthFirstWithParent``2(``0,System.Func{``0,``1},System.Func{``0,System.Collections.Generic.IEnumerable{``0}}):Returns">
+            <p>
+            A <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Collections.Generic.IEnumerable`1">IEnumerable&lt;KeyValuePair&lt;TSource, TResult&gt;&gt;</a>
+            in which each returned
+            <a href="http://www.go-mono.com/docs/monodoc.ashx?link=P:System.Collections.Generic.KeyValuePair{TSource,TResult}.Value">KeyValuePair&lt;TSource, TResult&gt;.Value</a>
+            is the result of applying <i>valueSelector</i> to a
+            node, and
+            <a href="http://www.go-mono.com/docs/monodoc.ashx?link=P:System.Collections.Generic.KeyValuePair{TSource,TResult}.Key">KeyValuePair&lt;TSource, TResult&gt;.Key</a>
+            holds the parent of that node.  If the node has no parent (e.g. for
+            <i>self</i>), then 
+            <a href="http://www.go-mono.com/docs/monodoc.ashx?link=P:System.Collections.Generic.KeyValuePair{TSource,TResult}.Key">KeyValuePair&lt;TSource, TResult&gt;.Key</a>
+            will contain <tt>default(TSource)</tt>.
+          </p>
+            <p>
+            Returned 
+            <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Collections.Generic.KeyValuePair`2">KeyValuePair&lt;TSource, TResult&gt;</a>
+            values come from traversing <i>self</i> in a
+            breadth-first order.
+          </p>
+          </blockquote>
+          <h4 class="Subsection">
+            <a href="javascript:toggle_display('M:Cadenza.ObjectCoda.TraverseDepthFirstWithParent``2(``0,System.Func{``0,``1},System.Func{``0,System.Collections.Generic.IEnumerable{``0}}):Exceptions')">
+              <span id="M:Cadenza.ObjectCoda.TraverseDepthFirstWithParent``2(``0,System.Func{``0,``1},System.Func{``0,System.Collections.Generic.IEnumerable{``0}}):Exceptions:toggle">⊟</span> Exceptions</a>
+          </h4>
+          <blockquote class="SubsectionBox" id="M:Cadenza.ObjectCoda.TraverseDepthFirstWithParent``2(``0,System.Func{``0,``1},System.Func{``0,System.Collections.Generic.IEnumerable{``0}}):Exceptions">
+            <table class="TypeDocumentation">
+              <tr>
+                <th>Type</th>
+                <th>Reason</th>
+              </tr>
+              <tr valign="top">
+                <td>
+                  <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.ArgumentNullException">ArgumentNullException</a>
+                </td>
+                <td>
+                  <p>
+                    <i>self</i> is <tt>null</tt>.
+          </p>
+                  <p>-or-</p>
+                  <p>
+                    <i>childrenSelector</i> is <tt>null</tt>.
+          </p>
+                  <p>-or-</p>
+                  <p>
+                    <i>valueSelector</i> is <tt>null</tt>.
+          </p>
+                </td>
+              </tr>
+            </table>
+          </blockquote>
+          <h4 class="Subsection">
+            <a href="javascript:toggle_display('M:Cadenza.ObjectCoda.TraverseDepthFirstWithParent``2(``0,System.Func{``0,``1},System.Func{``0,System.Collections.Generic.IEnumerable{``0}}):Remarks')">
+              <span id="M:Cadenza.ObjectCoda.TraverseDepthFirstWithParent``2(``0,System.Func{``0,``1},System.Func{``0,System.Collections.Generic.IEnumerable{``0}}):Remarks:toggle">⊟</span> Remarks</a>
+          </h4>
+          <blockquote class="SubsectionBox" id="M:Cadenza.ObjectCoda.TraverseDepthFirstWithParent``2(``0,System.Func{``0,``1},System.Func{``0,System.Collections.Generic.IEnumerable{``0}}):Remarks">
+            <p>
+              <i>self</i> is the root node of a tree, wherein each 
+            node is a data structure containing a value and child nodes.
+            The value is retrieved via <i>valueSelector</i>,
+            and the children are obtained via 
+            <i>childrenSelector</i>.
+          </p>
+            <p>
+            The tree is traversed in a depth-first fashion, each encountered
+            node is provided to <i>valueSelector</i>, and the
+            values are returned.
+          </p>
+          </blockquote>
+          <h4 class="Subsection">
+            <a href="javascript:toggle_display('M:Cadenza.ObjectCoda.TraverseDepthFirstWithParent``2(``0,System.Func{``0,``1},System.Func{``0,System.Collections.Generic.IEnumerable{``0}}):Version Information')">
+              <span id="M:Cadenza.ObjectCoda.TraverseDepthFirstWithParent``2(``0,System.Func{``0,``1},System.Func{``0,System.Collections.Generic.IEnumerable{``0}}):Version Information:toggle">⊟</span> Requirements</a>
+          </h4>
+          <blockquote class="SubsectionBox" id="M:Cadenza.ObjectCoda.TraverseDepthFirstWithParent``2(``0,System.Func{``0,``1},System.Func{``0,System.Collections.Generic.IEnumerable{``0}}):Version Information">
+            <b>Namespace: </b>Cadenza<br /><b>Assembly: </b>Cadenza (in Cadenza.dll)<br /><b>Assembly Versions: </b>0.1.0.0</blockquote>
+          <hr size="1" />
+        </blockquote>
+        <h3 id="M:Cadenza.ObjectCoda.With``2(``0,System.Func{``0,``1})">
+          <a href="javascript:toggle_display('M:Cadenza.ObjectCoda.With``2(``0,System.Func{``0,``1}):member')">
+            <span id="M:Cadenza.ObjectCoda.With``2(``0,System.Func{``0,``1}):member:toggle">⊟</span> With&lt;TSource,TResult&gt; Generic Method</a>
+        </h3>
+        <blockquote id="M:Cadenza.ObjectCoda.With``2(``0,System.Func{``0,``1}):member">
+          <p class="Summary">
+          Supports chaining otherwise temporary values.
+        </p>
+          <div class="Signature">public static <i title="The type to return.">TResult</i> <b>With&lt;TSource, TResult&gt;</b> (<i>this</i> <i title="The type to operate on.">TSource</i> self, <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Func`2">Func&lt;TSource, TResult&gt;</a> selector)</div>
+          <h4 class="Subsection">
+            <a href="javascript:toggle_display('M:Cadenza.ObjectCoda.With``2(``0,System.Func{``0,``1}):Type Parameters')">
+              <span id="M:Cadenza.ObjectCoda.With``2(``0,System.Func{``0,``1}):Type Parameters:toggle">⊟</span> Type Parameters</a>
+          </h4>
+          <blockquote class="SubsectionBox" id="M:Cadenza.ObjectCoda.With``2(``0,System.Func{``0,``1}):Type Parameters">
+            <dl>
+              <dt>
+                <i>TSource</i>
+              </dt>
+              <dd>The type to operate on.</dd>
+              <dt>
+                <i>TResult</i>
+              </dt>
+              <dd>The type to return.</dd>
+            </dl>
+          </blockquote>
+          <h4 class="Subsection">
+            <a href="javascript:toggle_display('M:Cadenza.ObjectCoda.With``2(``0,System.Func{``0,``1}):Parameters')">
+              <span id="M:Cadenza.ObjectCoda.With``2(``0,System.Func{``0,``1}):Parameters:toggle">⊟</span> Parameters</a>
+          </h4>
+          <blockquote class="SubsectionBox" id="M:Cadenza.ObjectCoda.With``2(``0,System.Func{``0,``1}):Parameters">
+            <dl>
+              <dt>
+                <i>self</i>
+              </dt>
+              <dd>
+          A <i>TSource</i> containing the value to manipulate.
+          This value may be <tt>null</tt> (unlike most other
+          extension methods).
+        </dd>
+              <dt>
+                <i>selector</i>
+              </dt>
+              <dd>
+          A <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Func`2">Func&lt;TSource, TResult&gt;</a> which will be
+          invoked with <i>self</i> as a parameter.
+        </dd>
+            </dl>
+          </blockquote>
+          <h4 class="Subsection">
+            <a href="javascript:toggle_display('M:Cadenza.ObjectCoda.With``2(``0,System.Func{``0,``1}):Returns')">
+              <span id="M:Cadenza.ObjectCoda.With``2(``0,System.Func{``0,``1}):Returns:toggle">⊟</span> Returns</a>
+          </h4>
+          <blockquote class="SubsectionBox" id="M:Cadenza.ObjectCoda.With``2(``0,System.Func{``0,``1}):Returns">
+          The value of type <i>TResult</i> returned by
+          <i>selector</i>.
+        </blockquote>
+          <h4 class="Subsection">
+            <a href="javascript:toggle_display('M:Cadenza.ObjectCoda.With``2(``0,System.Func{``0,``1}):Exceptions')">
+              <span id="M:Cadenza.ObjectCoda.With``2(``0,System.Func{``0,``1}):Exceptions:toggle">⊟</span> Exceptions</a>
+          </h4>
+          <blockquote class="SubsectionBox" id="M:Cadenza.ObjectCoda.With``2(``0,System.Func{``0,``1}):Exceptions">
+            <table class="TypeDocumentation">
+              <tr>
+                <th>Type</th>
+                <th>Reason</th>
+              </tr>
+              <tr valign="top">
+                <td>
+                  <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.ArgumentNullException">ArgumentNullException</a>
+                </td>
+                <td>
+                  <i>selector</i> is <tt>null</tt>.
+        </td>
+              </tr>
+            </table>
+          </blockquote>
+          <h4 class="Subsection">
+            <a href="javascript:toggle_display('M:Cadenza.ObjectCoda.With``2(``0,System.Func{``0,``1}):Remarks')">
+              <span id="M:Cadenza.ObjectCoda.With``2(``0,System.Func{``0,``1}):Remarks:toggle">⊟</span> Remarks</a>
+          </h4>
+          <blockquote class="SubsectionBox" id="M:Cadenza.ObjectCoda.With``2(``0,System.Func{``0,``1}):Remarks">
+            <p>
+              <tt>With</tt> is useful for easily using an intermediate value within
+            an expression "chain" without requiring an explicit variable
+            declaration (which is useful for reducing in-scope variables, as no
+            variable is explicitly declared).
+          </p>
+            <table class="CodeExampleTable">
+              <tr>
+                <td>
+                  <b>
+                    <font size="-1">C# Example</font>
+                  </b>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <pre class="code-csharp">// sorts the array, then returns the 
+// element in the middle of the array.
+Assert.AreEqual (3,
+	new[]{5, 4, 3, 2, 1}.Sort ()
+	.With (c =&gt; c.ElementAt (c.Count()/2)));
+</pre>
+                </td>
+              </tr>
+            </table>
+          </blockquote>
+          <h4 class="Subsection">
+            <a href="javascript:toggle_display('M:Cadenza.ObjectCoda.With``2(``0,System.Func{``0,``1}):Version Information')">
+              <span id="M:Cadenza.ObjectCoda.With``2(``0,System.Func{``0,``1}):Version Information:toggle">⊟</span> Requirements</a>
+          </h4>
+          <blockquote class="SubsectionBox" id="M:Cadenza.ObjectCoda.With``2(``0,System.Func{``0,``1}):Version Information">
+            <b>Namespace: </b>Cadenza<br /><b>Assembly: </b>Cadenza (in Cadenza.dll)<br /><b>Assembly Versions: </b>0.1.0.0</blockquote>
+          <hr size="1" />
+        </blockquote>
+      </blockquote>
+    </div>
+    <hr size="1" />
+    <div class="Copyright">
+    </div>
+  </body>
+</html>

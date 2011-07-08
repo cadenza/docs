@@ -1,0 +1,1759 @@
+<html>
+  <head>
+    <title>Cadenza.Maybe&lt;T&gt;</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <style>
+      a { text-decoration: none }
+
+      div.SideBar {
+        padding-left: 1em;
+        padding-right: 1em;
+        right: 0;
+        float: right;
+        border: thin solid black;
+        background-color: #f2f2f2;
+      }
+    
+      .CollectionTitle { font-weight: bold }
+      .PageTitle { font-size: 150%; font-weight: bold }
+
+      .Summary { }
+      .Signature { }          
+      .Remarks { }
+      .Members { }
+      .Copyright { }
+      
+      .Section { font-size: 125%; font-weight: bold }
+      p.Summary {
+        margin-left: 1em;
+      }
+      .SectionBox { margin-left: 2em }
+      .NamespaceName { font-size: 105%; font-weight: bold }
+      .NamespaceSumary { }
+      .MemberName { font-size: 115%; font-weight: bold; margin-top: 1em }
+      .Subsection { font-size: 105%; font-weight: bold }
+      .SubsectionBox { margin-left: 2em; margin-bottom: 1em }
+
+      .CodeExampleTable { background-color: #f5f5dd; border: thin solid black; padding: .25em; }
+      
+      .TypesListing {
+        border-collapse: collapse;
+      }
+
+      td {
+        vertical-align: top;
+      }
+      th {
+        text-align: left;
+      }
+
+      .TypesListing td { 
+        margin: 0px;  
+        padding: .25em;
+        border: solid gray 1px;
+      }
+
+      .TypesListing th { 
+        margin: 0px;  
+        padding: .25em;
+        background-color: #f2f2f2;
+        border: solid gray 1px;
+      }
+
+      div.Footer {
+        border-top: 1px solid gray;
+        margin-top: 1.5em;
+        padding-top: 0.6em;
+        text-align: center;
+        color: gray;
+      }
+
+      span.NotEntered /* Documentation for this section has not yet been entered */ {
+        font-style: italic;
+        color: red;	
+      }
+
+      div.Header {
+        background: #B0C4DE;
+        border: double;
+        border-color: white;
+        border-width: 7px;
+        padding: 0.5em;
+      }
+
+      div.Header * {
+        font-size: smaller;
+      }
+
+      div.Note {
+      }
+
+      i.ParamRef {
+      }
+
+      i.subtitle {
+      }
+
+      ul.TypeMembersIndex {
+        text-align: left;
+        background: #F8F8F8;
+      }
+
+      ul.TypeMembersIndex li {
+        display: inline;
+        margin:  0.5em;
+      }
+
+      table.HeaderTable {
+      }
+
+      table.SignatureTable {
+      }
+
+      table.Documentation, table.Enumeration, table.TypeDocumentation {
+        border-collapse: collapse;
+        width: 100%;
+      }
+
+      table.Documentation tr th, table.TypeMembers tr th, table.Enumeration tr th, table.TypeDocumentation tr th {
+        background: whitesmoke;
+        padding: 0.8em;
+        border: 1px solid gray;
+        text-align: left;
+        vertical-align: bottom;
+      }
+
+      table.Documentation tr td, table.TypeMembers tr td, table.Enumeration tr td, table.TypeDocumentation tr td {
+        padding: 0.5em;
+        border: 1px solid gray;
+        text-align: left;
+        vertical-align: top;
+      }
+
+      table.TypeMembers {
+        border: 1px solid #C0C0C0;
+        width: 100%;
+      }
+
+      table.TypeMembers tr td {
+        background: #F8F8F8;
+        border: white;
+      }
+
+      table.Documentation {
+      }
+
+      table.TypeMembers {
+      }
+
+      div.CodeExample {
+        width: 100%;
+        border: 1px solid #DDDDDD;
+        background-color: #F8F8F8;
+      }
+
+      div.CodeExample p {
+        margin: 0.5em;
+        border-bottom: 1px solid #DDDDDD;
+      }
+
+      div.CodeExample div {
+        margin: 0.5em;
+      }
+
+      h4 {
+        margin-bottom: 0;
+      }
+
+      div.Signature {
+        border: 1px solid #C0C0C0;
+        background: #F2F2F2;
+        padding: 1em;
+      }
+    </style>
+    <script type="text/JavaScript">
+      function toggle_display (block) {
+        var w = document.getElementById (block);
+        var t = document.getElementById (block + ":toggle");
+        if (w.style.display == "none") {
+          w.style.display = "block";
+          t.innerHTML = "⊟";
+        } else {
+          w.style.display = "none";
+          t.innerHTML = "⊞";
+        }
+      }
+    </script>
+  </head>
+  <body>
+    <div class="CollectionTitle">
+      <a href="../index.html">Cadenza</a> : <a href="index.html">Cadenza Namespace</a></div>
+    <div class="SideBar">
+      <p>
+        <a href="#T:Cadenza.Maybe`1">Overview</a>
+      </p>
+      <p>
+        <a href="#T:Cadenza.Maybe`1:Signature">Signature</a>
+      </p>
+      <p>
+        <a href="#T:Cadenza.Maybe`1:Docs">Remarks</a>
+      </p>
+      <p>
+        <a href="#Members">Members</a>
+      </p>
+      <p>
+        <a href="#T:Cadenza.Maybe`1:Members">Member Details</a>
+      </p>
+    </div>
+    <h1 class="PageTitle" id="T:Cadenza.Maybe`1">Maybe&lt;T&gt; Generic Struct</h1>
+    <p class="Summary" id="T:Cadenza.Maybe`1:Summary">
+      Represents an optional value. An instance of 
+      <a href="../Cadenza/Maybe`1.html">Cadenza.Maybe&lt;T&gt;</a> can contain a value of type 
+      <i>T</i> or an indication that the instance contains 
+      no value. 
+    </p>
+    <div id="T:Cadenza.Maybe`1:Signature">
+      <div class="Signature">public struct  <b>Maybe&lt;T&gt;</b> : <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.IEquatable`1">IEquatable&lt;Maybe&lt;T&gt;&gt;</a></div>
+    </div>
+    <div class="Remarks" id="T:Cadenza.Maybe`1:Docs">
+      <h4 class="Subsection">
+        <a href="javascript:toggle_display('T:Cadenza.Maybe`1:Docs:Type Parameters')">
+          <span id="T:Cadenza.Maybe`1:Docs:Type Parameters:toggle">⊟</span> Type Parameters</a>
+      </h4>
+      <blockquote class="SubsectionBox" id="T:Cadenza.Maybe`1:Docs:Type Parameters">
+        <dl>
+          <dt>
+            <i>T</i>
+          </dt>
+          <dd>
+      The type of the optional value.
+    </dd>
+        </dl>
+      </blockquote>
+      <h4 class="Subsection">
+        <a href="javascript:toggle_display('T:Cadenza.Maybe`1:Docs:Thread Safety')">
+          <span id="T:Cadenza.Maybe`1:Docs:Thread Safety:toggle">⊟</span> Thread Safety</a>
+      </h4>
+      <blockquote class="SubsectionBox" id="T:Cadenza.Maybe`1:Docs:Thread Safety">
+    This type is immutable, and is itself thread safe.  However, non-thread
+    safe types may be exposed via <a href="../Cadenza/Maybe`1.html#P:Cadenza.Maybe`1.Value">Maybe&lt;T&gt;.Value</a>,
+    so even if <a href="../Cadenza/Maybe`1.html">Cadenza.Maybe&lt;T&gt;</a> is itself thread safe, it
+    may not be safe to fully use it in a thread safe fashion.  
+    (Full thread safety depends on the thread safety of 
+    <i>T</i>.)
+  </blockquote>
+      <h4 class="Subsection">
+        <a href="javascript:toggle_display('T:Cadenza.Maybe`1:Docs:Remarks')">
+          <span id="T:Cadenza.Maybe`1:Docs:Remarks:toggle">⊟</span> Remarks</a>
+      </h4>
+      <blockquote class="SubsectionBox" id="T:Cadenza.Maybe`1:Docs:Remarks">
+        <p>
+        The <a href="../Cadenza/Maybe`1.html">Cadenza.Maybe&lt;T&gt;</a> value type represents a value 
+        of a given type  or an indication that the 
+        instance contains no value. Such an optional value type is useful in a 
+        variety of situations, such as denoting that a conversion couldn't be
+        performed without resorting to an exception or by-ref parameters 
+        (<tt>out</tt> or <tt>ref</tt>).
+      </p>
+        <p>
+        An instance of <a href="../Cadenza/Maybe`1.html">Cadenza.Maybe&lt;T&gt;</a> has two 
+        properties, <a href="../Cadenza/Maybe`1.html#P:Cadenza.Maybe`1.HasValue">Maybe&lt;T&gt;.HasValue</a> and 
+        <a href="../Cadenza/Maybe`1.html#P:Cadenza.Maybe`1.Value">Maybe&lt;T&gt;.Value</a>. 
+        <a href="../Cadenza/Maybe`1.html#P:Cadenza.Maybe`1.HasValue">Maybe&lt;T&gt;.HasValue</a> is used to determine 
+        whether the current instance currently has a value.  
+        It returns <tt>true</tt> or <tt>false</tt>, and 
+        never throws an exception. 
+        <a href="../Cadenza/Maybe`1.html#P:Cadenza.Maybe`1.Value">Maybe&lt;T&gt;.Value</a> returns the current value 
+        of the instance, provided it has one 
+        (i.e., <a href="../Cadenza/Maybe`1.html#P:Cadenza.Maybe`1.HasValue">Maybe&lt;T&gt;.HasValue</a> is 
+        <tt>true</tt>); otherwise, it throws an exception.
+      </p>
+        <p>
+        In addition to the above properties, there is a pair of methods, both 
+        overloads of <a href="../Cadenza/Maybe`1.html#M:Cadenza.Maybe`1.GetValueOrDefault">Maybe&lt;T&gt;.GetValueOrDefault</a>. 
+        The version taking no arguments returns the instance's current value, 
+        if it has one; otherwise, it returns the default value of type 
+        <i>T</i>. The version taking an argument of type 
+        <i>T</i> returns the instance's current value, if it 
+        has one; otherwise, it returns the default value argument passed to it.
+      </p>
+        <p>
+          <a href="../Cadenza/Maybe`1.html">Cadenza.Maybe&lt;T&gt;</a> instances can be created in one
+        of four ways:
+      </p>
+        <ol>
+          <li>
+          By using the default constructor provided for all value types.  This
+          will create an instance that contains no value, and will be equal to
+          <a href="../Cadenza/Maybe`1.html#F:Cadenza.Maybe`1.Nothing">Maybe&lt;T&gt;.Nothing</a>.
+        </li>
+          <li>
+          By explicitly using the <a href="../Cadenza/Maybe`1.html#C:Cadenza.Maybe`1(`0)">Maybe&lt;T&gt;(`0)</a>
+          constructor.  This will throw an 
+          <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.ArgumentNullException">ArgumentNullException</a> if the value is
+          <tt>null</tt>.
+        </li>
+          <li>
+          By using the <a href="../Cadenza/ObjectCoda.html#M:Cadenza.ObjectCoda.Just``1(``0)">ObjectCoda.Just``1(``0)</a>
+          extension method.  This will throw an 
+          <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.ArgumentNullException">ArgumentNullException</a> if the value is
+          <tt>null</tt>.
+        </li>
+          <li>
+          By using the <a href="../Cadenza/ObjectCoda.html#M:Cadenza.ObjectCoda.ToMaybe``1(``0)">ObjectCoda.ToMaybe``1(``0)</a>
+          extension method.  If the value is <tt>null</tt>, then
+          <a href="../Cadenza/Maybe`1.html#F:Cadenza.Maybe`1.Nothing">Maybe&lt;T&gt;.Nothing</a> is returned.
+        </li>
+        </ol>
+        <p>
+        Query comprehension support is also provided, allowing:
+      </p>
+        <table class="CodeExampleTable">
+          <tr>
+            <td>
+              <b>
+                <font size="-1">C# Example</font>
+              </b>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <pre class="code-csharp">Assert.AreEqual (Maybe&lt;int&gt;.Nothing,
+		from x in 5.ToMaybe ()
+		from y in Maybe&lt;int&gt;.Nothing
+		select x + y);
+Assert.AreEqual (9.ToMaybe (),
+		from x in 5.ToMaybe ()
+		from y in 4.ToMaybe ()
+		select x + y);
+</pre>
+            </td>
+          </tr>
+        </table>
+      </blockquote>
+      <h4 class="Subsection">
+        <a href="javascript:toggle_display('T:Cadenza.Maybe`1:Docs:Version Information')">
+          <span id="T:Cadenza.Maybe`1:Docs:Version Information:toggle">⊟</span> Requirements</a>
+      </h4>
+      <blockquote class="SubsectionBox" id="T:Cadenza.Maybe`1:Docs:Version Information">
+        <b>Namespace: </b>Cadenza<br /><b>Assembly: </b>Cadenza (in Cadenza.dll)<br /><b>Assembly Versions: </b>0.1.0.0</blockquote>
+      <h2 class="Section" id="Members">
+        <a href="javascript:toggle_display('_Members')">
+          <span id="_Members:toggle">⊟</span> Members</a>
+      </h2>
+      <blockquote class="SectionBox" id="_Members">
+        <p>
+								See Also: Inherited members from
+								<a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.ValueType">ValueType</a>.
+							</p>
+        <h3>
+          <a href="javascript:toggle_display('Public Constructors')">
+            <span id="Public Constructors:toggle">⊟</span> Public Constructors</a>
+        </h3>
+        <blockquote id="Public Constructors">
+          <div class="SubsectionBox">
+            <table class="TypeMembers">
+              <tr valign="top">
+                <td>
+                  <div>
+                  </div>
+                </td>
+                <td>
+                  <div>
+                    <b>
+                      <a href="#C:Cadenza.Maybe`1(`0)">Maybe</a>
+                    </b>(<i title="&#xA;      The type of the optional value.&#xA;    ">T</i>)</div>
+                </td>
+                <td>
+          Constructs and initializes a new instance of 
+          <a href="../Cadenza/Maybe`1.html">Cadenza.Maybe&lt;T&gt;</a> giving it the specified initial
+          value.
+        </td>
+              </tr>
+            </table>
+          </div>
+        </blockquote>
+        <h3>
+          <a href="javascript:toggle_display('Public Fields')">
+            <span id="Public Fields:toggle">⊟</span> Public Fields</a>
+        </h3>
+        <blockquote id="Public Fields">
+          <div class="SubsectionBox">
+            <table class="TypeMembers">
+              <tr valign="top">
+                <td>
+                  <div>static readonly </div>
+                </td>
+                <td>
+                  <b>
+                    <a href="#F:Cadenza.Maybe`1.Nothing">Nothing</a>
+                  </b>
+                </td>
+                <td>
+                  <i>
+                    <a href="../Cadenza/Maybe`1.html">Maybe&lt;T&gt;</a>
+                  </i>. 
+          Represents a <a href="../Cadenza/Maybe`1.html">Cadenza.Maybe&lt;T&gt;</a> containing no
+          value.
+        </td>
+              </tr>
+            </table>
+          </div>
+        </blockquote>
+        <h3>
+          <a href="javascript:toggle_display('Public Properties')">
+            <span id="Public Properties:toggle">⊟</span> Public Properties</a>
+        </h3>
+        <blockquote id="Public Properties">
+          <div class="SubsectionBox">
+            <table class="TypeMembers">
+              <tr valign="top">
+                <td>[read-only]<div></div></td>
+                <td>
+                  <b>
+                    <a href="#P:Cadenza.Maybe`1.HasValue">HasValue</a>
+                  </b>
+                </td>
+                <td>
+                  <i>
+                    <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Boolean">bool</a>
+                  </i>. 
+          Gets a value indicating whether the current 
+          <a href="../Cadenza/Maybe`1.html">Cadenza.Maybe&lt;T&gt;</a> instance has a value.
+        </td>
+              </tr>
+              <tr valign="top">
+                <td>[read-only]<div></div></td>
+                <td>
+                  <b>
+                    <a href="#P:Cadenza.Maybe`1.Value">Value</a>
+                  </b>
+                </td>
+                <td>
+                  <i>
+                    <i title="&#xA;      The type of the optional value.&#xA;    ">T</i>
+                  </i>. 
+          Gets the value of the current 
+          <a href="../Cadenza/Maybe`1.html">Cadenza.Maybe&lt;T&gt;</a> instance.
+        </td>
+              </tr>
+            </table>
+          </div>
+        </blockquote>
+        <h3>
+          <a href="javascript:toggle_display('Public Methods')">
+            <span id="Public Methods:toggle">⊟</span> Public Methods</a>
+        </h3>
+        <blockquote id="Public Methods">
+          <div class="SubsectionBox">
+            <table class="TypeMembers">
+              <tr valign="top">
+                <td>
+                  <div>
+                  </div>
+                </td>
+                <td colspan="2">
+                  <b>
+                    <a href="#M:Cadenza.Maybe`1.Equals(Cadenza.Maybe{`0})">Equals</a>
+                  </b>(<a href="../Cadenza/Maybe`1.html">Maybe&lt;T&gt;</a>)<nobr> : <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Boolean">bool</a></nobr><blockquote>
+          Determines whether the current instance and the specified
+          <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Object">object</a> represent the same value.
+        </blockquote></td>
+              </tr>
+              <tr valign="top">
+                <td>
+                  <div>override </div>
+                </td>
+                <td colspan="2">
+                  <b>
+                    <a href="#M:Cadenza.Maybe`1.Equals(System.Object)">Equals</a>
+                  </b>(<a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Object">object</a>)<nobr> : <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Boolean">bool</a></nobr><blockquote>
+          Determines whether the current instance and the specified
+          <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Object">object</a> represent the same type and value.
+        </blockquote></td>
+              </tr>
+              <tr valign="top">
+                <td>
+                  <div>override </div>
+                </td>
+                <td colspan="2">
+                  <b>
+                    <a href="#M:Cadenza.Maybe`1.GetHashCode">GetHashCode</a>
+                  </b>()<nobr> : <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Int32">int</a></nobr><blockquote>
+          Generates a hash code for the current instance.
+        </blockquote></td>
+              </tr>
+              <tr valign="top">
+                <td>
+                  <div>
+                  </div>
+                </td>
+                <td colspan="2">
+                  <b>
+                    <a href="#M:Cadenza.Maybe`1.GetValueOrDefault">GetValueOrDefault</a>
+                  </b>()<nobr> : <i title="&#xA;      The type of the optional value.&#xA;    ">T</i></nobr><blockquote>
+          Returns the value of the current instance, or if it has none, returns
+          the default value for the type <i>T</i>.
+        </blockquote></td>
+              </tr>
+              <tr valign="top">
+                <td>
+                  <div>
+                  </div>
+                </td>
+                <td colspan="2">
+                  <b>
+                    <a href="#M:Cadenza.Maybe`1.GetValueOrDefault(`0)">GetValueOrDefault</a>
+                  </b>(<i title="&#xA;      The type of the optional value.&#xA;    ">T</i>)<nobr> : <i title="&#xA;      The type of the optional value.&#xA;    ">T</i></nobr><blockquote>
+          Returns the value of the current instance, or if it has none, returns
+          <i>defaultValue</i>.
+        </blockquote></td>
+              </tr>
+              <tr valign="top">
+                <td>
+                  <div>
+                  </div>
+                </td>
+                <td colspan="2">
+                  <b>
+                    <a href="#M:Cadenza.Maybe`1.Select``1(System.Func{`0,``0})">Select&lt;TResult&gt;</a>
+                  </b>(<a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Func`2">Func&lt;T, TResult&gt;</a>)<nobr> : <a href="../Cadenza/Maybe`1.html">Maybe&lt;TResult&gt;</a></nobr><blockquote>
+          Projects a <a href="../Cadenza/Maybe`1.html">Cadenza.Maybe&lt;T&gt;</a> into a
+          <a href="../Cadenza/Maybe`1.html">Cadenza.Maybe&lt;TResult&gt;</a>.
+        </blockquote></td>
+              </tr>
+              <tr valign="top">
+                <td>
+                  <div>
+                  </div>
+                </td>
+                <td colspan="2">
+                  <b>
+                    <a href="#M:Cadenza.Maybe`1.SelectMany``2(System.Func{`0,Cadenza.Maybe{``0}},System.Func{`0,``0,``1})">SelectMany&lt;TCollection,TResult&gt;</a>
+                  </b>(<a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Func`2">Func&lt;T, Maybe&lt;TCollection&gt;&gt;</a>, <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Func`3">Func&lt;T, TCollection, TResult&gt;</a>)<nobr> : <a href="../Cadenza/Maybe`1.html">Maybe&lt;TResult&gt;</a></nobr><blockquote>
+          Projects a <a href="../Cadenza/Maybe`1.html">Cadenza.Maybe&lt;T&gt;</a> and
+          <a href="../Cadenza/Maybe`1.html">Cadenza.Maybe&lt;TCollection&gt;</a> into a 
+          <a href="../Cadenza/Maybe`1.html">Cadenza.Maybe&lt;TResult&gt;</a>.
+        </blockquote></td>
+              </tr>
+              <tr valign="top">
+                <td>
+                  <div>override </div>
+                </td>
+                <td colspan="2">
+                  <b>
+                    <a href="#M:Cadenza.Maybe`1.ToString">ToString</a>
+                  </b>()<nobr> : <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.String">string</a></nobr><blockquote>
+          Returns a <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.String">string</a> representation of the 
+          value of the current instance.
+        </blockquote></td>
+              </tr>
+            </table>
+          </div>
+        </blockquote>
+        <h3>
+          <a href="javascript:toggle_display('Public Operators')">
+            <span id="Public Operators:toggle">⊟</span> Public Operators</a>
+        </h3>
+        <blockquote id="Public Operators">
+          <div class="SubsectionBox">
+            <table class="TypeMembers">
+              <tr valign="top">
+                <td>
+                  <div>static </div>
+                </td>
+                <td>
+                  <b>
+                    <a href="#M:Cadenza.Maybe`1.op_Equality(Cadenza.Maybe{`0},Cadenza.Maybe{`0})">Equality</a>
+                  </b>(<a href="../Cadenza/Maybe`1.html">Maybe&lt;T&gt;</a>, <a href="../Cadenza/Maybe`1.html">Maybe&lt;T&gt;</a>)</td>
+                <td>
+          Determines whether the specified <a href="../Cadenza/Maybe`1.html">Cadenza.Maybe&lt;T&gt;</a>
+          instances are equal.
+        </td>
+              </tr>
+              <tr valign="top">
+                <td>
+                  <div>static </div>
+                </td>
+                <td>
+                  <b>
+                    <a href="#M:Cadenza.Maybe`1.op_Inequality(Cadenza.Maybe{`0},Cadenza.Maybe{`0})">Inequality</a>
+                  </b>(<a href="../Cadenza/Maybe`1.html">Maybe&lt;T&gt;</a>, <a href="../Cadenza/Maybe`1.html">Maybe&lt;T&gt;</a>)</td>
+                <td>
+          Determines whether the specified <a href="../Cadenza/Maybe`1.html">Cadenza.Maybe&lt;T&gt;</a>
+          instances are not equal.
+        </td>
+              </tr>
+            </table>
+          </div>
+        </blockquote>
+        <h3>
+          <a href="javascript:toggle_display('Extension Methods')">
+            <span id="Extension Methods:toggle">⊟</span> Extension Methods</a>
+        </h3>
+        <blockquote id="Extension Methods">
+          <div class="SubsectionBox">
+            <table class="TypeMembers">
+              <tr valign="top">
+                <td>
+                  <div>static </div>
+                </td>
+                <td colspan="2">
+                  <b>
+                    <a href="../Cadenza/ObjectCoda.html#M:Cadenza.ObjectCoda.Just``1(``0)">Just&lt;T&gt;</a>
+                  </b>(<i>this</i> <a href="javascript:alert(&quot;Documentation not found.&quot;)">T</a>)<nobr> : <a href="../Cadenza/Maybe`1.html">Maybe&lt;T&gt;</a></nobr><blockquote>
+          Create a new <a href="../Cadenza/Maybe`1.html">Cadenza.Maybe&lt;T&gt;</a> instance
+          initialized to a specified value.  The returned value will not be 
+          <a href="../Cadenza/Maybe`1.html#F:Cadenza.Maybe`1.Nothing">Maybe&lt;T&gt;.Nothing</a>.
+        </blockquote></td>
+              </tr>
+              <tr valign="top">
+                <td>
+                  <div>static </div>
+                </td>
+                <td colspan="2">
+                  <b>
+                    <a href="../Cadenza/ObjectCoda.html#M:Cadenza.ObjectCoda.Match``2(``0,System.Func{``0,Cadenza.Maybe{``1}}[])">Match&lt;TSource,TResult&gt;</a>
+                  </b>(<i>this</i> <i title="The source type.">TSource</i>, <b>params</b> <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Func`2">Func&lt;TSource, Maybe&lt;TResult&gt;&gt;</a>[])<nobr> : <i title="The result type.">TResult</i></nobr><blockquote>
+          Converts the <i>TSource</i> instance 
+          <i>self</i> into a <i>TResult</i>.
+        </blockquote></td>
+              </tr>
+              <tr valign="top">
+                <td>
+                  <div>static </div>
+                </td>
+                <td colspan="2">
+                  <b>
+                    <a href="../Cadenza/ObjectCoda.html#M:Cadenza.ObjectCoda.ToMaybe``1(``0)">ToMaybe&lt;T&gt;</a>
+                  </b>(<i>this</i> <a href="javascript:alert(&quot;Documentation not found.&quot;)">T</a>)<nobr> : <a href="../Cadenza/Maybe`1.html">Maybe&lt;T&gt;</a></nobr><blockquote>
+          Create a new <a href="../Cadenza/Maybe`1.html">Cadenza.Maybe&lt;T&gt;</a> instance
+          initialized to a specified value.  The returned value may be 
+          <a href="../Cadenza/Maybe`1.html#F:Cadenza.Maybe`1.Nothing">Maybe&lt;T&gt;.Nothing</a>.
+        </blockquote></td>
+              </tr>
+              <tr valign="top">
+                <td>
+                  <div>static </div>
+                </td>
+                <td colspan="2">
+                  <b>
+                    <a href="../Cadenza/ObjectCoda.html#M:Cadenza.ObjectCoda.TraverseBreadthFirst``2(``0,System.Func{``0,``1},System.Func{``0,System.Collections.Generic.IEnumerable{``0}})">TraverseBreadthFirst&lt;TSource,TResult&gt;</a>
+                  </b>(<i>this</i> <i title="&#xA;          The type of the root node and intermediate nodes of the tree.&#xA;        ">TSource</i>, <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Func`2">Func&lt;TSource, TResult&gt;</a>, <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Func`2">Func&lt;TSource, IEnumerable&lt;TSource&gt;&gt;</a>)<nobr> : <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Collections.Generic.IEnumerable`1">IEnumerable&lt;TResult&gt;</a></nobr><blockquote>
+          Traverse a tree in a breadth-first fashion, converting each 
+          encountered node.
+        </blockquote></td>
+              </tr>
+              <tr valign="top">
+                <td>
+                  <div>static </div>
+                </td>
+                <td colspan="2">
+                  <b>
+                    <a href="../Cadenza/ObjectCoda.html#M:Cadenza.ObjectCoda.TraverseBreadthFirstWithParent``2(``0,System.Func{``0,``1},System.Func{``0,System.Collections.Generic.IEnumerable{``0}})">TraverseBreadthFirstWithParent&lt;TSource,TResult&gt;</a>
+                  </b>(<i>this</i> <i title="&#xA;          The type of the root node and intermediate nodes of the tree.&#xA;        ">TSource</i>, <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Func`2">Func&lt;TSource, TResult&gt;</a>, <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Func`2">Func&lt;TSource, IEnumerable&lt;TSource&gt;&gt;</a>)<nobr> : <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Collections.Generic.IEnumerable`1">IEnumerable&lt;KeyValuePair&lt;TSource, TResult&gt;&gt;</a></nobr><blockquote>
+          Traverse a tree in a breadth-first fashion, converting each 
+          encountered node.
+        </blockquote></td>
+              </tr>
+              <tr valign="top">
+                <td>
+                  <div>static </div>
+                </td>
+                <td colspan="2">
+                  <b>
+                    <a href="../Cadenza/ObjectCoda.html#M:Cadenza.ObjectCoda.TraverseDepthFirst``2(``0,System.Func{``0,``1},System.Func{``0,System.Collections.Generic.IEnumerable{``0}})">TraverseDepthFirst&lt;TSource,TResult&gt;</a>
+                  </b>(<i>this</i> <i title="&#xA;          The type of the root node and intermediate nodes of the tree.&#xA;        ">TSource</i>, <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Func`2">Func&lt;TSource, TResult&gt;</a>, <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Func`2">Func&lt;TSource, IEnumerable&lt;TSource&gt;&gt;</a>)<nobr> : <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Collections.Generic.IEnumerable`1">IEnumerable&lt;TResult&gt;</a></nobr><blockquote>
+          Traverse a tree in a depth-first fashion, converting each 
+          encountered node.
+        </blockquote></td>
+              </tr>
+              <tr valign="top">
+                <td>
+                  <div>static </div>
+                </td>
+                <td colspan="2">
+                  <b>
+                    <a href="../Cadenza/ObjectCoda.html#M:Cadenza.ObjectCoda.TraverseDepthFirstWithParent``2(``0,System.Func{``0,``1},System.Func{``0,System.Collections.Generic.IEnumerable{``0}})">TraverseDepthFirstWithParent&lt;TSource,TResult&gt;</a>
+                  </b>(<i>this</i> <i title="&#xA;          The type of the root node and intermediate nodes of the tree.&#xA;        ">TSource</i>, <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Func`2">Func&lt;TSource, TResult&gt;</a>, <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Func`2">Func&lt;TSource, IEnumerable&lt;TSource&gt;&gt;</a>)<nobr> : <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Collections.Generic.IEnumerable`1">IEnumerable&lt;KeyValuePair&lt;TSource, TResult&gt;&gt;</a></nobr><blockquote>
+          Traverse a tree in a depth-first fashion, converting each 
+          encountered node.
+        </blockquote></td>
+              </tr>
+              <tr valign="top">
+                <td>
+                  <div>static </div>
+                </td>
+                <td colspan="2">
+                  <b>
+                    <a href="../Cadenza/ObjectCoda.html#M:Cadenza.ObjectCoda.With``2(``0,System.Func{``0,``1})">With&lt;TSource,TResult&gt;</a>
+                  </b>(<i>this</i> <i title="The type to operate on.">TSource</i>, <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Func`2">Func&lt;TSource, TResult&gt;</a>)<nobr> : <i title="The type to return.">TResult</i></nobr><blockquote>
+          Supports chaining otherwise temporary values.
+        </blockquote></td>
+              </tr>
+            </table>
+          </div>
+        </blockquote>
+      </blockquote>
+    </div>
+    <div class="Members" id="T:Cadenza.Maybe`1:Members">
+      <h2 class="Section" id="MemberDetails">
+        <a href="javascript:toggle_display('_MemberDetails')">
+          <span id="_MemberDetails:toggle">⊟</span> Member Details</a>
+      </h2>
+      <blockquote class="SectionBox" id="_MemberDetails">
+        <h3 id="C:Cadenza.Maybe`1(`0)">
+          <a href="javascript:toggle_display('C:Cadenza.Maybe`1(`0):member')">
+            <span id="C:Cadenza.Maybe`1(`0):member:toggle">⊟</span> Maybe Constructor</a>
+        </h3>
+        <blockquote id="C:Cadenza.Maybe`1(`0):member">
+          <p class="Summary">
+          Constructs and initializes a new instance of 
+          <a href="../Cadenza/Maybe`1.html">Cadenza.Maybe&lt;T&gt;</a> giving it the specified initial
+          value.
+        </p>
+          <div class="Signature">public  <b>Maybe</b> (<i title="&#xA;      The type of the optional value.&#xA;    ">T</i> value)</div>
+          <h4 class="Subsection">
+            <a href="javascript:toggle_display('C:Cadenza.Maybe`1(`0):Parameters')">
+              <span id="C:Cadenza.Maybe`1(`0):Parameters:toggle">⊟</span> Parameters</a>
+          </h4>
+          <blockquote class="SubsectionBox" id="C:Cadenza.Maybe`1(`0):Parameters">
+            <dl>
+              <dt>
+                <i>value</i>
+              </dt>
+              <dd>
+          A <i>T</i> which is the value of the new instance.
+        </dd>
+            </dl>
+          </blockquote>
+          <h4 class="Subsection">
+            <a href="javascript:toggle_display('C:Cadenza.Maybe`1(`0):Exceptions')">
+              <span id="C:Cadenza.Maybe`1(`0):Exceptions:toggle">⊟</span> Exceptions</a>
+          </h4>
+          <blockquote class="SubsectionBox" id="C:Cadenza.Maybe`1(`0):Exceptions">
+            <table class="TypeDocumentation">
+              <tr>
+                <th>Type</th>
+                <th>Reason</th>
+              </tr>
+              <tr valign="top">
+                <td>
+                  <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.ArgumentNullException">ArgumentNullException</a>
+                </td>
+                <td>
+                  <i>value</i> is <tt>null</tt>.
+        </td>
+              </tr>
+            </table>
+          </blockquote>
+          <h4 class="Subsection">
+            <a href="javascript:toggle_display('C:Cadenza.Maybe`1(`0):Remarks')">
+              <span id="C:Cadenza.Maybe`1(`0):Remarks:toggle">⊟</span> Remarks</a>
+          </h4>
+          <blockquote class="SubsectionBox" id="C:Cadenza.Maybe`1(`0):Remarks">
+            <p>
+            This constructor initializes the 
+            <a href="../Cadenza/Maybe`1.html#P:Cadenza.Maybe`1.Value">Maybe&lt;T&gt;.Value</a> property of the new
+            instance using <i>value</i>.
+          </p>
+            <div>
+              <i>Note: </i>
+            Once this constructor has executed, calling
+            <a href="../Cadenza/Maybe`1.html#P:Cadenza.Maybe`1.HasValue">Maybe&lt;T&gt;.HasValue</a> on the new instance 
+            will return <tt>true</tt>.
+          </div>
+          </blockquote>
+          <h4 class="Subsection">
+            <a href="javascript:toggle_display('C:Cadenza.Maybe`1(`0):Version Information')">
+              <span id="C:Cadenza.Maybe`1(`0):Version Information:toggle">⊟</span> Requirements</a>
+          </h4>
+          <blockquote class="SubsectionBox" id="C:Cadenza.Maybe`1(`0):Version Information">
+            <b>Namespace: </b>Cadenza<br /><b>Assembly: </b>Cadenza (in Cadenza.dll)<br /><b>Assembly Versions: </b>0.1.0.0</blockquote>
+          <hr size="1" />
+        </blockquote>
+        <h3 id="M:Cadenza.Maybe`1.Equals(Cadenza.Maybe{`0})">
+          <a href="javascript:toggle_display('M:Cadenza.Maybe`1.Equals(Cadenza.Maybe{`0}):member')">
+            <span id="M:Cadenza.Maybe`1.Equals(Cadenza.Maybe{`0}):member:toggle">⊟</span> Equals Method</a>
+        </h3>
+        <blockquote id="M:Cadenza.Maybe`1.Equals(Cadenza.Maybe{`0}):member">
+          <p class="Summary">
+          Determines whether the current instance and the specified
+          <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Object">object</a> represent the same value.
+        </p>
+          <div class="Signature">public <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Boolean">bool</a> <b>Equals</b> (<a href="../Cadenza/Maybe`1.html">Maybe&lt;T&gt;</a> obj)</div>
+          <h4 class="Subsection">
+            <a href="javascript:toggle_display('M:Cadenza.Maybe`1.Equals(Cadenza.Maybe{`0}):Parameters')">
+              <span id="M:Cadenza.Maybe`1.Equals(Cadenza.Maybe{`0}):Parameters:toggle">⊟</span> Parameters</a>
+          </h4>
+          <blockquote class="SubsectionBox" id="M:Cadenza.Maybe`1.Equals(Cadenza.Maybe{`0}):Parameters">
+            <dl>
+              <dt>
+                <i>obj</i>
+              </dt>
+              <dd>
+          An <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Object">object</a> to compare the current instance
+          against.
+        </dd>
+            </dl>
+          </blockquote>
+          <h4 class="Subsection">
+            <a href="javascript:toggle_display('M:Cadenza.Maybe`1.Equals(Cadenza.Maybe{`0}):Returns')">
+              <span id="M:Cadenza.Maybe`1.Equals(Cadenza.Maybe{`0}):Returns:toggle">⊟</span> Returns</a>
+          </h4>
+          <blockquote class="SubsectionBox" id="M:Cadenza.Maybe`1.Equals(Cadenza.Maybe{`0}):Returns">
+            <p>
+            The following table defines the conditions under which the return 
+            value is <tt>true</tt> or <tt>false</tt>:
+          </p>
+            <table class="Documentation">
+              <tr>
+                <th>Returned Value</th>
+                <th>HasValue Condition</th>
+                <th>obj.HasValue Condition</th>
+              </tr>
+              <tr valign="top">
+                <td>
+                  <tt>true</tt>
+                </td>
+                <td>
+                  <tt>false</tt>
+                </td>
+                <td>
+                  <tt>false</tt>
+                </td>
+              </tr>
+              <tr valign="top">
+                <td>
+                  <tt>false</tt>
+                </td>
+                <td>
+                  <tt>false</tt>
+                </td>
+                <td>
+                  <tt>true</tt>
+                </td>
+              </tr>
+              <tr valign="top">
+                <td>
+                  <tt>false</tt>
+                </td>
+                <td>
+                  <tt>true</tt>
+                </td>
+                <td>
+                  <tt>false</tt>
+                </td>
+              </tr>
+              <tr valign="top">
+                <td>
+                  <tt>Value.Equals(<i>obj</i>.Value)</tt>
+                </td>
+                <td>
+                  <tt>true</tt>
+                </td>
+                <td>
+                  <tt>true</tt>
+                </td>
+              </tr>
+            </table>
+          </blockquote>
+          <h4 class="Subsection">
+            <a href="javascript:toggle_display('M:Cadenza.Maybe`1.Equals(Cadenza.Maybe{`0}):Remarks')">
+              <span id="M:Cadenza.Maybe`1.Equals(Cadenza.Maybe{`0}):Remarks:toggle">⊟</span> Remarks</a>
+          </h4>
+          <blockquote class="SubsectionBox" id="M:Cadenza.Maybe`1.Equals(Cadenza.Maybe{`0}):Remarks">
+            <div>
+              <i>Note: </i>
+              This method implements
+              <a href="http://www.go-mono.com/docs/monodoc.ashx?link=M:System.IEquatable{Cadenza.Maybe{T}}.Equals(`0)">IEquatable&lt;Maybe&lt;T&gt;&gt;.Equals(`0)</a>.
+            </div>
+          </blockquote>
+          <h4 class="Subsection">
+            <a href="javascript:toggle_display('M:Cadenza.Maybe`1.Equals(Cadenza.Maybe{`0}):Version Information')">
+              <span id="M:Cadenza.Maybe`1.Equals(Cadenza.Maybe{`0}):Version Information:toggle">⊟</span> Requirements</a>
+          </h4>
+          <blockquote class="SubsectionBox" id="M:Cadenza.Maybe`1.Equals(Cadenza.Maybe{`0}):Version Information">
+            <b>Namespace: </b>Cadenza<br /><b>Assembly: </b>Cadenza (in Cadenza.dll)<br /><b>Assembly Versions: </b>0.1.0.0</blockquote>
+          <hr size="1" />
+        </blockquote>
+        <h3 id="M:Cadenza.Maybe`1.Equals(System.Object)">
+          <a href="javascript:toggle_display('M:Cadenza.Maybe`1.Equals(System.Object):member')">
+            <span id="M:Cadenza.Maybe`1.Equals(System.Object):member:toggle">⊟</span> Equals Method</a>
+        </h3>
+        <blockquote id="M:Cadenza.Maybe`1.Equals(System.Object):member">
+          <p class="Summary">
+          Determines whether the current instance and the specified
+          <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Object">object</a> represent the same type and value.
+        </p>
+          <div class="Signature">public override <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Boolean">bool</a> <b>Equals</b> (<a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Object">object</a> obj)</div>
+          <h4 class="Subsection">
+            <a href="javascript:toggle_display('M:Cadenza.Maybe`1.Equals(System.Object):Parameters')">
+              <span id="M:Cadenza.Maybe`1.Equals(System.Object):Parameters:toggle">⊟</span> Parameters</a>
+          </h4>
+          <blockquote class="SubsectionBox" id="M:Cadenza.Maybe`1.Equals(System.Object):Parameters">
+            <dl>
+              <dt>
+                <i>obj</i>
+              </dt>
+              <dd>
+          An <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Object">object</a> to compare the current instance
+          against.
+        </dd>
+            </dl>
+          </blockquote>
+          <h4 class="Subsection">
+            <a href="javascript:toggle_display('M:Cadenza.Maybe`1.Equals(System.Object):Returns')">
+              <span id="M:Cadenza.Maybe`1.Equals(System.Object):Returns:toggle">⊟</span> Returns</a>
+          </h4>
+          <blockquote class="SubsectionBox" id="M:Cadenza.Maybe`1.Equals(System.Object):Returns">
+            <p>
+            The following table defines the conditions under which the return 
+            value is <tt>true</tt> or <tt>false</tt>:
+          </p>
+            <table class="Documentation">
+              <tr>
+                <th>Returned Value</th>
+                <th>HasValue Condition</th>
+                <th>obj.HasValue Condition</th>
+              </tr>
+              <tr valign="top">
+                <td>
+                  <tt>false</tt>
+                </td>
+                <td>The current instance and <i>obj</i> have different types.</td>
+                <td>The current instance and <i>obj</i> have different types.</td>
+              </tr>
+              <tr valign="top">
+                <td>
+                  <tt>true</tt>
+                </td>
+                <td>
+                  <tt>false</tt>
+                </td>
+                <td>
+                  <i>obj</i> is <tt>null</tt>.
+              </td>
+              </tr>
+              <tr valign="top">
+                <td>
+                  <tt>false</tt>
+                </td>
+                <td>
+                  <tt>true</tt>
+                </td>
+                <td>
+                  <i>obj</i> is <tt>null</tt>.
+              </td>
+              </tr>
+              <tr valign="top">
+                <td>
+                  <tt>true</tt>
+                </td>
+                <td>
+                  <tt>false</tt>
+                </td>
+                <td>
+                  <tt>false</tt>
+                </td>
+              </tr>
+              <tr valign="top">
+                <td>
+                  <tt>false</tt>
+                </td>
+                <td>
+                  <tt>false</tt>
+                </td>
+                <td>
+                  <tt>true</tt>
+                </td>
+              </tr>
+              <tr valign="top">
+                <td>
+                  <tt>false</tt>
+                </td>
+                <td>
+                  <tt>true</tt>
+                </td>
+                <td>
+                  <tt>false</tt>
+                </td>
+              </tr>
+              <tr valign="top">
+                <td>
+                  <tt>Value.Equals(<i>obj</i>.Value)</tt>
+                </td>
+                <td>
+                  <tt>true</tt>
+                </td>
+                <td>
+                  <tt>true</tt>
+                </td>
+              </tr>
+            </table>
+          </blockquote>
+          <h4 class="Subsection">
+            <a href="javascript:toggle_display('M:Cadenza.Maybe`1.Equals(System.Object):Remarks')">
+              <span id="M:Cadenza.Maybe`1.Equals(System.Object):Remarks:toggle">⊟</span> Remarks</a>
+          </h4>
+          <blockquote class="SubsectionBox" id="M:Cadenza.Maybe`1.Equals(System.Object):Remarks">
+            <div>
+              <i>Note: </i>
+              This method overrides 
+              <a href="http://www.go-mono.com/docs/monodoc.ashx?link=M:System.Object.Equals(System.Object)">object.Equals(object)</a>.
+            </div>
+          </blockquote>
+          <h4 class="Subsection">
+            <a href="javascript:toggle_display('M:Cadenza.Maybe`1.Equals(System.Object):Version Information')">
+              <span id="M:Cadenza.Maybe`1.Equals(System.Object):Version Information:toggle">⊟</span> Requirements</a>
+          </h4>
+          <blockquote class="SubsectionBox" id="M:Cadenza.Maybe`1.Equals(System.Object):Version Information">
+            <b>Namespace: </b>Cadenza<br /><b>Assembly: </b>Cadenza (in Cadenza.dll)<br /><b>Assembly Versions: </b>0.1.0.0</blockquote>
+          <hr size="1" />
+        </blockquote>
+        <h3 id="M:Cadenza.Maybe`1.GetHashCode">
+          <a href="javascript:toggle_display('M:Cadenza.Maybe`1.GetHashCode:member')">
+            <span id="M:Cadenza.Maybe`1.GetHashCode:member:toggle">⊟</span> GetHashCode Method</a>
+        </h3>
+        <blockquote id="M:Cadenza.Maybe`1.GetHashCode:member">
+          <p class="Summary">
+          Generates a hash code for the current instance.
+        </p>
+          <div class="Signature">public override <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Int32">int</a> <b>GetHashCode</b> ()</div>
+          <h4 class="Subsection">
+            <a href="javascript:toggle_display('M:Cadenza.Maybe`1.GetHashCode:Returns')">
+              <span id="M:Cadenza.Maybe`1.GetHashCode:Returns:toggle">⊟</span> Returns</a>
+          </h4>
+          <blockquote class="SubsectionBox" id="M:Cadenza.Maybe`1.GetHashCode:Returns">
+          If <a href="../Cadenza/Maybe`1.html#P:Cadenza.Maybe`1.HasValue">Maybe&lt;T&gt;.HasValue</a> is 
+          <tt>true</tt>, a <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Int32">int</a> containing
+          the hash code for the value of the current instance is returned; 
+          otherwise, 0 is returned.
+        </blockquote>
+          <h4 class="Subsection">
+            <a href="javascript:toggle_display('M:Cadenza.Maybe`1.GetHashCode:Remarks')">
+              <span id="M:Cadenza.Maybe`1.GetHashCode:Remarks:toggle">⊟</span> Remarks</a>
+          </h4>
+          <blockquote class="SubsectionBox" id="M:Cadenza.Maybe`1.GetHashCode:Remarks">
+            <p>
+            The algorithm used to generate the hash code is unspecified.
+          </p>
+            <p>
+              <div>
+                <i>Note: </i>
+              This method overrides <a href="http://www.go-mono.com/docs/monodoc.ashx?link=M:System.Object.GetHashCode">object.GetHashCode</a>.
+            </div>
+            </p>
+          </blockquote>
+          <h4 class="Subsection">
+            <a href="javascript:toggle_display('M:Cadenza.Maybe`1.GetHashCode:Version Information')">
+              <span id="M:Cadenza.Maybe`1.GetHashCode:Version Information:toggle">⊟</span> Requirements</a>
+          </h4>
+          <blockquote class="SubsectionBox" id="M:Cadenza.Maybe`1.GetHashCode:Version Information">
+            <b>Namespace: </b>Cadenza<br /><b>Assembly: </b>Cadenza (in Cadenza.dll)<br /><b>Assembly Versions: </b>0.1.0.0</blockquote>
+          <hr size="1" />
+        </blockquote>
+        <h3 id="M:Cadenza.Maybe`1.GetValueOrDefault">
+          <a href="javascript:toggle_display('M:Cadenza.Maybe`1.GetValueOrDefault:member')">
+            <span id="M:Cadenza.Maybe`1.GetValueOrDefault:member:toggle">⊟</span> GetValueOrDefault Method</a>
+        </h3>
+        <blockquote id="M:Cadenza.Maybe`1.GetValueOrDefault:member">
+          <p class="Summary">
+          Returns the value of the current instance, or if it has none, returns
+          the default value for the type <i>T</i>.
+        </p>
+          <div class="Signature">public <i title="&#xA;      The type of the optional value.&#xA;    ">T</i> <b>GetValueOrDefault</b> ()</div>
+          <h4 class="Subsection">
+            <a href="javascript:toggle_display('M:Cadenza.Maybe`1.GetValueOrDefault:Returns')">
+              <span id="M:Cadenza.Maybe`1.GetValueOrDefault:Returns:toggle">⊟</span> Returns</a>
+          </h4>
+          <blockquote class="SubsectionBox" id="M:Cadenza.Maybe`1.GetValueOrDefault:Returns">
+          A value of type <i>T</i>, which is either the value 
+          of the current instance, or if it has none, the default value for the
+          type <i>T</i> (i.e., all-bits-zero).
+        </blockquote>
+          <h4 class="Subsection">
+            <a href="javascript:toggle_display('M:Cadenza.Maybe`1.GetValueOrDefault:Remarks')">
+              <span id="M:Cadenza.Maybe`1.GetValueOrDefault:Remarks:toggle">⊟</span> Remarks</a>
+          </h4>
+          <blockquote class="SubsectionBox" id="M:Cadenza.Maybe`1.GetValueOrDefault:Remarks">
+            <div>
+              <i>Note: </i>
+              <a href="../Cadenza/Maybe`1.html#M:Cadenza.Maybe`1.GetValueOrDefault(`0)">Maybe&lt;T&gt;.GetValueOrDefault(`0)</a>
+              allows a value other than the default value to be returned if the 
+              current instance contains no value.
+            </div>
+          </blockquote>
+          <h4 class="Subsection">
+            <a href="javascript:toggle_display('M:Cadenza.Maybe`1.GetValueOrDefault:Version Information')">
+              <span id="M:Cadenza.Maybe`1.GetValueOrDefault:Version Information:toggle">⊟</span> Requirements</a>
+          </h4>
+          <blockquote class="SubsectionBox" id="M:Cadenza.Maybe`1.GetValueOrDefault:Version Information">
+            <b>Namespace: </b>Cadenza<br /><b>Assembly: </b>Cadenza (in Cadenza.dll)<br /><b>Assembly Versions: </b>0.1.0.0</blockquote>
+          <hr size="1" />
+        </blockquote>
+        <h3 id="M:Cadenza.Maybe`1.GetValueOrDefault(`0)">
+          <a href="javascript:toggle_display('M:Cadenza.Maybe`1.GetValueOrDefault(`0):member')">
+            <span id="M:Cadenza.Maybe`1.GetValueOrDefault(`0):member:toggle">⊟</span> GetValueOrDefault Method</a>
+        </h3>
+        <blockquote id="M:Cadenza.Maybe`1.GetValueOrDefault(`0):member">
+          <p class="Summary">
+          Returns the value of the current instance, or if it has none, returns
+          <i>defaultValue</i>.
+        </p>
+          <div class="Signature">public <i title="&#xA;      The type of the optional value.&#xA;    ">T</i> <b>GetValueOrDefault</b> (<i title="&#xA;      The type of the optional value.&#xA;    ">T</i> defaultValue)</div>
+          <h4 class="Subsection">
+            <a href="javascript:toggle_display('M:Cadenza.Maybe`1.GetValueOrDefault(`0):Parameters')">
+              <span id="M:Cadenza.Maybe`1.GetValueOrDefault(`0):Parameters:toggle">⊟</span> Parameters</a>
+          </h4>
+          <blockquote class="SubsectionBox" id="M:Cadenza.Maybe`1.GetValueOrDefault(`0):Parameters">
+            <dl>
+              <dt>
+                <i>defaultValue</i>
+              </dt>
+              <dd>
+          A value of type <i>T</i> to return if the current
+          instance contains no value.
+        </dd>
+            </dl>
+          </blockquote>
+          <h4 class="Subsection">
+            <a href="javascript:toggle_display('M:Cadenza.Maybe`1.GetValueOrDefault(`0):Returns')">
+              <span id="M:Cadenza.Maybe`1.GetValueOrDefault(`0):Returns:toggle">⊟</span> Returns</a>
+          </h4>
+          <blockquote class="SubsectionBox" id="M:Cadenza.Maybe`1.GetValueOrDefault(`0):Returns">
+          A value of type <i>T</i>, which is either the value 
+          of the current instance, or if it has none, the value of 
+          <i>defaultValue</i>.
+        </blockquote>
+          <h4 class="Subsection">
+            <a href="javascript:toggle_display('M:Cadenza.Maybe`1.GetValueOrDefault(`0):Remarks')">
+              <span id="M:Cadenza.Maybe`1.GetValueOrDefault(`0):Remarks:toggle">⊟</span> Remarks</a>
+          </h4>
+          <blockquote class="SubsectionBox" id="M:Cadenza.Maybe`1.GetValueOrDefault(`0):Remarks">
+            <div>
+              <i>Note: </i>
+              <a href="../Cadenza/Maybe`1.html#M:Cadenza.Maybe`1.GetValueOrDefault">Maybe&lt;T&gt;.GetValueOrDefault</a>
+              allows the default value for type <tt>T</tt>  to be 
+              returned if the current instance contains no value.
+            </div>
+          </blockquote>
+          <h4 class="Subsection">
+            <a href="javascript:toggle_display('M:Cadenza.Maybe`1.GetValueOrDefault(`0):Version Information')">
+              <span id="M:Cadenza.Maybe`1.GetValueOrDefault(`0):Version Information:toggle">⊟</span> Requirements</a>
+          </h4>
+          <blockquote class="SubsectionBox" id="M:Cadenza.Maybe`1.GetValueOrDefault(`0):Version Information">
+            <b>Namespace: </b>Cadenza<br /><b>Assembly: </b>Cadenza (in Cadenza.dll)<br /><b>Assembly Versions: </b>0.1.0.0</blockquote>
+          <hr size="1" />
+        </blockquote>
+        <h3 id="P:Cadenza.Maybe`1.HasValue">
+          <a href="javascript:toggle_display('P:Cadenza.Maybe`1.HasValue:member')">
+            <span id="P:Cadenza.Maybe`1.HasValue:member:toggle">⊟</span> HasValue Property</a>
+        </h3>
+        <blockquote id="P:Cadenza.Maybe`1.HasValue:member">
+          <p class="Summary">
+          Gets a value indicating whether the current 
+          <a href="../Cadenza/Maybe`1.html">Cadenza.Maybe&lt;T&gt;</a> instance has a value.
+        </p>
+          <div class="Signature">public <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Boolean">bool</a> <b>HasValue</b>  { get; }</div>
+          <h4 class="Subsection">
+            <a href="javascript:toggle_display('P:Cadenza.Maybe`1.HasValue:See Also')">
+              <span id="P:Cadenza.Maybe`1.HasValue:See Also:toggle">⊟</span> See Also</a>
+          </h4>
+          <blockquote class="SubsectionBox" id="P:Cadenza.Maybe`1.HasValue:See Also">
+            <div>
+              <a href="../Cadenza/Maybe`1.html#P:Cadenza.Maybe`1.Value">Maybe&lt;T&gt;.Value</a>
+            </div>
+          </blockquote>
+          <h4 class="Subsection">
+            <a href="javascript:toggle_display('P:Cadenza.Maybe`1.HasValue:Value')">
+              <span id="P:Cadenza.Maybe`1.HasValue:Value:toggle">⊟</span> Value</a>
+          </h4>
+          <blockquote class="SubsectionBox" id="P:Cadenza.Maybe`1.HasValue:Value">
+            <tt>true</tt> if the current 
+          <a href="../Cadenza/Maybe`1.html">Cadenza.Maybe&lt;T&gt;</a> instance has a value;
+          otherwise, <tt>false</tt>.
+        </blockquote>
+          <h4 class="Subsection">
+            <a href="javascript:toggle_display('P:Cadenza.Maybe`1.HasValue:Remarks')">
+              <span id="P:Cadenza.Maybe`1.HasValue:Remarks:toggle">⊟</span> Remarks</a>
+          </h4>
+          <blockquote class="SubsectionBox" id="P:Cadenza.Maybe`1.HasValue:Remarks">
+          If the <a href="../Cadenza/Maybe`1.html#P:Cadenza.Maybe`1.HasValue">Maybe&lt;T&gt;.HasValue</a> property is
+          <tt>true</tt>, the value of the current 
+          <a href="../Cadenza/Maybe`1.html">Cadenza.Maybe&lt;T&gt;</a> instance can be accessed via
+          the <a href="../Cadenza/Maybe`1.html#P:Cadenza.Maybe`1.Value">Maybe&lt;T&gt;.Value</a> property.
+        </blockquote>
+          <h4 class="Subsection">
+            <a href="javascript:toggle_display('P:Cadenza.Maybe`1.HasValue:Version Information')">
+              <span id="P:Cadenza.Maybe`1.HasValue:Version Information:toggle">⊟</span> Requirements</a>
+          </h4>
+          <blockquote class="SubsectionBox" id="P:Cadenza.Maybe`1.HasValue:Version Information">
+            <b>Namespace: </b>Cadenza<br /><b>Assembly: </b>Cadenza (in Cadenza.dll)<br /><b>Assembly Versions: </b>0.1.0.0</blockquote>
+          <hr size="1" />
+        </blockquote>
+        <h3 id="F:Cadenza.Maybe`1.Nothing">
+          <a href="javascript:toggle_display('F:Cadenza.Maybe`1.Nothing:member')">
+            <span id="F:Cadenza.Maybe`1.Nothing:member:toggle">⊟</span> Nothing Field</a>
+        </h3>
+        <blockquote id="F:Cadenza.Maybe`1.Nothing:member">
+          <p class="Summary">
+          Represents a <a href="../Cadenza/Maybe`1.html">Cadenza.Maybe&lt;T&gt;</a> containing no
+          value.
+        </p>
+          <div class="Signature">public static readonly <a href="../Cadenza/Maybe`1.html">Maybe&lt;T&gt;</a> <b>Nothing</b> </div>
+          <h4 class="Subsection">
+            <a href="javascript:toggle_display('F:Cadenza.Maybe`1.Nothing:Remarks')">
+              <span id="F:Cadenza.Maybe`1.Nothing:Remarks:toggle">⊟</span> Remarks</a>
+          </h4>
+          <blockquote class="SubsectionBox" id="F:Cadenza.Maybe`1.Nothing:Remarks">
+            <p>
+            This value is identical to <tt>new Maybe&lt;T&gt;()</tt> (i.e.
+            creating an instance using the default constructor).
+          </p>
+            <p>
+            This member is for "self-documenting" purposes, so that code can
+            explicitly mention that it's returning "nothing".
+          </p>
+          </blockquote>
+          <h4 class="Subsection">
+            <a href="javascript:toggle_display('F:Cadenza.Maybe`1.Nothing:Version Information')">
+              <span id="F:Cadenza.Maybe`1.Nothing:Version Information:toggle">⊟</span> Requirements</a>
+          </h4>
+          <blockquote class="SubsectionBox" id="F:Cadenza.Maybe`1.Nothing:Version Information">
+            <b>Namespace: </b>Cadenza<br /><b>Assembly: </b>Cadenza (in Cadenza.dll)<br /><b>Assembly Versions: </b>0.1.0.0</blockquote>
+          <hr size="1" />
+        </blockquote>
+        <h3 id="M:Cadenza.Maybe`1.op_Equality(Cadenza.Maybe{`0},Cadenza.Maybe{`0})">
+          <a href="javascript:toggle_display('M:Cadenza.Maybe`1.op_Equality(Cadenza.Maybe{`0},Cadenza.Maybe{`0}):member')">
+            <span id="M:Cadenza.Maybe`1.op_Equality(Cadenza.Maybe{`0},Cadenza.Maybe{`0}):member:toggle">⊟</span> op_Equality Method</a>
+        </h3>
+        <blockquote id="M:Cadenza.Maybe`1.op_Equality(Cadenza.Maybe{`0},Cadenza.Maybe{`0}):member">
+          <p class="Summary">
+          Determines whether the specified <a href="../Cadenza/Maybe`1.html">Cadenza.Maybe&lt;T&gt;</a>
+          instances are equal.
+        </p>
+          <div class="Signature">public static <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Boolean">bool</a> operator== (<a href="../Cadenza/Maybe`1.html">Maybe&lt;T&gt;</a> a, <a href="../Cadenza/Maybe`1.html">Maybe&lt;T&gt;</a> b)</div>
+          <h4 class="Subsection">
+            <a href="javascript:toggle_display('M:Cadenza.Maybe`1.op_Equality(Cadenza.Maybe{`0},Cadenza.Maybe{`0}):Parameters')">
+              <span id="M:Cadenza.Maybe`1.op_Equality(Cadenza.Maybe{`0},Cadenza.Maybe{`0}):Parameters:toggle">⊟</span> Parameters</a>
+          </h4>
+          <blockquote class="SubsectionBox" id="M:Cadenza.Maybe`1.op_Equality(Cadenza.Maybe{`0},Cadenza.Maybe{`0}):Parameters">
+            <dl>
+              <dt>
+                <i>a</i>
+              </dt>
+              <dd>
+          The first <a href="../Cadenza/Maybe`1.html">Cadenza.Maybe&lt;T&gt;</a> to compare.
+        </dd>
+              <dt>
+                <i>b</i>
+              </dt>
+              <dd>
+          The second <a href="../Cadenza/Maybe`1.html">Cadenza.Maybe&lt;T&gt;</a> to compare.
+        </dd>
+            </dl>
+          </blockquote>
+          <h4 class="Subsection">
+            <a href="javascript:toggle_display('M:Cadenza.Maybe`1.op_Equality(Cadenza.Maybe{`0},Cadenza.Maybe{`0}):Returns')">
+              <span id="M:Cadenza.Maybe`1.op_Equality(Cadenza.Maybe{`0},Cadenza.Maybe{`0}):Returns:toggle">⊟</span> Returns</a>
+          </h4>
+          <blockquote class="SubsectionBox" id="M:Cadenza.Maybe`1.op_Equality(Cadenza.Maybe{`0},Cadenza.Maybe{`0}):Returns">
+            <tt>true</tt> if 
+          <tt><i>a</i>.Equals(<i>b</i>)</tt> 
+          returns <tt>true</tt>; otherwise, <tt>false</tt>.
+        </blockquote>
+          <h4 class="Subsection">
+            <a href="javascript:toggle_display('M:Cadenza.Maybe`1.op_Equality(Cadenza.Maybe{`0},Cadenza.Maybe{`0}):Remarks')">
+              <span id="M:Cadenza.Maybe`1.op_Equality(Cadenza.Maybe{`0},Cadenza.Maybe{`0}):Remarks:toggle">⊟</span> Remarks</a>
+          </h4>
+          <blockquote class="SubsectionBox" id="M:Cadenza.Maybe`1.op_Equality(Cadenza.Maybe{`0},Cadenza.Maybe{`0}):Remarks">
+            <div>
+              <i>Note: </i>
+            See <a href="../Cadenza/Maybe`1.html#M:Cadenza.Maybe`1.Equals(Cadenza.Maybe`1)">Maybe&lt;T&gt;.Equals(Maybe`1)</a>.
+          </div>
+          </blockquote>
+          <h4 class="Subsection">
+            <a href="javascript:toggle_display('M:Cadenza.Maybe`1.op_Equality(Cadenza.Maybe{`0},Cadenza.Maybe{`0}):Version Information')">
+              <span id="M:Cadenza.Maybe`1.op_Equality(Cadenza.Maybe{`0},Cadenza.Maybe{`0}):Version Information:toggle">⊟</span> Requirements</a>
+          </h4>
+          <blockquote class="SubsectionBox" id="M:Cadenza.Maybe`1.op_Equality(Cadenza.Maybe{`0},Cadenza.Maybe{`0}):Version Information">
+            <b>Namespace: </b>Cadenza<br /><b>Assembly: </b>Cadenza (in Cadenza.dll)<br /><b>Assembly Versions: </b>0.1.0.0</blockquote>
+          <hr size="1" />
+        </blockquote>
+        <h3 id="M:Cadenza.Maybe`1.op_Inequality(Cadenza.Maybe{`0},Cadenza.Maybe{`0})">
+          <a href="javascript:toggle_display('M:Cadenza.Maybe`1.op_Inequality(Cadenza.Maybe{`0},Cadenza.Maybe{`0}):member')">
+            <span id="M:Cadenza.Maybe`1.op_Inequality(Cadenza.Maybe{`0},Cadenza.Maybe{`0}):member:toggle">⊟</span> op_Inequality Method</a>
+        </h3>
+        <blockquote id="M:Cadenza.Maybe`1.op_Inequality(Cadenza.Maybe{`0},Cadenza.Maybe{`0}):member">
+          <p class="Summary">
+          Determines whether the specified <a href="../Cadenza/Maybe`1.html">Cadenza.Maybe&lt;T&gt;</a>
+          instances are not equal.
+        </p>
+          <div class="Signature">public static <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Boolean">bool</a> operator!= (<a href="../Cadenza/Maybe`1.html">Maybe&lt;T&gt;</a> a, <a href="../Cadenza/Maybe`1.html">Maybe&lt;T&gt;</a> b)</div>
+          <h4 class="Subsection">
+            <a href="javascript:toggle_display('M:Cadenza.Maybe`1.op_Inequality(Cadenza.Maybe{`0},Cadenza.Maybe{`0}):Parameters')">
+              <span id="M:Cadenza.Maybe`1.op_Inequality(Cadenza.Maybe{`0},Cadenza.Maybe{`0}):Parameters:toggle">⊟</span> Parameters</a>
+          </h4>
+          <blockquote class="SubsectionBox" id="M:Cadenza.Maybe`1.op_Inequality(Cadenza.Maybe{`0},Cadenza.Maybe{`0}):Parameters">
+            <dl>
+              <dt>
+                <i>a</i>
+              </dt>
+              <dd>
+          The first <a href="../Cadenza/Maybe`1.html">Cadenza.Maybe&lt;T&gt;</a> to compare.
+        </dd>
+              <dt>
+                <i>b</i>
+              </dt>
+              <dd>
+          The second <a href="../Cadenza/Maybe`1.html">Cadenza.Maybe&lt;T&gt;</a> to compare.
+        </dd>
+            </dl>
+          </blockquote>
+          <h4 class="Subsection">
+            <a href="javascript:toggle_display('M:Cadenza.Maybe`1.op_Inequality(Cadenza.Maybe{`0},Cadenza.Maybe{`0}):Returns')">
+              <span id="M:Cadenza.Maybe`1.op_Inequality(Cadenza.Maybe{`0},Cadenza.Maybe{`0}):Returns:toggle">⊟</span> Returns</a>
+          </h4>
+          <blockquote class="SubsectionBox" id="M:Cadenza.Maybe`1.op_Inequality(Cadenza.Maybe{`0},Cadenza.Maybe{`0}):Returns">
+            <tt>true</tt> if 
+          <tt><i>a</i>.Equals(<i>b</i>)</tt> 
+          returns <tt>false</tt>; otherwise, <tt>true</tt>.
+        </blockquote>
+          <h4 class="Subsection">
+            <a href="javascript:toggle_display('M:Cadenza.Maybe`1.op_Inequality(Cadenza.Maybe{`0},Cadenza.Maybe{`0}):Remarks')">
+              <span id="M:Cadenza.Maybe`1.op_Inequality(Cadenza.Maybe{`0},Cadenza.Maybe{`0}):Remarks:toggle">⊟</span> Remarks</a>
+          </h4>
+          <blockquote class="SubsectionBox" id="M:Cadenza.Maybe`1.op_Inequality(Cadenza.Maybe{`0},Cadenza.Maybe{`0}):Remarks">
+            <div>
+              <i>Note: </i>
+            See <a href="../Cadenza/Maybe`1.html#M:Cadenza.Maybe`1.Equals(Cadenza.Maybe`1)">Maybe&lt;T&gt;.Equals(Maybe`1)</a>.
+          </div>
+          </blockquote>
+          <h4 class="Subsection">
+            <a href="javascript:toggle_display('M:Cadenza.Maybe`1.op_Inequality(Cadenza.Maybe{`0},Cadenza.Maybe{`0}):Version Information')">
+              <span id="M:Cadenza.Maybe`1.op_Inequality(Cadenza.Maybe{`0},Cadenza.Maybe{`0}):Version Information:toggle">⊟</span> Requirements</a>
+          </h4>
+          <blockquote class="SubsectionBox" id="M:Cadenza.Maybe`1.op_Inequality(Cadenza.Maybe{`0},Cadenza.Maybe{`0}):Version Information">
+            <b>Namespace: </b>Cadenza<br /><b>Assembly: </b>Cadenza (in Cadenza.dll)<br /><b>Assembly Versions: </b>0.1.0.0</blockquote>
+          <hr size="1" />
+        </blockquote>
+        <h3 id="M:Cadenza.Maybe`1.Select``1(System.Func{`0,``0})">
+          <a href="javascript:toggle_display('M:Cadenza.Maybe`1.Select``1(System.Func{`0,``0}):member')">
+            <span id="M:Cadenza.Maybe`1.Select``1(System.Func{`0,``0}):member:toggle">⊟</span> Select&lt;TResult&gt; Generic Method</a>
+        </h3>
+        <blockquote id="M:Cadenza.Maybe`1.Select``1(System.Func{`0,``0}):member">
+          <p class="Summary">
+          Projects a <a href="../Cadenza/Maybe`1.html">Cadenza.Maybe&lt;T&gt;</a> into a
+          <a href="../Cadenza/Maybe`1.html">Cadenza.Maybe&lt;TResult&gt;</a>.
+        </p>
+          <div class="Signature">public <a href="../Cadenza/Maybe`1.html">Maybe&lt;TResult&gt;</a> <b>Select&lt;TResult&gt;</b> (<a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Func`2">Func&lt;T, TResult&gt;</a> selector)</div>
+          <h4 class="Subsection">
+            <a href="javascript:toggle_display('M:Cadenza.Maybe`1.Select``1(System.Func{`0,``0}):See Also')">
+              <span id="M:Cadenza.Maybe`1.Select``1(System.Func{`0,``0}):See Also:toggle">⊟</span> See Also</a>
+          </h4>
+          <blockquote class="SubsectionBox" id="M:Cadenza.Maybe`1.Select``1(System.Func{`0,``0}):See Also">
+            <div>
+              <a href="../Cadenza/ObjectCoda.html#M:Cadenza.ObjectCoda.ToMaybe``1(``0)">ObjectCoda.ToMaybe``1(``0)</a>
+            </div>
+          </blockquote>
+          <h4 class="Subsection">
+            <a href="javascript:toggle_display('M:Cadenza.Maybe`1.Select``1(System.Func{`0,``0}):Type Parameters')">
+              <span id="M:Cadenza.Maybe`1.Select``1(System.Func{`0,``0}):Type Parameters:toggle">⊟</span> Type Parameters</a>
+          </h4>
+          <blockquote class="SubsectionBox" id="M:Cadenza.Maybe`1.Select``1(System.Func{`0,``0}):Type Parameters">
+            <dl>
+              <dt>
+                <i>TResult</i>
+              </dt>
+              <dd>
+          The type of the resulting value.
+        </dd>
+            </dl>
+          </blockquote>
+          <h4 class="Subsection">
+            <a href="javascript:toggle_display('M:Cadenza.Maybe`1.Select``1(System.Func{`0,``0}):Parameters')">
+              <span id="M:Cadenza.Maybe`1.Select``1(System.Func{`0,``0}):Parameters:toggle">⊟</span> Parameters</a>
+          </h4>
+          <blockquote class="SubsectionBox" id="M:Cadenza.Maybe`1.Select``1(System.Func{`0,``0}):Parameters">
+            <dl>
+              <dt>
+                <i>selector</i>
+              </dt>
+              <dd>
+          A <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Func`2">Func&lt;T, TResult&gt;</a> which is
+          used to convert <a href="../Cadenza/Maybe`1.html#P:Cadenza.Maybe`1.Value">Maybe&lt;T&gt;.Value</a>
+          into the value returned.
+        </dd>
+            </dl>
+          </blockquote>
+          <h4 class="Subsection">
+            <a href="javascript:toggle_display('M:Cadenza.Maybe`1.Select``1(System.Func{`0,``0}):Returns')">
+              <span id="M:Cadenza.Maybe`1.Select``1(System.Func{`0,``0}):Returns:toggle">⊟</span> Returns</a>
+          </h4>
+          <blockquote class="SubsectionBox" id="M:Cadenza.Maybe`1.Select``1(System.Func{`0,``0}):Returns">
+          A <a href="../Cadenza/Maybe`1.html">Cadenza.Maybe&lt;TResult&gt;</a> containing
+          <a href="../Cadenza/Maybe`1.html#F:Cadenza.Maybe`1.Nothing">Maybe&lt;TResult&gt;.Nothing</a> if 
+          <a href="../Cadenza/Maybe`1.html#P:Cadenza.Maybe`1.HasValue">Maybe&lt;T&gt;.HasValue</a> is <tt>false</tt>,
+          or if <i>selector</i> returns <tt>null</tt>;
+          otherwise returns
+          <tt><i>selector</i>(<tt>this</tt>).ToMaybe()</tt>.
+        </blockquote>
+          <h4 class="Subsection">
+            <a href="javascript:toggle_display('M:Cadenza.Maybe`1.Select``1(System.Func{`0,``0}):Exceptions')">
+              <span id="M:Cadenza.Maybe`1.Select``1(System.Func{`0,``0}):Exceptions:toggle">⊟</span> Exceptions</a>
+          </h4>
+          <blockquote class="SubsectionBox" id="M:Cadenza.Maybe`1.Select``1(System.Func{`0,``0}):Exceptions">
+            <table class="TypeDocumentation">
+              <tr>
+                <th>Type</th>
+                <th>Reason</th>
+              </tr>
+              <tr valign="top">
+                <td>
+                  <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.ArgumentNullException">ArgumentNullException</a>
+                </td>
+                <td>
+                  <i>selector</i> is <tt>null</tt>.
+        </td>
+              </tr>
+            </table>
+          </blockquote>
+          <h4 class="Subsection">
+            <a href="javascript:toggle_display('M:Cadenza.Maybe`1.Select``1(System.Func{`0,``0}):Remarks')">
+              <span id="M:Cadenza.Maybe`1.Select``1(System.Func{`0,``0}):Remarks:toggle">⊟</span> Remarks</a>
+          </h4>
+          <blockquote class="SubsectionBox" id="M:Cadenza.Maybe`1.Select``1(System.Func{`0,``0}):Remarks">
+            <p>
+            This method is provided to support C# query comprehension
+            expressions on <a href="../Cadenza/Maybe`1.html">Cadenza.Maybe&lt;T&gt;</a> types.
+          </p>
+            <p>
+              If <tt>this</tt> contains no value 
+              (<a href="../Cadenza/Maybe`1.html#P:Cadenza.Maybe`1.HasValue">Maybe&lt;T&gt;.HasValue</a> is 
+              <tt>false</tt>), then
+              <a href="../Cadenza/Maybe`1.html#F:Cadenza.Maybe`1.Nothing">Maybe&lt;TResult&gt;.Nothing</a> is returned.
+            </p>
+            <p>
+              Otherwise, 
+              <tt><i>selector</i>(<tt>this</tt>.Value).ToMaybe()</tt>
+              is returned.
+            </p>
+            <table class="CodeExampleTable">
+              <tr>
+                <td>
+                  <b>
+                    <font size="-1">C# Example</font>
+                  </b>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <pre class="code-csharp">Assert.AreEqual (2.Just (),
+	1.Just ().Select (x =&gt; x + 1));
+Assert.AreEqual (2.Just (),
+	from x in 1.Just ()
+	select x + 1);
+</pre>
+                </td>
+              </tr>
+            </table>
+          </blockquote>
+          <h4 class="Subsection">
+            <a href="javascript:toggle_display('M:Cadenza.Maybe`1.Select``1(System.Func{`0,``0}):Version Information')">
+              <span id="M:Cadenza.Maybe`1.Select``1(System.Func{`0,``0}):Version Information:toggle">⊟</span> Requirements</a>
+          </h4>
+          <blockquote class="SubsectionBox" id="M:Cadenza.Maybe`1.Select``1(System.Func{`0,``0}):Version Information">
+            <b>Namespace: </b>Cadenza<br /><b>Assembly: </b>Cadenza (in Cadenza.dll)<br /><b>Assembly Versions: </b>0.1.0.0</blockquote>
+          <hr size="1" />
+        </blockquote>
+        <h3 id="M:Cadenza.Maybe`1.SelectMany``2(System.Func{`0,Cadenza.Maybe{``0}},System.Func{`0,``0,``1})">
+          <a href="javascript:toggle_display('M:Cadenza.Maybe`1.SelectMany``2(System.Func{`0,Cadenza.Maybe{``0}},System.Func{`0,``0,``1}):member')">
+            <span id="M:Cadenza.Maybe`1.SelectMany``2(System.Func{`0,Cadenza.Maybe{``0}},System.Func{`0,``0,``1}):member:toggle">⊟</span> SelectMany&lt;TCollection,TResult&gt; Generic Method</a>
+        </h3>
+        <blockquote id="M:Cadenza.Maybe`1.SelectMany``2(System.Func{`0,Cadenza.Maybe{``0}},System.Func{`0,``0,``1}):member">
+          <p class="Summary">
+          Projects a <a href="../Cadenza/Maybe`1.html">Cadenza.Maybe&lt;T&gt;</a> and
+          <a href="../Cadenza/Maybe`1.html">Cadenza.Maybe&lt;TCollection&gt;</a> into a 
+          <a href="../Cadenza/Maybe`1.html">Cadenza.Maybe&lt;TResult&gt;</a>.
+        </p>
+          <div class="Signature">public <a href="../Cadenza/Maybe`1.html">Maybe&lt;TResult&gt;</a> <b>SelectMany&lt;TCollection, TResult&gt;</b> (<a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Func`2">Func&lt;T, Maybe&lt;TCollection&gt;&gt;</a> selector, <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Func`3">Func&lt;T, TCollection, TResult&gt;</a> resultSelector)</div>
+          <h4 class="Subsection">
+            <a href="javascript:toggle_display('M:Cadenza.Maybe`1.SelectMany``2(System.Func{`0,Cadenza.Maybe{``0}},System.Func{`0,``0,``1}):See Also')">
+              <span id="M:Cadenza.Maybe`1.SelectMany``2(System.Func{`0,Cadenza.Maybe{``0}},System.Func{`0,``0,``1}):See Also:toggle">⊟</span> See Also</a>
+          </h4>
+          <blockquote class="SubsectionBox" id="M:Cadenza.Maybe`1.SelectMany``2(System.Func{`0,Cadenza.Maybe{``0}},System.Func{`0,``0,``1}):See Also">
+            <div>
+              <a href="../Cadenza/ObjectCoda.html#M:Cadenza.ObjectCoda.ToMaybe``1(``0)">ObjectCoda.ToMaybe``1(``0)</a>
+            </div>
+          </blockquote>
+          <h4 class="Subsection">
+            <a href="javascript:toggle_display('M:Cadenza.Maybe`1.SelectMany``2(System.Func{`0,Cadenza.Maybe{``0}},System.Func{`0,``0,``1}):Type Parameters')">
+              <span id="M:Cadenza.Maybe`1.SelectMany``2(System.Func{`0,Cadenza.Maybe{``0}},System.Func{`0,``0,``1}):Type Parameters:toggle">⊟</span> Type Parameters</a>
+          </h4>
+          <blockquote class="SubsectionBox" id="M:Cadenza.Maybe`1.SelectMany``2(System.Func{`0,Cadenza.Maybe{``0}},System.Func{`0,``0,``1}):Type Parameters">
+            <dl>
+              <dt>
+                <i>TCollection</i>
+              </dt>
+              <dd>
+          The type of the intermediate value within 
+          <i>selector</i>.
+        </dd>
+              <dt>
+                <i>TResult</i>
+              </dt>
+              <dd>
+          The type of the resulting value.
+        </dd>
+            </dl>
+          </blockquote>
+          <h4 class="Subsection">
+            <a href="javascript:toggle_display('M:Cadenza.Maybe`1.SelectMany``2(System.Func{`0,Cadenza.Maybe{``0}},System.Func{`0,``0,``1}):Parameters')">
+              <span id="M:Cadenza.Maybe`1.SelectMany``2(System.Func{`0,Cadenza.Maybe{``0}},System.Func{`0,``0,``1}):Parameters:toggle">⊟</span> Parameters</a>
+          </h4>
+          <blockquote class="SubsectionBox" id="M:Cadenza.Maybe`1.SelectMany``2(System.Func{`0,Cadenza.Maybe{``0}},System.Func{`0,``0,``1}):Parameters">
+            <dl>
+              <dt>
+                <i>selector</i>
+              </dt>
+              <dd>
+          A <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Func`2">Func&lt;T, Cadenza.Maybe&lt;TCollection&gt;&gt;</a>
+          used to generate an intermediate value.
+        </dd>
+              <dt>
+                <i>resultSelector</i>
+              </dt>
+              <dd>
+          A <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Func`3">Func&lt;T, TCollection, TResult&gt;</a> which is
+          used to convert <a href="../Cadenza/Maybe`1.html#P:Cadenza.Maybe`1.Value">Maybe&lt;T&gt;.Value</a> and
+          <tt><i>selector</i>(<tt>this</tt>).Value</tt>
+          into the value returned.
+        </dd>
+            </dl>
+          </blockquote>
+          <h4 class="Subsection">
+            <a href="javascript:toggle_display('M:Cadenza.Maybe`1.SelectMany``2(System.Func{`0,Cadenza.Maybe{``0}},System.Func{`0,``0,``1}):Returns')">
+              <span id="M:Cadenza.Maybe`1.SelectMany``2(System.Func{`0,Cadenza.Maybe{``0}},System.Func{`0,``0,``1}):Returns:toggle">⊟</span> Returns</a>
+          </h4>
+          <blockquote class="SubsectionBox" id="M:Cadenza.Maybe`1.SelectMany``2(System.Func{`0,Cadenza.Maybe{``0}},System.Func{`0,``0,``1}):Returns">
+          A <a href="../Cadenza/Maybe`1.html">Cadenza.Maybe&lt;TResult&gt;</a> containing
+          <a href="../Cadenza/Maybe`1.html#F:Cadenza.Maybe`1.Nothing">Maybe&lt;TResult&gt;.Nothing</a> if either
+          <tt>this</tt>'s 
+           or
+          <i>selector</i>(<i>this</i>)'s 
+          <a href="../Cadenza/Maybe`1.html#P:Cadenza.Maybe`1.HasValue">Maybe&lt;TCollection&gt;.HasValue</a> property 
+          is <tt>false</tt>; otherwise, returns
+          <tt><i>resultSelector</i>(<tt>this</tt>.Value,
+          <i>selector</i>(<tt>this</tt>).Value).ToMaybe()</tt>.
+        </blockquote>
+          <h4 class="Subsection">
+            <a href="javascript:toggle_display('M:Cadenza.Maybe`1.SelectMany``2(System.Func{`0,Cadenza.Maybe{``0}},System.Func{`0,``0,``1}):Exceptions')">
+              <span id="M:Cadenza.Maybe`1.SelectMany``2(System.Func{`0,Cadenza.Maybe{``0}},System.Func{`0,``0,``1}):Exceptions:toggle">⊟</span> Exceptions</a>
+          </h4>
+          <blockquote class="SubsectionBox" id="M:Cadenza.Maybe`1.SelectMany``2(System.Func{`0,Cadenza.Maybe{``0}},System.Func{`0,``0,``1}):Exceptions">
+            <table class="TypeDocumentation">
+              <tr>
+                <th>Type</th>
+                <th>Reason</th>
+              </tr>
+              <tr valign="top">
+                <td>
+                  <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.ArgumentNullException">ArgumentNullException</a>
+                </td>
+                <td>
+                  <p>
+                    <i>selector</i> is <tt>null</tt>.
+          </p>
+                  <p>-or-</p>
+                  <p>
+                    <i>resultSelector</i> is <tt>null</tt>.
+          </p>
+                </td>
+              </tr>
+            </table>
+          </blockquote>
+          <h4 class="Subsection">
+            <a href="javascript:toggle_display('M:Cadenza.Maybe`1.SelectMany``2(System.Func{`0,Cadenza.Maybe{``0}},System.Func{`0,``0,``1}):Remarks')">
+              <span id="M:Cadenza.Maybe`1.SelectMany``2(System.Func{`0,Cadenza.Maybe{``0}},System.Func{`0,``0,``1}):Remarks:toggle">⊟</span> Remarks</a>
+          </h4>
+          <blockquote class="SubsectionBox" id="M:Cadenza.Maybe`1.SelectMany``2(System.Func{`0,Cadenza.Maybe{``0}},System.Func{`0,``0,``1}):Remarks">
+            <p>
+            This method is provided to support C# query comprehension
+            expressions on <a href="../Cadenza/Maybe`1.html">Cadenza.Maybe&lt;T&gt;</a> types.
+            <tt>SelectMany</tt> acts as a "null propagation of nullables" for
+            any type, as opposed to just <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Nullable`1">Nullable&lt;T&gt;</a>
+            types.
+          </p>
+            <p>
+              If <tt>null</tt> contains no value 
+              (<a href="../Cadenza/Maybe`1.html#P:Cadenza.Maybe`1.HasValue">Maybe&lt;TSource&gt;.HasValue</a> is 
+              <tt>false</tt>), then
+              <a href="../Cadenza/Maybe`1.html#F:Cadenza.Maybe`1.Nothing">Maybe&lt;TResult&gt;.Nothing</a> is returned.
+            </p>
+            <p>
+              If <i>selector</i>(<tt>this</tt>) 
+              contains no value 
+              (<a href="../Cadenza/Maybe`1.html#P:Cadenza.Maybe`1.HasValue">Maybe&lt;TCollection&gt;.HasValue</a> is 
+              <tt>false</tt>), then
+              <a href="../Cadenza/Maybe`1.html#F:Cadenza.Maybe`1.Nothing">Maybe&lt;TResult&gt;.Nothing</a> is returned.
+            </p>
+            <p>
+              Otherwise, 
+              <tt><i>resultSelector</i>(<tt>this</tt>.Value,
+              <i>selector</i>().Value).ToMaybe()</tt>
+              is returned.  (This means that if 
+              <i>resultSelector</i> returns <tt>null</tt>,
+              then <a href="../Cadenza/Maybe`1.html#F:Cadenza.Maybe`1.Nothing">Maybe&lt;TResult&gt;.Nothing</a> is
+              returned.)
+            </p>
+            <table class="CodeExampleTable">
+              <tr>
+                <td>
+                  <b>
+                    <font size="-1">C# Example</font>
+                  </b>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <pre class="code-csharp">Assert.AreEqual (Maybe&lt;int&gt;.Nothing, 
+		5.Just().SelectMany(
+			x =&gt; Maybe&lt;int&gt;.Nothing,
+			(x, y) =&gt; x + y));
+Assert.AreEqual (Maybe&lt;int&gt;.Nothing,
+		from x in 5.Just ()
+		from y in Maybe&lt;int&gt;.Nothing
+		select x + y);
+Assert.AreEqual (9.Just (),
+		5.Just().SelectMany(
+			x =&gt; 4.Just (),
+			(x, y) =&gt; x + y));
+Assert.AreEqual (9.Just (),
+		from x in 5.Just ()
+		from y in 4.Just ()
+		select x + y);
+</pre>
+                </td>
+              </tr>
+            </table>
+          </blockquote>
+          <h4 class="Subsection">
+            <a href="javascript:toggle_display('M:Cadenza.Maybe`1.SelectMany``2(System.Func{`0,Cadenza.Maybe{``0}},System.Func{`0,``0,``1}):Version Information')">
+              <span id="M:Cadenza.Maybe`1.SelectMany``2(System.Func{`0,Cadenza.Maybe{``0}},System.Func{`0,``0,``1}):Version Information:toggle">⊟</span> Requirements</a>
+          </h4>
+          <blockquote class="SubsectionBox" id="M:Cadenza.Maybe`1.SelectMany``2(System.Func{`0,Cadenza.Maybe{``0}},System.Func{`0,``0,``1}):Version Information">
+            <b>Namespace: </b>Cadenza<br /><b>Assembly: </b>Cadenza (in Cadenza.dll)<br /><b>Assembly Versions: </b>0.1.0.0</blockquote>
+          <hr size="1" />
+        </blockquote>
+        <h3 id="M:Cadenza.Maybe`1.ToString">
+          <a href="javascript:toggle_display('M:Cadenza.Maybe`1.ToString:member')">
+            <span id="M:Cadenza.Maybe`1.ToString:member:toggle">⊟</span> ToString Method</a>
+        </h3>
+        <blockquote id="M:Cadenza.Maybe`1.ToString:member">
+          <p class="Summary">
+          Returns a <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.String">string</a> representation of the 
+          value of the current instance.
+        </p>
+          <div class="Signature">public override <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.String">string</a> <b>ToString</b> ()</div>
+          <h4 class="Subsection">
+            <a href="javascript:toggle_display('M:Cadenza.Maybe`1.ToString:Returns')">
+              <span id="M:Cadenza.Maybe`1.ToString:Returns:toggle">⊟</span> Returns</a>
+          </h4>
+          <blockquote class="SubsectionBox" id="M:Cadenza.Maybe`1.ToString:Returns">
+          If <a href="../Cadenza/Maybe`1.html#P:Cadenza.Maybe`1.HasValue">Maybe&lt;T&gt;.HasValue</a> is 
+          <tt>true</tt>, 
+          <tt><a href="../Cadenza/Maybe`1.html#P:Cadenza.Maybe`1.Value">Maybe&lt;T&gt;.Value</a>.ToString()</tt> is 
+          returned; otherwise, 
+          <a href="http://www.go-mono.com/docs/monodoc.ashx?link=F:System.String.Empty">string.Empty</a> is returned.
+        </blockquote>
+          <h4 class="Subsection">
+            <a href="javascript:toggle_display('M:Cadenza.Maybe`1.ToString:Remarks')">
+              <span id="M:Cadenza.Maybe`1.ToString:Remarks:toggle">⊟</span> Remarks</a>
+          </h4>
+          <blockquote class="SubsectionBox" id="M:Cadenza.Maybe`1.ToString:Remarks">
+            <div>
+              <i>Note: </i>
+            This method overrides <a href="http://www.go-mono.com/docs/monodoc.ashx?link=M:System.Object.ToString">object.ToString</a>.
+          </div>
+          </blockquote>
+          <h4 class="Subsection">
+            <a href="javascript:toggle_display('M:Cadenza.Maybe`1.ToString:Version Information')">
+              <span id="M:Cadenza.Maybe`1.ToString:Version Information:toggle">⊟</span> Requirements</a>
+          </h4>
+          <blockquote class="SubsectionBox" id="M:Cadenza.Maybe`1.ToString:Version Information">
+            <b>Namespace: </b>Cadenza<br /><b>Assembly: </b>Cadenza (in Cadenza.dll)<br /><b>Assembly Versions: </b>0.1.0.0</blockquote>
+          <hr size="1" />
+        </blockquote>
+        <h3 id="P:Cadenza.Maybe`1.Value">
+          <a href="javascript:toggle_display('P:Cadenza.Maybe`1.Value:member')">
+            <span id="P:Cadenza.Maybe`1.Value:member:toggle">⊟</span> Value Property</a>
+        </h3>
+        <blockquote id="P:Cadenza.Maybe`1.Value:member">
+          <p class="Summary">
+          Gets the value of the current 
+          <a href="../Cadenza/Maybe`1.html">Cadenza.Maybe&lt;T&gt;</a> instance.
+        </p>
+          <div class="Signature">public <i title="&#xA;      The type of the optional value.&#xA;    ">T</i> <b>Value</b>  { get; }</div>
+          <h4 class="Subsection">
+            <a href="javascript:toggle_display('P:Cadenza.Maybe`1.Value:See Also')">
+              <span id="P:Cadenza.Maybe`1.Value:See Also:toggle">⊟</span> See Also</a>
+          </h4>
+          <blockquote class="SubsectionBox" id="P:Cadenza.Maybe`1.Value:See Also">
+            <div>
+              <a href="../Cadenza/Maybe`1.html#P:Cadenza.Maybe`1.HasValue">Maybe&lt;T&gt;.HasValue</a>
+            </div>
+          </blockquote>
+          <h4 class="Subsection">
+            <a href="javascript:toggle_display('P:Cadenza.Maybe`1.Value:Value')">
+              <span id="P:Cadenza.Maybe`1.Value:Value:toggle">⊟</span> Value</a>
+          </h4>
+          <blockquote class="SubsectionBox" id="P:Cadenza.Maybe`1.Value:Value">
+          If <a href="../Cadenza/Maybe`1.html#P:Cadenza.Maybe`1.HasValue">Maybe&lt;T&gt;.HasValue</a> is 
+          <tt>true</tt>, then the value of the current
+          <a href="../Cadenza/Maybe`1.html">Cadenza.Maybe&lt;T&gt;</a> instance; otherwise,
+          an exception is thrown.
+        </blockquote>
+          <h4 class="Subsection">
+            <a href="javascript:toggle_display('P:Cadenza.Maybe`1.Value:Exceptions')">
+              <span id="P:Cadenza.Maybe`1.Value:Exceptions:toggle">⊟</span> Exceptions</a>
+          </h4>
+          <blockquote class="SubsectionBox" id="P:Cadenza.Maybe`1.Value:Exceptions">
+            <table class="TypeDocumentation">
+              <tr>
+                <th>Type</th>
+                <th>Reason</th>
+              </tr>
+              <tr valign="top">
+                <td>
+                  <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.InvalidOperationException">InvalidOperationException</a>
+                </td>
+                <td>
+                  <a href="../Cadenza/Maybe`1.html#P:Cadenza.Maybe`1.HasValue">Maybe&lt;T&gt;.HasValue</a> is
+          <tt>false</tt>, and the current 
+          <a href="../Cadenza/Maybe`1.html">Cadenza.Maybe&lt;T&gt;</a> instance contains no value.
+        </td>
+              </tr>
+            </table>
+          </blockquote>
+          <h4 class="Subsection">
+            <a href="javascript:toggle_display('P:Cadenza.Maybe`1.Value:Remarks')">
+              <span id="P:Cadenza.Maybe`1.Value:Remarks:toggle">⊟</span> Remarks</a>
+          </h4>
+          <blockquote class="SubsectionBox" id="P:Cadenza.Maybe`1.Value:Remarks">
+          </blockquote>
+          <h4 class="Subsection">
+            <a href="javascript:toggle_display('P:Cadenza.Maybe`1.Value:Version Information')">
+              <span id="P:Cadenza.Maybe`1.Value:Version Information:toggle">⊟</span> Requirements</a>
+          </h4>
+          <blockquote class="SubsectionBox" id="P:Cadenza.Maybe`1.Value:Version Information">
+            <b>Namespace: </b>Cadenza<br /><b>Assembly: </b>Cadenza (in Cadenza.dll)<br /><b>Assembly Versions: </b>0.1.0.0</blockquote>
+          <hr size="1" />
+        </blockquote>
+      </blockquote>
+    </div>
+    <hr size="1" />
+    <div class="Copyright">
+    </div>
+  </body>
+</html>
